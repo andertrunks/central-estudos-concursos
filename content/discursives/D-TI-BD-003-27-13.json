@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-13",
+  "title": "Treino autoral INDEPAC 1 — construir consulta",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "SETEC-2026-ATI",
+  "instructions": "Situação.\n\n\nConsidere as tabelas:\n\n\nCLIENTE:\nid_cliente;\nnome;\ncidade.\n\n\nPEDIDO:\nid_pedido;\nid_cliente;\ndata_pedido;\nvalor;\nstatus.\n\n\nRequisito.\n\n\nProduza uma consulta que mostre, para cada cliente que possua pedidos concluídos, o identificador, o nome, a quantidade de pedidos concluídos e o valor total desses pedidos. Exiba apenas clientes com pelo menos três pedidos concluídos e ordene do maior para o menor valor total.",
+  "modelAnswer": "13.1 Solução esperada\n\n\nSELECT\n  c.id_cliente,\n  c.nome,\n  COUNT(*) AS qtd_pedidos,\n  SUM(p.valor) AS total\nFROM cliente c\nJOIN pedido p\n  ON p.id_cliente = c.id_cliente\nWHERE p.status = 'CONCLUIDO'\nGROUP BY c.id_cliente, c.nome\nHAVING COUNT(*) >= 3\nORDER BY total DESC;\n\n\n13.2 Explicação\n\n\nJOIN relaciona os pedidos aos clientes.\n\n\nWHERE remove pedidos que não estão concluídos antes da agregação.\n\n\nGROUP BY forma um grupo por cliente.\n\n\nCOUNT conta os pedidos concluídos.\n\n\nSUM calcula o total.\n\n\nHAVING mantém clientes com pelo menos três pedidos.\n\n\nORDER BY organiza pelo total decrescente.\n\n\n13.3 Checklist\n\n\nUsou condição de JOIN?\n\n\nFiltrou status em WHERE?\n\n\nAgrupou corretamente?\n\n\nUsou HAVING para o critério agregado?\n\n\nOrdenou o total de forma decrescente?",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

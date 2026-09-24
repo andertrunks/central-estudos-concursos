@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-08",
+  "title": "Treino autoral Quadrix 1 — SQL, JOIN e agregação",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "CRBIO01-2026-ATI",
+  "instructions": "Status: autoral.\n\n\nMotivo: complemento de SQL aplicado após uso das discursivas reais localizadas.\n\n\nProposta.\n\n\nUm sistema registra clientes, pedidos e itens de pedido. A equipe identificou que determinado relatório retorna valores totais duplicados porque o JOIN multiplica linhas antes da agregação.\n\n\nRedija um texto técnico explicando:\n\n\npor que JOINs podem aumentar a cardinalidade do resultado;\n\n\ncomo uma relação um-para-muitos afeta SUM e COUNT;\n\n\nduas estratégias corretas para evitar agregação incorreta sem apenas esconder o problema com DISTINCT.",
+  "modelAnswer": "8.1 Espelho de correção\n\n\nA resposta deve mencionar:\n\n\numa linha de cliente pode combinar com várias linhas de pedido ou item;\n\n\na multiplicação ocorre antes da agregação;\n\n\nSUM pode somar o mesmo valor repetido;\n\n\nCOUNT pode contar combinações, não entidades lógicas;\n\n\nestratégias possíveis:\n\n\nagregar em subconsulta ou CTE antes do JOIN;\n\n\nagrupar na granularidade correta;\n\n\nusar EXISTS quando a necessidade é apenas testar existência;\n\n\ncorrigir a condição de JOIN e incluir todas as partes da chave composta;\n\n\nusar COUNT DISTINCT somente quando semanticamente correto.\n\n\n8.2 Resposta-modelo\n\n\nJOIN combina linhas conforme as correspondências encontradas. Em uma relação um-para-muitos, uma linha do lado “um” aparece uma vez para cada linha correspondente do lado “muitos”. Se outro relacionamento um-para-muitos é acrescentado, a quantidade de combinações pode aumentar ainda mais.\n\n\nEsse comportamento afeta agregações. Se um valor do pedido aparece repetido por causa dos itens, SUM pode somá-lo várias vezes. COUNT também pode contabilizar combinações resultantes do JOIN em vez da entidade que o relatório pretendia medir.\n\n\nA correção deve preservar a granularidade desejada. Uma solução é agregar itens em uma subconsulta ou CTE antes de relacioná-los aos pedidos. Outra é ajustar GROUP BY e a chave do JOIN para que cada entidade participe do cálculo no nível correto. Quando o requisito apenas pergunta se existe registro relacionado, EXISTS evita multiplicar a linha externa. DISTINCT só deve ser usado quando a eliminação de duplicidade faz parte da semântica, e não como forma de mascarar JOIN incorreto.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

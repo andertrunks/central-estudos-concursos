@@ -18,5 +18,965 @@
     "version": "2026",
     "verifiedAt": "2026-09-23",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SELECT-001",
+    "title": "PostgreSQL 18 — SELECT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-select.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-INSERT-001",
+    "title": "PostgreSQL 18 — INSERT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-insert.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-UPDATE-001",
+    "title": "PostgreSQL 18 — UPDATE",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-update.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DELETE-001",
+    "title": "PostgreSQL 18 — DELETE",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-delete.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-AGG-001",
+    "title": "PostgreSQL 18 — Aggregate Functions",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-aggregate.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-SQL-GROUPBY-001",
+    "title": "Microsoft Learn — GROUP BY (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server 2025 / ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-YT-HASHTAG-SQL-001",
+    "title": "Curso SQL para Iniciantes",
+    "level": "C1",
+    "author": "Hashtag Programação",
+    "url": "https://www.youtube.com/watch?v=6M-jFECiHog",
+    "version": "30/10/2023",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-YT-HASHTAG-SQL-002",
+    "title": "5 temas básicos de SQL para começar",
+    "level": "C1",
+    "author": "Hashtag Programação",
+    "url": "https://www.youtube.com/watch?v=8hcg4BDo6ls",
+    "version": "17/01/2023",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-YT-BOSON-SQL-001",
+    "title": "Curso Completo de SQL com SQL Server para Iniciantes do Básico ao Avançado",
+    "level": "C1",
+    "author": "Bóson Treinamentos",
+    "url": "https://www.youtube.com/watch?v=KOhd3R5kLks",
+    "version": "18/09/2024",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-QUERY-OVERVIEW-001",
+    "title": "PostgreSQL 18 — Queries: Overview",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-overview.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SELECTLIST-001",
+    "title": "PostgreSQL 18 — Select Lists",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-select-lists.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-EXPRESSIONS-001",
+    "title": "PostgreSQL 18 — Value Expressions",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-expressions.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-CONDITIONAL-001",
+    "title": "PostgreSQL 18 — Conditional Expressions",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-conditional.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-TYPECONV-001",
+    "title": "PostgreSQL 18 — Type Conversion",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/typeconv.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-LOGICAL-001",
+    "title": "PostgreSQL 18 — Logical Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-logical.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-COMPARE-001",
+    "title": "PostgreSQL 18 — Comparison Functions and Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-comparison.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-PATTERN-001",
+    "title": "PostgreSQL 18 — Pattern Matching",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-matching.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-INNOTIN-001",
+    "title": "PostgreSQL 18 — Row and Array Comparisons",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-comparisons.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-PRECEDENCE-001",
+    "title": "PostgreSQL 18 — Lexical Structure / Operator Precedence",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-syntax-lexical.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-ORDERBY-001",
+    "title": "PostgreSQL 18 — Sorting Rows (ORDER BY)",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-order.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-STRING-001",
+    "title": "PostgreSQL 18 — String Functions and Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-string.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-MATH-001",
+    "title": "PostgreSQL 18 — Mathematical Functions and Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-math.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DATETIME-001",
+    "title": "PostgreSQL 18 — Date/Time Functions and Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-datetime.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-AGG-SYNTAX-001",
+    "title": "PostgreSQL 18 — Aggregate Expressions",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-expressions.html#SYNTAX-AGGREGATES",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-GROUPHAVING-001",
+    "title": "PostgreSQL 18 — GROUP BY and HAVING",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-table-expressions.html#QUERIES-GROUP",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-AGG-TUTORIAL-001",
+    "title": "PostgreSQL 18 — Aggregate Functions Tutorial",
+    "level": "P2",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/tutorial-agg.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-JOINS-001",
+    "title": "PostgreSQL 18 — Joined Tables",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-table-expressions.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-JOINS-001",
+    "title": "Microsoft Learn — FROM + JOIN (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/queries/from-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SUBQUERY-001",
+    "title": "PostgreSQL 18 — Subquery Expressions",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-subquery.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SCALARSUB-001",
+    "title": "PostgreSQL 18 — Scalar Subqueries",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-expressions.html#SQL-SYNTAX-SCALAR-SUBQUERIES",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-FROMSUB-001",
+    "title": "PostgreSQL 18 — Subqueries in FROM",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-table-expressions.html#QUERIES-FROM",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SETOPS-001",
+    "title": "PostgreSQL 18 — Combining Queries (UNION, INTERSECT, EXCEPT)",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-union.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SETTYPES-001",
+    "title": "PostgreSQL 18 — UNION, CASE, and Related Constructs",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/typeconv-union-case.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-CTE-001",
+    "title": "PostgreSQL 18 — WITH Queries (Common Table Expressions)",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-with.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-WINDOW-TUTORIAL-001",
+    "title": "PostgreSQL 18 — Window Functions Tutorial",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/tutorial-window.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-WINDOW-001",
+    "title": "PostgreSQL 18 — Window Functions",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-window.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-RANKING-001",
+    "title": "Microsoft Learn — Funções de classificação (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/functions/ranking-functions-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-INSERT-TUTORIAL-001",
+    "title": "PostgreSQL 18 — Populating a Table With Rows",
+    "level": "P2",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/tutorial-populate.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DEFAULT-001",
+    "title": "PostgreSQL 18 — Default Values",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-default.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-GENCOL-001",
+    "title": "PostgreSQL 18 — Generated Columns",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-generated-columns.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-CONSTRAINTS-INSERT-001",
+    "title": "PostgreSQL 18 — Constraints",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-constraints.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-INSERT-001",
+    "title": "Microsoft Learn — INSERT (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/sql/t-sql/statements/insert-transact-sql/",
+    "version": "SQL Server / T-SQL",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-UPDATE-TUTORIAL-001",
+    "title": "PostgreSQL 18 — Updates",
+    "level": "P2",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/tutorial-update.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-UPDATE-001",
+    "title": "Microsoft Learn — UPDATE (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/queries/update-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server / T-SQL",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DELETE-TUTORIAL-001",
+    "title": "PostgreSQL 18 — Deleting Data",
+    "level": "P2",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/dml-delete.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DROPTABLE-001",
+    "title": "PostgreSQL 18 — DROP TABLE",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-droptable.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-DELETE-001",
+    "title": "Microsoft Learn — DELETE (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/sql/t-sql/statements/delete-transact-sql",
+    "version": "SQL Server / T-SQL",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-MERGE-001",
+    "title": "PostgreSQL 18 — MERGE",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-merge.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-ONCONFLICT-001",
+    "title": "PostgreSQL 18 — INSERT / ON CONFLICT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-insert.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-ISO-MERGE-001",
+    "title": "PostgreSQL 18 — Transaction Isolation",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ORACLE26-MERGE-001",
+    "title": "Oracle AI Database 26 — MERGE",
+    "level": "P1",
+    "author": "Oracle",
+    "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MERGE.html",
+    "version": "Oracle AI Database 26",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-MERGE-001",
+    "title": "Microsoft Learn — MERGE (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/statements/merge-transact-sql",
+    "version": "SQL Server / T-SQL",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MYSQL84-UPSERT-001",
+    "title": "MySQL 8.4 — INSERT ... ON DUPLICATE KEY UPDATE",
+    "level": "P1",
+    "author": "Oracle / MySQL",
+    "url": "https://dev.mysql.com/doc/refman/8.4/en/insert-on-duplicate.html",
+    "version": "MySQL 8.4",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-TRANS-TUTORIAL-001",
+    "title": "PostgreSQL 18 — Transactions Tutorial",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-PSQL-AUTOCOMMIT-001",
+    "title": "PostgreSQL 18 — psql AUTOCOMMIT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/app-psql.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-ISO-001",
+    "title": "PostgreSQL 18 — Transaction Isolation",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SAVEPOINT-001",
+    "title": "PostgreSQL 18 — SAVEPOINT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-savepoint.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-TRANSACTIONS-001",
+    "title": "Microsoft Learn — Transactions (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/language-elements/transactions-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-ROLLBACK-001",
+    "title": "Microsoft Learn — ROLLBACK TRANSACTION",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/language-elements/rollback-transaction-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-CONSTRAINTS-021",
+    "title": "PostgreSQL 18 — Constraints",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-constraints.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-ALTER-CONSTRAINTS-021",
+    "title": "PostgreSQL 18 — Modifying Tables / Adding Constraints",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-alter.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-CREATETABLE-021",
+    "title": "PostgreSQL 18 — CREATE TABLE",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-createtable.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DEFAULT-021",
+    "title": "PostgreSQL 18 — Default Values",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-default.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SELECT-022",
+    "title": "PostgreSQL 18 — SELECT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-select.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-COMPARISON-022",
+    "title": "PostgreSQL 18 — Comparison Functions and Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-comparison.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-QUERY-PATH-023",
+    "title": "PostgreSQL 18 — The Path of a Query",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/query-path.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-EXPLAIN-023",
+    "title": "PostgreSQL 18 — Using EXPLAIN",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/using-explain.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-EXPLAIN-CMD-023",
+    "title": "PostgreSQL 18 — EXPLAIN",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-explain.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-INDEX-EXAMINE-023",
+    "title": "PostgreSQL 18 — Examining Index Usage",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/indexes-examine.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-PLANNER-STATS-023",
+    "title": "PostgreSQL 18 — How the Planner Uses Statistics",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/planner-stats-details.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-ANALYZE-023",
+    "title": "PostgreSQL 18 — Updating Planner Statistics",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/routine-vacuuming.html#VACUUM-FOR-STATISTICS",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-TOP-024",
+    "title": "Microsoft Learn — TOP (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/top-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-ORDERBY-024",
+    "title": "Microsoft Learn — ORDER BY / OFFSET / FETCH",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-OUTPUT-024",
+    "title": "Microsoft Learn — OUTPUT clause",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/queries/output-clause-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-RETURNING-024",
+    "title": "PostgreSQL 18 — Returning Data from Modified Rows",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/dml-returning.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-STRING-024",
+    "title": "PostgreSQL 18 — String Functions and Operators",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-string.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-CONCAT-024",
+    "title": "Microsoft Learn — CONCAT (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MYSQL84-SELECT-024",
+    "title": "MySQL 8.4 — SELECT Statement",
+    "level": "P1",
+    "author": "Oracle / MySQL",
+    "url": "https://dev.mysql.com/doc/refman/8.4/en/select.html",
+    "version": "MySQL 8.4",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-MATCHING-024",
+    "title": "PostgreSQL 18 — Pattern Matching",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/functions-matching.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-DATATYPES-024",
+    "title": "PostgreSQL 18 — Data Types",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/datatype.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-IDENTITY-024",
+    "title": "PostgreSQL 18 — Identity Columns",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/ddl-identity-columns.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-IDENTITY-024",
+    "title": "Microsoft Learn — IDENTITY property",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/pt-br/sql/t-sql/statements/create-table-transact-sql-identity-property?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MYSQL84-AUTOINC-024",
+    "title": "MySQL 8.4 — AUTO_INCREMENT",
+    "level": "P1",
+    "author": "Oracle / MySQL",
+    "url": "https://dev.mysql.com/doc/refman/8.4/en/example-auto-increment.html",
+    "version": "MySQL 8.4",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-INFOSCHEMA-024",
+    "title": "PostgreSQL 18 — information_schema.tables",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/infoschema-tables.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-CATALOG-024",
+    "title": "PostgreSQL 18 — System Catalogs",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/catalogs.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-LIMIT-024",
+    "title": "PostgreSQL 18 — LIMIT and OFFSET",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/queries-limit.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-SELECT-DIALECT-024",
+    "title": "PostgreSQL 18 — SELECT",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/sql-select.html",
+    "version": "PostgreSQL 18.6",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-OFFSETFETCH-024",
+    "title": "Microsoft Learn — ORDER BY / OFFSET / FETCH",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-QUAD-DISC-GUIDE-001",
+    "title": "Quadrix — Informações sobre a prova discursiva",
+    "level": "P1",
+    "author": "Instituto Quadrix",
+    "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8185658-informacoes-sobre-a-prova-discursiva",
+    "version": "2025/atual",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-QUAD-DISC-DATAPREV-2012",
+    "title": "Quadrix 2012 — DATAPREV — Perfil Banco de Dados — Prova discursiva",
+    "level": "P1",
+    "author": "Instituto Quadrix",
+    "url": "https://www.estudegratis.com.br/images/provas/23916-quadrix-2012-dataprev-analista-de-tecnologia-da-informacao-banco-de-dados-prova.pdf",
+    "version": "2012",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-QUAD-DISC-CFO-2022",
+    "title": "Quadrix 2022 — CFO — Analista de Desenvolvimento — Discursiva",
+    "level": "P1",
+    "author": "Instituto Quadrix",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/89039/quadrix-2022-cfo-analista-de-desenvolvimento-de-sistemas-e-informacao-prova.pdf",
+    "version": "2022",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-QUAD-DISC-CREA-2023",
+    "title": "Quadrix 2023 — CREA-GO — Analista de Área TI — Discursiva PostgreSQL",
+    "level": "P1",
+    "author": "Instituto Quadrix",
+    "url": "https://quadrix.org.br/informacoes/1099/",
+    "version": "2023",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-INDEPAC-DISC-FORMAT-001",
+    "title": "INDEPAC — padrão de prova teórico-prática",
+    "level": "P1",
+    "author": "INDEPAC",
+    "url": "https://www.pedrodetoledo.sp.gov.br/site/public/publicacoes/noticia/concurso-publico-n-001-2023",
+    "version": "2023",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PG18-PL-024",
+    "title": "PostgreSQL 18 — Procedural Languages",
+    "level": "P1",
+    "author": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/18/xplang.html",
+    "version": "PostgreSQL 18",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-ISNULL-PRED-024",
+    "title": "Microsoft Learn — IS [NOT] NULL (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MS-ISNULL-FUNC-024",
+    "title": "Microsoft Learn — ISNULL (Transact-SQL)",
+    "level": "P1",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver17",
+    "version": "SQL Server ver17",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
   }
 ]

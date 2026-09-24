@@ -42,7 +42,7 @@
   {
     "": "8",
     "Chave": "proxima_acao",
-    "Valor": "Produzir TI-BD-003 — SQL com imagem didática, vídeos verificados, questões e revisão."
+    "Valor": "TI-BD-003 — SQL encerrado na produção editorial e movido para validação/publicação. Próxima produção: TI-RED-001 — Modelos e arquitetura de redes, iniciando por auditoria de reuso da biblioteca e pesquisa de questões reais Quadrix/INDEPAC."
   },
   {
     "": "9",
@@ -68,5 +68,20 @@
     "": "13",
     "Chave": "regra_fontes",
     "Valor": "Toda aula deve registrar source_ids; priorizar P1/P2 e manter fontes complementares subordinadas às oficiais."
+  },
+  {
+    "": "14",
+    "Chave": "regra_questoes_banca",
+    "Valor": "Antes de concluir cada subtema: pesquisar questões anteriores Quadrix e INDEPAC, registrar em QUESTOES_BANCAS e criar treino calibrado; se não houver questão exata, registrar a lacuna."
+  },
+  {
+    "": "15",
+    "Chave": "regra_questoes_literal",
+    "Valor": "Usar literalmente questões anteriores da mesma banca quando localizadas, com resposta e explicação própria. Só criar autorais quando a busca documentada não encontrar questão adequada."
+  },
+  {
+    "": "16",
+    "Chave": "regra_leitura_edge",
+    "Valor": "Todo material deve ser escrito para leitura fluida pelo leitor de voz do Edge, sem mencionar essa adaptação no corpo da aula."
   }
 ]

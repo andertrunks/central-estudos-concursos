@@ -71,6 +71,35 @@ try {
   await page.getByRole("searchbox").fill("TI-BD-003");
   await expect(page.locator(".content-card")).toHaveCount(1);
   await page.getByRole("link", { name: "SQL", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Estude por subtema" })).toBeVisible();
+  await expect(page.locator('[aria-label="Subtemas da aula"] details')).toHaveCount(28);
+  await page.locator('[aria-label="Subtemas da aula"] summary').first().click();
+  await expect(page.locator('[aria-label="Subtemas da aula"] details[open] .prose')).toContainText("SQL");
+  const lessonAudit = await new AxeBuilder({page}).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
+  expect(lessonAudit.violations).toEqual([]);
+  await expect(page.locator('figure img')).toHaveCount(2);
+  for(const img of await page.locator('figure img').all()) {
+    await img.scrollIntoViewIfNeeded();
+    await expect.poll(() => img.evaluate(e => (e as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  }
+  await expect(page.getByRole('link', {name:'Assistir no YouTube ↗'})).toHaveCount(3);
+  await page.getByRole('button',{name:'Marcar como concluído'}).click();
+  await expect(page.getByText('Progresso salvo neste dispositivo.')).toBeVisible();
+  await page.goto(`${base}#/questoes`);
+  await page.getByRole('searchbox').fill('Q-TI-BD-003-CE-001');
+  await page.getByRole('radio',{name:'Certo',exact:true}).check();
+  await page.getByRole('button',{name:'Conferir resposta'}).click();
+  await expect(page.getByRole('heading',{name:'Vamos revisar este ponto'})).toBeVisible();
+  await page.goto(`${base}#/erros`);
+  await expect(page.getByRole('button', {name:'Marcar como revisado'})).toBeVisible();
+  await page.goto(`${base}#/discursivas`);
+  await page.getByLabel('Sua resposta', {exact:true}).first().fill('Resposta de verificação: JOIN combina linhas conforme as correspondências.');
+  await page.getByRole('button',{name:'Salvar rascunho'}).first().click();
+  await expect(page.getByText('Texto salvo neste dispositivo.')).toBeVisible();
+  await page.reload();
+  await expect(page.getByLabel('Sua resposta',{exact:true}).first()).toHaveValue(/Resposta de verificação/);
+  checks.push('SQL: 28 subtemas, imagens, vídeos, conclusão, erro automático e discursiva persistente');
+  await page.goto(`${base}#/biblioteca/TI-RED-001`);
   await expect(
     page.getByRole("heading", { name: "Aula planejada, ainda não publicada" }),
   ).toBeVisible();
@@ -162,6 +191,11 @@ try {
   await expect(page.locator(".content-card")).toHaveCount(77);
   await expect(page.getByText("Modo offline", { exact: true })).toBeVisible();
   checks.push("Reload offline e biblioteca completa sem Google Drive");
+  await page.goto(`${base}#/biblioteca/TI-BD-003`);
+  await expect(page.getByRole('heading',{name:'Estude por subtema'})).toBeVisible();
+  await page.locator('figure img').first().scrollIntoViewIfNeeded();
+  await expect.poll(() => page.locator('figure img').first().evaluate(e => (e as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  checks.push('Aula SQL e imagem didática disponíveis offline');
   expect(privateDriveRequests).toEqual([]);
   expect(errors).toEqual([]);
   await writeFile(

@@ -7,13 +7,13 @@
     "Título": "SQL — consulta e manipulação de dados",
     "Prioridade": "5",
     "Concursos": "CRBio + SETEC",
-    "Status": "a produzir",
-    "Destino Drive": "02_CONTEUDO/Tecnologia da Informação",
-    "Status Work": "não iniciado",
-    "Observações": "Núcleo comum",
-    "Imagem": "obrigatória",
-    "Vídeo YouTube": "obrigatório",
-    "Status mídia": "pendente"
+    "Status": "pronto para validação",
+    "Destino Drive": "02_CONTEUDO/Tecnologia da Informação/Banco de Dados/TI-BD-003",
+    "Status Work": "aguardando validação/Work",
+    "Observações": "Cobertura 28/28 concluída; auditoria de banca e duplicidades concluída; revisão final e treino discursivo/prático prontos.",
+    "Imagem": "2 imagens verificadas e reutilizadas na revisão",
+    "Vídeo YouTube": "3 vídeos verificados",
+    "Status mídia": "concluído"
   },
   {
     "": "1",

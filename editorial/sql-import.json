@@ -1,0 +1,43 @@
+{
+  "contentId": "TI-BD-003",
+  "snapshot": "2026-09-23-sql-ready.csv",
+  "sections": 28,
+  "objectiveQuestions": 252,
+  "openExercises": 36,
+  "sourceCount": 90,
+  "documents": [
+    {
+      "name": "sql-document",
+      "driveId": "1I6zSBWzzqci8CXWr3d_ztFUYezbiCbxfymKO3vCjnzE",
+      "sha256": "46ae3922b31c45e28a8e5a7a8c104c5a28affe7c31fe10f3bce6e47ddc37f96a"
+    },
+    {
+      "name": "sql-bank",
+      "driveId": "10dC8AVFAgXWqQyNVGBq7NYgS9MGRethV5SeOFEqukac",
+      "sha256": "ea9f13e02c144a30312da0e8e7e7c13493485ddfac45c0841887ce6d0cfab4c2"
+    },
+    {
+      "name": "sql-review",
+      "driveId": "1hKt-qAqsGvJ9imGSZAgoMJgiDD5MvTPOQ9K06dY3_Us",
+      "sha256": "cf23f8ab41849d8eb13fc817737928ac269b9fcd0acce93d16003ec17a898b0e"
+    },
+    {
+      "name": "sql-discursive",
+      "driveId": "1x9O4EZ4m8GvA96eqRiHyDjA34y3xv01uxQOCQklLtMc",
+      "sha256": "0dcd156be1172cfb55ca1c1d351c3615c3df8d067334c60a3756ea5d6d54ff6e"
+    },
+    {
+      "name": "sql-bank-references",
+      "driveId": "1KbmssiI7FwOj7_jlZXC7lnCTNFRD8sNF81-UcfrvIFQ",
+      "sha256": "2bbe2cd26bae6ead6d6225dc50220e05f34e3aede195e7c74033a96fd6e67b0a"
+    }
+  ],
+  "notes": [
+    "Textos integrais preservados; metadados e navegação convertidos pelo Work.",
+    "252 itens objetivos interativos; 36 exercícios abertos disponíveis no caderno integral com respostas esperadas.",
+    "Referências a provas anteriores separadas dos itens autorais. Contagens históricas no texto podem diferir da auditoria final de 59 referências únicas.",
+    "Fontes das questões herdadas do cadastro declarado no banco canônico; não representam atribuição individual a cada alternativa."
+  ],
+  "sourceModifiedAt": "2026-09-24T00:30:15.899Z",
+  "discursiveProposals": 9
+}

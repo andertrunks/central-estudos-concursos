@@ -19,7 +19,7 @@ Node 22.12+ e npm. `npm ci`, `npm run dev`. Verificação completa: `npm run che
 - `scripts/`: transformação, validação e integração de pacotes editoriais.
 - `tests/`: fixtures artificiais isoladas e testes de regras/persistência.
 
-A relação concurso–conteúdo é muitos-para-muitos. A matriz conserva cobertura integral/parcial por concurso, prioridade, fase e estado editorial. Título nunca é chave. As 77 referências iniciais foram importadas da matriz do Drive; nenhuma é apresentada como aula publicada.
+A relação concurso–conteúdo é muitos-para-muitos. A matriz conserva cobertura integral/parcial por concurso, prioridade, fase e estado editorial. Título nunca é chave. As 77 referências iniciais foram importadas da matriz do Drive. SQL (TI-BD-003) possui 28 subtemas, 252 questões objetivas interativas, 36 exercícios abertos no caderno integral, nove propostas discursivas autorais, duas imagens e três vídeos. Os demais assuntos permanecem planejados.
 
 ## Persistência e revisão
 

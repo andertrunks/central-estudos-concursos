@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "id": "TI-BD-003-IMG-001",
+    "contentId": "TI-BD-003",
+    "type": "imagem",
+    "title": "Ordem lógica simplificada de uma consulta SQL",
+    "caption": "Arquivo PNG 1600x900; usar na seção sobre ordem lógica.",
+    "alt": "Fluxo da ordem lógica de processamento de uma consulta SQL, iniciando em FROM e JOIN, passando por WHERE, GROUP BY e HAVING, chegando a SELECT, DISTINCT e ORDER BY.",
+    "file": "media/TI-BD-003-IMG-001.png",
+    "verifiedAt": "2026-09-23",
+    "original": true
+  },
+  {
+    "id": "TI-BD-003-YT-001",
+    "contentId": "TI-BD-003",
+    "type": "YouTube",
+    "title": "5 temas básicos de SQL para começar",
+    "caption": "Revisão curta: ORDER BY, WHERE, agregações, GROUP BY e JOIN.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=8hcg4BDo6ls",
+    "channel": "Hashtag Programação",
+    "verifiedAt": "2026-09-23",
+    "original": false
+  },
+  {
+    "id": "TI-BD-003-YT-002",
+    "contentId": "TI-BD-003",
+    "type": "YouTube",
+    "title": "Curso SQL para Iniciantes",
+    "caption": "Curso amplo com capítulos diretamente relacionados à aula.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=6M-jFECiHog",
+    "channel": "Hashtag Programação",
+    "verifiedAt": "2026-09-23",
+    "original": false
+  },
+  {
+    "id": "TI-BD-003-YT-003",
+    "contentId": "TI-BD-003",
+    "type": "YouTube",
+    "title": "Curso Completo de SQL com SQL Server para Iniciantes do Básico ao Avançado",
+    "caption": "Complemento prático; observar particularidades de SQL Server.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=KOhd3R5kLks",
+    "channel": "Bóson Treinamentos",
+    "verifiedAt": "2026-09-23",
+    "original": false
+  },
+  {
+    "id": "TI-BD-003-IMG-002",
+    "contentId": "TI-BD-003",
+    "type": "imagem",
+    "title": "Infográfico visual — ordem lógica simplificada de uma consulta SQL",
+    "caption": "Versão visual complementar para o site; manter TI-BD-003-IMG-001 como diagrama preciso de referência.",
+    "alt": "Infográfico em sete etapas mostrando FROM e JOIN, WHERE, GROUP BY, HAVING, SELECT, DISTINCT e ORDER BY, com duas pegadinhas de prova e nota sobre ordem física de execução.",
+    "file": "media/TI-BD-003-IMG-002.png",
+    "verifiedAt": "2026-09-23",
+    "original": true
+  }
+]

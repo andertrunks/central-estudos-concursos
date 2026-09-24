@@ -103,5 +103,117 @@
     "Regra editorial": "Registrar versão/data e data de verificação antes da publicação",
     "Obrigatório": "Sim",
     "Observação": "Conteúdos sujeitos a atualização devem ser revalidados."
+  },
+  {
+    "": "15",
+    "Item": "Gate de conclusão",
+    "Regra editorial": "Não iniciar o próximo tema enquanto o tema atual tiver subtemas essenciais pendentes em COBERTURA_CONTEUDO",
+    "Obrigatório": "Sim",
+    "Observação": "O status 'produzido/concluído' só é permitido quando teoria, exemplos, questões, revisão, fontes e mídias aplicáveis estiverem fechados."
+  },
+  {
+    "": "16",
+    "Item": "Profundidade",
+    "Regra editorial": "Produzir conteúdo completo dentro do escopo do edital; não aceitar resumo genérico como aula final",
+    "Obrigatório": "Sim",
+    "Observação": "Cobrir conceitos, detalhes, exceções, armadilhas, comparações, exemplos progressivos e aplicação em questões."
+  },
+  {
+    "": "17",
+    "Item": "Subaulas",
+    "Regra editorial": "Assuntos extensos podem ser divididos em subaulas mantendo um ID pai permanente",
+    "Obrigatório": "Sim",
+    "Observação": "Ex.: TI-BD-003 como tema pai e TI-BD-003-01...28 como unidades de cobertura."
+  },
+  {
+    "": "18",
+    "Item": "Limite de escopo",
+    "Regra editorial": "Esgotar o assunto dentro do conteúdo programático e da cobrança plausível da banca, sem invadir desnecessariamente IDs vizinhos",
+    "Obrigatório": "Sim",
+    "Observação": "Completo não significa enciclopédico; aprofundar o que é pertinente à prova e referenciar tópicos relacionados."
+  },
+  {
+    "": "19",
+    "Item": "Critério de treino",
+    "Regra editorial": "Tema técnico amplo deve possuir banco de questões suficiente para cobrir todos os subtemas e os estilos das bancas ativas",
+    "Obrigatório": "Sim",
+    "Observação": "Para SQL: meta inicial ≥60 itens comentados, incluindo C/E, múltipla escolha e análise prática."
+  },
+  {
+    "": "20",
+    "Item": "Questões da banca",
+    "Regra editorial": "Antes de concluir qualquer subtema, pesquisar questões anteriores das bancas dos concursos ativos e registrar as referências em QUESTOES_BANCAS",
+    "Obrigatório": "Sim",
+    "Observação": "Priorizar mesma banca + mesma disciplina + mesmo nível/cargo."
+  },
+  {
+    "": "21",
+    "Item": "Gate de banca",
+    "Regra editorial": "Nenhum subtema é encerrado sem busca documentada de questões Quadrix e INDEPAC enquanto esses concursos estiverem ativos",
+    "Obrigatório": "Sim",
+    "Observação": "Se não existir questão exata localizada, registrar busca negativa e usar questão autoral calibrada pelo padrão real da banca."
+  },
+  {
+    "": "22",
+    "Item": "Uso de questões reais",
+    "Regra editorial": "Priorizar prova/caderno oficial; bancos de questões podem ser usados como localizadores de ID/link",
+    "Obrigatório": "Sim",
+    "Observação": "Não copiar em massa conteúdo proprietário. Quando a reprodução oficial for permitida, citar a banca/prova; caso contrário manter link/ID e produzir item autoral equivalente."
+  },
+  {
+    "": "23",
+    "Item": "Calibração atual",
+    "Regra editorial": "CRBio: treinar prioritariamente Certo/Errado Quadrix; SETEC: treinar múltipla escolha de 4 alternativas INDEPAC",
+    "Obrigatório": "Sim",
+    "Observação": "A regra é específica aos editais ativos e deve mudar quando o formato do concurso mudar."
+  },
+  {
+    "": "24",
+    "Item": "Questão anterior literal",
+    "Regra editorial": "Quando existir questão anterior da mesma banca para o subtema, incluir a questão real no material antes de criar questão autoral",
+    "Obrigatório": "Sim",
+    "Observação": "Registrar banca, ano, órgão, cargo, ID da questão/prova e fonte. Não substituir questão real por uma imitação quando ela estiver disponível."
+  },
+  {
+    "": "25",
+    "Item": "Comentário de questão",
+    "Regra editorial": "Toda questão real ou autoral deve ter resposta e explicação própria, mostrando por que a resposta está correta e, quando útil, por que as demais alternativas estão erradas",
+    "Obrigatório": "Sim",
+    "Observação": "Explicação deve ensinar o conceito, não apenas repetir o gabarito."
+  },
+  {
+    "": "26",
+    "Item": "Fallback autoral",
+    "Regra editorial": "Criar questão no padrão da banca somente quando a busca documentada não localizar questão anterior adequada daquele subtema",
+    "Obrigatório": "Sim",
+    "Observação": "Marcar claramente como autoral. Nunca apresentar item criado como questão anterior."
+  },
+  {
+    "": "27",
+    "Item": "Leitura por voz",
+    "Regra editorial": "Redigir para leitura fluida no leitor do Edge: frases completas, parágrafos curtos, listas simples e explicação verbal de símbolos/expressões técnicas",
+    "Obrigatório": "Sim",
+    "Observação": "Não inserir avisos como 'material adaptado para leitura em voz alta'. A adaptação deve ser invisível ao leitor."
+  },
+  {
+    "": "28",
+    "Item": "Código e leitura",
+    "Regra editorial": "Manter código SQL isolado e sempre explicar em prosa o que cada trecho faz, evitando depender apenas da leitura de símbolos",
+    "Obrigatório": "Sim",
+    "Observação": "Quando operadores forem relevantes, explicar por extenso: maior que, menor que, diferente de, e assim por diante."
+  },
+  {
+    "": "29",
+    "Item": "Alternativas e voz",
+    "Regra editorial": "Em questões, escrever cada alternativa em linha própria com 'Alternativa A', 'Alternativa B' etc.; depois informar 'Resposta correta' e 'Explicação'",
+    "Obrigatório": "Sim",
+    "Observação": "Facilita a leitura pelo Edge e evita confusão entre letras e código."
+  },
+  {
+    "": "30",
+    "Item": "Formatação auditiva",
+    "Regra editorial": "Evitar cadeias densas de barras, setas, abreviações não explicadas e tabelas quando uma sequência de frases ou lista simples for suficiente",
+    "Obrigatório": "Sim",
+    "Observação": "A primeira ocorrência de siglas técnicas deve trazer a forma por extenso quando isso ajudar a compreensão."
   }
 ]

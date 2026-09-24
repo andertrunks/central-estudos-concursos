@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-10",
+  "title": "Treino autoral Quadrix 3 — otimização de consulta",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "CRBIO01-2026-ATI",
+  "instructions": "Status: autoral.\n\n\nProposta.\n\n\nUma consulta PostgreSQL filtra uma tabela de milhões de linhas, relaciona outra tabela por chave e ordena o resultado. Um desenvolvedor afirma que basta criar o maior número possível de índices.\n\n\nAnalise a afirmação e explique:\n\n\ncomo índices podem ajudar;\n\n\npor que excesso de índices pode prejudicar o sistema;\n\n\ncomo EXPLAIN e EXPLAIN ANALYZE auxiliam a análise;\n\n\npor que a existência de um índice não obriga o planner a usá-lo.",
+  "modelAnswer": "10.1 Espelho\n\n\nA resposta deve cobrir:\n\n\níndice pode reduzir custo de filtros seletivos e JOINs;\n\n\níndice ocupa espaço e aumenta custo de INSERT, UPDATE e DELETE;\n\n\nSequential Scan pode ser melhor em consultas pouco seletivas;\n\n\nEXPLAIN mostra plano estimado;\n\n\nEXPLAIN ANALYZE executa a instrução e mostra valores reais;\n\n\nestatísticas e seletividade influenciam escolha do plano.\n\n\n10.2 Resposta-modelo\n\n\nA afirmação é incorreta porque índices são estruturas úteis, mas possuem custo. Um índice adequado pode acelerar filtros seletivos e relacionamentos, reduzindo a quantidade de páginas ou linhas que precisam ser examinadas. Entretanto, cada índice ocupa armazenamento e precisa ser mantido em operações de inserção, atualização e exclusão.\n\n\nO PostgreSQL escolhe o plano com base em estimativas de custo. Se a consulta retorna grande parte da tabela, um Sequential Scan pode ser mais barato que acessar muitas linhas por índice. A existência do índice, portanto, não obriga seu uso.\n\n\nEXPLAIN permite observar o plano estimado, os tipos de scan, joins, custos e cardinalidades previstas. EXPLAIN ANALYZE executa a instrução e acrescenta valores reais, permitindo comparar estimativas com execução observada. O tuning deve ser baseado nesse diagnóstico, nas estatísticas e no padrão de carga, e não na simples criação indiscriminada de índices.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

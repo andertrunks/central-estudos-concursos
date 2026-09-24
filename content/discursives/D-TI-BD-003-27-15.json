@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-15",
+  "title": "Treino autoral INDEPAC 3 — transação prática",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "SETEC-2026-ATI",
+  "instructions": "Situação.\n\n\nUma rotina executa:\n\n\nUPDATE conta\nSET saldo = saldo - 500\nWHERE id_conta = 1;\n\n\nUPDATE conta\nSET saldo = saldo + 500\nWHERE id_conta = 2;\n\n\nA primeira instrução termina com sucesso e a segunda falha.\n\n\nPergunta.\n\n\nExplique o problema se as instruções estiverem em autocommit e proponha uma solução transacional.",
+  "modelAnswer": "15.1 Solução esperada\n\n\nBEGIN;\n\n\nUPDATE conta\nSET saldo = saldo - 500\nWHERE id_conta = 1;\n\n\nUPDATE conta\nSET saldo = saldo + 500\nWHERE id_conta = 2;\n\n\nCOMMIT;\n\n\nEm caso de erro:\n\n\nROLLBACK;\n\n\n15.2 Explicação\n\n\nEm autocommit, a primeira atualização pode ser confirmada antes da segunda.\n\n\nSe a segunda falha, a transferência fica incompleta.\n\n\nUma transação explícita permite tratar as duas alterações como uma unidade atômica.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

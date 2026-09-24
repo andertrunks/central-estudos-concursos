@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-14",
+  "title": "Treino autoral INDEPAC 2 — corrigir consulta",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "SETEC-2026-ATI",
+  "instructions": "Situação.\n\n\nFoi escrita a consulta:\n\n\nSELECT c.nome, COUNT(p.id_pedido)\nFROM cliente c\nLEFT JOIN pedido p\n  ON p.id_cliente = c.id_cliente\nWHERE p.status = 'PAGO'\nGROUP BY c.nome;\n\n\nO requisito real é mostrar todos os clientes, inclusive aqueles que não possuem pedido pago.\n\n\nPergunta.\n\n\nExplique o erro e reescreva a consulta.",
+  "modelAnswer": "14.1 Solução esperada\n\n\nSELECT\n  c.id_cliente,\n  c.nome,\n  COUNT(p.id_pedido) AS qtd_pagos\nFROM cliente c\nLEFT JOIN pedido p\n  ON p.id_cliente = c.id_cliente\n AND p.status = 'PAGO'\nGROUP BY c.id_cliente, c.nome;\n\n\n14.2 Explicação\n\n\nO filtro sobre p.status no WHERE elimina linhas em que o lado direito do LEFT JOIN ficou NULL.\n\n\nCom isso, clientes sem pedido pago deixam de aparecer.\n\n\nMover o filtro para ON limita quais pedidos podem corresponder, mas preserva a linha do cliente.\n\n\nCOUNT(p.id_pedido) retorna zero quando nenhuma linha de pedido pago existe.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

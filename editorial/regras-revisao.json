@@ -61,5 +61,41 @@
     "Duração sugerida": "Conforme prova",
     "Questões": "40 → 60 → 80 → 120 itens",
     "Destino dos erros": "05_SIMULADOS + caderno de erros"
+  },
+  {
+    "": "7",
+    "Regra": "TI-BD-003 D0",
+    "Quando": "23/09/2026",
+    "Ação": "Revisão ativa do mapa mental + ordem lógica + NULL/JOIN/agregações",
+    "Duração sugerida": "10–15 min",
+    "Questões": "5–10 itens",
+    "Destino dos erros": "04_CADERNO_DE_ERROS se houver erro"
+  },
+  {
+    "": "8",
+    "Regra": "TI-BD-003 D1",
+    "Quando": "24/09/2026",
+    "Ação": "Revisar resumo e mídias + recuperar conceitos sem consultar",
+    "Duração sugerida": "15–20 min",
+    "Questões": "10 itens",
+    "Destino dos erros": "04_CADERNO_DE_ERROS"
+  },
+  {
+    "": "9",
+    "Regra": "TI-BD-003 D7",
+    "Quando": "30/09/2026",
+    "Ação": "Questões reais Quadrix + flashcards + análise de consulta",
+    "Duração sugerida": "25–35 min",
+    "Questões": "15–20 itens",
+    "Destino dos erros": "Reclassificar dificuldades"
+  },
+  {
+    "": "10",
+    "Regra": "TI-BD-003 D21",
+    "Quando": "14/10/2026",
+    "Ação": "Revisão cumulativa + discursiva/prática + questões de erros reincidentes",
+    "Duração sugerida": "35–50 min",
+    "Questões": "20–30 itens",
+    "Destino dos erros": "Prioridade +1 para reincidências"
   }
 ]

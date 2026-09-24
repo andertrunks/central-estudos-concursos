@@ -1,15 +1,15 @@
 # Checkpoint técnico
 
-- Última leitura do Drive: 2026-09-23; controle modificado em 2026-09-23T17:56:38.592Z.
-- Snapshot: `editorial/snapshots/2026-09-23.csv`; detalhes em `editorial/last-sync.json`.
-- Importado: 2 concursos, 77 referências permanentes, 10 semanas, 2 fontes de edital.
-- Última aula importada: nenhuma. Pastas de aulas e fila de publicação vazias; planilha tem 7 itens a produzir.
-- Último build local: 2026-09-23, integridade, TypeScript e geração PWA bem-sucedidos; 23 testes passaram, lint sem erros.
-- Navegador: 9 rotas verificadas sem violações WCAG A/AA automatizadas, 390px sem overflow, IndexedDB persistente, reload offline e 0 chamadas ao Drive privado. Evidência: teste `tests/browser.e2e.ts`.
-- Último deploy e commit publicado: consultar o artefato `deployment-checkpoint` da última execução bem-sucedida de `Validate and publish`. Ele é gerado após a publicação e contém commit exato, horário, URL e última sincronização. Confirmar o commit contra `https://andertrunks.github.io/central-estudos-concursos/version.json`.
-- Repositório: `https://github.com/andertrunks/central-estudos-concursos`, branch `main`.
-- Erros locais pendentes: nenhum identificado nas verificações realizadas. A primeira publicação será executada pelo workflow incluído neste commit.
-- Pendências editoriais: requisitos e versão do edital ausentes; todas as aulas/mídias/questões/simulados/discursivas aguardam produção canônica.
-- Retomada: conferir `git status`, rodar `npm run check`, testar navegador, consultar workflow de deploy. Não marcar fila como publicada sem conteúdo real e verificação remota.
+- Última leitura editorial: 24/09/2026. Controle SQL modificado em 2026-09-24T00:29:18.822Z; documento principal em 2026-09-24T00:30:15.899Z.
+- Snapshot preservado: editorial/snapshots/2026-09-23-sql-ready.csv. A leitura inicial continua em 2026-09-23.csv.
+- Catálogo: 2 concursos, 77 referências permanentes, 10 semanas, 98 fontes.
+- Conteúdo integrado: TI-BD-003, 28 subtemas, 252 questões objetivas, 36 exercícios abertos no caderno integral, 9 propostas discursivas, 2 imagens e 3 vídeos. Proveniência: editorial/sql-import.json.
+- Fila: PUB-0001, pacote vindo dos documentos canônicos. A pasta física 08 estava vazia; a fila da planilha estava pronta para validação. Recibo: editorial/receipts/PUB-0001.json.
+- Verificação: npm run check exige lint, TypeScript estrito, 26 testes, integridade e build. tests/browser.e2e.ts verifica rotas, acessibilidade, mobile, IndexedDB, questões, discursivas, imagens e offline.
+- Último deploy/commit: consultar artefato deployment-checkpoint da última execução bem-sucedida de Validate and publish. Confirmar SHA contra https://andertrunks.github.io/central-estudos-concursos/version.json.
+- Repositório: https://github.com/andertrunks/central-estudos-concursos, branch main.
+- Pendências editoriais: outros 76 assuntos, simulados completos, requisitos e versão dos editais ausentes no controle. Exercícios abertos não têm correção automática. Textos históricos preservam contagens anteriores; auditoria final registra 59 referências reais únicas.
+- Limite conhecido: catálogo carregado integralmente na V1; o texto SQL aumenta o pacote inicial. O build bloqueia recursos grandes demais para o cache PWA. Antes de ampliar muito a biblioteca, separar carregamento por aula, mantendo os mesmos contratos e IDs.
+- Retomada: verificar Git, recibo, último workflow e checkpoint gerado. Só dar baixa no Drive depois de verificar exatamente a versão implantada. Não refazer publicação já confirmada nem apagar histórico.
 
-O checkpoint de deploy é um artefato gerado, evitando um commit autorreferente. Para recuperar: `gh run download ID_DA_EXECUCAO -n deployment-checkpoint`. Os builds seguintes renovam esse registro automaticamente.
+O checkpoint de deploy é gerado após a implantação, evitando commit autorreferente. Recuperar com gh run download ID_DA_EXECUCAO -n deployment-checkpoint. A baixa do Drive e sua conferência são registradas no recibo de publicação.

@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-17",
+  "title": "Treino autoral INDEPAC 5 — análise de dialeto",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "SETEC-2026-ATI",
+  "instructions": "Situação.\n\n\nUm desenvolvedor precisa:\n\n\nlimitar o resultado às dez primeiras linhas;\n\n\nconcatenar nome e sobrenome;\n\n\ndevolver o identificador gerado por um INSERT.\n\n\nPergunta.\n\n\nExplique como essas tarefas podem ser realizadas no PostgreSQL e no SQL Server, destacando diferenças de sintaxe.",
+  "modelAnswer": "17.1 Espelho\n\n\nPostgreSQL:\n\n\nLIMIT 10 ou FETCH FIRST;\n\n\nconcatenação com duas barras verticais ou CONCAT;\n\n\nINSERT ... RETURNING.\n\n\nSQL Server:\n\n\nTOP (10) ou OFFSET/FETCH conforme o caso;\n\n\nCONCAT ou operador mais em cenários de texto;\n\n\nOUTPUT em operações DML.\n\n\n17.2 Resposta-modelo\n\n\nNo PostgreSQL, a limitação pode ser feita com LIMIT 10 ou com FETCH FIRST 10 ROWS ONLY. Para concatenação, podem ser usados o operador formado por duas barras verticais ou a função CONCAT. Para obter dados da linha inserida, a cláusula RETURNING é apropriada.\n\n\nNo SQL Server, TOP (10) é uma forma típica de limitar linhas na lista SELECT, enquanto OFFSET e FETCH podem ser usados com ORDER BY para paginação. CONCAT é uma função de concatenação disponível no produto, e o operador mais também aparece em expressões textuais. Para retornar dados de linhas modificadas, utiliza-se OUTPUT.\n\n\nOs recursos são semelhantes em finalidade, mas as palavras-chave e detalhes não são intercambiáveis entre os produtos.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

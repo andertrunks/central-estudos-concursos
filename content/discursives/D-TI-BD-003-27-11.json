@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-11",
+  "title": "Treino autoral Quadrix 4 — constraints e DML",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "CRBIO01-2026-ATI",
+  "instructions": "Status: autoral.\n\n\nProposta.\n\n\nUma tabela pedidos possui:\n\n\nPRIMARY KEY em id_pedido;\n\n\nFOREIGN KEY em id_cliente;\n\n\nCHECK exigindo valor_total maior que zero;\n\n\nNOT NULL em data_pedido.\n\n\nExplique o efeito dessas regras sobre INSERT e UPDATE e descreva o que pode ocorrer em DELETE de um cliente referenciado por pedidos.",
+  "modelAnswer": "11.1 Espelho\n\n\nPRIMARY KEY:\n\n\nnão aceita duplicidade nem NULL.\n\n\nFOREIGN KEY:\n\n\nexige cliente correspondente, salvo regras específicas de NULL.\n\n\nCHECK:\n\n\nvalida condição da linha.\n\n\nNOT NULL:\n\n\nproíbe ausência de data.\n\n\nUPDATE também é validado.\n\n\nDELETE do cliente depende da ação da foreign key:\n\n\nNO ACTION;\n\n\nRESTRICT;\n\n\nCASCADE;\n\n\nSET NULL;\n\n\nSET DEFAULT.\n\n\n11.2 Resposta-modelo\n\n\nAs constraints são verificadas tanto em inserções quanto em alterações. A PRIMARY KEY impede id_pedido duplicado ou nulo. A FOREIGN KEY exige que id_cliente represente um cliente válido, quando o valor é obrigatório. O CHECK rejeita linhas cujo valor_total não satisfaça a condição definida, e NOT NULL impede que data_pedido seja armazenada como nula.\n\n\nUPDATE não ignora essas regras. Alterar id_cliente para um identificador inexistente ou valor_total para uma quantia incompatível também provoca violação.\n\n\nAo excluir um cliente referenciado, o resultado depende da ação configurada na foreign key. RESTRICT ou NO ACTION podem impedir a exclusão; CASCADE pode remover pedidos dependentes; SET NULL ou SET DEFAULT podem modificar a chave filha, desde que as demais constraints permitam o novo valor.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

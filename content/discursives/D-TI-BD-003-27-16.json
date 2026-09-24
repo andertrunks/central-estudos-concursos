@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-16",
+  "title": "Treino autoral INDEPAC 4 — INSERT com integridade",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "SETEC-2026-ATI",
+  "instructions": "Situação.\n\n\nA tabela pedido possui:\n\n\nid_pedido PRIMARY KEY;\n\n\nid_cliente NOT NULL com FOREIGN KEY para cliente;\n\n\nvalor CHECK maior que zero;\n\n\nsituacao DEFAULT 'ABERTO'.\n\n\nAvalie a tentativa:\n\n\nINSERT INTO pedido (id_pedido, id_cliente, valor)\nVALUES (100, 9999, -50);\n\n\nPergunta.\n\n\nIndique as possíveis violações e explique o valor da coluna situacao.",
+  "modelAnswer": "16.1 Solução esperada\n\n\nA instrução pode violar:\n\n\nFOREIGN KEY, se o cliente 9999 não existir;\n\n\nCHECK, porque o valor é negativo.\n\n\nsituacao foi omitida.\n\n\nSe a definição da coluna possui DEFAULT 'ABERTO', o valor padrão é solicitado para essa coluna.\n\n\n16.2 Explicação\n\n\nSintaxe correta não garante sucesso.\n\n\nAs constraints são verificadas durante a inserção.\n\n\nDEFAULT não corrige violations de outras colunas.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

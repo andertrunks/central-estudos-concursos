@@ -1,0 +1,14 @@
+{
+  "id": "D-TI-BD-003-27-09",
+  "title": "Treino autoral Quadrix 2 — transações e integridade",
+  "theme": "SQL — treino autoral",
+  "contentIds": [
+    "TI-BD-003"
+  ],
+  "contestId": "CRBIO01-2026-ATI",
+  "instructions": "Status: autoral.\n\n\nProposta.\n\n\nUma aplicação realiza três operações:\n\n\ninsere um pedido;\n\n\nreduz o estoque;\n\n\nregistra o pagamento.\n\n\nExplique por que essas operações devem ser tratadas como uma transação, relacione o cenário às propriedades ACID e descreva o papel de COMMIT, ROLLBACK e SAVEPOINT.",
+  "modelAnswer": "9.1 Espelho\n\n\nAtomicidade:\n\n\nou todas as etapas ficam confirmadas ou a unidade é revertida.\n\n\nConsistência:\n\n\nconstraints e regras devem permanecer válidas.\n\n\nIsolamento:\n\n\noperações concorrentes não podem produzir efeitos incompatíveis com o nível adotado.\n\n\nDurabilidade:\n\n\ndepois do COMMIT, as alterações confirmadas devem persistir.\n\n\nCOMMIT confirma.\n\n\nROLLBACK cancela a transação pendente.\n\n\nSAVEPOINT cria um ponto intermediário.\n\n\nROLLBACK TO permite retorno parcial.\n\n\n9.2 Resposta-modelo\n\n\nAs três operações pertencem ao mesmo objetivo de negócio e devem ser tratadas como uma unidade transacional. Se o pedido for gravado, mas o estoque não for reduzido ou o pagamento falhar definitivamente, o banco poderá registrar um estado incoerente.\n\n\nA atomicidade exige que o conjunto seja confirmado ou revertido como unidade. A consistência determina que constraints e regras permaneçam válidas. O isolamento regula a interação com outras transações concorrentes, evitando resultados incompatíveis com o nível configurado. A durabilidade assegura que, depois do COMMIT, as alterações confirmadas persistam conforme o mecanismo de recuperação do SGBD.\n\n\nCOMMIT confirma a unidade de trabalho. ROLLBACK desfaz as alterações ainda não confirmadas. SAVEPOINT cria um marco intermediário dentro da transação, permitindo ROLLBACK TO quando se deseja desfazer apenas o trecho posterior ao ponto, sem necessariamente cancelar tudo desde o início.",
+  "source_ids": [
+    "SRC-QUAD-DISC-GUIDE-001"
+  ]
+}

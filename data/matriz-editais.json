@@ -1058,10 +1058,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "Conteúdo SQL completo e auditado: 28/28 subtemas concluídos; 288 questões autorais comentadas; questões reais Quadrix, discursivas, fontes, mídias e revisão final registradas. Aguardando validação/publicação."
   },
   {
     "id": "TI-BD-004",
