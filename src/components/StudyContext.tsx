@@ -34,9 +34,9 @@ export function StudyProvider({ children }: { children: ReactNode }) {
         setState(s);
         setReady(true);
       })
-      .catch(() =>
+      .catch((cause: unknown) =>
         setError(
-          "Não foi possível abrir o armazenamento local. Verifique as permissões do navegador.",
+          cause instanceof Error ? cause.message : "Não foi possível abrir o armazenamento local. Verifique as permissões do navegador.",
         ),
       );
   }, []);

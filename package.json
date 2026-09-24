@@ -11,6 +11,7 @@
     "validate": "tsx scripts/validate.ts",
     "build": "npm run validate && tsc --noEmit && vite build && tsx scripts/stamp.ts",
     "test:browser": "tsx tests/browser.e2e.ts",
+    "test:trail": "tsx tests/trail.e2e.ts",
     "preview": "vite preview",
     "sync": "tsx scripts/sync.ts",
     "queue": "tsx scripts/queue.ts",

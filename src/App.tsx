@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import Dashboard from "./pages/Dashboard";
+import StudyActivity from './pages/StudyActivity';
 import { Contests, ContestDetail, Library, Cycle } from "./pages/CatalogPages";
 import LessonPage from "./pages/LessonPage";
 import { Questions, Reviews, Errors } from "./pages/Practice";
@@ -10,7 +11,7 @@ import Settings from "./pages/Settings";
 import { Empty } from "./components/Common";
 import { useStudy } from "./components/StudyContext";
 const navigation = [
-  ["/", "Visão geral", "◫"],
+  ["/", "Estudar", "◫"],
   ["/concursos", "Concursos", "⚑"],
   ["/biblioteca", "Biblioteca", "▤"],
   ["/questoes", "Questões", "◎"],
@@ -128,6 +129,7 @@ export default function App() {
           {!ready && !error && <p role="status">Carregando seu progresso…</p>}
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/estudar/:id" element={<StudyActivity />} />
             <Route path="/concursos" element={<Contests />} />
             <Route path="/concursos/:id" element={<ContestDetail />} />
             <Route path="/biblioteca" element={<Library />} />

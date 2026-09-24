@@ -5,6 +5,7 @@ import { setProgress } from "../services/storage";
 import { useStudy } from "../components/StudyContext";
 import { Empty, formatDate, PageHeading, Prose } from "../components/Common";
 import { QuestionList } from "./Practice";
+import { ContinueStudy } from '../components/ContinueStudy';
 export default function LessonPage() {
   const { id } = useParams();
   const ref = catalog.references.find((r) => r.id === id);
@@ -209,6 +210,7 @@ export default function LessonPage() {
               <p>Atualização da aula: {formatDate(lesson.updatedAt)}</p>
             </section>
           </article>
+          <ContinueStudy />
         </>
       )}
     </>

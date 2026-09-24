@@ -25,7 +25,7 @@ const checks: string[] = [];
 try {
   await page.goto(base);
   await expect(
-    page.getByRole("heading", { name: "Um pouco a cada dia." }),
+    page.getByRole("heading", { name: "Continuar estudando" }),
   ).toBeVisible();
   await page.waitForFunction(()=>navigator.serviceWorker.getRegistration().then(r=>Boolean(r?.active)),undefined,{timeout:30_000});
   await expect(page.getByRole("button", { name: "Entendi" })).toBeVisible({
@@ -185,7 +185,7 @@ try {
   await context.setOffline(true);
   await page.goto(base);
   await expect(
-    page.getByRole("heading", { name: "Um pouco a cada dia." }),
+    page.getByRole("heading", { name: "Continuar estudando" }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Biblioteca", exact: true }).click();
   await expect(page.locator(".content-card")).toHaveCount(77);

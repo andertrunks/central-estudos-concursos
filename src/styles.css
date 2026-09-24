@@ -436,7 +436,7 @@ main {
   font-weight: 550;
 }
 .metrics small {
-  color: #6c7b70;
+  color: #59675d;
   font-size: 0.95rem;
   font-weight: 400;
 }
@@ -1008,3 +1008,13 @@ footer span {
     font-size: 0.88rem;
   }
 }
+
+/* Guided study uses the existing palette and accessible controls. */
+.trail-overview { border-top: 4px solid #123d3a; padding: clamp(1.25rem, 4vw, 2.5rem); }
+.trail-overview h2 { max-width: 35ch; }
+.continue-study { margin: 1.5rem 0; }
+.continue-study .button, .activity-actions .button { min-height: 52px; font-size: 1.05rem; }
+.activity-actions { position: relative; }
+.prose p { white-space: pre-wrap; margin: 0 0 1.2em; }
+.prose h2 { white-space: normal; margin: 1.8em 0 .7em; }
+@media (max-width: 640px) { .continue-study .button, .activity-actions .button { width: 100%; } }

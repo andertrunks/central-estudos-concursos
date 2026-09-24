@@ -22,3 +22,14 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Próxima execução: inspecionar os novos itens prontos na fila, reconciliar status de mídia pendente e validar cada pacote antes de importar. Não reimportar SQL nem sobrescrever sua baixa.
 
 - Fila posterior observada: PUB-0002 (Redes), PUB-0003 (Segurança) e PUB-0004 (Governança) prontos para validação; PUB-0005 (LGPD) em produção. Redes e Segurança ainda têm Status mídia pendente. A matriz de Redes usa status livre parcial — RED-001 reutilizado em auditoria, fora do vocabulário aceito pelo importador; normalizar na fonte antes da próxima sincronização, preservando a observação.
+
+## Evolução da trilha — 24/09/2026
+
+- Branch de implementação: `feat/guided-study`, baseada em `cce7e5e`. Login separado: os dois rascunhos locais foram preservados em `work/account-sync-deferred/`, aguardando autorização de serviço externo.
+- Nova leitura de controle: `editorial/snapshots/2026-09-24-trail-audit.csv`; auditoria por referência/subtema em `editorial/study-coverage-audit.json` e explicação em `docs/AUDITORIA-2026-09-24.md`. Esse snapshot não foi aplicado integralmente à fila/site.
+- Sem novas aulas: textos canônicos preservados. 252 questões explicitamente inéditas; 112 vínculos de subtema extraídos dos cabeçalhos canônicos; 140 cumulativas. Seções de fechamento ligadas aos materiais já publicados.
+- Nova rota `/estudar/:id`, entrada Continuar estudando, etapas permanentes, revisões intercaladas, questões, reforço, retomada e conclusão transacional. IndexedDB versão 2 acrescenta atividades, preserva dados legados e inclui atividades no backup.
+- Validação local: lint, typecheck, 41 testes e build PWA aprovados. Teste de trilha no Edge: aceitação completa, compartilhamento, erro, reload, mobile, backup e offline aprovados. Regressão anterior aprovada, nove rotas e acessibilidade automatizada sem violações. Contraste do contador da página inicial corrigido.
+- Build: aproximadamente 1,75 MB de JavaScript bruto / 366 KB gzip; cache PWA 3,24 MiB, dentro do limite. Alerta de bundle grande registrado, não desativado.
+- Publicação desta evolução: aguardando commit, workflow e verificação pública no momento deste registro. Conferir `version.json` e artefato `deployment-checkpoint`; registrar recibo técnico após confirmação, sem dar baixa em pacotes editoriais que não foram importados.
+- Próximo passo editorial: validar pacotes reais das outras disciplinas. Não apresentar os 76 assuntos sem aula como estudáveis. Metadados novos e algoritmo documentados em `docs/TRILHA-DE-ESTUDOS.md`.

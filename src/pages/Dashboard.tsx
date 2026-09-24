@@ -1,10 +1,10 @@
+import { TrailOverview } from '../components/ContinueStudy';
 import { Link } from "react-router-dom";
 import { catalog } from "../services/catalog";
 import {
   activeContests,
   daysUntil,
   focusContest,
-  nextStudy,
   today,
 } from "../services/study";
 import {
@@ -19,7 +19,7 @@ export default function Dashboard() {
   const now = today();
   const active = activeContests(catalog);
   const focus = focusContest(catalog);
-  const next = nextStudy(catalog, state.progress, state.reviews);
+
   const week = catalog.cycle.find((w) => w.start <= now && w.end >= now);
   const due = state.reviews.filter((r) => !r.doneAt && r.due <= now).length;
   const errors = state.attempts.filter(
@@ -29,11 +29,13 @@ export default function Dashboard() {
     <>
       <PageHeading
         eyebrow="SEU ESPAÇO DE PREPARAÇÃO"
-        title="Um pouco a cada dia."
+        title="Continuar estudando"
       >
-        Construa conhecimento que acompanha você em cada novo concurso.
+        Sua próxima atividade já está organizada. Estude, conclua e continue.
       </PageHeading>
-      <section className="hero-grid">
+      <TrailOverview />
+      <p className="small muted section-space">{catalog.lessons.length} de {catalog.references.length} assuntos com aula publicada. A trilha utiliza o material disponível; os demais aguardam publicação.</p>
+      <section className="section-space">
         <article className="next-exam">
           <p className="eyebrow">PRÓXIMA PROVA</p>
           {focus ? (
@@ -63,37 +65,7 @@ export default function Dashboard() {
             </>
           )}
         </article>
-        <article className="card study-now">
-          <div className="card-top">
-            <p className="eyebrow">ESTUDAR AGORA</p>
-            <span className="badge neutral">
-              {week?.week ?? "Ciclo contínuo"}
-            </span>
-          </div>
-          {next ? (
-            <>
-              <h2>{next.ref.title}</h2>
-              <p>{next.reasons.join(" · ")}</p>
-              <Link className="button" to={`/biblioteca/${next.ref.id}`}>
-                Começar estudo →
-              </Link>
-            </>
-          ) : (
-            <>
-              <h2>Sua biblioteca está sendo preparada</h2>
-              <p>
-                Os tópicos dos editais já estão organizados. As aulas aparecerão
-                aqui assim que passarem pela revisão editorial.
-              </p>
-              <Link className="button" to="/biblioteca">
-                Explorar os assuntos →
-              </Link>
-              <p className="small muted">
-                Nenhuma aula publicada até o momento.
-              </p>
-            </>
-          )}
-        </article>
+
       </section>
       <section className="metrics" aria-label="Resumo de estudos">
         <Link to="/revisoes">

@@ -5,7 +5,12 @@ import { catalog } from "../services/catalog";
 import { contestProgress, effectiveStatus } from "../services/study";
 import { useStudy } from "./StudyContext";
 export function Prose({ text }: { text: string }) {
-  return <div className="prose">{text.replace(/\n{3,}/g, "\n\n")}</div>;
+  const blocks = text.replace(/\r/g, '').split(/\n\s*\n/).filter(block => !/^Material adaptado para leitura em voz alta[.\s]*$/i.test(block.trim()));
+  return <div className="prose">{blocks.map((block, i) => {
+    if (/^\d+\.\d+\s+\S/.test(block) && !block.includes('\n') && block.length < 150)
+      return <h2 key={i}>{block.replace(/^\d+\.\d+\s+/, '')}</h2>;
+    return <p key={i}>{block}</p>;
+  })}</div>;
 }
 export function formatDate(value: string | null) {
   return value

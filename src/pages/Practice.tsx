@@ -7,19 +7,20 @@ import {
   recordAnswer,
   resolveError,
 } from "../services/storage";
-import { reviewGroup } from "../services/study";
+import { reviewGroup, today } from "../services/study";
+import { ContinueStudy } from '../components/ContinueStudy';
 import type { Question, Attempt } from "../types/schema";
 import { useStudy } from "../components/StudyContext";
 import { Empty, formatDate, PageHeading } from "../components/Common";
-export function QuestionCard({ question: q }: { question: Question }) {
+export function QuestionCard({ question: q, activityId, initialAttempt }: { question: Question; activityId?: string; initialAttempt?: Attempt }) {
   const { run, ready } = useStudy();
-  const [answer, setAnswer] = useState("");
-  const [attempt, setAttempt] = useState<Attempt | null>(null);
+  const [answer, setAnswer] = useState(initialAttempt?.answer ?? "");
+  const [attempt, setAttempt] = useState<Attempt | null>(initialAttempt ?? null);
   const [busy, setBusy] = useState(false);
   async function submit() {
     setBusy(true);
     try {
-      await run(async () => setAttempt(await recordAnswer(q, answer)));
+      await run(async () => setAttempt(await recordAnswer(q, answer, 'conteúdo', today(), activityId)));
     } catch {
       /* Provider displays persistence error. */
     } finally {
@@ -29,8 +30,9 @@ export function QuestionCard({ question: q }: { question: Question }) {
   return (
     <article className="card section-space">
       <p className="eyebrow">
-        {q.banca} · {q.type} · {q.id}
+        {q.banca} · {q.type} · {q.id}{q.origin === 'inédita' ? ' · Questão inédita' : q.origin === 'real' ? ' · Prova anterior' : ''}
       </p>
+      {q.provenance && <p className="small">{q.provenance.orgao} · {q.provenance.prova} · {q.provenance.year} · {q.provenance.cargo} · <a href={q.provenance.url} target="_blank" rel="noreferrer">Fonte da questão</a></p>}
       <fieldset disabled={!!attempt || busy || !ready}>
         <legend className="question-statement">{q.statement}</legend>
         {q.options.map((o) => (
@@ -168,6 +170,7 @@ export function QuestionList({ questions }: { questions: Question[] }) {
       <button disabled={current === 0} onClick={() => setPage(current - 1)}>Anteriores</button>
       <button disabled={current + 1 >= pages} onClick={() => setPage(current + 1)}>Próximas</button>
     </div>
+    <ContinueStudy />
   </>;
 }
 export function Reviews() {
@@ -228,6 +231,7 @@ export function Reviews() {
           </section>
         );
       })}
+      <ContinueStudy />
     </>
   );
 }
@@ -294,6 +298,7 @@ export function Errors() {
           classificar a causa.
         </Empty>
       )}
+      <ContinueStudy />
     </>
   );
 }

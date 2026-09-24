@@ -10,7 +10,8 @@ import { today } from "../services/study";
 import { saveWriting, completeSimulation } from "../services/storage";
 import { useStudy } from "../components/StudyContext";
 import { Empty, PageHeading, formatDate, Prose } from "../components/Common";
-function WritingEditor({ proposal: d }: { proposal: Discursive }) {
+import { ContinueStudy } from '../components/ContinueStudy';
+export function WritingEditor({ proposal: d, showContinue = true }: { proposal: Discursive; showContinue?: boolean }) {
   const { state, run, ready } = useStudy();
   const previous = state.writings.find((w) => w.id === d.id);
   const [text, setText] = useState(previous?.text ?? "");
@@ -78,6 +79,7 @@ function WritingEditor({ proposal: d }: { proposal: Discursive }) {
         </button>
       </div>
       <p role="status">{message}</p>
+      {showContinue && previous?.status === 'concluída' && <ContinueStudy />}
     </article>
   );
 }
@@ -102,7 +104,7 @@ export function Discursives() {
     </>
   );
 }
-function SimulationRunner({ simulation: s }: { simulation: Simulation }) {
+export function SimulationRunner({ simulation: s, showContinue = true }: { simulation: Simulation; showContinue?: boolean }) {
   const { run } = useStudy();
   const [started, setStarted] = useState<number | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -176,6 +178,7 @@ function SimulationRunner({ simulation: s }: { simulation: Simulation }) {
       {result ? (
         <div role="status">
           <h3>Resultado: {result.score} pontos</h3>
+          {showContinue && <ContinueStudy />}
           <p>
             {result.correct} acertos · {result.wrong} erros ·{" "}
             {result.unanswered} em branco · {result.seconds}s
