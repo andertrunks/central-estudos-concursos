@@ -13,3 +13,12 @@
 - Retomada: verificar Git, recibo, último workflow e checkpoint gerado. Só dar baixa no Drive depois de verificar exatamente a versão implantada. Não refazer publicação já confirmada nem apagar histórico.
 
 O checkpoint de deploy é gerado após a implantação, evitando commit autorreferente. Recuperar com gh run download ID_DA_EXECUCAO -n deployment-checkpoint. A baixa do Drive e sua conferência são registradas no recibo de publicação.
+
+## Encerramento de PUB-0001
+
+- SQL publicado e verificado no commit 8b9f51f5b1694bb3c9214b025dd6ddf200ae0205. Lint, typecheck, 26 testes, build e teste completo no navegador público aprovados.
+- Status publicado confirmado em FILA_PUBLICACAO!G2/I2 e MATRIZ_EDITAIS!J45. Recibo gravado na pasta 09_PUBLICADO: 1qLBNWJWm3QgL7Gg4Gbbw03Ob7dDkRAK6.
+- Snapshot pós-publicação preservado em editorial/snapshots/2026-09-24-post-publication.csv, ainda NÃO aplicado integralmente ao site: contém novos pacotes produzidos por outro fluxo durante a implantação, incluindo Redes e Segurança. O catálogo publicado corresponde ao pacote SQL validado, com 98 fontes; a leitura posterior contém 132 fontes.
+- Próxima execução: inspecionar os novos itens prontos na fila, reconciliar status de mídia pendente e validar cada pacote antes de importar. Não reimportar SQL nem sobrescrever sua baixa.
+
+- Fila posterior observada: PUB-0002 (Redes), PUB-0003 (Segurança) e PUB-0004 (Governança) prontos para validação; PUB-0005 (LGPD) em produção. Redes e Segurança ainda têm Status mídia pendente. A matriz de Redes usa status livre parcial — RED-001 reutilizado em auditoria, fora do vocabulário aceito pelo importador; normalizar na fonte antes da próxima sincronização, preservando a observação.
