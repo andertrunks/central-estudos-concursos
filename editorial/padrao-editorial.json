@@ -1,0 +1,107 @@
+[
+  {
+    "": "0",
+    "Item": "ID permanente",
+    "Regra editorial": "Toda aula deve possuir ID estável e reutilizável",
+    "Obrigatório": "Sim",
+    "Observação": "Nunca reutilizar ID para conteúdo diferente"
+  },
+  {
+    "": "1",
+    "Item": "Estrutura",
+    "Regra editorial": "Objetivos → teoria → exemplos → pegadinhas → resumo → questões → gabarito comentado → revisão",
+    "Obrigatório": "Sim",
+    "Observação": "Adaptar profundidade ao edital"
+  },
+  {
+    "": "2",
+    "Item": "Referência ao edital",
+    "Regra editorial": "Indicar concursos e tópicos do edital atendidos",
+    "Obrigatório": "Sim",
+    "Observação": "Uma aula pode atender vários concursos"
+  },
+  {
+    "": "3",
+    "Item": "Imagem didática",
+    "Regra editorial": "Criar ao menos 1 imagem original por aula quando o tema admitir representação visual",
+    "Obrigatório": "Sim",
+    "Observação": "Preferir diagramas, fluxos, mapas conceituais e esquemas; evitar imagem meramente decorativa"
+  },
+  {
+    "": "4",
+    "Item": "Acessibilidade da imagem",
+    "Regra editorial": "Registrar título, legenda e texto alternativo",
+    "Obrigatório": "Sim",
+    "Observação": "Descrição objetiva do conteúdo visual"
+  },
+  {
+    "": "5",
+    "Item": "Vídeos do YouTube",
+    "Regra editorial": "Adicionar de 1 a 3 vídeos relevantes e verificados",
+    "Obrigatório": "Sim",
+    "Observação": "Priorizar fontes confiáveis, conteúdo atualizado e alinhado ao escopo do edital"
+  },
+  {
+    "": "6",
+    "Item": "Uso dos vídeos",
+    "Regra editorial": "Vídeo é complemento, nunca substituto da aula",
+    "Obrigatório": "Sim",
+    "Observação": "Registrar canal, título, URL, duração quando disponível e tópico relacionado"
+  },
+  {
+    "": "7",
+    "Item": "Verificação de vídeo",
+    "Regra editorial": "Checar se o vídeo está disponível e corresponde ao título/tema antes da publicação",
+    "Obrigatório": "Sim",
+    "Observação": "Evitar playlists genéricas quando houver vídeo específico melhor"
+  },
+  {
+    "": "8",
+    "Item": "Questões",
+    "Regra editorial": "Incluir treino compatível com a banca quando possível",
+    "Obrigatório": "Sim",
+    "Observação": "Para Quadrix, treinar certo/errado e penalização"
+  },
+  {
+    "": "9",
+    "Item": "Discursiva",
+    "Regra editorial": "Quando o assunto for candidato natural a discursiva, adicionar proposta de treino",
+    "Obrigatório": "Quando aplicável",
+    "Observação": "Segurança, LGPD, governança, contratação, redes, BD etc."
+  },
+  {
+    "": "10",
+    "Item": "Atualização",
+    "Regra editorial": "Revisar conteúdo quando edital, lei, norma ou tecnologia mudar",
+    "Obrigatório": "Sim",
+    "Observação": "Registrar data e fonte da revisão"
+  },
+  {
+    "": "11",
+    "Item": "Mídia no Drive",
+    "Regra editorial": "Imagem e metadados de vídeo devem acompanhar o conteúdo antes de entrar em publicação",
+    "Obrigatório": "Sim",
+    "Observação": "Work só publica aula completa ou explicitamente marcada como exceção"
+  },
+  {
+    "": "12",
+    "Item": "Fontes",
+    "Regra editorial": "Toda aula deve declarar source_ids vinculados ao cadastro FONTES",
+    "Obrigatório": "Sim",
+    "Observação": "Aplicar PADRAO_FONTES; priorizar P1/P2."
+  },
+  {
+    "": "13",
+    "Item": "Hierarquia de fontes",
+    "Regra editorial": "Usar P1/P2 como base factual; S1 para aprofundamento; C1 como complemento; D1 apenas descoberta",
+    "Obrigatório": "Sim",
+    "Observação": "Nunca elevar fonte complementar acima de fonte oficial."
+  },
+  {
+    "": "14",
+    "Item": "Verificação de fontes",
+    "Regra editorial": "Registrar versão/data e data de verificação antes da publicação",
+    "Obrigatório": "Sim",
+    "Observação": "Conteúdos sujeitos a atualização devem ser revalidados."
+  }
+]

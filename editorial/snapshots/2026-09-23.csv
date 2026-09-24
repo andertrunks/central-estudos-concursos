@@ -1,0 +1,186 @@
+,ID_CONCURSO,Órgão,Cargo,Banca,Local,Inscrição início,Inscrição fim,Data da prova,Status,Vagas,Salário base,Benefícios principais,Jornada,Estrutura objetiva,Discursiva,Edital oficial,Pasta Drive,Observações
+0,CRBIO01-2026-ATI,CRBio-01,Analista – Analista de Tecnologia da Informação,Instituto Quadrix,São Paulo/SP,21/09/2026,21/10/2026,29/11/2026,inscrições abertas,"30 CR (18 AC, 2 PcD, 8 PN, 1 PI, 1 PQ)",7181.5,VR R$ 1.540; VA R$ 950; plano de saúde; plano de carreira; vale-transporte,40h/semana,120 itens: 40 básicos + 30 complementares + 50 específicos,20–30 linhas sobre conhecimentos específicos,https://anexos-r2.selecao.net.br/uploads/861/concursos/3071/anexos/1afe4f0b-7113-4dad-bf04-0c578b3fd24a.pdf,1GUtGFzXVMp1PK9VDS_fueuTiwPpk_1lW,Prova à tarde; banca Certo/Errado com penalização por erro.
+1,SETEC-2026-ATI,SETEC – Serviços Técnicos Gerais,Analista Técnico (Informática),INDEPAC,Campinas/SP,08/09/2026,04/12/2026,17/01/2027,inscrições abertas,1 vaga + CR,8285.32,Vale-alimentação conforme edital,36h/semana ou até 180h/mês em escala,40 questões: 10 Português + 10 Matemática + 20 específicos,1 questão teórico-prática,https://anexos-r2.selecao.net.br/uploads/815/concursos/109/anexos/52b446b1-6df2-4a0c-a457-2215b9f5b58f.pdf,14XvemdkwUmOWHQDcNtVgQglY03Nbdjab,Prova em Campinas; objetiva de múltipla escolha com 4 alternativas.
+,ID_TÓPICO,Disciplina,Assunto,Subassunto / escopo,CRBio,SETEC,Cobertura,Prioridade inicial,Fase,Status editorial,Observação
+0,PORT-001,Português,Interpretação de textos,Compreensão e interpretação,Sim,Sim,Comum,5,Fase 1,ausente,Alta reutilização
+1,PORT-002,Português,Semântica,"Sinônimos, antônimos, sentido próprio/figurado, denotação/conotação",Sim,Sim,Comum,5,Fase 1,ausente,
+2,PORT-003,Português,Ortografia e acentuação,Ortografia oficial e acentuação,Sim,Sim,Comum,5,Fase 1,ausente,
+3,PORT-004,Português,Pontuação,Emprego dos sinais de pontuação,Sim,Sim,Comum,5,Fase 1,ausente,
+4,PORT-005,Português,Classes de palavras,"Substantivo, adjetivo, numeral, pronome, verbo, advérbio, preposição, conjunção",Sim,Sim,Comum,5,Fase 1,ausente,
+5,PORT-006,Português,Sintaxe,"Coordenação, subordinação e relações entre orações",Sim,Sim,Comum,5,Fase 1,ausente,
+6,PORT-007,Português,"Concordância, regência e crase",Concordância verbal/nominal; regência; crase,Sim,Sim,Comum,5,Fase 1,ausente,
+7,PORT-008,Português,Colocação pronominal,"Próclise, mesóclise, ênclise",Sim,Sim,Comum,4,Fase 1,ausente,
+8,PORT-009,Português,"Coesão, coerência e reescrita","Conectivos, equivalência e reestruturação textual",Sim,Parcial,Parcial,4,Fase 1,ausente,CRBio é mais explícito
+9,PORT-010,Português,Tipologia e figuras de linguagem,Tipos textuais e figuras de linguagem,Sim,Não,Só CRBio,3,Fase 1,ausente,
+10,MAT-001,Matemática/RLM,Números e operações,Conjuntos/números inteiros e racionais; operações,Sim,Sim,Comum,5,Fase 1,ausente,
+11,MAT-002,Matemática/RLM,Razão e proporção,Grandezas proporcionais,Sim,Sim,Comum,5,Fase 1,ausente,
+12,MAT-003,Matemática/RLM,Regra de três,Simples e composta,Sim,Sim,Comum,5,Fase 1,ausente,
+13,MAT-004,Matemática/RLM,Porcentagem,Porcentagens e variações,Sim,Sim,Comum,5,Fase 1,ausente,
+14,MAT-005,Matemática/RLM,Juros,Juros simples e compostos,Sim,Sim,Comum,5,Fase 1,ausente,
+15,MAT-006,Matemática/RLM,Equações,Funções/equações; 1º grau,Sim,Sim,Parcial,4,Fase 1,ausente,Escopos não idênticos
+16,MAT-007,Matemática/RLM,Tabelas e gráficos,Leitura e interpretação,Sim,Sim,Comum,4,Fase 1,ausente,
+17,MAT-008,Matemática/RLM,Raciocínio lógico,"Proposições, conectivos, argumentação, raciocínio sequencial",Sim,Sim,Parcial,5,Fase 1,ausente,SETEC traz Raciocínio Lógico de forma genérica
+18,MAT-009,Matemática/RLM,Probabilidade e combinatória,Probabilidade e análise combinatória,Sim,Não,Só CRBio,3,Fase 1,ausente,
+19,MAT-010,Matemática/RLM,Estatística básica,"Média, moda e mediana",Sim,Não,Só CRBio,3,Fase 1,ausente,
+20,MAT-011,Matemática/RLM,PA e PG,Progressões aritmética e geométrica,Sim,Não,Só CRBio,2,Fase 1,ausente,
+21,MAT-012,Matemática/RLM,Geometria e medidas,"Área, volume e unidades de medida",Parcial,Sim,Parcial,3,Fase 2,ausente,Mais explícito na SETEC
+22,ING-001,Inglês,Interpretação técnica,Textos gerais e técnicos de TI,Sim,Não,Só CRBio,4,Fase 1,ausente,
+23,ING-002,Inglês,Vocabulário de TI,Vocabulário profissional e terminologia,Sim,Não,Só CRBio,3,Fase 1,ausente,
+24,ING-003,Inglês,Gramática para leitura,"Tempos, modais, pronomes, preposições, conjunções",Sim,Não,Só CRBio,3,Fase 1,ausente,
+25,TI-FUND-001,TI,Arquitetura de computadores,"Organização, hardware, software e periféricos",Sim,Sim,Comum,5,Fase 1,ausente,
+26,TI-SO-001,TI,Windows e Linux,Conceitos e administração de sistemas operacionais,Sim,Sim,Comum,5,Fase 1,ausente,
+27,TI-SO-002,TI,"Processos, memória, arquivos e usuários",Gerenciamento de recursos do SO,Sim,Parcial,Parcial,4,Fase 1,ausente,
+28,TI-SO-003,TI,Virtualização,Conceitos e uso,Não,Sim,Só SETEC,3,Fase 2,ausente,
+29,TI-CLOUD-001,TI,Computação em nuvem,Fundamentos e conceitos,Sim,Sim,Comum,4,Fase 1,ausente,
+30,TI-RED-001,TI,Modelos e arquitetura de redes,"OSI, TCP/IP, LAN/WAN/WLAN, topologias",Sim,Sim,Comum,5,Fase 1,ausente,
+31,TI-RED-002,TI,Protocolos de rede,"IPv4/IPv6, TCP/UDP, HTTP/HTTPS, DNS, SMTP, FTP",Sim,Sim,Parcial,5,Fase 1,ausente,SETEC não enumera todos
+32,TI-RED-003,TI,Equipamentos de rede,"Switches, roteadores, APs, firewalls",Sim,Sim,Comum,5,Fase 1,ausente,
+33,TI-RED-004,TI,Roteamento e switching,"Roteamento, switching e VLANs",Parcial,Sim,Parcial,4,Fase 1,ausente,Mais aprofundado na SETEC
+34,TI-RED-005,TI,Serviços de rede,"DNS, DHCP, NAT e serviços",Parcial,Sim,Parcial,4,Fase 1,ausente,
+35,TI-RED-006,TI,VPN e redes sem fio,"VPN, wireless e segurança de rede",Sim,Sim,Comum,4,Fase 1,ausente,
+36,TI-SEG-001,TI,Princípios de segurança,"Confidencialidade, integridade, disponibilidade, autenticidade",Sim,Sim,Comum,5,Fase 1,ausente,
+37,TI-SEG-002,TI,Criptografia e autenticação,"Criptografia, certificados, assinatura, controle de acesso",Sim,Sim,Comum,5,Fase 1,ausente,
+38,TI-SEG-003,TI,Ameaças e proteção,"Ataques, vulnerabilidades, firewall, antivírus",Sim,Sim,Comum,5,Fase 1,ausente,
+39,TI-SEG-004,TI,Backup e continuidade,"Backup, restauração, continuidade e desastre",Sim,Sim,Comum,5,Fase 1,ausente,
+40,TI-SEG-005,TI,ISO/IEC 27001 e 27002,Noções das normas,Sim,Não,Só CRBio,3,Fase 1,ausente,
+41,TI-BD-001,TI,Banco de dados relacional,Fundamentos e SGBDs,Sim,Sim,Comum,5,Fase 1,ausente,
+42,TI-BD-002,TI,Modelagem e normalização,Modelagem relacional e normalização,Sim,Sim,Comum,5,Fase 1,ausente,
+43,TI-BD-003,TI,SQL,Consulta e manipulação de dados,Sim,Sim,Comum,5,Fase 1,ausente,
+44,TI-BD-004,TI,Administração de banco,Administração básica de SGBDs,Sim,Sim,Comum,4,Fase 1,ausente,
+45,TI-ES-001,TI,Engenharia de software,"Conceitos, ciclo de vida e modelos",Sim,Sim,Comum,5,Fase 1,ausente,
+46,TI-ES-002,TI,Requisitos e análise de sistemas,Levantamento e análise de requisitos,Parcial,Sim,Parcial,4,Fase 1,ausente,
+47,TI-ES-003,TI,UML,"Casos de uso, classes, atividades",Sim,Sim,Comum,4,Fase 1,ausente,
+48,TI-ES-004,TI,Metodologias de desenvolvimento,"Scrum, Kanban, ágeis e tradicionais",Sim,Sim,Comum,5,Fase 1,ausente,
+49,TI-ES-005,TI,Testes de software,Princípios e técnicas de teste,Sim,Sim,Comum,4,Fase 1,ausente,
+50,TI-ES-006,TI,Versionamento,Controle de versão de código,Não,Sim,Só SETEC,3,Fase 2,ausente,
+51,TI-PROG-001,TI,Lógica de programação,Fundamentos,Não,Sim,Só SETEC,3,Fase 2,ausente,
+52,TI-PROG-002,TI,Estruturas de dados,Estruturas fundamentais,Não,Sim,Só SETEC,3,Fase 2,ausente,
+53,TI-PROG-003,TI,Programação orientada a objetos,Conceitos de POO,Não,Sim,Só SETEC,3,Fase 2,ausente,
+54,TI-WEB-001,TI,Desenvolvimento Web,Sistemas para ambiente web,Não,Sim,Só SETEC,3,Fase 2,ausente,
+55,TI-WEB-002,TI,APIs e serviços Web,APIs e web services,Não,Sim,Só SETEC,3,Fase 2,ausente,
+56,TI-GOV-001,TI,ITIL e COBIT,Governança e gestão de serviços,Sim,Sim,Comum,5,Fase 1,ausente,
+57,TI-GOV-002,TI,Gestão de serviços,"Operação, processos e serviços de TI",Sim,Sim,Comum,4,Fase 1,ausente,
+58,TI-GOV-003,TI,Gestão de riscos,Riscos de TI/TIC,Sim,Sim,Comum,4,Fase 1,ausente,
+59,TI-GOV-004,TI,"SLA, indicadores e métricas",Indicadores e níveis de serviço,Sim,Parcial,Parcial,4,Fase 1,ausente,
+60,TI-GOV-005,TI,Gestão de projetos / PMBOK,Gestão de projetos e noções de PMBOK,Não,Sim,Só SETEC,3,Fase 2,ausente,
+61,TI-INFRA-001,TI,Servidores Windows/Linux,Administração de servidores,Parcial,Sim,Parcial,4,Fase 1,ausente,
+62,TI-INFRA-002,TI,Active Directory,"AD, usuários, permissões e compartilhamentos",Não,Sim,Só SETEC,3,Fase 2,ausente,
+63,TI-INFRA-003,TI,Microsoft 365,Administração e serviços,Não,Sim,Só SETEC,3,Fase 2,ausente,
+64,TI-INFRA-004,TI,Monitoramento e automação,Monitoramento e scripts,Não,Sim,Só SETEC,3,Fase 2,ausente,
+65,TI-INFRA-005,TI,Ativos e migração,"Gestão de ativos, implantação e migração de sistemas",Sim,Parcial,Parcial,3,Fase 1,ausente,
+66,TI-CRB-001,TI,Governança de TIC,"Planejamento, acompanhamento, controle, métricas e relatórios",Sim,Parcial,Parcial,4,Fase 1,ausente,
+67,TI-CRB-002,TI,"Políticas, normas e auditoria","Auditoria TIC, controles internos, conformidade",Sim,Não,Só CRBio,3,Fase 1,ausente,
+68,TI-CRB-003,TI,Contratação de soluções de TIC,"Planejamento, seleção, gestão, Termo de Referência",Sim,Não,Só CRBio,4,Fase 1,ausente,
+69,TI-CRB-004,TI,Fiscalização de contratos,"Fiscalização técnica/administrativa, SLA e indicadores",Sim,Não,Só CRBio,4,Fase 1,ausente,
+70,TI-CRB-005,TI,Atendimento técnico estratégico,"Pareceres, notas técnicas, Ouvidoria, treinamentos",Sim,Não,Só CRBio,3,Fase 1,ausente,
+71,LEG-001,Legislação,Ética no setor público,Ética e princípios da Administração Pública,Sim,Parcial,Parcial,4,Fase 1,ausente,SETEC cobra ética profissional
+72,LEG-002,Legislação,Improbidade administrativa,Lei 8.429/1992,Sim,Não,Só CRBio,3,Fase 1,ausente,
+73,LEG-003,Legislação,Processo administrativo,Lei 9.784/1999,Sim,Não,Só CRBio,3,Fase 1,ausente,
+74,LEG-004,Legislação,Acesso à informação,Lei 12.527/2011,Sim,Não,Só CRBio,3,Fase 1,ausente,
+75,LEG-005,Legislação,LGPD,Lei 13.709/2018,Sim,Sim,Comum,5,Fase 1,ausente,
+76,LEG-006,Legislação,Marco Civil da Internet,Lei 12.965/2014,Não,Sim,Só SETEC,3,Fase 2,ausente,
+,Chave,Valor
+0,data_referencia,23/09/2026
+1,concurso_foco_1,CRBIO01-2026-ATI
+2,concurso_foco_2,SETEC-2026-ATI
+3,fase_atual,Fase 1 — núcleo comum + exclusivos CRBio
+4,regra_apos_prova,"Ao expirar a data da prova, retirar o concurso do ciclo ativo, salvo adiamento/suspensão/alteração oficial."
+5,regra_reuso,Nunca apagar aula ou questão por encerramento de concurso; reaproveitar por ID permanente.
+6,fonte_editorial,Google Drive
+7,publicacao,ChatGPT → Drive → fila → ChatGPT Work → validação → GitHub → deploy → site
+8,proxima_acao,"Produzir TI-BD-003 — SQL com imagem didática, vídeos verificados, questões e revisão."
+9,distribuicao_ate_CRBio,90% CRBio/núcleo comum + 10% SETEC exclusiva
+10,distribuicao_pos_CRBio,"Após 29/11/2026, SETEC assume o foco principal; conteúdos comuns permanecem em revisão."
+11,regra_midia,"Toda aula publicada deve incluir imagem didática original e 1–3 vídeos do YouTube verificados, salvo exceção editorial justificada."
+12,pasta_fontes,11_FONTES
+13,regra_fontes,Toda aula deve registrar source_ids; priorizar P1/P2 e manter fontes complementares subordinadas às oficiais.
+,ID_ITEM,Tipo,ID_CONTEÚDO,Título,Prioridade,Concursos,Status,Destino Drive,Status Work,Observações,Imagem,Vídeo YouTube,Status mídia
+0,PUB-0001,aula,TI-BD-003,SQL — consulta e manipulação de dados,5,CRBio + SETEC,a produzir,02_CONTEUDO/Tecnologia da Informação,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+1,PUB-0002,aula,TI-RED-001,Modelos e arquitetura de redes,5,CRBio + SETEC,a produzir,02_CONTEUDO/Tecnologia da Informação,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+2,PUB-0003,aula,TI-SEG-001,Princípios de Segurança da Informação,5,CRBio + SETEC,a produzir,02_CONTEUDO/Tecnologia da Informação,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+3,PUB-0004,aula,TI-GOV-001,ITIL e COBIT,5,CRBio + SETEC,a produzir,02_CONTEUDO/Tecnologia da Informação,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+4,PUB-0005,aula,LEG-005,LGPD — Lei 13.709/2018,5,CRBio + SETEC,a produzir,02_CONTEUDO/Legislação,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+5,PUB-0006,aula,PORT-001,Interpretação de textos,5,CRBio + SETEC,a produzir,02_CONTEUDO/Português,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+6,PUB-0007,aula,MAT-003,Regra de três,5,CRBio + SETEC,a produzir,02_CONTEUDO/Matemática e Raciocínio Lógico,não iniciado,Núcleo comum,obrigatória,obrigatório,pendente
+,Semana,Período,Foco principal,Conteúdos / IDs,Português / Matemática / Inglês,Questões,Revisão,Discursiva,Simulado,SETEC exclusiva,Meta da semana
+0,S1,23/09–29/09,Banco de Dados + base comum,TI-BD-001; TI-BD-002; TI-BD-003; LEG-005,PORT-001; MAT-002; MAT-003; MAT-004,20–30 itens/dia; maioria Quadrix,D1 + D7 dos tópicos estudados,1 resposta curta sobre SQL/LGPD,Diagnóstico de 40 itens,1 bloco: TI-PROG-001,"Criar base: SQL, interpretação, regra de três e LGPD"
+1,S2,30/09–06/10,Redes + Segurança,TI-RED-001; TI-RED-002; TI-RED-003; TI-RED-006; TI-SEG-001; TI-SEG-002,PORT-002; PORT-004; MAT-008; ING-001,25–35 itens/dia,D1 + D7 + erros,1 texto 20–30 linhas: segurança de redes,60 itens estilo Quadrix,1 bloco: TI-INFRA-002,"Dominar OSI/TCP-IP, protocolos, CIA e criptografia"
+2,S3,07/10–13/10,Sistemas Operacionais + Cloud + Continuidade,TI-SO-001; TI-SO-002; TI-CLOUD-001; TI-FUND-001; TI-SEG-003; TI-SEG-004,PORT-005; PORT-006; MAT-001; MAT-005; ING-002,30–40 itens/dia,D1 + D7 + caderno de erros,1 texto: backup e continuidade,80 itens,1 bloco: TI-SO-003,"Consolidar Windows/Linux, processos, cloud e continuidade"
+3,S4,14/10–20/10,Engenharia de Software,TI-ES-001; TI-ES-002; TI-ES-003; TI-ES-004; TI-ES-005,PORT-007; PORT-008; MAT-006; ING-003,30–40 itens/dia,D1 + D7 + D21,1 texto: Scrum/Kanban ou testes,80 itens + correção,1 bloco: TI-PROG-003,"Fechar ciclo de desenvolvimento, UML, ágil e testes"
+4,S5,21/10–27/10,Governança de TI + Legislação,TI-GOV-001; TI-GOV-002; TI-GOV-003; TI-GOV-004; LEG-001; LEG-002; LEG-003; LEG-004; LEG-005,PORT-003; PORT-009; MAT-007,35–45 itens/dia,D1 + D7 + erros reincidentes,1 texto: ITIL/COBIT/LGPD,120 itens em 2 sessões,1 bloco: TI-GOV-005,Fechar governança e legislação complementar
+5,S6,28/10–03/11,Núcleo específico CRBio,TI-CRB-001; TI-CRB-002; TI-CRB-003; TI-CRB-004; TI-CRB-005; TI-SEG-005,PORT-010; MAT-009; MAT-010,35–45 itens/dia,D1 + D7 + D21,2 textos: contratação TIC e auditoria/ISO,120 itens completo,1 bloco: TI-INFRA-003,Cobrir tópicos exclusivos antes da reta final
+6,S7,04/11–10/11,Infraestrutura e redes aprofundadas,TI-INFRA-001; TI-INFRA-005; TI-RED-004; TI-RED-005; TI-BD-004,Revisão PORT-001..007; MAT-001..008,40–50 itens/dia,Revisão por erros + flashcards,1 texto: infraestrutura/migração,120 itens completo,1 bloco: TI-INFRA-004,"Integrar rede, servidores, serviços e banco"
+7,S8,11/11–17/11,Fechamento do edital + lacunas,Revisar todos os status ausente/parcial da Fase 1,PORT-008..010; MAT-009..011; Inglês completo,50 itens/dia,D7/D21 + caderno de erros,2 discursivas em tempo controlado,2 simulados de 120 itens,1 bloco: TI-WEB-001/TI-WEB-002,Zerar lacunas do CRBio e identificar fraquezas
+8,S9,18/11–24/11,Consolidação intensiva,SQL; Redes; Segurança; ITIL/COBIT; LGPD; SO; Engenharia; específicos CRBio,Revisão dirigida por desempenho,60 itens/dia; foco em erros,Somente pontos fracos,3 discursivas alternadas,2 simulados completos + análise,1 bloco: POO/APIs,Transformar erro em revisão; evitar conteúdo novo
+9,S10,25/11–29/11,Revisão final CRBio,Mapas/resumos; leis; comandos SQL; protocolos; frameworks; ISO; contratação TIC,"Português, RLM e Inglês por erros",Questões selecionadas; reduzir na véspera,Revisão leve D1/D7/erros,1 última discursiva até 26/11,1 simulado até 26/11,Nenhum conteúdo exclusivo novo,Chegar à prova descansado e com erros revisados
+,Regra,Quando,Ação,Duração sugerida,Questões,Destino dos erros
+0,D0,Logo após estudar,Resumo ativo sem consultar + 3 pontos-chave,5–10 min,3–5 itens,Marcar tópico se errar
+1,D1,1 dia depois,Revisar resumo/imagem + lembrar conceitos,10–15 min,5–10 itens,Caderno de erros
+2,D7,7 dias depois,Revisão por questões e flashcards,15–25 min,10–15 itens,Reclassificar dificuldade
+3,D21,21 dias depois,Revisão cumulativa,20–30 min,15–20 itens,"Se reincidente, prioridade +1"
+4,ERRO,Sempre que errar,"Registrar motivo: conteúdo, distração, interpretação ou chute",5 min,Refazer após 48h,04_CADERNO_DE_ERROS
+5,DISCURSIVA,1–3x por semana,"Resposta técnica com introdução curta, desenvolvimento objetivo e conclusão",30–45 min,Checklist de correção,06_DISCURSIVAS
+6,SIMULADO,Semanal; intensificar nas últimas 3 semanas,Aplicar regra real da banca e controlar tempo,Conforme prova,40 → 60 → 80 → 120 itens,05_SIMULADOS + caderno de erros
+,Ordem,ID_CONTEÚDO,Título,Concursos,Motivo,Imagem,Vídeo YouTube,Status
+0,1,TI-BD-003,SQL — consulta e manipulação de dados,CRBio + SETEC,"Núcleo comum, alto peso e base para questões técnicas",obrigatória,1–3 vídeos verificados,a produzir
+1,2,TI-RED-001,Modelos e arquitetura de redes,CRBio + SETEC,"Base para protocolos, equipamentos e segurança",obrigatória,1–3 vídeos verificados,a produzir
+2,3,TI-SEG-001,Princípios de Segurança da Informação,CRBio + SETEC,Tema transversal e recorrente,obrigatória,1–3 vídeos verificados,a produzir
+3,4,TI-GOV-001,ITIL e COBIT,CRBio + SETEC,Governança em ambos os editais,obrigatória,1–3 vídeos verificados,a produzir
+4,5,LEG-005,LGPD — Lei 13.709/2018,CRBio + SETEC,Comum a ambos e propensa a discursiva,obrigatória,1–3 vídeos verificados,a produzir
+5,6,PORT-001,Interpretação de textos,CRBio + SETEC,Base de Português para as duas provas,obrigatória,1–2 vídeos verificados,a produzir
+6,7,MAT-003,Regra de três,CRBio + SETEC,Fundamento matemático comum,obrigatória,1–2 vídeos verificados,a produzir
+7,8,TI-BD-001,Banco de dados relacional,CRBio + SETEC,Pré-requisito de SQL/modelagem,obrigatória,1–3 vídeos verificados,a produzir
+8,9,TI-BD-002,Modelagem e normalização,CRBio + SETEC,Complementa banco/SQL,obrigatória,1–3 vídeos verificados,a produzir
+9,10,TI-RED-002,Protocolos de rede,CRBio + SETEC,Alto potencial de questões,obrigatória,1–3 vídeos verificados,a produzir
+10,11,TI-SEG-002,Criptografia e autenticação,CRBio + SETEC,Segurança comum,obrigatória,1–3 vídeos verificados,a produzir
+11,12,TI-SO-001,Windows e Linux,CRBio + SETEC,Comum e base de infraestrutura,obrigatória,1–3 vídeos verificados,a produzir
+12,13,TI-ES-001,Engenharia de software — ciclo de vida,CRBio + SETEC,Base de software,obrigatória,1–3 vídeos verificados,a produzir
+13,14,TI-ES-004,Scrum e Kanban,CRBio + SETEC,Metodologias explícitas,obrigatória,1–3 vídeos verificados,a produzir
+14,15,TI-SEG-004,Backup e continuidade,CRBio + SETEC,Segurança/infraestrutura,obrigatória,1–3 vídeos verificados,a produzir
+15,16,TI-CRB-003,Contratação de soluções de TIC,CRBio,Exclusivo e relevante para a primeira prova,obrigatória,1–3 vídeos verificados,a produzir
+16,17,TI-CRB-004,Fiscalização de contratos de TIC,CRBio,Exclusivo CRBio,obrigatória,1–3 vídeos verificados,a produzir
+17,18,TI-SEG-005,ISO/IEC 27001 e 27002,CRBio,Exclusivo CRBio,obrigatória,1–3 vídeos verificados,a produzir
+18,19,TI-CRB-002,Auditoria e conformidade de TIC,CRBio,Exclusivo CRBio,obrigatória,1–3 vídeos verificados,a produzir
+19,20,ING-001,Inglês — interpretação técnica,CRBio,Conhecimento básico específico do cargo,obrigatória,1–2 vídeos verificados,a produzir
+,Item,Regra editorial,Obrigatório,Observação
+0,ID permanente,Toda aula deve possuir ID estável e reutilizável,Sim,Nunca reutilizar ID para conteúdo diferente
+1,Estrutura,Objetivos → teoria → exemplos → pegadinhas → resumo → questões → gabarito comentado → revisão,Sim,Adaptar profundidade ao edital
+2,Referência ao edital,Indicar concursos e tópicos do edital atendidos,Sim,Uma aula pode atender vários concursos
+3,Imagem didática,Criar ao menos 1 imagem original por aula quando o tema admitir representação visual,Sim,"Preferir diagramas, fluxos, mapas conceituais e esquemas; evitar imagem meramente decorativa"
+4,Acessibilidade da imagem,"Registrar título, legenda e texto alternativo",Sim,Descrição objetiva do conteúdo visual
+5,Vídeos do YouTube,Adicionar de 1 a 3 vídeos relevantes e verificados,Sim,"Priorizar fontes confiáveis, conteúdo atualizado e alinhado ao escopo do edital"
+6,Uso dos vídeos,"Vídeo é complemento, nunca substituto da aula",Sim,"Registrar canal, título, URL, duração quando disponível e tópico relacionado"
+7,Verificação de vídeo,Checar se o vídeo está disponível e corresponde ao título/tema antes da publicação,Sim,Evitar playlists genéricas quando houver vídeo específico melhor
+8,Questões,Incluir treino compatível com a banca quando possível,Sim,"Para Quadrix, treinar certo/errado e penalização"
+9,Discursiva,"Quando o assunto for candidato natural a discursiva, adicionar proposta de treino",Quando aplicável,"Segurança, LGPD, governança, contratação, redes, BD etc."
+10,Atualização,"Revisar conteúdo quando edital, lei, norma ou tecnologia mudar",Sim,Registrar data e fonte da revisão
+11,Mídia no Drive,Imagem e metadados de vídeo devem acompanhar o conteúdo antes de entrar em publicação,Sim,Work só publica aula completa ou explicitamente marcada como exceção
+12,Fontes,Toda aula deve declarar source_ids vinculados ao cadastro FONTES,Sim,Aplicar PADRAO_FONTES; priorizar P1/P2.
+13,Hierarquia de fontes,Usar P1/P2 como base factual; S1 para aprofundamento; C1 como complemento; D1 apenas descoberta,Sim,Nunca elevar fonte complementar acima de fonte oficial.
+14,Verificação de fontes,Registrar versão/data e data de verificação antes da publicação,Sim,Conteúdos sujeitos a atualização devem ser revalidados.
+,ID_MÍDIA,ID_CONTEÚDO,Tipo,Título/descrição,Origem,URL/arquivo Drive,Canal/autor,Texto alternativo,Status verificação,Data verificação,Observações
+0,MODELO,TI-BD-003,imagem,Diagrama didático da execução de uma consulta SQL,Gerada por ChatGPT,,ChatGPT,"Fluxo mostrando SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING e ORDER BY",pendente,,Gerar junto com a aula
+1,MODELO-VIDEO,TI-BD-003,YouTube,Vídeo complementar de SQL,YouTube,,,Não se aplica,pendente,,Pesquisar e verificar ao produzir TI-BD-003
+,ID_FONTE,Título,Tipo,Nível,Instituição / Autor,URL / arquivo Drive,Versão / data publicação,Data verificação,Status,Disciplina / área,IDs de conteúdo,Concursos relacionados,Uso,Pasta,Observações / limitações
+0,SRC-CRBIO01-EDITAL-001,CRBio-01 — Edital nº 1/2026,Edital,P1,CRBio-01 / Instituto Quadrix,https://anexos-r2.selecao.net.br/uploads/861/concursos/3071/anexos/1afe4f0b-7113-4dad-bf04-0c578b3fd24a.pdf,2026,23/09/2026,ativo,Geral,MATRIZ_EDITAIS,CRBIO01-2026-ATI,fonte canônica do escopo do concurso,01_EDITAIS,Não duplicar PDF em 11_FONTES; registrar e referenciar a cópia canônica em 01_EDITAIS.
+1,SRC-SETEC-EDITAL-001,SETEC — Analista Técnico (Informática) — Edital,Edital,P1,SETEC / INDEPAC,https://anexos-r2.selecao.net.br/uploads/815/concursos/109/anexos/52b446b1-6df2-4a0c-a457-2215b9f5b58f.pdf,2026,23/09/2026,ativo,Geral,MATRIZ_EDITAIS,SETEC-2026-ATI,fonte canônica do escopo do concurso,01_EDITAIS,Não duplicar PDF em 11_FONTES; registrar e referenciar a cópia canônica em 01_EDITAIS.
+,Categoria,Código,Definição,Exemplos,Regra de uso
+0,Hierarquia,P1,Fonte primária oficial ou normativa,Edital/retificação; lei/decreto; RFC; norma oficial; documentação oficial de produto/framework; publicação do órgão competente,Tem precedência sobre todas as demais. Obrigatória para afirmações normativas e especificações quando disponível.
+1,Hierarquia,P2,Fonte institucional oficial explicativa,"Manuais, guias, FAQs, cartilhas e cursos oficiais de órgãos, fabricantes, fundações ou mantenedores",Usar para explicar e contextualizar P1; não contrariar P1.
+2,Hierarquia,S1,Fonte secundária técnica confiável,"Livros reconhecidos, universidades, publicações acadêmicas, editoras técnicas e materiais de instituições consolidadas","Boa para didática e aprofundamento. Em tema atual/normativo, confirmar em P1/P2."
+3,Hierarquia,C1,Fonte complementar,"Artigos técnicos, cursos, vídeos do YouTube, blogs especializados e materiais de professores","Pode enriquecer exemplos, explicações e revisão. Não deve ser a única base de uma afirmação crítica."
+4,Hierarquia,D1,Fonte de descoberta,"Fóruns, comunidades, posts, resumos de IA e páginas sem autoridade clara","Usar apenas para encontrar pistas, dúvidas ou exemplos. Nunca tratar como fonte factual final."
+5,Regra,R01,Toda aula deve declarar os IDs das fontes usadas,Campo source_ids nos metadados da aula,Obrigatório antes de entrar na fila do Work.
+6,Regra,R02,Conteúdo normativo deve usar a fonte oficial correspondente,Leis no portal oficial; edital/retificação da banca/órgão; norma no mantenedor oficial,"Se houver divergência com material didático, prevalece a fonte oficial."
+7,Regra,R03,Conteúdo técnico deve preferir especificação e documentação oficial,RFCs; documentação Linux/Microsoft/PostgreSQL; páginas oficiais ITIL/COBIT quando aplicável,"Material secundário pode simplificar, mas fatos técnicos devem ser conferidos."
+8,Regra,R04,Fonte complementar não substitui a fonte-base,"YouTube, blogs, apostilas, artigos e cursos","Vídeos entram como apoio à aprendizagem, não como única sustentação da aula."
+9,Regra,R05,Verificar atualização antes da publicação,Registrar versão/data e data de verificação,"Se a fonte estiver desatualizada, substituir ou sinalizar explicitamente."
+10,Regra,R06,Fontes superadas não são apagadas,Mover ou registrar em 10_FONTES_SUPERADAS_E_ARQUIVO,Preservar histórico e vínculo com conteúdos antigos.
+11,Regra,R07,Evitar reprodução extensa de material protegido,Parafrasear e produzir explicação original; usar trechos breves somente quando necessários,"Normas, livros, cursos e questões podem ter proteção autoral."
+12,Regra,R08,Questões de prova são fonte de estilo e incidência,Provas/gabaritos oficiais em 04_BANCAS_PROVAS_E_GABARITOS,Não copiar bancos proprietários; produzir questões próprias ou usar itens oficiais conforme permitido.
+13,Regra,R09,"Imagens externas são referência, não padrão de cópia",08_IMAGENS_E_DIAGRAMAS_REFERENCIA,Preferir gerar diagramas originais para as aulas.
+14,Regra,R10,Toda afirmação temporalmente sensível deve ser revalidada,"Leis alteradas, versões de software, frameworks, editais e retificações",Não confiar apenas em uma fonte antiga porque já está no Drive.
+15,Fluxo,F01,Novo conteúdo,Edital → tópicos → busca em FONTES → selecionar P1/P2 → complementar com S1/C1 → produzir aula → revisão → mídia → fila Work,Registrar source_ids e data de verificação.
+16,Fluxo,F02,Nova fonte,Cadastrar ID permanente → classificar nível → salvar/linkar na pasta correta → relacionar aos IDs de conteúdo,Uma fonte pode atender vários conteúdos e concursos.
+17,Fluxo,F03,Fonte alterada,Registrar nova versão; marcar a anterior como superada; identificar aulas impactadas,"Disparar revisão incremental, nunca reescrever toda a biblioteca sem necessidade."
+

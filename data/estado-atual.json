@@ -1,0 +1,72 @@
+[
+  {
+    "": "0",
+    "Chave": "data_referencia",
+    "Valor": "23/09/2026"
+  },
+  {
+    "": "1",
+    "Chave": "concurso_foco_1",
+    "Valor": "CRBIO01-2026-ATI"
+  },
+  {
+    "": "2",
+    "Chave": "concurso_foco_2",
+    "Valor": "SETEC-2026-ATI"
+  },
+  {
+    "": "3",
+    "Chave": "fase_atual",
+    "Valor": "Fase 1 — núcleo comum + exclusivos CRBio"
+  },
+  {
+    "": "4",
+    "Chave": "regra_apos_prova",
+    "Valor": "Ao expirar a data da prova, retirar o concurso do ciclo ativo, salvo adiamento/suspensão/alteração oficial."
+  },
+  {
+    "": "5",
+    "Chave": "regra_reuso",
+    "Valor": "Nunca apagar aula ou questão por encerramento de concurso; reaproveitar por ID permanente."
+  },
+  {
+    "": "6",
+    "Chave": "fonte_editorial",
+    "Valor": "Google Drive"
+  },
+  {
+    "": "7",
+    "Chave": "publicacao",
+    "Valor": "ChatGPT → Drive → fila → ChatGPT Work → validação → GitHub → deploy → site"
+  },
+  {
+    "": "8",
+    "Chave": "proxima_acao",
+    "Valor": "Produzir TI-BD-003 — SQL com imagem didática, vídeos verificados, questões e revisão."
+  },
+  {
+    "": "9",
+    "Chave": "distribuicao_ate_CRBio",
+    "Valor": "90% CRBio/núcleo comum + 10% SETEC exclusiva"
+  },
+  {
+    "": "10",
+    "Chave": "distribuicao_pos_CRBio",
+    "Valor": "Após 29/11/2026, SETEC assume o foco principal; conteúdos comuns permanecem em revisão."
+  },
+  {
+    "": "11",
+    "Chave": "regra_midia",
+    "Valor": "Toda aula publicada deve incluir imagem didática original e 1–3 vídeos do YouTube verificados, salvo exceção editorial justificada."
+  },
+  {
+    "": "12",
+    "Chave": "pasta_fontes",
+    "Valor": "11_FONTES"
+  },
+  {
+    "": "13",
+    "Chave": "regra_fontes",
+    "Valor": "Toda aula deve registrar source_ids; priorizar P1/P2 e manter fontes complementares subordinadas às oficiais."
+  }
+]

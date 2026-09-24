@@ -1,0 +1,146 @@
+[
+  {
+    "": "0",
+    "Categoria": "Hierarquia",
+    "Código": "P1",
+    "Definição": "Fonte primária oficial ou normativa",
+    "Exemplos": "Edital/retificação; lei/decreto; RFC; norma oficial; documentação oficial de produto/framework; publicação do órgão competente",
+    "Regra de uso": "Tem precedência sobre todas as demais. Obrigatória para afirmações normativas e especificações quando disponível."
+  },
+  {
+    "": "1",
+    "Categoria": "Hierarquia",
+    "Código": "P2",
+    "Definição": "Fonte institucional oficial explicativa",
+    "Exemplos": "Manuais, guias, FAQs, cartilhas e cursos oficiais de órgãos, fabricantes, fundações ou mantenedores",
+    "Regra de uso": "Usar para explicar e contextualizar P1; não contrariar P1."
+  },
+  {
+    "": "2",
+    "Categoria": "Hierarquia",
+    "Código": "S1",
+    "Definição": "Fonte secundária técnica confiável",
+    "Exemplos": "Livros reconhecidos, universidades, publicações acadêmicas, editoras técnicas e materiais de instituições consolidadas",
+    "Regra de uso": "Boa para didática e aprofundamento. Em tema atual/normativo, confirmar em P1/P2."
+  },
+  {
+    "": "3",
+    "Categoria": "Hierarquia",
+    "Código": "C1",
+    "Definição": "Fonte complementar",
+    "Exemplos": "Artigos técnicos, cursos, vídeos do YouTube, blogs especializados e materiais de professores",
+    "Regra de uso": "Pode enriquecer exemplos, explicações e revisão. Não deve ser a única base de uma afirmação crítica."
+  },
+  {
+    "": "4",
+    "Categoria": "Hierarquia",
+    "Código": "D1",
+    "Definição": "Fonte de descoberta",
+    "Exemplos": "Fóruns, comunidades, posts, resumos de IA e páginas sem autoridade clara",
+    "Regra de uso": "Usar apenas para encontrar pistas, dúvidas ou exemplos. Nunca tratar como fonte factual final."
+  },
+  {
+    "": "5",
+    "Categoria": "Regra",
+    "Código": "R01",
+    "Definição": "Toda aula deve declarar os IDs das fontes usadas",
+    "Exemplos": "Campo source_ids nos metadados da aula",
+    "Regra de uso": "Obrigatório antes de entrar na fila do Work."
+  },
+  {
+    "": "6",
+    "Categoria": "Regra",
+    "Código": "R02",
+    "Definição": "Conteúdo normativo deve usar a fonte oficial correspondente",
+    "Exemplos": "Leis no portal oficial; edital/retificação da banca/órgão; norma no mantenedor oficial",
+    "Regra de uso": "Se houver divergência com material didático, prevalece a fonte oficial."
+  },
+  {
+    "": "7",
+    "Categoria": "Regra",
+    "Código": "R03",
+    "Definição": "Conteúdo técnico deve preferir especificação e documentação oficial",
+    "Exemplos": "RFCs; documentação Linux/Microsoft/PostgreSQL; páginas oficiais ITIL/COBIT quando aplicável",
+    "Regra de uso": "Material secundário pode simplificar, mas fatos técnicos devem ser conferidos."
+  },
+  {
+    "": "8",
+    "Categoria": "Regra",
+    "Código": "R04",
+    "Definição": "Fonte complementar não substitui a fonte-base",
+    "Exemplos": "YouTube, blogs, apostilas, artigos e cursos",
+    "Regra de uso": "Vídeos entram como apoio à aprendizagem, não como única sustentação da aula."
+  },
+  {
+    "": "9",
+    "Categoria": "Regra",
+    "Código": "R05",
+    "Definição": "Verificar atualização antes da publicação",
+    "Exemplos": "Registrar versão/data e data de verificação",
+    "Regra de uso": "Se a fonte estiver desatualizada, substituir ou sinalizar explicitamente."
+  },
+  {
+    "": "10",
+    "Categoria": "Regra",
+    "Código": "R06",
+    "Definição": "Fontes superadas não são apagadas",
+    "Exemplos": "Mover ou registrar em 10_FONTES_SUPERADAS_E_ARQUIVO",
+    "Regra de uso": "Preservar histórico e vínculo com conteúdos antigos."
+  },
+  {
+    "": "11",
+    "Categoria": "Regra",
+    "Código": "R07",
+    "Definição": "Evitar reprodução extensa de material protegido",
+    "Exemplos": "Parafrasear e produzir explicação original; usar trechos breves somente quando necessários",
+    "Regra de uso": "Normas, livros, cursos e questões podem ter proteção autoral."
+  },
+  {
+    "": "12",
+    "Categoria": "Regra",
+    "Código": "R08",
+    "Definição": "Questões de prova são fonte de estilo e incidência",
+    "Exemplos": "Provas/gabaritos oficiais em 04_BANCAS_PROVAS_E_GABARITOS",
+    "Regra de uso": "Não copiar bancos proprietários; produzir questões próprias ou usar itens oficiais conforme permitido."
+  },
+  {
+    "": "13",
+    "Categoria": "Regra",
+    "Código": "R09",
+    "Definição": "Imagens externas são referência, não padrão de cópia",
+    "Exemplos": "08_IMAGENS_E_DIAGRAMAS_REFERENCIA",
+    "Regra de uso": "Preferir gerar diagramas originais para as aulas."
+  },
+  {
+    "": "14",
+    "Categoria": "Regra",
+    "Código": "R10",
+    "Definição": "Toda afirmação temporalmente sensível deve ser revalidada",
+    "Exemplos": "Leis alteradas, versões de software, frameworks, editais e retificações",
+    "Regra de uso": "Não confiar apenas em uma fonte antiga porque já está no Drive."
+  },
+  {
+    "": "15",
+    "Categoria": "Fluxo",
+    "Código": "F01",
+    "Definição": "Novo conteúdo",
+    "Exemplos": "Edital → tópicos → busca em FONTES → selecionar P1/P2 → complementar com S1/C1 → produzir aula → revisão → mídia → fila Work",
+    "Regra de uso": "Registrar source_ids e data de verificação."
+  },
+  {
+    "": "16",
+    "Categoria": "Fluxo",
+    "Código": "F02",
+    "Definição": "Nova fonte",
+    "Exemplos": "Cadastrar ID permanente → classificar nível → salvar/linkar na pasta correta → relacionar aos IDs de conteúdo",
+    "Regra de uso": "Uma fonte pode atender vários conteúdos e concursos."
+  },
+  {
+    "": "17",
+    "Categoria": "Fluxo",
+    "Código": "F03",
+    "Definição": "Fonte alterada",
+    "Exemplos": "Registrar nova versão; marcar a anterior como superada; identificar aulas impactadas",
+    "Regra de uso": "Disparar revisão incremental, nunca reescrever toda a biblioteca sem necessidade."
+  }
+]

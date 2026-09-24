@@ -1,0 +1,1819 @@
+[
+  {
+    "id": "PORT-001",
+    "type": "aula",
+    "title": "Interpretação de textos",
+    "discipline": "Português",
+    "subject": "Interpretação de textos",
+    "subtopic": "Compreensão e interpretação",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "Alta reutilização"
+  },
+  {
+    "id": "PORT-002",
+    "type": "aula",
+    "title": "Semântica",
+    "discipline": "Português",
+    "subject": "Semântica",
+    "subtopic": "Sinônimos, antônimos, sentido próprio/figurado, denotação/conotação",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-003",
+    "type": "aula",
+    "title": "Ortografia e acentuação",
+    "discipline": "Português",
+    "subject": "Ortografia e acentuação",
+    "subtopic": "Ortografia oficial e acentuação",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-004",
+    "type": "aula",
+    "title": "Pontuação",
+    "discipline": "Português",
+    "subject": "Pontuação",
+    "subtopic": "Emprego dos sinais de pontuação",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-005",
+    "type": "aula",
+    "title": "Classes de palavras",
+    "discipline": "Português",
+    "subject": "Classes de palavras",
+    "subtopic": "Substantivo, adjetivo, numeral, pronome, verbo, advérbio, preposição, conjunção",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-006",
+    "type": "aula",
+    "title": "Sintaxe",
+    "discipline": "Português",
+    "subject": "Sintaxe",
+    "subtopic": "Coordenação, subordinação e relações entre orações",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-007",
+    "type": "aula",
+    "title": "Concordância, regência e crase",
+    "discipline": "Português",
+    "subject": "Concordância, regência e crase",
+    "subtopic": "Concordância verbal/nominal; regência; crase",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-008",
+    "type": "aula",
+    "title": "Colocação pronominal",
+    "discipline": "Português",
+    "subject": "Colocação pronominal",
+    "subtopic": "Próclise, mesóclise, ênclise",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "PORT-009",
+    "type": "aula",
+    "title": "Coesão, coerência e reescrita",
+    "discipline": "Português",
+    "subject": "Coesão, coerência e reescrita",
+    "subtopic": "Conectivos, equivalência e reestruturação textual",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "parcial"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "CRBio é mais explícito"
+  },
+  {
+    "id": "PORT-010",
+    "type": "aula",
+    "title": "Tipologia e figuras de linguagem",
+    "discipline": "Português",
+    "subject": "Tipologia e figuras de linguagem",
+    "subtopic": "Tipos textuais e figuras de linguagem",
+    "category": "Português",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-001",
+    "type": "aula",
+    "title": "Números e operações",
+    "discipline": "Matemática/RLM",
+    "subject": "Números e operações",
+    "subtopic": "Conjuntos/números inteiros e racionais; operações",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-002",
+    "type": "aula",
+    "title": "Razão e proporção",
+    "discipline": "Matemática/RLM",
+    "subject": "Razão e proporção",
+    "subtopic": "Grandezas proporcionais",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-003",
+    "type": "aula",
+    "title": "Regra de três",
+    "discipline": "Matemática/RLM",
+    "subject": "Regra de três",
+    "subtopic": "Simples e composta",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-004",
+    "type": "aula",
+    "title": "Porcentagem",
+    "discipline": "Matemática/RLM",
+    "subject": "Porcentagem",
+    "subtopic": "Porcentagens e variações",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-005",
+    "type": "aula",
+    "title": "Juros",
+    "discipline": "Matemática/RLM",
+    "subject": "Juros",
+    "subtopic": "Juros simples e compostos",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-006",
+    "type": "aula",
+    "title": "Equações",
+    "discipline": "Matemática/RLM",
+    "subject": "Equações",
+    "subtopic": "Funções/equações; 1º grau",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "Escopos não idênticos"
+  },
+  {
+    "id": "MAT-007",
+    "type": "aula",
+    "title": "Tabelas e gráficos",
+    "discipline": "Matemática/RLM",
+    "subject": "Tabelas e gráficos",
+    "subtopic": "Leitura e interpretação",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-008",
+    "type": "aula",
+    "title": "Raciocínio lógico",
+    "discipline": "Matemática/RLM",
+    "subject": "Raciocínio lógico",
+    "subtopic": "Proposições, conectivos, argumentação, raciocínio sequencial",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "SETEC traz Raciocínio Lógico de forma genérica"
+  },
+  {
+    "id": "MAT-009",
+    "type": "aula",
+    "title": "Probabilidade e combinatória",
+    "discipline": "Matemática/RLM",
+    "subject": "Probabilidade e combinatória",
+    "subtopic": "Probabilidade e análise combinatória",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-010",
+    "type": "aula",
+    "title": "Estatística básica",
+    "discipline": "Matemática/RLM",
+    "subject": "Estatística básica",
+    "subtopic": "Média, moda e mediana",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-011",
+    "type": "aula",
+    "title": "PA e PG",
+    "discipline": "Matemática/RLM",
+    "subject": "PA e PG",
+    "subtopic": "Progressões aritmética e geométrica",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 2,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "MAT-012",
+    "type": "aula",
+    "title": "Geometria e medidas",
+    "discipline": "Matemática/RLM",
+    "subject": "Geometria e medidas",
+    "subtopic": "Área, volume e unidades de medida",
+    "category": "Matemática/RLM",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "parcial"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": "Mais explícito na SETEC"
+  },
+  {
+    "id": "ING-001",
+    "type": "aula",
+    "title": "Interpretação técnica",
+    "discipline": "Inglês",
+    "subject": "Interpretação técnica",
+    "subtopic": "Textos gerais e técnicos de TI",
+    "category": "Inglês",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "ING-002",
+    "type": "aula",
+    "title": "Vocabulário de TI",
+    "discipline": "Inglês",
+    "subject": "Vocabulário de TI",
+    "subtopic": "Vocabulário profissional e terminologia",
+    "category": "Inglês",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "ING-003",
+    "type": "aula",
+    "title": "Gramática para leitura",
+    "discipline": "Inglês",
+    "subject": "Gramática para leitura",
+    "subtopic": "Tempos, modais, pronomes, preposições, conjunções",
+    "category": "Inglês",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-FUND-001",
+    "type": "aula",
+    "title": "Arquitetura de computadores",
+    "discipline": "TI",
+    "subject": "Arquitetura de computadores",
+    "subtopic": "Organização, hardware, software e periféricos",
+    "category": "Fundamentos de TI",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SO-001",
+    "type": "aula",
+    "title": "Windows e Linux",
+    "discipline": "TI",
+    "subject": "Windows e Linux",
+    "subtopic": "Conceitos e administração de sistemas operacionais",
+    "category": "Sistemas Operacionais",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SO-002",
+    "type": "aula",
+    "title": "Processos, memória, arquivos e usuários",
+    "discipline": "TI",
+    "subject": "Processos, memória, arquivos e usuários",
+    "subtopic": "Gerenciamento de recursos do SO",
+    "category": "Sistemas Operacionais",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "parcial"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SO-003",
+    "type": "aula",
+    "title": "Virtualização",
+    "discipline": "TI",
+    "subject": "Virtualização",
+    "subtopic": "Conceitos e uso",
+    "category": "Sistemas Operacionais",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-CLOUD-001",
+    "type": "aula",
+    "title": "Computação em nuvem",
+    "discipline": "TI",
+    "subject": "Computação em nuvem",
+    "subtopic": "Fundamentos e conceitos",
+    "category": "Cloud",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-RED-001",
+    "type": "aula",
+    "title": "Modelos e arquitetura de redes",
+    "discipline": "TI",
+    "subject": "Modelos e arquitetura de redes",
+    "subtopic": "OSI, TCP/IP, LAN/WAN/WLAN, topologias",
+    "category": "Redes",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-RED-002",
+    "type": "aula",
+    "title": "Protocolos de rede",
+    "discipline": "TI",
+    "subject": "Protocolos de rede",
+    "subtopic": "IPv4/IPv6, TCP/UDP, HTTP/HTTPS, DNS, SMTP, FTP",
+    "category": "Redes",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "SETEC não enumera todos"
+  },
+  {
+    "id": "TI-RED-003",
+    "type": "aula",
+    "title": "Equipamentos de rede",
+    "discipline": "TI",
+    "subject": "Equipamentos de rede",
+    "subtopic": "Switches, roteadores, APs, firewalls",
+    "category": "Redes",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-RED-004",
+    "type": "aula",
+    "title": "Roteamento e switching",
+    "discipline": "TI",
+    "subject": "Roteamento e switching",
+    "subtopic": "Roteamento, switching e VLANs",
+    "category": "Redes",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "parcial"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "Mais aprofundado na SETEC"
+  },
+  {
+    "id": "TI-RED-005",
+    "type": "aula",
+    "title": "Serviços de rede",
+    "discipline": "TI",
+    "subject": "Serviços de rede",
+    "subtopic": "DNS, DHCP, NAT e serviços",
+    "category": "Redes",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "parcial"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-RED-006",
+    "type": "aula",
+    "title": "VPN e redes sem fio",
+    "discipline": "TI",
+    "subject": "VPN e redes sem fio",
+    "subtopic": "VPN, wireless e segurança de rede",
+    "category": "Redes",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SEG-001",
+    "type": "aula",
+    "title": "Princípios de segurança",
+    "discipline": "TI",
+    "subject": "Princípios de segurança",
+    "subtopic": "Confidencialidade, integridade, disponibilidade, autenticidade",
+    "category": "Segurança da Informação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SEG-002",
+    "type": "aula",
+    "title": "Criptografia e autenticação",
+    "discipline": "TI",
+    "subject": "Criptografia e autenticação",
+    "subtopic": "Criptografia, certificados, assinatura, controle de acesso",
+    "category": "Segurança da Informação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SEG-003",
+    "type": "aula",
+    "title": "Ameaças e proteção",
+    "discipline": "TI",
+    "subject": "Ameaças e proteção",
+    "subtopic": "Ataques, vulnerabilidades, firewall, antivírus",
+    "category": "Segurança da Informação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SEG-004",
+    "type": "aula",
+    "title": "Backup e continuidade",
+    "discipline": "TI",
+    "subject": "Backup e continuidade",
+    "subtopic": "Backup, restauração, continuidade e desastre",
+    "category": "Segurança da Informação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-SEG-005",
+    "type": "aula",
+    "title": "ISO/IEC 27001 e 27002",
+    "discipline": "TI",
+    "subject": "ISO/IEC 27001 e 27002",
+    "subtopic": "Noções das normas",
+    "category": "Segurança da Informação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-BD-001",
+    "type": "aula",
+    "title": "Banco de dados relacional",
+    "discipline": "TI",
+    "subject": "Banco de dados relacional",
+    "subtopic": "Fundamentos e SGBDs",
+    "category": "Banco de Dados",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-BD-002",
+    "type": "aula",
+    "title": "Modelagem e normalização",
+    "discipline": "TI",
+    "subject": "Modelagem e normalização",
+    "subtopic": "Modelagem relacional e normalização",
+    "category": "Banco de Dados",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-BD-003",
+    "type": "aula",
+    "title": "SQL",
+    "discipline": "TI",
+    "subject": "SQL",
+    "subtopic": "Consulta e manipulação de dados",
+    "category": "Banco de Dados",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-BD-004",
+    "type": "aula",
+    "title": "Administração de banco",
+    "discipline": "TI",
+    "subject": "Administração de banco",
+    "subtopic": "Administração básica de SGBDs",
+    "category": "Banco de Dados",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-ES-001",
+    "type": "aula",
+    "title": "Engenharia de software",
+    "discipline": "TI",
+    "subject": "Engenharia de software",
+    "subtopic": "Conceitos, ciclo de vida e modelos",
+    "category": "Engenharia de Software",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-ES-002",
+    "type": "aula",
+    "title": "Requisitos e análise de sistemas",
+    "discipline": "TI",
+    "subject": "Requisitos e análise de sistemas",
+    "subtopic": "Levantamento e análise de requisitos",
+    "category": "Engenharia de Software",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "parcial"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-ES-003",
+    "type": "aula",
+    "title": "UML",
+    "discipline": "TI",
+    "subject": "UML",
+    "subtopic": "Casos de uso, classes, atividades",
+    "category": "Engenharia de Software",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-ES-004",
+    "type": "aula",
+    "title": "Metodologias de desenvolvimento",
+    "discipline": "TI",
+    "subject": "Metodologias de desenvolvimento",
+    "subtopic": "Scrum, Kanban, ágeis e tradicionais",
+    "category": "Engenharia de Software",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-ES-005",
+    "type": "aula",
+    "title": "Testes de software",
+    "discipline": "TI",
+    "subject": "Testes de software",
+    "subtopic": "Princípios e técnicas de teste",
+    "category": "Engenharia de Software",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-ES-006",
+    "type": "aula",
+    "title": "Versionamento",
+    "discipline": "TI",
+    "subject": "Versionamento",
+    "subtopic": "Controle de versão de código",
+    "category": "Engenharia de Software",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-PROG-001",
+    "type": "aula",
+    "title": "Lógica de programação",
+    "discipline": "TI",
+    "subject": "Lógica de programação",
+    "subtopic": "Fundamentos",
+    "category": "Programação",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-PROG-002",
+    "type": "aula",
+    "title": "Estruturas de dados",
+    "discipline": "TI",
+    "subject": "Estruturas de dados",
+    "subtopic": "Estruturas fundamentais",
+    "category": "Programação",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-PROG-003",
+    "type": "aula",
+    "title": "Programação orientada a objetos",
+    "discipline": "TI",
+    "subject": "Programação orientada a objetos",
+    "subtopic": "Conceitos de POO",
+    "category": "Programação",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-WEB-001",
+    "type": "aula",
+    "title": "Desenvolvimento Web",
+    "discipline": "TI",
+    "subject": "Desenvolvimento Web",
+    "subtopic": "Sistemas para ambiente web",
+    "category": "Web/APIs",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-WEB-002",
+    "type": "aula",
+    "title": "APIs e serviços Web",
+    "discipline": "TI",
+    "subject": "APIs e serviços Web",
+    "subtopic": "APIs e web services",
+    "category": "Web/APIs",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-GOV-001",
+    "type": "aula",
+    "title": "ITIL e COBIT",
+    "discipline": "TI",
+    "subject": "ITIL e COBIT",
+    "subtopic": "Governança e gestão de serviços",
+    "category": "Governança e Gestão de TI",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-GOV-002",
+    "type": "aula",
+    "title": "Gestão de serviços",
+    "discipline": "TI",
+    "subject": "Gestão de serviços",
+    "subtopic": "Operação, processos e serviços de TI",
+    "category": "Governança e Gestão de TI",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-GOV-003",
+    "type": "aula",
+    "title": "Gestão de riscos",
+    "discipline": "TI",
+    "subject": "Gestão de riscos",
+    "subtopic": "Riscos de TI/TIC",
+    "category": "Governança e Gestão de TI",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-GOV-004",
+    "type": "aula",
+    "title": "SLA, indicadores e métricas",
+    "discipline": "TI",
+    "subject": "SLA, indicadores e métricas",
+    "subtopic": "Indicadores e níveis de serviço",
+    "category": "Governança e Gestão de TI",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "parcial"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-GOV-005",
+    "type": "aula",
+    "title": "Gestão de projetos / PMBOK",
+    "discipline": "TI",
+    "subject": "Gestão de projetos / PMBOK",
+    "subtopic": "Gestão de projetos e noções de PMBOK",
+    "category": "Governança e Gestão de TI",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-INFRA-001",
+    "type": "aula",
+    "title": "Servidores Windows/Linux",
+    "discipline": "TI",
+    "subject": "Servidores Windows/Linux",
+    "subtopic": "Administração de servidores",
+    "category": "Infraestrutura",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "parcial"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-INFRA-002",
+    "type": "aula",
+    "title": "Active Directory",
+    "discipline": "TI",
+    "subject": "Active Directory",
+    "subtopic": "AD, usuários, permissões e compartilhamentos",
+    "category": "Infraestrutura",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-INFRA-003",
+    "type": "aula",
+    "title": "Microsoft 365",
+    "discipline": "TI",
+    "subject": "Microsoft 365",
+    "subtopic": "Administração e serviços",
+    "category": "Infraestrutura",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-INFRA-004",
+    "type": "aula",
+    "title": "Monitoramento e automação",
+    "discipline": "TI",
+    "subject": "Monitoramento e automação",
+    "subtopic": "Monitoramento e scripts",
+    "category": "Infraestrutura",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  },
+  {
+    "id": "TI-INFRA-005",
+    "type": "aula",
+    "title": "Ativos e migração",
+    "discipline": "TI",
+    "subject": "Ativos e migração",
+    "subtopic": "Gestão de ativos, implantação e migração de sistemas",
+    "category": "Infraestrutura",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "parcial"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-CRB-001",
+    "type": "aula",
+    "title": "Governança de TIC",
+    "discipline": "TI",
+    "subject": "Governança de TIC",
+    "subtopic": "Planejamento, acompanhamento, controle, métricas e relatórios",
+    "category": "Gestão e Contratações de TIC",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "parcial"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-CRB-002",
+    "type": "aula",
+    "title": "Políticas, normas e auditoria",
+    "discipline": "TI",
+    "subject": "Políticas, normas e auditoria",
+    "subtopic": "Auditoria TIC, controles internos, conformidade",
+    "category": "Gestão e Contratações de TIC",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-CRB-003",
+    "type": "aula",
+    "title": "Contratação de soluções de TIC",
+    "discipline": "TI",
+    "subject": "Contratação de soluções de TIC",
+    "subtopic": "Planejamento, seleção, gestão, Termo de Referência",
+    "category": "Gestão e Contratações de TIC",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-CRB-004",
+    "type": "aula",
+    "title": "Fiscalização de contratos",
+    "discipline": "TI",
+    "subject": "Fiscalização de contratos",
+    "subtopic": "Fiscalização técnica/administrativa, SLA e indicadores",
+    "category": "Gestão e Contratações de TIC",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "TI-CRB-005",
+    "type": "aula",
+    "title": "Atendimento técnico estratégico",
+    "discipline": "TI",
+    "subject": "Atendimento técnico estratégico",
+    "subtopic": "Pareceres, notas técnicas, Ouvidoria, treinamentos",
+    "category": "Gestão e Contratações de TIC",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "LEG-001",
+    "type": "aula",
+    "title": "Ética no setor público",
+    "discipline": "Legislação",
+    "subject": "Ética no setor público",
+    "subtopic": "Ética e princípios da Administração Pública",
+    "category": "Legislação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "parcial"
+      }
+    ],
+    "coverage": "Parcial",
+    "priority": 4,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": "SETEC cobra ética profissional"
+  },
+  {
+    "id": "LEG-002",
+    "type": "aula",
+    "title": "Improbidade administrativa",
+    "discipline": "Legislação",
+    "subject": "Improbidade administrativa",
+    "subtopic": "Lei 8.429/1992",
+    "category": "Legislação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "LEG-003",
+    "type": "aula",
+    "title": "Processo administrativo",
+    "discipline": "Legislação",
+    "subject": "Processo administrativo",
+    "subtopic": "Lei 9.784/1999",
+    "category": "Legislação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "LEG-004",
+    "type": "aula",
+    "title": "Acesso à informação",
+    "discipline": "Legislação",
+    "subject": "Acesso à informação",
+    "subtopic": "Lei 12.527/2011",
+    "category": "Legislação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só CRBio",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "LEG-005",
+    "type": "aula",
+    "title": "LGPD",
+    "discipline": "Legislação",
+    "subject": "LGPD",
+    "subtopic": "Lei 13.709/2018",
+    "category": "Legislação",
+    "contests": [
+      {
+        "contestId": "CRBIO01-2026-ATI",
+        "coverage": "integral"
+      },
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Comum",
+    "priority": 5,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 1",
+    "notes": ""
+  },
+  {
+    "id": "LEG-006",
+    "type": "aula",
+    "title": "Marco Civil da Internet",
+    "discipline": "Legislação",
+    "subject": "Marco Civil da Internet",
+    "subtopic": "Lei 12.965/2014",
+    "category": "Legislação",
+    "contests": [
+      {
+        "contestId": "SETEC-2026-ATI",
+        "coverage": "integral"
+      }
+    ],
+    "coverage": "Só SETEC",
+    "priority": 3,
+    "status": "planejado",
+    "editorialStatus": "ausente",
+    "phase": "Fase 2",
+    "notes": ""
+  }
+]

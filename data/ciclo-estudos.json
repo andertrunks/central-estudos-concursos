@@ -1,0 +1,272 @@
+[
+  {
+    "week": "S1",
+    "period": "23/09–29/09",
+    "start": "2026-09-23",
+    "end": "2026-09-29",
+    "focus": "Banco de Dados + base comum",
+    "contentIds": [
+      "TI-BD-001",
+      "TI-BD-002",
+      "TI-BD-003",
+      "LEG-005"
+    ],
+    "basicIds": [
+      "PORT-001",
+      "MAT-002",
+      "MAT-003",
+      "MAT-004"
+    ],
+    "contentPlan": "TI-BD-001; TI-BD-002; TI-BD-003; LEG-005",
+    "basicPlan": "PORT-001; MAT-002; MAT-003; MAT-004",
+    "questions": "20–30 itens/dia; maioria Quadrix",
+    "review": "D1 + D7 dos tópicos estudados",
+    "discursive": "1 resposta curta sobre SQL/LGPD",
+    "simulation": "Diagnóstico de 40 itens",
+    "secondary": "1 bloco: TI-PROG-001",
+    "goal": "Criar base: SQL, interpretação, regra de três e LGPD"
+  },
+  {
+    "week": "S2",
+    "period": "30/09–06/10",
+    "start": "2026-09-30",
+    "end": "2026-10-06",
+    "focus": "Redes + Segurança",
+    "contentIds": [
+      "TI-RED-001",
+      "TI-RED-002",
+      "TI-RED-003",
+      "TI-RED-006",
+      "TI-SEG-001",
+      "TI-SEG-002"
+    ],
+    "basicIds": [
+      "PORT-002",
+      "PORT-004",
+      "MAT-008",
+      "ING-001"
+    ],
+    "contentPlan": "TI-RED-001; TI-RED-002; TI-RED-003; TI-RED-006; TI-SEG-001; TI-SEG-002",
+    "basicPlan": "PORT-002; PORT-004; MAT-008; ING-001",
+    "questions": "25–35 itens/dia",
+    "review": "D1 + D7 + erros",
+    "discursive": "1 texto 20–30 linhas: segurança de redes",
+    "simulation": "60 itens estilo Quadrix",
+    "secondary": "1 bloco: TI-INFRA-002",
+    "goal": "Dominar OSI/TCP-IP, protocolos, CIA e criptografia"
+  },
+  {
+    "week": "S3",
+    "period": "07/10–13/10",
+    "start": "2026-10-07",
+    "end": "2026-10-13",
+    "focus": "Sistemas Operacionais + Cloud + Continuidade",
+    "contentIds": [
+      "TI-SO-001",
+      "TI-SO-002",
+      "TI-CLOUD-001",
+      "TI-FUND-001",
+      "TI-SEG-003",
+      "TI-SEG-004"
+    ],
+    "basicIds": [
+      "PORT-005",
+      "PORT-006",
+      "MAT-001",
+      "MAT-005",
+      "ING-002"
+    ],
+    "contentPlan": "TI-SO-001; TI-SO-002; TI-CLOUD-001; TI-FUND-001; TI-SEG-003; TI-SEG-004",
+    "basicPlan": "PORT-005; PORT-006; MAT-001; MAT-005; ING-002",
+    "questions": "30–40 itens/dia",
+    "review": "D1 + D7 + caderno de erros",
+    "discursive": "1 texto: backup e continuidade",
+    "simulation": "80 itens",
+    "secondary": "1 bloco: TI-SO-003",
+    "goal": "Consolidar Windows/Linux, processos, cloud e continuidade"
+  },
+  {
+    "week": "S4",
+    "period": "14/10–20/10",
+    "start": "2026-10-14",
+    "end": "2026-10-20",
+    "focus": "Engenharia de Software",
+    "contentIds": [
+      "TI-ES-001",
+      "TI-ES-002",
+      "TI-ES-003",
+      "TI-ES-004",
+      "TI-ES-005"
+    ],
+    "basicIds": [
+      "PORT-007",
+      "PORT-008",
+      "MAT-006",
+      "ING-003"
+    ],
+    "contentPlan": "TI-ES-001; TI-ES-002; TI-ES-003; TI-ES-004; TI-ES-005",
+    "basicPlan": "PORT-007; PORT-008; MAT-006; ING-003",
+    "questions": "30–40 itens/dia",
+    "review": "D1 + D7 + D21",
+    "discursive": "1 texto: Scrum/Kanban ou testes",
+    "simulation": "80 itens + correção",
+    "secondary": "1 bloco: TI-PROG-003",
+    "goal": "Fechar ciclo de desenvolvimento, UML, ágil e testes"
+  },
+  {
+    "week": "S5",
+    "period": "21/10–27/10",
+    "start": "2026-10-21",
+    "end": "2026-10-27",
+    "focus": "Governança de TI + Legislação",
+    "contentIds": [
+      "TI-GOV-001",
+      "TI-GOV-002",
+      "TI-GOV-003",
+      "TI-GOV-004",
+      "LEG-001",
+      "LEG-002",
+      "LEG-003",
+      "LEG-004",
+      "LEG-005"
+    ],
+    "basicIds": [
+      "PORT-003",
+      "PORT-009",
+      "MAT-007"
+    ],
+    "contentPlan": "TI-GOV-001; TI-GOV-002; TI-GOV-003; TI-GOV-004; LEG-001; LEG-002; LEG-003; LEG-004; LEG-005",
+    "basicPlan": "PORT-003; PORT-009; MAT-007",
+    "questions": "35–45 itens/dia",
+    "review": "D1 + D7 + erros reincidentes",
+    "discursive": "1 texto: ITIL/COBIT/LGPD",
+    "simulation": "120 itens em 2 sessões",
+    "secondary": "1 bloco: TI-GOV-005",
+    "goal": "Fechar governança e legislação complementar"
+  },
+  {
+    "week": "S6",
+    "period": "28/10–03/11",
+    "start": "2026-10-28",
+    "end": "2026-11-03",
+    "focus": "Núcleo específico CRBio",
+    "contentIds": [
+      "TI-CRB-001",
+      "TI-CRB-002",
+      "TI-CRB-003",
+      "TI-CRB-004",
+      "TI-CRB-005",
+      "TI-SEG-005"
+    ],
+    "basicIds": [
+      "PORT-010",
+      "MAT-009",
+      "MAT-010"
+    ],
+    "contentPlan": "TI-CRB-001; TI-CRB-002; TI-CRB-003; TI-CRB-004; TI-CRB-005; TI-SEG-005",
+    "basicPlan": "PORT-010; MAT-009; MAT-010",
+    "questions": "35–45 itens/dia",
+    "review": "D1 + D7 + D21",
+    "discursive": "2 textos: contratação TIC e auditoria/ISO",
+    "simulation": "120 itens completo",
+    "secondary": "1 bloco: TI-INFRA-003",
+    "goal": "Cobrir tópicos exclusivos antes da reta final"
+  },
+  {
+    "week": "S7",
+    "period": "04/11–10/11",
+    "start": "2026-11-04",
+    "end": "2026-11-10",
+    "focus": "Infraestrutura e redes aprofundadas",
+    "contentIds": [
+      "TI-INFRA-001",
+      "TI-INFRA-005",
+      "TI-RED-004",
+      "TI-RED-005",
+      "TI-BD-004"
+    ],
+    "basicIds": [
+      "PORT-001",
+      "MAT-001",
+      "PORT-002",
+      "PORT-003",
+      "PORT-004",
+      "PORT-005",
+      "PORT-006",
+      "PORT-007",
+      "MAT-002",
+      "MAT-003",
+      "MAT-004",
+      "MAT-005",
+      "MAT-006",
+      "MAT-007",
+      "MAT-008"
+    ],
+    "contentPlan": "TI-INFRA-001; TI-INFRA-005; TI-RED-004; TI-RED-005; TI-BD-004",
+    "basicPlan": "Revisão PORT-001..007; MAT-001..008",
+    "questions": "40–50 itens/dia",
+    "review": "Revisão por erros + flashcards",
+    "discursive": "1 texto: infraestrutura/migração",
+    "simulation": "120 itens completo",
+    "secondary": "1 bloco: TI-INFRA-004",
+    "goal": "Integrar rede, servidores, serviços e banco"
+  },
+  {
+    "week": "S8",
+    "period": "11/11–17/11",
+    "start": "2026-11-11",
+    "end": "2026-11-17",
+    "focus": "Fechamento do edital + lacunas",
+    "contentIds": [],
+    "basicIds": [
+      "PORT-008",
+      "MAT-009",
+      "PORT-009",
+      "PORT-010",
+      "MAT-010",
+      "MAT-011"
+    ],
+    "contentPlan": "Revisar todos os status ausente/parcial da Fase 1",
+    "basicPlan": "PORT-008..010; MAT-009..011; Inglês completo",
+    "questions": "50 itens/dia",
+    "review": "D7/D21 + caderno de erros",
+    "discursive": "2 discursivas em tempo controlado",
+    "simulation": "2 simulados de 120 itens",
+    "secondary": "1 bloco: TI-WEB-001/TI-WEB-002",
+    "goal": "Zerar lacunas do CRBio e identificar fraquezas"
+  },
+  {
+    "week": "S9",
+    "period": "18/11–24/11",
+    "start": "2026-11-18",
+    "end": "2026-11-24",
+    "focus": "Consolidação intensiva",
+    "contentIds": [],
+    "basicIds": [],
+    "contentPlan": "SQL; Redes; Segurança; ITIL/COBIT; LGPD; SO; Engenharia; específicos CRBio",
+    "basicPlan": "Revisão dirigida por desempenho",
+    "questions": "60 itens/dia; foco em erros",
+    "review": "Somente pontos fracos",
+    "discursive": "3 discursivas alternadas",
+    "simulation": "2 simulados completos + análise",
+    "secondary": "1 bloco: POO/APIs",
+    "goal": "Transformar erro em revisão; evitar conteúdo novo"
+  },
+  {
+    "week": "S10",
+    "period": "25/11–29/11",
+    "start": "2026-11-25",
+    "end": "2026-11-29",
+    "focus": "Revisão final CRBio",
+    "contentIds": [],
+    "basicIds": [],
+    "contentPlan": "Mapas/resumos; leis; comandos SQL; protocolos; frameworks; ISO; contratação TIC",
+    "basicPlan": "Português, RLM e Inglês por erros",
+    "questions": "Questões selecionadas; reduzir na véspera",
+    "review": "Revisão leve D1/D7/erros",
+    "discursive": "1 última discursiva até 26/11",
+    "simulation": "1 simulado até 26/11",
+    "secondary": "Nenhum conteúdo exclusivo novo",
+    "goal": "Chegar à prova descansado e com erros revisados"
+  }
+]

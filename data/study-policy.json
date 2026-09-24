@@ -1,0 +1,10 @@
+{
+  "primaryShare": 0.9,
+  "secondaryShare": 0.09999999999999998,
+  "focusOrder": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ],
+  "disciplineWeights": {},
+  "description": "90% CRBio/núcleo comum + 10% SETEC exclusiva"
+}

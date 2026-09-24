@@ -1,0 +1,30 @@
+[
+  {
+    "": "0",
+    "ID_MÍDIA": "MODELO",
+    "ID_CONTEÚDO": "TI-BD-003",
+    "Tipo": "imagem",
+    "Título/descrição": "Diagrama didático da execução de uma consulta SQL",
+    "Origem": "Gerada por ChatGPT",
+    "URL/arquivo Drive": "",
+    "Canal/autor": "ChatGPT",
+    "Texto alternativo": "Fluxo mostrando SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING e ORDER BY",
+    "Status verificação": "pendente",
+    "Data verificação": "",
+    "Observações": "Gerar junto com a aula"
+  },
+  {
+    "": "1",
+    "ID_MÍDIA": "MODELO-VIDEO",
+    "ID_CONTEÚDO": "TI-BD-003",
+    "Tipo": "YouTube",
+    "Título/descrição": "Vídeo complementar de SQL",
+    "Origem": "YouTube",
+    "URL/arquivo Drive": "",
+    "Canal/autor": "",
+    "Texto alternativo": "Não se aplica",
+    "Status verificação": "pendente",
+    "Data verificação": "",
+    "Observações": "Pesquisar e verificar ao produzir TI-BD-003"
+  }
+]

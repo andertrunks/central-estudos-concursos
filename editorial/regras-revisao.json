@@ -1,0 +1,65 @@
+[
+  {
+    "": "0",
+    "Regra": "D0",
+    "Quando": "Logo após estudar",
+    "Ação": "Resumo ativo sem consultar + 3 pontos-chave",
+    "Duração sugerida": "5–10 min",
+    "Questões": "3–5 itens",
+    "Destino dos erros": "Marcar tópico se errar"
+  },
+  {
+    "": "1",
+    "Regra": "D1",
+    "Quando": "1 dia depois",
+    "Ação": "Revisar resumo/imagem + lembrar conceitos",
+    "Duração sugerida": "10–15 min",
+    "Questões": "5–10 itens",
+    "Destino dos erros": "Caderno de erros"
+  },
+  {
+    "": "2",
+    "Regra": "D7",
+    "Quando": "7 dias depois",
+    "Ação": "Revisão por questões e flashcards",
+    "Duração sugerida": "15–25 min",
+    "Questões": "10–15 itens",
+    "Destino dos erros": "Reclassificar dificuldade"
+  },
+  {
+    "": "3",
+    "Regra": "D21",
+    "Quando": "21 dias depois",
+    "Ação": "Revisão cumulativa",
+    "Duração sugerida": "20–30 min",
+    "Questões": "15–20 itens",
+    "Destino dos erros": "Se reincidente, prioridade +1"
+  },
+  {
+    "": "4",
+    "Regra": "ERRO",
+    "Quando": "Sempre que errar",
+    "Ação": "Registrar motivo: conteúdo, distração, interpretação ou chute",
+    "Duração sugerida": "5 min",
+    "Questões": "Refazer após 48h",
+    "Destino dos erros": "04_CADERNO_DE_ERROS"
+  },
+  {
+    "": "5",
+    "Regra": "DISCURSIVA",
+    "Quando": "1–3x por semana",
+    "Ação": "Resposta técnica com introdução curta, desenvolvimento objetivo e conclusão",
+    "Duração sugerida": "30–45 min",
+    "Questões": "Checklist de correção",
+    "Destino dos erros": "06_DISCURSIVAS"
+  },
+  {
+    "": "6",
+    "Regra": "SIMULADO",
+    "Quando": "Semanal; intensificar nas últimas 3 semanas",
+    "Ação": "Aplicar regra real da banca e controlar tempo",
+    "Duração sugerida": "Conforme prova",
+    "Questões": "40 → 60 → 80 → 120 itens",
+    "Destino dos erros": "05_SIMULADOS + caderno de erros"
+  }
+]
