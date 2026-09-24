@@ -150,7 +150,7 @@ export default function Dashboard() {
           </div>
           <p className="small">
             {active.length > 1
-              ? `${catalog.policy.primaryShare * 100}% foco principal + núcleo comum · ${catalog.policy.secondaryShare * 100}% demais conteúdos`
+              ? `${Math.round(catalog.policy.primaryShare * 100)}% foco principal + núcleo comum · ${Math.round(catalog.policy.secondaryShare * 100)}% demais conteúdos`
               : "Prioridade no concurso ativo mais próximo"}
           </p>
           <Link className="text-link" to="/ciclo">

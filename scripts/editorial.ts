@@ -251,6 +251,10 @@ export function transform(
       goal: get(r, "Meta da semana"),
     };
   });
+  const distribution=state.distribuicao_ciclo??state.distribuicao_ate_CRBio;
+  const shares=[...(distribution??'').matchAll(/(\d+)%/g)].map(match=>Number(match[1]));
+  const primary=shares[0];const secondary=shares[1];
+  if(primary===undefined||secondary===undefined||shares.length!==2||primary+secondary!==100)throw new Error('Distribuição do ciclo deve informar duas porcentagens que somem 100%');
   return catalogSchema.parse({
     contests,
     references,
@@ -262,26 +266,14 @@ export function transform(
     discursives: existing?.discursives ?? [],
     cycle,
     policy: {
-      primaryShare:
-        Number(
-          (state.distribuicao_ciclo ?? state.distribuicao_ate_CRBio)?.match(
-            /(\d+)%/,
-          )?.[1] ?? 90,
-        ) / 100,
-      secondaryShare:
-        1 -
-        Number(
-          (state.distribuicao_ciclo ?? state.distribuicao_ate_CRBio)?.match(
-            /(\d+)%/,
-          )?.[1] ?? 90,
-        ) /
-          100,
+      primaryShare:primary/100,
+      secondaryShare:secondary/100,
       focusOrder: Object.entries(state)
         .filter(([key]) => /^concurso_foco_\d+$/.test(key))
         .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
         .map(([, value]) => value),
       disciplineWeights: existing?.policy.disciplineWeights ?? {},
-      description: state.distribuicao_ciclo ?? state.distribuicao_ate_CRBio,
+      description: distribution,
     },
     syncedAt,
   });

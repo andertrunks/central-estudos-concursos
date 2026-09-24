@@ -307,9 +307,9 @@ export function Cycle() {
         concursos ativos.
       </PageHeading>
       <div className="notice">
-        Até a próxima prova, {catalog.policy.primaryShare * 100}% do ciclo
+        Até a próxima prova, {Math.round(catalog.policy.primaryShare * 100)}% do ciclo
         favorece o foco principal e o núcleo comum. Os demais{" "}
-        {catalog.policy.secondaryShare * 100}% mantêm os assuntos exclusivos dos
+        {Math.round(catalog.policy.secondaryShare * 100)}% mantêm os assuntos exclusivos dos
         outros concursos. Conteúdos ainda não publicados não são oferecidos como
         aulas.
       </div>
