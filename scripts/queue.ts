@@ -1,7 +1,7 @@
 import { readFile, writeFile, copyFile, mkdir, access } from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
-import { lessonSchema, mediaSchema, questionSchema } from "../src/types/schema";
+import { lessonSchema, mediaSchema, questionSchema, discursiveSchema } from "../src/types/schema";
 import { validateCatalog } from "../src/services/integrity";
 import { loadCatalog } from "./io";
 export const packageSchema = z.object({
@@ -11,6 +11,7 @@ export const packageSchema = z.object({
   lesson: lessonSchema,
   media: z.array(mediaSchema),
   questions: z.array(questionSchema),
+  discursives: z.array(discursiveSchema).default([]),
 });
 export function preparePackage(
   input: unknown,
@@ -28,6 +29,8 @@ export function preparePackage(
     if (m.contentId !== id) throw new Error("Mídia de outro conteúdo");
   for (const q of item.questions)
     if (q.contentId !== id) throw new Error("Questão de outro conteúdo");
+  for (const d of item.discursives)
+    if (!d.contentIds.includes(id)) throw new Error("Discursiva de outro conteúdo");
   const next = validateCatalog({
     ...catalog,
     references: catalog.references.map((r) =>
@@ -38,6 +41,7 @@ export function preparePackage(
     lessons: merge(catalog.lessons, [item.lesson]),
     media: merge(catalog.media, item.media),
     questions: merge(catalog.questions, item.questions),
+    discursives: merge(catalog.discursives, item.discursives),
   });
   return { item, next };
 }
@@ -76,6 +80,8 @@ async function main() {
       `content/questions/${q.id}.json`,
       JSON.stringify(q, null, 2) + "\n",
     );
+  for (const d of item.discursives)
+    await writeFile(`content/discursives/${d.id}.json`, JSON.stringify(d, null, 2) + "\n");
   await writeFile(
     "data/media.json",
     JSON.stringify(next.media, null, 2) + "\n",

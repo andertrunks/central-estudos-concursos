@@ -33,6 +33,8 @@ O pacote usa `packageSchema` de `scripts/queue.ts`:
 - `lesson`: contrato completo `lessonSchema`, incluindo objetivos, teoria, exemplos, pegadinhas, resumo, revisão, concursos, fontes, mídia, questões e data;
 - `media`: cadastro de imagem original com arquivo relativo, título, legenda, alt e verificação; vídeos com URL, título, canal, descrição e data de verificação;
 - `questions`: itens validados com alternativas, gabarito, comentário, fontes e IDs.
+- `discursives` (opcional): propostas com ID estável, concurso, instruções e resposta-modelo recolhida.
+- `lesson.sections` e `lesson.materials` (opcionais): subtemas e cadernos integrais com IDs próprios dentro da aula. Não duplicam a aula por concurso.
 
 O Work confere vídeos e fontes antes de preencher `verifiedAt`. A validação técnica confirma formato e relacionamentos; não certifica a correção factual nem a disponibilidade futura de um link. Exceções editoriais devem ser justificadas em `lesson.exception`, vindas da fonte canônica.
 
@@ -47,3 +49,9 @@ O Work confere vídeos e fontes antes de preencher `verifiedAt`. A validação t
 5. Se o deploy falhar, manter “integrado; aguardando testes e deploy”, registrar erro e corrigir incrementalmente. Retomadas usam ID da fila/conteúdo; os merges são idempotentes por ID.
 
 As alterações remotas da fila são feitas pelo conector do Work, nunca pelo site. A baixa exige verificação do resultado publicado; não é uma chamada automática cega embutida no importador.
+
+## Primeiro pacote real: SQL
+
+`editorial/sql-import.json` registra IDs dos documentos e hashes dos textos lidos. A planilha tinha PUB-0001 pronto para validação, embora a pasta física 08 estivesse vazia; o documento foi localizado pelo ID na biblioteca canônica. A integração preserva os 28 subtemas e os cadernos integrais. As questões com IDs CE/MC/INDEPAC/QUADRIX-AUTORAL foram extraídas apenas quando enunciado, alternativas, gabarito e comentário estavam completos: 252 itens. Os 36 itens AN permanecem no caderno, com resposta esperada, sem correção automática. As nove propostas discursivas usam IDs técnicos determinísticos `D-TI-BD-003-27-NN`, derivados da seção canônica, e mantêm instrução e espelho separados. Fontes do banco são herdadas da relação declarada no documento; não se afirma que cada fonte sustenta individualmente toda questão.
+
+O estado editorial `produzido` significa `em produção` no catálogo até que o pacote passe pela validação. As novas abas de cobertura, referências de bancas e auditoria são preservadas em `editorial/`, sem substituir silenciosamente os snapshots antigos.

@@ -45,7 +45,8 @@ function WritingEditor({ proposal: d }: { proposal: Discursive }) {
     <article className="card section-space">
       <h2>{d.title}</h2>
       <p>{d.theme}</p>
-      <p>{d.instructions}</p>
+        <div className="prose">{d.instructions}</div>
+        {d.modelAnswer && <details><summary>Espelho de correção e resposta-modelo</summary><div className="prose">{d.modelAnswer}</div></details>}
       <label>
         Sua resposta
         <textarea

@@ -734,9 +734,20 @@ progress::-moz-progress-bar {
   font-weight: 400;
 }
 .question-statement {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
   font-size: 1.1rem;
   font-weight: 600;
 }
+summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding-block: 12px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.option span { white-space: pre-wrap; overflow-wrap: anywhere; }
+details[open] > .prose { margin-top: 16px; }
 fieldset {
   border: 0;
   padding: 0;

@@ -162,6 +162,8 @@ export const lessonSchema = z.object({
     questions: z.boolean(),
   }),
   exception: z.string().optional(),
+  sections: z.array(z.object({ id, title: text, text })).optional(),
+  materials: z.array(z.object({ id, title: text, text })).optional(),
 });
 export const simulationSchema = z.object({
   id,
@@ -181,6 +183,7 @@ export const discursiveSchema = z.object({
   contentIds: z.array(id),
   contestId: id,
   instructions: text,
+  modelAnswer: text.optional(),
   source_ids: z.array(id).min(1),
 });
 export const cycleSchema = z.object({

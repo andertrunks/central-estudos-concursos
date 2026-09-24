@@ -58,6 +58,7 @@ export function transform(
         "planejado",
         "a produzir",
         "em produção",
+        "produzido",
         "parcial",
         "publicado",
       ].includes(editorial)
@@ -87,7 +88,7 @@ export function transform(
           ? "publicado"
           : editorial === "ausente"
             ? "planejado"
-            : editorial === "em produção"
+            : ["em produção", "produzido"].includes(editorial)
               ? "em produção"
               : editorial === "publicado"
                 ? "publicado"

@@ -70,6 +70,9 @@ export function validateCatalog(input: unknown): Catalog {
       errors.push(`${m.id}: vídeo inválido`);
   }
   for (const l of data.lessons) {
+    const sectionIds = [...(l.sections ?? []), ...(l.materials ?? [])].map(s => s.id);
+    if (new Set(sectionIds).size !== sectionIds.length)
+      errors.push(`${l.id}: ID de seção/material duplicado`);
     check("references", [l.id], l.id);
     check("contests", l.contests, l.id);
     check("sources", l.source_ids, l.id);

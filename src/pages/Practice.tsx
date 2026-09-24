@@ -88,14 +88,14 @@ export function QuestionCard({ question: q }: { question: Question }) {
               </label>
             </>
           )}
-          <p className="small">
-            Fontes:{" "}
+          <details className="small">
+            <summary>Fontes do banco de questões</summary>
             {q.source_ids.map((id) => (
               <a key={id} href={catalog.sources.find((s) => s.id === id)?.url}>
                 {catalog.sources.find((s) => s.id === id)?.title}{" "}
               </a>
             ))}
-          </p>
+          </details>
         </div>
       )}
     </article>
@@ -144,7 +144,7 @@ export function Questions() {
         </label>
       </div>
       {questions.length ? (
-        questions.map((q) => <QuestionCard key={q.id} question={q} />)
+        <QuestionList key={`${contest}-${type}`} questions={questions} />
       ) : (
         <Empty title="As primeiras questões estão a caminho">
           Somente questões revisadas e vinculadas à biblioteca serão publicadas
@@ -153,6 +153,22 @@ export function Questions() {
       )}
     </>
   );
+}
+export function QuestionList({ questions }: { questions: Question[] }) {
+  const [page, setPage] = useState(0);
+  const [query, setQuery] = useState("");
+  const filtered = questions.filter(q => `${q.id} ${q.statement}`.toLocaleLowerCase("pt-BR").includes(query.toLocaleLowerCase("pt-BR")));
+  const pages = Math.ceil(filtered.length / 10);
+  const current = Math.min(page, Math.max(0, pages - 1));
+  return <>
+    <label>Buscar questão por ID ou enunciado<input type="search" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} /></label>
+    <p>{filtered.length} questões · página {pages ? current + 1 : 0} de {pages}</p>
+    {filtered.slice(current * 10, current * 10 + 10).map(q => <QuestionCard key={q.id} question={q} />)}
+    <div className="actions" aria-label="Paginação de questões">
+      <button disabled={current === 0} onClick={() => setPage(current - 1)}>Anteriores</button>
+      <button disabled={current + 1 >= pages} onClick={() => setPage(current + 1)}>Próximas</button>
+    </div>
+  </>;
 }
 export function Reviews() {
   const { state, run } = useStudy();

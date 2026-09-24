@@ -47,6 +47,9 @@ for (const [header, name] of [
   ["Regra", "regras-revisao"],
   ["ID_MÍDIA", "midias-canonicas"],
   ["Categoria", "padrao-fontes"],
+  ["ID_PAI", "cobertura-conteudo"],
+  ["ID_REF", "questoes-bancas"],
+  ["ID_SUBTEMA", "auditoria-subtemas"],
 ]) {
   if (!header || !name) continue;
   const table = parseSnapshot(csv).find((t) => t[0] && header in t[0]);

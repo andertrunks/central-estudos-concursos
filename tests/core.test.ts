@@ -91,8 +91,10 @@ describe("datas e ciclo", () => {
     ).toBeGreaterThan(score);
     expect(priorityScore(sql, data, undefined, [], "2027-01-18").score).toBe(0);
   });
-  it("nunca recomenda aula planejada como publicada", () =>
-    expect(nextStudy(data, [], [], referenceDay)).toBeUndefined());
+  it("nunca recomenda aula planejada como publicada", () => {
+    const planned = { ...data, lessons: [], references: data.references.map(r => ({...r, status: "planejado" as const})) };
+    expect(nextStudy(planned, [], [], referenceDay)).toBeUndefined();
+  });
   it("agenda D0 D1 D7 D21 com virada de ano", () => {
     const r = scheduleReviews(sql.id, "2026-12-31");
     expect(r.map((x) => x.due)).toEqual([
@@ -234,6 +236,7 @@ describe("integridade e importação editorial", () => {
     expect(() =>
       validateCatalog({
         ...data,
+        lessons: [],
         references: data.references.map((r) =>
           r.id === sql.id ? { ...r, status: "publicado" } : r,
         ),

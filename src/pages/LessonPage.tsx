@@ -4,7 +4,7 @@ import { catalog } from "../services/catalog";
 import { setProgress } from "../services/storage";
 import { useStudy } from "../components/StudyContext";
 import { Empty, formatDate, PageHeading } from "../components/Common";
-import { QuestionCard } from "./Practice";
+import { QuestionList } from "./Practice";
 export default function LessonPage() {
   const { id } = useParams();
   const ref = catalog.references.find((r) => r.id === id);
@@ -84,6 +84,14 @@ export default function LessonPage() {
             <p role="status">{message}</p>
           </section>
           <article className="lesson-body">
+            {lesson.sections?.length ? <section aria-label="Subtemas da aula">
+              <h2>Estude por subtema</h2>
+              <p>Abra um subtema para continuar. A biblioteca mantém uma única aula compartilhada entre os concursos.</p>
+              {lesson.sections.map(section => <details className="card section-space" key={section.id}>
+                <summary>{section.id} · {section.title}</summary>
+                <div className="prose">{section.text}</div>
+              </details>)}
+            </section> : null}
             <section>
               <h2>Objetivos</h2>
               <ul>
@@ -171,16 +179,16 @@ export default function LessonPage() {
             </section>
             <section>
               <h2>Questões e gabarito comentado</h2>
-              {catalog.questions
-                .filter((q) => lesson.questions.includes(q.id))
-                .map((q) => (
-                  <QuestionCard key={q.id} question={q} />
-                ))}
+              <QuestionList questions={catalog.questions.filter(q => lesson.questions.includes(q.id))} />
             </section>
             <section>
               <h2>Revisão</h2>
-              <div className="prose">{lesson.review}</div>
+              <details><summary>Abrir revisão completa</summary><div className="prose">{lesson.review}</div></details>
             </section>
+            {lesson.materials?.map(material => <section key={material.id}>
+              <h2>{material.title}</h2>
+              <details><summary>Abrir material de estudo</summary><div className="prose">{material.text}</div></details>
+            </section>)}
             <section>
               <h2>Fontes e referências</h2>
               <ul>
