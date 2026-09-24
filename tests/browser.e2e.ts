@@ -27,14 +27,13 @@ try {
   await expect(
     page.getByRole("heading", { name: "Um pouco a cada dia." }),
   ).toBeVisible();
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
+  await page.waitForFunction(()=>navigator.serviceWorker.getRegistration().then(r=>Boolean(r?.active)),undefined,{timeout:30_000});
   await expect(page.getByRole("button", { name: "Entendi" })).toBeVisible({
     timeout: 20000,
   });
   await page.getByRole("button", { name: "Entendi" }).click();
   checks.push("Dashboard, manifesto e service worker");
+  console.log('Dashboard e service worker verificados');
   await page.screenshot({
     path: path.join(destination, "dashboard-desktop.png"),
     fullPage: true,
@@ -65,6 +64,7 @@ try {
       .analyze();
     accessibility[route ?? ""] = audit.violations;
     expect(audit.violations, `Acessibilidade: ${route}`).toEqual([]);
+    console.log(`Rota e acessibilidade verificadas: ${route}`);
   }
   checks.push("Nove rotas e acessibilidade WCAG A/AA automatizada");
   await page.goto(`${base}#/biblioteca`);
