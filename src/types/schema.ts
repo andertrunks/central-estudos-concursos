@@ -120,6 +120,9 @@ export const questionSchema = z
     contentId: id,
     banca: text,
     type: z.enum(["certo/errado", "múltipla escolha"]),
+    origin: z.enum(["real", "inédita"]).optional(),
+    unitIds: z.array(id).optional(),
+    provenance: z.object({ orgao: text, prova: text, year: z.number().int(), cargo: text, url }).optional(),
     statement: text,
     options: z.array(z.object({ id: text, text })).min(2),
     answer: text,
@@ -127,6 +130,10 @@ export const questionSchema = z
     source_ids: z.array(id).min(1),
     contests: z.array(id),
   })
+  .refine(
+    (q) => q.origin !== "real" || Boolean(q.provenance),
+    "Questão real exige procedência verificável",
+  )
   .refine(
     (q) => q.options.some((o) => o.id === q.answer),
     "Gabarito não corresponde às alternativas",
@@ -162,7 +169,7 @@ export const lessonSchema = z.object({
     questions: z.boolean(),
   }),
   exception: z.string().optional(),
-  sections: z.array(z.object({ id, title: text, text })).optional(),
+  sections: z.array(z.object({ id, title: text, text, materialIds: z.array(id).optional(), includeReview: z.boolean().optional() })).optional(),
   materials: z.array(z.object({ id, title: text, text })).optional(),
 });
 export const simulationSchema = z.object({
@@ -249,6 +256,7 @@ export type StudyProgress = z.infer<typeof progressSchema>;
 export const reviewSchema = z.object({
   id: z.string(),
   contentId: id,
+  unitId: id.optional(),
   stage: z.enum(["D0", "D1", "D7", "D21", "ERRO"]),
   due: date,
   doneAt: date.nullable(),
@@ -256,6 +264,7 @@ export const reviewSchema = z.object({
 export type Review = z.infer<typeof reviewSchema>;
 export const attemptSchema = z.object({
   id: z.string(),
+  activityId: z.string().optional(),
   questionId: id,
   contentId: id,
   date,

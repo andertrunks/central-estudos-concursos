@@ -130,6 +130,8 @@ describe("integridade e importação editorial", () => {
         source_ids: [data.sources[0]!.id],
         media: ["TEST-IMAGE", "TEST-VIDEO"],
         questions: [question.id],
+        // The package replaces an existing lesson whose questions reference these permanent units.
+        sections: data.lessons[0]!.sections?.map(({ id, title, text }) => ({ id, title, text })),
         updatedAt: referenceDay,
         requirements: { image: true, videos: true, questions: true },
       },

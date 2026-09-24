@@ -45,6 +45,10 @@ export function validateCatalog(input: unknown): Catalog {
     if (r.status === "publicado") check("lessons", [r.id], r.id);
   }
   for (const q of data.questions) {
+    const lesson = data.lessons.find(l => l.id === q.contentId);
+    for (const unitId of q.unitIds ?? [])
+      if (unitId !== q.contentId && !lesson?.sections?.some(s => s.id === unitId))
+        errors.push(`${q.id}: subtema inexistente ${unitId}`);
     check("references", [q.contentId], q.id);
     check("sources", q.source_ids, q.id);
     check("contests", q.contests, q.id);
@@ -70,6 +74,9 @@ export function validateCatalog(input: unknown): Catalog {
       errors.push(`${m.id}: vídeo inválido`);
   }
   for (const l of data.lessons) {
+    for (const section of l.sections ?? [])
+      for (const material of section.materialIds ?? [])
+        if (!l.materials?.some(m => m.id === material)) errors.push(`${section.id}: material inexistente ${material}`);
     const sectionIds = [...(l.sections ?? []), ...(l.materials ?? [])].map(s => s.id);
     if (new Set(sectionIds).size !== sectionIds.length)
       errors.push(`${l.id}: ID de seção/material duplicado`);

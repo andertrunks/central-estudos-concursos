@@ -1,0 +1,2698 @@
+{
+  "date": "2026-09-24",
+  "baseline": "cce7e5e",
+  "method": "Comparação da matriz e escopos canônicos com os objetos oficiais de avaliação e estrutura textual publicada. Avaliação de cobertura didática, não certificação de cada afirmação ou gabarito. Tamanho não determina classificação.",
+  "classifications": {
+    "completa": "Todos os requisitos demonstrados e rastreados; não atribuído nesta auditoria.",
+    "adequada": "Teoria, exemplos e aplicação suficientes para o escopo identificado, com limitações registradas.",
+    "parcial": "Parte do escopo depende de material complementar ou integração ainda incompleta.",
+    "superficial": "Existe texto, mas falta desenvolvimento do escopo; não encontrado entre os 25 subtemas teóricos publicados.",
+    "ausente": "Sem aula publicada; não significa inexistência no Drive."
+  },
+  "officialScope": {
+    "CRBIO": "Edital, 18.2.5.2, item 4.3 (SQL); 18.2.2.1/.2/.4, 18.2.3 e demais itens específicos para lacunas.",
+    "SETEC": "Anexo II, ensino superior e Analista Técnico (Informática): Linguagem SQL; demais objetos para lacunas."
+  },
+  "hashes": {
+    "work/trail-control.csv": "a297d280a73ba791411792d9e0218ca3813dfa3fa444180d30e598c203d96617",
+    "work/CRBIO01-2026-ATI.pdf": "cbf7c42ff96bbe0bd04ea9bd9f174932d4f08ad7f90991a7ddb2de036c16a3e3",
+    "work/SETEC-2026-ATI.pdf": "d59adf06ecb5b790f17ad82e03d2decd3d32cea615963022b574987b702a80fd",
+    "work/sql-bank.txt": "ea9f13e02c144a30312da0e8e7e7c13493485ddfac45c0841887ce6d0cfab4c2",
+    "content/lessons/TI-BD-003.json": "a4cc9cd19d6b0a046f397f4f5e9ae8d294ec7d07f332aef648a81ee3d16efbd0"
+  },
+  "references": [
+    {
+      "id": "PORT-001",
+      "discipline": "Português",
+      "subject": "Interpretação de textos",
+      "subtopic": "Compreensão e interpretação",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-002",
+      "discipline": "Português",
+      "subject": "Semântica",
+      "subtopic": "Sinônimos, antônimos, sentido próprio/figurado, denotação/conotação",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-003",
+      "discipline": "Português",
+      "subject": "Ortografia e acentuação",
+      "subtopic": "Ortografia oficial e acentuação",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-004",
+      "discipline": "Português",
+      "subject": "Pontuação",
+      "subtopic": "Emprego dos sinais de pontuação",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-005",
+      "discipline": "Português",
+      "subject": "Classes de palavras",
+      "subtopic": "Substantivo, adjetivo, numeral, pronome, verbo, advérbio, preposição, conjunção",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-006",
+      "discipline": "Português",
+      "subject": "Sintaxe",
+      "subtopic": "Coordenação, subordinação e relações entre orações",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-007",
+      "discipline": "Português",
+      "subject": "Concordância, regência e crase",
+      "subtopic": "Concordância verbal/nominal; regência; crase",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-008",
+      "discipline": "Português",
+      "subject": "Colocação pronominal",
+      "subtopic": "Próclise, mesóclise, ênclise",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-009",
+      "discipline": "Português",
+      "subject": "Coesão, coerência e reescrita",
+      "subtopic": "Conectivos, equivalência e reestruturação textual",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "parcial"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "PORT-010",
+      "discipline": "Português",
+      "subject": "Tipologia e figuras de linguagem",
+      "subtopic": "Tipos textuais e figuras de linguagem",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-001",
+      "discipline": "Matemática/RLM",
+      "subject": "Números e operações",
+      "subtopic": "Conjuntos/números inteiros e racionais; operações",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-002",
+      "discipline": "Matemática/RLM",
+      "subject": "Razão e proporção",
+      "subtopic": "Grandezas proporcionais",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-003",
+      "discipline": "Matemática/RLM",
+      "subject": "Regra de três",
+      "subtopic": "Simples e composta",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-004",
+      "discipline": "Matemática/RLM",
+      "subject": "Porcentagem",
+      "subtopic": "Porcentagens e variações",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-005",
+      "discipline": "Matemática/RLM",
+      "subject": "Juros",
+      "subtopic": "Juros simples e compostos",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-006",
+      "discipline": "Matemática/RLM",
+      "subject": "Equações",
+      "subtopic": "Funções/equações; 1º grau",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-007",
+      "discipline": "Matemática/RLM",
+      "subject": "Tabelas e gráficos",
+      "subtopic": "Leitura e interpretação",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-008",
+      "discipline": "Matemática/RLM",
+      "subject": "Raciocínio lógico",
+      "subtopic": "Proposições, conectivos, argumentação, raciocínio sequencial",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-009",
+      "discipline": "Matemática/RLM",
+      "subject": "Probabilidade e combinatória",
+      "subtopic": "Probabilidade e análise combinatória",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-010",
+      "discipline": "Matemática/RLM",
+      "subject": "Estatística básica",
+      "subtopic": "Média, moda e mediana",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-011",
+      "discipline": "Matemática/RLM",
+      "subject": "PA e PG",
+      "subtopic": "Progressões aritmética e geométrica",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "MAT-012",
+      "discipline": "Matemática/RLM",
+      "subject": "Geometria e medidas",
+      "subtopic": "Área, volume e unidades de medida",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "parcial"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "ING-001",
+      "discipline": "Inglês",
+      "subject": "Interpretação técnica",
+      "subtopic": "Textos gerais e técnicos de TI",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "ING-002",
+      "discipline": "Inglês",
+      "subject": "Vocabulário de TI",
+      "subtopic": "Vocabulário profissional e terminologia",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "ING-003",
+      "discipline": "Inglês",
+      "subject": "Gramática para leitura",
+      "subtopic": "Tempos, modais, pronomes, preposições, conjunções",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-FUND-001",
+      "discipline": "TI",
+      "subject": "Arquitetura de computadores",
+      "subtopic": "Organização, hardware, software e periféricos",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SO-001",
+      "discipline": "TI",
+      "subject": "Windows e Linux",
+      "subtopic": "Conceitos e administração de sistemas operacionais",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SO-002",
+      "discipline": "TI",
+      "subject": "Processos, memória, arquivos e usuários",
+      "subtopic": "Gerenciamento de recursos do SO",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "parcial"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SO-003",
+      "discipline": "TI",
+      "subject": "Virtualização",
+      "subtopic": "Conceitos e uso",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-CLOUD-001",
+      "discipline": "TI",
+      "subject": "Computação em nuvem",
+      "subtopic": "Fundamentos e conceitos",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-RED-001",
+      "discipline": "TI",
+      "subject": "Modelos e arquitetura de redes",
+      "subtopic": "OSI, TCP/IP, LAN/WAN/WLAN, topologias",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-RED-002",
+      "discipline": "TI",
+      "subject": "Protocolos de rede",
+      "subtopic": "IPv4/IPv6, TCP/UDP, HTTP/HTTPS, DNS, SMTP, FTP",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-RED-003",
+      "discipline": "TI",
+      "subject": "Equipamentos de rede",
+      "subtopic": "Switches, roteadores, APs, firewalls",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-RED-004",
+      "discipline": "TI",
+      "subject": "Roteamento e switching",
+      "subtopic": "Roteamento, switching e VLANs",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "parcial"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-RED-005",
+      "discipline": "TI",
+      "subject": "Serviços de rede",
+      "subtopic": "DNS, DHCP, NAT e serviços",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "parcial"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-RED-006",
+      "discipline": "TI",
+      "subject": "VPN e redes sem fio",
+      "subtopic": "VPN, wireless e segurança de rede",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SEG-001",
+      "discipline": "TI",
+      "subject": "Princípios de segurança",
+      "subtopic": "Confidencialidade, integridade, disponibilidade, autenticidade",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SEG-002",
+      "discipline": "TI",
+      "subject": "Criptografia e autenticação",
+      "subtopic": "Criptografia, certificados, assinatura, controle de acesso",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SEG-003",
+      "discipline": "TI",
+      "subject": "Ameaças e proteção",
+      "subtopic": "Ataques, vulnerabilidades, firewall, antivírus",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SEG-004",
+      "discipline": "TI",
+      "subject": "Backup e continuidade",
+      "subtopic": "Backup, restauração, continuidade e desastre",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-SEG-005",
+      "discipline": "TI",
+      "subject": "ISO/IEC 27001 e 27002",
+      "subtopic": "Noções das normas",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-BD-001",
+      "discipline": "TI",
+      "subject": "Banco de dados relacional",
+      "subtopic": "Fundamentos e SGBDs",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-BD-002",
+      "discipline": "TI",
+      "subject": "Modelagem e normalização",
+      "subtopic": "Modelagem relacional e normalização",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-BD-003",
+      "discipline": "TI",
+      "subject": "SQL",
+      "subtopic": "Consulta e manipulação de dados",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "parcial",
+      "theoryClassification": "adequada",
+      "reason": "Teoria ampla de consulta/manipulação; integração interativa de questões reais e rastreio individual das fontes pendentes."
+    },
+    {
+      "id": "TI-BD-004",
+      "discipline": "TI",
+      "subject": "Administração de banco",
+      "subtopic": "Administração básica de SGBDs",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-ES-001",
+      "discipline": "TI",
+      "subject": "Engenharia de software",
+      "subtopic": "Conceitos, ciclo de vida e modelos",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-ES-002",
+      "discipline": "TI",
+      "subject": "Requisitos e análise de sistemas",
+      "subtopic": "Levantamento e análise de requisitos",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "parcial"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-ES-003",
+      "discipline": "TI",
+      "subject": "UML",
+      "subtopic": "Casos de uso, classes, atividades",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-ES-004",
+      "discipline": "TI",
+      "subject": "Metodologias de desenvolvimento",
+      "subtopic": "Scrum, Kanban, ágeis e tradicionais",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-ES-005",
+      "discipline": "TI",
+      "subject": "Testes de software",
+      "subtopic": "Princípios e técnicas de teste",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-ES-006",
+      "discipline": "TI",
+      "subject": "Versionamento",
+      "subtopic": "Controle de versão de código",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-PROG-001",
+      "discipline": "TI",
+      "subject": "Lógica de programação",
+      "subtopic": "Fundamentos",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-PROG-002",
+      "discipline": "TI",
+      "subject": "Estruturas de dados",
+      "subtopic": "Estruturas fundamentais",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-PROG-003",
+      "discipline": "TI",
+      "subject": "Programação orientada a objetos",
+      "subtopic": "Conceitos de POO",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-WEB-001",
+      "discipline": "TI",
+      "subject": "Desenvolvimento Web",
+      "subtopic": "Sistemas para ambiente web",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-WEB-002",
+      "discipline": "TI",
+      "subject": "APIs e serviços Web",
+      "subtopic": "APIs e web services",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-GOV-001",
+      "discipline": "TI",
+      "subject": "ITIL e COBIT",
+      "subtopic": "Governança e gestão de serviços",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-GOV-002",
+      "discipline": "TI",
+      "subject": "Gestão de serviços",
+      "subtopic": "Operação, processos e serviços de TI",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-GOV-003",
+      "discipline": "TI",
+      "subject": "Gestão de riscos",
+      "subtopic": "Riscos de TI/TIC",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-GOV-004",
+      "discipline": "TI",
+      "subject": "SLA, indicadores e métricas",
+      "subtopic": "Indicadores e níveis de serviço",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "parcial"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-GOV-005",
+      "discipline": "TI",
+      "subject": "Gestão de projetos / PMBOK",
+      "subtopic": "Gestão de projetos e noções de PMBOK",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-INFRA-001",
+      "discipline": "TI",
+      "subject": "Servidores Windows/Linux",
+      "subtopic": "Administração de servidores",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "parcial"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-INFRA-002",
+      "discipline": "TI",
+      "subject": "Active Directory",
+      "subtopic": "AD, usuários, permissões e compartilhamentos",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-INFRA-003",
+      "discipline": "TI",
+      "subject": "Microsoft 365",
+      "subtopic": "Administração e serviços",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-INFRA-004",
+      "discipline": "TI",
+      "subject": "Monitoramento e automação",
+      "subtopic": "Monitoramento e scripts",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-INFRA-005",
+      "discipline": "TI",
+      "subject": "Ativos e migração",
+      "subtopic": "Gestão de ativos, implantação e migração de sistemas",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "parcial"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-CRB-001",
+      "discipline": "TI",
+      "subject": "Governança de TIC",
+      "subtopic": "Planejamento, acompanhamento, controle, métricas e relatórios",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "parcial"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-CRB-002",
+      "discipline": "TI",
+      "subject": "Políticas, normas e auditoria",
+      "subtopic": "Auditoria TIC, controles internos, conformidade",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-CRB-003",
+      "discipline": "TI",
+      "subject": "Contratação de soluções de TIC",
+      "subtopic": "Planejamento, seleção, gestão, Termo de Referência",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-CRB-004",
+      "discipline": "TI",
+      "subject": "Fiscalização de contratos",
+      "subtopic": "Fiscalização técnica/administrativa, SLA e indicadores",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "TI-CRB-005",
+      "discipline": "TI",
+      "subject": "Atendimento técnico estratégico",
+      "subtopic": "Pareceres, notas técnicas, Ouvidoria, treinamentos",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "LEG-001",
+      "discipline": "Legislação",
+      "subject": "Ética no setor público",
+      "subtopic": "Ética e princípios da Administração Pública",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "parcial"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "LEG-002",
+      "discipline": "Legislação",
+      "subject": "Improbidade administrativa",
+      "subtopic": "Lei 8.429/1992",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "LEG-003",
+      "discipline": "Legislação",
+      "subject": "Processo administrativo",
+      "subtopic": "Lei 9.784/1999",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "LEG-004",
+      "discipline": "Legislação",
+      "subject": "Acesso à informação",
+      "subtopic": "Lei 12.527/2011",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "LEG-005",
+      "discipline": "Legislação",
+      "subject": "LGPD",
+      "subtopic": "Lei 13.709/2018",
+      "contests": [
+        {
+          "contestId": "CRBIO01-2026-ATI",
+          "coverage": "integral"
+        },
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    },
+    {
+      "id": "LEG-006",
+      "discipline": "Legislação",
+      "subject": "Marco Civil da Internet",
+      "subtopic": "Lei 12.965/2014",
+      "contests": [
+        {
+          "contestId": "SETEC-2026-ATI",
+          "coverage": "integral"
+        }
+      ],
+      "classification": "ausente",
+      "theoryClassification": "ausente",
+      "reason": "Sem arquivo de aula publicado. Relação na matriz não demonstra cobertura."
+    }
+  ],
+  "sections": [
+    {
+      "id": "TI-BD-003-01",
+      "title": "Fundamentos de SQL — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Linguagem declarativa, dialetos, classificações e distinção entre NULL, zero e vazio.",
+      "scope": "Papel do SQL; padrões; portabilidade; dialetos; DQL/DML como classificação didática; comandos cobertos no edital",
+      "bankGap": "Real Quadrix localizada; INDEPAC não localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "22.1 SQL como linguagem declarativa",
+        "22.2 SQL padrão e dialetos",
+        "22.3 Instrução, cláusula, expressão e predicado",
+        "22.4 Identificadores e literais",
+        "3.14\n'Campinas'",
+        "22.5 Tipos de dados e expressões",
+        "22.6 NULL não é zero nem texto vazio",
+        "22.7 Classificações DDL, DML, DQL, DCL e TCL",
+        "22.8 Portabilidade: regra prática para prova",
+        "22.9 Checklist — Fundamentos de SQL"
+      ]
+    },
+    {
+      "id": "TI-BD-003-02",
+      "title": "SELECT e expressões — aprofundamento",
+      "classification": "adequada",
+      "evidence": "SELECT, aliases, CASE, COALESCE, NULLIF, CAST e expressões com exemplos progressivos.",
+      "scope": "SELECT/FROM; seleção de colunas; *; aliases; literais; expressões aritméticas; CASE; CAST; COALESCE/NULLIF como conceitos portáveis",
+      "bankGap": "Real Quadrix localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "23.1 Estrutura conceitual do SELECT",
+        "23.2 A lista de seleção",
+        "23.3 SELECT *",
+        "23.4 Referências qualificadas de coluna",
+        "23.5 Aliases de coluna",
+        "23.6 Literais e cálculos",
+        "23.7 Expressões aritméticas",
+        "23.8 CASE pesquisado",
+        "23.9 CASE simples",
+        "23.10 COALESCE",
+        "23.11 NULLIF",
+        "23.12 CAST — conversão explícita",
+        "23.13 Conversões implícitas",
+        "23.14 Compatibilidade de tipos no CASE e COALESCE",
+        "23.15 Expressões não modificam dados por si só",
+        "23.16 Pegadinhas específicas de SELECT e expressões",
+        "23.17 Exemplos progressivos",
+        "23.18 Exercício de leitura",
+        "23.19 Checklist — SELECT e expressões",
+        "23.20 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-03",
+      "title": "WHERE e operadores — aprofundamento",
+      "classification": "adequada",
+      "evidence": "WHERE, precedência, operadores e descarte de UNKNOWN.",
+      "scope": "Comparação; AND/OR/NOT; precedência; parênteses; filtros compostos; operadores relacionais",
+      "bankGap": "Real Quadrix localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "24.1 Papel da cláusula WHERE",
+        "24.2 Operadores de comparação",
+        "24.3 Operadores lógicos AND, OR e NOT",
+        "24.4 Precedência lógica",
+        "24.5 Parênteses e filtros compostos",
+        "24.6 Leis de De Morgan",
+        "24.7 Filtros booleanos",
+        "24.8 WHERE e alias de SELECT",
+        "24.9 Erros comuns em WHERE",
+        "24.10 Checklist — WHERE e operadores"
+      ]
+    },
+    {
+      "id": "TI-BD-003-04",
+      "title": "Predicados e NULL — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Lógica ternária, IS NULL, DISTINCT FROM, IN, BETWEEN e LIKE.",
+      "scope": "IN; NOT IN; BETWEEN; LIKE; curingas; ESCAPE; IS NULL; IS NOT NULL; lógica ternária TRUE/FALSE/UNKNOWN",
+      "bankGap": "Cobertura real parcial; NULL específico não localizado",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "25.1 Lógica ternária",
+        "25.2 Comparações com NULL",
+        "25.3 IS DISTINCT FROM e IS NOT DISTINCT FROM",
+        "25.4 IN",
+        "25.5 IN com NULL",
+        "25.6 NOT IN",
+        "25.7 NOT IN e subconsultas",
+        "25.8 BETWEEN",
+        "25.9 BETWEEN e ordem dos limites",
+        "25.10 LIKE",
+        "25.11 LIKE corresponde ao padrão completo",
+        "25.12 ESCAPE em LIKE",
+        "25.13 NOT LIKE",
+        "25.14 ILIKE e portabilidade",
+        "25.15 NULL e string vazia",
+        "25.16 NULL e operadores lógicos",
+        "25.17 TRUE, FALSE e UNKNOWN em WHERE",
+        "25.18 IS TRUE, IS FALSE e IS UNKNOWN",
+        "25.19 Pegadinhas essenciais de NULL",
+        "25.20 Exemplos integrados",
+        "25.21 Checklist — Predicados e NULL",
+        "25.22 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-05",
+      "title": "DISTINCT e ORDER BY — aprofundamento",
+      "classification": "adequada",
+      "evidence": "DISTINCT sobre a linha projetada, NULL e ordenação determinística.",
+      "scope": "DISTINCT em uma/múltiplas expressões; ASC/DESC; múltiplas chaves; aliases; ordenação de NULL e diferenças entre SGBDs",
+      "bankGap": "Real Quadrix localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "26.1 SELECT ALL e SELECT DISTINCT",
+        "26.2 DISTINCT considera a linha projetada",
+        "26.3 DISTINCT e NULL",
+        "26.4 DISTINCT ON no PostgreSQL",
+        "26.5 Função de ORDER BY",
+        "26.6 ASC e DESC",
+        "26.7 Ordenação por múltiplas chaves",
+        "26.8 ORDER BY com expressão",
+        "26.9 ORDER BY por alias",
+        "26.10 ORDER BY por posição",
+        "26.11 NULLS FIRST e NULLS LAST",
+        "26.12 ORDER BY e resultado determinístico",
+        "26.13 DISTINCT e ORDER BY na ordem lógica",
+        "26.14 Pegadinhas de DISTINCT e ORDER BY",
+        "26.15 Checklist — DISTINCT e ORDER BY"
+      ]
+    },
+    {
+      "id": "TI-BD-003-06",
+      "title": "Funções escalares — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Funções de texto, numéricas, data e diferenças de dialeto.",
+      "scope": "Texto, numéricas, datas/horas, conversões; funções comuns; diferenças de nomes/sintaxe entre PostgreSQL, SQL Server e outros",
+      "bankGap": "Cobertura real insuficiente",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "27.1 O que é uma função escalar",
+        "27.2 Funções de texto — categorias essenciais",
+        "27.3 UPPER e LOWER",
+        "27.4 CHAR_LENGTH e LENGTH",
+        "27.5 SUBSTRING",
+        "27.6 TRIM",
+        "27.7 POSITION",
+        "27.8 Concatenação",
+        "27.9 REPLACE",
+        "27.10 Funções numéricas — núcleo para concursos",
+        "27.11 ABS",
+        "27.12 CEIL e FLOOR",
+        "27.13 ROUND",
+        "12.35\n\n\nPegadinha:",
+        "27.14 Divisão inteira",
+        "27.15 Funções de data e hora — conceitos portáveis",
+        "27.16 EXTRACT",
+        "27.17 Aritmética com datas",
+        "27.18 Funções PostgreSQL específicas de data/hora",
+        "27.19 Funções condicionais já cobertas",
+        "27.20 Funções escalares e NULL",
+        "27.21 Determinismo e funções voláteis",
+        "27.22 Função escalar em SELECT e WHERE",
+        "27.23 Portabilidade — tabela mental",
+        "27.24 Pegadinhas de funções escalares",
+        "27.25 Exemplos integrados",
+        "27.26 Checklist — Funções escalares",
+        "27.27 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-07",
+      "title": "Agregações — aprofundamento",
+      "classification": "adequada",
+      "evidence": "COUNT, SUM, AVG, conjunto vazio, DISTINCT e agregação condicional.",
+      "scope": "COUNT(*), COUNT(expr), COUNT(DISTINCT); SUM; AVG; MIN; MAX; NULL; agregação sem linhas; agregações sobre expressões",
+      "bankGap": "Real Quadrix localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "28.1 Conceito de agregação",
+        "28.2 COUNT(*)",
+        "28.3 COUNT(expressão)",
+        "28.4 COUNT(DISTINCT expressão)",
+        "28.5 SUM",
+        "28.6 AVG",
+        "28.7 MIN e MAX",
+        "28.8 Agregações e conjunto vazio",
+        "28.9 Agregações sobre expressões",
+        "28.10 DISTINCT em outras agregações",
+        "28.11 ORDER BY dentro de agregações",
+        "28.12 FILTER em agregações",
+        "28.13 CASE dentro da agregação",
+        "28.14 Agregações não podem ser usadas livremente em WHERE",
+        "28.15 Agregação dentro de agregação",
+        "28.16 Tipos de retorno",
+        "28.17 Agregações e NULL — resumo",
+        "28.18 Pegadinhas de agregação",
+        "28.19 Checklist — Agregações"
+      ]
+    },
+    {
+      "id": "TI-BD-003-08",
+      "title": "GROUP BY e HAVING — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Agrupamento múltiplo, dependência funcional e filtros de grupo.",
+      "scope": "Agrupamento simples e múltiplo; colunas agrupadas; agregações; diferença WHERE x HAVING; erros típicos",
+      "bankGap": "Real Quadrix localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "29.1 Papel de GROUP BY",
+        "29.2 GROUP BY com múltiplas colunas",
+        "29.3 Ordem das colunas de GROUP BY",
+        "29.4 Regra das colunas selecionadas",
+        "29.5 Dependência funcional",
+        "29.6 GROUP BY sem função agregada",
+        "29.7 HAVING",
+        "29.8 WHERE versus HAVING",
+        "29.9 Não use HAVING como substituto arbitrário de WHERE",
+        "29.10 HAVING pode referenciar agregações não exibidas",
+        "29.11 HAVING com expressão agrupada",
+        "29.12 Agregação sem GROUP BY",
+        "29.13 HAVING sem GROUP BY",
+        "29.14 GROUP BY e NULL",
+        "29.15 GROUP BY por expressão",
+        "29.16 GROUP BY por alias e posição",
+        "29.17 GROUPING SETS — visão geral",
+        "29.18 ROLLUP",
+        "29.19 CUBE",
+        "29.20 GROUPING",
+        "29.21 GROUP BY e ORDER BY são independentes",
+        "29.22 Pegadinhas de GROUP BY e HAVING",
+        "29.23 Exemplo integrado",
+        "29.24 Checklist — GROUP BY e HAVING",
+        "29.25 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-09",
+      "title": "JOINs fundamentais — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Tipos de JOIN, cardinalidade, USING, NATURAL JOIN e self join.",
+      "scope": "INNER, LEFT, RIGHT, FULL, CROSS; equijoin; condição ON; aliases; cardinalidade; self join",
+      "bankGap": "Real Quadrix localizada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "30.1 Conceito de JOIN",
+        "30.2 INNER JOIN",
+        "30.3 Uma linha pode gerar várias linhas",
+        "30.4 LEFT OUTER JOIN",
+        "30.5 RIGHT OUTER JOIN",
+        "30.6 FULL OUTER JOIN",
+        "30.7 CROSS JOIN",
+        "30.8 ON",
+        "30.9 Equijoin",
+        "30.10 JOIN USING",
+        "30.11 USING com várias colunas",
+        "30.12 NATURAL JOIN",
+        "30.13 Self join",
+        "30.14 Aliases em JOIN",
+        "30.15 NULL na condição de JOIN",
+        "30.16 Chave estrangeira não é requisito sintático para JOIN",
+        "30.17 JOIN com mais de duas tabelas",
+        "30.18 Cardinalidade e multiplicação",
+        "30.19 INNER JOIN e sintaxe antiga por vírgula",
+        "30.20 Checklist — JOINs fundamentais"
+      ]
+    },
+    {
+      "id": "TI-BD-003-10",
+      "title": "JOINs: armadilhas avançadas — aprofundamento",
+      "classification": "adequada",
+      "evidence": "ON versus WHERE, anti-join e perda da preservação de OUTER JOIN.",
+      "scope": "ON x WHERE em OUTER JOIN; múltiplas junções; duplicação de linhas; chaves não únicas; filtros no lado opcional",
+      "bankGap": "Cobertura real parcial",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "31.1 ON versus WHERE em INNER JOIN",
+        "31.2 ON versus WHERE em LEFT JOIN",
+        "31.3 Filtrar o lado opcional",
+        "31.4 Anti-join com LEFT JOIN",
+        "31.5 Semi-join conceitual",
+        "31.6 Chaves não únicas e explosão de linhas",
+        "31.7 Muitos-para-muitos",
+        "31.8 DISTINCT não corrige JOIN errado",
+        "31.9 Condição esquecida e produto cartesiano",
+        "31.10 USING e evolução da consulta",
+        "31.11 NATURAL JOIN como risco estrutural",
+        "31.12 Condição em OUTER JOIN e preservação",
+        "31.13 FULL JOIN com filtros",
+        "31.14 RIGHT JOIN e legibilidade",
+        "31.15 Self join e ciclos",
+        "31.16 Non-equi join e intervalos sobrepostos",
+        "31.17 NULL nas chaves",
+        "31.18 Join order lógico e físico",
+        "31.19 Associatividade e parênteses",
+        "31.20 JOIN explícito versus vírgulas",
+        "31.21 Diagnóstico de JOIN com linhas demais",
+        "31.22 Diagnóstico de JOIN com linhas de menos",
+        "31.23 Exemplo avançado",
+        "31.24 Checklist — JOINs avançados",
+        "31.25 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-11",
+      "title": "Subconsultas — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Subconsultas escalares, cardinalidade, correlação, escopo e LATERAL.",
+      "scope": "Subquery escalar, de coluna, de linha e tabela; subquery em WHERE/FROM/SELECT quando suportado; correlação conceitual",
+      "bankGap": "Real Quadrix localizada; INDEPAC negativa documentada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "32.1 Conceito",
+        "32.2 Subconsulta escalar",
+        "32.3 Subconsulta escalar correlacionada",
+        "32.4 Subconsulta não correlacionada",
+        "32.5 Subconsulta no WHERE",
+        "32.6 Subconsulta no SELECT",
+        "32.7 Subconsulta no FROM — tabela derivada",
+        "32.8 Alias de subconsulta no FROM",
+        "32.9 Alias de colunas da tabela derivada",
+        "32.10 Escopo",
+        "32.11 Shadowing de nomes",
+        "32.12 Subconsulta de uma coluna",
+        "32.13 Subconsulta de linha",
+        "32.14 Comparação com subconsulta de uma linha",
+        "32.15 Subconsulta com agregação",
+        "32.16 Subconsulta com GROUP BY",
+        "32.17 Subconsulta versus JOIN",
+        "32.18 Subconsulta e duplicidades",
+        "32.19 Subconsulta e ORDER BY",
+        "32.20 Subconsulta correlacionada e agregação",
+        "32.21 LATERAL — noção complementar",
+        "32.22 Erros clássicos de subconsulta",
+        "32.23 Checklist — Subconsultas"
+      ]
+    },
+    {
+      "id": "TI-BD-003-12",
+      "title": "EXISTS, IN, ANY/ALL e correlação — aprofundamento",
+      "classification": "adequada",
+      "evidence": "EXISTS, IN, NOT IN, ANY e ALL, inclusive conjuntos vazios e NULL.",
+      "scope": "EXISTS/NOT EXISTS; IN/NOT IN; ANY/SOME/ALL; subconsultas correlacionadas; armadilha de NULL",
+      "bankGap": "EXISTS e NOT IN reais; ANY/ALL com busca Quadrix negativa; INDEPAC negativa",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "33.1 EXISTS",
+        "33.2 EXISTS correlacionado",
+        "33.3 NOT EXISTS",
+        "33.4 EXISTS e NULL",
+        "33.5 IN com subconsulta",
+        "33.6 IN e NULL",
+        "33.7 NOT IN com subconsulta",
+        "33.8 Por que NOT EXISTS costuma ser mais seguro com NULL",
+        "33.9 ANY",
+        "33.10 SOME",
+        "33.11 IN equivale a = ANY",
+        "33.12 ALL",
+        "33.13 ALL sobre conjunto vazio",
+        "33.14 ANY sobre conjunto vazio",
+        "33.15 NOT IN equivale a <> ALL",
+        "33.16 ANY e NULL",
+        "33.17 ALL e NULL",
+        "33.18 Comparações de linha com IN",
+        "33.19 EXISTS versus IN",
+        "33.20 EXISTS e efeitos colaterais",
+        "33.21 Correlação",
+        "33.22 Descorrelação pelo otimizador",
+        "33.23 Semi-join e anti-semi-join",
+        "33.24 Maior que ANY versus maior que ALL",
+        "33.25 Menor que ANY versus menor que ALL",
+        "33.26 Pegadinhas essenciais",
+        "33.27 Exemplo integrado",
+        "33.28 Checklist — EXISTS, IN, ANY/ALL e correlação",
+        "33.29 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-13",
+      "title": "Operações de conjunto — aprofundamento",
+      "classification": "adequada",
+      "evidence": "UNION, INTERSECT, EXCEPT, ALL e compatibilidade das projeções.",
+      "scope": "UNION, UNION ALL, INTERSECT, EXCEPT; compatibilidade de colunas; duplicidades; ordenação final",
+      "bankGap": "Real Quadrix localizada; INDEPAC negativa documentada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "34.1 Conceito",
+        "34.2 Compatibilidade entre consultas",
+        "34.3 Ordem posicional",
+        "34.4 Nome das colunas do resultado",
+        "34.5 UNION",
+        "34.6 UNION ALL",
+        "34.7 UNION x UNION ALL",
+        "34.8 INTERSECT",
+        "34.9 INTERSECT ALL",
+        "34.10 EXCEPT",
+        "34.11 EXCEPT ALL",
+        "34.12 Duplicidades e semântica de conjunto",
+        "34.13 Precedência entre operações",
+        "34.14 Parênteses",
+        "34.15 ORDER BY em operações de conjunto",
+        "34.16 LIMIT/OFFSET e braços individuais",
+        "34.17 Compatibilidade de tipos",
+        "34.18 Resolução de tipos e NULL",
+        "34.19 Operações encadeadas e resolução de tipos",
+        "34.20 UNION versus JOIN",
+        "34.21 UNION versus OR",
+        "34.22 Operações com NULL",
+        "34.23 Pegadinhas essenciais",
+        "34.24 Checklist — Operações de conjunto"
+      ]
+    },
+    {
+      "id": "TI-BD-003-14",
+      "title": "CTEs (WITH) — aprofundamento",
+      "classification": "adequada",
+      "evidence": "WITH, CTE recursiva, término e distinções de materialização.",
+      "scope": "CTE não recursiva; legibilidade; múltiplas CTEs; noções de CTE recursiva; diferenças de implementação",
+      "bankGap": "Real Quadrix localizada; INDEPAC negativa documentada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "35.1 Conceito de CTE",
+        "35.2 CTE não é tabela permanente",
+        "35.3 CTE versus subconsulta no FROM",
+        "35.4 Múltiplas CTEs",
+        "35.5 Ordem de dependência",
+        "35.6 Nome de colunas da CTE",
+        "35.7 WITH em SELECT",
+        "35.8 WITH em DML",
+        "35.9 CTE recursiva",
+        "35.10 Estrutura da recursão",
+        "35.11 Como a recursão é avaliada conceitualmente",
+        "35.12 UNION versus UNION ALL na recursão",
+        "35.13 Condição de parada",
+        "35.14 Hierarquias",
+        "35.15 Profundidade",
+        "35.16 Ciclos",
+        "35.17 Ordem de busca",
+        "35.18 SEARCH e CYCLE",
+        "35.19 Materialização — ideia",
+        "35.20 MATERIALIZED",
+        "35.21 NOT MATERIALIZED",
+        "35.22 CTE referenciada várias vezes",
+        "35.23 CTE com função volátil",
+        "35.24 DML dentro de WITH",
+        "35.25 WITH e RETURNING",
+        "35.26 Escopo da CTE",
+        "35.27 CTE versus VIEW",
+        "35.28 CTE versus tabela temporária",
+        "35.29 Pegadinhas essenciais",
+        "35.30 Checklist — CTEs",
+        "35.31 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-15",
+      "title": "Funções de janela — aprofundamento",
+      "classification": "adequada",
+      "evidence": "OVER, PARTITION BY, ordenação, ranking e frames de janela.",
+      "scope": "OVER; PARTITION BY; ORDER BY; ROW_NUMBER, RANK, DENSE_RANK; agregação como janela; diferença para GROUP BY",
+      "bankGap": "Buscas negativas documentadas nas duas bancas",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "36.1 Conceito",
+        "36.2 A cláusula OVER",
+        "36.3 PARTITION BY",
+        "36.4 PARTITION BY não é GROUP BY",
+        "36.5 ORDER BY dentro de OVER",
+        "36.6 ROW_NUMBER",
+        "36.7 Determinismo em ROW_NUMBER",
+        "36.8 RANK",
+        "36.9 DENSE_RANK",
+        "36.10 Peer rows",
+        "36.11 NTILE",
+        "36.12 PERCENT_RANK",
+        "36.13 CUME_DIST",
+        "36.14 Agregações como funções de janela",
+        "36.15 Soma acumulada",
+        "36.16 Conceito de frame",
+        "36.17 ROWS",
+        "36.18 RANGE",
+        "36.19 GROUPS",
+        "36.20 Frame padrão — pegadinha importante",
+        "36.21 LAG",
+        "36.22 LEAD",
+        "36.23 Offset e valor padrão",
+        "36.24 FIRST_VALUE",
+        "36.25 LAST_VALUE",
+        "36.26 NTH_VALUE",
+        "36.27 Janela nomeada",
+        "36.28 Onde funções de janela podem aparecer",
+        "36.29 Filtrando ROW_NUMBER",
+        "36.30 Top N por grupo",
+        "36.31 ROW_NUMBER x RANK em Top N",
+        "36.32 Função de janela após agregação",
+        "36.33 Agregação dentro de janela versus janela dentro de agregação",
+        "36.34 Partição com NULL",
+        "36.35 ORDER BY e NULL na janela",
+        "36.36 Funções de janela e desempenho",
+        "36.37 Diferenças de dialeto",
+        "36.38 Padrão de banca — busca realizada",
+        "36.39 Pegadinhas essenciais",
+        "36.40 Checklist — Funções de janela",
+        "36.41 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-16",
+      "title": "INSERT — aprofundamento",
+      "classification": "adequada",
+      "evidence": "INSERT, valores padrão, listas de colunas, retorno e restrições.",
+      "scope": "VALUES; lista de colunas; múltiplas linhas; INSERT ... SELECT; DEFAULT/NULL; efeito de restrições",
+      "bankGap": "Real Quadrix localizada; INDEPAC negativa documentada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "37.1 Finalidade do INSERT",
+        "37.2 Forma básica com lista explícita de colunas",
+        "37.3 Por que explicitar as colunas",
+        "37.4 INSERT sem lista de colunas",
+        "37.5 Quantidade de colunas e quantidade de valores",
+        "37.6 Ordem dos valores",
+        "37.7 Tipos compatíveis",
+        "37.8 Literais de texto",
+        "37.9 Omissão de colunas e valor padrão",
+        "37.10 Quando não existe DEFAULT explícito",
+        "37.11 Palavra DEFAULT",
+        "37.12 DEFAULT não é necessariamente NULL",
+        "37.13 DEFAULT VALUES",
+        "37.14 Inserção explícita de NULL",
+        "37.15 Inserção de várias linhas",
+        "37.16 Compatibilidade nas múltiplas linhas",
+        "37.17 INSERT usando SELECT",
+        "37.18 Correspondência no INSERT SELECT",
+        "37.19 A ordem também importa no INSERT SELECT",
+        "37.20 INSERT SELECT pode transformar dados",
+        "37.21 Restrições NOT NULL",
+        "37.22 Restrições UNIQUE",
+        "37.23 Chave primária",
+        "37.24 Chave estrangeira",
+        "37.25 CHECK",
+        "37.26 Colunas identity",
+        "37.27 GENERATED ALWAYS e GENERATED BY DEFAULT",
+        "37.28 Colunas geradas",
+        "37.29 INSERT e triggers",
+        "37.30 RETURNING no PostgreSQL",
+        "37.31 INSERT com ON CONFLICT no PostgreSQL",
+        "37.32 Privilégios",
+        "37.33 Conversões automáticas",
+        "37.34 Constraints são verificadas na inserção",
+        "37.35 INSERT e atomicidade",
+        "37.36 INSERT não garante ordem física",
+        "37.37 INSERT e SQL injection",
+        "37.38 Diferenças entre SQL genérico, PostgreSQL e SQL Server",
+        "37.39 Questões reais da Quadrix encontradas antes do fechamento",
+        "37.40 Busca INDEPAC antes do fallback autoral",
+        "37.41 Pegadinhas essenciais de INSERT",
+        "37.42 Checklist — INSERT",
+        "37.43 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-17",
+      "title": "UPDATE — aprofundamento",
+      "classification": "adequada",
+      "evidence": "UPDATE, filtro, expressões, fontes múltiplas e diferenças de dialeto.",
+      "scope": "SET; múltiplas colunas; expressões; WHERE; subconsultas; atualização em massa; diferenças de UPDATE com JOIN/FROM por dialeto",
+      "bankGap": "Real Quadrix localizada; INDEPAC negativa documentada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "38.1 Finalidade do UPDATE",
+        "38.2 UPDATE de uma única coluna",
+        "38.3 UPDATE de várias colunas",
+        "38.4 SET usa o sinal de igualdade",
+        "38.5 WHERE controla as linhas afetadas",
+        "38.6 UPDATE sem WHERE",
+        "38.7 WHERE que não encontra linhas",
+        "38.8 Expressões no SET",
+        "38.9 Expressão pode usar outras colunas",
+        "38.10 DEFAULT em UPDATE",
+        "38.11 Identity e DEFAULT",
+        "38.12 Colunas geradas",
+        "38.13 Atualização por cálculo percentual",
+        "38.14 Atualização condicional com CASE",
+        "38.15 SET com múltiplas colunas em uma lista",
+        "38.16 Subconsulta no SET",
+        "38.17 Subconsulta sem linha no SET",
+        "38.18 Subconsulta no WHERE",
+        "38.19 UPDATE com FROM no PostgreSQL",
+        "38.20 Risco de múltiplas correspondências em UPDATE FROM",
+        "38.21 UPDATE com JOIN no SQL Server",
+        "38.22 UPDATE de todos os registros com valor fixo",
+        "38.23 UPDATE e NULL",
+        "38.24 UPDATE e constraints",
+        "38.25 Atualização de chave primária",
+        "38.26 UPDATE e foreign key",
+        "38.27 UPDATE e CHECK",
+        "38.28 UPDATE e triggers",
+        "38.29 RETURNING no PostgreSQL",
+        "38.30 OUTPUT no SQL Server",
+        "38.31 Privilégios",
+        "38.32 UPDATE e transações",
+        "38.33 UPDATE em massa",
+        "38.34 UPDATE não possui ORDER BY lógico para escolher uma linha",
+        "38.35 UPDATE com alias",
+        "38.36 Coluna de destino não deve ser qualificada no SET do PostgreSQL",
+        "38.37 SET pode usar DEFAULT e expressões",
+        "38.38 Questões reais Quadrix localizadas antes do fechamento",
+        "38.39 Busca INDEPAC antes do fallback autoral",
+        "38.40 Pegadinhas essenciais de UPDATE",
+        "38.41 Checklist — UPDATE",
+        "38.42 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-18",
+      "title": "DELETE — aprofundamento",
+      "classification": "adequada",
+      "evidence": "DELETE, condição, cascatas, transações e contraste com DROP/TRUNCATE.",
+      "scope": "DELETE com WHERE; exclusão total de linhas; comparação conceitual com TRUNCATE e DROP; integridade referencial",
+      "bankGap": "Real Quadrix localizada; INDEPAC negativa documentada",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "39.1 Finalidade do DELETE",
+        "39.2 DELETE de uma linha identificada",
+        "39.3 DELETE pode remover várias linhas",
+        "39.4 DELETE sem WHERE",
+        "39.5 DELETE não é DROP TABLE",
+        "39.6 DELETE não usa asterisco na forma comum estudada",
+        "39.7 DELETE remove linhas inteiras",
+        "39.8 WHERE e lógica ternária",
+        "39.9 DELETE com IN",
+        "39.10 DELETE com subconsulta",
+        "39.11 DELETE com EXISTS",
+        "39.12 DELETE com USING no PostgreSQL",
+        "39.13 Subconsulta versus USING",
+        "39.14 DELETE com alias",
+        "39.15 Zero linhas removidas",
+        "39.16 Restrições de chave estrangeira",
+        "39.17 ON DELETE RESTRICT e NO ACTION",
+        "39.18 ON DELETE CASCADE",
+        "39.19 ON DELETE SET NULL e SET DEFAULT",
+        "39.20 DELETE e triggers",
+        "39.21 RETURNING no PostgreSQL",
+        "39.22 OUTPUT no SQL Server",
+        "39.23 DELETE e privilégios",
+        "39.24 DELETE e transações",
+        "39.25 DELETE versus TRUNCATE",
+        "39.26 TRUNCATE não aceita o mesmo filtro de DELETE",
+        "39.27 DELETE versus DROP",
+        "39.28 DELETE em massa",
+        "39.29 DELETE e ORDER BY",
+        "39.30 DELETE de linhas duplicadas",
+        "39.31 DELETE e soft delete",
+        "39.32 Soft delete e filtros",
+        "39.33 DELETE e dados relacionados",
+        "39.34 Questões reais Quadrix localizadas antes do fechamento",
+        "39.35 Busca INDEPAC antes do fallback autoral",
+        "39.36 Pegadinhas essenciais de DELETE",
+        "39.37 Checklist — DELETE",
+        "39.38 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-19",
+      "title": "MERGE e upsert — aprofundamento",
+      "classification": "adequada",
+      "evidence": "MERGE, correspondência, concorrência e upsert por produto.",
+      "scope": "MERGE no padrão SQL; ideia de UPSERT; ON CONFLICT / MERGE / equivalentes por SGBD; portabilidade",
+      "bankGap": "Real Quadrix para MERGE; lacunas de upsert documentadas",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "40.1 Ideia central",
+        "40.2 Upsert não é um comando SQL universal",
+        "40.3 MERGE no padrão SQL",
+        "40.4 Tabela de destino",
+        "40.5 Fonte de dados",
+        "40.6 Condição ON",
+        "40.7 WHEN MATCHED",
+        "40.8 WHEN NOT MATCHED",
+        "40.9 Exemplo completo de sincronização",
+        "40.10 MERGE pode fazer mais que upsert",
+        "40.11 WHEN NOT MATCHED BY SOURCE no PostgreSQL 18",
+        "40.12 NOT MATCHED BY TARGET",
+        "40.13 Ordem das cláusulas WHEN",
+        "40.14 Condições adicionais em WHEN MATCHED",
+        "40.15 DO NOTHING",
+        "40.16 Uma cláusula final sem condição adicional",
+        "40.17 MERGE e cardinalidade da fonte",
+        "40.18 Duplicidades na fonte",
+        "40.19 MERGE e constraints",
+        "40.20 MERGE e triggers",
+        "40.21 MERGE e privilégios",
+        "40.22 MERGE RETURNING no PostgreSQL 18",
+        "40.23 Valores OLD e NEW",
+        "40.24 MERGE no Oracle",
+        "40.25 Questão real Quadrix sobre Oracle MERGE",
+        "40.26 MERGE no SQL Server",
+        "40.27 Não presuma que MERGE é sempre mais rápido",
+        "40.28 Não presuma que MERGE elimina problemas de concorrência",
+        "40.29 INSERT ON CONFLICT no PostgreSQL",
+        "40.30 ON CONFLICT DO NOTHING",
+        "40.31 ON CONFLICT DO UPDATE",
+        "40.32 A relação especial EXCLUDED",
+        "40.33 Conflict target",
+        "40.34 ON CONFLICT não reage a qualquer erro",
+        "40.35 Garantia de INSERT ou UPDATE em PostgreSQL",
+        "40.36 MERGE não possui exatamente a mesma garantia",
+        "40.37 ON CONFLICT DO UPDATE e WHERE",
+        "40.38 Determinismo do ON CONFLICT",
+        "40.39 MySQL e ON DUPLICATE KEY UPDATE",
+        "40.40 Oracle MERGE versus PostgreSQL ON CONFLICT",
+        "40.41 MERGE versus ON CONFLICT — resumo mental",
+        "40.42 Sincronização completa de tabela",
+        "40.43 Upsert de uma única linha",
+        "40.44 Condições de negócio em MERGE",
+        "40.45 Ações impossíveis conforme a categoria",
+        "40.46 Inserção dentro de MERGE",
+        "40.47 UPDATE dentro de MERGE",
+        "40.48 DELETE dentro de MERGE",
+        "40.49 DO NOTHING versus nenhuma cláusula aplicável",
+        "40.50 MERGE e RETURNING",
+        "40.51 Segurança e RLS",
+        "40.52 Erros de privilégio",
+        "40.53 Portabilidade",
+        "40.54 Questão real Quadrix encontrada antes do fechamento",
+        "40.55 Busca Quadrix para upsert",
+        "40.56 Busca INDEPAC",
+        "40.57 Pegadinhas essenciais",
+        "40.58 Checklist — MERGE e upsert",
+        "40.59 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-20",
+      "title": "DML e transações — aprofundamento",
+      "classification": "adequada",
+      "evidence": "ACID, COMMIT, ROLLBACK, savepoints, autocommit e exceções.",
+      "scope": "COMMIT, ROLLBACK, SAVEPOINT; atomicidade da unidade de trabalho; autocommit; impacto prático em INSERT/UPDATE/DELETE",
+      "bankGap": "Reais para ACID/transações; SAVEPOINT/autocommit com busca negativa",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "41.1 Conceito de transação",
+        "41.2 BEGIN e START TRANSACTION",
+        "41.3 COMMIT",
+        "41.4 ROLLBACK",
+        "41.5 ACID",
+        "41.6 Atomicidade",
+        "41.7 Consistência",
+        "41.8 Isolamento",
+        "41.9 Durabilidade",
+        "41.10 Exemplo bancário e atomicidade",
+        "41.11 Transações de uma única instrução",
+        "41.12 Bloco explícito de transação",
+        "41.13 Autocommit",
+        "41.14 Autocommit no psql",
+        "41.15 Autocommit desligado no psql",
+        "41.16 Modos de transação no SQL Server",
+        "41.17 Transação implícita no SQL Server",
+        "41.18 SAVEPOINT",
+        "41.19 ROLLBACK TO SAVEPOINT",
+        "41.20 SAVEPOINT não confirma a transação",
+        "41.21 ROLLBACK TO não encerra a transação",
+        "41.22 RELEASE SAVEPOINT",
+        "41.23 Savepoints posteriores",
+        "41.24 Erro dentro de transação PostgreSQL",
+        "41.25 Recuperação com savepoint",
+        "41.26 DML e unidade transacional",
+        "41.27 Atomicidade de instrução versus atomicidade de processo",
+        "41.28 COMMIT encerra a unidade corrente",
+        "41.29 ROLLBACK completo",
+        "41.30 Integridade e consistência",
+        "41.31 Isolamento e visibilidade",
+        "41.32 A própria transação enxerga suas alterações",
+        "41.33 Locks e duração da transação",
+        "41.34 Deadlock",
+        "41.35 Durabilidade não significa ausência de backup",
+        "41.36 Consistência não significa dados semanticamente corretos",
+        "41.37 Exceção importante: sequences no PostgreSQL",
+        "41.38 Chave serial e lacunas",
+        "41.39 DDL e transações",
+        "41.40 SAVEPOINT e transação aninhada",
+        "41.41 Two-phase commit",
+        "41.42 Autocommit não elimina transações",
+        "41.43 ROLLBACK em autocommit",
+        "41.44 Aplicações e drivers",
+        "41.45 Tratamento de erro na aplicação",
+        "41.46 Idempotência e repetição",
+        "41.47 Questão real Quadrix — ACID",
+        "41.48 Questão real Quadrix — SQL Server",
+        "41.49 Busca Quadrix para SAVEPOINT e autocommit",
+        "41.50 Busca INDEPAC",
+        "41.51 Pegadinhas essenciais",
+        "41.52 Checklist — DML e transações",
+        "41.53 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-21",
+      "title": "Restrições e efeitos na manipulação — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Integridade, chaves, CHECK, UNIQUE/NULL, DEFAULT e efeitos em DML.",
+      "scope": "PK, FK, UNIQUE, NOT NULL, CHECK e DEFAULT como fatores que podem aceitar/rejeitar DML",
+      "bankGap": "Cobertura real ampla; lacunas específicas documentadas",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "42.1 Finalidade das constraints",
+        "42.2 Principais constraints estudadas",
+        "42.3 Constraint de coluna e constraint de tabela",
+        "42.4 Constraint nomeada",
+        "42.5 PRIMARY KEY",
+        "42.6 PRIMARY KEY e NOT NULL",
+        "42.7 PRIMARY KEY cria índice no PostgreSQL",
+        "42.8 Uma tabela possui no máximo uma PRIMARY KEY",
+        "42.9 Chave primária composta",
+        "42.10 Efeito da PRIMARY KEY no INSERT",
+        "42.11 Efeito da PRIMARY KEY no UPDATE",
+        "42.12 Integridade de entidade",
+        "42.13 UNIQUE",
+        "42.14 UNIQUE não é PRIMARY KEY",
+        "42.15 UNIQUE não cria relacionamento",
+        "42.16 UNIQUE em múltiplas colunas",
+        "42.17 UNIQUE e NULL no PostgreSQL",
+        "42.18 Portabilidade do comportamento de NULL em UNIQUE",
+        "42.19 Índice criado por UNIQUE",
+        "42.20 NOT NULL",
+        "42.21 NOT NULL no INSERT",
+        "42.22 Omissão de coluna NOT NULL",
+        "42.23 NOT NULL no UPDATE",
+        "42.24 NOT NULL e CHECK",
+        "42.25 CHECK",
+        "42.26 CHECK com várias colunas",
+        "42.27 CHECK no INSERT",
+        "42.28 CHECK no UPDATE",
+        "42.29 CHECK e NULL no PostgreSQL",
+        "42.30 CHECK não deve consultar outras linhas no PostgreSQL",
+        "42.31 FOREIGN KEY",
+        "42.32 Exemplo de FOREIGN KEY",
+        "42.33 FOREIGN KEY no INSERT",
+        "42.34 FOREIGN KEY e NULL",
+        "42.35 FOREIGN KEY no UPDATE da tabela filha",
+        "42.36 FOREIGN KEY no DELETE da tabela pai",
+        "42.37 ON DELETE CASCADE",
+        "42.38 ON DELETE SET NULL",
+        "42.39 ON DELETE SET DEFAULT",
+        "42.40 ON DELETE RESTRICT",
+        "42.41 ON DELETE NO ACTION",
+        "42.42 ON UPDATE",
+        "42.43 Coluna que é PRIMARY KEY e FOREIGN KEY",
+        "42.44 Coluna referenciada por FOREIGN KEY",
+        "42.45 Índice na coluna estrangeira",
+        "42.46 MATCH SIMPLE",
+        "42.47 MATCH FULL",
+        "42.48 DEFAULT",
+        "42.49 DEFAULT não é uma garantia de integridade",
+        "42.50 DEFAULT pode violar constraint",
+        "42.51 DEFAULT e NULL",
+        "42.52 DEFAULT no UPDATE",
+        "42.53 Constraint adicionada depois",
+        "42.54 Dados existentes precisam ser válidos",
+        "42.55 SET NOT NULL em tabela existente",
+        "42.56 DROP CONSTRAINT",
+        "42.57 DEFERRABLE",
+        "42.58 INITIALLY IMMEDIATE",
+        "42.59 INITIALLY DEFERRED",
+        "42.60 Constraints e transações",
+        "42.61 PRIMARY KEY versus UNIQUE NOT NULL",
+        "42.62 Integridade referencial versus integridade de entidade",
+        "42.63 Constraint versus índice",
+        "42.64 UNIQUE e índice parcial",
+        "42.65 CHECK e nome legível",
+        "42.66 Mensagem de erro e constraint",
+        "42.67 Validação na aplicação e no banco",
+        "42.68 CHECK e regra de negócio mutável",
+        "42.69 NOT ENFORCED no PostgreSQL 18",
+        "42.70 ENFORCED",
+        "42.71 PRIMARY KEY temporal e WITHOUT OVERLAPS",
+        "42.72 Questão real Quadrix — integridade referencial",
+        "42.73 Questão real Quadrix — CHECK",
+        "42.74 Questão real Quadrix — integridade de entidade",
+        "42.75 Questão real Quadrix — FOREIGN KEY",
+        "42.76 Questão real Quadrix — PRIMARY KEY e FOREIGN KEY na mesma coluna",
+        "42.77 Questão real Quadrix — UNIQUE não é FOREIGN KEY",
+        "42.78 Questão real Quadrix — relacionamento por REFERENCES",
+        "42.79 Questão real Quadrix — CHECK como regra por tupla",
+        "42.80 Busca Quadrix para DEFAULT e nuances de NULL",
+        "42.81 Busca INDEPAC",
+        "42.82 Pegadinhas essenciais",
+        "42.83 Checklist — Constraints e DML",
+        "42.84 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-22",
+      "title": "Semântica de resultados — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Previsão de cardinalidade, duplicidades, NULL e resultados de consultas.",
+      "scope": "Duplicidades; cardinalidade; NULL; produto cartesiano; multiplicação de linhas; previsibilidade de resultados",
+      "bankGap": "Cobertura real e reutilização documentadas",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "43.1 Objetivo",
+        "43.2 Cardinalidade do resultado",
+        "43.3 SELECT sem filtro",
+        "43.4 Projeção não elimina duplicidades",
+        "43.5 DISTINCT altera cardinalidade",
+        "43.6 DISTINCT com várias colunas",
+        "43.7 WHERE pode produzir zero linhas",
+        "43.8 FALSE e UNKNOWN não passam no WHERE",
+        "43.9 NULL não é igual a NULL",
+        "43.10 NOT IN e NULL",
+        "43.11 EXISTS não depende do valor projetado",
+        "43.12 Produto cartesiano",
+        "43.13 FROM com múltiplas tabelas sem condição",
+        "43.14 Produto cartesiano acidental",
+        "43.15 INNER JOIN",
+        "43.16 Um para muitos",
+        "43.17 Muitos para muitos",
+        "43.18 Chave não única",
+        "43.19 LEFT JOIN",
+        "43.20 Filtro posterior pode reduzir LEFT JOIN",
+        "43.21 Filtro no ON",
+        "43.22 RIGHT JOIN",
+        "43.23 FULL JOIN",
+        "43.24 GROUP BY reduz linhas",
+        "43.25 WHERE antes de GROUP BY",
+        "43.26 HAVING depois do agrupamento",
+        "43.27 Questão Quadrix de 2026",
+        "43.28 COUNT asterisco",
+        "43.29 COUNT de expressão",
+        "43.30 SUM e conjunto vazio",
+        "43.31 Agregação sem GROUP BY",
+        "43.32 GROUP BY em tabela vazia",
+        "43.33 UNION",
+        "43.34 UNION ALL",
+        "43.35 INTERSECT",
+        "43.36 EXCEPT",
+        "43.37 Subconsulta escalar sem linha",
+        "43.38 Subconsulta escalar com várias linhas",
+        "43.39 IN e duplicidades",
+        "43.40 EXISTS e multiplicidade",
+        "43.41 JOIN versus EXISTS",
+        "43.42 ROW_NUMBER",
+        "43.43 RANK e empates",
+        "43.44 ORDER BY",
+        "43.45 LIMIT",
+        "43.46 NULL em ordenação",
+        "43.47 Alias não altera dados",
+        "43.48 DISTINCT depois de JOIN",
+        "43.49 Diagnóstico de linhas demais",
+        "43.50 Diagnóstico de linhas de menos",
+        "43.51 Ordem de raciocínio para prever resultado",
+        "43.52 Tabela mental de cardinalidade",
+        "43.53 Questão real Quadrix — produto cartesiano",
+        "43.54 Questões reais reutilizadas",
+        "43.55 Busca INDEPAC",
+        "43.56 Pegadinhas essenciais",
+        "43.57 Checklist — Semântica de resultados",
+        "43.58 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-23",
+      "title": "Ordem lógica e otimização — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Ordem lógica, planos, índices, estatísticas e EXPLAIN.",
+      "scope": "FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → DISTINCT → ORDER BY; ordem lógica x plano físico",
+      "bankGap": "Cobertura real Quadrix concluída; INDEPAC negativa",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "44.1 Duas ordens diferentes",
+        "44.2 Ordem textual não é ordem lógica",
+        "44.3 Sequência lógica simplificada para estudo",
+        "44.4 FROM",
+        "44.5 JOIN",
+        "44.6 ON e WHERE não são sempre intercambiáveis",
+        "44.7 WHERE",
+        "44.8 Por que agregação não pertence ao WHERE",
+        "44.9 GROUP BY",
+        "44.10 HAVING",
+        "44.11 Questão Quadrix sobre HAVING e WHERE",
+        "44.12 Funções de janela",
+        "44.13 Agregações antes das funções de janela",
+        "44.14 SELECT",
+        "44.15 Alias de saída",
+        "44.16 Alias no WHERE",
+        "44.17 Alias no ORDER BY",
+        "44.18 Alias e GROUP BY",
+        "44.19 DISTINCT",
+        "44.20 ORDER BY",
+        "44.21 ORDER BY não é GROUP BY",
+        "44.22 LIMIT, OFFSET e FETCH",
+        "44.23 Ordem lógica e precedência de operações",
+        "44.24 Sintaxe versus semântica",
+        "44.25 Da consulta ao plano",
+        "44.26 Planner e optimizer",
+        "44.27 Otimização preserva semântica",
+        "44.28 Predicate pushdown",
+        "44.29 OUTER JOIN limita certas reordenações",
+        "44.30 Join reordering",
+        "44.31 Nested Loop",
+        "44.32 Hash Join",
+        "44.33 Merge Join",
+        "44.34 Sequential Scan",
+        "44.35 Index Scan",
+        "44.36 Bitmap Scan",
+        "44.37 Índices ajudam filtros e JOINs",
+        "44.38 Índice e seletividade",
+        "44.39 Índices não são gratuitos",
+        "44.40 Questão Quadrix sobre excesso de índices",
+        "44.41 Questão Quadrix sobre regra absoluta",
+        "44.42 Índice presente não significa índice usado",
+        "44.43 Expressão sobre coluna indexada",
+        "44.44 Conversões e tipos",
+        "44.45 Índice composto",
+        "44.46 Índice de cobertura",
+        "44.47 Estatísticas",
+        "44.48 ANALYZE",
+        "44.49 ANALYZE não é EXPLAIN ANALYZE",
+        "44.50 EXPLAIN",
+        "44.51 Cost",
+        "44.52 Rows estimadas",
+        "44.53 EXPLAIN ANALYZE",
+        "44.54 Cuidado com DML",
+        "44.55 BUFFERS",
+        "44.56 Estatística desatualizada",
+        "44.57 Estatísticas multivariadas",
+        "44.58 Sargabilidade — conceito",
+        "44.59 Evite SELECT asterisco como regra de desempenho",
+        "44.60 Filtrar cedo logicamente",
+        "44.61 WHERE versus HAVING para desempenho",
+        "44.62 Subconsulta versus JOIN",
+        "44.63 EXISTS versus IN",
+        "44.64 CTE e otimização",
+        "44.65 ORDER BY custa trabalho",
+        "44.66 DISTINCT custa trabalho",
+        "44.67 GROUP BY e plano físico",
+        "44.68 LIMIT influencia custo",
+        "44.69 EXISTS e startup cost",
+        "44.70 Plano estimado não é promessa",
+        "44.71 Otimização não deve mudar resultado",
+        "44.72 Hints e controle do planner",
+        "44.73 Query tuning baseado em evidência",
+        "44.74 Questão real Quadrix Q4059500",
+        "44.75 Questão real Quadrix Q4059502",
+        "44.76 Questão real Quadrix Q3183816",
+        "44.77 Questão real Quadrix Q3183747",
+        "44.78 Questão real Quadrix Q3535940",
+        "44.79 Busca INDEPAC",
+        "44.80 Pegadinhas essenciais",
+        "44.81 Checklist — Ordem lógica e otimização",
+        "44.82 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-24",
+      "title": "Diferenças de dialeto — aprofundamento",
+      "classification": "adequada",
+      "evidence": "Portabilidade, paginação, datas, retorno de DML e catálogos por produto.",
+      "scope": "PostgreSQL, SQL Server e sintaxe SQL comum; LIMIT/TOP/FETCH; concatenação; funções; RETURNING; particularidades relevantes",
+      "bankGap": "Cobertura real ampliada; buscas negativas para construções sem questão específica",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "45.1 SQL comum e dialetos",
+        "45.2 Regra de estudo",
+        "45.3 Limitação de linhas no PostgreSQL",
+        "45.4 OFFSET no PostgreSQL",
+        "45.5 LIMIT sem ORDER BY",
+        "45.6 FETCH no PostgreSQL",
+        "45.7 FETCH WITH TIES no PostgreSQL",
+        "45.8 TOP no SQL Server",
+        "45.9 TOP sem ORDER BY",
+        "45.10 TOP PERCENT",
+        "45.11 TOP WITH TIES",
+        "45.12 Questão real Quadrix sobre WITH TIES",
+        "45.13 OFFSET e FETCH no SQL Server",
+        "45.14 TOP versus OFFSET e FETCH",
+        "45.15 LIMIT no MySQL",
+        "45.16 Resumo da limitação de linhas",
+        "45.17 RETURNING no PostgreSQL",
+        "45.18 OUTPUT no SQL Server",
+        "45.19 inserted e deleted no SQL Server",
+        "45.20 RETURNING e OUTPUT não são sinônimos sintáticos",
+        "45.21 Concatenação no PostgreSQL",
+        "45.22 Concatenação no SQL Server",
+        "45.23 NULL e CONCAT no SQL Server",
+        "45.24 Não generalize o operador de concatenação",
+        "45.25 COALESCE",
+        "45.26 Funções específicas para NULL",
+        "45.27 ILIKE no PostgreSQL",
+        "45.28 LIKE e sensibilidade a maiúsculas",
+        "45.29 DISTINCT ON no PostgreSQL",
+        "45.30 DISTINCT comum",
+        "45.31 Tipo BOOLEAN no PostgreSQL",
+        "45.32 BIT no SQL Server",
+        "45.33 Tipo DATE no PostgreSQL",
+        "45.34 Datas não são strings",
+        "45.35 Funções de data variam",
+        "45.36 Geração automática no PostgreSQL",
+        "45.37 SERIAL no PostgreSQL",
+        "45.38 IDENTITY no SQL Server",
+        "45.39 AUTO_INCREMENT no MySQL",
+        "45.40 Conceito comum, sintaxe diferente",
+        "45.41 Upsert por dialeto",
+        "45.42 Catálogo PostgreSQL",
+        "45.43 information_schema.tables",
+        "45.44 pg_catalog",
+        "45.45 ALL_TABLES pertence ao Oracle",
+        "45.46 Questão real Quadrix sobre ALL_TABLES",
+        "45.47 Catálogos do SQL Server",
+        "45.48 Catálogo não é totalmente portável",
+        "45.49 Identificadores delimitados no PostgreSQL",
+        "45.50 Colchetes no SQL Server",
+        "45.51 Crase no MySQL",
+        "45.52 Strings usam aspas simples",
+        "45.53 LIMIT e TOP em subconsultas",
+        "45.54 FETCH de linhas versus FETCH de cursor",
+        "45.55 Funções de comprimento",
+        "45.56 Substring",
+        "45.57 Conversão de tipos",
+        "45.58 Conversão em SQL Server",
+        "45.59 Funções condicionais",
+        "45.60 Booleans em predicados",
+        "45.61 NULL é comum, funções auxiliares variam",
+        "45.62 RETURNING não é sintaxe universal",
+        "45.63 OUTPUT não é RETURNING escrito de outro jeito",
+        "45.64 TOP WITH TIES e quantidade final",
+        "45.65 PostgreSQL FETCH WITH TIES",
+        "45.66 Paginação e estabilidade",
+        "45.67 Custo de OFFSET",
+        "45.68 Funções específicas não são sinônimos perfeitos",
+        "45.69 Versão do SGBD importa",
+        "45.70 PostgreSQL 18 e documentação atual",
+        "45.71 Questão real Quadrix — TOP WITH TIES",
+        "45.72 Questão real Quadrix — tipo DATE",
+        "45.73 Questão real Quadrix — ALL_TABLES",
+        "45.74 Busca INDEPAC",
+        "45.75 Pegadinhas essenciais",
+        "45.76 Checklist — Diferenças de dialeto",
+        "45.77 Fontes adicionais deste aprofundamento"
+      ]
+    },
+    {
+      "id": "TI-BD-003-25",
+      "title": "Análise de consultas — aprofundamento prático",
+      "classification": "adequada",
+      "evidence": "Análises guiadas de consultas, erros sintáticos/semânticos e dados de borda.",
+      "scope": "Leitura passo a passo de consultas simples, médias e complexas; previsão de saída; identificação de erro semântico/sintático",
+      "bankGap": "Série real Quadrix integrada; INDEPAC negativa",
+      "limitation": "Questões reais documentadas em material complementar não equivalem a itens objetivos interativos; vínculo fonte por questão ainda amplo.",
+      "headings": [
+        "46.1 Objetivo da unidade",
+        "46.2 Três tipos de erro",
+        "46.3 Não julgue pela aparência",
+        "46.4 Passo 1 — traduza o requisito",
+        "46.5 Passo 2 — identifique as tabelas necessárias",
+        "46.6 Exemplo — tabela ausente",
+        "46.7 Passo 3 — desenhe mentalmente o caminho das chaves",
+        "46.8 Passo 4 — verifique a cardinalidade do relacionamento",
+        "46.9 Passo 5 — diferencie filtro de relacionamento",
+        "46.10 Passo 6 — leia os filtros por precedência",
+        "46.11 Passo 7 — trate NULL como lógica ternária",
+        "46.12 Passo 8 — analise agrupamento",
+        "46.13 Passo 9 — analise HAVING",
+        "46.14 Passo 10 — analise a projeção",
+        "46.15 Passo 11 — verifique duplicidades",
+        "46.16 Passo 12 — ordenação",
+        "46.17 Passo 13 — limite",
+        "46.18 Passo 14 — subconsultas",
+        "46.19 Subconsulta escalar",
+        "46.20 Subconsulta escalar inválida por cardinalidade",
+        "46.21 IN",
+        "46.22 EXISTS",
+        "46.23 Passo 15 — funções de janela",
+        "46.24 ROW_NUMBER versus RANK",
+        "46.25 Passo 16 — DML",
+        "46.26 UPDATE sem WHERE",
+        "46.27 DELETE sem WHERE",
+        "46.28 INSERT e ordem das colunas",
+        "46.29 Passo 17 — transação",
+        "46.30 Passo 18 — dialeto",
+        "46.31 Método de marcação mental",
+        "46.32 Análise guiada 1 — filtro simples",
+        "46.33 Análise guiada 2 — precedência",
+        "46.34 Análise guiada 3 — INNER JOIN",
+        "46.35 Análise guiada 4 — LEFT JOIN",
+        "46.36 Análise guiada 5 — LEFT JOIN destruído por WHERE",
+        "46.37 Análise guiada 6 — agregação",
+        "46.38 Análise guiada 7 — WHERE e HAVING",
+        "46.39 Análise guiada 8 — subconsulta correlacionada",
+        "46.40 Análise guiada 9 — NOT IN com NULL",
+        "46.41 Análise guiada 10 — CTE",
+        "46.42 Análise guiada 11 — janela",
+        "46.43 Análise guiada 12 — UNION",
+        "46.44 Análise guiada 13 — INSERT com constraint",
+        "46.45 Análise guiada 14 — UPDATE com expressão",
+        "46.46 Análise guiada 15 — DELETE e foreign key",
+        "46.47 Análise guiada 16 — transação",
+        "46.48 Análise guiada 17 — erro de dialeto",
+        "46.49 Análise da questão Quadrix Q3101987",
+        "46.50 Análise da série Quadrix CRMV-MS 2022",
+        "46.51 Questão Q1909606 — alias",
+        "46.52 Questão Q1909607 — IN",
+        "46.53 Questão Q1909608 — várias tabelas",
+        "46.54 Questão Q1909609 — terminador",
+        "46.55 Sintaxe antiga de JOIN",
+        "46.56 Erro semântico versus erro sintático",
+        "46.57 Erro por coluna inexistente",
+        "46.58 Erro por ambiguidade",
+        "46.59 Erro por agregação inadequada",
+        "46.60 Erro por cardinalidade de subconsulta",
+        "46.61 Erro mascarado por DISTINCT",
+        "46.62 Como atacar uma consulta longa",
+        "46.63 Como atacar alternativas de múltipla escolha",
+        "46.64 Como atacar Certo ou Errado Quadrix",
+        "46.65 Execute mentalmente com conjunto pequeno",
+        "46.66 Use valores de borda",
+        "46.67 Checklist final de análise",
+        "46.68 Busca de questões da banca",
+        "46.69 Checklist — Análise de consultas",
+        "46.70 Fontes e questões reutilizadas"
+      ]
+    },
+    {
+      "id": "TI-BD-003-26",
+      "title": "Banco de questões — auditoria e estratégia de treino",
+      "classification": "parcial",
+      "evidence": "Texto publicado é auditoria/estratégia do banco; caderno integral separado contém exercícios.",
+      "scope": "Itens Quadrix Certo/Errado; múltipla escolha; análise de consulta; pegadinhas; questões cumulativas",
+      "bankGap": "Auditoria estrutural final corrigida",
+      "limitation": "A seção isolada não substitui o material dedicado. A trilha deve expor esse material.",
+      "headings": [
+        "47.1 Objetivo",
+        "47.2 Regra de prioridade",
+        "47.3 Questões reais Quadrix",
+        "47.4 Situação da INDEPAC",
+        "47.5 Total de questões autorais comentadas",
+        "47.6 Distribuição — Certo ou Errado",
+        "47.7 Distribuição — múltipla escolha",
+        "47.8 Distribuição — análise prática",
+        "47.9 Questões autorais INDEPAC",
+        "47.10 Questões autorais Quadrix de lacuna",
+        "47.11 Meta inicial superada",
+        "47.12 Comentário obrigatório",
+        "47.13 Auditoria de explicações",
+        "47.14 Identificação permanente",
+        "47.15 Questão real não recebe ID autoral",
+        "47.16 Comentário próprio em questão real",
+        "47.17 Treino Quadrix",
+        "47.18 Treino INDEPAC",
+        "47.19 Treino por subtema",
+        "47.20 Treino cumulativo",
+        "47.21 Caderno de erros",
+        "47.22 Revisão da questão errada",
+        "47.23 Não decorar letra",
+        "47.24 Não decorar Certo ou Errado",
+        "47.25 Questões com código",
+        "47.26 Questões longas",
+        "47.27 Nível de dificuldade",
+        "47.28 Evitar repetição mecânica",
+        "47.29 Atualização contínua",
+        "47.30 Busca ampla INDEPAC",
+        "47.31 Situação final do banco",
+        "47.32 Próximo uso do banco",
+        "47.33 Checklist — Banco de questões",
+        "47.34 Auditoria quantitativa registrada"
+      ]
+    },
+    {
+      "id": "TI-BD-003-27",
+      "title": "Treino discursivo e prático",
+      "classification": "parcial",
+      "evidence": "Seção introdutória remete ao caderno discursivo completo; nove propostas são interativas.",
+      "scope": "Temas discursivos; explicação de consultas; correção de SQL; elaboração de query a partir de requisito",
+      "bankGap": "Treino real Quadrix + casos autorais INDEPAC após busca negativa",
+      "limitation": "A seção isolada não substitui o material dedicado. A trilha deve expor esse material.",
+      "headings": [
+        "48.1 Estrutura do treino",
+        "48.2 Provas anteriores reais Quadrix utilizadas",
+        "48.3 Padrão Quadrix observado",
+        "48.4 Treinos autorais Quadrix",
+        "48.5 Padrão INDEPAC",
+        "48.6 Treinos autorais INDEPAC",
+        "48.7 Critério de conclusão"
+      ]
+    },
+    {
+      "id": "TI-BD-003-28",
+      "title": "Revisão final do tema",
+      "classification": "parcial",
+      "evidence": "Seção de fechamento remete à revisão completa já publicada em lesson.review.",
+      "scope": "Resumo completo; mapa mental; tabela de pegadinhas; flashcards; revisão D0/D1/D7/D21; checklist final",
+      "bankGap": "SQL 28/28 concluído após auditoria corretiva final",
+      "limitation": "A seção isolada não substitui o material dedicado. A trilha deve expor esse material.",
+      "headings": [
+        "49.1 Auditoria de fechamento",
+        "49.2 Documento dedicado",
+        "49.3 Conteúdo da revisão",
+        "49.4 Banco de questões",
+        "49.5 Mídias verificadas",
+        "49.6 Revisões programadas",
+        "49.7 Critério de encerramento"
+      ]
+    }
+  ],
+  "mapping": {
+    "sourceDocument": "10dC8AVFAgXWqQyNVGBq7NYgS9MGRethV5SeOFEqukac",
+    "rule": "Cabeçalho TI-BD-003-NN precedente no banco canônico. Questões sem cabeçalho ficam cumulativas, sem inventar subtema.",
+    "mapped": 112,
+    "unmapped": 140
+  },
+  "findings": [
+    "SQL não equivale a cobrir modelagem, normalização, administração ou toda a disciplina Banco de Dados.",
+    "76 referências ainda sem aula no site. Novos pacotes do Drive exigem validação própria.",
+    "SQL-26 contém contagem histórica 63 enquanto auditoria final corrige para 59 referências reais; manter histórico e corrigir primeiro no Drive.",
+    "A referência Rincão não foi localizada nesta tarefa; experiência construída conforme o fluxo descrito pelo usuário."
+  ]
+}
