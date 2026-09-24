@@ -9,7 +9,7 @@ import { catalog } from "../services/catalog";
 import { today } from "../services/study";
 import { saveWriting, completeSimulation } from "../services/storage";
 import { useStudy } from "../components/StudyContext";
-import { Empty, PageHeading, formatDate } from "../components/Common";
+import { Empty, PageHeading, formatDate, Prose } from "../components/Common";
 function WritingEditor({ proposal: d }: { proposal: Discursive }) {
   const { state, run, ready } = useStudy();
   const previous = state.writings.find((w) => w.id === d.id);
@@ -45,31 +45,27 @@ function WritingEditor({ proposal: d }: { proposal: Discursive }) {
     <article className="card section-space">
       <h2>{d.title}</h2>
       <p>{d.theme}</p>
-        <div className="prose">{d.instructions}</div>
-        {d.modelAnswer && <details><summary>Espelho de correção e resposta-modelo</summary><div className="prose">{d.modelAnswer}</div></details>}
-      <label>
-        Sua resposta
+        <Prose text={d.instructions} />
+        {d.modelAnswer && <details><summary>Espelho de correção e resposta-modelo</summary><Prose text={d.modelAnswer} /></details>}
+      <label htmlFor={`${d.id}-response`}>Sua resposta</label>
         <textarea
+          id={`${d.id}-response`}
           rows={15}
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-      </label>
       <p className="small muted">
         {text.trim() ? text.trim().split(/\s+/).length : 0} palavras · salve
         antes de sair desta página.
       </p>
-      <label>
-        Autoavaliação
+      <label htmlFor={`${d.id}-evaluation`}>Autoavaliação</label>
         <textarea
+          id={`${d.id}-evaluation`}
           value={evaluation}
           onChange={(e) => setEvaluation(e.target.value)}
         />
-      </label>
-      <label>
-        Observações
-        <textarea value={notes} onChange={(e) => setNotes(e.target.value)} />
-      </label>
+      <label htmlFor={`${d.id}-notes`}>Observações</label>
+        <textarea id={`${d.id}-notes`} value={notes} onChange={(e) => setNotes(e.target.value)} />
       <div className="actions">
         <button disabled={!ready || busy} onClick={() => void save("rascunho")}>
           Salvar rascunho

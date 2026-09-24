@@ -4,6 +4,9 @@ import type { Contest, ContentReference } from "../types/schema";
 import { catalog } from "../services/catalog";
 import { contestProgress, effectiveStatus } from "../services/study";
 import { useStudy } from "./StudyContext";
+export function Prose({ text }: { text: string }) {
+  return <div className="prose">{text.replace(/\n{3,}/g, "\n\n")}</div>;
+}
 export function formatDate(value: string | null) {
   return value
     ? new Intl.DateTimeFormat("pt-BR", {

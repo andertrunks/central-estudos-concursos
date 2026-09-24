@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { catalog } from "../services/catalog";
 import { setProgress } from "../services/storage";
 import { useStudy } from "../components/StudyContext";
-import { Empty, formatDate, PageHeading } from "../components/Common";
+import { Empty, formatDate, PageHeading, Prose } from "../components/Common";
 import { QuestionList } from "./Practice";
 export default function LessonPage() {
   const { id } = useParams();
@@ -89,7 +89,7 @@ export default function LessonPage() {
               <p>Abra um subtema para continuar. A biblioteca mantém uma única aula compartilhada entre os concursos.</p>
               {lesson.sections.map(section => <details className="card section-space" key={section.id}>
                 <summary>{section.id} · {section.title}</summary>
-                <div className="prose">{section.text}</div>
+                <Prose text={section.text} />
               </details>)}
             </section> : null}
             <section>
@@ -107,7 +107,7 @@ export default function LessonPage() {
             ].map(([title, text]) => (
               <section key={title}>
                 <h2>{title}</h2>
-                <div className="prose">{text}</div>
+                <Prose text={text ?? ""} />
               </section>
             ))}
             {catalog.media
@@ -175,7 +175,7 @@ export default function LessonPage() {
             )}
             <section>
               <h2>Resumo</h2>
-              <div className="prose">{lesson.summary}</div>
+              <Prose text={lesson.summary} />
             </section>
             <section>
               <h2>Questões e gabarito comentado</h2>
@@ -183,11 +183,11 @@ export default function LessonPage() {
             </section>
             <section>
               <h2>Revisão</h2>
-              <details><summary>Abrir revisão completa</summary><div className="prose">{lesson.review}</div></details>
+              <details><summary>Abrir revisão completa</summary><Prose text={lesson.review} /></details>
             </section>
             {lesson.materials?.map(material => <section key={material.id}>
               <h2>{material.title}</h2>
-              <details><summary>Abrir material de estudo</summary><div className="prose">{material.text}</div></details>
+              <details><summary>Abrir material de estudo</summary><Prose text={material.text} /></details>
             </section>)}
             <section>
               <h2>Fontes e referências</h2>
