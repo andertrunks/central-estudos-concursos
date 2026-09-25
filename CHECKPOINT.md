@@ -33,3 +33,12 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Build: aproximadamente 1,75 MB de JavaScript bruto / 366 KB gzip; cache PWA 3,24 MiB, dentro do limite. Alerta de bundle grande registrado, não desativado.
 - Publicação desta evolução: aguardando commit, workflow e verificação pública no momento deste registro. Conferir `version.json` e artefato `deployment-checkpoint`; registrar recibo técnico após confirmação, sem dar baixa em pacotes editoriais que não foram importados.
 - Próximo passo editorial: validar pacotes reais das outras disciplinas. Não apresentar os 76 assuntos sem aula como estudáveis. Metadados novos e algoritmo documentados em `docs/TRILHA-DE-ESTUDOS.md`.
+
+### Confirmação pública da trilha
+
+- Commit funcional `fdc84d1b9ba0ee46985dfc51b0d7a8ecba29e659`, com auditoria/metadados no commit `ec598ba`, publicado pelo workflow `36075422632` e confirmado por `version.json`.
+- Deploy em 25/09/2026 00:00 UTC (24/09, 21:00 em São Paulo). Lint, typecheck, 41 testes e build passaram novamente no GitHub.
+- Testes no site público encerrados em 25/09/2026 00:01:57 UTC: trilha completa, retomada, erros, persistência, celular, offline, nove rotas anteriores e acessibilidade automatizada passaram. Migração real do banco versão 1 para 2 verificada em contexto isolado do Edge, preservando conclusão e desempenho. Nenhum dado pessoal real foi usado nos testes.
+- Recibo técnico: `editorial/receipts/TRILHA-2026-09-24.json`. A fila editorial não foi alterada. Na leitura mais recente, PUB-0005 já está pronto para validação com mídia concluída; a anotação anterior de produção é histórica.
+- Este registro de fechamento não muda o código funcional. A publicação do próprio registro gera um novo checkpoint automático: consultar seu SHA/horário no artefato do workflow, sem confundi-lo com o commit funcional testado acima.
+- Recibo também salvo e relido em `09_PUBLICADO` no Drive: `1XUFNvt9N4iU6WDpRfQQYxiBRoNk5fs_L`.

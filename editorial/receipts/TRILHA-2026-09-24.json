@@ -1,0 +1,33 @@
+{
+  "kind": "technical-release",
+  "title": "Trilha automática de estudos",
+  "status": "publicado e verificado",
+  "publishedCommit": "fdc84d1b9ba0ee46985dfc51b0d7a8ecba29e659",
+  "contentCommit": "ec598ba",
+  "implementationBranch": "feat/guided-study",
+  "deploymentBranch": "main",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/",
+  "workflowUrl": "https://github.com/andertrunks/central-estudos-concursos/actions/runs/36075422632",
+  "deployedAt": "2026-09-25T00:00:23.704Z",
+  "verifiedAt": "2026-09-25T00:01:57.620Z",
+  "validation": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "unitTests": 41,
+    "build": "passed",
+    "publicGuidedFlow": "passed",
+    "publicRegression": "passed",
+    "publicIndexedDBMigration": "passed",
+    "offline": "passed",
+    "automatedAccessibilityViolations": 0
+  },
+  "driveSnapshot": "editorial/snapshots/2026-09-24-trail-audit.csv",
+  "newEditorialPackagesImported": [],
+  "editorialQueueModified": false,
+  "pending": [
+    "76 assuntos sem aula publicada",
+    "Integração de questões reais completas e rastreabilidade por questão",
+    "Simulados aguardam material canônico",
+    "Login depende de autorização do serviço externo"
+  ]
+}
