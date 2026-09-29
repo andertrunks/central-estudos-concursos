@@ -61,3 +61,12 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Inspeção renderizada pública pendente por timeout do navegador integrado e indisponibilidade do fetch; Google Sheet permanece sem baixa editorial.
 - Q4219819, Q4061037, Q4189879, Q4189880 e referência Quadrix 2022 de Barreiras sem ID externo permanecem não pontuáveis até confronto com caderno e gabarito definitivo.
 - Último pacote integrado: PUB-0011. Primeiro pacote pendente: PUB-0012 — TI-SO-001 (Windows e Linux).
+
+
+## Retomada contínua — PUB-0012 — 2026-09-29
+
+- TI-SO-001 integrado no commit 4830585dcdf07e0b49e81e59ba92412607988f21: SVC-001, SVC-002 e complemento Windows/Linux completos; 37 questões autorais; imagem original e três vídeos verificados.
+- GitHub Actions 36573582061: `npm run check` e deploy GitHub Pages concluídos com sucesso. Rota: https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SO-001.
+- Verificação renderizada pública pendente pelo timeout do navegador integrado e indisponibilidade do web fetch. Google Sheet sem baixa editorial.
+- Q4059481, Q4189836, Q4189837, Q4189840, Q4189847, Q4189862, Q3185247, Q4059480, Q1991091 e Q1990747 não pontuam sem validação do conjunto integral.
+- Último pacote integrado: PUB-0012. Primeiro pacote pendente: PUB-0013 — TI-ES-001 (ciclo de vida de software).

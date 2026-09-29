@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0012",
   "contentId": "TI-SO-001",
-  "status": "pronto para build",
+  "status": "deploy concluído; inspeção pública renderizada pendente",
   "sourceDocuments": [
     {
       "id": "1dhU8vGt4dDZcre44Rn7CIDbQzlQ6KOIht3GfWddaC1M",
@@ -82,11 +82,12 @@
     "TI-SO-001-YT-003"
   ],
   "publication": {
-    "contentCommit": "PENDING",
-    "workflowRun": null,
-    "workflowConclusion": "pending",
+    "contentCommit": "4830585dcdf07e0b49e81e59ba92412607988f21",
+    "workflowRun": 36573582061,
+    "workflowConclusion": "success",
     "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SO-001",
     "publicPageVerified": false,
-    "drivePublishedStatusUpdated": false
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "GitHub Actions passou npm run check e deploy. Navegador integrado expirou e web fetch não acessa a página; não atualizar o controle do Drive antes da inspeção renderizada."
   }
 }
