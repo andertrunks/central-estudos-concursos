@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-07",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Sobre NULL em SQL, é correto afirmar que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é sempre numericamente igual a zero"
+    },
+    {
+      "id": "B",
+      "text": "é sempre string vazia"
+    },
+    {
+      "id": "C",
+      "text": "representa ausência de valor segundo semântica própria, não devendo ser confundido com zero"
+    },
+    {
+      "id": "D",
+      "text": "torna qualquer chave estrangeira inválida em todo produto"
+    },
+    {
+      "id": "E",
+      "text": "é um tipo de dado universal independente do SGBD"
+    }
+  ],
+  "answer": "C",
+  "comment": "NULL possui semântica própria de ausência; não é sinônimo de zero nem de cadeia vazia.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

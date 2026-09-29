@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-BD-001-INDEPAC-002",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-001-02"
+  ],
+  "statement": "Uma relação possui 7 atributos e, atualmente, 4.500 tuplas. Segundo a terminologia do modelo relacional, o grau e a cardinalidade dessa relação são, respectivamente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4.500 e 7."
+    },
+    {
+      "id": "B",
+      "text": "7 e 4.500."
+    },
+    {
+      "id": "C",
+      "text": "7 e 7."
+    },
+    {
+      "id": "D",
+      "text": "4.500 e 4.500."
+    }
+  ],
+  "answer": "B",
+  "comment": "Grau corresponde à quantidade de atributos. Cardinalidade da relação, neste sentido, corresponde à quantidade de tuplas do estado atual. Portanto, grau 7 e cardinalidade 4.500.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

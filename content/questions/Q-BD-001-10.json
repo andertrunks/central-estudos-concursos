@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-10",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Assinale a alternativa incorreta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Um SGBD pode controlar privilégios de acesso."
+    },
+    {
+      "id": "B",
+      "text": "Um SGBD pode apoiar controle de concorrência."
+    },
+    {
+      "id": "C",
+      "text": "Backup e alta disponibilidade são conceitos equivalentes."
+    },
+    {
+      "id": "D",
+      "text": "Um banco relacional organiza dados em relações/tabelas."
+    },
+    {
+      "id": "E",
+      "text": "Metadados descrevem dados ou estruturas."
+    }
+  ],
+  "answer": "C",
+  "comment": "Backup serve à recuperação; alta disponibilidade busca reduzir indisponibilidade. São conceitos relacionados, mas não equivalentes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-08",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Assinale a afirmação correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "a ordem das tuplas integra obrigatoriamente a semântica da relação"
+    },
+    {
+      "id": "B",
+      "text": "a posição física de uma linha deve ser sua chave primária"
+    },
+    {
+      "id": "C",
+      "text": "a teoria relacional trata relação como conjunto, de modo que a ordem das tuplas não tem significado lógico intrínseco"
+    },
+    {
+      "id": "D",
+      "text": "toda relação deve ter exatamente três atributos"
+    },
+    {
+      "id": "E",
+      "text": "toda relação deve ter cardinalidade fixa"
+    }
+  ],
+  "answer": "C",
+  "comment": "A ordem de tuplas não integra a semântica lógica da relação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

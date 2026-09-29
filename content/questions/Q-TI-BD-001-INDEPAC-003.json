@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-BD-001-INDEPAC-003",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-001-03"
+  ],
+  "statement": "Uma relação possui CPF e matrícula como dois identificadores únicos mínimos. A organização escolheu matrícula como chave primária. Nesse cenário, o CPF é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "obrigatoriamente uma chave estrangeira."
+    },
+    {
+      "id": "B",
+      "text": "uma chave candidata alternativa."
+    },
+    {
+      "id": "C",
+      "text": "uma superchave inválida por não ter sido escolhida."
+    },
+    {
+      "id": "D",
+      "text": "um atributo que deve ser removido do esquema."
+    }
+  ],
+  "answer": "B",
+  "comment": "Os dois atributos são chaves candidatas porque identificam unicamente e são mínimos. A candidata escolhida torna-se primária; a outra permanece chave candidata alternativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

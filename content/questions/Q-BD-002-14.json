@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-14",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma relação PESSOA(id, cpf, nome) possui id e cpf como identificadores únicos mínimos. Se id é a chave primária, então cpf:",
+  "options": [
+    {
+      "id": "A",
+      "text": "não pode ter unicidade"
+    },
+    {
+      "id": "B",
+      "text": "é uma chave candidata alternativa"
+    },
+    {
+      "id": "C",
+      "text": "é necessariamente uma chave estrangeira"
+    },
+    {
+      "id": "D",
+      "text": "deixa de pertencer ao esquema"
+    },
+    {
+      "id": "E",
+      "text": "define a cardinalidade da relação"
+    }
+  ],
+  "answer": "B",
+  "comment": "CPF continua sendo uma chave candidata e, por não ter sido escolhida como primária, é alternativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

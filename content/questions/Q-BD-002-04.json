@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-04",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma relação possui duas chaves candidatas, X e Y. Se X é escolhida como chave primária, Y é denominada, em geral:",
+  "options": [
+    {
+      "id": "A",
+      "text": "chave secundária física"
+    },
+    {
+      "id": "B",
+      "text": "chave estrangeira"
+    },
+    {
+      "id": "C",
+      "text": "chave alternativa"
+    },
+    {
+      "id": "D",
+      "text": "domínio"
+    },
+    {
+      "id": "E",
+      "text": "tupla"
+    }
+  ],
+  "answer": "C",
+  "comment": "A candidata não escolhida como primária é chave alternativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

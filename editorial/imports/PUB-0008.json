@@ -1,0 +1,186 @@
+{
+  "packageId": "PUB-0008",
+  "sourceDocuments": [
+    {
+      "id": "12u0PySqzIZrwvCY5okmOoxbAWFmCAAzJAyK9mlXaqn4",
+      "title": "BD-001 — Fundamentos de Bancos de Dados: dados, informação, banco de dados, SGBD e modelos",
+      "revisionId": "ANLCKQm37FCudbvzebQKwPu3Byz-ijsHwoCxQbhB2F-xxiye06mz_32koaGgiv9O9wrWm2FaTCoV7mDra6KSWM3qg2Ulm6NEoVAsOWqRHU0",
+      "url": "https://docs.google.com/document/d/12u0PySqzIZrwvCY5okmOoxbAWFmCAAzJAyK9mlXaqn4",
+      "paragraphs": 410,
+      "characters": 31680
+    },
+    {
+      "id": "1izh6SaHpwaWgCj8ytjO_SkiWN4UeOBHNXbb_RhMoY40",
+      "title": "BD-002 — Modelo relacional: relações, tuplas, atributos, domínios, chaves e integridade",
+      "revisionId": "ANLCKQkg0UyqNI2HERqEdP7ICAxMJ5bWI6NTOahTiw_siTU3KtF0lynJR6ecmDmoKpOYUzDg8JB1SN6YM9qgj8WTtENfkYg9wToKL43SBXA",
+      "url": "https://docs.google.com/document/d/1izh6SaHpwaWgCj8ytjO_SkiWN4UeOBHNXbb_RhMoY40",
+      "paragraphs": 447,
+      "characters": 33426
+    },
+    {
+      "id": "1OzdwjEQLahKgjMMtcwddDS1px3Ta7KpnwTbuwlGY-90",
+      "title": "TI-BD-001 — Banco de dados relacional — complemento e auditoria Central de Estudos",
+      "revisionId": "ANLCKQljwc9MtpJNnf7nw8mhJpb6GM9oaLZP5pLAH7iRycoC_0H3hcO5US73YDalQKvUwOYNrl644B6C1FH8xsLQxP3N0-smygcDIRzqsww",
+      "url": "https://docs.google.com/document/d/1OzdwjEQLahKgjMMtcwddDS1px3Ta7KpnwTbuwlGY-90",
+      "paragraphs": 376,
+      "characters": 26226
+    },
+    {
+      "id": "1qXvxpYPyu8w4BKEMN79KEmhVYeU0Jw6WpeepS7e918Y",
+      "title": "TI-BD-001 — Caderno de treino sem respostas — 4 autorais",
+      "revisionId": "ANLCKQlFcNbBGRWD6CphAtpO39THkrjmgUhOkXDAn9zPH0_tlmhhu-tsLA-uUcrYxTpEjqHY2yf5QcPeSJsK2JA4RHQmrB8ASXCCAMZGrhw",
+      "url": "https://docs.google.com/document/d/1qXvxpYPyu8w4BKEMN79KEmhVYeU0Jw6WpeepS7e918Y",
+      "paragraphs": 49,
+      "characters": 6495
+    }
+  ],
+  "sourceMedia": {
+    "id": "TI-BD-001-IMG-001",
+    "embeddedImage": true,
+    "dimensions": "2048x1222",
+    "byteLength": 167560
+  },
+  "validatedAuthoredQuestionIds": [
+    "Q-TI-BD-001-INDEPAC-001",
+    "Q-TI-BD-001-INDEPAC-002",
+    "Q-TI-BD-001-INDEPAC-003",
+    "Q-TI-BD-001-INDEPAC-004"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-143",
+    "QREF-QUAD-144",
+    "QREF-QUAD-145",
+    "QREF-QUAD-146",
+    "QREF-QUAD-147",
+    "QREF-QUAD-148"
+  ],
+  "integratedQuestionIds": [
+    "Q-BD-001-01",
+    "Q-BD-001-02",
+    "Q-BD-001-03",
+    "Q-BD-001-04",
+    "Q-BD-001-05",
+    "Q-BD-001-06",
+    "Q-BD-001-07",
+    "Q-BD-001-08",
+    "Q-BD-001-09",
+    "Q-BD-001-10",
+    "Q-BD-002-01",
+    "Q-BD-002-02",
+    "Q-BD-002-03",
+    "Q-BD-002-04",
+    "Q-BD-002-05",
+    "Q-BD-002-06",
+    "Q-BD-002-07",
+    "Q-BD-002-08",
+    "Q-BD-002-09",
+    "Q-BD-002-10",
+    "Q-BD-002-11",
+    "Q-BD-002-12",
+    "Q-BD-002-13",
+    "Q-BD-002-14",
+    "Q-BD-002-15",
+    "Q-TI-BD-001-INDEPAC-001",
+    "Q-TI-BD-001-INDEPAC-002",
+    "Q-TI-BD-001-INDEPAC-003",
+    "Q-TI-BD-001-INDEPAC-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ],
+  "recordedAt": "2026-09-29T01:07:39.765Z",
+  "sourceDocumentParagraphsPreserved": true,
+  "transformation": {
+    "canonicalLessonSections": [
+      {
+        "id": "TI-BD-001-01",
+        "title": "TI-BD-001-01 — Fundamentos, banco de dados e SGBD",
+        "characters": 35976
+      },
+      {
+        "id": "TI-BD-001-02",
+        "title": "TI-BD-001-02 — Modelo relacional: relação, tupla, atributo e domínio",
+        "characters": 9184
+      },
+      {
+        "id": "TI-BD-001-03",
+        "title": "TI-BD-001-03 — Chaves e integridade",
+        "characters": 21130
+      },
+      {
+        "id": "TI-BD-001-04",
+        "title": "TI-BD-001-04 — Teoria relacional, SGBD e revisão de prova",
+        "characters": 17342
+      }
+    ],
+    "questionItems": 29,
+    "priorAuthoredQuestionIds": [
+      "Q-BD-001-01",
+      "Q-BD-001-02",
+      "Q-BD-001-03",
+      "Q-BD-001-04",
+      "Q-BD-001-05",
+      "Q-BD-001-06",
+      "Q-BD-001-07",
+      "Q-BD-001-08",
+      "Q-BD-001-09",
+      "Q-BD-001-10",
+      "Q-BD-002-01",
+      "Q-BD-002-02",
+      "Q-BD-002-03",
+      "Q-BD-002-04",
+      "Q-BD-002-05",
+      "Q-BD-002-06",
+      "Q-BD-002-07",
+      "Q-BD-002-08",
+      "Q-BD-002-09",
+      "Q-BD-002-10",
+      "Q-BD-002-11",
+      "Q-BD-002-12",
+      "Q-BD-002-13",
+      "Q-BD-002-14",
+      "Q-BD-002-15"
+    ],
+    "validatedNewAuthoredQuestionIds": [
+      "Q-TI-BD-001-INDEPAC-001",
+      "Q-TI-BD-001-INDEPAC-002",
+      "Q-TI-BD-001-INDEPAC-003",
+      "Q-TI-BD-001-INDEPAC-004"
+    ],
+    "answersAndCommentsStoredInQuestionSchema": true,
+    "sixQuadrixReferencesExcludedFromQuestionSchema": true,
+    "noContestQuestionsTranscribedOrScored": true,
+    "contestIds": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  },
+  "imageSha256": "5b0c4dba46b311d9084c7943567cbe25317de207ba67ff406bb950410481dfae",
+  "youtubeChecks": [
+    {
+      "id": "TI-BD-001-YT-001",
+      "httpStatus": 200,
+      "title": "Curso Completo de Modelagem de Bancos de Dados com Projeto Prático",
+      "channel": "Bóson Treinamentos",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "id": "TI-BD-001-YT-002",
+      "httpStatus": 200,
+      "title": "BANCOS DE DADOS RELACIONAIS - CURSO DE BANCO DE DADOS",
+      "channel": "daves tecnologia",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "driveEditorialStatusAtImport": "pronto para validação",
+  "driveWorkStatusAtImport": "aguardando validação/Work",
+  "drivePublishedStatusUpdated": false,
+  "learnerViewExclusions": [
+    "Administrative status, cargoIds/editorial gate blocks, and obsolete publication-state notes remain in the canonical Drive documents and are excluded from learner-facing theory.",
+    "The question stems, options, answers, and comments removed from static prose are represented by their permanent interactive question IDs in questionSchema.",
+    "The derived no-answer caderno repeats the four same questions; its duplicate question text was not rendered a second time. Its active-recall prompts and six unscored Quadrix locators remain in the lesson.",
+    "Old control text tied to TRF3/TRT-15 curriculum checks is kept in the canonical Drive source and omitted from the CRBio-01/SETEC learner route.",
+    "Private Google Docs links that lead directly to source answers were removed from learner-facing text; the full Drive documents remain unchanged and canonical."
+  ]
+}

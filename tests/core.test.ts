@@ -31,6 +31,7 @@ const data = await loadCatalog();
 const crbio = data.contests[0]!;
 const setec = data.contests[1]!;
 const sql = data.references.find((r) => r.id === "TI-BD-003")!;
+const sqlLesson = data.lessons.find((lesson) => lesson.id === sql.id)!;
 const referenceDay = "2026-09-23";
 // Artificial fixtures live only in tests and never enter the published catalog.
 const question: Question = {
@@ -131,7 +132,7 @@ describe("integridade e importação editorial", () => {
         media: ["TEST-IMAGE", "TEST-VIDEO"],
         questions: [question.id],
         // The package replaces an existing lesson whose questions reference these permanent units.
-        sections: data.lessons[0]!.sections?.map(({ id, title, text }) => ({ id, title, text })),
+        sections: sqlLesson.sections?.map(({ id, title, text }) => ({ id, title, text })),
         updatedAt: referenceDay,
         requirements: { image: true, videos: true, questions: true },
       },
@@ -163,7 +164,7 @@ describe("integridade e importação editorial", () => {
       questions: [question],
     };
     const { next } = preparePackage(item, data);
-    expect(next.lessons).toHaveLength(1);
+    expect(next.lessons).toHaveLength(data.lessons.length);
     expect(next.references).toHaveLength(77);
     expect(next.references.find((r) => r.id === sql.id)?.status).toBe(
       "publicado",

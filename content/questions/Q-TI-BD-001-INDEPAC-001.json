@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-BD-001-INDEPAC-001",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-001-01"
+  ],
+  "statement": "Assinale a alternativa que distingue corretamente banco de dados e SGBD.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Banco de dados é o software que gerencia usuários, enquanto SGBD é apenas o conjunto de arquivos."
+    },
+    {
+      "id": "B",
+      "text": "Banco de dados é uma coleção organizada de dados; SGBD é o software que fornece mecanismos para definir, armazenar, recuperar, proteger e manipular esses dados."
+    },
+    {
+      "id": "C",
+      "text": "Banco de dados e SGBD são expressões absolutamente sinônimas."
+    },
+    {
+      "id": "D",
+      "text": "SGBD é obrigatoriamente o computador físico onde os dados são armazenados."
+    }
+  ],
+  "answer": "B",
+  "comment": "O banco é o conjunto organizado de dados. O SGBD é o sistema de software que gerencia esses dados. Um servidor físico pode executar o SGBD, mas não é sinônimo dele.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-01",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Assinale a alternativa que descreve corretamente um SGBD.",
+  "options": [
+    {
+      "id": "A",
+      "text": "É necessariamente o conjunto de tabelas de uma organização."
+    },
+    {
+      "id": "B",
+      "text": "É o software responsável por gerenciar o armazenamento e o acesso aos dados."
+    },
+    {
+      "id": "C",
+      "text": "É apenas uma linguagem de consulta."
+    },
+    {
+      "id": "D",
+      "text": "É sinônimo de planilha eletrônica."
+    },
+    {
+      "id": "E",
+      "text": "É exclusivamente um equipamento físico."
+    }
+  ],
+  "answer": "B",
+  "comment": "O SGBD é o software que gerencia dados e estruturas. O conjunto de dados não se confunde com o gerenciador.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

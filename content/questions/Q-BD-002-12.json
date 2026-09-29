@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-12",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "“Esquema da relação” e “estado da relação” correspondem, respectivamente, a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "quantidade de linhas e quantidade de colunas"
+    },
+    {
+      "id": "B",
+      "text": "estrutura definida e conjunto atual de tuplas"
+    },
+    {
+      "id": "C",
+      "text": "chave primária e chave estrangeira"
+    },
+    {
+      "id": "D",
+      "text": "domínio e grau"
+    },
+    {
+      "id": "E",
+      "text": "produto e versão do SGBD"
+    }
+  ],
+  "answer": "B",
+  "comment": "Esquema é estrutura; estado é o conteúdo atual da relação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

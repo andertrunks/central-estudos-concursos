@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-02",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A sequência “1.250” sem qualquer contexto é melhor classificada, inicialmente, como:",
+  "options": [
+    {
+      "id": "A",
+      "text": "informação completa."
+    },
+    {
+      "id": "B",
+      "text": "decisão gerencial."
+    },
+    {
+      "id": "C",
+      "text": "dado."
+    },
+    {
+      "id": "D",
+      "text": "SGBD."
+    },
+    {
+      "id": "E",
+      "text": "metadado obrigatoriamente."
+    }
+  ],
+  "answer": "C",
+  "comment": "Sem contexto, “1.250” é um valor registrado; só se torna informação quando sabemos o que representa e como será interpretado.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

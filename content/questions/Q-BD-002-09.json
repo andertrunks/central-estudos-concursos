@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-09",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma chave formada por (id_pedido, numero_item) é exemplo de:",
+  "options": [
+    {
+      "id": "A",
+      "text": "chave simples"
+    },
+    {
+      "id": "B",
+      "text": "chave composta"
+    },
+    {
+      "id": "C",
+      "text": "domínio"
+    },
+    {
+      "id": "D",
+      "text": "estado da relação"
+    },
+    {
+      "id": "E",
+      "text": "atributo multivalorado obrigatório"
+    }
+  ],
+  "answer": "B",
+  "comment": "A identificação depende da combinação de dois atributos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

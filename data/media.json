@@ -56,5 +56,40 @@
     "file": "media/TI-BD-003-IMG-002.png",
     "verifiedAt": "2026-09-23",
     "original": true
+  },
+  {
+    "id": "TI-BD-001-IMG-001",
+    "contentId": "TI-BD-001",
+    "type": "imagem",
+    "title": "Modelo relacional — estrutura, chaves e integridade",
+    "caption": "O diagrama apresenta as relações CLIENTE e PEDIDO, aproxima coluna/atributo e linha/tupla, exemplifica uma chave estrangeira e resume domínio, chave candidata, chave primária e integridade referencial.",
+    "alt": "Duas tabelas relacionais, CLIENTE e PEDIDO, com id_cliente como referência estrangeira; abaixo, definições de domínio, chave candidata, chave primária e integridade referencial. Uma nota informa que grau é o número de atributos e cardinalidade é o número de tuplas.",
+    "file": "media/TI-BD-001-IMG-001.png",
+    "verifiedAt": "2026-09-28",
+    "original": true
+  },
+  {
+    "id": "TI-BD-001-YT-001",
+    "contentId": "TI-BD-001",
+    "type": "YouTube",
+    "title": "Curso Completo de Modelagem de Bancos de Dados com Projeto Prático",
+    "caption": "Capítulos iniciais sobre conceitos de bancos de dados, modelo relacional, chaves e restrições de integridade.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=Kd1yqYjylCg",
+    "channel": "Bóson Treinamentos",
+    "verifiedAt": "2026-09-28",
+    "original": false
+  },
+  {
+    "id": "TI-BD-001-YT-002",
+    "contentId": "TI-BD-001",
+    "type": "YouTube",
+    "title": "BANCOS DE DADOS RELACIONAIS - CURSO DE BANCO DE DADOS",
+    "caption": "Conteúdo complementar sobre modelo relacional, relações, tuplas, atributos, chaves e relacionamentos.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=mmtFrUHbyP0",
+    "channel": "daves tecnologia",
+    "verifiedAt": "2026-09-28",
+    "original": false
   }
 ]

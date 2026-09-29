@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-07",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Em um banco orientado a documentos, a unidade básica de armazenamento pode conter campos, valores, arrays e estruturas aninhadas. Essa descrição é compatível com:",
+  "options": [
+    {
+      "id": "A",
+      "text": "MongoDB."
+    },
+    {
+      "id": "B",
+      "text": "somente arquivos CSV."
+    },
+    {
+      "id": "C",
+      "text": "exclusivamente o modelo hierárquico clássico."
+    },
+    {
+      "id": "D",
+      "text": "um roteador de rede."
+    },
+    {
+      "id": "E",
+      "text": "uma planilha sem persistência."
+    }
+  ],
+  "answer": "A",
+  "comment": "MongoDB armazena registros como documentos BSON compostos por campos e valores, incluindo estruturas aninhadas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

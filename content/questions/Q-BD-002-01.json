@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-01",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Em uma relação R(A, B, C, D) com 500 tuplas, o grau e a cardinalidade são, respectivamente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "500 e 4"
+    },
+    {
+      "id": "B",
+      "text": "4 e 500"
+    },
+    {
+      "id": "C",
+      "text": "4 e 4"
+    },
+    {
+      "id": "D",
+      "text": "500 e 500"
+    },
+    {
+      "id": "E",
+      "text": "504 e 496"
+    }
+  ],
+  "answer": "B",
+  "comment": "Grau = quantidade de atributos = 4; cardinalidade = quantidade de tuplas = 500.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-08",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Considere as afirmações:",
+  "options": [
+    {
+      "id": "A",
+      "text": "I apenas."
+    },
+    {
+      "id": "B",
+      "text": "II apenas."
+    },
+    {
+      "id": "C",
+      "text": "I e III apenas."
+    },
+    {
+      "id": "D",
+      "text": "II e III apenas."
+    },
+    {
+      "id": "E",
+      "text": "I, II e III."
+    }
+  ],
+  "answer": "C",
+  "comment": "I é verdadeira. II é falsa porque “schema” varia entre produtos. III é verdadeira porque “instance” possui definições arquiteturais específicas, como no Oracle.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-02",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Assinale a alternativa correta sobre chave candidata:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Toda chave candidata contém atributos redundantes."
+    },
+    {
+      "id": "B",
+      "text": "É uma superchave mínima."
+    },
+    {
+      "id": "C",
+      "text": "É necessariamente uma chave estrangeira."
+    },
+    {
+      "id": "D",
+      "text": "Pode identificar duas tuplas diferentes com o mesmo valor."
+    },
+    {
+      "id": "E",
+      "text": "É sempre composta."
+    }
+  ],
+  "answer": "B",
+  "comment": "Chave candidata é uma superchave que não contém atributo dispensável para a identificação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

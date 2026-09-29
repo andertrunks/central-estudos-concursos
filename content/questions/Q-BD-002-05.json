@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-05",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A inserção de uma linha filha com chave estrangeira apontando para pai inexistente viola principalmente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "integridade referencial"
+    },
+    {
+      "id": "B",
+      "text": "grau"
+    },
+    {
+      "id": "C",
+      "text": "cardinalidade"
+    },
+    {
+      "id": "D",
+      "text": "associatividade"
+    },
+    {
+      "id": "E",
+      "text": "independência física"
+    }
+  ],
+  "answer": "A",
+  "comment": "A referência aponta para pai inexistente, rompendo integridade referencial.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

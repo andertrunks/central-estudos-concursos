@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-04",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual alternativa contém apenas exemplos de metadados?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Nome de tabela, nome de coluna e tipo de dado."
+    },
+    {
+      "id": "B",
+      "text": "João, 42 e 10/09/2026."
+    },
+    {
+      "id": "C",
+      "text": "Uma fotografia, um PDF e um vídeo."
+    },
+    {
+      "id": "D",
+      "text": "Linhas inseridas por usuários, exclusivamente."
+    },
+    {
+      "id": "E",
+      "text": "Senhas de usuários, necessariamente."
+    }
+  ],
+  "answer": "A",
+  "comment": "Nome de tabela, nome de coluna e tipo descrevem a estrutura dos dados.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

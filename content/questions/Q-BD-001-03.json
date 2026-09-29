@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-03",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Em um banco relacional, uma tabela é formada, conceitualmente, por:",
+  "options": [
+    {
+      "id": "A",
+      "text": "nós e arestas apenas."
+    },
+    {
+      "id": "B",
+      "text": "arquivos e diretórios."
+    },
+    {
+      "id": "C",
+      "text": "chaves e valores sem estrutura."
+    },
+    {
+      "id": "D",
+      "text": "linhas e colunas."
+    },
+    {
+      "id": "E",
+      "text": "somente objetos executáveis."
+    }
+  ],
+  "answer": "D",
+  "comment": "No modelo relacional, a representação usual é por tabelas formadas por linhas e colunas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

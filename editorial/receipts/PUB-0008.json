@@ -1,0 +1,9 @@
+{
+  "queueId": "PUB-0008",
+  "contentId": "TI-BD-001",
+  "driveDocumentId": "1OzdwjEQLahKgjMMtcwddDS1px3Ta7KpnwTbuwlGY-90",
+  "integratedAt": "2026-09-29T00:59:27.095Z",
+  "status": "integrado; aguardando testes e deploy",
+  "publishedCommit": null,
+  "siteUrl": null
+}

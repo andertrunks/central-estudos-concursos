@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-10",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "No esquema UNIDADE(id_unidade) e SERVIDOR(id_servidor, id_unidade), se SERVIDOR.id_unidade referencia UNIDADE.id_unidade, então:",
+  "options": [
+    {
+      "id": "A",
+      "text": "SERVIDOR.id_unidade é chave estrangeira"
+    },
+    {
+      "id": "B",
+      "text": "SERVIDOR é necessariamente a tabela pai"
+    },
+    {
+      "id": "C",
+      "text": "UNIDADE.id_unidade deixa de poder ser chave primária"
+    },
+    {
+      "id": "D",
+      "text": "id_unidade deve ser único em SERVIDOR"
+    },
+    {
+      "id": "E",
+      "text": "não há relacionamento entre as relações"
+    }
+  ],
+  "answer": "A",
+  "comment": "O atributo da filha que referencia a chave da pai é chave estrangeira.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

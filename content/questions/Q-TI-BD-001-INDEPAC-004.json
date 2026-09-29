@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-BD-001-INDEPAC-004",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-001-03"
+  ],
+  "statement": "Considere uma tabela PEDIDO com chave estrangeira id_cliente que referencia CLIENTE.id_cliente. Qual situação caracteriza, em regra, violação de integridade referencial?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Inserir pedido com id_cliente que não existe na relação CLIENTE, quando a restrição exige referência válida."
+    },
+    {
+      "id": "B",
+      "text": "Inserir dois pedidos diferentes para o mesmo cliente."
+    },
+    {
+      "id": "C",
+      "text": "Consultar pedidos sem ordenar o resultado."
+    },
+    {
+      "id": "D",
+      "text": "Criar índice sobre uma coluna de pesquisa."
+    }
+  ],
+  "answer": "A",
+  "comment": "A integridade referencial protege a validade das referências entre relações. Repetir uma chave estrangeira em linhas diferentes é normalmente permitido porque um cliente pode ter muitos pedidos. Ordenação e índice são assuntos diferentes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

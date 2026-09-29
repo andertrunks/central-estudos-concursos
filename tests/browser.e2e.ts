@@ -99,6 +99,23 @@ try {
   await page.reload();
   await expect(page.getByLabel('Sua resposta',{exact:true}).first()).toHaveValue(/Resposta de verificação/);
   checks.push('SQL: 28 subtemas, imagens, vídeos, conclusão, erro automático e discursiva persistente');
+  await page.goto(`${base}#/biblioteca/TI-BD-001`);
+  await expect(page.getByRole('heading', {name:'Banco de dados relacional'})).toBeVisible();
+  await expect(page.locator('[aria-label="Subtemas da aula"] details')).toHaveCount(4);
+  await expect(page.locator('figure img')).toHaveCount(1);
+  await expect.poll(() => page.locator('figure img').first().evaluate(e => (e as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  await expect(page.getByRole('link', {name:'Assistir no YouTube ↗'})).toHaveCount(2);
+  const authoredId = 'Q-TI-BD-001-INDEPAC-001';
+  const authoredCard = page.locator('article.card').filter({hasText:authoredId}).first();
+  await expect(authoredCard.locator('.answer')).toHaveCount(0);
+  await authoredCard.locator(`input[name="${authoredId}"][value="B"]`).check();
+  await authoredCard.getByRole('button',{name:'Conferir resposta'}).click();
+  await expect(authoredCard.locator('.answer')).toContainText('Gabarito:');
+  await expect(authoredCard.locator('.answer')).toContainText('O banco é o conjunto organizado de dados.');
+  await page.getByLabel('Buscar questão por ID ou enunciado').fill('QREF-QUAD-143');
+  await expect(page.getByText('0 questões · página 0 de 0')).toBeVisible();
+  await expect(page.locator('.answer')).toHaveCount(0);
+  checks.push('PUB-0008: quatro subtemas, imagem e vídeos; questão autoral sem gabarito até tentativa; localizador Quadrix sem item pontuável');
   await page.goto(`${base}#/biblioteca/TI-RED-001`);
   await expect(
     page.getByRole("heading", { name: "Aula planejada, ainda não publicada" }),

@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-05",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma alteração na forma física de armazenamento é realizada sem exigir mudanças nas tabelas e colunas vistas pela aplicação. O caso exemplifica principalmente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "independência física de dados."
+    },
+    {
+      "id": "B",
+      "text": "ausência de esquema."
+    },
+    {
+      "id": "C",
+      "text": "exclusão lógica."
+    },
+    {
+      "id": "D",
+      "text": "modelo em rede."
+    },
+    {
+      "id": "E",
+      "text": "redundância obrigatória."
+    }
+  ],
+  "answer": "A",
+  "comment": "A mudança ocorreu no nível físico sem alterar a visão lógica usada pela aplicação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-09",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma estrutura lógica estritamente baseada em relação pai-filho, semelhante a uma árvore, caracteriza o modelo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "relacional."
+    },
+    {
+      "id": "B",
+      "text": "hierárquico."
+    },
+    {
+      "id": "C",
+      "text": "documental obrigatoriamente."
+    },
+    {
+      "id": "D",
+      "text": "chave-valor."
+    },
+    {
+      "id": "E",
+      "text": "tabular analítico."
+    }
+  ],
+  "answer": "B",
+  "comment": "A estrutura em árvore com pai-filho é característica do modelo hierárquico.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

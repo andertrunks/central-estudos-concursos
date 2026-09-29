@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-15",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Assinale a alternativa que melhor distingue teoria relacional de SQL:",
+  "options": [
+    {
+      "id": "A",
+      "text": "são conceitos totalmente desconectados"
+    },
+    {
+      "id": "B",
+      "text": "relação, tupla e atributo correspondem exatamente e sem qualquer nuance a tabela, linha e coluna em todo SGBD"
+    },
+    {
+      "id": "C",
+      "text": "SQL implementa conceitos relacionais, mas possui semântica e recursos próprios que não devem ser confundidos com a teoria pura"
+    },
+    {
+      "id": "D",
+      "text": "SQL não possui chaves"
+    },
+    {
+      "id": "E",
+      "text": "modelo relacional exige um produto específico"
+    }
+  ],
+  "answer": "C",
+  "comment": "SQL é fortemente inspirado/relacionado ao modelo relacional, mas tem semântica própria e particularidades de implementação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -5,7 +5,18 @@ import { recommendations, lessonUnits, studiedUnit } from '../src/services/trail
 import { beginNextActivity, finishActivity, loadState, database, recordAnswer, setProgress, importBackup, type Backup } from '../src/services/storage';
 import { contestProgress } from '../src/services/study';
 import { validateCatalog } from '../src/services/integrity';
-const data = await loadCatalog();
+const completeCatalog = await loadCatalog();
+// These tests cover the existing SQL publication and use a stable, single-lesson fixture.
+// New independently published lessons must not change their expected recommendation order.
+const data = {
+  ...completeCatalog,
+  references: completeCatalog.references.map((reference) => reference.id === 'TI-BD-001'
+    ? { ...reference, status: 'planejado' as const, editorialStatus: 'produzido' }
+    : reference),
+  lessons: completeCatalog.lessons.filter((lesson) => lesson.id === 'TI-BD-003'),
+  questions: completeCatalog.questions.filter((question) => question.contentId === 'TI-BD-003'),
+  media: completeCatalog.media.filter((item) => item.contentId === 'TI-BD-003'),
+};
 const day = '2026-09-24';
 const empty: Backup = { version: 1, progress: [], reviews: [], attempts: [], writings: [], results: [], activities: [] };
 beforeEach(async () => {

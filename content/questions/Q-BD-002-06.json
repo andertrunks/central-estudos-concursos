@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-002-06",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Um atributo aceita apenas valores 1, 2 e 3. A tentativa de inserir 9 caracteriza problema de:",
+  "options": [
+    {
+      "id": "A",
+      "text": "cardinalidade"
+    },
+    {
+      "id": "B",
+      "text": "domínio"
+    },
+    {
+      "id": "C",
+      "text": "chave alternativa"
+    },
+    {
+      "id": "D",
+      "text": "ordem física"
+    },
+    {
+      "id": "E",
+      "text": "relação pai"
+    }
+  ],
+  "answer": "B",
+  "comment": "O valor 9 está fora do conjunto de valores admissíveis definido para o atributo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

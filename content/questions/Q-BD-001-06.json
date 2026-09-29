@@ -1,0 +1,42 @@
+{
+  "id": "Q-BD-001-06",
+  "contentId": "TI-BD-001",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Sobre NoSQL, assinale a correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Todo banco NoSQL proíbe qualquer forma de consulta estruturada."
+    },
+    {
+      "id": "B",
+      "text": "Bancos NoSQL não possuem modelo de dados."
+    },
+    {
+      "id": "C",
+      "text": "NoSQL é uma categoria ampla que inclui bancos de documentos, chave-valor, grafos e outras abordagens não relacionais."
+    },
+    {
+      "id": "D",
+      "text": "NoSQL é sinônimo de banco hierárquico."
+    },
+    {
+      "id": "E",
+      "text": "NoSQL substituiu completamente o modelo relacional."
+    }
+  ],
+  "answer": "C",
+  "comment": "NoSQL é uma categoria ampla; não significa inexistência de modelo, estrutura ou consulta.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PG18-CONSTRAINTS-021",
+    "SRC-PG18-CREATETABLE-021"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
