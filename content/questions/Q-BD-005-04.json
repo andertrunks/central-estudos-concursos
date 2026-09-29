@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-04",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Superchave é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "qualquer atributo numérico."
+    },
+    {
+      "id": "B",
+      "text": "conjunto de atributos capaz de determinar todos os atributos da relação."
+    },
+    {
+      "id": "C",
+      "text": "apenas a chave escolhida como PRIMARY KEY."
+    },
+    {
+      "id": "D",
+      "text": "toda chave estrangeira composta."
+    },
+    {
+      "id": "E",
+      "text": "somente um atributo de tipo numérico."
+    }
+  ],
+  "answer": "B",
+  "comment": "superchave determina todos os atributos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-BD-002-INDEPAC-004",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Considere uma relação em 2FN em que Código_Setor determina Nome_Setor, e uma chave de funcionário determina Código_Setor. Se Nome_Setor é atributo não primo, o problema descrito está associado principalmente a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "dependência transitiva e 3FN."
+    },
+    {
+      "id": "B",
+      "text": "atributo multivalorado e 1FN."
+    },
+    {
+      "id": "C",
+      "text": "ausência de chave estrangeira e 2FN."
+    },
+    {
+      "id": "D",
+      "text": "relacionamento ternário e BCNF."
+    }
+  ],
+  "answer": "A",
+  "comment": "A chave determina Código_Setor, que por sua vez determina Nome_Setor. Assim, o atributo não primo depende transitivamente da chave por meio de outro atributo não chave, situação típica tratada pela 3FN.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

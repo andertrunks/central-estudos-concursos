@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-17",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Considere R(Pedido, Cliente, ClienteNome), com Pedido → Cliente e Cliente → ClienteNome. Se Pedido é chave e Cliente não é superchave, a dependência Cliente → ClienteNome:",
+  "options": [
+    {
+      "id": "A",
+      "text": "pode indicar violação de 3FN."
+    },
+    {
+      "id": "B",
+      "text": "é trivial."
+    },
+    {
+      "id": "C",
+      "text": "prova que Pedido não é chave."
+    },
+    {
+      "id": "D",
+      "text": "não tem efeito na normalização."
+    },
+    {
+      "id": "E",
+      "text": "é sempre trivial apenas porque Pedido é chave."
+    }
+  ],
+  "answer": "A",
+  "comment": "Cliente não é superchave; a dependência pode indicar violação da 3FN quando ClienteNome não é primo. Não se presume a existência de outras chaves candidatas não informadas no enunciado.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

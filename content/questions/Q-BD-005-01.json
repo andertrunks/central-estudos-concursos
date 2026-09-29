@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-01",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "A principal finalidade da normalização é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "eliminar todas as chaves estrangeiras."
+    },
+    {
+      "id": "B",
+      "text": "organizar dependências e reduzir redundâncias problemáticas e anomalias."
+    },
+    {
+      "id": "C",
+      "text": "substituir SQL por modelo conceitual."
+    },
+    {
+      "id": "D",
+      "text": "garantir que toda consulta use apenas uma tabela."
+    },
+    {
+      "id": "E",
+      "text": "garantir que todas as colunas de qualquer tabela sejam NOT NULL."
+    }
+  ],
+  "answer": "B",
+  "comment": "normalização trata organização de dependências, redundâncias e anomalias.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

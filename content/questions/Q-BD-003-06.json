@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-06",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "A cardinalidade (0,1) indica:",
+  "options": [
+    {
+      "id": "A",
+      "text": "exatamente uma ocorrência."
+    },
+    {
+      "id": "B",
+      "text": "uma ou muitas ocorrências."
+    },
+    {
+      "id": "C",
+      "text": "zero ou uma ocorrência."
+    },
+    {
+      "id": "D",
+      "text": "zero ou muitas ocorrências."
+    },
+    {
+      "id": "E",
+      "text": "exatamente zero ocorrências."
+    }
+  ],
+  "answer": "C",
+  "comment": "O mínimo 0 indica opcionalidade e o máximo 1 limita a uma ocorrência.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-20",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "A chave de uma relação resultante de relacionamento ternário:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é sempre as três FKs."
+    },
+    {
+      "id": "B",
+      "text": "nunca pode incluir FKs."
+    },
+    {
+      "id": "C",
+      "text": "depende das cardinalidades e da regra de negócio."
+    },
+    {
+      "id": "D",
+      "text": "deve sempre ser um UUID sem UNIQUE adicional."
+    },
+    {
+      "id": "E",
+      "text": "não existe."
+    }
+  ],
+  "answer": "C",
+  "comment": "A chave deve representar a semântica e as cardinalidades reais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

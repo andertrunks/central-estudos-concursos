@@ -1,0 +1,2813 @@
+{
+  "queueId": "PUB-0009",
+  "driveDocumentId": "1S9QOO4FTQSJ5cwYaAz99yxNao_iQOgPNounlk3MQIBo",
+  "status": "pronto para publicação",
+  "lesson": {
+    "id": "TI-BD-002",
+    "title": "Modelagem e normalização",
+    "discipline": "Tecnologia da Informação",
+    "subject": "Banco de Dados",
+    "subtopic": "Modelo Entidade-Relacionamento, mapeamento relacional e normalização",
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ],
+    "objectives": [
+      "Modelar entidades, atributos, relacionamentos, cardinalidades e participação.",
+      "Mapear MER para relações, aplicando chaves e restrições coerentes.",
+      "Analisar dependências funcionais, chaves, anomalias e formas normais de 1FN a BCNF.",
+      "Distinguir junção sem perda de preservação de dependências."
+    ],
+    "theory": "A aula integral está organizada em quatro partes. Os núcleos permanentes BD-003, BD-004 e BD-005 foram preservados como três seções didáticas completas; o caderno de treino sem respostas foi mantido como quarta seção. Questões autorais aparecem na prática interativa. Gabaritos e comentários só são liberados após uma tentativa registrada. Os oito localizadores Quadrix continuam pendentes e não entram em pontuação.",
+    "examples": "Os exemplos resolvidos e exercícios de modelagem permanecem no texto integral dos núcleos BD-003, BD-004 e BD-005.",
+    "pitfalls": "Diferencie cardinalidade máxima de participação mínima; mapeamento de normalização; dependência parcial de transitiva; 3FN de BCNF; e junção sem perda de preservação de dependências.",
+    "summary": "MER representa o domínio; o mapeamento traduz sua estrutura para relações; a normalização avalia dependências, redundâncias e anomalias. A sequência exige análise semântica em cada etapa.",
+    "review": "Siga as perguntas de recuperação ativa do caderno sem consultar as respostas. Resolva as questões autorais e consulte o comentário apenas depois de registrar a tentativa. QREF-QUAD-149 a 156 são localizadores pendentes e não pontuáveis.",
+    "source_ids": [
+      "SRC-CRBIO01-EDITAL-001",
+      "SRC-SETEC-EDITAL-001"
+    ],
+    "media": [
+      "TI-BD-002-IMG-001",
+      "TI-BD-002-YT-001",
+      "TI-BD-002-YT-002"
+    ],
+    "questions": [
+      "Q-BD-003-01",
+      "Q-BD-003-02",
+      "Q-BD-003-03",
+      "Q-BD-003-04",
+      "Q-BD-003-05",
+      "Q-BD-003-06",
+      "Q-BD-003-07",
+      "Q-BD-003-08",
+      "Q-BD-003-09",
+      "Q-BD-003-10",
+      "Q-BD-003-11",
+      "Q-BD-003-12",
+      "Q-BD-003-13",
+      "Q-BD-003-14",
+      "Q-BD-003-15",
+      "Q-BD-004-01",
+      "Q-BD-004-02",
+      "Q-BD-004-03",
+      "Q-BD-004-04",
+      "Q-BD-004-05",
+      "Q-BD-004-06",
+      "Q-BD-004-07",
+      "Q-BD-004-08",
+      "Q-BD-004-09",
+      "Q-BD-004-10",
+      "Q-BD-004-11",
+      "Q-BD-004-12",
+      "Q-BD-004-13",
+      "Q-BD-004-14",
+      "Q-BD-004-15",
+      "Q-BD-004-16",
+      "Q-BD-004-17",
+      "Q-BD-004-18",
+      "Q-BD-004-19",
+      "Q-BD-004-20",
+      "Q-BD-005-01",
+      "Q-BD-005-02",
+      "Q-BD-005-03",
+      "Q-BD-005-04",
+      "Q-BD-005-05",
+      "Q-BD-005-06",
+      "Q-BD-005-07",
+      "Q-BD-005-08",
+      "Q-BD-005-09",
+      "Q-BD-005-10",
+      "Q-BD-005-11",
+      "Q-BD-005-12",
+      "Q-BD-005-13",
+      "Q-BD-005-14",
+      "Q-BD-005-15",
+      "Q-BD-005-16",
+      "Q-BD-005-17",
+      "Q-BD-005-18",
+      "Q-BD-005-19",
+      "Q-BD-005-20",
+      "Q-TI-BD-002-INDEPAC-001",
+      "Q-TI-BD-002-INDEPAC-002",
+      "Q-TI-BD-002-INDEPAC-003",
+      "Q-TI-BD-002-INDEPAC-004"
+    ],
+    "updatedAt": "2026-09-29",
+    "requirements": {
+      "image": true,
+      "videos": true,
+      "questions": true
+    },
+    "sections": [
+      {
+        "id": "TI-BD-002-01",
+        "title": "TI-BD-002-01 — Modelagem conceitual e Modelo Entidade-Relacionamento",
+        "text": "BD-003\n\nO que os editais auditados cobram\r\nNo TRT da 15ª Região, o Edital nº 01/2024 apresenta, para Analista Judiciário – Área Apoio Especializado – Especialidade Tecnologia da Informação, o bloco de Banco de Dados com “Modelagem de dados. Modelo Entidade-Relacionamento. Formas normais”, seguido de tecnologias e linguagens de banco de dados. Portanto, o MER é conteúdo literal desse cargo.\r\nNo TRF3/VUNESP 2023, a linha formal do Técnico Judiciário, Apoio Especializado, Informática é 9.1 “Modelo Entidade x Relacionamento”; a linha formal do Analista Judiciário, Apoio Especializado, Informática é 4.1 com a mesma expressão. A matriz 1:1 C2/D2 demonstra os vínculos individualmente: este mesmo BD-003 é reaproveitado pelos dois cargos sem criar aulas paralelas.\r\nEsta aula permanece na modelagem conceitual. O mapeamento, a normalização e SQL já constam das unidades BD-004 a BD-012 em seus respectivos escopos; esta aula conserva o foco conceitual.\r\n\r\n\r\nObjetivos\r\nAo final desta aula, o estudante deverá ser capaz de:\r\n* reconhecer a finalidade da modelagem conceitual e do Modelo Entidade-Relacionamento;\r\n* distinguir entidade, tipo de entidade, ocorrência de entidade e atributo;\r\n* identificar entidades fortes e compreender a ideia de entidade fraca;\r\n* classificar atributos em simples, compostos, monovalorados, multivalorados e derivados;\r\n* reconhecer atributos identificadores sem confundir imediatamente o modelo conceitual com implementação física;\r\n* definir relacionamento e distinguir tipo de relacionamento de ocorrência;\r\n* identificar relacionamentos binários, ternários e recursivos;\r\n* interpretar papéis desempenhados por entidades em um relacionamento;\r\n* distinguir cardinalidade máxima de participação mínima;\r\n* interpretar relacionamentos 1:1, 1:N e N:M;\r\n* interpretar restrições mínimas e máximas como (0,1), (1,1), (0,N) e (1,N);\r\n* diferenciar participação total/obrigatória de participação parcial/opcional;\r\n* ler diagramas em notações usuais, especialmente Chen e pé-de-galinha, sem assumir que uma simbologia gráfica é universal;\r\n* entender quando uma entidade associativa pode ser útil na modelagem;\r\n* resolver questões conceituais sem antecipar indevidamente normalização ou SQL.\r\n\r\n\r\nPré-requisitos\r\nÉ recomendável dominar o BD-001 e o BD-002, sobretudo banco de dados x SGBD, modelo relacional, atributos, domínios e chaves. Nesta aula, porém, o foco é anterior à implementação: primeiro representamos o domínio do problema e suas regras; depois decidiremos como traduzir o modelo para estruturas relacionais.\r\n\r\n\r\n1. Modelagem conceitual: para que serve\r\nModelar dados é representar, de forma organizada, os objetos relevantes de um domínio, suas propriedades e as regras que ligam esses objetos. A modelagem conceitual busca compreender “o que existe” e “como as coisas se relacionam” antes de se preocupar com detalhes de implementação em um SGBD específico.\r\nO Modelo Entidade-Relacionamento, frequentemente abreviado como MER, e seus diagramas — DER ou ERD, conforme a terminologia utilizada — oferecem uma forma de representar entidades, atributos, relacionamentos e restrições de cardinalidade/participação.\r\nA ideia central é partir das regras do negócio. Se a regra muda, o modelo pode mudar. Por isso, um diagrama não deve ser desenhado apenas para “ficar bonito”: ele precisa representar corretamente as restrições do domínio.\r\n\r\n\r\n2. Entidade, tipo de entidade e ocorrência\r\n2.1 Entidade\r\nEntidade é algo identificável e relevante para o domínio sobre o qual queremos armazenar informações. Pode representar uma pessoa, objeto, evento, local, documento, conceito ou outra coisa de interesse.\r\nEm um sistema judicial, exemplos possíveis são PROCESSO, SERVIDOR, UNIDADE, PARTE e CLASSE_PROCESSUAL.\r\n\r\n\r\n2.2 Tipo ou conjunto de entidades\r\nQuando falamos em PROCESSO como categoria, estamos descrevendo um tipo de entidade. Quando falamos em um processo específico, com número e dados próprios, estamos diante de uma ocorrência ou instância daquele tipo.\r\nAssim, “SERVIDOR” é o tipo; “servidor matrícula 12345” é uma ocorrência.\r\n\r\n\r\n2.3 Entidade forte\r\nUma entidade forte possui identidade própria no modelo e pode ser identificada por seus próprios atributos identificadores, conforme as regras do domínio.\r\nExemplo: PROCESSO pode possuir um identificador institucional capaz de distinguir cada ocorrência de PROCESSO.\r\n\r\n\r\n3. Entidade fraca\r\nUma entidade fraca depende de outra entidade para completar sua identificação e, em abordagens clássicas do MER, costuma possuir dependência de existência em relação a uma entidade proprietária.\r\nExemplo didático: suponha que DEPENDENTE seja identificado, no contexto de um SERVIDOR, por um número sequencial que só é único dentro daquele servidor. A identidade completa do dependente depende do servidor proprietário mais seu identificador parcial.\r\nCuidado: entidade fraca não significa simplesmente “entidade que tem chave estrangeira”. A fraqueza é uma característica conceitual ligada à identidade e à dependência de existência na modelagem adotada.\r\nTambém não é correto concluir que toda entidade dependente de outra seja necessariamente fraca. A regra depende da forma como o domínio define sua identidade.\r\n\r\n\r\n4. Atributos\r\nAtributo representa uma característica relevante de uma entidade ou, em certos modelos, de um relacionamento.\r\nPara PROCESSO, poderiam existir atributos como numero, data_distribuicao, assunto e valor_causa. A escolha de atributos deve refletir o que é necessário ao sistema e às regras do negócio.\r\n\r\n\r\n4.1 Atributo simples\r\nÉ tratado como indivisível para a finalidade do modelo.\r\nExemplo: data_distribuicao pode ser modelada como um único atributo, mesmo que tecnicamente uma data possua componentes.\r\n\r\n\r\n4.2 Atributo composto\r\nPode ser decomposto em partes que possuem significado próprio.\r\nExemplo: ENDERECO pode ser decomposto em logradouro, numero, complemento, bairro, cidade, estado e CEP.\r\nA decomposição deve ser útil ao domínio. Não existe obrigação de dividir todo dado que fisicamente possa ser quebrado.\r\n\r\n\r\n4.3 Atributo monovalorado\r\nPossui, para uma ocorrência da entidade, no máximo um valor no contexto definido.\r\nExemplo: data_nascimento de uma pessoa, conforme a regra de negócio adotada.\r\n\r\n\r\n4.4 Atributo multivalorado\r\nPode possuir vários valores para uma única ocorrência.\r\nExemplo conceitual: uma pessoa pode ter vários telefones.\r\nNo DER clássico, um atributo multivalorado pode receber representação gráfica própria. A forma como isso será implementado no modelo relacional é assunto posterior.\r\n\r\n\r\n4.5 Atributo derivado\r\nPode ser obtido a partir de outros dados.\r\nExemplo: idade pode ser derivada da data de nascimento e de uma data de referência.\r\n“Derivado” não significa, por si só, “proibido de armazenar”. Sistemas reais podem materializar valores por desempenho ou histórico. Conceitualmente, o importante é reconhecer que existe uma regra de derivação.\r\n\r\n\r\n4.6 Atributo identificador\r\nÉ um atributo ou conjunto de atributos capaz de distinguir ocorrências de uma entidade dentro do modelo.\r\nNão transforme automaticamente “identificador conceitual” em “PRIMARY KEY SQL”. A escolha física será discutida no mapeamento relacional.\r\n\r\n\r\n5. Relacionamentos\r\nRelacionamento representa uma associação relevante entre ocorrências de entidades.\r\nExemplo: SERVIDOR lota_em UNIDADE. O verbo “lotar-se em” expressa uma regra que conecta as duas entidades.\r\nUm relacionamento possui significado próprio. Dizer apenas que “as entidades estão ligadas” é insuficiente: é preciso compreender o que a ligação representa.\r\n\r\n\r\n5.1 Tipo de relacionamento x ocorrência\r\nO tipo de relacionamento descreve a regra geral, como SERVIDOR lota_em UNIDADE.\r\nUma ocorrência do relacionamento é uma ligação concreta, como “servidor 12345 está lotado na unidade 10”.\r\n\r\n\r\n5.2 Grau do relacionamento\r\nO grau indica quantos tipos de entidade participam do relacionamento.\r\nRelacionamento unário ou recursivo: envolve um único tipo de entidade desempenhando papéis diferentes.\r\nRelacionamento binário: envolve dois tipos de entidade.\r\nRelacionamento ternário: envolve três tipos de entidade simultaneamente.\r\nRelacionamentos de grau maior existem, mas devem ser usados quando a semântica realmente depende da associação conjunta.\r\n\r\n\r\n6. Relacionamento recursivo e papéis\r\nUm relacionamento recursivo conecta ocorrências do mesmo tipo de entidade.\r\nExemplo: SERVIDOR supervisiona SERVIDOR.\r\nComo o mesmo tipo aparece nos dois lados, os papéis são essenciais. Uma ocorrência atua como supervisor e outra como supervisionado. Sem nomes de papéis, a leitura pode ficar ambígua.\r\nOutro exemplo: PESSOA é_responsavel_por PESSOA, se o domínio exigir representar relações desse tipo.\r\n\r\n\r\n7. Relacionamento ternário\r\nConsidere a regra: um SERVIDOR exerce uma FUNCAO em uma UNIDADE. Se a informação relevante depende simultaneamente dos três participantes, pode existir um relacionamento ternário.\r\nNão substitua automaticamente todo relacionamento ternário por três relacionamentos binários. A decomposição pode alterar a semântica se a regra original depender da combinação dos três elementos.\r\nAntes de modelar, formule a regra em linguagem natural e teste se as associações binárias preservam exatamente o mesmo significado.\r\n\r\n\r\n8. Atributos de relacionamento\r\nÀs vezes uma informação pertence à associação, e não isoladamente a uma das entidades.\r\nExemplo: PROCESSO relaciona-se com PARTE por uma participação em que desejamos registrar papel_da_parte e data_inicio_participacao. Esses atributos descrevem a participação daquela parte naquele processo.\r\nSe o atributo só faz sentido quando as duas ocorrências estão ligadas, ele é um forte candidato a atributo do relacionamento ou, dependendo da abordagem, de uma entidade associativa.\r\n\r\n\r\n9. Cardinalidade máxima\r\nCardinalidade máxima responde: quantas ocorrências de uma entidade podem estar relacionadas a uma ocorrência da outra?\r\nOs padrões mais comuns em relacionamentos binários são 1:1, 1:N e N:M.\r\n\r\n\r\n9.1 Um para um — 1:1\r\nCada ocorrência de A relaciona-se, no máximo, com uma ocorrência de B, e vice-versa.\r\nExemplo hipotético: cada UNIDADE possui no máximo um RESPONSAVEL_ATUAL e cada RESPONSAVEL_ATUAL está vinculado a no máximo uma UNIDADE, se essa for realmente a regra do órgão.\r\nA cardinalidade não deve ser escolhida por conveniência; deve refletir a regra real.\r\n\r\n\r\n9.2 Um para muitos — 1:N\r\nUma ocorrência de A pode relacionar-se com várias ocorrências de B, enquanto cada ocorrência de B relaciona-se com, no máximo, uma ocorrência de A.\r\nExemplo: uma UNIDADE pode possuir vários SERVIDORES; cada SERVIDOR está lotado em uma única UNIDADE, supondo essa regra de negócio.\r\nLendo no sentido inverso, podemos dizer muitos-para-um (N:1). É a mesma associação vista do outro lado.\r\n\r\n\r\n9.3 Muitos para muitos — N:M\r\nUma ocorrência de A pode relacionar-se com várias de B e uma ocorrência de B pode relacionar-se com várias de A.\r\nExemplo: um PROCESSO pode possuir várias PARTES e uma PARTE pode participar de vários PROCESSOS.\r\nN:M não é “erro” no modelo conceitual. A transformação desse relacionamento para o modelo relacional será tratada em aula posterior.\r\n\r\n\r\n10. Cardinalidade mínima e participação\r\nDizer apenas “um” ou “muitos” descreve o máximo, mas não informa se a participação é obrigatória.\r\nA cardinalidade mínima informa se uma ocorrência pode existir sem participar daquele relacionamento.\r\n* Mínimo 0: participação opcional.\r\n* Mínimo 1: participação obrigatória no contexto da regra modelada.\r\nAssim, pares mínimo-máximo permitem expressar:\r\n* (0,1): zero ou uma;\r\n* (1,1): exatamente uma;\r\n* (0,N): zero, uma ou muitas;\r\n* (1,N): uma ou muitas.\r\n\r\n\r\n11. Participação total e parcial\r\nNa terminologia clássica, participação total indica que toda ocorrência do tipo de entidade deve participar do relacionamento considerado. Em leitura por cardinalidade mínima, isso corresponde, em geral, a mínimo 1.\r\nParticipação parcial indica que uma ocorrência pode não participar; em leitura por cardinalidade mínima, corresponde, em geral, a mínimo 0.\r\nExemplo: se todo SERVIDOR ativo deve estar lotado em exatamente uma UNIDADE, o lado SERVIDOR no relacionamento LOTACAO pode ter (1,1). Se uma UNIDADE recém-criada puder existir sem servidores, o lado UNIDADE pode ter mínimo 0 em relação aos SERVIDORES.\r\nAtenção: “participação total” não significa cardinalidade máxima “muitos”. Obrigatoriedade e quantidade máxima são dimensões diferentes.\r\n\r\n\r\n12. Como ler cardinalidade sem inverter os lados\r\nUma técnica segura é formular duas perguntas:\r\nPara uma ocorrência de A, quantas ocorrências de B podem ou devem existir?\r\nPara uma ocorrência de B, quantas ocorrências de A podem ou devem existir?\r\nExemplo: PROCESSO — PARTE.\r\nPara um PROCESSO, quantas PARTES? Suponha uma ou muitas: (1,N).\r\nPara uma PARTE, quantos PROCESSOS? Suponha zero ou muitos: (0,N).\r\nResultado: relacionamento N:M com mínimos diferentes em cada lado.\r\nSempre leia a regra nos dois sentidos. Isso reduz erros de inversão.\r\n\r\n\r\n13. Notação de Chen — leitura essencial\r\nNa notação clássica de Chen, entidades são normalmente representadas por retângulos, relacionamentos por losangos e atributos por elipses/ovais.\r\nVariações gráficas podem indicar identificadores, atributos multivalorados, atributos derivados, entidades fracas e relacionamentos identificadores. A simbologia exata pode variar entre materiais e ferramentas.\r\nPara prova, priorize a semântica: qual elemento é entidade, qual é atributo, qual é relacionamento e quais restrições estão indicadas. Não memorize uma figura isolada sem compreender a regra representada.\r\n\r\n\r\n14. Notação pé-de-galinha — leitura essencial\r\nNa notação conhecida como crow’s foot ou pé-de-galinha, as extremidades das linhas expressam cardinalidade e, em muitas variantes, opcionalidade.\r\nO “pé” representa multiplicidade “muitos”; outros marcadores representam “um” e “zero/opcional”, conforme a convenção da ferramenta.\r\nComo diferentes softwares usam pequenas variações, leia a legenda quando ela for fornecida. O conceito de 0..1, 1..1, 0..N e 1..N é mais importante que decorar a estética de um programa específico.\r\n\r\n\r\n15. Notação não é o modelo\r\nMER é um conjunto de conceitos de modelagem; DER é uma representação gráfica desses conceitos.\r\nChen, crow’s foot, Barker, IDEF1X e outras notações podem representar ideias semelhantes com símbolos diferentes.\r\nUma banca pode apresentar um diagrama em determinada notação sem que isso transforme a notação em requisito conceitual universal. Nesta aula, as notações são ferramentas de leitura.\r\n\r\n\r\n16. Entidade associativa\r\nUma entidade associativa pode ser usada para representar uma associação que possui significado e atributos próprios, especialmente em cenários muitos-para-muitos.\r\nExemplo: PROCESSO e PARTE podem ser ligados por PARTICIPACAO_PROCESSUAL.\r\nPARTICIPACAO_PROCESSUAL pode registrar tipo_participacao, data_inicio e data_fim, caso essas informações pertençam à associação entre aquela parte e aquele processo.\r\nNeste momento, trate a entidade associativa como recurso conceitual. A tradução para tabelas, chaves estrangeiras e constraints é tratado na aula BD-004 já produzida.\r\n\r\n\r\n17. Exemplo integrado — processo e parte\r\nRegra 1: um PROCESSO deve possuir pelo menos uma PARTE.\r\nRegra 2: uma PARTE pode ainda não estar vinculada a nenhum processo cadastrado ou pode participar de muitos.\r\nRegra 3: para cada vínculo, precisamos registrar o papel da parte.\r\nModelagem conceitual possível:\r\nPROCESSO — PARTICIPACAO_PROCESSUAL — PARTE.\r\nNo lado PROCESSO, há uma ou muitas participações.\r\nNo lado PARTE, pode haver zero ou muitas participações.\r\nPARTICIPACAO_PROCESSUAL carrega papel_da_parte porque o papel depende daquele vínculo específico.\r\nNão existe uma única modelagem correta independentemente das regras. Se o sistema possuir restrições diferentes, o modelo deve acompanhá-las.\r\n\r\n\r\n18. Exemplo integrado — unidade e servidor\r\nRegra hipotética: cada SERVIDOR ativo deve estar lotado em exatamente uma UNIDADE; uma UNIDADE pode existir sem servidores e pode possuir muitos.\r\nLeitura:\r\npara cada SERVIDOR: exatamente uma UNIDADE — (1,1);\r\npara cada UNIDADE: zero ou muitos SERVIDORES — (0,N).\r\nA cardinalidade máxima é 1:N, vista de UNIDADE para SERVIDOR. A participação do SERVIDOR é obrigatória; a da UNIDADE, nesse relacionamento, é opcional.\r\nSe o órgão permitir múltiplas lotações simultâneas, a regra mudará e o modelo também.\r\n\r\n\r\n19. Exemplo integrado — relacionamento recursivo\r\nRegra: um SERVIDOR pode supervisionar vários SERVIDORES, e um SERVIDOR pode ter zero ou um supervisor direto.\r\nO tipo de entidade é o mesmo dos dois lados, mas os papéis são diferentes:\r\npapel 1: supervisor;\r\npapel 2: supervisionado.\r\nEsse é um relacionamento recursivo 1:N, considerando a regra acima.\r\n\r\n\r\n20. Exemplo integrado — atributo composto e multivalorado\r\nConsidere PESSOA com ENDERECO e TELEFONE.\r\nSe ENDERECO for decomposto em logradouro, número, cidade e CEP, temos um atributo composto.\r\nSe a pessoa puder registrar vários telefones, TELEFONE pode ser modelado, inicialmente, como multivalorado.\r\nIsso não significa que o banco físico usará “uma coluna com vários telefones”. A implementação relacional será decidida no mapeamento.\r\n\r\n\r\n21. Exemplo integrado — atributo derivado\r\nConsidere data_nascimento e idade.\r\nA idade varia com a data de referência, logo pode ser derivada de data_nascimento.\r\nQuestões de prova podem explorar a diferença entre atributo armazenado e derivado. O ponto conceitual é: existe uma regra capaz de obter o valor a partir de outros dados.\r\n\r\n\r\n22. Regras de negócio antes do desenho\r\nAntes de desenhar, escreva as regras em frases verificáveis.\r\n“Todo processo possui pelo menos uma parte.”\r\n“Uma parte pode participar de vários processos.”\r\n“Cada servidor ativo possui exatamente uma lotação principal.”\r\n“Uma unidade pode existir ainda sem servidores.”\r\nDepois traduza cada regra em entidades, relacionamentos e cardinalidades.\r\nSe não for possível explicar o diagrama em linguagem natural, existe grande risco de a modelagem estar apenas reproduzindo símbolos sem semântica.\r\n\r\n\r\n23. MER x modelo relacional\r\nMER trabalha no nível conceitual/lógico da representação do domínio. Relações/tabelas, chaves estrangeiras e constraints aparecem de forma mais concreta no modelo relacional e em sua implementação.\r\nA aproximação “entidade vira tabela” é útil como antecipação, mas não é uma equivalência perfeita nem suficiente.\r\nRelacionamentos N:M, atributos multivalorados, entidades fracas e relacionamentos ternários exigem decisões de mapeamento. Essas decisões serão estudadas no BD-004.\r\n\r\n\r\n24. Modelo conceitual, lógico e físico\r\nEm uso profissional, os termos podem variar entre metodologias e ferramentas.\r\nModelo conceitual: visão de alto nível do domínio e das regras essenciais.\r\nModelo lógico: estrutura mais detalhada, ainda independente de detalhes físicos específicos, com entidades/atributos e regras organizadas para implementação.\r\nModelo físico: aproxima-se do SGBD concreto, tipos, tabelas, índices, particionamento e outros detalhes.\r\nNão trate essas fronteiras como idênticas em todas as ferramentas. Em prova, siga a terminologia definida no enunciado e diferencie, sobretudo, negócio conceitual de implementação física.\r\n\r\n\r\n25. Como a banca pode explorar o conteúdo sem inventar “padrões”\r\nOs editais auditados confirmam a cobrança formal de modelagem de dados e MER. Entretanto, este projeto ainda não possui um catálogo de questões oficiais auditadas suficiente para afirmar que VUNESP, FCC ou Cebraspe “sempre” preferem determinado detalhe.\r\nPara treino, são relevantes comparações conceituais como entidade x atributo, cardinalidade x participação, 1:N x N:M, atributo multivalorado x composto, entidade forte x fraca e leitura de diagramas.\r\nAs questões a seguir são autorais e estão identificadas como inéditas.\r\n\r\n\r\n26. Pegadinhas e erros frequentes\r\nEntidade é sempre uma tabela. Não. Entidade é conceito do domínio; tabela pertence ao modelo/implementação relacional.\r\nRelacionamento é apenas uma linha no desenho. Não. A linha representa uma associação com semântica.\r\nCardinalidade 1:N significa que o lado N é obrigatoriamente participante. Não. Máximo e mínimo são dimensões diferentes.\r\n“N” significa exatamente um número fixo N. Não. É símbolo de multiplicidade “muitos”.\r\nN:M é proibido. Não no modelo conceitual. Seu mapeamento relacional exige tratamento próprio.\r\nEntidade fraca é qualquer entidade que tenha referência a outra. Não. A ideia envolve dependência de identidade/existência na abordagem clássica.\r\nAtributo composto é igual a multivalorado. Não. Composto possui partes; multivalorado admite vários valores.\r\nAtributo derivado é sempre armazenado. Não. É conceitualmente calculável a partir de outros dados.\r\nRelacionamento recursivo envolve necessariamente duas entidades diferentes. Não. O mesmo tipo de entidade participa em papéis distintos.\r\nRelacionamento ternário é sempre equivalente a três binários. Não. A decomposição pode perder semântica.\r\nParticipação total significa “muitos”. Não. Significa obrigatoriedade de participar.\r\nCrow’s foot e Chen usam exatamente os mesmos símbolos. Não.\r\nA notação gráfica deve ser interpretada junto às regras do negócio.\r\nIdentificador conceitual e PRIMARY KEY SQL não devem ser tratados como sinônimos automáticos nesta etapa.\r\nEntidade associativa não é apenas “uma tabela do meio”; primeiro ela representa conceitualmente a própria associação quando isso é útil.\r\n\r\n\r\n27. Resumo estruturado\r\n* Entidade representa algo relevante e identificável no domínio.\r\n* Ocorrência é uma instância concreta de um tipo de entidade.\r\n* Entidade forte possui identidade própria; entidade fraca depende conceitualmente de uma proprietária para completar sua identificação.\r\n* Atributo descreve característica de entidade ou relacionamento.\r\n* Atributo simples é indivisível no contexto; composto possui partes significativas.\r\n* Atributo monovalorado admite um valor no contexto; multivalorado pode admitir vários.\r\n* Atributo derivado pode ser obtido a partir de outros dados.\r\n* Relacionamento expressa uma associação significativa.\r\n* Grau do relacionamento indica quantos tipos de entidade participam.\r\n* Relacionamento recursivo usa o mesmo tipo em papéis diferentes.\r\n* 1:1, 1:N e N:M expressam cardinalidade máxima.\r\n* Mínimo 0 indica opcionalidade; mínimo 1, obrigatoriedade.\r\n* (0,1), (1,1), (0,N) e (1,N) combinam mínimo e máximo.\r\n* Participação total/obrigatória e parcial/opcional não devem ser confundidas com “um” ou “muitos”.\r\n* Chen e crow’s foot são notações; a semântica do modelo é central.\r\n* Entidade associativa pode representar uma associação com identidade/atributos próprios.\r\n* O mapeamento para modelo relacional será estudado separadamente.\r\n\r\n\r\n28. Revisão rápida\r\n* O que é entidade? Algo relevante e identificável no domínio.\r\n* O que é ocorrência? Uma instância concreta de um tipo de entidade.\r\n* O que é atributo? Uma característica modelada.\r\n* Simples x composto? Simples não é decomposto no contexto; composto possui componentes significativos.\r\n* Monovalorado x multivalorado? Um valor por ocorrência x vários valores possíveis.\r\n* O que é derivado? Atributo calculável a partir de outros dados.\r\n* O que é relacionamento? Associação significativa entre ocorrências.\r\n* Grau 2? Relacionamento binário.\r\n* Grau 3? Relacionamento ternário.\r\n* Relacionamento recursivo? Mesmo tipo de entidade participa em papéis diferentes.\r\n* 1:N informa obrigatoriedade? Não; informa cardinalidade máxima.\r\n* (0,1) significa? Zero ou uma ocorrência relacionada.\r\n* (1,1) significa? Exatamente uma.\r\n* (0,N) significa? Zero ou muitas.\r\n* (1,N) significa? Uma ou muitas.\r\n* Participação total? Toda ocorrência deve participar.\r\n* Participação parcial? Pode haver ocorrência que não participa.\r\n* N:M é inválido no MER? Não.\r\n* Entidade fraca é qualquer entidade com FK? Não.\r\n* Notação e modelo são a mesma coisa? Não.\r\n\r\n\r\n29. Flashcards\r\n* F-BD-003-01. P: Entidade. R: objeto, evento, pessoa, conceito ou outra coisa relevante e identificável no domínio.\r\n* F-BD-003-02. P: Tipo de entidade. R: categoria que agrupa ocorrências com características comuns.\r\n* F-BD-003-03. P: Ocorrência. R: instância concreta do tipo de entidade.\r\n* F-BD-003-04. P: Entidade forte. R: entidade com identidade própria no modelo.\r\n* F-BD-003-05. P: Entidade fraca. R: entidade cuja identificação depende conceitualmente de uma proprietária, conforme a modelagem.\r\n* F-BD-003-06. P: Atributo simples. R: tratado como indivisível no contexto.\r\n* F-BD-003-07. P: Atributo composto. R: pode ser decomposto em partes significativas.\r\n* F-BD-003-08. P: Atributo multivalorado. R: pode possuir vários valores para uma ocorrência.\r\n* F-BD-003-09. P: Atributo derivado. R: pode ser calculado a partir de outros dados.\r\n* F-BD-003-10. P: Relacionamento. R: associação significativa entre entidades.\r\n* F-BD-003-11. P: Grau. R: quantidade de tipos de entidade participantes do relacionamento.\r\n* F-BD-003-12. P: Recursivo. R: relacionamento do mesmo tipo de entidade consigo próprio, com papéis distintos.\r\n* F-BD-003-13. P: 1:1. R: no máximo uma ocorrência de cada lado para cada ocorrência do outro.\r\n* F-BD-003-14. P: 1:N. R: uma ocorrência de um lado pode relacionar-se com muitas do outro.\r\n* F-BD-003-15. P: N:M. R: muitas ocorrências de ambos os lados podem relacionar-se.\r\n* F-BD-003-16. P: Mínimo 0. R: participação opcional.\r\n* F-BD-003-17. P: Mínimo 1. R: participação obrigatória.\r\n* F-BD-003-18. P: (1,N). R: uma ou muitas ocorrências relacionadas.\r\n* F-BD-003-19. P: Participação total. R: toda ocorrência do tipo participa daquele relacionamento.\r\n* F-BD-003-20. P: Entidade associativa. R: recurso de modelagem para representar associação com significado/atributos próprios.\r\n\r\n\r\n30. QUESTÕES INÉDITAS — ESTILO DE CONCURSO\r\nAs 15 questões abaixo foram criadas para treinamento. Não são questões reais de banca.\r\n\r\n\r\n\n\nAs questões autorais deste núcleo estão disponíveis na prática interativa. O gabarito e o comentário aparecem somente após o registro de uma tentativa.\n\n\r\n\r\n33. Treino guiado\r\n* Modele em linguagem natural um relacionamento 1:1 e escreva os mínimos de cada lado.\r\n* Modele um relacionamento 1:N entre UNIDADE e SERVIDOR e justifique a direção.\r\n* Modele um relacionamento N:M entre PROCESSO e PARTE.\r\n* Acrescente ao exemplo PROCESSO–PARTE um atributo que pertença ao vínculo e explique por quê.\r\n* Crie um exemplo de atributo composto.\r\n* Crie um exemplo de atributo multivalorado.\r\n* Crie um exemplo de atributo derivado.\r\n* Crie um relacionamento recursivo e nomeie os dois papéis.\r\n* Explique um caso em que participação mínima 0 faça sentido.\r\n* Explique por que um relacionamento ternário pode perder significado ao ser dividido sem análise.\r\n\n\nAs respostas esperadas do treino guiado são material de autocorreção e permanecem no documento editorial de origem.\n\n\r\n\r\n35. Caderno de erros\r\nAo errar uma questão de MER, registre:\r\n* o conceito confundido;\r\n* a regra de negócio do enunciado em linguagem natural;\r\n* a cardinalidade máxima em cada direção;\r\n* a cardinalidade mínima em cada direção;\r\n* se houve confusão entre entidade, atributo e relacionamento;\r\n* se houve confusão entre composto e multivalorado;\r\n* se houve confusão entre cardinalidade e participação;\r\n* a regra correta em uma frase;\r\n* um exemplo próprio;\r\n* a data da revisão.\r\nExemplo: “Confundi 1:N com obrigatoriedade. Regra pessoal: 1:N fala do máximo; preciso ler o mínimo separadamente para saber se a participação é opcional ou obrigatória.”\r\n\r\n\r\n36. Critério de domínio\r\nConsidere BD-003 suficientemente dominado quando conseguir, sem consulta:\r\n* definir entidade, ocorrência, atributo e relacionamento;\r\n* distinguir entidade forte e entidade fraca;\r\n* classificar atributos simples, compostos, monovalorados, multivalorados e derivados;\r\n* identificar grau de relacionamento;\r\n* explicar relacionamentos recursivos e papéis;\r\n* interpretar corretamente 1:1, 1:N e N:M;\r\n* interpretar (0,1), (1,1), (0,N) e (1,N);\r\n* diferenciar cardinalidade máxima de participação mínima;\r\n* explicar participação total e parcial;\r\n* ler um DER em Chen ou crow’s foot usando a legenda apresentada;\r\n* explicar a utilidade de uma entidade associativa;\r\n* acertar pelo menos 12 das 15 questões sem erro conceitual recorrente.\r\n\r\n\r\n37. Encadeamento com o tópico interno de Bancos de Dados e SQL\r\nBD-004 — Mapeamento do Modelo Entidade-Relacionamento para o modelo relacional: entidades, atributos, relacionamentos 1:1, 1:N e N:M, entidades fracas e associativas.\r\n\n\r\n\r\n38. Fontes\r\nTRT da 15ª Região — Edital nº 01/2024 de Abertura de Inscrições — Analista Judiciário – Área Apoio Especializado – Especialidade Tecnologia da Informação. https://trt15.jus.br/sites/portal/files/transparencia/concursos/servidores/Concurso%202024-2025/Edital%2001-2024%20-%20Vers%C3%A3o%20final.pdf\r\nTRF da 3ª Região — Edital de Abertura nº 01/2023 — especialidade Informática, bloco de Banco de Dados. https://www.trf3.jus.br/documentos/sege/RING_-_Concursos/2023/Edital_de_abertura_e_retificacoes/EDITAL_01_2023-TRF3.pdf\r\nIBM — What is an Entity Relationship Diagram? https://www.ibm.com/think/topics/entity-relationship-diagram\r\nIBM Db2 — Designing databases. https://www.ibm.com/docs/en/db2/11.1.0?topic=databases-designing\r\nBD-002 — Modelo relacional: relações, tuplas, atributos, domínios, chaves e integridade — pré-requisito interno.\r\n\nEsta aula é material pedagógico original do projeto. As questões são inéditas. Nenhum padrão de banca foi atribuído sem catálogo oficial auditado. Os vínculos TRF3/2023 inseridos no E5 baseiam-se nas respectivas linhas oficiais do Anexo II e nas matrizes C2/D2, não em semelhança temática.\r\n\r\n\r\nAUDITORIA E5j — GATE EDITORIAL BD-003\r\nLidas integralmente 38 seções e os exemplos de MER, cardinalidade e participação, com confronto da terminologia com IBM e dos vínculos com edital TRF3/2023 9.1 Técnico e 4.1 Analista; TRT-15 Analista TI permanece associado conforme fonte já registrada. Todas as 15 QUESTÕES INÉDITAS possuem alternativas A–E, gabarito individual e 15 comentários concordantes; todos os 20 flashcards foram preservados. Adicionados IDs estáveis Q-BD-003-01–15 e F-BD-003-01–20 sem mudar respostas. Atualizados estado revisado e encaminhamento a BD-004 já existente. Não se atribuiu questão gerada a banca oficial; não é homologação do grupo nem publicação no site."
+      },
+      {
+        "id": "TI-BD-002-02",
+        "title": "TI-BD-002-02 — Mapeamento do MER para o modelo relacional",
+        "text": "BD-004\n\nO que o edital cobre\r\nO edital do TRT-15 exige modelagem de dados, MER e formas normais no bloco de Banco de Dados. O mapeamento MER → relacional é tratado aqui como desenvolvimento pedagógico necessário da modelagem, sem afirmar que a expressão “mapeamento” foi listada literalmente no edital.\r\n\r\n\r\nObjetivos\r\nAo final da aula, o estudante deverá conseguir:\r\n- transformar entidades fortes em relações/tabelas;\r\n- decompor atributos compostos em atributos simples adequados;\r\n- mapear atributos multivalorados para relações próprias;\r\n- compreender como identificadores conceituais dão origem a chaves no modelo relacional;\r\n- mapear relacionamentos 1:1, 1:N e N:M;\r\n- posicionar chaves estrangeiras conforme cardinalidade e participação;\r\n- usar UNIQUE e NOT NULL quando a semântica exigir, sem confundir essas restrições com a cardinalidade conceitual em si;\r\n- mapear atributos de relacionamento;\r\n- mapear entidades fracas e identificadores parciais;\r\n- mapear entidades associativas;\r\n- mapear relacionamentos recursivos;\r\n- compreender a ideia de mapeamento de relacionamentos ternários;\r\n- distinguir chave natural, chave candidata e chave substituta/surrogate key;\r\n- reconhecer que normalização e mapeamento são etapas relacionadas, mas não idênticas;\r\n- converter exemplos completos do MER para esquemas relacionais.\r\n\r\n\r\nPré-requisitos\r\nÉ recomendável dominar BD-002 e BD-003. BD-002 apresentou relações, tuplas, atributos, domínios, chaves e integridade. BD-003 apresentou entidades, atributos, relacionamentos, cardinalidades e participação. Nesta aula, esses dois mundos são conectados.\r\n\r\n\r\n1. O que significa mapear um MER para o modelo relacional\r\nMapear significa transformar estruturas conceituais — entidades, atributos, relacionamentos e restrições — em estruturas relacionais capazes de representar a mesma semântica do domínio.\r\n\r\n\r\nO objetivo não é “desenhar tabelas parecidas com o DER”. O objetivo é preservar, tanto quanto possível, as regras de negócio representadas no modelo conceitual.\r\n\r\n\r\nUma regra importante é: primeiro entendemos a semântica; depois escolhemos a estrutura relacional que a representa.\r\n\r\n\r\n2. Entidade forte → relação\r\nUma entidade forte normalmente origina uma relação própria.\r\n\r\n\r\nExemplo conceitual:\r\nSERVIDOR(matricula, nome, data_nascimento)\r\n\r\n\r\nMapeamento relacional possível:\r\nSERVIDOR(\r\n  matricula PK,\r\n  nome,\r\n  data_nascimento\r\n)\r\n\r\n\r\nA entidade vira uma relação; seus atributos simples tornam-se atributos/colunas; o identificador conceitual escolhido pode originar a chave primária.\r\n\r\n\r\nCuidado: “entidade vira tabela” é uma regra prática frequente, não uma equivalência universal absoluta. Agregações, heranças, entidades associativas e decisões de projeto podem alterar o desenho final.\r\n\r\n\r\n3. Atributos simples\r\nAtributos simples são mapeados diretamente para atributos da relação.\r\n\r\n\r\nPROCESSO(numero, assunto, data_distribuicao)\r\n\r\n\r\npode originar:\r\nPROCESSO(numero PK, assunto, data_distribuicao)\r\n\r\n\r\nO domínio de cada atributo deverá ser escolhido na implementação conforme tipo de dado, tamanho, validações e regras do sistema.\r\n\r\n\r\n4. Atributos compostos\r\nUm atributo composto deve ser decomposto em seus componentes relevantes.\r\n\r\n\r\nConceitual:\r\nENDERECO = {logradouro, numero, complemento, bairro, cidade, uf, cep}\r\n\r\n\r\nNa relação PESSOA, em vez de armazenar um atributo único “endereco” sem estrutura, o mapeamento pode gerar:\r\nlogradouro, numero, complemento, bairro, cidade, uf, cep.\r\n\r\n\r\nO fato de um atributo ser tecnicamente decomponível não obriga a decomposição. O que importa é o nível de detalhe necessário ao domínio e às consultas.\r\n\r\n\r\n5. Atributos multivalorados\r\nUm atributo multivalorado não deve, em um projeto relacional normal, ser simplesmente armazenado como “lista dentro de uma coluna” se o objetivo é preservar atomicidade e capacidade relacional de consulta.\r\n\r\n\r\nExemplo conceitual:\r\nPESSOA possui vários TELEFONES.\r\n\r\n\r\nMapeamento:\r\nPESSOA(id_pessoa PK, nome)\r\nPESSOA_TELEFONE(id_pessoa FK, telefone, ...)\r\n\r\n\r\nUma chave possível de PESSOA_TELEFONE é (id_pessoa, telefone), quando a regra permitir.\r\n\r\n\r\nOutra possibilidade é usar uma chave substituta, desde que a unicidade lógica necessária continue protegida por restrições adequadas.\r\n\r\n\r\n6. Atributos derivados\r\nAtributos derivados podem ser calculados a partir de outros dados.\r\n\r\n\r\nExemplo: idade derivada de data_nascimento e data de referência.\r\n\r\n\r\nNo modelo relacional, o atributo derivado pode:\r\n- não ser armazenado e ser calculado sob demanda;\r\n- ser materializado por motivos de desempenho, auditoria ou histórico;\r\n- ser mantido por mecanismo de aplicação, coluna gerada, trigger ou processo específico, dependendo do SGBD e do projeto.\r\n\r\n\r\nA propriedade “derivado” é conceitual; ela não impõe sozinha uma única estratégia física.\r\n\r\n\r\n7. Identificadores e chaves\r\nO identificador conceitual selecionado para uma entidade costuma originar uma chave candidata no modelo relacional.\r\n\r\n\r\nSe SERVIDOR possui matrícula única, matricula pode ser chave candidata e, se escolhida, chave primária.\r\n\r\n\r\nNão confunda:\r\n- identificador conceitual: atributo(s) que distinguem ocorrências no domínio;\r\n- chave candidata: conjunto mínimo de atributos que identifica uma tupla;\r\n- chave primária: chave candidata escolhida como referência principal;\r\n- chave substituta/surrogate: identificador artificial criado para implementação, como um id numérico ou UUID.\r\n\r\n\r\nUma surrogate key não elimina automaticamente a necessidade de UNIQUE sobre a chave natural quando a regra de negócio exige unicidade.\r\n\r\n\r\n8. Relacionamento 1:N\r\nRegra conceitual:\r\nUma UNIDADE pode possuir muitos SERVIDORES; cada SERVIDOR pertence a uma única UNIDADE.\r\n\r\n\r\nMapeamento típico:\r\nUNIDADE(id_unidade PK, nome)\r\nSERVIDOR(matricula PK, nome, id_unidade FK → UNIDADE.id_unidade)\r\n\r\n\r\nA chave estrangeira fica normalmente no lado N — SERVIDOR.\r\n\r\n\r\nPor quê? Cada servidor referencia a unidade à qual pertence. Uma unidade pode ser referenciada por muitas linhas de SERVIDOR.\r\n\r\n\r\n9. Participação mínima no 1:N\r\nSe todo SERVIDOR precisa obrigatoriamente estar vinculado a uma UNIDADE, a coluna id_unidade pode ser NOT NULL.\r\n\r\n\r\nSe o vínculo for opcional, id_unidade pode admitir NULL, conforme a regra e a implementação escolhida.\r\n\r\n\r\nAssim:\r\n- cardinalidade máxima 1 no lado de UNIDADE para cada servidor é representada pela existência de uma única FK na linha de SERVIDOR;\r\n- mínimo 1 pode ser reforçado com NOT NULL;\r\n- mínimo 0 pode permitir NULL.\r\n\r\n\r\nIsso é uma tradução típica, não uma equivalência matemática universal: regras mais complexas podem exigir constraints adicionais ou lógica transacional.\r\n\r\n\r\n10. Relacionamento 1:1\r\nEm 1:1, uma FK pode ser colocada em uma das relações participantes, acompanhada de UNIQUE para impedir que várias linhas apontem para a mesma ocorrência.\r\n\r\n\r\nExemplo:\r\nPESSOA(id_pessoa PK, nome)\r\nPASSAPORTE(id_passaporte PK, numero UNIQUE, id_pessoa FK UNIQUE → PESSOA.id_pessoa)\r\n\r\n\r\nNesse desenho, cada PASSAPORTE pertence a no máximo uma PESSOA e cada PESSOA pode aparecer no máximo uma vez em PASSAPORTE.\r\n\r\n\r\nA escolha do lado que recebe a FK costuma considerar:\r\n- participação total x parcial;\r\n- dependência de existência;\r\n- quantidade de valores nulos que seriam gerados;\r\n- semântica de propriedade/dependência;\r\n- facilidade de manutenção.\r\n\r\n\r\n11. Quando um 1:1 pode ser fundido\r\nDuas entidades 1:1 podem, em alguns projetos, ser fundidas numa única relação, mas isso não é obrigatório.\r\n\r\n\r\nA fusão pode fazer sentido quando:\r\n- possuem o mesmo ciclo de vida;\r\n- não há motivo semântico para separá-las;\r\n- a participação é fortemente acoplada.\r\n\r\n\r\nA separação pode ser melhor quando:\r\n- os ciclos de vida são diferentes;\r\n- há atributos opcionais extensos;\r\n- existem motivos de segurança, modularidade ou domínio.\r\n\r\n\r\nLogo, “1:1 sempre vira uma tabela só” é falso.\r\n\r\n\r\n12. Relacionamento N:M\r\nRelacionamentos muitos-para-muitos exigem uma relação associativa no modelo relacional.\r\n\r\n\r\nConceitual:\r\nPROCESSO N:M PARTE.\r\n\r\n\r\nMapeamento:\r\nPROCESSO(id_processo PK, ...)\r\nPARTE(id_parte PK, ...)\r\nPROCESSO_PARTE(\r\n  id_processo FK → PROCESSO,\r\n  id_parte FK → PARTE,\r\n  PRIMARY KEY (id_processo, id_parte)\r\n)\r\n\r\n\r\nA nova relação representa cada ocorrência do vínculo.\r\n\r\n\r\n13. Atributos de relacionamento N:M\r\nSe PROCESSO — PARTE possui os atributos papel_da_parte e data_inicio, eles pertencem à relação associativa:\r\n\r\n\r\nPROCESSO_PARTE(\r\n  id_processo FK,\r\n  id_parte FK,\r\n  papel_da_parte,\r\n  data_inicio,\r\n  PRIMARY KEY (id_processo, id_parte)\r\n)\r\n\r\n\r\nO atributo papel_da_parte não pertence isoladamente a PROCESSO ou PARTE: a mesma parte pode ter papéis diferentes em processos diferentes.\r\n\r\n\r\n14. Chave composta x chave substituta em relação associativa\r\nHá duas estratégias comuns.\r\n\r\n\r\nEstratégia A — chave composta:\r\nPRIMARY KEY (id_processo, id_parte)\r\n\r\n\r\nEstratégia B — chave substituta:\r\nid_participacao PK\r\n+ FKs id_processo e id_parte\r\n+ UNIQUE(id_processo, id_parte), se a regra exigir somente um vínculo entre o mesmo par.\r\n\r\n\r\nUsar surrogate key sem preservar a unicidade lógica pode permitir duplicidades indevidas.\r\n\r\n\r\n15. Relacionamento 1:N com atributo no relacionamento\r\nSuponha:\r\nUNIDADE 1:N SERVIDOR, e o relacionamento LOTACAO tem data_inicio.\r\n\r\n\r\nSe cada servidor possui apenas uma lotação atual, data_inicio pode ser armazenada no lado N junto com a FK:\r\nSERVIDOR(..., id_unidade FK, data_inicio_lotacao)\r\n\r\n\r\nSe o sistema precisa preservar histórico de várias lotações ao longo do tempo, já não estamos representando apenas um vínculo atual simples. Pode ser necessária uma relação LOTACAO própria:\r\nLOTACAO(id_lotacao PK, servidor FK, unidade FK, data_inicio, data_fim)\r\n\r\n\r\nA regra temporal muda o modelo.\r\n\r\n\r\n16. Entidade fraca\r\nConsidere DEPENDENTE como entidade fraca identificada por SERVIDOR + numero_dependente.\r\n\r\n\r\nMapeamento:\r\nSERVIDOR(matricula PK, ...)\r\nDEPENDENTE(\r\n  matricula_servidor FK → SERVIDOR,\r\n  numero_dependente,\r\n  nome,\r\n  PRIMARY KEY (matricula_servidor, numero_dependente)\r\n)\r\n\r\n\r\nA chave do proprietário passa a compor a chave da entidade fraca junto com o identificador parcial.\r\n\r\n\r\n17. Entidade associativa\r\nUma entidade associativa representa uma associação que ganhou identidade e atributos próprios no modelo.\r\n\r\n\r\nExemplo:\r\nINSCRICAO liga CANDIDATO a CONCURSO e possui data_inscricao, situacao e numero_inscricao.\r\n\r\n\r\nMapeamento natural:\r\nCANDIDATO(id_candidato PK, ...)\r\nCONCURSO(id_concurso PK, ...)\r\nINSCRICAO(\r\n  id_inscricao PK,\r\n  id_candidato FK,\r\n  id_concurso FK,\r\n  data_inscricao,\r\n  situacao,\r\n  numero_inscricao,\r\n  UNIQUE(id_candidato, id_concurso) — somente se a regra proibir mais de uma inscrição do mesmo candidato no mesmo concurso\r\n)\r\n\r\n\r\n18. Relacionamento recursivo 1:N\r\nRegra:\r\nUm SERVIDOR pode supervisionar vários SERVIDORES; cada SERVIDOR pode ter no máximo um supervisor direto.\r\n\r\n\r\nMapeamento:\r\nSERVIDOR(\r\n  matricula PK,\r\n  nome,\r\n  matricula_supervisor FK → SERVIDOR.matricula\r\n)\r\n\r\n\r\nA FK referencia a própria relação.\r\n\r\n\r\nSe o supervisor for opcional, matricula_supervisor pode aceitar NULL.\r\n\r\n\r\n19. Relacionamento recursivo N:M\r\nRegra:\r\nPESSOA pode seguir muitas PESSOAS e ser seguida por muitas.\r\n\r\n\r\nMapeamento:\r\nPESSOA(id_pessoa PK, ...)\r\nPESSOA_SEGUE(\r\n  id_seguidor FK → PESSOA,\r\n  id_seguido FK → PESSOA,\r\n  PRIMARY KEY(id_seguidor, id_seguido)\r\n)\r\n\r\n\r\nOs nomes das FKs precisam refletir os papéis.\r\n\r\n\r\n20. Relacionamento ternário\r\nSe um relacionamento depende simultaneamente de três entidades, uma relação própria costuma ser criada com FKs para as três entidades.\r\n\r\n\r\nExemplo conceitual:\r\nSERVIDOR exerce FUNCAO em UNIDADE.\r\n\r\n\r\nMapeamento possível:\r\nEXERCICIO(\r\n  id_servidor FK,\r\n  id_funcao FK,\r\n  id_unidade FK,\r\n  ...atributos do relacionamento...\r\n)\r\n\r\n\r\nA chave candidata da relação não deve ser escolhida mecanicamente. Pode envolver as três FKs ou apenas parte delas, dependendo das cardinalidades e da regra de negócio.\r\n\r\n\r\n21. Cardinalidade máxima e UNIQUE\r\nUNIQUE é útil para representar limites de máximo 1 no modelo relacional.\r\n\r\n\r\nExemplo 1:1:\r\nPASSAPORTE.id_pessoa é FK e UNIQUE.\r\n\r\n\r\nSem UNIQUE, várias linhas de PASSAPORTE poderiam apontar para a mesma pessoa, convertendo na prática o lado em 1:N.\r\n\r\n\r\n22. Participação mínima e NOT NULL\r\nNOT NULL pode representar participação obrigatória quando a FK está no lado que deve necessariamente participar.\r\n\r\n\r\nExemplo:\r\nSe todo SERVIDOR precisa ter uma UNIDADE, SERVIDOR.id_unidade deve ser NOT NULL.\r\n\r\n\r\nSe a participação for opcional, o NULL pode representar ausência de vínculo.\r\n\r\n\r\nCuidado: nem toda participação obrigatória de um relacionamento complexo consegue ser garantida apenas com NOT NULL. Algumas restrições exigem regras adicionais.\r\n\r\n\r\n23. Integridade referencial\r\nA FK deve referenciar uma chave candidata/primária válida na relação de destino, conforme o SGBD.\r\n\r\n\r\nA integridade referencial busca impedir, por exemplo, um SERVIDOR apontando para uma UNIDADE inexistente.\r\n\r\n\r\nAções como ON DELETE CASCADE, SET NULL, RESTRICT ou equivalentes pertencem à implementação e devem ser escolhidas conforme a semântica do domínio. Não existe uma ação universalmente correta.\r\n\r\n\r\n24. Exemplo integrado — PROCESSO, PARTE e participação\r\nMER:\r\nPROCESSO N:M PARTE\r\nAtributos do vínculo: papel, data_inicio, data_fim.\r\n\r\n\r\nRelacional:\r\nPROCESSO(id_processo PK, numero UNIQUE, assunto)\r\nPARTE(id_parte PK, nome)\r\nPARTICIPACAO_PROCESSUAL(\r\n  id_processo FK,\r\n  id_parte FK,\r\n  papel,\r\n  data_inicio,\r\n  data_fim,\r\n  PRIMARY KEY(id_processo, id_parte, papel)\r\n)\r\n\r\n\r\nPor que incluir papel na PK? Porque, neste exemplo, a mesma PARTE pode assumir mais de um papel no mesmo PROCESSO. Se a regra proibisse isso, outra chave seria adequada.\r\n\r\n\r\nA chave sempre depende da regra de negócio.\r\n\r\n\r\n25. Exemplo integrado — UNIDADE e SERVIDOR\r\nRegra:\r\nCada SERVIDOR ativo pertence exatamente a uma UNIDADE.\r\nUma UNIDADE pode possuir zero ou muitos SERVIDORES.\r\n\r\n\r\nRelacional:\r\nUNIDADE(id_unidade PK, nome UNIQUE)\r\nSERVIDOR(\r\n  matricula PK,\r\n  nome,\r\n  id_unidade NOT NULL FK → UNIDADE.id_unidade\r\n)\r\n\r\n\r\nO 1:N é realizado colocando a FK no lado N.\r\nO mínimo 1 do servidor é reforçado por NOT NULL.\r\nA unidade pode existir sem servidores porque não há obrigação de uma linha filha existir para cada unidade.\r\n\r\n\r\n26. Exemplo integrado — PESSOA e TELEFONE\r\nMER:\r\nPESSOA possui atributo multivalorado TELEFONE.\r\n\r\n\r\nRelacional:\r\nPESSOA(id_pessoa PK, nome)\r\nPESSOA_TELEFONE(\r\n  id_pessoa FK,\r\n  telefone,\r\n  tipo,\r\n  PRIMARY KEY(id_pessoa, telefone)\r\n)\r\n\r\n\r\nEsse mapeamento evita uma coluna “telefone1, telefone2, telefone3...” e evita lista de telefones concatenada em um único atributo.\r\n\r\n\r\n27. Exemplo integrado — SERVIDOR e DEPENDENTE fraco\r\nMER:\r\nSERVIDOR é entidade forte.\r\nDEPENDENTE depende de SERVIDOR para completar sua identificação.\r\nIdentificador parcial: sequencial_dependente.\r\n\r\n\r\nRelacional:\r\nSERVIDOR(matricula PK, nome)\r\nDEPENDENTE(\r\n  matricula_servidor FK,\r\n  sequencial_dependente,\r\n  nome,\r\n  parentesco,\r\n  PRIMARY KEY(matricula_servidor, sequencial_dependente)\r\n)\r\n\r\n\r\n28. Mapeamento não é normalização\r\nMapeamento responde: como representar o modelo conceitual em relações?\r\nNormalização responde: como organizar relações para reduzir redundâncias e anomalias com base em dependências e formas normais?\r\n\r\n\r\nUma relação resultante do mapeamento pode ainda precisar ser normalizada.\r\n\r\n\r\nNão confunda:\r\nMER → mapeamento → esquema relacional\r\ncom\r\nrelações → análise de dependências → 1FN/2FN/3FN/BCNF...\r\n\r\n\r\nOs processos se relacionam, mas não são sinônimos.\r\n\r\n\r\n29. Modelo lógico x físico\r\nNo modelo lógico, descrevemos relações, atributos, chaves e restrições sem depender de detalhes específicos do produto.\r\n\r\n\r\nNo modelo físico, aparecem escolhas como:\r\n- VARCHAR(100) x VARCHAR2(100);\r\n- BIGINT x NUMBER;\r\n- tipo de índice;\r\n- tablespace;\r\n- particionamento;\r\n- parâmetros do SGBD.\r\n\r\n\r\nA aula foca o mapeamento lógico. Sintaxe SQL aparece apenas como ilustração.\r\n\r\n\r\n30. Exemplo SQL ilustrativo\r\nA ideia relacional:\r\nUNIDADE 1:N SERVIDOR\r\n\r\n\r\npode ser implementada, por exemplo, com:\r\n\r\n\r\nCREATE TABLE unidade (\r\n  id_unidade BIGINT PRIMARY KEY,\r\n  nome VARCHAR(200) NOT NULL UNIQUE\r\n);\r\n\r\n\r\nCREATE TABLE servidor (\r\n  matricula BIGINT PRIMARY KEY,\r\n  nome VARCHAR(200) NOT NULL,\r\n  id_unidade BIGINT NOT NULL,\r\n  FOREIGN KEY (id_unidade) REFERENCES unidade(id_unidade)\r\n);\r\n\r\n\r\nA sintaxe exata pode variar entre produtos e versões. O conceito estável é PK/FK/NOT NULL/UNIQUE conforme a regra.\r\n\r\n\r\n31. Estratégia prática de mapeamento\r\nPasso 1: liste entidades fortes.\r\nPasso 2: crie uma relação para cada entidade forte.\r\nPasso 3: mapeie atributos simples e componentes de atributos compostos.\r\nPasso 4: trate atributos multivalorados separadamente.\r\nPasso 5: escolha chaves candidatas e a PK.\r\nPasso 6: mapeie relacionamentos 1:1.\r\nPasso 7: mapeie 1:N com FK no lado N.\r\nPasso 8: mapeie N:M com relação associativa.\r\nPasso 9: incorpore atributos dos relacionamentos.\r\nPasso 10: mapeie entidades fracas.\r\nPasso 11: trate relacionamentos recursivos e ternários.\r\nPasso 12: traduza participação mínima/máxima em NOT NULL, UNIQUE e outras restrições quando possível.\r\nPasso 13: revise integridade referencial.\r\nPasso 14: só então avance para normalização e desenho físico.\r\n\r\n\r\n32. Como a banca pode cobrar sem inventar padrão\r\nOs editais auditados comprovam a cobrança de modelagem, MER e formas normais, mas o projeto ainda não possui catálogo suficiente de questões oficiais auditadas para afirmar um padrão específico de FCC, VUNESP ou outra banca para este subtópico.\r\n\r\n\r\nPara treino, são centrais as distinções:\r\n- 1:N → FK no lado N;\r\n- N:M → relação associativa;\r\n- 1:1 → FK + UNIQUE em uma estratégia típica;\r\n- entidade fraca → chave do proprietário + identificador parcial;\r\n- atributo multivalorado → relação própria;\r\n- participação mínima → possível uso de NULL/NOT NULL;\r\n- máximo 1 → possível uso de UNIQUE;\r\n- mapeamento ≠ normalização.\r\n\r\n\r\n33. Pegadinhas e erros frequentes\r\n1. “Todo relacionamento vira uma tabela.” Falso. Em 1:N, normalmente a FK no lado N é suficiente.\r\n2. “Todo 1:1 vira uma única tabela.” Falso. Pode haver duas relações com FK UNIQUE.\r\n3. “Todo N:M pode ser implementado com uma FK em um dos lados.” Falso. É necessária relação associativa.\r\n4. “Atributo multivalorado vira várias colunas telefone1, telefone2...” Não é o mapeamento relacional recomendado.\r\n5. “Surrogate key elimina a chave natural.” Falso; a regra de unicidade natural pode precisar continuar protegida.\r\n6. “NOT NULL significa cardinalidade N.” Falso; NOT NULL trata obrigatoriedade daquele atributo/FK.\r\n7. “UNIQUE representa participação obrigatória.” Falso; UNIQUE limita repetição.\r\n8. “FK garante toda regra do negócio.” Falso; regras complexas podem exigir constraints adicionais.\r\n9. “Entidade fraca é apenas uma tabela com FK.” Falso; a dependência de identidade é conceitual.\r\n10. “Relacionamento ternário sempre usa as três FKs como PK.” Falso; a chave depende da cardinalidade e da semântica.\r\n11. “Atributo derivado nunca pode ser armazenado.” Falso.\r\n12. “Mapeamento já garante 3FN.” Falso.\r\n13. “Modelo lógico e físico são iguais.” Falso.\r\n14. “NULL significa automaticamente erro.” Falso; pode representar participação opcional quando permitido.\r\n15. “ON DELETE CASCADE é sempre melhor.” Falso; depende da regra.\r\n\r\n\r\n34. Resumo estruturado\r\n- Entidade forte normalmente origina uma relação.\r\n- Atributos simples viram atributos da relação.\r\n- Atributos compostos são decompostos em componentes úteis.\r\n- Multivalorados normalmente originam relação própria.\r\n- Identificadores conceituais originam chaves candidatas.\r\n- 1:N normalmente coloca FK no lado N.\r\n- 1:1 pode usar FK + UNIQUE em um dos lados.\r\n- N:M exige relação associativa.\r\n- Atributos do relacionamento vão para a estrutura que representa o vínculo.\r\n- Entidade fraca incorpora a chave do proprietário em sua identificação.\r\n- Recursivo 1:N pode usar FK autorreferente.\r\n- Recursivo N:M usa relação associativa com dois papéis.\r\n- Ternário normalmente gera relação própria com FKs para os três participantes.\r\n- NOT NULL ajuda a representar participação obrigatória.\r\n- UNIQUE ajuda a representar máximo 1.\r\n- FK preserva integridade referencial.\r\n- Mapeamento e normalização são etapas diferentes.\r\n\r\n\r\n35. Revisão rápida\r\n1. Onde fica a FK em um 1:N? Normalmente no lado N.\r\n2. Como mapear N:M? Com relação associativa.\r\n3. Como reforçar máximo 1 em uma FK? UNIQUE, em estratégia típica.\r\n4. Como reforçar participação obrigatória do lado da FK? NOT NULL, quando a modelagem permitir.\r\n5. Como mapear atributo multivalorado? Relação própria ligada por FK.\r\n6. Como mapear entidade fraca? Chave do proprietário + identificador parcial.\r\n7. O que ocorre com atributos de N:M? Vão para a relação associativa.\r\n8. Relacionamento 1:N precisa de tabela própria sempre? Não.\r\n9. Surrogate key elimina UNIQUE natural? Não necessariamente.\r\n10. FK garante existência do pai? Sim, conforme integridade referencial e regras do SGBD.\r\n11. Mapeamento equivale a normalização? Não.\r\n12. Atributo derivado precisa ser armazenado? Não obrigatoriamente.\r\n13. Recursivo 1:N pode usar o quê? FK autorreferente.\r\n14. Ternário sempre tem PK com três FKs? Não.\r\n15. 1:1 sempre deve ser fundido? Não.\r\n\r\n\r\n36. Flashcards\r\nF-BD-004-01. P: Entidade forte no relacional. R: Normalmente origina uma relação própria.\r\nF-BD-004-02. P: Atributo simples. R: Torna-se atributo/coluna da relação.\r\nF-BD-004-03. P: Atributo composto. R: É decomposto nos componentes relevantes.\r\nF-BD-004-04. P: Atributo multivalorado. R: Normalmente origina relação própria.\r\nF-BD-004-05. P: Identificador conceitual. R: Pode originar uma chave candidata.\r\nF-BD-004-06. P: Chave substituta. R: Identificador artificial criado para implementação.\r\nF-BD-004-07. P: 1:N. R: FK normalmente no lado N.\r\nF-BD-004-08. P: 1:1. R: Uma estratégia é FK + UNIQUE em um dos lados.\r\nF-BD-004-09. P: N:M. R: Relação associativa com FKs para ambos os lados.\r\nF-BD-004-10. P: Atributo de relacionamento N:M. R: Vai para a relação associativa.\r\nF-BD-004-11. P: Entidade fraca. R: A chave do proprietário participa de sua identificação.\r\nF-BD-004-12. P: Identificador parcial. R: Distingue ocorrências da entidade fraca dentro do proprietário.\r\nF-BD-004-13. P: Participação mínima 1. R: Pode exigir NOT NULL na FK, quando o mapeamento direto permitir.\r\nF-BD-004-14. P: Cardinalidade máxima 1. R: Pode exigir UNIQUE.\r\nF-BD-004-15. P: FK. R: Preserva integridade referencial.\r\nF-BD-004-16. P: Recursivo 1:N. R: FK apontando para a própria relação.\r\nF-BD-004-17. P: Recursivo N:M. R: Relação associativa com duas FKs para a mesma tabela, em papéis diferentes.\r\nF-BD-004-18. P: Ternário. R: Relação própria com FKs para os três participantes; chave depende da regra.\r\nF-BD-004-19. P: Mapeamento. R: Tradução do modelo conceitual para estruturas relacionais.\r\nF-BD-004-20. P: Normalização. R: Organização das relações com base em dependências e formas normais.\r\n\r\n\r\n37. QUESTÕES INÉDITAS — ESTILO DE CONCURSO\r\nAs 20 questões abaixo foram criadas para treinamento. Não são questões reais de banca.\r\n\r\n\r\n\n\nAs questões autorais deste núcleo estão disponíveis na prática interativa. O gabarito e o comentário aparecem somente após o registro de uma tentativa.\n\n\r\n\r\n40. Treino guiado\r\n1. Modele UNIDADE 1:N SERVIDOR, com servidor obrigatoriamente lotado.\r\n2. Modele PROCESSO N:M PARTE com atributo papel.\r\n3. Modele PESSOA com vários telefones.\r\n4. Modele SERVIDOR com supervisor opcional.\r\n5. Modele DEPENDENTE como entidade fraca de SERVIDOR.\r\n6. Explique onde UNIQUE aparece em um 1:1.\r\n7. Explique quando NOT NULL pode representar participação mínima 1.\r\n8. Dê um exemplo em que uma relação associativa precise de surrogate key e UNIQUE natural.\r\n9. Explique por que mapeamento não garante normalização.\r\n10. Crie um exemplo de relacionamento ternário e proponha uma chave, justificando-a.\r\n\n\nAs respostas esperadas do treino guiado são material de autocorreção e permanecem no documento editorial de origem.\n\n\r\n\r\n42. Caderno de erros\r\nAo errar uma questão de mapeamento, registre:\r\n- a regra conceitual original;\r\n- a cardinalidade máxima em cada direção;\r\n- a cardinalidade mínima em cada direção;\r\n- onde você colocou a FK;\r\n- se precisava de UNIQUE;\r\n- se precisava de NOT NULL;\r\n- qual era a chave candidata;\r\n- se confundiu entidade, relacionamento ou atributo multivalorado;\r\n- se confundiu mapeamento com normalização;\r\n- a regra corrigida em uma frase;\r\n- um novo exemplo próprio;\r\n- a data da revisão.\r\n\r\n\r\nExemplo de registro: “Confundi 1:N e coloquei a FK em UNIDADE. Correção: a FK deve ficar em SERVIDOR porque cada servidor referencia uma unidade; muitas linhas de servidor podem apontar para a mesma unidade.”\r\n\r\n\r\n43. Critério de domínio\r\nConsidere BD-004 suficientemente dominado quando conseguir, sem consulta:\r\n- mapear entidade forte;\r\n- decompor atributo composto;\r\n- mapear atributo multivalorado;\r\n- distinguir chave natural, candidata, primária e surrogate;\r\n- mapear 1:1, 1:N e N:M;\r\n- posicionar FKs corretamente;\r\n- usar NOT NULL e UNIQUE conforme a regra;\r\n- mapear entidade fraca;\r\n- mapear entidade associativa;\r\n- mapear relacionamento recursivo;\r\n- explicar relacionamento ternário;\r\n- diferenciar mapeamento de normalização;\r\n- resolver pelo menos 17 das 20 questões inéditas sem erro conceitual recorrente.\r\n\r\n\r\n44. Encadeamento com BD-005 — Normalização de dados, já existente e revisado\r\nBD-005 — Normalização de dados: dependências funcionais, 1FN, 2FN, 3FN e introdução à BCNF.\r\n\r\n\r\nObservação: a sequência global seguirá a rotação mestre. Este tópico interno não substitui o próximo item global.\r\n\r\n\r\n45. Fontes\r\n- TRT da 15ª Região — Edital nº 01/2024 — Analista Judiciário – Área Apoio Especializado – Especialidade Tecnologia da Informação — bloco Banco de Dados: “Modelagem de dados. Modelo Entidade-Relacionamento. Formas normais.”\r\n- TRF da 3ª Região — Edital de Abertura nº 01/2023 — especialidade Informática — bloco Banco de Dados: “Modelo Entidade x Relacionamento”, normalização e SQL; usado como fonte de escopo, sem ampliar cargoIds nesta aula.\r\n- PostgreSQL Documentation — CREATE TABLE / Constraints — referência técnica para PK, FK, UNIQUE, NOT NULL e integridade referencial.\r\n- Oracle Database — Data Integrity — referência técnica para restrições e integridade.\r\n- IBM — materiais de modelagem de dados e ERD — referência pedagógica de modelagem.\r\n- BD-002 — Modelo relacional: relações, tuplas, atributos, domínios, chaves e integridade.\r\n- BD-003 — Modelo Entidade-Relacionamento: entidades, atributos, relacionamentos, cardinalidades e participação.\r\n-  — Produção intercalada de matérias.\r\n\r\n\r\nControle editorial\r\nEsta aula é material pedagógico original do projeto. As questões são inéditas. Não atribuir padrão específico de banca sem catálogo oficial auditado. Não propagar o conteúdo para cargos sem auditoria 1:1. BD-005 Normalização já existe e foi revisado no gate E5j; a produção global segue a rotação mestre e o checkpoint.\r\n\r\n\r\nAUDITORIA E5k — GATE EDITORIAL BD-004\r\nRelidos 45 blocos: MER → relacional, relações 1:1/1:N/N:M, atributos compostos/multivalorados, entidade fraca/associativa, recursivo/ternário, exemplos e SQL ilustrativo. 20 flashcards F-BD-004-01–20; 20 questões inéditas Q-BD-004-01–20 com A–E, gabaritos e comentários individuais identificados e coerentes; respostas preservadas. status: revisado. Fonte primária TRT15/FCC edital 01/2024 Anexo III p. 76 impressa (índice PDF 75), cargo 24 Analista TI, cobre literalmente 'Modelagem de dados. Modelo Entidade-Relacionamento. Formas normais'. O mapeamento é extensão didática da modelagem, não item literal autônomo. cargoIds[] permanece [trt15_aj_ti]; o TRF3/2023 já foi confirmado individualmente para MER 9.1 Técnico e 4.1 Analista em BD-003, mas sem 'mapeamento MER → relacional' isolado e sem promoção automática de vínculos ao BD-004. Corrigida ressalva histórica desatualizada sobre falta de confirmação dos cargos TRF3, preservadas editalRefs/sourceRefs. BD-005 já existe e está revisado. Não houve questão real atribuída ou publicação."
+      },
+      {
+        "id": "TI-BD-002-03",
+        "title": "TI-BD-002-03 — Normalização de dados e formas normais",
+        "text": "BD-005\n\nO que os editais cobram\r\nO núcleo documental comum é normalização de dados/formas normais.\r\nNo TRE-SP, os dois cargos de TI selecionados pelo projeto trazem expressamente modelagem e normalização; o Cargo 21 ainda explicita “Normalização das estruturas de dados”.\r\nNo TRT-15, o Analista de TI traz “Formas normais” no bloco de Banco de Dados. O documento TRT-2 M13, que também contém essa expressão, é preservado apenas como referência histórica do acervo e não gera cargoId ativo trt2_aj_ti. No TRF3/2023, Técnico Informática e Analista Informática trazem “Normalização de dados: conceitos” nos itens específicos 9.2 e 4.2, respectivamente.\r\nIsso exige que o estudante compreenda não apenas nomes como 1FN, 2FN e 3FN, mas a lógica que leva da redundância às dependências funcionais e à decomposição de relações.\r\n\r\n\r\n2. Objetivos\r\nAo final, você deverá conseguir:\r\n1. explicar a finalidade da normalização;\r\n2. reconhecer redundância e anomalias de inserção, atualização e exclusão;\r\n3. definir dependência funcional;\r\n4. identificar determinante e atributo dependente;\r\n5. distinguir dependência trivial e não trivial;\r\n6. calcular fechamentos simples de conjuntos de atributos;\r\n7. reconhecer superchaves e chaves candidatas a partir de dependências;\r\n8. distinguir atributos primos e não primos;\r\n9. avaliar 1FN;\r\n10. reconhecer dependência parcial e avaliar 2FN;\r\n11. reconhecer dependência transitiva;\r\n12. aplicar a definição formal de 3FN em exemplos simples;\r\n13. compreender por que BCNF é mais restritiva que 3FN;\r\n14. decompor relações preservando semântica;\r\n15. explicar junção sem perda;\r\n16. explicar preservação de dependências;\r\n17. distinguir normalização de desnormalização;\r\n18. evitar regras mnemônicas imprecisas.\r\n\r\n\r\n3. Pré-requisitos\r\nRecomenda-se dominar:\r\n— BD-002 — modelo relacional, chaves e integridade;\r\n— BD-003 — entidades, atributos e relacionamentos;\r\n— BD-004 — mapeamento do MER para relações.\r\nA normalização trabalha sobre relações e dependências. Sem entender chave candidata, chave composta e chave estrangeira, 2FN e 3FN tornam-se apenas decoreba.\r\n\r\n\r\n4. Por que normalizar?\r\nUm projeto relacional mal estruturado pode repetir a mesma informação muitas vezes.\r\nExemplo simplificado:\r\nMATRICULA(\r\n  aluno_id,\r\n  aluno_nome,\r\n  disciplina_id,\r\n  disciplina_nome,\r\n  professor_id,\r\n  professor_nome,\r\n  nota\r\n)\r\n\r\n\r\nSuponha que a chave seja:\r\n(aluno_id, disciplina_id)\r\n\r\n\r\nSe o nome do aluno aparecer em toda disciplina em que ele se matricula, o mesmo dado será repetido.\r\nSe uma disciplina possuir centenas de alunos, o nome da disciplina e dados do professor também podem ser repetidos centenas de vezes.\r\nEssa repetição cria risco de inconsistência.\r\n\r\n\r\n5. Redundância\r\nRedundância é a repetição de um fato que poderia ser armazenado de forma mais controlada.\r\nNem toda repetição física é erro. Índices, caches, réplicas e estruturas analíticas podem repetir dados deliberadamente.\r\nNa normalização lógica, o problema é a repetição desnecessária de fatos causada por uma relação que mistura dependências diferentes.\r\n\r\n\r\nExemplo:\r\naluno_id = 10 aparece em vinte linhas e aluno_nome = “Ana” é repetido nas vinte.\r\nSe uma linha trouxer “Ana Silva” e outra “Ana Souza” para o mesmo aluno, surge inconsistência.\r\n\r\n\r\n6. Anomalia de atualização\r\nOcorre quando um fato precisa ser alterado em várias linhas.\r\nSe o nome de um professor está repetido em 500 matrículas, uma correção pode exigir 500 atualizações.\r\nSe 499 forem corrigidas e uma não, o banco passa a representar o mesmo professor com dois nomes.\r\n\r\n\r\n7. Anomalia de inserção\r\nOcorre quando não conseguimos registrar um fato sem registrar outro fato não relacionado.\r\nExemplo:\r\nse disciplina e matrícula estiverem misturadas na mesma tabela, talvez seja impossível cadastrar uma nova disciplina sem inventar um aluno matriculado.\r\nA estrutura força uma associação que ainda não existe.\r\n\r\n\r\n8. Anomalia de exclusão\r\nOcorre quando apagar um fato elimina acidentalmente outro.\r\nExemplo:\r\nse a única matrícula da disciplina X for removida e a disciplina estiver armazenada apenas dentro da tabela de matrículas, podemos perder também os dados da própria disciplina.\r\n\r\n\r\n9. Normalização não é “quebrar tabelas” aleatoriamente\r\nNormalizar não significa simplesmente criar muitas tabelas.\r\nO processo depende de:\r\n— significado dos atributos;\r\n— chaves candidatas;\r\n— dependências funcionais;\r\n— restrições do negócio;\r\n— propriedades desejadas da decomposição.\r\nUma decomposição sem critério pode perder informação ou tornar restrições importantes difíceis de garantir.\r\n\r\n\r\n10. Dependência funcional\r\nEm uma relação R, dizemos que Y depende funcionalmente de X, representado por:\r\nX → Y\r\nquando, em qualquer estado válido da relação, duas tuplas que tenham o mesmo valor de X também devem ter o mesmo valor de Y.\r\n\r\n\r\nX é chamado determinante.\r\nY é o conjunto de atributos funcionalmente determinado.\r\n\r\n\r\nExemplo:\r\naluno_id → aluno_nome\r\n\r\n\r\nSe aluno_id identifica um aluno de maneira única dentro do domínio da aplicação, duas linhas com o mesmo aluno_id não podem legitimamente trazer nomes diferentes para esse mesmo fato cadastral.\r\n\r\n\r\n11. Dependência funcional é semântica, não coincidência de dados\r\nObserve uma tabela pequena:\r\ncodigo | cidade\r\n1 | São Paulo\r\n2 | Campinas\r\n3 | Santos\r\n\r\n\r\nNessa amostra, todos os códigos são diferentes e todas as cidades também.\r\nIsso não prova que cidade → codigo seja uma regra do negócio.\r\nDependência funcional deve decorrer da semântica/restrição, não de uma coincidência do conjunto atual de dados.\r\n\r\n\r\n12. Determinante composto\r\nUma dependência pode ter vários atributos à esquerda.\r\nExemplo:\r\n(aluno_id, disciplina_id) → nota\r\n\r\n\r\nA nota pode ser identificada pela combinação do aluno com a disciplina.\r\nNem aluno_id sozinho nem disciplina_id sozinho determina a nota, se cada aluno cursa várias disciplinas e cada disciplina possui vários alunos.\r\n\r\n\r\n13. Dependência trivial\r\nX → Y é trivial quando Y está contido em X.\r\n\r\n\r\nExemplo:\r\n(aluno_id, disciplina_id) → aluno_id\r\n\r\n\r\nIsso é sempre verdadeiro pela própria composição do lado esquerdo.\r\nDependências triviais não indicam, sozinhas, uma redundância problemática.\r\n\r\n\r\n14. Dependência não trivial\r\nUma dependência é não trivial quando Y não está contido em X.\r\n\r\n\r\nExemplo:\r\naluno_id → aluno_nome\r\n\r\n\r\nEsse tipo de dependência é central para avaliar formas normais.\r\n\r\n\r\n15. Dependência funcional completa\r\nY depende completamente de X quando:\r\n— X → Y;\r\n— nenhum subconjunto próprio de X determina Y.\r\n\r\n\r\nExemplo:\r\n(aluno_id, disciplina_id) → nota\r\né completa se:\r\naluno_id ↛ nota\r\ne\r\ndisciplina_id ↛ nota.\r\n\r\n\r\n16. Dependência parcial\r\nHá dependência parcial quando um atributo depende de uma parte própria de uma chave candidata composta.\r\n\r\n\r\nNa relação:\r\nMATRICULA(aluno_id, disciplina_id, aluno_nome, disciplina_nome, nota)\r\n\r\n\r\nChave:\r\n(aluno_id, disciplina_id)\r\n\r\n\r\nDependências:\r\naluno_id → aluno_nome\r\ndisciplina_id → disciplina_nome\r\n(aluno_id, disciplina_id) → nota\r\n\r\n\r\naluno_nome e disciplina_nome dependem de apenas parte da chave composta.\r\nIsso é o problema típico combatido pela 2FN.\r\n\r\n\r\n17. Dependência transitiva — ideia\r\nConsidere:\r\nDISCIPLINA(\r\n  disciplina_id,\r\n  disciplina_nome,\r\n  professor_id,\r\n  professor_nome\r\n)\r\n\r\n\r\nDependências:\r\ndisciplina_id → professor_id\r\nprofessor_id → professor_nome\r\n\r\n\r\nEntão, por transitividade:\r\ndisciplina_id → professor_nome\r\n\r\n\r\nProfessor_nome não depende diretamente apenas da identificação da disciplina como fato próprio; ele é determinado por professor_id.\r\nEssa estrutura pode provocar repetição de dados do professor.\r\n\r\n\r\n18. Regras de inferência — visão prática\r\nDependências podem gerar outras dependências.\r\nTrês ideias úteis:\r\n— reflexividade: se Y ⊆ X, então X → Y;\r\n— aumento: se X → Y, então XZ → YZ;\r\n— transitividade: se X → Y e Y → Z, então X → Z.\r\nEssas regras são conhecidas como axiomas de Armstrong e permitem raciocinar sobre o conjunto de dependências.\r\n\r\n\r\n19. Fechamento de atributos\r\nO fechamento X+ é o conjunto de todos os atributos que podem ser determinados por X usando as dependências disponíveis.\r\n\r\n\r\nExemplo:\r\nR(A, B, C, D)\r\nF = {A → B, B → C, AC → D}\r\n\r\n\r\nComeçamos:\r\nA+ = {A}\r\n\r\n\r\nComo A → B:\r\nA+ = {A, B}\r\n\r\n\r\nComo B → C:\r\nA+ = {A, B, C}\r\n\r\n\r\nAgora AC → D pode ser aplicada, pois A+ já contém A e C:\r\nA+ = {A, B, C, D}\r\n\r\n\r\nLogo, A determina todos os atributos de R e é uma superchave.\r\n\r\n\r\n20. Superchave e chave candidata\r\nSuperchave: conjunto de atributos que determina todos os atributos da relação.\r\nChave candidata: superchave mínima; se retirarmos algum atributo dela, deixa de ser superchave.\r\n\r\n\r\nImportante:\r\numa relação pode ter várias chaves candidatas.\r\nA chave primária é uma escolha entre as candidatas para implementação/identificação principal.\r\n\r\n\r\n21. Atributo primo\r\nAtributo primo é qualquer atributo que participa de pelo menos uma chave candidata.\r\n\r\n\r\nAtributo não primo é aquele que não participa de nenhuma chave candidata.\r\n\r\n\r\nEssa distinção é importante para a definição formal de 2FN e 3FN.\r\n\r\n\r\n22. Primeira Forma Normal — 1FN\r\nNa abordagem tradicional de concursos, uma relação está na 1FN quando seus atributos assumem valores atômicos no domínio considerado e não há grupos repetitivos ou listas de múltiplos valores armazenadas em uma única célula como estrutura interna a ser manipulada como vários fatos.\r\n\r\n\r\nExemplo inadequado:\r\nPESSOA(\r\n  pessoa_id,\r\n  nome,\r\n  telefones\r\n)\r\n\r\n\r\nLinha:\r\n1 | Ana | “1111-1111, 2222-2222”\r\n\r\n\r\nSe “telefones” representa vários valores independentes dentro de uma única célula, a estrutura não está adequadamente representada no modelo relacional básico.\r\n\r\n\r\nSolução:\r\nPESSOA(pessoa_id, nome)\r\nTELEFONE(pessoa_id, telefone)\r\n\r\n\r\n23. O cuidado com a palavra “atômico”\r\n“Atômico” não significa “indivisível no universo físico”.\r\nUm valor é tratado como unidade pelo modelo em relação ao domínio e às operações da aplicação.\r\n\r\n\r\nExemplo:\r\numa data pode ter dia, mês e ano internamente, mas pode ser um valor único do domínio DATE.\r\nNão conclua que toda informação que possa ser conceitualmente decomposta viola 1FN.\r\n\r\n\r\n24. 1FN e tabelas repetitivas\r\nEstrutura problemática:\r\nPEDIDO(\r\n  pedido_id,\r\n  item1,\r\n  quantidade1,\r\n  item2,\r\n  quantidade2,\r\n  item3,\r\n  quantidade3\r\n)\r\n\r\n\r\nHá grupos repetitivos.\r\nModelo mais adequado:\r\nPEDIDO(pedido_id, ...)\r\nITEM_PEDIDO(pedido_id, produto_id, quantidade)\r\n\r\n\r\nA quantidade de itens deixa de estar limitada a colunas numeradas.\r\n\r\n\r\n25. Segunda Forma Normal — 2FN\r\nUma relação está na 2FN quando:\r\n— está na 1FN;\r\n— todo atributo não primo depende completamente de cada chave candidata, isto é, não existe dependência parcial de atributo não primo em parte própria de uma chave candidata.\r\n\r\n\r\nA 2FN é especialmente relevante quando existem chaves candidatas compostas.\r\n\r\n\r\n26. Relação com chave simples\r\nSe a única chave candidata é formada por um único atributo, não existe subconjunto próprio não vazio dessa chave capaz de causar dependência parcial.\r\nAssim, uma relação em 1FN com chave candidata simples não viola 2FN por dependência parcial dessa chave.\r\nEla ainda pode violar 3FN.\r\n\r\n\r\n27. Exemplo de violação da 2FN\r\nMATRICULA(\r\n  aluno_id,\r\n  disciplina_id,\r\n  aluno_nome,\r\n  disciplina_nome,\r\n  nota\r\n)\r\n\r\n\r\nChave:\r\n(aluno_id, disciplina_id)\r\n\r\n\r\nDependências:\r\naluno_id → aluno_nome\r\ndisciplina_id → disciplina_nome\r\n(aluno_id, disciplina_id) → nota\r\n\r\n\r\nProblema:\r\naluno_nome depende apenas de aluno_id;\r\ndisciplina_nome depende apenas de disciplina_id.\r\n\r\n\r\nLogo, há dependências parciais de atributos não primos.\r\n\r\n\r\n28. Decompondo para 2FN\r\nCriamos:\r\nALUNO(\r\n  aluno_id PK,\r\n  aluno_nome\r\n)\r\n\r\n\r\nDISCIPLINA(\r\n  disciplina_id PK,\r\n  disciplina_nome\r\n)\r\n\r\n\r\nMATRICULA(\r\n  aluno_id FK,\r\n  disciplina_id FK,\r\n  nota,\r\n  PK(aluno_id, disciplina_id)\r\n)\r\n\r\n\r\nAgora:\r\n— dados do aluno ficam em ALUNO;\r\n— dados da disciplina ficam em DISCIPLINA;\r\n— nota permanece no relacionamento aluno-disciplina.\r\n\r\n\r\n29. Terceira Forma Normal — 3FN — intuição\r\nA 3FN procura eliminar dependências inadequadas em que atributos não chave acabam determinados por outros atributos que não são superchaves.\r\n\r\n\r\nMnemônica pedagógica frequentemente usada:\r\n“atributos não chave devem depender da chave, da chave inteira e de nada além da chave”.\r\n\r\n\r\nEla ajuda a lembrar 2FN/3FN, mas não substitui a definição formal.\r\n\r\n\r\n30. Definição formal da 3FN\r\nUma relação R está na 3FN se, para toda dependência funcional não trivial:\r\nX → A\r\npelo menos uma das condições for verdadeira:\r\n1. X é superchave; ou\r\n2. A é atributo primo.\r\n\r\n\r\nEssa definição é mais precisa que simplesmente dizer “não pode haver dependência transitiva”.\r\n\r\n\r\n31. Por que “sem dependência transitiva” é simplificação?\r\nA frase pode ser útil para exemplos básicos com uma chave principal e atributos não primos, mas falha em casos com múltiplas chaves candidatas.\r\nA definição formal considera explicitamente:\r\n— superchaves;\r\n— atributos primos.\r\nEm questões conceituais, prefira a condição formal quando o enunciado trabalha com dependências e chaves candidatas.\r\n\r\n\r\n32. Exemplo de violação da 3FN\r\nDISCIPLINA(\r\n  disciplina_id,\r\n  disciplina_nome,\r\n  professor_id,\r\n  professor_nome\r\n)\r\n\r\n\r\nDependências:\r\ndisciplina_id → disciplina_nome, professor_id\r\nprofessor_id → professor_nome\r\n\r\n\r\nSupondo disciplina_id como chave candidata e professor_id não sendo superchave da relação:\r\nprofessor_id → professor_nome\r\né não trivial;\r\nprofessor_id não é superchave;\r\nprofessor_nome não é primo.\r\nLogo, a relação viola 3FN.\r\n\r\n\r\n33. Decompondo para 3FN\r\nCriamos:\r\nPROFESSOR(\r\n  professor_id PK,\r\n  professor_nome\r\n)\r\n\r\n\r\nDISCIPLINA(\r\n  disciplina_id PK,\r\n  disciplina_nome,\r\n  professor_id FK\r\n)\r\n\r\n\r\nA informação do professor é armazenada uma vez.\r\nA disciplina referencia o professor.\r\n\r\n\r\n34. Um exemplo completo de normalização\r\nRelação inicial:\r\nMATRICULA(\r\n  aluno_id,\r\n  aluno_nome,\r\n  disciplina_id,\r\n  disciplina_nome,\r\n  professor_id,\r\n  professor_nome,\r\n  nota\r\n)\r\n\r\n\r\nAssumimos:\r\naluno_id → aluno_nome\r\ndisciplina_id → disciplina_nome, professor_id\r\nprofessor_id → professor_nome\r\n(aluno_id, disciplina_id) → nota\r\n\r\n\r\nChave candidata:\r\n(aluno_id, disciplina_id)\r\n\r\n\r\n35. Avaliação da 1FN no exemplo\r\nSe todos os atributos contêm um valor único do domínio por tupla e não há grupos repetitivos, a relação pode satisfazer 1FN.\r\nIsso não significa que esteja bem normalizada.\r\n1FN é apenas o primeiro nível.\r\n\r\n\r\n36. Avaliação da 2FN no exemplo\r\nViolação:\r\naluno_id → aluno_nome\r\ndisciplina_id → disciplina_nome, professor_id\r\n\r\n\r\nEsses atributos dependem de partes da chave composta.\r\nLogo, a relação não está em 2FN.\r\n\r\n\r\nPrimeira decomposição:\r\nALUNO(aluno_id, aluno_nome)\r\nDISCIPLINA_TEMP(disciplina_id, disciplina_nome, professor_id, professor_nome)\r\nMATRICULA(aluno_id, disciplina_id, nota)\r\n\r\n\r\n37. Avaliação da 3FN no exemplo\r\nEm DISCIPLINA_TEMP:\r\ndisciplina_id → professor_id\r\nprofessor_id → professor_nome\r\n\r\n\r\nProfessor_id não é superchave de DISCIPLINA_TEMP, e professor_nome é não primo.\r\nHá violação de 3FN.\r\n\r\n\r\nDecomposição:\r\nPROFESSOR(professor_id, professor_nome)\r\nDISCIPLINA(disciplina_id, disciplina_nome, professor_id)\r\n\r\n\r\nResultado:\r\nALUNO\r\nPROFESSOR\r\nDISCIPLINA\r\nMATRICULA\r\n\r\n\r\n38. Forma Normal de Boyce-Codd — BCNF\r\nBCNF é uma forma normal mais restritiva que 3FN.\r\n\r\n\r\nUma relação está em BCNF se, para toda dependência funcional não trivial:\r\nX → Y\r\nX for superchave.\r\n\r\n\r\nObserve a diferença:\r\n3FN permite, em determinado caso, uma dependência cujo lado esquerdo não é superchave se o atributo do lado direito for primo.\r\nBCNF não oferece essa exceção.\r\n\r\n\r\n39. BCNF é extensão nesta aula\r\nOs trechos de edital auditados cobram normalização/formas normais, mas não mencionam BCNF nominalmente.\r\nPor isso:\r\n— 1FN, 2FN e 3FN formam o núcleo didático principal;\r\n— BCNF é apresentada para organizar a progressão conceitual e mostrar a relação entre as formas;\r\n— não será tratada como item literal independente do edital.\r\n\r\n\r\n40. Exemplo de 3FN que não está em BCNF\r\nConsidere:\r\nAULA(aluno, disciplina, professor)\r\n\r\n\r\nRegras:\r\n(aluno, disciplina) → professor\r\nprofessor → disciplina\r\n\r\n\r\nSuponha que:\r\n— cada professor ministre exatamente uma disciplina;\r\n— um aluno pode ter diferentes professores;\r\n— para cada par aluno-disciplina há um único professor.\r\n\r\n\r\nChaves candidatas:\r\n(aluno, disciplina)\r\n(aluno, professor)\r\n\r\n\r\nTodos os atributos são primos, pois aparecem em alguma chave candidata.\r\n\r\n\r\nDependência:\r\nprofessor → disciplina\r\n\r\n\r\nProfessor não é superchave.\r\nDisciplina é atributo primo.\r\n\r\n\r\nEntão:\r\n— a dependência é admitida pela 3FN;\r\n— viola BCNF, porque o determinante professor não é superchave.\r\n\r\n\r\n41. Hierarquia das formas\r\nEm termos gerais:\r\nBCNF ⇒ 3FN ⇒ 2FN ⇒ 1FN.\r\n\r\n\r\nSe uma relação está em BCNF, também satisfaz 3FN.\r\nSe está em 3FN, satisfaz 2FN.\r\nO inverso não é necessariamente verdadeiro.\r\n\r\n\r\n42. Decomposição\r\nDecompor significa substituir uma relação R por duas ou mais relações menores, preservando de maneira adequada os fatos representados.\r\n\r\n\r\nO objetivo não é diminuir o número de colunas por estética.\r\nA decomposição deve responder às dependências funcionais e preservar a capacidade de reconstruir informações necessárias.\r\n\r\n\r\n43. Junção sem perda — lossless join\r\nUma decomposição possui junção sem perda quando, ao juntar corretamente as relações decompostas, obtemos exatamente as tuplas válidas da relação original, sem criar tuplas espúrias nem perder informação.\r\n\r\n\r\nIsso é propriedade essencial.\r\n\r\n\r\n44. Exemplo intuitivo de junção sem perda\r\nOriginal:\r\nALUNO_DISCIPLINA(aluno_id, disciplina_id, aluno_nome)\r\n\r\n\r\nDependência:\r\naluno_id → aluno_nome\r\n\r\n\r\nDecomposição:\r\nALUNO(aluno_id, aluno_nome)\r\nMATRICULA(aluno_id, disciplina_id)\r\n\r\n\r\nA junção pelo aluno_id reconstrói corretamente os fatos da relação original, sob a dependência assumida.\r\n\r\n\r\n45. Tuplas espúrias\r\nUma decomposição inadequada pode produzir combinações que nunca existiram originalmente.\r\n\r\n\r\nExemplo conceitual:\r\nse dividirmos uma relação em partes que compartilham atributos insuficientes para manter a associação original, a junção pode combinar linhas indevidamente.\r\nEssas combinações artificiais são chamadas tuplas espúrias.\r\n\r\n\r\n46. Condição útil para decomposição binária sem perda\r\nPara uma decomposição de R em R1 e R2, um critério clássico é que, sob as dependências funcionais:\r\n(R1 ∩ R2) → R1\r\nou\r\n(R1 ∩ R2) → R2\r\n\r\n\r\nEm outras palavras, os atributos comuns devem determinar funcionalmente todos os atributos de pelo menos uma das relações resultantes.\r\n\r\n\r\n47. Preservação de dependências\r\nUma decomposição preserva dependências quando as dependências funcionais relevantes podem ser verificadas impondo restrições nas relações decompostas, sem precisar recompor todas as relações apenas para testar a regra.\r\n\r\n\r\nÉ uma propriedade diferente de junção sem perda.\r\n\r\n\r\nUma decomposição pode:\r\n— ter junção sem perda;\r\n— e ainda não preservar todas as dependências diretamente.\r\n\r\n\r\n48. Junção sem perda x preservação de dependências\r\nNão confunda:\r\njunção sem perda responde:\r\n“consigo reconstruir corretamente os dados?”\r\n\r\n\r\nPreservação de dependências responde:\r\n“consigo garantir as dependências importantes diretamente nas relações decompostas?”\r\n\r\n\r\nAs duas propriedades são desejáveis, mas conceitualmente distintas.\r\n\r\n\r\n49. 3FN e preservação de dependências\r\nExiste algoritmo de síntese para 3FN que pode produzir decomposição com junção sem perda e preservação de dependências, respeitadas as condições do procedimento.\r\nEssa é uma razão prática para a importância da 3FN.\r\n\r\n\r\n50. BCNF e preservação de dependências\r\nA decomposição em BCNF pode exigir abrir mão da preservação direta de alguma dependência funcional.\r\nPor isso, uma solução teoricamente mais forte quanto à BCNF não é automaticamente “melhor em tudo”.\r\nProjeto de banco envolve propriedades simultâneas.\r\n\r\n\r\n51. Normalização não substitui integridade\r\nMesmo uma relação normalizada precisa de restrições apropriadas:\r\n— PRIMARY KEY;\r\n— FOREIGN KEY;\r\n— UNIQUE;\r\n— NOT NULL;\r\n— CHECK;\r\n— regras adicionais da aplicação ou do banco.\r\nFormas normais não garantem sozinhas todas as regras do negócio.\r\n\r\n\r\n52. Normalização não substitui índices\r\nNormalização organiza dependências e reduz problemas de redundância.\r\nÍndices têm outro objetivo: melhorar determinados caminhos de acesso e apoiar restrições.\r\nUma tabela em 3FN sem índices adequados pode ter desempenho ruim.\r\nUma tabela desnormalizada pode ser rápida em uma consulta e problemática em integridade.\r\n\r\n\r\n53. Normalização x desempenho\r\nNormalizar pode aumentar o número de junções necessárias em determinadas consultas.\r\nIsso não invalida a normalização.\r\nO projeto começa normalmente pela representação correta e controlada dos fatos.\r\nDepois, mede-se desempenho real.\r\n\r\n\r\n54. Desnormalização\r\nDesnormalização é a introdução deliberada de redundância ou combinação de estruturas para atender requisitos específicos, frequentemente de desempenho, leitura ou processamento analítico.\r\n\r\n\r\nEla deve ser:\r\n— consciente;\r\n— documentada;\r\n— mensurada;\r\n— acompanhada de estratégia para manter consistência.\r\n\r\n\r\nNão confunda desnormalização deliberada com modelagem acidentalmente redundante.\r\n\r\n\r\n55. OLTP x ambientes analíticos\r\nEm sistemas transacionais, formas normais são especialmente úteis para reduzir anomalias de atualização e proteger consistência.\r\nEm data warehouses, modelos dimensionais podem aceitar redundâncias deliberadas para facilitar análise e desempenho.\r\nIsso não significa que “normalização não vale em BI”; significa que o objetivo do modelo pode ser diferente.\r\n\r\n\r\n56. Chave surrogate resolve normalização?\r\nNão.\r\nAdicionar uma chave artificial id não remove automaticamente dependências problemáticas.\r\n\r\n\r\nExemplo:\r\nPEDIDO_ITEM(\r\n  id,\r\n  pedido_id,\r\n  produto_id,\r\n  produto_nome,\r\n  quantidade\r\n)\r\n\r\n\r\nMesmo com id como PK física, se:\r\nproduto_id → produto_nome\r\no nome do produto continua repetido.\r\nA surrogate key não apaga as dependências semânticas.\r\n\r\n\r\n57. Dependências devem refletir regras reais\r\nSe um professor puder ministrar várias disciplinas, então:\r\nprofessor_id → disciplina_id\r\nnão é uma dependência válida.\r\n\r\n\r\nNão crie dependências apenas para facilitar a decomposição.\r\nPrimeiro identifique as regras do domínio.\r\n\r\n\r\n58. Mudanças de regra podem mudar o modelo\r\nHoje:\r\ncpf → pessoa_id\r\npode ser uma regra se CPF for obrigatório e único para todas as pessoas do domínio.\r\n\r\n\r\nAmanhã:\r\no sistema passa a aceitar pessoas sem CPF ou identificadores estrangeiros.\r\nA estratégia de chave e as dependências devem ser reavaliadas.\r\n\r\n\r\nNormalização depende das restrições válidas do negócio.\r\n\r\n\r\n59. NULL e dependências — cuidado\r\nA teoria clássica de dependências funcionais parte do modelo relacional e não corresponde perfeitamente às particularidades de NULL em SQL.\r\nEm questões teóricas, siga as dependências e o modelo definidos pelo enunciado.\r\nEm implementação SQL, lembre que NULL possui semântica própria e pode interagir de modo específico com UNIQUE e comparações conforme o SGBD.\r\n\r\n\r\n60. Dependência multivalorada não é dependência funcional\r\nDependências multivaloradas são tema de formas normais superiores, como 4FN.\r\nElas não serão aprofundadas em BD-005.\r\nNão confunda:\r\nX → Y\r\ncom\r\nX ↠ Y.\r\n\r\n\r\n61. O que não será aprofundado agora\r\nFicam fora do núcleo desta aula:\r\n— 4FN;\r\n— 5FN;\r\n— dependências de junção;\r\n— teoria avançada de cobertura mínima;\r\n— algoritmos completos de síntese;\r\n— provas formais extensas.\r\nEsses conteúdos só serão vinculados futuramente se houver demanda pedagógica e/ou documental.\r\n\r\n\r\n62. Como resolver questão de normalização\r\nPasso 1 — escreva os atributos da relação.\r\nPasso 2 — liste as dependências funcionais dadas ou justificadas pelo enunciado.\r\nPasso 3 — encontre chaves candidatas.\r\nPasso 4 — identifique atributos primos e não primos.\r\nPasso 5 — teste 1FN.\r\nPasso 6 — procure dependências parciais para 2FN.\r\nPasso 7 — aplique a condição formal de 3FN.\r\nPasso 8 — se a questão pedir BCNF, verifique se todo determinante não trivial é superchave.\r\nPasso 9 — ao decompor, verifique junção sem perda.\r\nPasso 10 — verifique preservação de dependências quando solicitado.\r\n\r\n\r\n63. Exemplo resolvido 1 — identificar dependência parcial\r\nR(A, B, C)\r\nChave candidata: (A, B)\r\nDependência adicional: A → C\r\n\r\n\r\nC é não primo.\r\nC depende de uma parte própria da chave composta.\r\nLogo:\r\nhá dependência parcial;\r\nR viola 2FN.\r\n\r\n\r\n64. Exemplo resolvido 2 — chave simples\r\nR(A, B, C)\r\nChave candidata: A\r\nDependências:\r\nA → B\r\nB → C\r\n\r\n\r\nNão existe dependência parcial da chave A, pois ela tem um único atributo.\r\nA relação pode satisfazer 2FN.\r\nMas:\r\nB → C\r\nviola 3FN se B não for superchave e C for não primo.\r\n\r\n\r\n65. Exemplo resolvido 3 — 3FN formal\r\nR(A, B, C)\r\nChaves candidatas: AB e AC\r\nDependência:\r\nB → C\r\n\r\n\r\nAtributos A, B e C são primos, pois todos participam de alguma chave candidata.\r\nB não é superchave, mas C é primo.\r\nA dependência pode ser compatível com 3FN.\r\nEla não é compatível com BCNF se B não for superchave.\r\n\r\n\r\n66. Exemplo resolvido 4 — fechamento\r\nR(A, B, C, D, E)\r\nF:\r\nA → BC\r\nC → D\r\nD → E\r\n\r\n\r\nA+:\r\ncomeça {A}\r\nA → BC: {A,B,C}\r\nC → D: {A,B,C,D}\r\nD → E: {A,B,C,D,E}\r\n\r\n\r\nLogo, A é superchave.\r\nSe nenhum subconjunto próprio de A existe além do vazio e o vazio não determina R, A é chave candidata.\r\n\r\n\r\n67. Exemplo resolvido 5 — decomposição\r\nR(Pedido, Cliente, ClienteNome)\r\nDependências:\r\nPedido → Cliente\r\nCliente → ClienteNome\r\n\r\n\r\nPedido é chave.\r\nA relação viola 3FN por Cliente → ClienteNome.\r\n\r\n\r\nDecomposição:\r\nCLIENTE(Cliente, ClienteNome)\r\nPEDIDO(Pedido, Cliente)\r\n\r\n\r\nAgora o nome do cliente não precisa ser repetido em cada pedido.\r\n\r\n\r\n68. Exemplo resolvido 6 — surrogate key\r\nR(id, produto_id, produto_nome, quantidade)\r\nPK: id\r\nDependência:\r\nproduto_id → produto_nome\r\n\r\n\r\nSe produto_id não é superchave e produto_nome não é primo:\r\na presença de id como chave primária não impede violação de 3FN.\r\nA dependência semântica continua existindo.\r\n\r\n\r\n69. Como as bancas são tratadas nesta aula\r\nEvidência documental confirmada:\r\n— Cebraspe/CPNUJE cobra normalização de dados nos Cargos 17 e 21;\r\n— FCC/TRT-2 traz formas normais em M13, como evidência histórica fora dos cargoIds ativos;\r\n— FCC/TRT-15 cobra formas normais no Analista de TI.\r\n\r\n\r\nNeste lote não foi incorporada questão real específica dessas provas com origem e gabarito auditados de ponta a ponta.\r\nPortanto:\r\n— não se afirma frequência;\r\n— não se afirma “pegadinha típica”;\r\n— não se atribui preferência estatística a Cebraspe ou FCC.\r\nAs questões abaixo treinam diretamente o conteúdo documental, mas são inéditas.\r\n\r\n\r\n70. Pegadinhas e erros frequentes\r\nErro 1 — achar que normalizar é apenas dividir tabela.\r\nCorreção: a decomposição deve seguir dependências.\r\n\r\n\r\nErro 2 — inferir dependência pela amostra.\r\nCorreção: dependência é regra semântica.\r\n\r\n\r\nErro 3 — confundir superchave e chave candidata.\r\nCorreção: candidata é superchave mínima.\r\n\r\n\r\nErro 4 — achar que chave simples garante 3FN.\r\nCorreção: garante apenas que não há dependência parcial daquela chave; dependência transitiva pode permanecer.\r\n\r\n\r\nErro 5 — definir 3FN apenas por frase mnemônica.\r\nCorreção: use a condição formal quando necessário.\r\n\r\n\r\nErro 6 — pensar que 3FN e BCNF são equivalentes.\r\nCorreção: BCNF é mais restritiva.\r\n\r\n\r\nErro 7 — achar que surrogate key elimina dependências.\r\nCorreção: dependências do negócio continuam existindo.\r\n\r\n\r\nErro 8 — confundir junção sem perda com preservação de dependências.\r\nCorreção: são propriedades diferentes.\r\n\r\n\r\nErro 9 — acreditar que toda redundância é proibida.\r\nCorreção: desnormalização pode ser deliberada.\r\n\r\n\r\nErro 10 — vincular BCNF como texto literal de edital.\r\nCorreção: nesta aula, BCNF é extensão introdutória.\r\n\r\n\r\n71. Resumo\r\nNormalização organiza relações a partir das dependências entre atributos para reduzir redundância problemática e anomalias.\r\n\r\n\r\nDependência funcional:\r\nX → Y significa que valores iguais de X exigem valores iguais de Y em estados válidos.\r\n\r\n\r\n1FN:\r\nvalores tratados atomicamente no domínio; sem grupos repetitivos.\r\n\r\n\r\n2FN:\r\n1FN + nenhum atributo não primo depende parcialmente de chave candidata composta.\r\n\r\n\r\n3FN:\r\npara toda DF não trivial X → A:\r\nX é superchave ou A é primo.\r\n\r\n\r\nBCNF:\r\npara toda DF não trivial X → Y:\r\nX é superchave.\r\n\r\n\r\nDecomposição boa deve considerar:\r\n— junção sem perda;\r\n— preservação de dependências.\r\n\r\n\r\n72. Revisão rápida\r\n1. Redundância pode gerar inconsistência.\r\n2. Anomalias: inserção, atualização e exclusão.\r\n3. X → Y é dependência funcional.\r\n4. X é determinante.\r\n5. Dependência não se prova por coincidência de linhas.\r\n6. Superchave determina todos os atributos.\r\n7. Chave candidata é superchave mínima.\r\n8. Primo participa de alguma chave candidata.\r\n9. 1FN combate grupos repetitivos/múltiplos valores estruturais.\r\n10. 2FN combate dependências parciais de atributos não primos.\r\n11. Chave simples não sofre dependência parcial por subconjunto próprio não vazio.\r\n12. 3FN deve ser entendida pela definição formal.\r\n13. BCNF exige determinante superchave.\r\n14. BCNF é mais forte que 3FN.\r\n15. Junção sem perda evita perda e tuplas espúrias.\r\n16. Preservação de dependências é outro critério.\r\n17. Surrogate key não normaliza sozinha.\r\n18. Desnormalização pode ser intencional.\r\n19. BCNF é extensão introdutória neste ID.\r\n20. TRF3/2023: Técnico Informática 9.2 e Analista Informática 4.2 vinculados a este mesmo núcleo, após conferência documental C2/D2.\r\n\r\n\r\n73. Flashcards\r\nF-BD-005-01. Frente: Normalização. Verso: organização de relações segundo dependências para reduzir redundância problemática e anomalias.\r\nF-BD-005-02. Frente: Anomalia de atualização. Verso: necessidade de alterar o mesmo fato em várias linhas, com risco de inconsistência.\r\nF-BD-005-03. Frente: Anomalia de inserção. Verso: impossibilidade de registrar um fato sem outro fato artificial.\r\nF-BD-005-04. Frente: Anomalia de exclusão. Verso: apagar um fato e perder outro acidentalmente.\r\nF-BD-005-05. Frente: X → Y. Verso: X determina funcionalmente Y.\r\nF-BD-005-06. Frente: Determinante. Verso: lado esquerdo da dependência funcional.\r\nF-BD-005-07. Frente: DF trivial. Verso: Y ⊆ X.\r\nF-BD-005-08. Frente: Superchave. Verso: conjunto que determina todos os atributos.\r\nF-BD-005-09. Frente: Chave candidata. Verso: superchave mínima.\r\nF-BD-005-10. Frente: Atributo primo. Verso: pertence a pelo menos uma chave candidata.\r\nF-BD-005-11. Frente: 1FN. Verso: valores atômicos no domínio e ausência de grupos repetitivos.\r\nF-BD-005-12. Frente: Dependência parcial. Verso: dependência de parte própria de chave candidata composta.\r\nF-BD-005-13. Frente: 2FN. Verso: 1FN e ausência de dependência parcial de atributo não primo em chave candidata.\r\nF-BD-005-14. Frente: 3FN. Verso: em toda DF não trivial X → A, X é superchave ou A é primo.\r\nF-BD-005-15. Frente: BCNF. Verso: em toda DF não trivial, o determinante é superchave.\r\nF-BD-005-16. Frente: BCNF x 3FN. Verso: BCNF é mais restritiva.\r\nF-BD-005-17. Frente: Lossless join. Verso: decomposição que permite reconstruir exatamente a relação sem tuplas espúrias.\r\nF-BD-005-18. Frente: Preservação de dependências. Verso: dependências podem ser garantidas diretamente nas relações decompostas.\r\nF-BD-005-19. Frente: Surrogate key. Verso: não elimina dependências semânticas automaticamente.\r\nF-BD-005-20. Frente: quais vínculos TRF3/2023 de normalização foram comprovados? Verso: Técnico Informática item 9.2 e Analista Informática item 4.2, ambos atendidos por BD-005 compartilhado.\r\n\r\n\r\n74. QUESTÕES INÉDITAS — ESTILO DE CONCURSO\r\n\n\nAs questões autorais deste núcleo estão disponíveis na prática interativa. O gabarito e o comentário aparecem somente após o registro de uma tentativa.\n\n\r\n\r\n77. Treino guiado\r\n1. Explique com suas palavras uma anomalia de atualização.\r\n2. Crie um exemplo de anomalia de inserção.\r\n3. Dê uma DF semântica e uma coincidência de dados que não deveria ser tratada como DF.\r\n4. Em R(A,B,C,D), com A→B, B→C, AC→D, calcule A+.\r\n5. Explique superchave x chave candidata.\r\n6. Crie uma relação que viole 1FN por grupo repetitivo.\r\n7. Crie uma relação com chave composta e dependência parcial.\r\n8. Explique por que chave simples não garante 3FN.\r\n9. Escreva a definição formal de 3FN.\r\n10. Escreva a definição de BCNF.\r\n11. Dê um exemplo de atributo primo.\r\n12. Explique lossless join.\r\n13. Explique preservação de dependências.\r\n14. Mostre por que surrogate key não normaliza sozinha.\r\n15. Compare normalização e desnormalização.\r\n\n\nAs respostas esperadas do treino guiado são material de autocorreção e permanecem no documento editorial de origem.\n\n\r\n\r\n79. Caderno de erros\r\nRegistre:\r\n— relação analisada;\r\n— dependências funcionais;\r\n— chaves candidatas;\r\n— atributos primos;\r\n— atributo que causou a violação;\r\n— forma normal que falhou;\r\n— regra formal aplicável;\r\n— decomposição proposta;\r\n— se a junção é sem perda;\r\n— se as dependências foram preservadas;\r\n— erro conceitual cometido;\r\n— nova questão semelhante;\r\n— data de revisão.\r\n\r\n\r\nCategorias recomendadas:\r\nDF\r\nCHAVE\r\nFECHAMENTO\r\n1FN\r\n2FN\r\n3FN\r\nBCNF\r\nLOSSLESS\r\nPRESERVAÇÃO\r\nDESNORMALIZAÇÃO\r\nINFERÊNCIA\r\n\r\n\r\n80. Critério de domínio\r\nConsidere BD-005 suficientemente dominado quando conseguir:\r\n— explicar as três anomalias;\r\n— definir DF sem olhar;\r\n— calcular fechamentos simples;\r\n— encontrar chaves candidatas em exemplos pequenos;\r\n— identificar atributos primos;\r\n— reconhecer 1FN;\r\n— reconhecer dependência parcial;\r\n— aplicar 2FN;\r\n— aplicar a definição formal de 3FN;\r\n— explicar a diferença 3FN x BCNF;\r\n— avaliar uma decomposição simples;\r\n— distinguir junção sem perda e preservação de dependências;\r\n— justificar quando uma surrogate key não resolve o problema;\r\n— acertar pelo menos 17 das 20 questões inéditas.\r\n\r\n\r\n81. Encadeamento com a unidade BD-006 já produzida\r\nBD-006 — SQL DDL e definição do esquema: CREATE TABLE, tipos, PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, ALTER TABLE e DROP TABLE.\r\n\r\n\r\nObservação E5j: BD-006 DDL já foi produzido e concluído; este texto é encadeamento histórico, não uma ordem de recriação. Seguir o checkpoint canônico.\r\n\r\n\r\n82. Fontes\r\nTRT-15 — Edital nº 01/2024 — Analista Judiciário – Área Apoio Especializado – Especialidade Tecnologia da Informação — Banco de Dados: “Modelagem de dados. Modelo Entidade-Relacionamento. Formas normais.”\r\nTRT-2 — Edital nº 01/2025 — M13 — Analista Judiciário – Área Apoio Especializado – Especialidade Tecnologia da Informação — Banco de Dados: “Modelagem de dados. Modelo Entidade-Relacionamento. Formas normais.” (fonte histórica: cargoId trt2_aj_ti não está na matriz atual).\r\nTSE/Cebraspe — CPNUJE — Edital nº 1/2024 atualizado até a Retificação nº 15 — Cargo 17 — Analista Judiciário – TI — “Modelagem e normalização de dados”.\r\nTSE/Cebraspe — CPNUJE — Edital nº 1/2024 atualizado até a Retificação nº 15 — Cargo 21 — Técnico Judiciário – Programação de Sistemas — “Modelagem e normalização de dados” e “Normalização das estruturas de dados”.\r\nTRF3 / Fundação VUNESP — Edital nº 01/2023, Anexo II: Técnico Informática, item 9.2, e Analista Informática, item 4.2, “Normalização de dados: conceitos”. https://documento.vunesp.com.br/documento/stream/NDQwMDU0OA%3D%3D\r\nBD-002 — Modelo relacional: relações, tuplas, atributos, domínios, chaves e integridade.\r\nBD-003 — Modelo Entidade-Relacionamento.\r\nBD-004 — Mapeamento do Modelo Entidade-Relacionamento para o modelo relacional.\r\n\n\r\n\r\n83. Controle editorial\r\nBD-005 é núcleo formal compartilhado para cinco cargoIds ativos da matriz atual. Os vínculos antigos fora do catálogo são mantidos apenas como informação histórica; dois vínculos TRF3/2023 foram acrescentados na reconciliação E5:\r\n— tresp_aj_ti;\r\n— tresp_tj_programacao;\r\n— trt2_aj_ti: ID legado excluído de cargoIds[] ativos neste gate E5j; manter a citação documental TRT-2 somente para rastreabilidade histórica, sem contar na matriz corrente.\r\n— trt15_aj_ti.\r\n\r\n\r\nNão foram adicionados:\r\n— trt2_tj_ti, porque o programa R18 auditado não traz normalização/formas normais de modo expresso;\r\n— trt15_tj_ti, pelo mesmo motivo no programa específico do Técnico TI;\r\nVínculos confirmados E5: trf3_tj_ti → TRF3/2023, item 9.2; trf3_aj_ti → TRF3/2023, item 4.2. A comprovação é individual e não autoriza propagar o conteúdo a outros cargos por analogia.\r\n\r\n\r\nBCNF permanece extensão conceitual introdutória e não é apresentada como redação literal do edital.\r\nTodas as 20 questões são inéditas e foram completadas com alternativa E autoral no gate E5j; preservados os gabaritos originais.\r\nNenhum padrão estatístico de banca foi declarado.\r\nStatus: revisado (gate editorial E5j, sem execução em SGBD ou publicação).\r\n\r\n\r\nAUDITORIA E5j — GATE EDITORIAL BD-005\r\nLeitura integral de 83 seções sobre dependências funcionais, 1FN/2FN/3FN/BCNF, anomalias, fechamento e decomposição. Constatadas 20 QUESTÕES INÉDITAS com apenas A–D no legado; foram acrescentados 20 distratores E autorais e preservados os gabaritos existentes, após confronto individual de alternativas, 20 respostas objetivas e 20 comentários. Criados IDs Q-BD-005-01–20 e F-BD-005-01–20. A distinção conceitual das formas normais e os exemplos foram preservados, sem erro de gabarito encontrado. Saneado cargoId legado trt2_aj_ti fora da lista canônica atual; TRT-2 permanece apenas como fonte histórica, não editalRef nem cobertura formal ativa. cargoIds ativos [tresp_aj_ti,tresp_tj_programacao,trt15_aj_ti,trf3_tj_ti,trf3_aj_ti]. TRF3 Técnico 9.2 e Analista 4.2 confirmados no Anexo II. BCNF continua extensão pedagógica sem item literal. Atualizados status revisado e referência a BD-006 já concluído. Sem questões reais não verificadas ou publicação. A adição de alternativas E é edição AUTORAL de E5j e não reproduz prova oficial.\r\n\r\n\r\nADENDO E5j — VERIFICAÇÃO COMPLEMENTAR DE INTEGRIDADE\r\nReleitura posterior do gate já concluído: IDs Q-BD-005-01–20 e F-BD-005-01–20 distintos; 20/20 questões com A–E, gabaritos originais e comentários preservados. Ajustes pontuais demonstrados: em Q-BD-005-11, substituído distrator E redundante por distrator incorreto distinto; em Q-BD-005-20, retirada contagem inexata de editais da alternativa A; comentário Q-BD-005-17 condicionado corretamente à informação sobre atributo primo/chaves candidatas, sem presumir chave adicional. Gabaritos mantidos. cargoIds ativos: [tresp_aj_ti,tresp_tj_programacao,trt15_aj_ti,trf3_tj_ti,trf3_aj_ti]; referência TRT-2 histórica preservada. Status revisado, sem publicação nem homologação em SGBD. Próxima etapa canônica permanece E5k."
+      },
+      {
+        "id": "TI-BD-002-04",
+        "title": "TI-BD-002-04 — Recuperação ativa e referências pendentes",
+        "text": "Caderno de treino sem respostas\n\n﻿TI-BD-002 — CADERNO DE TREINO SEM RESPOSTAS\r\n\r\n\r\nVisão de estudo derivada do material canônico. Este caderno não cria novos IDs, não substitui os documentos BD-003, BD-004, BD-005 e TI-BD-002 e não reproduz questão histórica ou gabarito de banca. A classificação 'padrão INDEPAC' indica autoria didática e estilo de treino, NÃO aplicação pela banca.\r\n\r\n\r\nORDEM GUIADA PARA A LEITURA\r\n\r\n\r\nPrimeiro: BD-003 — Modelo Entidade-Relacionamento, teoria e exemplos: https://docs.google.com/document/d/1m546BeriDYmFBZMwxAEdCW9rhb7O5nuiaxZJ_zDTnj8/edit\r\n\r\n\r\nSegundo: BD-004 — Mapeamento do MER para o modelo relacional: https://docs.google.com/document/d/1e7QEdF-VAjOQvEBFWtQWp7Y3Ue2yvBmwF7Kqvnh8fiw/edit\r\n\r\n\r\nTerceiro: BD-005 — Normalização e dependências funcionais: https://docs.google.com/document/d/1cbBoKqjlJ5mPamZ7XOmIIb9Ws2exTXN9n03ihAlA7fU/edit\r\n\r\n\r\nQuarto: abrir a parte A abaixo; depois responder às questões autorais da parte B SEM consultar a correção. O complemento canônico, com explicações, diagrama e respostas, está em https://docs.google.com/document/d/1S9QOO4FTQSJ5cwYaAz99yxNao_iQOgPNounlk3MQIBo/edit . Consultá-lo após sua tentativa.\r\n\r\n\r\nPARTE A — RECUPERAÇÃO ATIVA, SEM RESOLUÇÕES\r\n\r\n\r\nTI-BD-002-01 — Diferencie entidade, ocorrência, atributo simples, composto, multivalorado e derivado. Explique participação mínima, máxima e cardinalidades 1:1, 1:N e N:M. Em que situações papéis de relacionamento devem ser nomeados?\r\n\r\n\r\nTI-BD-002-02 — Descreva o mapeamento de entidades, atributos, relacionamentos 1:1, 1:N e N:M, entidade fraca e atributo multivalorado para tabelas. Explique quando surge uma relação associativa e quais colunas precisam ser analisadas no esquema resultante.\r\n\r\n\r\nTI-BD-002-03 — Partindo de uma relação com chave candidata composta, explique dependências funcionais, determinante, anomalias e diferenças entre 1FN, 2FN, 3FN e BCNF. Defina junção sem perda e preservação de dependências, indicando por que são critérios distintos.\r\n\r\n\r\nTI-BD-002-04 — Explique a sequência conceitual MER → mapeamento → normalização e suas decisões. Diferencie cardinalidade do relacionamento e cardinalidade de uma relação. Registre dúvidas por ID do conteúdo, sem criar questões históricas fictícias.\r\n\r\n\r\nPARTE B — QUATRO QUESTÕES AUTORAIS COM ALTERNATIVAS\r\n\r\n\r\nResolva uma por vez. Antes da correção, registre ID e alternativa escolhida. Elas foram elaboradas pela Central de Estudos para treino no estilo INDEPAC e não são itens de prova anterior.\r\n\r\n\r\nQ-TI-BD-002-INDEPAC-001\r\nEm um Modelo Entidade-Relacionamento, um atributo que pode assumir diversos valores para uma única ocorrência de entidade é classificado como:\r\nAlternativa A. composto.\r\nAlternativa B. derivado.\r\nAlternativa C. multivalorado.\r\nAlternativa D. identificador.\r\n\r\n\r\nQ-TI-BD-002-INDEPAC-002\r\nNo mapeamento de um relacionamento muitos-para-muitos entre ALUNO e DISCIPLINA para o modelo relacional, a solução usual é:\r\nAlternativa A. inserir todas as disciplinas em uma única coluna de ALUNO.\r\nAlternativa B. criar uma relação associativa contendo referências a ALUNO e DISCIPLINA.\r\nAlternativa C. remover uma das entidades para transformar o relacionamento em 1:N.\r\nAlternativa D. duplicar toda a tabela DISCIPLINA para cada aluno.\r\n\r\n\r\nQ-TI-BD-002-INDEPAC-003\r\nUma relação está em 1FN e possui chave candidata composta por A e B. Um atributo não primo C depende apenas de A. Essa situação indica violação da:\r\nAlternativa A. 1FN.\r\nAlternativa B. 2FN.\r\nAlternativa C. 3FN apenas.\r\nAlternativa D. BCNF apenas.\r\n\r\n\r\nQ-TI-BD-002-INDEPAC-004\r\nConsidere uma relação em 2FN em que Código_Setor determina Nome_Setor, e uma chave de funcionário determina Código_Setor. Se Nome_Setor é atributo não primo, o problema descrito está associado principalmente a:\r\nAlternativa A. dependência transitiva e 3FN.\r\nAlternativa B. atributo multivalorado e 1FN.\r\nAlternativa C. ausência de chave estrangeira e 2FN.\r\nAlternativa D. relacionamento ternário e BCNF.\r\n\r\n\r\nPARTE C — REFERÊNCIAS HISTÓRICAS LOCALIZADAS, AINDA NÃO PONTUÁVEIS\r\n\r\n\r\nSão oito localizadores de itens atribuídos à Quadrix nos índices públicos. A biblioteca ainda exige cotejo individual de cargo e número impresso do caderno original com gabarito definitivo da banca, incluindo anuladas e retificações. NÃO são transcritos literalmente aqui e não entram em acertos, erros, revisão derivada nem simulado enquanto esse gate não estiver concluído.\r\n\r\n\r\nQREF-QUAD-149 / Q3274752 — CFBio 2025, Analista de Sistemas. Fonte indexada: https://www.qconcursos.com/questoes-de-concursos/provas/quadrix-2025-cfbio-analista-de-sistemas/questoes?discipline_ids%5B%5D=96\r\n\r\n\r\nQREF-QUAD-150 / Q3274754 — CFBio 2025, mesmo cargo e índice.\r\n\r\n\r\nQREF-QUAD-151 / Q3274663 — CFBio 2025, Analista de Desenvolvimento. Índice: https://www.qconcursos.com/questoes-de-concursos/provas/quadrix-2025-cfbio-analista-de-desenvolvimento/questoes?discipline_ids%5B%5D=96\r\n\r\n\r\nQREF-QUAD-152 / Q4300117 — SEDES-DF 2026, Especialista — Estatística. Índice: https://www.qconcursos.com/questoes-de-concursos/questoes/dd8de9c5-b0\r\n\r\n\r\nQREF-QUAD-153 / Q3623110 — CRM-ES 2025, Técnico de TI. Índice: https://www.qconcursos.com/questoes-de-concursos/provas/quadrix-2025-crm-es-tecnico-de-ti/questoes?page=3\r\n\r\n\r\nQREF-QUAD-154 / Q4146473 — CREF-11 2026, Analista de Suporte em TI. Índice: https://www.qconcursos.com/questoes-de-concursos/provas/quadrix-2026-cref-11-regiao-ms-mt-analista-de-suporte-em-tecnologia-da-informacao/questoes?page=5\r\n\r\n\r\nQREF-QUAD-155 / Q3784755 — CRA-SP 2025, Analista II — Desenvolvimento de Sistemas. Índice: https://www.qconcursos.com/questoes-de-concursos/provas/quadrix-2025-cra-sp-analista-ii-desenvolvimento-de-sistemas/questoes?discipline_ids%5B%5D=96\r\n\r\n\r\nQREF-QUAD-156 / Q1976023 — PRODAM-AM 2022, Analista de TI — Desenvolvimento de Sistemas. Índice: https://www.qconcursos.com/questoes-de-concursos/questoes/234748b4-51\r\n\r\n\r\nPARTE D — CORREÇÃO POSTERIOR E CONTINUIDADE\r\n\r\n\r\nDepois de registrar as próprias respostas, consultar o complemento TI-BD-002, seção 6, que contém os comentários dos quatro exercícios autorais: https://docs.google.com/document/d/1S9QOO4FTQSJ5cwYaAz99yxNao_iQOgPNounlk3MQIBo/edit . Para os localizadores de provas, a avaliação no complemento é meramente didática e provisória, NÃO resultado definitivo oficial validado.\r\n\r\n\r\nSomente a conclusão real pelo estudante pode acionar D0; D1, D7 e D21 derivam dessa data. Um documento aberto ou uma resposta ainda não entregue não comprova progresso. O destino seguinte da trilha, depois desta etapa realmente concluída, é TI-BD-003 SQL, sem reimportação do material já publicado. Nenhuma atividade foi registrada como executada pela criação desta vista.\r\n\r\n\r\nESTADO EDITORIAL\r\n\r\n\r\nPUB-0009 aguarda validação Work. A matriz recebe status 'produzido' porque esta teoria já existe, mas isso não significa publicado no site. A publicação deve reaproveitar BD-003, BD-004, BD-005 e o complemento, preservando IDs e a imagem original.\n\n\nLocalizadores Quadrix QREF-QUAD-149 a QREF-QUAD-156: pendentes de confronto com o caderno original e gabarito definitivo; não são questões avaliativas e não geram pontuação.\n"
+      }
+    ]
+  },
+  "media": [
+    {
+      "id": "TI-BD-002-IMG-001",
+      "contentId": "TI-BD-002",
+      "type": "imagem",
+      "title": "Modelagem e normalização — do domínio ao esquema consistente",
+      "caption": "Sequência conceitual do MER ao modelo relacional e à normalização. Os lembretes de 2FN e 3FN são atalhos; consulte as definições formais desenvolvidas nesta aula.",
+      "alt": "Diagrama da sequência MER/DER, mapeamento relacional e formas normais, com lembretes sobre cardinalidade, participação, relações associativas e dependências parciais e transitivas.",
+      "file": "media/TI-BD-002-IMG-001.png",
+      "verifiedAt": "2026-09-28",
+      "original": true
+    },
+    {
+      "id": "TI-BD-002-YT-001",
+      "contentId": "TI-BD-002",
+      "type": "YouTube",
+      "title": "Curso Completo de Modelagem de Bancos de Dados com Projeto Prático",
+      "url": "https://www.youtube.com/watch?v=Kd1yqYjylCg",
+      "channel": "Bóson Treinamentos",
+      "caption": "Apoio aos tópicos de modelagem conceitual e normalização.",
+      "alt": "Não se aplica",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "id": "TI-BD-002-YT-002",
+      "contentId": "TI-BD-002",
+      "type": "YouTube",
+      "title": "Modelagem de Dados — Modelo Entidade-Relacionamento e Diagrama ER",
+      "url": "https://www.youtube.com/watch?v=W2Z1STnjNJo",
+      "channel": "Bóson Treinamentos",
+      "caption": "Apoio introdutório sobre MER/DER, entidades e relacionamentos.",
+      "alt": "Não se aplica",
+      "verifiedAt": "2026-09-28"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-BD-003-01",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "No Modelo Entidade-Relacionamento, uma entidade é melhor definida como:",
+      "options": [
+        {
+          "id": "A",
+          "text": "um comando SQL obrigatório."
+        },
+        {
+          "id": "B",
+          "text": "algo relevante e identificável no domínio modelado."
+        },
+        {
+          "id": "C",
+          "text": "qualquer coluna física de uma tabela."
+        },
+        {
+          "id": "D",
+          "text": "somente uma pessoa física."
+        },
+        {
+          "id": "E",
+          "text": "um índice criado pelo SGBD."
+        }
+      ],
+      "answer": "B",
+      "comment": "Entidade representa algo identificável e relevante no domínio, não uma construção SQL específica.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-02",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Um atributo ENDERECO formado por logradouro, número, bairro e CEP é, conceitualmente:",
+      "options": [
+        {
+          "id": "A",
+          "text": "derivado."
+        },
+        {
+          "id": "B",
+          "text": "recursivo."
+        },
+        {
+          "id": "C",
+          "text": "composto."
+        },
+        {
+          "id": "D",
+          "text": "fraco."
+        },
+        {
+          "id": "E",
+          "text": "ternário."
+        }
+      ],
+      "answer": "C",
+      "comment": "ENDERECO foi decomposto em componentes com significado próprio; portanto é composto.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-03",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Se uma pessoa pode possuir vários telefones, TELEFONE pode ser inicialmente modelado como atributo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "multivalorado."
+        },
+        {
+          "id": "B",
+          "text": "derivado obrigatoriamente."
+        },
+        {
+          "id": "C",
+          "text": "identificador fraco."
+        },
+        {
+          "id": "D",
+          "text": "ternário."
+        },
+        {
+          "id": "E",
+          "text": "de relacionamento recursivo."
+        }
+      ],
+      "answer": "A",
+      "comment": "Vários valores de telefone para uma mesma pessoa caracterizam multivaloração no nível conceitual.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-04",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "O atributo idade, quando calculado a partir de data_nascimento e uma data de referência, é exemplo de atributo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "composto."
+        },
+        {
+          "id": "B",
+          "text": "derivado."
+        },
+        {
+          "id": "C",
+          "text": "multivalorado."
+        },
+        {
+          "id": "D",
+          "text": "identificador parcial."
+        },
+        {
+          "id": "E",
+          "text": "associativo."
+        }
+      ],
+      "answer": "B",
+      "comment": "A idade pode ser calculada a partir de outros dados e de uma data de referência.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-05",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "No relacionamento UNIDADE possui SERVIDOR, uma unidade pode possuir muitos servidores e cada servidor pertence a no máximo uma unidade. A cardinalidade máxima é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1."
+        },
+        {
+          "id": "B",
+          "text": "1:N."
+        },
+        {
+          "id": "C",
+          "text": "N:M."
+        },
+        {
+          "id": "D",
+          "text": "ternária."
+        },
+        {
+          "id": "E",
+          "text": "recursiva."
+        }
+      ],
+      "answer": "B",
+      "comment": "Uma unidade pode se relacionar com muitos servidores; cada servidor, no máximo, com uma unidade.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-06",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "A cardinalidade (0,1) indica:",
+      "options": [
+        {
+          "id": "A",
+          "text": "exatamente uma ocorrência."
+        },
+        {
+          "id": "B",
+          "text": "uma ou muitas ocorrências."
+        },
+        {
+          "id": "C",
+          "text": "zero ou uma ocorrência."
+        },
+        {
+          "id": "D",
+          "text": "zero ou muitas ocorrências."
+        },
+        {
+          "id": "E",
+          "text": "exatamente zero ocorrências."
+        }
+      ],
+      "answer": "C",
+      "comment": "O mínimo 0 indica opcionalidade e o máximo 1 limita a uma ocorrência.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-07",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "A cardinalidade (1,N) indica:",
+      "options": [
+        {
+          "id": "A",
+          "text": "participação obrigatória e máximo muitos."
+        },
+        {
+          "id": "B",
+          "text": "participação opcional e máximo um."
+        },
+        {
+          "id": "C",
+          "text": "exatamente uma ocorrência."
+        },
+        {
+          "id": "D",
+          "text": "nenhuma participação."
+        },
+        {
+          "id": "E",
+          "text": "relacionamento necessariamente ternário."
+        }
+      ],
+      "answer": "A",
+      "comment": "Mínimo 1 exige participação; máximo N admite multiplicidade.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-08",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Sobre cardinalidade máxima e participação mínima, assinale a correta:",
+      "options": [
+        {
+          "id": "A",
+          "text": "são sempre a mesma restrição."
+        },
+        {
+          "id": "B",
+          "text": "“muitos” implica participação obrigatória."
+        },
+        {
+          "id": "C",
+          "text": "“um” implica participação opcional."
+        },
+        {
+          "id": "D",
+          "text": "devem ser analisadas separadamente."
+        },
+        {
+          "id": "E",
+          "text": "somente existem em SQL."
+        }
+      ],
+      "answer": "D",
+      "comment": "Máximo e mínimo respondem a perguntas diferentes e devem ser interpretados separadamente.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-09",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Um relacionamento SERVIDOR supervisiona SERVIDOR é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "binário entre dois tipos diferentes."
+        },
+        {
+          "id": "B",
+          "text": "recursivo, com papéis distintos para o mesmo tipo."
+        },
+        {
+          "id": "C",
+          "text": "necessariamente ternário."
+        },
+        {
+          "id": "D",
+          "text": "atributo composto."
+        },
+        {
+          "id": "E",
+          "text": "entidade fraca."
+        }
+      ],
+      "answer": "B",
+      "comment": "O mesmo tipo SERVIDOR aparece duas vezes, exercendo os papéis supervisor e supervisionado.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-10",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Sobre entidade fraca, é correto afirmar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é qualquer entidade que tenha um relacionamento."
+        },
+        {
+          "id": "B",
+          "text": "é qualquer entidade que possua chave estrangeira em SQL."
+        },
+        {
+          "id": "C",
+          "text": "sua identificação conceitual depende da entidade proprietária, na abordagem clássica."
+        },
+        {
+          "id": "D",
+          "text": "nunca possui atributos."
+        },
+        {
+          "id": "E",
+          "text": "não pode participar de relacionamentos."
+        }
+      ],
+      "answer": "C",
+      "comment": "Na abordagem clássica, a entidade fraca depende da proprietária para completar sua identidade.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-11",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Um relacionamento N:M:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é inválido no modelo conceitual."
+        },
+        {
+          "id": "B",
+          "text": "só existe em bancos não relacionais."
+        },
+        {
+          "id": "C",
+          "text": "pode representar corretamente uma regra de negócio e será mapeado depois para o modelo relacional."
+        },
+        {
+          "id": "D",
+          "text": "deve ser convertido imediatamente em SQL nesta aula."
+        },
+        {
+          "id": "E",
+          "text": "significa que todos os participantes são obrigatórios."
+        }
+      ],
+      "answer": "C",
+      "comment": "N:M é perfeitamente válido no modelo conceitual; o problema de implementação será resolvido no mapeamento.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-12",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Em um relacionamento ternário:",
+      "options": [
+        {
+          "id": "A",
+          "text": "participam exatamente três tipos de entidade."
+        },
+        {
+          "id": "B",
+          "text": "participam exatamente três atributos."
+        },
+        {
+          "id": "C",
+          "text": "a cardinalidade é obrigatoriamente 1:1:1."
+        },
+        {
+          "id": "D",
+          "text": "sempre pode ser substituído por três binários sem perda de informação."
+        },
+        {
+          "id": "E",
+          "text": "nenhuma entidade possui papel."
+        }
+      ],
+      "answer": "A",
+      "comment": "O grau ternário significa participação simultânea de três tipos de entidade.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-13",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Qual alternativa distingue corretamente atributo composto de multivalorado?",
+      "options": [
+        {
+          "id": "A",
+          "text": "composto admite vários valores; multivalorado possui partes."
+        },
+        {
+          "id": "B",
+          "text": "ambos são sinônimos."
+        },
+        {
+          "id": "C",
+          "text": "composto possui componentes significativos; multivalorado admite vários valores para a ocorrência."
+        },
+        {
+          "id": "D",
+          "text": "composto é relacionamento; multivalorado é entidade."
+        },
+        {
+          "id": "E",
+          "text": "ambos existem somente no modelo físico."
+        }
+      ],
+      "answer": "C",
+      "comment": "Composição trata de partes internas; multivaloração trata de quantidade de valores.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-14",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Sobre notações do DER:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chen e crow’s foot são o próprio MER e não podem representar conceitos semelhantes."
+        },
+        {
+          "id": "B",
+          "text": "toda ferramenta usa símbolos absolutamente idênticos."
+        },
+        {
+          "id": "C",
+          "text": "a semântica das regras de negócio é mais importante que decorar a aparência de uma ferramenta."
+        },
+        {
+          "id": "D",
+          "text": "cardinalidade só pode ser mostrada em Chen."
+        },
+        {
+          "id": "E",
+          "text": "crow’s foot não representa multiplicidade."
+        }
+      ],
+      "answer": "C",
+      "comment": "Notações variam. A regra de negócio representada é o núcleo do modelo.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-003-15",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "PROCESSO e PARTE têm relacionamento N:M e o vínculo precisa registrar papel_da_parte e data_inicio. Uma alternativa conceitual adequada é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "apagar o relacionamento."
+        },
+        {
+          "id": "B",
+          "text": "transformar papel_da_parte em atributo exclusivo de PROCESSO."
+        },
+        {
+          "id": "C",
+          "text": "usar uma entidade associativa para representar a participação."
+        },
+        {
+          "id": "D",
+          "text": "obrigar a cardinalidade a ser 1:1."
+        },
+        {
+          "id": "E",
+          "text": "eliminar PARTE do modelo."
+        }
+      ],
+      "answer": "C",
+      "comment": "Quando a própria associação possui dados relevantes, a entidade associativa pode representá-la conceitualmente.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-01",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Em um relacionamento 1:N entre DEPARTAMENTO e SERVIDOR, em que cada servidor pertence a um departamento, a FK deve normalmente ficar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "em DEPARTAMENTO apontando para SERVIDOR."
+        },
+        {
+          "id": "B",
+          "text": "em SERVIDOR apontando para DEPARTAMENTO."
+        },
+        {
+          "id": "C",
+          "text": "em uma tabela obrigatória N_M."
+        },
+        {
+          "id": "D",
+          "text": "em ambas as tabelas simultaneamente."
+        },
+        {
+          "id": "E",
+          "text": "fora do banco."
+        }
+      ],
+      "answer": "B",
+      "comment": "Em 1:N, a FK fica normalmente no lado N.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-02",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Um relacionamento N:M entre ALUNO e DISCIPLINA é normalmente mapeado por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "uma única FK em ALUNO."
+        },
+        {
+          "id": "B",
+          "text": "uma única FK em DISCIPLINA."
+        },
+        {
+          "id": "C",
+          "text": "uma relação associativa com FKs para ALUNO e DISCIPLINA."
+        },
+        {
+          "id": "D",
+          "text": "uma coluna texto com lista de disciplinas."
+        },
+        {
+          "id": "E",
+          "text": "duas colunas multivaloradas."
+        }
+      ],
+      "answer": "C",
+      "comment": "N:M exige relação associativa para representar cada vínculo.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-03",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Em um relacionamento 1:1, uma estratégia típica para impedir que várias linhas apontem para a mesma ocorrência é usar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "CHECK apenas."
+        },
+        {
+          "id": "B",
+          "text": "UNIQUE sobre a FK."
+        },
+        {
+          "id": "C",
+          "text": "índice não único obrigatoriamente."
+        },
+        {
+          "id": "D",
+          "text": "atributo multivalorado."
+        },
+        {
+          "id": "E",
+          "text": "somente DEFAULT."
+        }
+      ],
+      "answer": "B",
+      "comment": "UNIQUE sobre a FK impede repetição da mesma referência e ajuda a representar máximo 1.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-04",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Atributo multivalorado TELEFONE de PESSOA é normalmente mapeado como:",
+      "options": [
+        {
+          "id": "A",
+          "text": "telefone1, telefone2, telefone3 em PESSOA obrigatoriamente."
+        },
+        {
+          "id": "B",
+          "text": "lista separada por vírgulas."
+        },
+        {
+          "id": "C",
+          "text": "relação PESSOA_TELEFONE ligada por FK."
+        },
+        {
+          "id": "D",
+          "text": "chave estrangeira de PESSOA para TELEFONE sem relação própria."
+        },
+        {
+          "id": "E",
+          "text": "atributo derivado."
+        }
+      ],
+      "answer": "C",
+      "comment": "A relação própria evita lista ou colunas repetidas e preserva estrutura relacional.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-05",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Em entidade fraca, é comum que a chave primária seja composta por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "apenas um valor aleatório sem qualquer restrição lógica."
+        },
+        {
+          "id": "B",
+          "text": "chave do proprietário + identificador parcial."
+        },
+        {
+          "id": "C",
+          "text": "apenas a FK do proprietário, sempre."
+        },
+        {
+          "id": "D",
+          "text": "somente um atributo derivado."
+        },
+        {
+          "id": "E",
+          "text": "duas FKs sem semântica."
+        }
+      ],
+      "answer": "B",
+      "comment": "A entidade fraca depende da chave do proprietário somada ao identificador parcial.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-06",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Sobre surrogate key, assinale a correta:",
+      "options": [
+        {
+          "id": "A",
+          "text": "elimina toda necessidade de restrição UNIQUE sobre atributos naturais."
+        },
+        {
+          "id": "B",
+          "text": "nunca pode ser usada."
+        },
+        {
+          "id": "C",
+          "text": "é um identificador artificial e não elimina automaticamente regras de unicidade natural."
+        },
+        {
+          "id": "D",
+          "text": "é sinônimo de FK."
+        },
+        {
+          "id": "E",
+          "text": "só existe em banco NoSQL."
+        }
+      ],
+      "answer": "C",
+      "comment": "Surrogate key é artificial; regras naturais de unicidade continuam relevantes.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-07",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Se todo SERVIDOR precisa obrigatoriamente possuir UNIDADE e a FK está em SERVIDOR, uma restrição típica é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "NULL obrigatório."
+        },
+        {
+          "id": "B",
+          "text": "NOT NULL na FK."
+        },
+        {
+          "id": "C",
+          "text": "DROP TABLE."
+        },
+        {
+          "id": "D",
+          "text": "UNIQUE em todas as colunas."
+        },
+        {
+          "id": "E",
+          "text": "remover a FK."
+        }
+      ],
+      "answer": "B",
+      "comment": "NOT NULL impede ausência da FK quando a participação é obrigatória.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-08",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Em uma relação associativa de N:M, atributos do relacionamento devem ficar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "sempre em uma das entidades principais."
+        },
+        {
+          "id": "B",
+          "text": "na relação associativa."
+        },
+        {
+          "id": "C",
+          "text": "fora do esquema."
+        },
+        {
+          "id": "D",
+          "text": "somente em índice."
+        },
+        {
+          "id": "E",
+          "text": "exclusivamente em view."
+        }
+      ],
+      "answer": "B",
+      "comment": "O atributo descreve o vínculo, logo pertence à estrutura que representa o vínculo.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-09",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Um relacionamento recursivo 1:N SERVIDOR supervisiona SERVIDOR pode ser mapeado por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "FK autorreferente em SERVIDOR."
+        },
+        {
+          "id": "B",
+          "text": "remoção da entidade SERVIDOR."
+        },
+        {
+          "id": "C",
+          "text": "duas tabelas SERVIDOR idênticas sem FK."
+        },
+        {
+          "id": "D",
+          "text": "coluna multivalorada."
+        },
+        {
+          "id": "E",
+          "text": "ausência de chave."
+        }
+      ],
+      "answer": "A",
+      "comment": "A própria tabela SERVIDOR pode conter matricula_supervisor referenciando SERVIDOR.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-10",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Sobre mapeamento e normalização:",
+      "options": [
+        {
+          "id": "A",
+          "text": "são sinônimos."
+        },
+        {
+          "id": "B",
+          "text": "normalização sempre ocorre antes do MER."
+        },
+        {
+          "id": "C",
+          "text": "mapeamento traduz o modelo conceitual; normalização reorganiza relações com base em dependências."
+        },
+        {
+          "id": "D",
+          "text": "mapeamento só existe em NoSQL."
+        },
+        {
+          "id": "E",
+          "text": "normalização substitui a modelagem."
+        }
+      ],
+      "answer": "C",
+      "comment": "São etapas relacionadas, mas distintas.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-11",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "No mapeamento de atributo composto ENDERECO, é comum:",
+      "options": [
+        {
+          "id": "A",
+          "text": "descartar todos os componentes."
+        },
+        {
+          "id": "B",
+          "text": "decompor em logradouro, número, cidade etc., conforme necessidade."
+        },
+        {
+          "id": "C",
+          "text": "transformá-lo obrigatoriamente em tabela independente."
+        },
+        {
+          "id": "D",
+          "text": "transformá-lo em FK."
+        },
+        {
+          "id": "E",
+          "text": "torná-lo chave primária sempre."
+        }
+      ],
+      "answer": "B",
+      "comment": "Componentes relevantes tornam-se atributos simples da relação.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-12",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "A cardinalidade máxima 1 em uma FK pode ser reforçada tipicamente por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "UNIQUE."
+        },
+        {
+          "id": "B",
+          "text": "DEFAULT."
+        },
+        {
+          "id": "C",
+          "text": "CASCADE."
+        },
+        {
+          "id": "D",
+          "text": "NULL."
+        },
+        {
+          "id": "E",
+          "text": "VIEW."
+        }
+      ],
+      "answer": "A",
+      "comment": "UNIQUE limita a FK a uma ocorrência por valor referenciado.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-13",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "A integridade referencial de uma FK busca impedir:",
+      "options": [
+        {
+          "id": "A",
+          "text": "qualquer valor duplicado em coluna comum."
+        },
+        {
+          "id": "B",
+          "text": "que uma linha referencie uma ocorrência inexistente na relação-alvo."
+        },
+        {
+          "id": "C",
+          "text": "uso de chave composta."
+        },
+        {
+          "id": "D",
+          "text": "existência de NULL em qualquer coluna."
+        },
+        {
+          "id": "E",
+          "text": "consulta sem índice."
+        }
+      ],
+      "answer": "B",
+      "comment": "A FK protege contra referências órfãs, conforme as regras definidas.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-14",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Um relacionamento ternário:",
+      "options": [
+        {
+          "id": "A",
+          "text": "sempre pode ser substituído por três binários sem perda semântica."
+        },
+        {
+          "id": "B",
+          "text": "normalmente pode originar relação própria com FKs para os três participantes."
+        },
+        {
+          "id": "C",
+          "text": "nunca possui atributos."
+        },
+        {
+          "id": "D",
+          "text": "sempre possui PK exatamente igual às três FKs."
+        },
+        {
+          "id": "E",
+          "text": "é proibido no modelo relacional."
+        }
+      ],
+      "answer": "B",
+      "comment": "Relação própria preserva a associação simultânea dos três participantes.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-15",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Se uma relação associativa usa surrogate key, a unicidade do par de FKs:",
+      "options": [
+        {
+          "id": "A",
+          "text": "torna-se irrelevante em todos os casos."
+        },
+        {
+          "id": "B",
+          "text": "pode precisar ser preservada com UNIQUE, conforme a regra."
+        },
+        {
+          "id": "C",
+          "text": "é automaticamente garantida pela surrogate key."
+        },
+        {
+          "id": "D",
+          "text": "deve ser removida."
+        },
+        {
+          "id": "E",
+          "text": "só pode ser verificada pela aplicação."
+        }
+      ],
+      "answer": "B",
+      "comment": "A surrogate key não impede duplicidade lógica do par; UNIQUE pode ser necessário.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-16",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Em um 1:1, as duas entidades:",
+      "options": [
+        {
+          "id": "A",
+          "text": "obrigatoriamente devem ser fundidas."
+        },
+        {
+          "id": "B",
+          "text": "nunca podem ser fundidas."
+        },
+        {
+          "id": "C",
+          "text": "podem permanecer separadas ou ser fundidas, conforme semântica e ciclo de vida."
+        },
+        {
+          "id": "D",
+          "text": "precisam virar N:M."
+        },
+        {
+          "id": "E",
+          "text": "não podem usar FK."
+        }
+      ],
+      "answer": "C",
+      "comment": "A decisão depende de semântica, opcionalidade, ciclo de vida e projeto.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-17",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Atributo derivado:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é obrigatoriamente persistido."
+        },
+        {
+          "id": "B",
+          "text": "jamais pode ser persistido."
+        },
+        {
+          "id": "C",
+          "text": "pode ser calculado e, conforme necessidade, materializado."
+        },
+        {
+          "id": "D",
+          "text": "sempre é PK."
+        },
+        {
+          "id": "E",
+          "text": "sempre é FK."
+        }
+      ],
+      "answer": "C",
+      "comment": "Derivação não determina sozinha a estratégia física.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-18",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Em um N:M PROCESSO–PARTE com atributo papel_da_parte:",
+      "options": [
+        {
+          "id": "A",
+          "text": "papel_da_parte deve sempre ficar em PROCESSO."
+        },
+        {
+          "id": "B",
+          "text": "papel_da_parte deve sempre ficar em PARTE."
+        },
+        {
+          "id": "C",
+          "text": "papel_da_parte pertence ao vínculo e deve ser mapeado na estrutura associativa."
+        },
+        {
+          "id": "D",
+          "text": "o atributo deve ser descartado."
+        },
+        {
+          "id": "E",
+          "text": "N:M não permite atributos."
+        }
+      ],
+      "answer": "C",
+      "comment": "O papel depende da participação daquela parte naquele processo.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-19",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "Se o relacionamento 1:N possui histórico de múltiplas ocorrências ao longo do tempo, uma boa modelagem pode exigir:",
+      "options": [
+        {
+          "id": "A",
+          "text": "uma relação própria para o histórico."
+        },
+        {
+          "id": "B",
+          "text": "apagar a FK."
+        },
+        {
+          "id": "C",
+          "text": "armazenar tudo em texto livre."
+        },
+        {
+          "id": "D",
+          "text": "eliminar datas."
+        },
+        {
+          "id": "E",
+          "text": "tornar todas as colunas PK."
+        }
+      ],
+      "answer": "A",
+      "comment": "Relação histórica própria costuma representar múltiplas ocorrências temporais melhor que uma única FK atual.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-004-20",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "A chave de uma relação resultante de relacionamento ternário:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é sempre as três FKs."
+        },
+        {
+          "id": "B",
+          "text": "nunca pode incluir FKs."
+        },
+        {
+          "id": "C",
+          "text": "depende das cardinalidades e da regra de negócio."
+        },
+        {
+          "id": "D",
+          "text": "deve sempre ser um UUID sem UNIQUE adicional."
+        },
+        {
+          "id": "E",
+          "text": "não existe."
+        }
+      ],
+      "answer": "C",
+      "comment": "A chave deve representar a semântica e as cardinalidades reais.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-01",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "A principal finalidade da normalização é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "eliminar todas as chaves estrangeiras."
+        },
+        {
+          "id": "B",
+          "text": "organizar dependências e reduzir redundâncias problemáticas e anomalias."
+        },
+        {
+          "id": "C",
+          "text": "substituir SQL por modelo conceitual."
+        },
+        {
+          "id": "D",
+          "text": "garantir que toda consulta use apenas uma tabela."
+        },
+        {
+          "id": "E",
+          "text": "garantir que todas as colunas de qualquer tabela sejam NOT NULL."
+        }
+      ],
+      "answer": "B",
+      "comment": "normalização trata organização de dependências, redundâncias e anomalias.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-02",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Em uma dependência X → Y, X é chamado:",
+      "options": [
+        {
+          "id": "A",
+          "text": "atributo primo obrigatoriamente."
+        },
+        {
+          "id": "B",
+          "text": "determinante."
+        },
+        {
+          "id": "C",
+          "text": "chave estrangeira obrigatoriamente."
+        },
+        {
+          "id": "D",
+          "text": "domínio."
+        },
+        {
+          "id": "E",
+          "text": "um índice obrigatoriamente criado na implementação física."
+        }
+      ],
+      "answer": "B",
+      "comment": "X é o determinante.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-03",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Uma dependência X → Y é trivial quando:",
+      "options": [
+        {
+          "id": "A",
+          "text": "X é chave primária."
+        },
+        {
+          "id": "B",
+          "text": "Y contém X."
+        },
+        {
+          "id": "C",
+          "text": "Y ⊆ X."
+        },
+        {
+          "id": "D",
+          "text": "X e Y são disjuntos."
+        },
+        {
+          "id": "E",
+          "text": "X não contém nenhum atributo."
+        }
+      ],
+      "answer": "C",
+      "comment": "a dependência é trivial quando o lado direito está contido no esquerdo.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-04",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Superchave é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "qualquer atributo numérico."
+        },
+        {
+          "id": "B",
+          "text": "conjunto de atributos capaz de determinar todos os atributos da relação."
+        },
+        {
+          "id": "C",
+          "text": "apenas a chave escolhida como PRIMARY KEY."
+        },
+        {
+          "id": "D",
+          "text": "toda chave estrangeira composta."
+        },
+        {
+          "id": "E",
+          "text": "somente um atributo de tipo numérico."
+        }
+      ],
+      "answer": "B",
+      "comment": "superchave determina todos os atributos.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-05",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Chave candidata é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "superchave mínima."
+        },
+        {
+          "id": "B",
+          "text": "qualquer superchave, mesmo com atributos redundantes."
+        },
+        {
+          "id": "C",
+          "text": "sinônimo obrigatório de chave primária."
+        },
+        {
+          "id": "D",
+          "text": "atributo não primo."
+        },
+        {
+          "id": "E",
+          "text": "qualquer atributo declarado NOT NULL."
+        }
+      ],
+      "answer": "A",
+      "comment": "chave candidata é superchave mínima.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-06",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Atributo primo é aquele que:",
+      "options": [
+        {
+          "id": "A",
+          "text": "não admite NULL."
+        },
+        {
+          "id": "B",
+          "text": "participa de pelo menos uma chave candidata."
+        },
+        {
+          "id": "C",
+          "text": "é sempre chave estrangeira."
+        },
+        {
+          "id": "D",
+          "text": "possui domínio numérico."
+        },
+        {
+          "id": "E",
+          "text": "integra necessariamente uma chave estrangeira."
+        }
+      ],
+      "answer": "B",
+      "comment": "atributo primo participa de pelo menos uma candidata.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-07",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Uma relação em 1FN:",
+      "options": [
+        {
+          "id": "A",
+          "text": "está automaticamente em BCNF."
+        },
+        {
+          "id": "B",
+          "text": "necessariamente possui chave simples."
+        },
+        {
+          "id": "C",
+          "text": "evita grupos repetitivos e trata valores como unidades do domínio."
+        },
+        {
+          "id": "D",
+          "text": "não pode conter chaves estrangeiras."
+        },
+        {
+          "id": "E",
+          "text": "exige que toda tabela tenha somente uma coluna."
+        }
+      ],
+      "answer": "C",
+      "comment": "1FN elimina grupos repetitivos e trabalha valores como unidades de domínio.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-08",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Considere R(A,B,C), chave candidata (A,B) e A → C, sendo C não primo. Há:",
+      "options": [
+        {
+          "id": "A",
+          "text": "dependência parcial."
+        },
+        {
+          "id": "B",
+          "text": "apenas dependência trivial."
+        },
+        {
+          "id": "C",
+          "text": "violação exclusiva de BCNF, mas não de 2FN."
+        },
+        {
+          "id": "D",
+          "text": "nenhuma dependência relevante."
+        },
+        {
+          "id": "E",
+          "text": "uma dependência irrelevante porque C não faz parte da chave."
+        }
+      ],
+      "answer": "A",
+      "comment": "C depende de apenas A, parte da chave composta AB.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-09",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Para estar em 2FN, uma relação deve:",
+      "options": [
+        {
+          "id": "A",
+          "text": "estar em 1FN e não ter dependência parcial de atributo não primo em chave candidata."
+        },
+        {
+          "id": "B",
+          "text": "ter apenas uma coluna como chave."
+        },
+        {
+          "id": "C",
+          "text": "eliminar todas as dependências funcionais."
+        },
+        {
+          "id": "D",
+          "text": "estar obrigatoriamente em BCNF."
+        },
+        {
+          "id": "E",
+          "text": "possuir sempre uma chave candidata com exatamente dois atributos."
+        }
+      ],
+      "answer": "A",
+      "comment": "essa é a condição essencial da 2FN.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-10",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Uma relação em 1FN com única chave candidata simples:",
+      "options": [
+        {
+          "id": "A",
+          "text": "pode violar 2FN por dependência de metade dessa chave."
+        },
+        {
+          "id": "B",
+          "text": "não sofre dependência parcial por subconjunto próprio não vazio dessa chave, mas pode violar 3FN."
+        },
+        {
+          "id": "C",
+          "text": "está necessariamente em 3FN."
+        },
+        {
+          "id": "D",
+          "text": "está necessariamente em BCNF."
+        },
+        {
+          "id": "E",
+          "text": "não pode apresentar dependências funcionais não triviais."
+        }
+      ],
+      "answer": "B",
+      "comment": "uma chave simples não possui parte própria não vazia para causar dependência parcial; 3FN ainda pode falhar.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-11",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Na definição formal de 3FN, para cada DF não trivial X → A:",
+      "options": [
+        {
+          "id": "A",
+          "text": "X precisa sempre ser chave primária."
+        },
+        {
+          "id": "B",
+          "text": "X deve ser superchave ou A deve ser primo."
+        },
+        {
+          "id": "C",
+          "text": "A deve ser não primo."
+        },
+        {
+          "id": "D",
+          "text": "X e A devem ter o mesmo domínio."
+        },
+        {
+          "id": "E",
+          "text": "X deve ser necessariamente uma chave estrangeira."
+        }
+      ],
+      "answer": "B",
+      "comment": "definição formal da 3FN.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-12",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "BCNF exige que:",
+      "options": [
+        {
+          "id": "A",
+          "text": "todo atributo seja primo."
+        },
+        {
+          "id": "B",
+          "text": "toda tabela tenha surrogate key."
+        },
+        {
+          "id": "C",
+          "text": "todo determinante de DF não trivial seja superchave."
+        },
+        {
+          "id": "D",
+          "text": "toda chave seja simples."
+        },
+        {
+          "id": "E",
+          "text": "todas as chaves candidatas sejam formadas por um só atributo."
+        }
+      ],
+      "answer": "C",
+      "comment": "BCNF exige determinante superchave em toda DF não trivial.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-13",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "É correto afirmar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "3FN implica BCNF em todos os casos."
+        },
+        {
+          "id": "B",
+          "text": "BCNF é menos restritiva que 2FN."
+        },
+        {
+          "id": "C",
+          "text": "BCNF é mais restritiva que 3FN."
+        },
+        {
+          "id": "D",
+          "text": "1FN implica 3FN."
+        },
+        {
+          "id": "E",
+          "text": "BCNF dispensa examinar determinantes de dependências funcionais."
+        }
+      ],
+      "answer": "C",
+      "comment": "BCNF é mais restritiva.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-14",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Junção sem perda significa que:",
+      "options": [
+        {
+          "id": "A",
+          "text": "nenhuma tabela possui NULL."
+        },
+        {
+          "id": "B",
+          "text": "a junção das relações decompostas reconstrói corretamente a relação original, sem tuplas espúrias."
+        },
+        {
+          "id": "C",
+          "text": "todas as consultas dispensam JOIN."
+        },
+        {
+          "id": "D",
+          "text": "todas as dependências ficam em uma única tabela."
+        },
+        {
+          "id": "E",
+          "text": "qualquer junção de tabelas do banco reconstrói corretamente a relação."
+        }
+      ],
+      "answer": "B",
+      "comment": "lossless join impede perda de informação e tuplas espúrias na reconstrução.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-15",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Preservação de dependências significa:",
+      "options": [
+        {
+          "id": "A",
+          "text": "poder verificar as dependências relevantes nas relações decompostas sem recompor tudo apenas para impor essas regras."
+        },
+        {
+          "id": "B",
+          "text": "impedir qualquer decomposição."
+        },
+        {
+          "id": "C",
+          "text": "manter todos os atributos na mesma relação."
+        },
+        {
+          "id": "D",
+          "text": "transformar toda dependência em chave estrangeira."
+        },
+        {
+          "id": "E",
+          "text": "desconsiderar dependências funcionais quando as tabelas já estão em 1FN."
+        }
+      ],
+      "answer": "A",
+      "comment": "preservação trata da possibilidade de impor dependências localmente após decomposição.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-16",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Adicionar uma surrogate key a uma relação:",
+      "options": [
+        {
+          "id": "A",
+          "text": "elimina automaticamente dependências transitivas."
+        },
+        {
+          "id": "B",
+          "text": "transforma automaticamente a relação em BCNF."
+        },
+        {
+          "id": "C",
+          "text": "não remove, por si só, dependências semânticas entre outros atributos."
+        },
+        {
+          "id": "D",
+          "text": "torna todos os atributos primos."
+        },
+        {
+          "id": "E",
+          "text": "elimina todos os fatos redundantes apenas ao renomear a coluna id."
+        }
+      ],
+      "answer": "C",
+      "comment": "a chave artificial não apaga regras do domínio.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-17",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Considere R(Pedido, Cliente, ClienteNome), com Pedido → Cliente e Cliente → ClienteNome. Se Pedido é chave e Cliente não é superchave, a dependência Cliente → ClienteNome:",
+      "options": [
+        {
+          "id": "A",
+          "text": "pode indicar violação de 3FN."
+        },
+        {
+          "id": "B",
+          "text": "é trivial."
+        },
+        {
+          "id": "C",
+          "text": "prova que Pedido não é chave."
+        },
+        {
+          "id": "D",
+          "text": "não tem efeito na normalização."
+        },
+        {
+          "id": "E",
+          "text": "é sempre trivial apenas porque Pedido é chave."
+        }
+      ],
+      "answer": "A",
+      "comment": "Cliente não é superchave; a dependência pode indicar violação da 3FN quando ClienteNome não é primo. Não se presume a existência de outras chaves candidatas não informadas no enunciado.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-18",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Sobre desnormalização:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é sempre um erro de projeto."
+        },
+        {
+          "id": "B",
+          "text": "pode ser deliberada por requisitos de desempenho ou análise, devendo ser controlada."
+        },
+        {
+          "id": "C",
+          "text": "significa remover todas as FKs."
+        },
+        {
+          "id": "D",
+          "text": "é sinônimo de 1FN."
+        },
+        {
+          "id": "E",
+          "text": "garante que as atualizações permaneçam consistentes sem controles adicionais."
+        }
+      ],
+      "answer": "B",
+      "comment": "desnormalização pode ser decisão consciente e mensurada.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-19",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Se uma relação satisfaz BCNF:",
+      "options": [
+        {
+          "id": "A",
+          "text": "necessariamente satisfaz 3FN."
+        },
+        {
+          "id": "B",
+          "text": "necessariamente viola 2FN."
+        },
+        {
+          "id": "C",
+          "text": "pode estar fora de 1FN."
+        },
+        {
+          "id": "D",
+          "text": "não possui dependências funcionais."
+        },
+        {
+          "id": "E",
+          "text": "não admite chaves candidatas compostas."
+        }
+      ],
+      "answer": "A",
+      "comment": "BCNF implica 3FN.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-BD-005-20",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Nesta aula, BCNF:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é tratada como exigência literal explícita de todos os editais vinculados."
+        },
+        {
+          "id": "B",
+          "text": "é extensão conceitual introdutória; os trechos auditados citam normalização/formas normais sem nomeá-la."
+        },
+        {
+          "id": "C",
+          "text": "substitui o estudo de 1FN, 2FN e 3FN."
+        },
+        {
+          "id": "D",
+          "text": "é vinculada ao TRT-2 Técnico TI."
+        },
+        {
+          "id": "E",
+          "text": "constitui subitem nominal autônomo 9.7 do Técnico TRF3/2023."
+        }
+      ],
+      "answer": "B",
+      "comment": "BCNF foi incluída como extensão conceitual, não como redação literal dos editais auditados.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-TI-BD-002-INDEPAC-001",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-01"
+      ],
+      "statement": "Em um Modelo Entidade-Relacionamento, um atributo que pode assumir diversos valores para uma única ocorrência de entidade é classificado como:",
+      "options": [
+        {
+          "id": "A",
+          "text": "composto."
+        },
+        {
+          "id": "B",
+          "text": "derivado."
+        },
+        {
+          "id": "C",
+          "text": "multivalorado."
+        },
+        {
+          "id": "D",
+          "text": "identificador."
+        }
+      ],
+      "answer": "C",
+      "comment": "Atributo multivalorado aceita múltiplos valores para uma ocorrência. Atributo composto é decomponível em componentes. Atributo derivado é calculável a partir de outros dados. Identificador distingue ocorrências.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-TI-BD-002-INDEPAC-002",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-02"
+      ],
+      "statement": "No mapeamento de um relacionamento muitos-para-muitos entre ALUNO e DISCIPLINA para o modelo relacional, a solução usual é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "inserir todas as disciplinas em uma única coluna de ALUNO."
+        },
+        {
+          "id": "B",
+          "text": "criar uma relação associativa contendo referências a ALUNO e DISCIPLINA."
+        },
+        {
+          "id": "C",
+          "text": "remover uma das entidades para transformar o relacionamento em 1:N."
+        },
+        {
+          "id": "D",
+          "text": "duplicar toda a tabela DISCIPLINA para cada aluno."
+        }
+      ],
+      "answer": "B",
+      "comment": "O N:M precisa ser representado por relação associativa intermediária. Ela contém chaves estrangeiras para as entidades ligadas e pode armazenar atributos próprios da associação, como data de matrícula ou situação.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-TI-BD-002-INDEPAC-003",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Uma relação está em 1FN e possui chave candidata composta por A e B. Um atributo não primo C depende apenas de A. Essa situação indica violação da:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1FN."
+        },
+        {
+          "id": "B",
+          "text": "2FN."
+        },
+        {
+          "id": "C",
+          "text": "3FN apenas."
+        },
+        {
+          "id": "D",
+          "text": "BCNF apenas."
+        }
+      ],
+      "answer": "B",
+      "comment": "C depende de apenas parte da chave candidata composta. Trata-se de dependência parcial, que viola a 2FN.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    },
+    {
+      "id": "Q-TI-BD-002-INDEPAC-004",
+      "contentId": "TI-BD-002",
+      "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+      "type": "múltipla escolha",
+      "origin": "inédita",
+      "unitIds": [
+        "TI-BD-002-03"
+      ],
+      "statement": "Considere uma relação em 2FN em que Código_Setor determina Nome_Setor, e uma chave de funcionário determina Código_Setor. Se Nome_Setor é atributo não primo, o problema descrito está associado principalmente a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "dependência transitiva e 3FN."
+        },
+        {
+          "id": "B",
+          "text": "atributo multivalorado e 1FN."
+        },
+        {
+          "id": "C",
+          "text": "ausência de chave estrangeira e 2FN."
+        },
+        {
+          "id": "D",
+          "text": "relacionamento ternário e BCNF."
+        }
+      ],
+      "answer": "A",
+      "comment": "A chave determina Código_Setor, que por sua vez determina Nome_Setor. Assim, o atributo não primo depende transitivamente da chave por meio de outro atributo não chave, situação típica tratada pela 3FN.",
+      "source_ids": [
+        "SRC-CRBIO01-EDITAL-001",
+        "SRC-SETEC-EDITAL-001"
+      ],
+      "contests": [
+        "CRBIO01-2026-ATI",
+        "SETEC-2026-ATI"
+      ]
+    }
+  ],
+  "discursives": [],
+  "sourceDocuments": [
+    {
+      "id": "1m546BeriDYmFBZMwxAEdCW9rhb7O5nuiaxZJ_zDTnj8",
+      "title": "BD-003 — Modelo Entidade-Relacionamento",
+      "revisionId": "8",
+      "modifiedAt": "2026-09-28T21:19:09.986Z"
+    },
+    {
+      "id": "1e7QEdF-VAjOQvEBFWtQWp7Y3Ue2yvBmwF7Kqvnh8fiw",
+      "title": "BD-004 — Mapeamento do MER para o modelo relacional",
+      "revisionId": "5",
+      "modifiedAt": "2026-09-28T21:32:14.868Z"
+    },
+    {
+      "id": "1cbBoKqjlJ5mPamZ7XOmIIb9Ws2exTXN9n03ihAlA7fU",
+      "title": "BD-005 — Normalização de dados",
+      "revisionId": "17",
+      "modifiedAt": "2026-09-28T21:27:11.213Z"
+    },
+    {
+      "id": "1S9QOO4FTQSJ5cwYaAz99yxNao_iQOgPNounlk3MQIBo",
+      "title": "Complemento TI-BD-002",
+      "revisionId": "6",
+      "modifiedAt": "2026-09-27T10:31:08.508Z"
+    },
+    {
+      "id": "1fCEE2U5h94DRA6lELFNhgZPvoAA5TA2dUwXlflDyECs",
+      "title": "Caderno sem respostas TI-BD-002",
+      "revisionId": "3",
+      "modifiedAt": "2026-09-27T10:29:19.376Z"
+    }
+  ],
+  "validatedAuthoredQuestionIds": [
+    "Q-TI-BD-002-INDEPAC-001",
+    "Q-TI-BD-002-INDEPAC-002",
+    "Q-TI-BD-002-INDEPAC-003",
+    "Q-TI-BD-002-INDEPAC-004"
+  ],
+  "integratedQuestionIds": [
+    "Q-BD-003-01",
+    "Q-BD-003-02",
+    "Q-BD-003-03",
+    "Q-BD-003-04",
+    "Q-BD-003-05",
+    "Q-BD-003-06",
+    "Q-BD-003-07",
+    "Q-BD-003-08",
+    "Q-BD-003-09",
+    "Q-BD-003-10",
+    "Q-BD-003-11",
+    "Q-BD-003-12",
+    "Q-BD-003-13",
+    "Q-BD-003-14",
+    "Q-BD-003-15",
+    "Q-BD-004-01",
+    "Q-BD-004-02",
+    "Q-BD-004-03",
+    "Q-BD-004-04",
+    "Q-BD-004-05",
+    "Q-BD-004-06",
+    "Q-BD-004-07",
+    "Q-BD-004-08",
+    "Q-BD-004-09",
+    "Q-BD-004-10",
+    "Q-BD-004-11",
+    "Q-BD-004-12",
+    "Q-BD-004-13",
+    "Q-BD-004-14",
+    "Q-BD-004-15",
+    "Q-BD-004-16",
+    "Q-BD-004-17",
+    "Q-BD-004-18",
+    "Q-BD-004-19",
+    "Q-BD-004-20",
+    "Q-BD-005-01",
+    "Q-BD-005-02",
+    "Q-BD-005-03",
+    "Q-BD-005-04",
+    "Q-BD-005-05",
+    "Q-BD-005-06",
+    "Q-BD-005-07",
+    "Q-BD-005-08",
+    "Q-BD-005-09",
+    "Q-BD-005-10",
+    "Q-BD-005-11",
+    "Q-BD-005-12",
+    "Q-BD-005-13",
+    "Q-BD-005-14",
+    "Q-BD-005-15",
+    "Q-BD-005-16",
+    "Q-BD-005-17",
+    "Q-BD-005-18",
+    "Q-BD-005-19",
+    "Q-BD-005-20",
+    "Q-TI-BD-002-INDEPAC-001",
+    "Q-TI-BD-002-INDEPAC-002",
+    "Q-TI-BD-002-INDEPAC-003",
+    "Q-TI-BD-002-INDEPAC-004"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-149",
+    "QREF-QUAD-150",
+    "QREF-QUAD-151",
+    "QREF-QUAD-152",
+    "QREF-QUAD-153",
+    "QREF-QUAD-154",
+    "QREF-QUAD-155",
+    "QREF-QUAD-156"
+  ],
+  "sourceDocumentParagraphsPreserved": true,
+  "transformation": {
+    "canonicalLessonSections": [
+      "TI-BD-002-01",
+      "TI-BD-002-02",
+      "TI-BD-002-03"
+    ],
+    "learnerWorkbookSection": "TI-BD-002-04",
+    "answerAndCommentsInAttemptGatedQuestionSchema": true,
+    "all55PriorAuthoredQuestionsPreservedByPermanentId": true,
+    "fourValidatedSupplementQuestionsPreservedByPermanentId": true,
+    "eightUnverifiedQuadrixReferencesExcludedFromQuestionSchema": true,
+    "indexedDBAndLearnerProgressUntouched": true,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  },
+  "drivePublishedStatusUpdated": false,
+  "imageSha256": "30e43c087ded4f91ccc75227d732deafdaa79284c74cac67f707492de4f4fdb6"
+}

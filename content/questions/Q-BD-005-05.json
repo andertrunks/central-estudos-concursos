@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-05",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Chave candidata é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "superchave mínima."
+    },
+    {
+      "id": "B",
+      "text": "qualquer superchave, mesmo com atributos redundantes."
+    },
+    {
+      "id": "C",
+      "text": "sinônimo obrigatório de chave primária."
+    },
+    {
+      "id": "D",
+      "text": "atributo não primo."
+    },
+    {
+      "id": "E",
+      "text": "qualquer atributo declarado NOT NULL."
+    }
+  ],
+  "answer": "A",
+  "comment": "chave candidata é superchave mínima.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

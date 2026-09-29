@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-15",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Se uma relação associativa usa surrogate key, a unicidade do par de FKs:",
+  "options": [
+    {
+      "id": "A",
+      "text": "torna-se irrelevante em todos os casos."
+    },
+    {
+      "id": "B",
+      "text": "pode precisar ser preservada com UNIQUE, conforme a regra."
+    },
+    {
+      "id": "C",
+      "text": "é automaticamente garantida pela surrogate key."
+    },
+    {
+      "id": "D",
+      "text": "deve ser removida."
+    },
+    {
+      "id": "E",
+      "text": "só pode ser verificada pela aplicação."
+    }
+  ],
+  "answer": "B",
+  "comment": "A surrogate key não impede duplicidade lógica do par; UNIQUE pode ser necessário.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

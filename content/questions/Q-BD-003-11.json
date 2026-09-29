@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-11",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Um relacionamento N:M:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é inválido no modelo conceitual."
+    },
+    {
+      "id": "B",
+      "text": "só existe em bancos não relacionais."
+    },
+    {
+      "id": "C",
+      "text": "pode representar corretamente uma regra de negócio e será mapeado depois para o modelo relacional."
+    },
+    {
+      "id": "D",
+      "text": "deve ser convertido imediatamente em SQL nesta aula."
+    },
+    {
+      "id": "E",
+      "text": "significa que todos os participantes são obrigatórios."
+    }
+  ],
+  "answer": "C",
+  "comment": "N:M é perfeitamente válido no modelo conceitual; o problema de implementação será resolvido no mapeamento.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

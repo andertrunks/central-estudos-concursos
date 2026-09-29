@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-12",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Em um relacionamento ternário:",
+  "options": [
+    {
+      "id": "A",
+      "text": "participam exatamente três tipos de entidade."
+    },
+    {
+      "id": "B",
+      "text": "participam exatamente três atributos."
+    },
+    {
+      "id": "C",
+      "text": "a cardinalidade é obrigatoriamente 1:1:1."
+    },
+    {
+      "id": "D",
+      "text": "sempre pode ser substituído por três binários sem perda de informação."
+    },
+    {
+      "id": "E",
+      "text": "nenhuma entidade possui papel."
+    }
+  ],
+  "answer": "A",
+  "comment": "O grau ternário significa participação simultânea de três tipos de entidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

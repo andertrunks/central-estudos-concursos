@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-18",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Em um N:M PROCESSO–PARTE com atributo papel_da_parte:",
+  "options": [
+    {
+      "id": "A",
+      "text": "papel_da_parte deve sempre ficar em PROCESSO."
+    },
+    {
+      "id": "B",
+      "text": "papel_da_parte deve sempre ficar em PARTE."
+    },
+    {
+      "id": "C",
+      "text": "papel_da_parte pertence ao vínculo e deve ser mapeado na estrutura associativa."
+    },
+    {
+      "id": "D",
+      "text": "o atributo deve ser descartado."
+    },
+    {
+      "id": "E",
+      "text": "N:M não permite atributos."
+    }
+  ],
+  "answer": "C",
+  "comment": "O papel depende da participação daquela parte naquele processo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

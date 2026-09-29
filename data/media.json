@@ -91,5 +91,40 @@
     "channel": "daves tecnologia",
     "verifiedAt": "2026-09-28",
     "original": false
+  },
+  {
+    "id": "TI-BD-002-IMG-001",
+    "contentId": "TI-BD-002",
+    "type": "imagem",
+    "title": "Modelagem e normalização — do domínio ao esquema consistente",
+    "caption": "Sequência conceitual do MER ao modelo relacional e à normalização. Os lembretes de 2FN e 3FN são atalhos; consulte as definições formais desenvolvidas nesta aula.",
+    "alt": "Diagrama da sequência MER/DER, mapeamento relacional e formas normais, com lembretes sobre cardinalidade, participação, relações associativas e dependências parciais e transitivas.",
+    "file": "media/TI-BD-002-IMG-001.png",
+    "verifiedAt": "2026-09-28",
+    "original": true
+  },
+  {
+    "id": "TI-BD-002-YT-001",
+    "contentId": "TI-BD-002",
+    "type": "YouTube",
+    "title": "Curso Completo de Modelagem de Bancos de Dados com Projeto Prático",
+    "caption": "Apoio aos tópicos de modelagem conceitual e normalização.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=Kd1yqYjylCg",
+    "channel": "Bóson Treinamentos",
+    "verifiedAt": "2026-09-28",
+    "original": false
+  },
+  {
+    "id": "TI-BD-002-YT-002",
+    "contentId": "TI-BD-002",
+    "type": "YouTube",
+    "title": "Modelagem de Dados — Modelo Entidade-Relacionamento e Diagrama ER",
+    "caption": "Apoio introdutório sobre MER/DER, entidades e relacionamentos.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=W2Z1STnjNJo",
+    "channel": "Bóson Treinamentos",
+    "verifiedAt": "2026-09-28",
+    "original": false
   }
 ]

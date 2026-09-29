@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-10",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Sobre mapeamento e normalização:",
+  "options": [
+    {
+      "id": "A",
+      "text": "são sinônimos."
+    },
+    {
+      "id": "B",
+      "text": "normalização sempre ocorre antes do MER."
+    },
+    {
+      "id": "C",
+      "text": "mapeamento traduz o modelo conceitual; normalização reorganiza relações com base em dependências."
+    },
+    {
+      "id": "D",
+      "text": "mapeamento só existe em NoSQL."
+    },
+    {
+      "id": "E",
+      "text": "normalização substitui a modelagem."
+    }
+  ],
+  "answer": "C",
+  "comment": "São etapas relacionadas, mas distintas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-05",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Em entidade fraca, é comum que a chave primária seja composta por:",
+  "options": [
+    {
+      "id": "A",
+      "text": "apenas um valor aleatório sem qualquer restrição lógica."
+    },
+    {
+      "id": "B",
+      "text": "chave do proprietário + identificador parcial."
+    },
+    {
+      "id": "C",
+      "text": "apenas a FK do proprietário, sempre."
+    },
+    {
+      "id": "D",
+      "text": "somente um atributo derivado."
+    },
+    {
+      "id": "E",
+      "text": "duas FKs sem semântica."
+    }
+  ],
+  "answer": "B",
+  "comment": "A entidade fraca depende da chave do proprietário somada ao identificador parcial.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

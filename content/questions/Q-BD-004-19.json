@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-19",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Se o relacionamento 1:N possui histórico de múltiplas ocorrências ao longo do tempo, uma boa modelagem pode exigir:",
+  "options": [
+    {
+      "id": "A",
+      "text": "uma relação própria para o histórico."
+    },
+    {
+      "id": "B",
+      "text": "apagar a FK."
+    },
+    {
+      "id": "C",
+      "text": "armazenar tudo em texto livre."
+    },
+    {
+      "id": "D",
+      "text": "eliminar datas."
+    },
+    {
+      "id": "E",
+      "text": "tornar todas as colunas PK."
+    }
+  ],
+  "answer": "A",
+  "comment": "Relação histórica própria costuma representar múltiplas ocorrências temporais melhor que uma única FK atual.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

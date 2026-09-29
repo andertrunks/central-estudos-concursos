@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-11",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "No mapeamento de atributo composto ENDERECO, é comum:",
+  "options": [
+    {
+      "id": "A",
+      "text": "descartar todos os componentes."
+    },
+    {
+      "id": "B",
+      "text": "decompor em logradouro, número, cidade etc., conforme necessidade."
+    },
+    {
+      "id": "C",
+      "text": "transformá-lo obrigatoriamente em tabela independente."
+    },
+    {
+      "id": "D",
+      "text": "transformá-lo em FK."
+    },
+    {
+      "id": "E",
+      "text": "torná-lo chave primária sempre."
+    }
+  ],
+  "answer": "B",
+  "comment": "Componentes relevantes tornam-se atributos simples da relação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-02",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Um atributo ENDERECO formado por logradouro, número, bairro e CEP é, conceitualmente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "derivado."
+    },
+    {
+      "id": "B",
+      "text": "recursivo."
+    },
+    {
+      "id": "C",
+      "text": "composto."
+    },
+    {
+      "id": "D",
+      "text": "fraco."
+    },
+    {
+      "id": "E",
+      "text": "ternário."
+    }
+  ],
+  "answer": "C",
+  "comment": "ENDERECO foi decomposto em componentes com significado próprio; portanto é composto.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

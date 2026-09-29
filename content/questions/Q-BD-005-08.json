@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-08",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Considere R(A,B,C), chave candidata (A,B) e A → C, sendo C não primo. Há:",
+  "options": [
+    {
+      "id": "A",
+      "text": "dependência parcial."
+    },
+    {
+      "id": "B",
+      "text": "apenas dependência trivial."
+    },
+    {
+      "id": "C",
+      "text": "violação exclusiva de BCNF, mas não de 2FN."
+    },
+    {
+      "id": "D",
+      "text": "nenhuma dependência relevante."
+    },
+    {
+      "id": "E",
+      "text": "uma dependência irrelevante porque C não faz parte da chave."
+    }
+  ],
+  "answer": "A",
+  "comment": "C depende de apenas A, parte da chave composta AB.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

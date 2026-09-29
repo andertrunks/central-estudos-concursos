@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-14",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Junção sem perda significa que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "nenhuma tabela possui NULL."
+    },
+    {
+      "id": "B",
+      "text": "a junção das relações decompostas reconstrói corretamente a relação original, sem tuplas espúrias."
+    },
+    {
+      "id": "C",
+      "text": "todas as consultas dispensam JOIN."
+    },
+    {
+      "id": "D",
+      "text": "todas as dependências ficam em uma única tabela."
+    },
+    {
+      "id": "E",
+      "text": "qualquer junção de tabelas do banco reconstrói corretamente a relação."
+    }
+  ],
+  "answer": "B",
+  "comment": "lossless join impede perda de informação e tuplas espúrias na reconstrução.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-10",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Uma relação em 1FN com única chave candidata simples:",
+  "options": [
+    {
+      "id": "A",
+      "text": "pode violar 2FN por dependência de metade dessa chave."
+    },
+    {
+      "id": "B",
+      "text": "não sofre dependência parcial por subconjunto próprio não vazio dessa chave, mas pode violar 3FN."
+    },
+    {
+      "id": "C",
+      "text": "está necessariamente em 3FN."
+    },
+    {
+      "id": "D",
+      "text": "está necessariamente em BCNF."
+    },
+    {
+      "id": "E",
+      "text": "não pode apresentar dependências funcionais não triviais."
+    }
+  ],
+  "answer": "B",
+  "comment": "uma chave simples não possui parte própria não vazia para causar dependência parcial; 3FN ainda pode falhar.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

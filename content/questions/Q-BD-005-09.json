@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-09",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Para estar em 2FN, uma relação deve:",
+  "options": [
+    {
+      "id": "A",
+      "text": "estar em 1FN e não ter dependência parcial de atributo não primo em chave candidata."
+    },
+    {
+      "id": "B",
+      "text": "ter apenas uma coluna como chave."
+    },
+    {
+      "id": "C",
+      "text": "eliminar todas as dependências funcionais."
+    },
+    {
+      "id": "D",
+      "text": "estar obrigatoriamente em BCNF."
+    },
+    {
+      "id": "E",
+      "text": "possuir sempre uma chave candidata com exatamente dois atributos."
+    }
+  ],
+  "answer": "A",
+  "comment": "essa é a condição essencial da 2FN.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

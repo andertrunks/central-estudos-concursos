@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-09",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Um relacionamento recursivo 1:N SERVIDOR supervisiona SERVIDOR pode ser mapeado por:",
+  "options": [
+    {
+      "id": "A",
+      "text": "FK autorreferente em SERVIDOR."
+    },
+    {
+      "id": "B",
+      "text": "remoção da entidade SERVIDOR."
+    },
+    {
+      "id": "C",
+      "text": "duas tabelas SERVIDOR idênticas sem FK."
+    },
+    {
+      "id": "D",
+      "text": "coluna multivalorada."
+    },
+    {
+      "id": "E",
+      "text": "ausência de chave."
+    }
+  ],
+  "answer": "A",
+  "comment": "A própria tabela SERVIDOR pode conter matricula_supervisor referenciando SERVIDOR.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

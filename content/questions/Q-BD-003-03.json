@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-03",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Se uma pessoa pode possuir vários telefones, TELEFONE pode ser inicialmente modelado como atributo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "multivalorado."
+    },
+    {
+      "id": "B",
+      "text": "derivado obrigatoriamente."
+    },
+    {
+      "id": "C",
+      "text": "identificador fraco."
+    },
+    {
+      "id": "D",
+      "text": "ternário."
+    },
+    {
+      "id": "E",
+      "text": "de relacionamento recursivo."
+    }
+  ],
+  "answer": "A",
+  "comment": "Vários valores de telefone para uma mesma pessoa caracterizam multivaloração no nível conceitual.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

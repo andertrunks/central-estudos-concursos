@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-BD-002-INDEPAC-001",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Em um Modelo Entidade-Relacionamento, um atributo que pode assumir diversos valores para uma única ocorrência de entidade é classificado como:",
+  "options": [
+    {
+      "id": "A",
+      "text": "composto."
+    },
+    {
+      "id": "B",
+      "text": "derivado."
+    },
+    {
+      "id": "C",
+      "text": "multivalorado."
+    },
+    {
+      "id": "D",
+      "text": "identificador."
+    }
+  ],
+  "answer": "C",
+  "comment": "Atributo multivalorado aceita múltiplos valores para uma ocorrência. Atributo composto é decomponível em componentes. Atributo derivado é calculável a partir de outros dados. Identificador distingue ocorrências.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

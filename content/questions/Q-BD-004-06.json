@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-06",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Sobre surrogate key, assinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "elimina toda necessidade de restrição UNIQUE sobre atributos naturais."
+    },
+    {
+      "id": "B",
+      "text": "nunca pode ser usada."
+    },
+    {
+      "id": "C",
+      "text": "é um identificador artificial e não elimina automaticamente regras de unicidade natural."
+    },
+    {
+      "id": "D",
+      "text": "é sinônimo de FK."
+    },
+    {
+      "id": "E",
+      "text": "só existe em banco NoSQL."
+    }
+  ],
+  "answer": "C",
+  "comment": "Surrogate key é artificial; regras naturais de unicidade continuam relevantes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

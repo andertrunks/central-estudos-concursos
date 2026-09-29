@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-13",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "A integridade referencial de uma FK busca impedir:",
+  "options": [
+    {
+      "id": "A",
+      "text": "qualquer valor duplicado em coluna comum."
+    },
+    {
+      "id": "B",
+      "text": "que uma linha referencie uma ocorrência inexistente na relação-alvo."
+    },
+    {
+      "id": "C",
+      "text": "uso de chave composta."
+    },
+    {
+      "id": "D",
+      "text": "existência de NULL em qualquer coluna."
+    },
+    {
+      "id": "E",
+      "text": "consulta sem índice."
+    }
+  ],
+  "answer": "B",
+  "comment": "A FK protege contra referências órfãs, conforme as regras definidas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-10",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Sobre entidade fraca, é correto afirmar:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é qualquer entidade que tenha um relacionamento."
+    },
+    {
+      "id": "B",
+      "text": "é qualquer entidade que possua chave estrangeira em SQL."
+    },
+    {
+      "id": "C",
+      "text": "sua identificação conceitual depende da entidade proprietária, na abordagem clássica."
+    },
+    {
+      "id": "D",
+      "text": "nunca possui atributos."
+    },
+    {
+      "id": "E",
+      "text": "não pode participar de relacionamentos."
+    }
+  ],
+  "answer": "C",
+  "comment": "Na abordagem clássica, a entidade fraca depende da proprietária para completar sua identidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

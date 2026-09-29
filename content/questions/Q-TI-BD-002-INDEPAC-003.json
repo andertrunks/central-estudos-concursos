@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-BD-002-INDEPAC-003",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Uma relação está em 1FN e possui chave candidata composta por A e B. Um atributo não primo C depende apenas de A. Essa situação indica violação da:",
+  "options": [
+    {
+      "id": "A",
+      "text": "1FN."
+    },
+    {
+      "id": "B",
+      "text": "2FN."
+    },
+    {
+      "id": "C",
+      "text": "3FN apenas."
+    },
+    {
+      "id": "D",
+      "text": "BCNF apenas."
+    }
+  ],
+  "answer": "B",
+  "comment": "C depende de apenas parte da chave candidata composta. Trata-se de dependência parcial, que viola a 2FN.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

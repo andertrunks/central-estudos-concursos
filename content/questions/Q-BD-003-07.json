@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-07",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "A cardinalidade (1,N) indica:",
+  "options": [
+    {
+      "id": "A",
+      "text": "participação obrigatória e máximo muitos."
+    },
+    {
+      "id": "B",
+      "text": "participação opcional e máximo um."
+    },
+    {
+      "id": "C",
+      "text": "exatamente uma ocorrência."
+    },
+    {
+      "id": "D",
+      "text": "nenhuma participação."
+    },
+    {
+      "id": "E",
+      "text": "relacionamento necessariamente ternário."
+    }
+  ],
+  "answer": "A",
+  "comment": "Mínimo 1 exige participação; máximo N admite multiplicidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

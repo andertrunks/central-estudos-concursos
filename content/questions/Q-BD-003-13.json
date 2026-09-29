@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-13",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Qual alternativa distingue corretamente atributo composto de multivalorado?",
+  "options": [
+    {
+      "id": "A",
+      "text": "composto admite vários valores; multivalorado possui partes."
+    },
+    {
+      "id": "B",
+      "text": "ambos são sinônimos."
+    },
+    {
+      "id": "C",
+      "text": "composto possui componentes significativos; multivalorado admite vários valores para a ocorrência."
+    },
+    {
+      "id": "D",
+      "text": "composto é relacionamento; multivalorado é entidade."
+    },
+    {
+      "id": "E",
+      "text": "ambos existem somente no modelo físico."
+    }
+  ],
+  "answer": "C",
+  "comment": "Composição trata de partes internas; multivaloração trata de quantidade de valores.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

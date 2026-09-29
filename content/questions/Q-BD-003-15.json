@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-15",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "PROCESSO e PARTE têm relacionamento N:M e o vínculo precisa registrar papel_da_parte e data_inicio. Uma alternativa conceitual adequada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "apagar o relacionamento."
+    },
+    {
+      "id": "B",
+      "text": "transformar papel_da_parte em atributo exclusivo de PROCESSO."
+    },
+    {
+      "id": "C",
+      "text": "usar uma entidade associativa para representar a participação."
+    },
+    {
+      "id": "D",
+      "text": "obrigar a cardinalidade a ser 1:1."
+    },
+    {
+      "id": "E",
+      "text": "eliminar PARTE do modelo."
+    }
+  ],
+  "answer": "C",
+  "comment": "Quando a própria associação possui dados relevantes, a entidade associativa pode representá-la conceitualmente.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

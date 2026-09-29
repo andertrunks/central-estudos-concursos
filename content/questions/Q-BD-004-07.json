@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-07",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Se todo SERVIDOR precisa obrigatoriamente possuir UNIDADE e a FK está em SERVIDOR, uma restrição típica é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "NULL obrigatório."
+    },
+    {
+      "id": "B",
+      "text": "NOT NULL na FK."
+    },
+    {
+      "id": "C",
+      "text": "DROP TABLE."
+    },
+    {
+      "id": "D",
+      "text": "UNIQUE em todas as colunas."
+    },
+    {
+      "id": "E",
+      "text": "remover a FK."
+    }
+  ],
+  "answer": "B",
+  "comment": "NOT NULL impede ausência da FK quando a participação é obrigatória.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

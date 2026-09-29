@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-15",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Preservação de dependências significa:",
+  "options": [
+    {
+      "id": "A",
+      "text": "poder verificar as dependências relevantes nas relações decompostas sem recompor tudo apenas para impor essas regras."
+    },
+    {
+      "id": "B",
+      "text": "impedir qualquer decomposição."
+    },
+    {
+      "id": "C",
+      "text": "manter todos os atributos na mesma relação."
+    },
+    {
+      "id": "D",
+      "text": "transformar toda dependência em chave estrangeira."
+    },
+    {
+      "id": "E",
+      "text": "desconsiderar dependências funcionais quando as tabelas já estão em 1FN."
+    }
+  ],
+  "answer": "A",
+  "comment": "preservação trata da possibilidade de impor dependências localmente após decomposição.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

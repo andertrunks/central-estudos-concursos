@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-18",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Sobre desnormalização:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é sempre um erro de projeto."
+    },
+    {
+      "id": "B",
+      "text": "pode ser deliberada por requisitos de desempenho ou análise, devendo ser controlada."
+    },
+    {
+      "id": "C",
+      "text": "significa remover todas as FKs."
+    },
+    {
+      "id": "D",
+      "text": "é sinônimo de 1FN."
+    },
+    {
+      "id": "E",
+      "text": "garante que as atualizações permaneçam consistentes sem controles adicionais."
+    }
+  ],
+  "answer": "B",
+  "comment": "desnormalização pode ser decisão consciente e mensurada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

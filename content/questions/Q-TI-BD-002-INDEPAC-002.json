@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-BD-002-INDEPAC-002",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "No mapeamento de um relacionamento muitos-para-muitos entre ALUNO e DISCIPLINA para o modelo relacional, a solução usual é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "inserir todas as disciplinas em uma única coluna de ALUNO."
+    },
+    {
+      "id": "B",
+      "text": "criar uma relação associativa contendo referências a ALUNO e DISCIPLINA."
+    },
+    {
+      "id": "C",
+      "text": "remover uma das entidades para transformar o relacionamento em 1:N."
+    },
+    {
+      "id": "D",
+      "text": "duplicar toda a tabela DISCIPLINA para cada aluno."
+    }
+  ],
+  "answer": "B",
+  "comment": "O N:M precisa ser representado por relação associativa intermediária. Ela contém chaves estrangeiras para as entidades ligadas e pode armazenar atributos próprios da associação, como data de matrícula ou situação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

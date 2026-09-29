@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-03",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Em um relacionamento 1:1, uma estratégia típica para impedir que várias linhas apontem para a mesma ocorrência é usar:",
+  "options": [
+    {
+      "id": "A",
+      "text": "CHECK apenas."
+    },
+    {
+      "id": "B",
+      "text": "UNIQUE sobre a FK."
+    },
+    {
+      "id": "C",
+      "text": "índice não único obrigatoriamente."
+    },
+    {
+      "id": "D",
+      "text": "atributo multivalorado."
+    },
+    {
+      "id": "E",
+      "text": "somente DEFAULT."
+    }
+  ],
+  "answer": "B",
+  "comment": "UNIQUE sobre a FK impede repetição da mesma referência e ajuda a representar máximo 1.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

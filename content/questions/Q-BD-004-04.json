@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-04",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Atributo multivalorado TELEFONE de PESSOA é normalmente mapeado como:",
+  "options": [
+    {
+      "id": "A",
+      "text": "telefone1, telefone2, telefone3 em PESSOA obrigatoriamente."
+    },
+    {
+      "id": "B",
+      "text": "lista separada por vírgulas."
+    },
+    {
+      "id": "C",
+      "text": "relação PESSOA_TELEFONE ligada por FK."
+    },
+    {
+      "id": "D",
+      "text": "chave estrangeira de PESSOA para TELEFONE sem relação própria."
+    },
+    {
+      "id": "E",
+      "text": "atributo derivado."
+    }
+  ],
+  "answer": "C",
+  "comment": "A relação própria evita lista ou colunas repetidas e preserva estrutura relacional.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

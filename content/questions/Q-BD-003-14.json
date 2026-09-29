@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-14",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Sobre notações do DER:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Chen e crow’s foot são o próprio MER e não podem representar conceitos semelhantes."
+    },
+    {
+      "id": "B",
+      "text": "toda ferramenta usa símbolos absolutamente idênticos."
+    },
+    {
+      "id": "C",
+      "text": "a semântica das regras de negócio é mais importante que decorar a aparência de uma ferramenta."
+    },
+    {
+      "id": "D",
+      "text": "cardinalidade só pode ser mostrada em Chen."
+    },
+    {
+      "id": "E",
+      "text": "crow’s foot não representa multiplicidade."
+    }
+  ],
+  "answer": "C",
+  "comment": "Notações variam. A regra de negócio representada é o núcleo do modelo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

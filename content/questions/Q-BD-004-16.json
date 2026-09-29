@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-16",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Em um 1:1, as duas entidades:",
+  "options": [
+    {
+      "id": "A",
+      "text": "obrigatoriamente devem ser fundidas."
+    },
+    {
+      "id": "B",
+      "text": "nunca podem ser fundidas."
+    },
+    {
+      "id": "C",
+      "text": "podem permanecer separadas ou ser fundidas, conforme semântica e ciclo de vida."
+    },
+    {
+      "id": "D",
+      "text": "precisam virar N:M."
+    },
+    {
+      "id": "E",
+      "text": "não podem usar FK."
+    }
+  ],
+  "answer": "C",
+  "comment": "A decisão depende de semântica, opcionalidade, ciclo de vida e projeto.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

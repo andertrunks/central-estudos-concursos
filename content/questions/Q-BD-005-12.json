@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-12",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "BCNF exige que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "todo atributo seja primo."
+    },
+    {
+      "id": "B",
+      "text": "toda tabela tenha surrogate key."
+    },
+    {
+      "id": "C",
+      "text": "todo determinante de DF não trivial seja superchave."
+    },
+    {
+      "id": "D",
+      "text": "toda chave seja simples."
+    },
+    {
+      "id": "E",
+      "text": "todas as chaves candidatas sejam formadas por um só atributo."
+    }
+  ],
+  "answer": "C",
+  "comment": "BCNF exige determinante superchave em toda DF não trivial.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

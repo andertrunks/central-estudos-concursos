@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-14",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Um relacionamento ternário:",
+  "options": [
+    {
+      "id": "A",
+      "text": "sempre pode ser substituído por três binários sem perda semântica."
+    },
+    {
+      "id": "B",
+      "text": "normalmente pode originar relação própria com FKs para os três participantes."
+    },
+    {
+      "id": "C",
+      "text": "nunca possui atributos."
+    },
+    {
+      "id": "D",
+      "text": "sempre possui PK exatamente igual às três FKs."
+    },
+    {
+      "id": "E",
+      "text": "é proibido no modelo relacional."
+    }
+  ],
+  "answer": "B",
+  "comment": "Relação própria preserva a associação simultânea dos três participantes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

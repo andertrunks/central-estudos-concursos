@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-004-08",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-02"
+  ],
+  "statement": "Em uma relação associativa de N:M, atributos do relacionamento devem ficar:",
+  "options": [
+    {
+      "id": "A",
+      "text": "sempre em uma das entidades principais."
+    },
+    {
+      "id": "B",
+      "text": "na relação associativa."
+    },
+    {
+      "id": "C",
+      "text": "fora do esquema."
+    },
+    {
+      "id": "D",
+      "text": "somente em índice."
+    },
+    {
+      "id": "E",
+      "text": "exclusivamente em view."
+    }
+  ],
+  "answer": "B",
+  "comment": "O atributo descreve o vínculo, logo pertence à estrutura que representa o vínculo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

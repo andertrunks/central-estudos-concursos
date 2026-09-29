@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-005-20",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-03"
+  ],
+  "statement": "Nesta aula, BCNF:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é tratada como exigência literal explícita de todos os editais vinculados."
+    },
+    {
+      "id": "B",
+      "text": "é extensão conceitual introdutória; os trechos auditados citam normalização/formas normais sem nomeá-la."
+    },
+    {
+      "id": "C",
+      "text": "substitui o estudo de 1FN, 2FN e 3FN."
+    },
+    {
+      "id": "D",
+      "text": "é vinculada ao TRT-2 Técnico TI."
+    },
+    {
+      "id": "E",
+      "text": "constitui subitem nominal autônomo 9.7 do Técnico TRF3/2023."
+    }
+  ],
+  "answer": "B",
+  "comment": "BCNF foi incluída como extensão conceitual, não como redação literal dos editais auditados.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

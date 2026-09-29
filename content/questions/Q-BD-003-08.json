@@ -1,0 +1,43 @@
+{
+  "id": "Q-BD-003-08",
+  "contentId": "TI-BD-002",
+  "banca": "Autoral — Central de Estudos",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-BD-002-01"
+  ],
+  "statement": "Sobre cardinalidade máxima e participação mínima, assinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "são sempre a mesma restrição."
+    },
+    {
+      "id": "B",
+      "text": "“muitos” implica participação obrigatória."
+    },
+    {
+      "id": "C",
+      "text": "“um” implica participação opcional."
+    },
+    {
+      "id": "D",
+      "text": "devem ser analisadas separadamente."
+    },
+    {
+      "id": "E",
+      "text": "somente existem em SQL."
+    }
+  ],
+  "answer": "D",
+  "comment": "Máximo e mínimo respondem a perguntas diferentes e devem ser interpretados separadamente.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
