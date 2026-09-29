@@ -3,7 +3,22 @@
   "contentId": "LEG-005",
   "driveDocumentId": "1_Z3usaRmCpgdCbkFwJzfpvoRb4Ofx_wAw_5x8Ua9BIs",
   "integratedAt": "2026-09-29T11:01:59.309Z",
-  "status": "integrado; aguardando testes e deploy",
-  "publishedCommit": null,
-  "siteUrl": null
+  "status": "publicado",
+  "publishedCommit": "6f1f814bbf96d9f1aefeb66612691c16e33b0c33",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/LEG-005",
+  "verifiedAt": "2026-09-29T11:13:00Z",
+  "workflowRun": 36560387828,
+  "checks": {
+    "canonicalUnits": 9,
+    "attemptGatedAuthoredQuestions": 28,
+    "answerAndCommentLeak": false,
+    "quadrixReferencesPendingUnscored": 49,
+    "originalDidacticImage": true,
+    "verifiedVideos": 2,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ],
+    "learnerProgressPreserved": true
+  }
 }
