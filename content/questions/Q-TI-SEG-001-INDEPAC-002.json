@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-SEG-001-INDEPAC-002",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-01"
+  ],
+  "statement": "Uma falha elétrica deixa indisponível, durante duas horas, um sistema que deveria estar acessível aos servidores autorizados. Qual princípio foi diretamente afetado?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Disponibilidade."
+    },
+    {
+      "id": "B",
+      "text": "Confidencialidade."
+    },
+    {
+      "id": "C",
+      "text": "Integridade."
+    },
+    {
+      "id": "D",
+      "text": "Autenticidade."
+    }
+  ],
+  "answer": "A",
+  "comment": "Disponibilidade significa permitir acesso e uso oportunos e confiáveis por entidades autorizadas. A interrupção impede o uso do serviço no momento necessário. O enunciado não informa alteração indevida dos dados, divulgação não autorizada ou falsificação de identidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-CIA-INTEG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-SEG-001-INDEPAC-006",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-03"
+  ],
+  "statement": "Assinale a alternativa que apresenta corretamente a função de um controle de segurança.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Garantir que toda ameaça seja definitivamente eliminada."
+    },
+    {
+      "id": "B",
+      "text": "Modificar ou reduzir riscos por meio de salvaguardas ou contramedidas."
+    },
+    {
+      "id": "C",
+      "text": "Transformar toda vulnerabilidade em incidente confirmado."
+    },
+    {
+      "id": "D",
+      "text": "Substituir a necessidade de avaliação de impacto e probabilidade."
+    }
+  ],
+  "answer": "B",
+  "comment": "Um controle é uma medida destinada a proteger sistemas e informações ou a modificar riscos. Ele não garante eliminação total de ameaças ou riscos. Por isso, mesmo após controles, pode existir risco residual.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-NONREP-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

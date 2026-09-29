@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-SEG-001-INDEPAC-004",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-02"
+  ],
+  "statement": "Uma organização precisa ser capaz de demonstrar posteriormente que um usuário aprovou determinada transação, reduzindo a possibilidade de ele negar falsamente a ação. Qual princípio está mais diretamente relacionado a essa necessidade?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Disponibilidade."
+    },
+    {
+      "id": "B",
+      "text": "Não repúdio."
+    },
+    {
+      "id": "C",
+      "text": "Confidencialidade."
+    },
+    {
+      "id": "D",
+      "text": "Redundância."
+    }
+  ],
+  "answer": "B",
+  "comment": "Não repúdio está relacionado à capacidade de produzir evidência que dificulte a falsa negação de uma ação praticada. Disponibilidade trata de acesso e uso; confidencialidade trata de restrição de acesso e divulgação; redundância é uma estratégia técnica e não um princípio equivalente.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-AUTHENTICITY-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

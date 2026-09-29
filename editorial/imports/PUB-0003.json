@@ -1,0 +1,79 @@
+{
+  "queueId": "PUB-0003",
+  "contentId": "TI-SEG-001",
+  "legacyContentId": "SI-001",
+  "status": "integrado — aguardando build, deploy e inspeção pública",
+  "sourceDocuments": [
+    {
+      "id": "1Ye84c36liZ7TOOiwkIuprBOy7IaDMmlspKLAJqDv3ec",
+      "title": "SI-001 — Fundamentos de Segurança da Informação",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-SEG-001-01",
+    "TI-SEG-001-02",
+    "TI-SEG-001-03",
+    "TI-SEG-001-04"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-TI-SEG-001-INDEPAC-001",
+    "Q-TI-SEG-001-INDEPAC-002",
+    "Q-TI-SEG-001-INDEPAC-003",
+    "Q-TI-SEG-001-INDEPAC-004",
+    "Q-TI-SEG-001-INDEPAC-005",
+    "Q-TI-SEG-001-INDEPAC-006",
+    "Q-SI-001-01",
+    "Q-SI-001-02",
+    "Q-SI-001-03",
+    "Q-SI-001-04",
+    "Q-SI-001-05",
+    "Q-SI-001-06",
+    "Q-SI-001-07",
+    "Q-SI-001-08",
+    "Q-SI-001-09",
+    "Q-SI-001-10",
+    "Q-SI-001-11",
+    "Q-SI-001-12",
+    "Q-SI-001-13",
+    "Q-SI-001-14",
+    "Q-SI-001-15"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-065",
+    "QREF-QUAD-066",
+    "QREF-QUAD-067",
+    "QREF-QUAD-068",
+    "QREF-QUAD-069",
+    "QREF-QUAD-070",
+    "QREF-QUAD-071",
+    "QREF-QUAD-072",
+    "QREF-QUAD-073",
+    "QREF-QUAD-074",
+    "QREF-QUAD-075",
+    "QREF-QUAD-076"
+  ],
+  "documentedNegativeSearches": [
+    "BUSCA-INDEPAC-SEG-001-01",
+    "BUSCA-INDEPAC-SEG-001-02",
+    "BUSCA-INDEPAC-SEG-001-03",
+    "BUSCA-INDEPAC-SEG-001-04"
+  ],
+  "media": [
+    "TI-SEG-001-IMG-001",
+    "TI-SEG-001-YT-001",
+    "TI-SEG-001-YT-002"
+  ],
+  "imageTransfer": "original Drive PNG transferred byte-for-byte",
+  "transformation": {
+    "fullSI001TheoryReused": true,
+    "answersAndCommentsInAttemptGatedSchema": true,
+    "unverifiedQuadrixReferencesExcludedFromScoring": true,
+    "negativeINDEPACSearchFallbackExplicit": true,
+    "learnerProgressPreserved": true,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  }
+}

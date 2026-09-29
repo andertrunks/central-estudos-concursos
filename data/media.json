@@ -266,5 +266,40 @@
     "channel": "Prof. Carlos Viegas - DCA-UFRN",
     "verifiedAt": "2026-09-23",
     "original": false
+  },
+  {
+    "id": "TI-SEG-001-IMG-001",
+    "contentId": "TI-SEG-001",
+    "type": "imagem",
+    "title": "Princípios de Segurança da Informação — tríade CIA, autenticidade e cadeia de risco",
+    "caption": "Diagrama original do projeto preservado do SI-001.",
+    "alt": "Diagrama dos princípios de Segurança da Informação com blocos para confidencialidade, integridade e disponibilidade; autenticidade, autenticação e não repúdio; e fluxo ameaça, vulnerabilidade, impacto, risco, controles e risco residual.",
+    "file": "media/TI-SEG-001-IMG-001.png",
+    "verifiedAt": "2026-09-23",
+    "original": true
+  },
+  {
+    "id": "TI-SEG-001-YT-001",
+    "contentId": "TI-SEG-001",
+    "type": "YouTube",
+    "title": "Segurança da Informação p Concursos | Confidencialidade Integridade Disponibilidade e Autenticidade",
+    "caption": "Princípios de Segurança da Informação em contexto de concursos.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=C8ZTng3xRiA",
+    "channel": "Romilton Júnior",
+    "verifiedAt": "2026-09-23",
+    "original": false
+  },
+  {
+    "id": "TI-SEG-001-YT-002",
+    "contentId": "TI-SEG-001",
+    "type": "YouTube",
+    "title": "Os pilares da Segurança da Informação — Segurança da Informação — Módulo 0",
+    "caption": "Revisão de pilares; o canal também aborda legalidade, sem ampliar o recorte dos editais ativos.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=Y0beKLRf-fI",
+    "channel": "Curso em Vídeo",
+    "verifiedAt": "2026-09-23",
+    "original": false
   }
 ]

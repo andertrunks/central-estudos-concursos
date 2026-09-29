@@ -1,0 +1,33 @@
+{
+  "id": "Q-SI-001-08",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-03"
+  ],
+  "statement": "Todo evento observável em um sistema de informação deve ser classificado como incidente de segurança.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. Eventos podem ser normais; incidente é subconjunto relevante e adverso.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-EVENT-001",
+    "SRC-NIST-INCIDENT-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

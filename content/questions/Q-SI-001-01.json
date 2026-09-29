@@ -1,0 +1,32 @@
+{
+  "id": "Q-SI-001-01",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-01"
+  ],
+  "statement": "Confidencialidade é a propriedade relacionada à preservação de restrições autorizadas de acesso e divulgação da informação.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. Confidencialidade protege restrições autorizadas de acesso e divulgação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-CIA-CONF-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

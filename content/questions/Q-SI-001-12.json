@@ -1,0 +1,44 @@
+{
+  "id": "Q-SI-001-12",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-03"
+  ],
+  "statement": "Um mecanismo de monitoramento que alerta tentativas anômalas de acesso exerce função predominantemente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "detectiva"
+    },
+    {
+      "id": "B",
+      "text": "corretiva apenas"
+    },
+    {
+      "id": "C",
+      "text": "financeira"
+    },
+    {
+      "id": "D",
+      "text": "jurídica exclusivamente"
+    },
+    {
+      "id": "E",
+      "text": "de transferência de risco"
+    }
+  ],
+  "answer": "A",
+  "comment": "Monitoramento/alerta tem função predominantemente detectiva.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-SECCTRL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

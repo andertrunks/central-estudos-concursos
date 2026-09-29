@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-SEG-001-INDEPAC-003",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-02"
+  ],
+  "statement": "Assinale a alternativa que melhor distingue autenticidade de autenticação.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Autenticidade é a propriedade de algo ser genuíno e verificável; autenticação é o processo usado para estabelecer confiança na identidade ou origem apresentada."
+    },
+    {
+      "id": "B",
+      "text": "Autenticidade define permissões de acesso; autenticação define quais arquivos devem ser criptografados."
+    },
+    {
+      "id": "C",
+      "text": "Autenticidade e autenticação são sinônimos perfeitos e sempre representam autorização."
+    },
+    {
+      "id": "D",
+      "text": "Autenticidade trata apenas de disponibilidade; autenticação trata apenas de integridade."
+    }
+  ],
+  "answer": "A",
+  "comment": "Autenticidade descreve uma propriedade de genuinidade e confiança. Autenticação é o processo que busca verificar uma identidade, origem ou autenticador. Autorização é outro conceito: define o que a entidade poderá fazer depois de identificada e autenticada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-CIA-AVAIL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

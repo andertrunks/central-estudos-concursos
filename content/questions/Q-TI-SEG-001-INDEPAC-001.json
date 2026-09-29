@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-SEG-001-INDEPAC-001",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-01"
+  ],
+  "statement": "Um sistema permanece acessível aos usuários autorizados, mas um atacante altera sem autorização o valor de um cadastro. Qual princípio foi diretamente comprometido?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Confidencialidade."
+    },
+    {
+      "id": "B",
+      "text": "Integridade."
+    },
+    {
+      "id": "C",
+      "text": "Disponibilidade."
+    },
+    {
+      "id": "D",
+      "text": "Autenticidade."
+    }
+  ],
+  "answer": "B",
+  "comment": "A alteração não autorizada atinge a integridade, pois o conteúdo deixou de preservar sua condição legítima. A disponibilidade não foi diretamente comprometida porque o sistema continua acessível. Confidencialidade diz respeito ao acesso ou à divulgação não autorizados. Autenticidade trata da genuinidade da origem ou identidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-CIA-CONF-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "Q-SI-001-07",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-03"
+  ],
+  "statement": "Um atacante externo é necessariamente uma vulnerabilidade do sistema.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. Atacante é fonte/cenário de ameaça, não vulnerabilidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-THREAT-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "Q-SI-001-14",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-03"
+  ],
+  "statement": "Segundo o NIST SP 800-39, aceitar, evitar, mitigar, compartilhar e transferir são formas possíveis de resposta ao risco.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. Essa é a terminologia de resposta ao risco usada pelo NIST SP 800-39.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-RISK-RESPONSE-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

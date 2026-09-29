@@ -887,10 +887,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "SI-001 integralmente reutilizado em quatro unidades. Seis IDs autorais INDEPAC e 15 inéditas gerais interativas, respostas após tentativa. 12 localizadores Quadrix seguem sem pontuação até confronto com cadernos e gabaritos definitivos."
   },
   {
     "id": "TI-SEG-002",

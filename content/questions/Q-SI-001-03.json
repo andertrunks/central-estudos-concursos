@@ -1,0 +1,44 @@
+{
+  "id": "Q-SI-001-03",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-01"
+  ],
+  "statement": "Assinale a opção que melhor representa disponibilidade:",
+  "options": [
+    {
+      "id": "A",
+      "text": "impedir qualquer alteração em dados"
+    },
+    {
+      "id": "B",
+      "text": "garantir acesso oportuno e confiável a usuários autorizados"
+    },
+    {
+      "id": "C",
+      "text": "ocultar todos os dados de qualquer usuário"
+    },
+    {
+      "id": "D",
+      "text": "verificar exclusivamente a identidade do remetente"
+    },
+    {
+      "id": "E",
+      "text": "impedir a negação de autoria"
+    }
+  ],
+  "answer": "B",
+  "comment": "Disponibilidade trata de acesso e uso oportunos e confiáveis por entidades autorizadas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-CIA-AVAIL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

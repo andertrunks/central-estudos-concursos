@@ -1158,5 +1158,165 @@
     "version": "consultado em 2026-09-23",
     "verifiedAt": "2026-09-23",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-CIA-CONF-001",
+    "title": "NIST CSRC Glossary — Confidentiality",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/confidentiality",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-CIA-INTEG-001",
+    "title": "NIST CSRC Glossary — Integrity",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/integrity",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-CIA-AVAIL-001",
+    "title": "NIST CSRC Glossary — Availability",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/availability",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-AUTHENTICITY-001",
+    "title": "NIST CSRC Glossary — Authenticity",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/authenticity",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-AUTHENTICATION-001",
+    "title": "NIST CSRC Glossary — Authentication",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/authentication",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-NONREP-001",
+    "title": "NIST CSRC Glossary — Non-repudiation",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/non_repudiation",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-THREAT-001",
+    "title": "NIST CSRC Glossary — Threat",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/threat",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-VULN-001",
+    "title": "NIST CSRC Glossary — Vulnerability",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/vulnerability",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-RISK-001",
+    "title": "NIST CSRC Glossary — Risk",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/risk",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-SECCTRL-001",
+    "title": "NIST CSRC Glossary — Security Control",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/security_control",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-RISK-RESPONSE-001",
+    "title": "NIST SP 800-39 — Managing Information Security Risk",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/pubs/sp/800/39/final",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-CSF20-001",
+    "title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "version": "CSF 2.0",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-ASSET-001",
+    "title": "NIST CSRC Glossary — Asset",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/asset",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-EVENT-001",
+    "title": "NIST CSRC Glossary — Event",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/event",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-INCIDENT-001",
+    "title": "NIST CSRC Glossary — Incident",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/incident",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-IMPACT-001",
+    "title": "NIST CSRC Glossary — Impact",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary/term/impact",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
   }
 ]

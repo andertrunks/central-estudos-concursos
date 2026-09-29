@@ -1,0 +1,32 @@
+{
+  "id": "Q-SI-001-04",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-02"
+  ],
+  "statement": "Autenticação e autenticidade são necessariamente sinônimos perfeitos, pois ambas designam exclusivamente o processo de login de usuários.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. Autenticidade é propriedade; autenticação é processo de verificação de identidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-AUTHENTICATION-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

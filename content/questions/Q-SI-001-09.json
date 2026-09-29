@@ -1,0 +1,35 @@
+{
+  "id": "Q-SI-001-09",
+  "contentId": "TI-SEG-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-001-03"
+  ],
+  "statement": "Um incidente pode comprometer ou ameaçar comprometer confidencialidade, integridade ou disponibilidade.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. A definição de incidente considera comprometimento real ou potencial da segurança.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-INCIDENT-001",
+    "SRC-NIST-CIA-CONF-001",
+    "SRC-NIST-CIA-INTEG-001",
+    "SRC-NIST-CIA-AVAIL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
