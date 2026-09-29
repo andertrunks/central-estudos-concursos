@@ -6,7 +6,7 @@
     "GSTI-002",
     "GSTI-003"
   ],
-  "status": "integrado — aguardando build, deploy e inspeção pública",
+  "status": "build e deploy concluídos; inspeção renderizada pendente — runtime do navegador offline",
   "sourceDocuments": [
     {
       "id": "1sSoVSmC8lGC0jZkzqMfnlwi2szr3i_ndp7-cM1AEPUY",
@@ -126,5 +126,15 @@
       "CRBIO01-2026-ATI",
       "SETEC-2026-ATI"
     ]
+  },
+  "publication": {
+    "contentCommit": "db82e448cb6aa35db6ec699b40c6c5c047f4fc60",
+    "sourceFixCommit": "05c44a1027cd6c78e48c02ed0bcf9e82d9d78c95",
+    "workflowRun": 36569232825,
+    "workflowConclusion": "success",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-GOV-001",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "Actions passou lint, typecheck, testes e build e concluiu deploy. Não registrar publicado no Drive até conferir a rota; navegador integrado permanece environment_offline. Site inclui SVG novo baseado na descrição da fonte, sem afirmar que o PNG incorporado foi transferido."
   }
 }
