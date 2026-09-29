@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0011",
   "contentId": "TI-SEG-002",
-  "status": "pronto para build",
+  "status": "correção de metadados em andamento; validação/deploy ainda bloqueados",
   "sourceDocuments": [
     {
       "id": "1k04Q3jxtfOmKqi-ggGUtvX_dsxca8229ZUF8hvboNII",
@@ -76,11 +76,12 @@
     "TI-SEG-002-YT-002"
   ],
   "publication": {
-    "contentCommit": "PENDING",
-    "workflowRun": null,
-    "workflowConclusion": "pending",
+    "contentCommit": "33e389dab3f1b9ad693b7a19fe8c9ab701a0f75b",
+    "workflowRun": 36572550419,
+    "workflowConclusion": "failure",
     "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SEG-002",
     "publicPageVerified": false,
-    "drivePublishedStatusUpdated": false
+    "drivePublishedStatusUpdated": false,
+    "failure": "Validação Zod: source.version vazio em fontes oficiais cadastradas para TI-SEG-002; preenchido como referência oficial web."
   }
 }
