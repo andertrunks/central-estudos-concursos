@@ -1,4 +1,113 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíß^½N‹Z–‹­¦ëeŠw¬Õ¥µÁ½ÉÐì‰•™½É•… °‘•ÍÉ¥‰”°•áÁ•Ð°¥Ðô™É½´€Ù¥Ñ•ÍÐœì)¥µÁ½ÉÐ€™…­”µ¥¹‘•á•‘‘ˆ½…ÕÑ¼œì)¥µÁ½ÉÐì±½…‘…Ñ…±½œô™É½´€œ¸¸½ÍÉ¥ÁÑÌ½¥¼œì)¥µÁ½ÉÐìÉ•½µµ•¹‘…Ñ¥½¹Ì°±•ÍÍ½¹U¹¥ÑÌ°ÍÑÕ‘¥•‘U¹¥Ðô™É½´€œ¸¸½ÍÉŒ½Í•ÉÙ¥•Ì½ÑÉ…¥°œì)¥µÁ½ÉÐì‰•¥¹9•áÑÑ¥Ù¥Ñä°™¥¹¥Í¡Ñ¥Ù¥Ñä°±½…‘MÑ…Ñ”°‘…Ñ…‰…Í”°É•½É‘¹ÍÝ•È°Í•ÑAÉ½É•ÍÌ°¥µÁ½ÉÑ	…­ÕÀ°ÑåÁ”	…­ÕÀô™É½´€œ¸¸½ÍÉŒ½Í•ÉÙ¥•Ì½ÍÑ½É…”œì)¥µÁ½ÉÐì½¹Ñ•ÍÑAÉ½É•ÍÌô™É½´€œ¸¸½ÍÉŒ½Í•ÉÙ¥•Ì½ÍÑÕ‘äœì)¥µÁ½ÉÐìÙ…±¥‘…Ñ•…Ñ…±½œô™É½´€œ¸¸½ÍÉŒ½Í•ÉÙ¥•Ì½¥¹Ñ•É¥Ñäœì)½¹ÍÐ½µÁ±•Ñ•…Ñ…±½œ€ô…Ý…¥Ð±½…‘…Ñ…±½œ ¤ì(¼¼Q¡•Í”Ñ•ÍÑÌÕÍ”„ÍÑ…‰±”°Í¥¹±”µ±•ÍÍ½¸™¥áÑÕÉ”ì¹•Ý±äÁÕ‰±¥Í¡•±•ÍÍ½¹Ì…É”Õ¹ÁÕ‰±¥Í¡•¥¸Ñ¡”™¥áÑÕÉ”¸)½¹ÍÐ‘…Ñ„€ôì(€€¸¸¹½µÁ±•Ñ•…Ñ…±½œ°(€É•™•É•¹•Ìè½µÁ±•Ñ•…Ñ…±½œ¹É•™•É•¹•Ì¹µ…À ¡É•™•É•¹”¤€ôøÉ•™•É•¹”¹¥€ôôô€Q$µ	´ÀÀÌœ(€€€€üÉ•™•É•¹”(€€€€èì€¸¸¹É•™•É•¹”°ÍÑ…ÑÕÌè€Á±…¹•©…‘¼œ…Ì½¹ÍÐ°•‘¥Ñ½É¥…±MÑ…ÑÕÌè€ÁÉ½‘Õé¥‘¼œô¤°(€±•ÍÍ½¹Ìè½µÁ±•Ñ•…Ñ…±½œ¹±•ÍÍ½¹Ì¹™¥±Ñ•È ¡±•ÍÍ½¸¤€ôø±•ÍÍ½¸¹¥€ôôô€Q$µ	´ÀÀÌœ¤°(€ÅÕ•ÍÑ¥½¹Ìè½µÁ±•Ñ•…Ñ…±½œ¹ÅÕ•ÍÑ¥½¹Ì¹™¥±Ñ•È ¡ÅÕ•ÍÑ¥½¸¤€ôøÅÕ•ÍÑ¥½¸¹½¹Ñ•¹Ñ%€ôôô€Q$µ	´ÀÀÌœ¤°(€µ•‘¥„è½µÁ±•Ñ•…Ñ…±½œ¹µ•‘¥„¹™¥±Ñ•È ¡¥Ñ•´¤€ôø¥Ñ•´¹½¹Ñ•¹Ñ%€ôôô€Q$µ	´ÀÀÌœ¤°)ôì)½¹ÍÐ‘…ä€ô€œÈÀÈØ´Àä´ÈÐœì)½¹ÍÐ•µÁÑäè	…­ÕÀ€ôìÙ•ÉÍ¥½¸è€Ä°ÁÉ½É•ÍÌèmt°É•Ù¥•ÝÌèmt°…ÑÑ•µÁÑÌèmt°ÝÉ¥Ñ¥¹Ìèmt°É•ÍÕ±ÑÌèmt°…Ñ¥Ù¥Ñ¥•Ìèmtôì)‰•™½É•… ¡…Íå¹Œ€ ¤€ôøì(€½¹ÍÐ‘ˆ€ô…Ý…¥Ð‘…Ñ…‰…Í” ¤ì(€™½È€¡½¹ÍÐ¹…µ”½˜lÁÉ½É•ÍÌœ°É•Ù¥•ÝÌœ°…ÑÑ•µÁÑÌœ°ÝÉ¥Ñ¥¹Ìœ°É•ÍÕ±ÑÌœ°…Ñ¥Ù¥Ñ¥•Ìt…Ì½¹ÍÐ¤…Ý…¥Ð‘ˆ¹±•…È¡¹…µ”¤ì(€‘ˆ¹±½Í” ¤ì)ô¤ì)‘•ÍÉ¥‰” ÑÉ¥±¡„ƒé¹¥„”Á•ÉÍ¥ÍÓ©¹¥„œ°€ ¤€ôøì(€¥Ð ½™•É•”Í½µ•¹Ñ”…Õ±„ÁÕ‰±¥…‘„”ÁÉ¥µ•¥É¼ÍÕ‰Ñ•µ„°½µÁ…ÉÑ¥±¡…‘¼•¹ÑÉ”½¹ÕÉÍ½Ìœ°€ ¤€ôøì(€€€½¹ÍÐÉ•ÍÕ±Ð€ôÉ•½µµ•¹‘…Ñ¥½¹Ì¡‘…Ñ„°•µÁÑä°‘…ä¤ì(€€€•áÁ•Ð¡É•ÍÕ±ÑlÁtü¹Õ¹¥Ñ%¤¹Ñ½	” Q$µ	´ÀÀÌ´ÀÄœ¤ì(€€€•áÁ•Ð¡É•ÍÕ±Ð¤¹Ñ½!…Ù•1•¹Ñ  Ä¤ì(€€€•áÁ•Ð¡‘…Ñ„¹±•ÍÍ½¹ÍlÁtü¹½¹Ñ•ÍÑÌ¤¹Ñ½!…Ù•1•¹Ñ  È¤ì(€ô¤ì(€¥Ð É•Ñ½µ„„µ•Íµ„…Ñ¥Ù¥‘…‘””µ…¹Ó¥´„½É‘•´…ÃÍÌÉ•…ÉÉ•…Èœ°…Íå¹Œ€ ¤€ôøì(€€€½¹ÍÐ™¥ÉÍÐ€ô…Ý…¥Ð‰•¥¹9•áÑÑ¥Ù¥Ñä¡‘…Ñ„°‘…ä¤ì(€€€½¹ÍÐ¹•áÐ€ô…Ý…¥Ð‰•¥¹9•áÑÑ¥Ù¥Ñä¡‘…Ñ„°€œÈÀÈØ´Àä´ÈÔœ¤ì(€€€•áÁ•Ð¡¹•áÐ¤¹Ñ½ÅÕ…°¡™¥ÉÍÐ¤ì(€€€•áÁ•Ð ¡…Ý…¥Ð±½…‘MÑ…Ñ” ¤¤¹…Ñ¥Ù¥Ñ¥•Ì¤¹Ñ½!…Ù•1•¹Ñ  Ä¤ì(€ô¤ì(€¥Ð ½¹±ÕÏ¼Á…É¥…°°À°ÅÕ•ÍÓÕ•Ì”ÁËÍá¥µ¼ÍÕ‰Ñ•µ„™Õ¹¥½¹…´Í•´•Í½±¡„‘”½¹ÕÉÍ¼œ°…Íå¹Œ€ ¤€ôøì(€€€½¹ÍÐ™¥ÉÍÐ€ô€¡…Ý…¥Ð‰•¥¹9•áÑÑ¥Ù¥Ñä¡‘…Ñ„°‘…ä¤¤„ì(€€€…Ý…¥Ð™¥¹¥Í¡Ñ¥Ù¥Ñä¡™¥ÉÍÐ¹¥°‘…Ñ„°‘…ä¤ì(€€€…Ý…¥Ð™¥¹¥Í¡Ñ¥Ù¥Ñä¡™¥ÉÍÐ¹¥°‘…Ñ„°‘…ä¤ì(€€€±•ÐÍÑ…Ñ”€ô…Ý…¥Ð±½…‘MÑ…Ñ” ¤ì(€€€•áÁ•Ð¡ÍÑ…Ñ”¹ÁÉ½É•ÍÍlÁtü¹Á•É•¹Ð¤¹Ñ½	” Ð¤ì(€€€•áÁ•Ð¡ÍÑ…Ñ”¹ÁÉ½É•ÍÍlÁtü¹½µÁ±•Ñ•‘Ð¤¹Ñ½	•9Õ±° ¤ì(€€€•áÁ•Ð¡ÍÑ…Ñ”¹É•Ù¥•ÝÌ¤¹Ñ½!…Ù•1•¹Ñ  Ð¤ì(€€€•áÁ•Ð¡ÍÑ…Ñ”¹É•Ù¥•ÝÌ¹•Ù•Éä¡È€ôøÈ¹½¹Ñ•¹Ñ%€ôôô€Q$µ	´ÀÀÌœ€˜˜È¹Õ¹¥Ñ%€ôôô€Q$µ	´ÀÀÌ´ÀÄœ¤¤¹Ñ½	”¡ÑÉÕ”¤ì(€€€•áÁ•Ð¡ÍÑÕ‘¥•‘U¹¥Ð¡‘…Ñ„°ÍÑ…Ñ”°€Q$µ	´ÀÀÌœ°Q$µ	´ÀÀÌ´ÀÈœ¤¤¹Ñ½	”¡™…±Í”¤ì(€€€½¹ÍÐÉ•Ù¥•Ü€ô€¡…Ý…¥Ð‰•¥¹9•áÑÑ¥Ù¥Ñä¡‘…Ñ„°‘…ä¤¤„ì(€€€•áÁ•Ð¡É•Ù¥•Ü¹­¥¹¤¹Ñ½	” É•Ù¥Ï¼œ¤ì(€€€…Ý…¥Ð™¥¹¥Í¡Ñ¥Ù¥Ñä¡É•Ù¥•Ü¹¥°‘…Ñ„°‘…ä¤ì(€€€½¹ÍÐÅÕ•ÍÑ¥½¹Ì€ô€¡…Ý…¥Ð‰•¥¹9•áÑÑ¥Ù¥Ñä¡‘…Ñ„°‘…ä¤¤„ì(€€€•áÁ•Ð¡ÅÕ•ÍÑ¥½¹Ì¹­¥¹¤¹Ñ½	” ÅÕ•ÍÓÕ•ÌŸ]zöÚ$z{-®éÜj×toThrow('procedÃªncia');
+import { beforeEach, describe, expect, it } from 'vitest';
+import 'fake-indexeddb/auto';
+import { loadCatalog } from '../scripts/io';
+import { recommendations, lessonUnits, studiedUnit } from '../src/services/trail';
+import { beginNextActivity, finishActivity, loadState, database, recordAnswer, setProgress, importBackup, type Backup } from '../src/services/storage';
+import { contestProgress } from '../src/services/study';
+import { validateCatalog } from '../src/services/integrity';
+const completeCatalog = await loadCatalog();
+// These tests use a stable, single-lesson fixture; newly published lessons are unpublished in the fixture.
+const data = {
+  ...completeCatalog,
+  references: completeCatalog.references.map((reference) => reference.id === 'TI-BD-003'
+    ? reference
+    : { ...reference, status: 'planejado' as const, editorialStatus: 'produzido' }),
+  lessons: completeCatalog.lessons.filter((lesson) => lesson.id === 'TI-BD-003'),
+  questions: completeCatalog.questions.filter((question) => question.contentId === 'TI-BD-003'),
+  media: completeCatalog.media.filter((item) => item.contentId === 'TI-BD-003'),
+};
+const day = '2026-09-24';
+const empty: Backup = { version: 1, progress: [], reviews: [], attempts: [], writings: [], results: [], activities: [] };
+beforeEach(async () => {
+  const db = await database();
+  for (const name of ['progress','reviews','attempts','writings','results','activities'] as const) await db.clear(name);
+  db.close();
+});
+describe('trilha Ãºnica e persistÃªncia', () => {
+  it('oferece somente aula publicada e primeiro subtema, compartilhado entre concursos', () => {
+    const result = recommendations(data, empty, day);
+    expect(result[0]?.unitId).toBe('TI-BD-003-01');
+    expect(result).toHaveLength(1);
+    expect(data.lessons[0]?.contests).toHaveLength(2);
+  });
+  it('retoma a mesma atividade e mantÃ©m a ordem apÃ³s recarregar', async () => {
+    const first = await beginNextActivity(data, day);
+    const next = await beginNextActivity(data, '2026-09-25');
+    expect(next).toEqual(first);
+    expect((await loadState()).activities).toHaveLength(1);
+  });
+  it('conclusÃ£o parcial, D0, questÃµes e prÃ³ximo subtema funcionam sem escolha de concurso', async () => {
+    const first = (await beginNextActivity(data, day))!;
+    await finishActivity(first.id, data, day);
+    await finishActivity(first.id, data, day);
+    let state = await loadState();
+    expect(state.progress[0]?.percent).toBe(4);
+    expect(state.progress[0]?.completedAt).toBeNull();
+    expect(state.reviews).toHaveLength(4);
+    expect(state.reviews.every(r => r.contentId === 'TI-BD-003' && r.unitId === 'TI-BD-003-01')).toBe(true);
+    expect(studiedUnit(data, state, 'TI-BD-003','TI-BD-003-02')).toBe(false);
+    const review = (await beginNextActivity(data, day))!;
+    expect(review.kind).toBe('revisÃ£o');
+    await finishActivity(review.id, data, day);
+    const questions = (await beginNextActivity(data, day))!;
+    expect(questions.kind).toBe('questÃµes');
+    await expect(finishActivity(questions.id, data, day)).rejects.toThrow('Responda');
+    for (const id of questions.questionIds) {
+      const q = data.questions.find(q => q.id === id)!;
+      await recordAnswer(q, q.answer, 'conteÃºdo', day, questions.id);
+      await recordAnswer(q, q.answer, 'conteÃºdo', day, questions.id);
+    }
+    await finishActivity(questions.id, data, day);
+    state = await loadState();
+    expect(state.attempts).toHaveLength(questions.questionIds.length);
+    expect(recommendations(data, state, day)[0]?.unitId).toBe('TI-BD-003-02');
+    const shared = data.contests.map(c => ({...c,conteudosRelacionados:['TI-BD-003']}));
+    expect(shared.map(c => contestProgress(c, state.progress))).toEqual([4,4]);
+  });
+  it('erros causam reforÃ§o futuro e revisar nÃ£o conclui a teoria inteira', async () => {
+    const q = data.questions.find(q => q.unitIds?.includes('TI-BD-003-01'))!;
+    const attempt = await recordAnswer(q, q.options.find(o=>o.id!==q.answer)!.id, 'interpretaÃ§Ã£o',day);
+    expect(recommendations(data,await loadState(), day).some(a=>a.kind==='reforÃ§o')).toBe(false);
+    const review=(await beginNextActivity(data,'2026-09-26'))!;
+    expect(review.kind).toBe('reforÃ§o');
+    await finishActivity(review.id,data,'2026-09-26');
+    const state=await loadState();
+    expect(state.attempts.find(a=>a.id===attempt.id)?.resolvedAt).toBe('2026-09-26');
+    expect(state.progress[0]?.completedAt).toBeNull();
+    expect(recommendations(data,state,'2026-09-26')[0]?.kind).toBe('aula');
+  });
+  it('preserva uma aula inteira concluÃ­da na versÃ£o antiga', async () => {
+    await setProgress('TI-BD-003','concluÃ­do',day);
+    const state=await loadState();
+    expect(lessonUnits(data.lessons[0]!).every(u=>studiedUnit(data,state,'TI-BD-003',u.id))).toBe(true);
+    expect(recommendations(data,state,day).some(a=>a.kind==='aula')).toBe(false);
+  });
+  it('backup antigo continua vÃ¡lido e backup novo inclui a retomada', async () => {
+    const {activities: _activities, ...old} = empty;
+    expect(_activities).toEqual([]);
+    await importBackup(old);
+    const activity=await beginNextActivity(data,day);
+    const backup=await loadState();
+    const db=await database(); await db.clear('activities'); db.close();
+    await importBackup(JSON.parse(JSON.stringify(backup)));
+    expect((await beginNextActivity(data,day))?.id).toBe(activity?.id);
+  });
+  it('exclui prova expirada, preserva suspensÃ£o e mantÃ©m os dados', () => {
+    expect(recommendations(data,empty,'2026-11-30')[0]?.reasons).toContain('1 concurso(s) ativo(s)');
+    expect(recommendations(data,empty,'2027-01-18')).toEqual([]);
+    const copy=structuredClone(data); copy.contests[0]!.status='suspenso';
+    expect(recommendations(copy,empty,'2027-01-18')).toHaveLength(1);
+    expect(data.lessons).toHaveLength(1);
+  });
+  it('prioriza questÃ£o real da banca antes de autoral, sem inventar procedÃªncia', async () => {
+    await setProgress('TI-BD-003','concluÃ­do',day);
+    const copy=structuredClone(data);
+    const original=copy.questions[0]!;
+    copy.questions.push({...original,id:'TEST-REAL',origin:'real',banca:copy.contests[0]!.banca,
+      provenance:{orgao:'Fixture',prova:'Teste',cargo:'Teste',year:2026,url:'https://example.org/test'}});
+    const activity=recommendations(copy,await loadState(),day).find(a=>a.kind==='questÃµes');
+    expect(activity?.questionIds[0]).toBe('TEST-REAL');
+    expect(()=>validateCatalog({...copy,questions:[{...original,origin:'real'}]})).toThrow('procedÃªncia');
   });
   it('rejeita vÃ­nculo de questÃ£o com subtema inexistente', () => {
     const copy=structuredClone(data); copy.questions[0]!.unitIds=['INEXISTENTE'];
