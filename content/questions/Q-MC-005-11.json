@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-11",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-02"
+  ],
+  "statement": "Três bombas de mesma vazão enchem um reservatório em 12 horas. Seis bombas idênticas, trabalhando em conjunto, encherão o mesmo reservatório em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4 horas"
+    },
+    {
+      "id": "B",
+      "text": "6 horas"
+    },
+    {
+      "id": "C",
+      "text": "8 horas"
+    },
+    {
+      "id": "D",
+      "text": "18 horas"
+    },
+    {
+      "id": "E",
+      "text": "24 horas"
+    }
+  ],
+  "answer": "B",
+  "comment": "Produto bombas×tempo deve ser constante: 3×12=6×x, portanto x=6 horas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

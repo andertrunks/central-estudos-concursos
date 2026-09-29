@@ -1,0 +1,80 @@
+{
+  "queueId": "PUB-0007",
+  "contentId": "MAT-003",
+  "status": "integrado — aguardando build, publicação e conferência pública",
+  "sourceDocuments": [
+    {
+      "id": "1KQVWRGjgzKwSvTxeDVQlbEEv-5NGJN4EFI70QxOneKE",
+      "title": "MC-005 — Regra de três simples e composta",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1ce4ZP9GLuQ8sk_OWuR138P3mKVePcbKA0VCZNqem758",
+      "title": "MAT-003 — complemento e auditoria",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1OPUPjm4pVoJG0vxsPw7ToXsmD2K-fJxu",
+      "title": "03_Razao_e_Proporcao.docx — material antigo reutilizável",
+      "reusedAsContext": true
+    }
+  ],
+  "canonicalSections": [
+    "MAT-003-01",
+    "MAT-003-02",
+    "MAT-003-03",
+    "MAT-003-04"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-MC-005-01",
+    "Q-MC-005-02",
+    "Q-MC-005-03",
+    "Q-MC-005-04",
+    "Q-MC-005-05",
+    "Q-MC-005-06",
+    "Q-MC-005-07",
+    "Q-MC-005-08",
+    "Q-MC-005-09",
+    "Q-MC-005-10",
+    "Q-MC-005-11",
+    "Q-MC-005-12",
+    "Q-MC-005-13",
+    "Q-MC-005-14",
+    "Q-MC-005-15",
+    "Q-MC-005-16",
+    "Q-MC-005-17",
+    "Q-MC-005-18",
+    "Q-MC-005-19",
+    "Q-MC-005-20"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-140",
+    "QREF-QUAD-141",
+    "QREF-QUAD-142",
+    "QREF-INDEPAC-004",
+    "QREF-INDEPAC-005",
+    "QREF-INDEPAC-006"
+  ],
+  "media": [
+    "MAT-003-YT-001",
+    "MAT-003-YT-002"
+  ],
+  "image": {
+    "status": "transferência não concluída no ambiente local desconectado",
+    "originalDriveMediaId": "MAT-003-IMG-001",
+    "alt": "Diagrama de decisão iniciado por 'Há proporcionalidade?'; se sim, separa regra simples (direta ou inversa) de regra composta; caso contrário, não aplicar regra de três.",
+    "required": false
+  },
+  "transformation": {
+    "fullMC005TopicalMaterialReused": true,
+    "mat003CoverageReused": true,
+    "answersAndCommentsInAttemptGatedSchema": true,
+    "unverifiedHistoricalReferencesExcludedFromScoring": true,
+    "privateDriveLinksRemoved": true,
+    "learnerProgressPreserved": true,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-01",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-01"
+  ],
+  "statement": "Quatro cadernos custam R$ 28,00. Nove cadernos, com preço unitário constante, custam:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 49,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 56,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 63,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 70,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 72,00"
+    }
+  ],
+  "answer": "C",
+  "comment": "Preço por caderno=28/4=7; 9×7=63 reais. É relação direta com taxa unitária fixa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

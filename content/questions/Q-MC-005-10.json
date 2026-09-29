@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-10",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Quatro máquinas iguais produzem 480 peças em 6 horas. Sete máquinas iguais produzirão, em 5 horas:",
+  "options": [
+    {
+      "id": "A",
+      "text": "480 peças"
+    },
+    {
+      "id": "B",
+      "text": "560 peças"
+    },
+    {
+      "id": "C",
+      "text": "600 peças"
+    },
+    {
+      "id": "D",
+      "text": "640 peças"
+    },
+    {
+      "id": "E",
+      "text": "700 peças"
+    }
+  ],
+  "answer": "E",
+  "comment": "Rendimento=480/(4×6)=20 peças por máquina-hora; 7×5×20=700 peças.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

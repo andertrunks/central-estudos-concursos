@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-15",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-02"
+  ],
+  "statement": "Uma viagem de 240 km leva 3 horas a 80 km/h de média. À média de 60 km/h, a mesma distância será percorrida em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "2 horas"
+    },
+    {
+      "id": "B",
+      "text": "3 horas"
+    },
+    {
+      "id": "C",
+      "text": "3,5 horas"
+    },
+    {
+      "id": "D",
+      "text": "5 horas"
+    },
+    {
+      "id": "E",
+      "text": "4 horas"
+    }
+  ],
+  "answer": "E",
+  "comment": "Mesmo percurso=240 km; a 60 km/h, t=240/60=4 horas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-14",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-04"
+  ],
+  "statement": "Uma prestação tem custo total C(q)=12+4q reais, com cobrança fixa de R$ 12. Para q=4, qual é o custo total?",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 16"
+    },
+    {
+      "id": "B",
+      "text": "R$ 20"
+    },
+    {
+      "id": "C",
+      "text": "R$ 24"
+    },
+    {
+      "id": "D",
+      "text": "R$ 28"
+    },
+    {
+      "id": "E",
+      "text": "R$ 40"
+    }
+  ],
+  "answer": "D",
+  "comment": "Não há proporção direta devido à parcela fixa. Substituindo na expressão: C(4)=12+4×4=28 reais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

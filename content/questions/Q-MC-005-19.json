@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-19",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-02"
+  ],
+  "statement": "Quatro pessoas de igual produtividade concluem uma tarefa em 6 dias trabalhando 5 horas diárias. Três pessoas de mesmo rendimento, com 8 horas por dia, levarão:",
+  "options": [
+    {
+      "id": "A",
+      "text": "5 dias"
+    },
+    {
+      "id": "B",
+      "text": "4 dias"
+    },
+    {
+      "id": "C",
+      "text": "6 dias"
+    },
+    {
+      "id": "D",
+      "text": "8 dias"
+    },
+    {
+      "id": "E",
+      "text": "10 dias"
+    }
+  ],
+  "answer": "A",
+  "comment": "Tarefa fixa=4×6×5=120 pessoa-horas; nova capacidade diária=3×8=24; 120/24=5 dias.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

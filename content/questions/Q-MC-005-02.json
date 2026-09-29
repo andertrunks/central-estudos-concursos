@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-02",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-02"
+  ],
+  "statement": "Cinco trabalhadores iguais concluem uma tarefa em 12 dias, com a mesma jornada diária. Dez trabalhadores concluirão a mesma tarefa em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "3 dias"
+    },
+    {
+      "id": "B",
+      "text": "6 dias"
+    },
+    {
+      "id": "C",
+      "text": "8 dias"
+    },
+    {
+      "id": "D",
+      "text": "10 dias"
+    },
+    {
+      "id": "E",
+      "text": "24 dias"
+    }
+  ],
+  "answer": "B",
+  "comment": "Trabalho constante: 5×12=10×x; x=60/10=6 dias. Mais trabalhadores iguais reduzem o tempo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

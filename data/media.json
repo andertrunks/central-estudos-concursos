@@ -196,5 +196,29 @@
     "channel": "Qconcursos",
     "verifiedAt": "2026-09-24",
     "original": false
+  },
+  {
+    "id": "MAT-003-YT-001",
+    "contentId": "MAT-003",
+    "type": "YouTube",
+    "title": "Regra de Três Simples — Professora Angela",
+    "caption": "Explicação complementar sobre regra de três simples.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=7gK3-QG363o",
+    "channel": "Professora Angela",
+    "verifiedAt": "2026-09-24",
+    "original": false
+  },
+  {
+    "id": "MAT-003-YT-002",
+    "contentId": "MAT-003",
+    "type": "YouTube",
+    "title": "Regra de Três Composta — Professora Angela",
+    "caption": "Explicação complementar sobre regra de três composta.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=QXd6ubUNUuU",
+    "channel": "Professora Angela",
+    "verifiedAt": "2026-09-24",
+    "original": false
   }
 ]

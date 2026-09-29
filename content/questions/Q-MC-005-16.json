@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-16",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-01"
+  ],
+  "statement": "Se 2,5 kg de um produto custam R$ 30,00, então 4 kg do mesmo produto, mantendo o preço por quilograma, custarão:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 40,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 48,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 52,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 60,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 75,00"
+    }
+  ],
+  "answer": "B",
+  "comment": "Taxa constante=30/2,5=12 reais/kg; para 4 kg, total=4×12=48 reais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

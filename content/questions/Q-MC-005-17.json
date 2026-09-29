@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-17",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Sete funcionários produzem 280 itens em 4 horas, com produtividade por pessoa-hora constante. Dez funcionários produzirão em 5 horas:",
+  "options": [
+    {
+      "id": "A",
+      "text": "350 itens"
+    },
+    {
+      "id": "B",
+      "text": "400 itens"
+    },
+    {
+      "id": "C",
+      "text": "450 itens"
+    },
+    {
+      "id": "D",
+      "text": "500 itens"
+    },
+    {
+      "id": "E",
+      "text": "560 itens"
+    }
+  ],
+  "answer": "D",
+  "comment": "Taxa individual=280/(7×4)=10 itens/pessoa-hora; dez funcionários em cinco horas totalizam 50 pessoa-horas e 500 itens.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

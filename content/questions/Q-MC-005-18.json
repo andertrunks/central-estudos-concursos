@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-18",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Doze funcionários, trabalhando 6 horas por dia durante 5 dias, produzem 720 unidades. Oito funcionários de mesmo rendimento, trabalhando 9 horas por dia durante 4 dias, produzirão:",
+  "options": [
+    {
+      "id": "A",
+      "text": "480"
+    },
+    {
+      "id": "B",
+      "text": "540"
+    },
+    {
+      "id": "C",
+      "text": "576"
+    },
+    {
+      "id": "D",
+      "text": "600"
+    },
+    {
+      "id": "E",
+      "text": "640"
+    }
+  ],
+  "answer": "C",
+  "comment": "Produção individual por hora=720/(12×6×5)=2 unidades; 8×9×4=288 pessoa-horas; 288×2=576 unidades.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

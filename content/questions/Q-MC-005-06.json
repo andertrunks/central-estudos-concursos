@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-06",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Seis trabalhadores, a 8 horas diárias, fazem certo serviço em 10 dias. Oito trabalhadores, a 6 horas diárias, mantida a produtividade individual, fazem o MESMO serviço em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "6 dias"
+    },
+    {
+      "id": "B",
+      "text": "8 dias"
+    },
+    {
+      "id": "C",
+      "text": "10 dias"
+    },
+    {
+      "id": "D",
+      "text": "12 dias"
+    },
+    {
+      "id": "E",
+      "text": "15 dias"
+    }
+  ],
+  "answer": "C",
+  "comment": "Mesma tarefa: 6×8×10=480 pessoa-horas. Nova equipe realiza 8×6=48 pessoa-horas/dia, então 480/48=10 dias.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

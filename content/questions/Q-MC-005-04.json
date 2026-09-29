@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-04",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-01"
+  ],
+  "statement": "Um volume de 2,4 litros deve ser colocado em frascos de 150 mililitros, sem perdas. Quantos frascos completos serão preenchidos?",
+  "options": [
+    {
+      "id": "A",
+      "text": "8"
+    },
+    {
+      "id": "B",
+      "text": "10"
+    },
+    {
+      "id": "C",
+      "text": "12"
+    },
+    {
+      "id": "D",
+      "text": "15"
+    },
+    {
+      "id": "E",
+      "text": "16"
+    }
+  ],
+  "answer": "E",
+  "comment": "2,4 L=2.400 mL. Divida 2.400/150=16 frascos. O distrator 15 omite parte do volume.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

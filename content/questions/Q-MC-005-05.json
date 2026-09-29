@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-05",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Três máquinas produzem 360 peças em 4 horas. Cinco máquinas de igual rendimento produzirão, em 6 horas:",
+  "options": [
+    {
+      "id": "A",
+      "text": "900"
+    },
+    {
+      "id": "B",
+      "text": "720"
+    },
+    {
+      "id": "C",
+      "text": "600"
+    },
+    {
+      "id": "D",
+      "text": "1.080"
+    },
+    {
+      "id": "E",
+      "text": "450"
+    }
+  ],
+  "answer": "A",
+  "comment": "Rendimento=360/(3×4)=30 peças por máquina-hora. Em 5×6=30 máquina-horas: 30×30=900.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

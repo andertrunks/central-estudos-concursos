@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-09",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Seis pessoas, em jornadas de 5 horas diárias, produzem 300 unidades em 10 dias. Nove pessoas, com a mesma jornada e produtividade, levarão quanto tempo para produzir 450 unidades?",
+  "options": [
+    {
+      "id": "A",
+      "text": "10 dias"
+    },
+    {
+      "id": "B",
+      "text": "12 dias"
+    },
+    {
+      "id": "C",
+      "text": "15 dias"
+    },
+    {
+      "id": "D",
+      "text": "8 dias"
+    },
+    {
+      "id": "E",
+      "text": "6 dias"
+    }
+  ],
+  "answer": "A",
+  "comment": "Primeiro rendimento=300/(6×5×10)=1. Novo cenário: 9×5=45 unidades/dia; 450/45=10 dias.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

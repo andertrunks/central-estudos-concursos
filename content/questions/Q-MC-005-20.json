@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-20",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Quatro máquinas idênticas, trabalhando 5 horas diárias durante 6 dias, produzem 600 unidades. Seis máquinas iguais, trabalhando 4 horas diárias por 5 dias, produzirão:",
+  "options": [
+    {
+      "id": "A",
+      "text": "400 unidades"
+    },
+    {
+      "id": "B",
+      "text": "480 unidades"
+    },
+    {
+      "id": "C",
+      "text": "520 unidades"
+    },
+    {
+      "id": "D",
+      "text": "560 unidades"
+    },
+    {
+      "id": "E",
+      "text": "600 unidades"
+    }
+  ],
+  "answer": "E",
+  "comment": "Primeiro rendimento=600/(4×5×6)=5 unidades por máquina-hora; segundo esforço=6×4×5=120 máquina-horas, total=600 unidades.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

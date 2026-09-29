@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-005-08",
+  "contentId": "MAT-003",
+  "banca": "Autoral — Central de Estudos (estilo VUNESP; inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-003-03"
+  ],
+  "statement": "Cinco pessoas trabalhando 8 horas por dia produzem 400 unidades em 10 dias. Com oito pessoas e 5 horas por dia, quantos dias são necessários para produzir 600 unidades, sob o mesmo rendimento por pessoa-hora?",
+  "options": [
+    {
+      "id": "A",
+      "text": "8 dias"
+    },
+    {
+      "id": "B",
+      "text": "10 dias"
+    },
+    {
+      "id": "C",
+      "text": "12 dias"
+    },
+    {
+      "id": "D",
+      "text": "15 dias"
+    },
+    {
+      "id": "E",
+      "text": "18 dias"
+    }
+  ],
+  "answer": "D",
+  "comment": "Primeiro rendimento=400/(5×8×10)=1 unidade por pessoa-hora. Segundo cenário produz 8×5=40 unidades/dia; 600/40=15 dias.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
