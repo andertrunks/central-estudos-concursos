@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0006",
   "driveDocumentId": "1hR1Zh5G1BPDwk0HycguP3ENYdp6mlrSA4VCzIhzbkrc",
-  "status": "pronto para publicação",
+  "status": "publicado",
   "sourceDocuments": [
     {
       "id": "1hR1Zh5G1BPDwk0HycguP3ENYdp6mlrSA4VCzIhzbkrc",
@@ -59,7 +59,7 @@
     "QREF-INDEPAC-003"
   ],
   "imageSha256": "f1b000857c7d840d0b88cdd894452c3236a92209d81c3daa59133cf9d78c3b09",
-  "drivePublishedStatusUpdated": false,
+  "drivePublishedStatusUpdated": true,
   "transformation": {
     "fullLP001AndLP002MaterialReused": true,
     "answersAndCommentsInAttemptGatedSchema": true,
@@ -70,5 +70,11 @@
       "CRBIO01-2026-ATI",
       "SETEC-2026-ATI"
     ]
+  },
+  "publishedAt": "2026-09-29T11:38:50Z",
+  "publication": {
+    "contentCommit": "65d62c569325fe12c03cad37ed803d9991d33fb8",
+    "workflowRun": 36562736261,
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/PORT-001"
   }
 }
