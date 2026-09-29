@@ -371,5 +371,40 @@
     "channel": "Hardware Redes Brasil",
     "verifiedAt": "2026-09-25",
     "original": false
+  },
+  {
+    "id": "TI-SEG-002-IMG-001",
+    "contentId": "TI-SEG-002",
+    "type": "imagem",
+    "title": "Criptografia e autenticação — visão integrada",
+    "caption": "Infográfico integrado: criptografia simétrica/assimétrica, hash, assinatura digital, certificados/PKI, autenticação/MFA, RBAC e menor privilégio.",
+    "alt": "Infográfico de criptografia simétrica e assimétrica, hash, assinatura digital, certificados e PKI, autenticação e MFA, autorização/RBAC e menor privilégio.",
+    "file": "media/TI-SEG-002-IMG-001.png",
+    "verifiedAt": "2026-09-25",
+    "original": true
+  },
+  {
+    "id": "TI-SEG-002-YT-001",
+    "contentId": "TI-SEG-002",
+    "type": "YouTube",
+    "title": "Criptografia simétrica e assimétrica",
+    "caption": "Explica características, vantagens, desvantagens, algoritmos e usos de criptografia simétrica e assimétrica.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=5VDRFhmdQxQ",
+    "channel": "Prof. Sergio Villarreal",
+    "verifiedAt": "2026-09-25",
+    "original": false
+  },
+  {
+    "id": "TI-SEG-002-YT-002",
+    "contentId": "TI-SEG-002",
+    "type": "YouTube",
+    "title": "Criptografia Simétrica e Assimétrica | Assinatura Digital",
+    "caption": "Mapa mental sobre criptografia simétrica, assimétrica e assinatura digital.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=FXle5aD7dXU",
+    "channel": "Rodrigo Schaeffer",
+    "verifiedAt": "2026-09-25",
+    "original": false
   }
 ]

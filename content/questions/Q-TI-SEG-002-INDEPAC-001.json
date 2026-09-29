@@ -1,0 +1,49 @@
+{
+  "id": "Q-TI-SEG-002-INDEPAC-001",
+  "contentId": "TI-SEG-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-002-02"
+  ],
+  "statement": "Um sistema protege grande volume de dados utilizando uma chave secreta compartilhada entre as partes autorizadas. O mecanismo descrito corresponde principalmente a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Criptografia simétrica."
+    },
+    {
+      "id": "B",
+      "text": "Função hash sem chave."
+    },
+    {
+      "id": "C",
+      "text": "Assinatura digital."
+    },
+    {
+      "id": "D",
+      "text": "Certificado digital."
+    }
+  ],
+  "answer": "A",
+  "comment": "Na criptografia simétrica, as partes utilizam uma chave secreta compartilhada. Esse modelo é eficiente para grandes volumes de dados. Hash não é cifragem reversível; assinatura digital possui outra finalidade; certificado digital relaciona identidade e chave pública dentro de uma infraestrutura de confiança.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-FIPS197-TI-SEG-002",
+    "SRC-NIST-FIPS180-4-TI-SEG-002",
+    "SRC-NIST-FIPS186-5-TI-SEG-002",
+    "SRC-NIST-SP800-57-TI-SEG-002",
+    "SRC-NIST-PKI-TI-SEG-002",
+    "SRC-ITI-ICPBRA-TI-SEG-002",
+    "SRC-ITI-CERTDIGITAL-TI-SEG-002",
+    "SRC-ITI-ENTES-TI-SEG-002",
+    "SRC-PLANALTO-MPV2200-2-TI-SEG-002",
+    "SRC-PLANALTO-LEI14063-TI-SEG-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

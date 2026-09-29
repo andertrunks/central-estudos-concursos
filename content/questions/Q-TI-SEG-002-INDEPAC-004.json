@@ -1,0 +1,44 @@
+{
+  "id": "Q-TI-SEG-002-INDEPAC-004",
+  "contentId": "TI-SEG-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-002-01"
+  ],
+  "statement": "Em um sistema RBAC, a forma típica de administrar permissões consiste em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Conceder todas as permissões diretamente a cada usuário, sem papéis intermediários."
+    },
+    {
+      "id": "B",
+      "text": "Associar permissões a papéis e atribuir usuários aos papéis adequados às suas funções."
+    },
+    {
+      "id": "C",
+      "text": "Utilizar somente biometria para definir os recursos acessíveis."
+    },
+    {
+      "id": "D",
+      "text": "Substituir autenticação por uma lista pública de usuários."
+    }
+  ],
+  "answer": "B",
+  "comment": "RBAC é controle de acesso baseado em papéis. As permissões são associadas a papéis, e os usuários recebem papéis compatíveis com suas funções. RBAC trata principalmente de autorização e pode ser combinado com menor privilégio e segregação de funções.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-SP800-63-4-TI-SEG-002",
+    "SRC-NIST-SP800-63B-4-TI-SEG-002",
+    "SRC-NIST-SP800-53-R5-TI-SEG-002",
+    "SRC-NIST-IAM-TI-SEG-002",
+    "SRC-NIST-RBAC-TI-SEG-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

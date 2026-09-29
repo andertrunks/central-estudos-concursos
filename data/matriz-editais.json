@@ -912,10 +912,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "Conteúdo integral reutilizado e integrado; referências Quadrix não confrontadas com caderno e gabarito definitivo sem pontuação; inspeção visual/Drive pendentes."
   },
   {
     "id": "TI-SEG-003",

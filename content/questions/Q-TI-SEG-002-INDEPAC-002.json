@@ -1,0 +1,44 @@
+{
+  "id": "Q-TI-SEG-002-INDEPAC-002",
+  "contentId": "TI-SEG-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-002-01"
+  ],
+  "statement": "Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "A assinatura digital tem como objetivo principal garantir sigilo do conteúdo."
+    },
+    {
+      "id": "B",
+      "text": "O certificado digital publica a chave privada de seu titular."
+    },
+    {
+      "id": "C",
+      "text": "A assinatura digital pode ser verificada com a chave pública correspondente, e o certificado auxilia a estabelecer uma associação confiável entre chave pública e identidade."
+    },
+    {
+      "id": "D",
+      "text": "Certificado digital e assinatura digital são o mesmo mecanismo."
+    }
+  ],
+  "answer": "C",
+  "comment": "No modelo convencional, a assinatura é produzida com a chave privada e verificada com a chave pública correspondente. O certificado auxilia a vincular a chave pública à identidade. A chave privada não é publicada no certificado, e assinatura digital não garante confidencialidade por si só.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-SP800-63-4-TI-SEG-002",
+    "SRC-NIST-SP800-63B-4-TI-SEG-002",
+    "SRC-NIST-SP800-53-R5-TI-SEG-002",
+    "SRC-NIST-IAM-TI-SEG-002",
+    "SRC-NIST-RBAC-TI-SEG-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

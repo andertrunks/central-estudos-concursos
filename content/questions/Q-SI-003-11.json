@@ -1,0 +1,41 @@
+{
+  "id": "Q-SI-003-11",
+  "contentId": "TI-SEG-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-002-02"
+  ],
+  "statement": "A Lei nº 14.063/2020 classifica assinaturas eletrônicas em simples, avançada e qualificada.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. É a classificação do art. 4º da Lei nº 14.063/2020.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-NIST-FIPS197-TI-SEG-002",
+    "SRC-NIST-FIPS180-4-TI-SEG-002",
+    "SRC-NIST-FIPS186-5-TI-SEG-002",
+    "SRC-NIST-SP800-57-TI-SEG-002",
+    "SRC-NIST-PKI-TI-SEG-002",
+    "SRC-ITI-ICPBRA-TI-SEG-002",
+    "SRC-ITI-CERTDIGITAL-TI-SEG-002",
+    "SRC-ITI-ENTES-TI-SEG-002",
+    "SRC-PLANALTO-MPV2200-2-TI-SEG-002",
+    "SRC-PLANALTO-LEI14063-TI-SEG-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

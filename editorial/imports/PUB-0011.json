@@ -1,0 +1,86 @@
+{
+  "queueId": "PUB-0011",
+  "contentId": "TI-SEG-002",
+  "status": "pronto para build",
+  "sourceDocuments": [
+    {
+      "id": "1k04Q3jxtfOmKqi-ggGUtvX_dsxca8229ZUF8hvboNII",
+      "title": "SI-002 — Identidade, autenticação e controle de acesso: IAM, fatores de autenticação, MFA, autorização, menor privilégio e RBAC — visão conceitual",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1thNnUHOxwRqaPaXSaLe-bFGUDLtAPsj6PIIN7XMxX50",
+      "title": "SI-003 — Criptografia aplicada à segurança: criptografia simétrica e assimétrica, hash, assinatura digital, certificados e PKI — visão conceitual",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1VVuDhvhYZVanJPs0yARbKQuSMIg2OYq7mNAwKxkn4f0",
+      "title": "TI-SEG-002 — Criptografia e autenticação — complemento e auditoria Central de Estudos",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-SEG-002-01",
+    "TI-SEG-002-02",
+    "TI-SEG-002-03"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-SI-002-01",
+    "Q-SI-002-02",
+    "Q-SI-002-03",
+    "Q-SI-002-04",
+    "Q-SI-002-05",
+    "Q-SI-002-06",
+    "Q-SI-002-07",
+    "Q-SI-002-08",
+    "Q-SI-002-09",
+    "Q-SI-002-10",
+    "Q-SI-002-11",
+    "Q-SI-002-12",
+    "Q-SI-002-13",
+    "Q-SI-002-14",
+    "Q-SI-002-15",
+    "Q-SI-002-16",
+    "Q-SI-002-17",
+    "Q-SI-002-18",
+    "Q-SI-003-01",
+    "Q-SI-003-02",
+    "Q-SI-003-03",
+    "Q-SI-003-04",
+    "Q-SI-003-05",
+    "Q-SI-003-06",
+    "Q-SI-003-07",
+    "Q-SI-003-08",
+    "Q-SI-003-09",
+    "Q-SI-003-10",
+    "Q-SI-003-11",
+    "Q-SI-003-12",
+    "Q-SI-003-13",
+    "Q-SI-003-14",
+    "Q-SI-003-15",
+    "Q-TI-SEG-002-INDEPAC-001",
+    "Q-TI-SEG-002-INDEPAC-002",
+    "Q-TI-SEG-002-INDEPAC-003",
+    "Q-TI-SEG-002-INDEPAC-004"
+  ],
+  "pendingUnscoredReferences": [
+    "Q4219819",
+    "Q4061037",
+    "Q4189879",
+    "Q4189880",
+    "Quadrix 2022 Prefeitura de Barreiras — ID externo não identificado"
+  ],
+  "media": [
+    "TI-SEG-002-IMG-001",
+    "TI-SEG-002-YT-001",
+    "TI-SEG-002-YT-002"
+  ],
+  "publication": {
+    "contentCommit": "PENDING",
+    "workflowRun": null,
+    "workflowConclusion": "pending",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SEG-002",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false
+  }
+}
