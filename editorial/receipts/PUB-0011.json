@@ -1,0 +1,27 @@
+{
+  "queueId": "PUB-0011",
+  "contentId": "TI-SEG-002",
+  "driveDocumentId": "1VVuDhvhYZVanJPs0yARbKQuSMIg2OYq7mNAwKxkn4f0",
+  "integratedAt": "2026-09-29T13:04:58Z",
+  "status": "deploy concluído; inspeção pública pendente",
+  "integratedCommit": "33e389dab3f1b9ad693b7a19fe8c9ab701a0f75b",
+  "metadataFixCommit": "169d9673285dc9fe78d6daf27282613eeb03eadd",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SEG-002",
+  "workflowRunId": 36572728970,
+  "verifiedAt": null,
+  "verification": {
+    "actions": "success",
+    "publicLesson": "pending—browser runtime timeout",
+    "questions": 37,
+    "answersGatedUntilAttempt": true,
+    "unverifiedQuadrixReferencesExcludedFromScoring": true,
+    "drivePublishedStatusUpdated": false
+  },
+  "pendingReferences": [
+    "Q4219819",
+    "Q4061037",
+    "Q4189879",
+    "Q4189880",
+    "Quadrix 2022 Prefeitura de Barreiras — ID externo não identificado"
+  ]
+}

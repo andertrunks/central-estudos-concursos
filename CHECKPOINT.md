@@ -51,3 +51,13 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Inspeção renderizada pública pendente: o navegador integrado expirou após 300 segundos e o web fetch não acessou a página. Controle canônico do Drive permanece inalterado; não registrar baixa editorial até verificação visual.
 - QREF-INDEPAC-RED-002-001 e QREF-QUAD-RED-002-001 a 004 seguem pendentes e fora da pontuação. DHCP permanece separado.
 - Último pacote integrado: PUB-0010. Primeiro pacote pendente: PUB-0011 — TI-SEG-002 (criptografia e autenticação). Retomar conferindo rota pública e, se runtime disponível, atualizar controle do Drive; em seguida continuar a fila.
+
+
+## Retomada contínua — PUB-0011 — 2026-09-29
+
+- TI-SEG-002 integrado no commit 33e389dab3f1b9ad693b7a19fe8c9ab701a0f75b; metadados obrigatórios de fontes corrigidos no commit 169d9673285dc9fe78d6daf27282613eeb03eadd.
+- Reutilizados integralmente SI-002, SI-003 e complemento TI-SEG-002; 37 questões autorais interativas; PNG original e dois vídeos verificados.
+- GitHub Actions 36572728970: `npm run check` e deploy do GitHub Pages concluídos com sucesso. Rota: https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SEG-002.
+- Inspeção renderizada pública pendente por timeout do navegador integrado e indisponibilidade do fetch; Google Sheet permanece sem baixa editorial.
+- Q4219819, Q4061037, Q4189879, Q4189880 e referência Quadrix 2022 de Barreiras sem ID externo permanecem não pontuáveis até confronto com caderno e gabarito definitivo.
+- Último pacote integrado: PUB-0011. Primeiro pacote pendente: PUB-0012 — TI-SO-001 (Windows e Linux).
