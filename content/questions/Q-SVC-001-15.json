@@ -1,0 +1,50 @@
+{
+  "id": "Q-SVC-001-15",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-01"
+  ],
+  "statement": "Assinale a associação correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "pronto — aguarda evento de E/S e não pode executar"
+    },
+    {
+      "id": "B",
+      "text": "processo — arquivo executável passivo no disco"
+    },
+    {
+      "id": "C",
+      "text": "thread — fluxo de execução dentro de processo"
+    },
+    {
+      "id": "D",
+      "text": "kernel — aplicação comum sem privilégios"
+    },
+    {
+      "id": "E",
+      "text": "page fault — sempre acesso criminoso à memória"
+    }
+  ],
+  "answer": "C",
+  "comment": "Thread é fluxo de execução dentro de um processo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-MS-USERMODE-SO-001",
+    "SRC-MS-KERNEL-PROCESS-SO-001",
+    "SRC-MS-VIRTUAL-ADDR-SO-001",
+    "SRC-MS-IO-FILES-SO-001",
+    "SRC-LINUX-KERNEL-MM-SO-001",
+    "SRC-LINUX-KERNEL-VFS-SO-001",
+    "SRC-OPENGROUP-POSIX-2024-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

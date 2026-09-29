@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-SO-001-INDEPAC-001",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC concluída)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-03"
+  ],
+  "statement": "Um usuário padrão precisa executar uma tarefa que exige privilégios administrativos no Windows. Nessa situação, o mecanismo relacionado à solicitação de credenciais ou aprovação para elevação é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "EFS."
+    },
+    {
+      "id": "B",
+      "text": "UAC."
+    },
+    {
+      "id": "C",
+      "text": "NTFS."
+    },
+    {
+      "id": "D",
+      "text": "CUPS."
+    }
+  ],
+  "answer": "B",
+  "comment": "UAC, Controle de Conta de Usuário, participa do processo de elevação para tarefas administrativas. EFS é criptografia de arquivos em NTFS; NTFS é sistema de arquivos e também oferece mecanismos de permissões; CUPS é relacionado a impressão em ambientes Unix/Linux.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

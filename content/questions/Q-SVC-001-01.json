@@ -1,0 +1,38 @@
+{
+  "id": "Q-SVC-001-01",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-01"
+  ],
+  "statement": "O kernel corresponde necessariamente a todo o conjunto de programas e utilitários que compõem um sistema operacional.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. Kernel é o núcleo privilegiado, não todo o conjunto de software do sistema.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-MS-USERMODE-SO-001",
+    "SRC-MS-KERNEL-PROCESS-SO-001",
+    "SRC-MS-VIRTUAL-ADDR-SO-001",
+    "SRC-MS-IO-FILES-SO-001",
+    "SRC-LINUX-KERNEL-MM-SO-001",
+    "SRC-LINUX-KERNEL-VFS-SO-001",
+    "SRC-OPENGROUP-POSIX-2024-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "queueId": "PUB-0012",
+  "contentId": "TI-SO-001",
+  "status": "pronto para build",
+  "sourceDocuments": [
+    {
+      "id": "1dhU8vGt4dDZcre44Rn7CIDbQzlQ6KOIht3GfWddaC1M",
+      "title": "SVC-001 — Fundamentos de Sistemas Operacionais",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1trIY7dWX7NeudL-3eUKRNpAaf_cntVNrjpFso1l3aFc",
+      "title": "SVC-002 — Linux",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1ZAMmiAGUHA4iKtS858KQHPhYG3CIjXxxUChkeDsKWM0",
+      "title": "TI-SO-001 — Windows e Linux — complemento editorial",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-SO-001-01",
+    "TI-SO-001-02",
+    "TI-SO-001-03"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-SVC-001-01",
+    "Q-SVC-001-02",
+    "Q-SVC-001-03",
+    "Q-SVC-001-04",
+    "Q-SVC-001-05",
+    "Q-SVC-001-06",
+    "Q-SVC-001-07",
+    "Q-SVC-001-08",
+    "Q-SVC-001-09",
+    "Q-SVC-001-10",
+    "Q-SVC-001-11",
+    "Q-SVC-001-12",
+    "Q-SVC-001-13",
+    "Q-SVC-001-14",
+    "Q-SVC-001-15",
+    "Q-SVC-002-01",
+    "Q-SVC-002-02",
+    "Q-SVC-002-03",
+    "Q-SVC-002-04",
+    "Q-SVC-002-05",
+    "Q-SVC-002-06",
+    "Q-SVC-002-07",
+    "Q-SVC-002-08",
+    "Q-SVC-002-09",
+    "Q-SVC-002-10",
+    "Q-SVC-002-11",
+    "Q-SVC-002-12",
+    "Q-SVC-002-13",
+    "Q-SVC-002-14",
+    "Q-SVC-002-15",
+    "Q-SVC-002-16",
+    "Q-SVC-002-17",
+    "Q-SVC-002-18",
+    "Q-TI-SO-001-INDEPAC-001",
+    "Q-TI-SO-001-INDEPAC-002",
+    "Q-TI-SO-001-INDEPAC-003",
+    "Q-TI-SO-001-INDEPAC-004"
+  ],
+  "pendingUnscoredReferences": [
+    "Q4059481",
+    "Q4189836",
+    "Q4189837",
+    "Q4189840",
+    "Q4189847",
+    "Q4189862",
+    "Q3185247",
+    "Q4059480",
+    "Q1991091",
+    "Q1990747"
+  ],
+  "media": [
+    "TI-SO-001-IMG-001",
+    "TI-SO-001-YT-001",
+    "TI-SO-001-YT-002",
+    "TI-SO-001-YT-003"
+  ],
+  "publication": {
+    "contentCommit": "PENDING",
+    "workflowRun": null,
+    "workflowConclusion": "pending",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SO-001",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false
+  }
+}

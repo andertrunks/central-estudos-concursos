@@ -1,0 +1,38 @@
+{
+  "id": "Q-SVC-001-05",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-01"
+  ],
+  "statement": "Em um mesmo processo podem existir múltiplas threads.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. Um processo pode conter uma ou várias threads.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-MS-USERMODE-SO-001",
+    "SRC-MS-KERNEL-PROCESS-SO-001",
+    "SRC-MS-VIRTUAL-ADDR-SO-001",
+    "SRC-MS-IO-FILES-SO-001",
+    "SRC-LINUX-KERNEL-MM-SO-001",
+    "SRC-LINUX-KERNEL-VFS-SO-001",
+    "SRC-OPENGROUP-POSIX-2024-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

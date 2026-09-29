@@ -1,0 +1,52 @@
+{
+  "id": "Q-SVC-002-16",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-02"
+  ],
+  "statement": "Sobre systemd, assinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é parte obrigatória do kernel Linux"
+    },
+    {
+      "id": "B",
+      "text": "toda distribuição Linux deve utilizá-lo"
+    },
+    {
+      "id": "C",
+      "text": "é uma suíte de gerenciamento de sistema/serviços utilizada por muitas distribuições"
+    },
+    {
+      "id": "D",
+      "text": "substitui o sistema de arquivos"
+    },
+    {
+      "id": "E",
+      "text": "é um protocolo de rede"
+    }
+  ],
+  "answer": "C",
+  "comment": "systemd é suíte de gerenciamento usada por muitas distribuições; não é o kernel nem obrigatória em todo Linux.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-LINUX-FHS-30-SO-001",
+    "SRC-GNU-COREUTILS-SO-001",
+    "SRC-LINUX-MAN-UMASK-SO-001",
+    "SRC-LINUX-MAN-SIGNAL-SO-001",
+    "SRC-SYSTEMD-SO-001",
+    "SRC-FREEDESKTOP-SYSTEMCTL-SO-001",
+    "SRC-REDHAT-USERS-SO-001",
+    "SRC-ORACLE-USERS-SO-001",
+    "SRC-ORACLE-SYSTEMD-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

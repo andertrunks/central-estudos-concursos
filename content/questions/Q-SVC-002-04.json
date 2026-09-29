@@ -1,0 +1,40 @@
+{
+  "id": "Q-SVC-002-04",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-02"
+  ],
+  "statement": "Um caminho iniciado por / é, em regra, absoluto.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Iniciar por / indica caminho absoluto.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-LINUX-FHS-30-SO-001",
+    "SRC-GNU-COREUTILS-SO-001",
+    "SRC-LINUX-MAN-UMASK-SO-001",
+    "SRC-LINUX-MAN-SIGNAL-SO-001",
+    "SRC-SYSTEMD-SO-001",
+    "SRC-FREEDESKTOP-SYSTEMCTL-SO-001",
+    "SRC-REDHAT-USERS-SO-001",
+    "SRC-ORACLE-USERS-SO-001",
+    "SRC-ORACLE-SYSTEMD-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -406,5 +406,52 @@
     "channel": "Rodrigo Schaeffer",
     "verifiedAt": "2026-09-25",
     "original": false
+  },
+  {
+    "id": "TI-SO-001-IMG-001",
+    "contentId": "TI-SO-001",
+    "type": "imagem",
+    "title": "Windows e Linux — visão integrada",
+    "caption": "Infográfico comparativo com núcleo comum de sistemas operacionais, administração Windows, administração Linux, comparação direta e pegadinhas de prova.",
+    "alt": "Infográfico comparativo do núcleo comum de sistemas operacionais, administração Windows, Linux, comparação entre os ambientes e pegadinhas recorrentes.",
+    "file": "media/TI-SO-001-IMG-001.png",
+    "verifiedAt": "2026-09-25",
+    "original": true
+  },
+  {
+    "id": "TI-SO-001-YT-001",
+    "contentId": "TI-SO-001",
+    "type": "YouTube",
+    "title": "Sistemas Operacionais — Aula 01 — Conceito de SO e Histórico",
+    "caption": "Fundamentos gerais de sistemas operacionais; usar junto ao SVC-001.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=CCHZ_06DoEA",
+    "channel": "UNIVESP",
+    "verifiedAt": "2026-09-25",
+    "original": false
+  },
+  {
+    "id": "TI-SO-001-YT-002",
+    "contentId": "TI-SO-001",
+    "type": "YouTube",
+    "title": "Curso de terminal Linux — Aula 6: Usuários, grupos e permissões",
+    "caption": "Reforça usuários, grupos, permissões, chmod/chown e leitura de permissões no Linux.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=fs49n76pWv8",
+    "channel": "Daniel Bergholz",
+    "verifiedAt": "2026-09-25",
+    "original": false
+  },
+  {
+    "id": "TI-SO-001-YT-003",
+    "contentId": "TI-SO-001",
+    "type": "YouTube",
+    "title": "Sistemas Operacionais — Aula 17 — Introdução ao Gerenciamento de Memória",
+    "caption": "Reforço para memória virtual, memória física e gerenciamento de memória.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=Q8ZqjEafmNc",
+    "channel": "UNIVESP",
+    "verifiedAt": "2026-09-25",
+    "original": false
   }
 ]

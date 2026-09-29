@@ -641,10 +641,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "Conteúdo integral SVC-001 + SVC-002 + complemento; referências de banca não validadas integralmente sem pontuação; verificação visual/Drive pendente."
   },
   {
     "id": "TI-SO-002",

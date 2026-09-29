@@ -1,0 +1,40 @@
+{
+  "id": "Q-SVC-002-06",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-02"
+  ],
+  "statement": "Em sistemas atuais típicos, /etc/shadow armazena dados protegidos relacionados a senhas, enquanto /etc/passwd mantém informações gerais de contas.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "É a separação típica das bases locais de contas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-LINUX-FHS-30-SO-001",
+    "SRC-GNU-COREUTILS-SO-001",
+    "SRC-LINUX-MAN-UMASK-SO-001",
+    "SRC-LINUX-MAN-SIGNAL-SO-001",
+    "SRC-SYSTEMD-SO-001",
+    "SRC-FREEDESKTOP-SYSTEMCTL-SO-001",
+    "SRC-REDHAT-USERS-SO-001",
+    "SRC-ORACLE-USERS-SO-001",
+    "SRC-ORACLE-SYSTEMD-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-SO-001-INDEPAC-002",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC concluída)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-03"
+  ],
+  "statement": "Assinale a alternativa correta sobre NTFS e EFS no Windows.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Permissões NTFS e EFS são exatamente o mesmo mecanismo."
+    },
+    {
+      "id": "B",
+      "text": "EFS substitui completamente o controle de acesso por permissões."
+    },
+    {
+      "id": "C",
+      "text": "Permissões NTFS controlam acesso, enquanto EFS acrescenta proteção criptográfica ao conteúdo armazenado."
+    },
+    {
+      "id": "D",
+      "text": "EFS é o sistema de arquivos padrão utilizado pelo Linux."
+    }
+  ],
+  "answer": "C",
+  "comment": "Permissões NTFS e EFS têm funções distintas. As permissões disciplinam acesso; EFS fornece criptografia de arquivos em volumes compatíveis. Os dois mecanismos podem coexistir.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

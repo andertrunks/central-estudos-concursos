@@ -1,0 +1,48 @@
+{
+  "id": "Q-TI-SO-001-INDEPAC-004",
+  "contentId": "TI-SO-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC concluída)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SO-001-02"
+  ],
+  "statement": "Em uma distribuição Linux que utiliza systemd, qual comando é usado para consultar e controlar unidades de serviço?",
+  "options": [
+    {
+      "id": "A",
+      "text": "systemctl."
+    },
+    {
+      "id": "B",
+      "text": "chmod."
+    },
+    {
+      "id": "C",
+      "text": "whoami."
+    },
+    {
+      "id": "D",
+      "text": "taskkill."
+    }
+  ],
+  "answer": "A",
+  "comment": "systemctl é a ferramenta central de interação com o systemd para consultar e controlar units. chmod altera permissões; whoami mostra identidade; taskkill é ferramenta do Windows para encerramento de processos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-LINUX-FHS-30-SO-001",
+    "SRC-GNU-COREUTILS-SO-001",
+    "SRC-LINUX-MAN-UMASK-SO-001",
+    "SRC-LINUX-MAN-SIGNAL-SO-001",
+    "SRC-SYSTEMD-SO-001",
+    "SRC-FREEDESKTOP-SYSTEMCTL-SO-001",
+    "SRC-REDHAT-USERS-SO-001",
+    "SRC-ORACLE-USERS-SO-001",
+    "SRC-ORACLE-SYSTEMD-SO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
