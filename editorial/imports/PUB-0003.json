@@ -2,7 +2,7 @@
   "queueId": "PUB-0003",
   "contentId": "TI-SEG-001",
   "legacyContentId": "SI-001",
-  "status": "integrado — aguardando build, deploy e inspeção pública",
+  "status": "build e deploy concluídos; inspeção renderizada pendente — runtime do navegador offline",
   "sourceDocuments": [
     {
       "id": "1Ye84c36liZ7TOOiwkIuprBOy7IaDMmlspKLAJqDv3ec",
@@ -75,5 +75,14 @@
       "CRBIO01-2026-ATI",
       "SETEC-2026-ATI"
     ]
+  },
+  "publication": {
+    "contentCommit": "a8d823ce9316f2ca5e352c43e106670ecb088366",
+    "workflowRun": 36567867112,
+    "workflowConclusion": "success",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-SEG-001",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "Actions passou lint, typecheck, testes e build e concluiu deploy. A verificação da rota pública ficou bloqueada porque o navegador integrado retorna environment_offline; manter pendente no Drive até inspeção."
   }
 }
