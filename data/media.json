@@ -198,6 +198,17 @@
     "original": false
   },
   {
+    "id": "MAT-003-IMG-001",
+    "contentId": "MAT-003",
+    "type": "imagem",
+    "title": "Diagrama de decisão: como escolher o método",
+    "caption": "Recriação vetorial do projeto baseada na descrição e no fluxo do diagrama do material fonte. O arquivo gráfico original continua preservado no Drive.",
+    "alt": "Fluxograma: perguntar se há proporcionalidade. Se não, não usar regra de três. Se sim, verificar o número de grandezas: duas levam à regra simples e à classificação direta ou inversa; três ou mais levam à regra composta, analisando cada relação com a incógnita.",
+    "file": "media/MAT-003-IMG-001.svg",
+    "verifiedAt": "2026-09-29",
+    "original": true
+  },
+  {
     "id": "MAT-003-YT-001",
     "contentId": "MAT-003",
     "type": "YouTube",

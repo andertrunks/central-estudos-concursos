@@ -315,10 +315,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "publicado",
-    "editorialStatus": "publicado",
+    "status": "planejado",
+    "editorialStatus": "ausente",
     "phase": "Fase 1",
-    "notes": "Material completo integrado de MC-005 e complemento MAT-003; 20 questões autorais interativas; seis referências históricas pendentes sem pontuação. Imagem original pendente de transferência; vídeos verificados."
+    "notes": "Material completo integrado; 20 questões autorais interativas; seis referências históricas pendentes sem pontuação. Diagrama vetorial recriado a partir da descrição fonte; imagem original permanece no Drive."
   },
   {
     "id": "MAT-004",

@@ -56,14 +56,16 @@
     "QREF-INDEPAC-006"
   ],
   "media": [
+    "MAT-003-IMG-001",
     "MAT-003-YT-001",
     "MAT-003-YT-002"
   ],
   "image": {
-    "status": "transferência não concluída no ambiente local desconectado",
+    "status": "diagrama vetorial autoral recriado a partir da descrição e do fluxo do original; o arquivo gráfico original continua preservado no documento-fonte do Drive",
     "originalDriveMediaId": "MAT-003-IMG-001",
-    "alt": "Diagrama de decisão iniciado por 'Há proporcionalidade?'; se sim, separa regra simples (direta ou inversa) de regra composta; caso contrário, não aplicar regra de três.",
-    "required": false
+    "siteFile": "media/MAT-003-IMG-001.svg",
+    "alt": "Fluxograma: perguntar se há proporcionalidade. Se não, não usar regra de três. Se sim, verificar o número de grandezas: duas levam à regra simples e à classificação direta ou inversa; três ou mais levam à regra composta, analisando cada relação com a incógnita.",
+    "originalSiteArtwork": true
   },
   "transformation": {
     "fullMC005TopicalMaterialReused": true,
