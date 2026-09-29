@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-012",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-05"
+  ],
+  "statement": "Sobre empresas públicas e sociedades de economia mista, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Sempre recebem o regime do Poder Público, independentemente da atividade exercida."
+    },
+    {
+      "id": "B",
+      "text": "Sempre recebem o regime das pessoas jurídicas privadas."
+    },
+    {
+      "id": "C",
+      "text": "Quando atuam em regime de concorrência, recebem tratamento de pessoa jurídica privada; quando operacionalizam política pública, recebem o tratamento do Poder Público nesse contexto."
+    },
+    {
+      "id": "D",
+      "text": "Não se submetem à LGPD."
+    }
+  ],
+  "answer": "C",
+  "comment": "O artigo 24 diferencia as situações. A banca pode explorar justamente a troca entre regime concorrencial e execução de políticas públicas.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

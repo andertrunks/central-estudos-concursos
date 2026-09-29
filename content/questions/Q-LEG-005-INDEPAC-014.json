@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-014",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-05"
+  ],
+  "statement": "Segundo a LGPD, qual atuação pode ser exercida pela ANPD em relação a agentes do Poder Público?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A ANPD não possui qualquer competência sobre operações realizadas pelo setor público."
+    },
+    {
+      "id": "B",
+      "text": "Pode solicitar informações sobre tratamentos, estabelecer normas complementares para comunicação e compartilhamento e, nos termos legais, solicitar publicação de relatórios de impacto."
+    },
+    {
+      "id": "C",
+      "text": "Pode autorizar compartilhamento sem finalidade ou base legal."
+    },
+    {
+      "id": "D",
+      "text": "Pode dispensar os órgãos públicos de todos os princípios do artigo 6º."
+    }
+  ],
+  "answer": "B",
+  "comment": "Os artigos 29, 30 e 32 atribuem funções de supervisão e orientação à ANPD. Essas competências não eliminam os limites e princípios estabelecidos pela própria LGPD.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

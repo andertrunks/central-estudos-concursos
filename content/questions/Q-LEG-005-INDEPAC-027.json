@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-027",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-08"
+  ],
+  "statement": "Sobre o Conselho Nacional de Proteção de Dados Pessoais e da Privacidade, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "É composto por vinte e três representantes, titulares e suplentes."
+    },
+    {
+      "id": "B",
+      "text": "É composto exclusivamente por representantes do Poder Executivo federal."
+    },
+    {
+      "id": "C",
+      "text": "Seus membros da sociedade civil possuem mandato vitalício."
+    },
+    {
+      "id": "D",
+      "text": "Sua participação é obrigatoriamente remunerada."
+    }
+  ],
+  "answer": "A",
+  "comment": "O artigo 58-A prevê vinte e três representantes. A composição é plural, incluindo Poder Público e sociedade. Para os grupos dos incisos VII a XI, o mandato é de dois anos, permitida uma recondução. A participação é serviço público relevante e não remunerado.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

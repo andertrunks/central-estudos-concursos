@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-003",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-02"
+  ],
+  "statement": "Uma organização pretende coletar, além dos dados indispensáveis para determinado serviço, informações adicionais sem relação com a finalidade. Qual princípio é mais diretamente violado?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Necessidade."
+    },
+    {
+      "id": "B",
+      "text": "Livre acesso."
+    },
+    {
+      "id": "C",
+      "text": "Qualidade dos dados."
+    },
+    {
+      "id": "D",
+      "text": "Não discriminação."
+    }
+  ],
+  "answer": "A",
+  "comment": "Necessidade limita o tratamento ao mínimo necessário e exige dados pertinentes, proporcionais e não excessivos. Livre acesso trata da consulta do titular. Qualidade trata de exatidão, clareza, relevância e atualização. Não discriminação impede tratamento para fins discriminatórios ilícitos ou abusivos.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

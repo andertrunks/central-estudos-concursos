@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-024",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-07"
+  ],
+  "statement": "Uma autarquia pratica infração à LGPD. Qual alternativa está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A autarquia está imune a qualquer sanção administrativa."
+    },
+    {
+      "id": "B",
+      "text": "A multa simples de dois por cento do faturamento é obrigatória."
+    },
+    {
+      "id": "C",
+      "text": "A LGPD prevê sanções administrativas aplicáveis a órgãos públicos, mas não inclui para eles as multas simples e diárias no conjunto indicado pela lei."
+    },
+    {
+      "id": "D",
+      "text": "A única consequência possível é indenização civil."
+    }
+  ],
+  "answer": "C",
+  "comment": "O artigo 52 prevê aplicação a entidades e órgãos públicos de sanções específicas, como advertência, publicização, bloqueio, eliminação, suspensão e proibição, conforme o caso. A multa simples e a multa diária não integram esse conjunto.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

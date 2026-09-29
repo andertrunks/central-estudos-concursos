@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-019",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-06"
+  ],
+  "statement": "Sobre responsabilidade civil na LGPD, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Controlador e operador nunca respondem por danos decorrentes do tratamento."
+    },
+    {
+      "id": "B",
+      "text": "O operador pode responder solidariamente quando descumpre a legislação ou deixa de seguir instruções lícitas do controlador, observadas as hipóteses legais de exclusão."
+    },
+    {
+      "id": "C",
+      "text": "A culpa exclusiva do titular nunca interfere na responsabilidade."
+    },
+    {
+      "id": "D",
+      "text": "A inversão do ônus da prova é obrigatória em todo processo."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 42 prevê responsabilidade do operador nas situações indicadas e o artigo 43 contém hipóteses de exclusão. A inversão do ônus depende dos requisitos legais e não é automática.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

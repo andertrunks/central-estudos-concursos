@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-004",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-02"
+  ],
+  "statement": "Sobre o consentimento na LGPD, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "É a única base legal para tratamento de dados pessoais."
+    },
+    {
+      "id": "B",
+      "text": "Autorizações genéricas para qualquer finalidade são válidas quando assinadas."
+    },
+    {
+      "id": "C",
+      "text": "Pode ser revogado por procedimento gratuito e facilitado, mediante manifestação expressa do titular."
+    },
+    {
+      "id": "D",
+      "text": "Sua revogação depende de autorização judicial."
+    }
+  ],
+  "answer": "C",
+  "comment": "A LGPD prevê diversas bases legais. Quando utilizado, o consentimento deve se relacionar a finalidade determinada; autorizações genéricas são nulas. A revogação não depende de decisão judicial e deve ser gratuita e facilitada.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

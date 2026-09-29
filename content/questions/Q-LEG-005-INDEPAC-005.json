@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-005",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-03"
+  ],
+  "statement": "Uma organização precisa tratar dado de saúde de um empregado para cumprir obrigação legal aplicável. À luz da LGPD, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "O tratamento é sempre proibido sem consentimento, porque dado de saúde é sensível."
+    },
+    {
+      "id": "B",
+      "text": "O tratamento pode ocorrer sem consentimento quando for indispensável ao cumprimento de obrigação legal ou regulatória pelo controlador."
+    },
+    {
+      "id": "C",
+      "text": "O tratamento somente pode ocorrer com base em legítimo interesse."
+    },
+    {
+      "id": "D",
+      "text": "Dado de saúde deixa de ser sensível quando tratado em relação de trabalho."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 11 prevê expressamente o cumprimento de obrigação legal ou regulatória como hipótese de tratamento de dado sensível sem consentimento quando o tratamento for indispensável. A alternativa A ignora as hipóteses legais sem consentimento. A alternativa C utiliza uma base que não consta do artigo 11 para dados sensíveis. A alternativa D altera indevidamente a classificação do dado.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

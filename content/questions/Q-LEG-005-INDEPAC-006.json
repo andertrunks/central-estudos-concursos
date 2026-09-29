@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-006",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-03"
+  ],
+  "statement": "Um aplicativo infantil precisa coletar um dado apenas para contatar o responsável pela criança. Qual conduta está de acordo com a regra específica da LGPD?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Utilizar o dado uma única vez e não armazená-lo, observados os demais requisitos legais."
+    },
+    {
+      "id": "B",
+      "text": "Armazenar o dado por prazo indeterminado para futuras campanhas."
+    },
+    {
+      "id": "C",
+      "text": "Compartilhar livremente o dado com terceiros porque a finalidade inicial era proteger a criança."
+    },
+    {
+      "id": "D",
+      "text": "Exigir obrigatoriamente dados adicionais sem relação com a atividade."
+    }
+  ],
+  "answer": "A",
+  "comment": "O artigo 14 permite coleta sem o consentimento referido no parágrafo 1º quando ela for necessária para contatar pais ou responsável, mas exige uso único e sem armazenamento. O compartilhamento com terceiros não é livre. A coleta de dados além do necessário também contraria a proteção especial conferida à criança.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

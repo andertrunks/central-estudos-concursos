@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-017",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-06"
+  ],
+  "statement": "A ANPD determinou que um controlador prepare relatório de impacto sobre tratamento envolvendo dados pessoais sensíveis. Qual alternativa está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A determinação é incompatível com a LGPD porque relatório de impacto nunca pode abranger dado sensível."
+    },
+    {
+      "id": "B",
+      "text": "A ANPD pode determinar o relatório, inclusive referente a dados sensíveis, observados os requisitos legais."
+    },
+    {
+      "id": "C",
+      "text": "Somente o operador pode elaborar relatório de impacto."
+    },
+    {
+      "id": "D",
+      "text": "O relatório substitui todas as medidas de segurança."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 38 permite expressamente que a autoridade determine ao controlador elaboração de relatório de impacto inclusive de dados sensíveis. O relatório é instrumento de análise e mitigação de riscos, não substituto das demais obrigações.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

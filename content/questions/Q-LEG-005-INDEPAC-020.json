@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-020",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-07"
+  ],
+  "statement": "Uma equipe inicia o desenvolvimento de sistema que tratará dados pessoais e decide implementar controles de segurança somente depois que o sistema entrar em produção. Segundo a LGPD, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "A decisão está correta porque medidas de segurança somente são exigidas depois da primeira operação real."
+    },
+    {
+      "id": "B",
+      "text": "As medidas de segurança devem ser observadas desde a fase de concepção do produto ou serviço até sua execução."
+    },
+    {
+      "id": "C",
+      "text": "Segurança é facultativa se os titulares tiverem consentido."
+    },
+    {
+      "id": "D",
+      "text": "A obrigação existe apenas para dados sensíveis."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 46 exige medidas técnicas e administrativas aptas a proteger os dados e determina que sejam observadas desde a concepção. Consentimento não elimina o dever de segurança, e a obrigação alcança dados pessoais em geral.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

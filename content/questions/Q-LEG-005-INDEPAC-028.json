@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-028",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-08"
+  ],
+  "statement": "O valor arrecadado com multas administrativas aplicadas pela ANPD:",
+  "options": [
+    {
+      "id": "A",
+      "text": "integra automaticamente a receita própria da Agência."
+    },
+    {
+      "id": "B",
+      "text": "é destinado ao Fundo de Defesa de Direitos Difusos."
+    },
+    {
+      "id": "C",
+      "text": "pertence integralmente ao controlador lesado."
+    },
+    {
+      "id": "D",
+      "text": "é dividido obrigatoriamente entre os titulares afetados."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 52, parágrafo 5º, destina o produto da arrecadação das multas ao Fundo de Defesa de Direitos Difusos. Esse detalhe é importante porque o artigo 55-L lista outras receitas da Agência.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

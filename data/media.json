@@ -126,5 +126,40 @@
     "channel": "Bóson Treinamentos",
     "verifiedAt": "2026-09-28",
     "original": false
+  },
+  {
+    "id": "LEG-005-IMG-001",
+    "contentId": "LEG-005",
+    "type": "imagem",
+    "title": "LGPD — ciclo de tratamento, direitos e governança",
+    "caption": "Visão integrada do ciclo de tratamento, desde finalidade e base legal até término, conservação e supervisão da ANPD.",
+    "alt": "Diagrama em oito etapas mostrando coleta e finalidade; base legal e princípios; proteções reforçadas para dados sensíveis e crianças; direitos do titular; compartilhamento e transferência; segurança e resposta; término e conservação; e supervisão da ANPD. Ao centro, a regra transversal destaca finalidade, base legal, princípios, segurança e prestação de contas.",
+    "file": "media/LEG-005-IMG-001.png",
+    "verifiedAt": "2026-09-24",
+    "original": true
+  },
+  {
+    "id": "LEG-005-YT-001",
+    "contentId": "LEG-005",
+    "type": "YouTube",
+    "title": "Lei Geral de Proteção de Dados (LGPD) — Segurança da Informação — Módulo 02",
+    "caption": "Revisão introdutória de LGPD, dados pessoais, direitos e papel da ANPD; prevalece o texto legal vigente.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=36Bq7Ejns_o",
+    "channel": "Curso em Vídeo",
+    "verifiedAt": "2026-09-24",
+    "original": false
+  },
+  {
+    "id": "LEG-005-YT-002",
+    "contentId": "LEG-005",
+    "type": "YouTube",
+    "title": "1ª Semana de Proteção de Dados Pessoais gov.br — Dia 3 — Privacidade no Poder Público",
+    "caption": "Aprofundamento sobre encarregado, fiscalização, sanções e adequação no Poder Público. O vídeo antecede a mudança institucional de 2026.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=VqrhxBEXY0E",
+    "channel": "Enap",
+    "verifiedAt": "2026-09-24",
+    "original": false
   }
 ]

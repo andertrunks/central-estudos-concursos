@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-008",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-04"
+  ],
+  "statement": "Um titular solicitou ao controlador uma declaração clara e completa sobre o tratamento de seus dados. Segundo a regra geral do artigo 19 da LGPD, qual alternativa está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A declaração completa deve ser fornecida exclusivamente em formato impresso e no mesmo instante do pedido."
+    },
+    {
+      "id": "B",
+      "text": "A declaração completa pode ser fornecida no prazo de até quinze dias, contado do requerimento, com as informações legalmente exigidas e observados os segredos comercial e industrial."
+    },
+    {
+      "id": "C",
+      "text": "O controlador possui prazo mínimo de trinta dias e pode omitir a finalidade do tratamento."
+    },
+    {
+      "id": "D",
+      "text": "O direito de acesso somente existe se a ANPD autorizar previamente."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 19 diferencia o formato simplificado, que pode ser providenciado imediatamente, da declaração clara e completa, que possui prazo geral de até quinze dias. A declaração deve trazer informações como origem dos dados, critérios utilizados e finalidade do tratamento, observados os segredos legalmente protegidos. Não há autorização prévia da ANPD como condição para o direito.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-025",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-08"
+  ],
+  "statement": "Após a alteração promovida pela Lei nº 15.352/2026, a ANPD é definida pela LGPD como:",
+  "options": [
+    {
+      "id": "A",
+      "text": "departamento do Ministério da Justiça sem autonomia decisória."
+    },
+    {
+      "id": "B",
+      "text": "autarquia de natureza especial vinculada ao Ministério da Justiça e Segurança Pública, com autonomias funcional, técnica, decisória, administrativa e financeira."
+    },
+    {
+      "id": "C",
+      "text": "conselho consultivo sem personalidade administrativa própria."
+    },
+    {
+      "id": "D",
+      "text": "órgão do Poder Judiciário vinculado ao Conselho Nacional de Justiça."
+    }
+  ],
+  "answer": "B",
+  "comment": "A redação vigente do artigo 55-A caracteriza a ANPD como Agência Nacional de Proteção de Dados, autarquia de natureza especial vinculada ao Ministério da Justiça e Segurança Pública, com as autonomias expressamente previstas em lei.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

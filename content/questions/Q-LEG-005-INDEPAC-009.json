@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-009",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-04"
+  ],
+  "statement": "Sobre portabilidade de dados pessoais na LGPD, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "A portabilidade exige requisição expressa e observa regulamentação da autoridade nacional e segredos comercial e industrial."
+    },
+    {
+      "id": "B",
+      "text": "Dados já anonimizados devem obrigatoriamente integrar a portabilidade."
+    },
+    {
+      "id": "C",
+      "text": "Portabilidade autoriza o novo fornecedor a utilizar os dados para qualquer finalidade, sem base legal."
+    },
+    {
+      "id": "D",
+      "text": "Portabilidade somente pode ocorrer após decisão judicial."
+    }
+  ],
+  "answer": "A",
+  "comment": "A portabilidade é direito previsto no artigo 18. Dados já anonimizados pelo controlador não integram esse direito. O novo tratamento continua sujeito à LGPD e não existe exigência geral de decisão judicial.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

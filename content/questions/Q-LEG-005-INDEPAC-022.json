@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-022",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-07"
+  ],
+  "statement": "Sobre sanções administrativas da LGPD, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "A única sanção possível é multa."
+    },
+    {
+      "id": "B",
+      "text": "A LGPD prevê, entre outras medidas, advertência, multa, publicização, bloqueio e eliminação de dados relacionados à infração."
+    },
+    {
+      "id": "C",
+      "text": "Nenhuma sanção pode afetar operação de banco de dados."
+    },
+    {
+      "id": "D",
+      "text": "Sanções podem ser aplicadas sem processo administrativo."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 52 prevê diversas sanções. A aplicação deve ocorrer em processo administrativo, com contraditório e ampla defesa. Também existem sanções de suspensão e proibição, conforme as condições legais.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

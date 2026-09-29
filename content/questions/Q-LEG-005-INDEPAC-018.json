@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-018",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-06"
+  ],
+  "statement": "Uma microempresa enquadrada na regulamentação de agente de tratamento de pequeno porte está dispensada de indicar encarregado. Qual providência permanece necessária segundo a disciplina da ANPD?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Não disponibilizar nenhum meio de contato sobre proteção de dados."
+    },
+    {
+      "id": "B",
+      "text": "Disponibilizar canal de comunicação com o titular e a ANPD, além de cumprir as demais obrigações aplicáveis."
+    },
+    {
+      "id": "C",
+      "text": "Transferir suas atribuições integralmente à ANPD."
+    },
+    {
+      "id": "D",
+      "text": "Apagar todos os dados pessoais imediatamente."
+    }
+  ],
+  "answer": "B",
+  "comment": "A dispensa de encarregado não elimina o dever de manter canal de comunicação nem as demais obrigações da LGPD.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

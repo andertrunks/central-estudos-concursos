@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-007",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-03"
+  ],
+  "statement": "Após o término de determinado tratamento, qual situação representa hipótese de conservação expressamente admitida pela LGPD?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Manutenção de dados identificáveis para publicidade futura sem nova finalidade legítima."
+    },
+    {
+      "id": "B",
+      "text": "Conservação para cumprimento de obrigação legal ou regulatória pelo controlador."
+    },
+    {
+      "id": "C",
+      "text": "Venda irrestrita dos dados a terceiros."
+    },
+    {
+      "id": "D",
+      "text": "Conservação indefinida apenas porque o armazenamento é barato."
+    }
+  ],
+  "answer": "B",
+  "comment": "O artigo 16 permite conservação para cumprimento de obrigação legal ou regulatória. Também prevê estudo por órgão de pesquisa, transferência a terceiro respeitados os requisitos da LGPD e uso exclusivo do controlador com acesso de terceiro vedado e dados anonimizados. As demais alternativas apresentam finalidades não autorizadas pela regra de conservação.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

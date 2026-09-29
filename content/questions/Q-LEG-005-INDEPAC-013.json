@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-013",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-05"
+  ],
+  "statement": "A respeito da transferência de dados pessoais do Poder Público para entidades privadas, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "É absolutamente proibida, sem exceções."
+    },
+    {
+      "id": "B",
+      "text": "É sempre livre quando o órgão afirma atuar no interesse público."
+    },
+    {
+      "id": "C",
+      "text": "A regra é de vedação, mas a LGPD admite hipóteses específicas, como execução descentralizada de atividade pública, previsão legal ou instrumentos adequados e prevenção de fraudes nas condições legais."
+    },
+    {
+      "id": "D",
+      "text": "Somente pode ocorrer se todos os dados forem anonimizados."
+    }
+  ],
+  "answer": "C",
+  "comment": "O artigo 26, parágrafo 1º, estabelece a regra de vedação e enumera exceções. Em prova, desconfie de formulações absolutas.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

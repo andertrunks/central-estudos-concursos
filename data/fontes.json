@@ -978,5 +978,125 @@
     "version": "SQL Server ver17",
     "verifiedAt": "2026-09-23",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-LGPD-PLANALTO-001",
+    "title": "Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais — texto compilado",
+    "level": "P1",
+    "author": "Presidência da República — Planalto",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm",
+    "version": "Texto compilado vigente verificado em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-GLOSSARIO-001",
+    "title": "Glossário de Proteção de Dados Pessoais e Privacidade",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/documentos-e-publicacoes/glossario-anpd",
+    "version": "Modificado em 19/06/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-FAQ-LGPD-001",
+    "title": "ANPD — Perguntas Frequentes sobre LGPD",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/perguntas-frequentes",
+    "version": "Modificado em 09/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-ENUNCIADO-CRIANCA-001",
+    "title": "Enunciado CD/ANPD nº 1/2023 — tratamento de dados pessoais de crianças e adolescentes",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-divulga-enunciado-sobre-o-tratamento-de-dados-pessoais-de-criancas-e-adolescentes",
+    "version": "Enunciado nº 1, de 22/05/2023",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-PODERPUBLICO-001",
+    "title": "Guia Orientativo — Tratamento de Dados Pessoais pelo Poder Público",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico",
+    "version": "Página oficial modificada em 23/01/2025; guia vigente consultado em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-TRANSFERENCIA-001",
+    "title": "Resolução CD/ANPD nº 19/2024 — Regulamento de Transferência Internacional de Dados",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024",
+    "version": "Regulamento vigente; publicação oficial registra retificação de 2025",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-ENCARREGADO-001",
+    "title": "Resolução CD/ANPD nº 18/2024 — atuação do encarregado",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aprova-norma-sobre-a-atuacao-do-encarregado-pelo-tratamento-de-dados-pessoais",
+    "version": "Regulamento do encarregado — referência vigente consultada em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-PEQUENO-PORTE-001",
+    "title": "Resolução CD/ANPD nº 2/2022 — agentes de tratamento de pequeno porte",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022",
+    "version": "Texto vigente consultado em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-LEI15352-2026",
+    "title": "Lei nº 15.352/2026 — alterações na LGPD e transformação da ANPD",
+    "level": "P1",
+    "author": "Presidência da República",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15352.htm",
+    "version": "Lei vigente",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-INCIDENTE-001",
+    "title": "Resolução CD/ANPD nº 15/2024 — Comunicação de Incidente de Segurança",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/canais_atendimento/agente-de-tratamento/comunicado-de-incidente-de-seguranca-cis",
+    "version": "Regulamento vigente consultado em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-DOSIMETRIA-001",
+    "title": "Resolução CD/ANPD nº 4/2023 — Dosimetria e Aplicação de Sanções Administrativas",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd",
+    "version": "Resolução nº 4/2023 — vigente em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ANPD-ESTRUTURA-2026",
+    "title": "ANPD ganha nova estrutura e se consolida como agência reguladora",
+    "level": "P1",
+    "author": "Agência Nacional de Proteção de Dados — ANPD",
+    "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-ganha-nova-estrutura-e-se-consolida-como-agencia-reguladora",
+    "version": "Publicado em 08/04/2026; consultado em 24/09/2026",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
   }
 ]

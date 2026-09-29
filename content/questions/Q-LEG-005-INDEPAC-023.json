@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-023",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-07"
+  ],
+  "statement": "Para pessoa jurídica de direito privado, a multa simples prevista na LGPD pode alcançar:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Até dois por cento do faturamento no Brasil do último exercício, excluídos tributos, limitada a cinquenta milhões de reais por infração."
+    },
+    {
+      "id": "B",
+      "text": "Exatamente dez por cento do faturamento mundial, sem limite."
+    },
+    {
+      "id": "C",
+      "text": "Um valor fixo de cinquenta milhões de reais em toda infração."
+    },
+    {
+      "id": "D",
+      "text": "Apenas o valor do dano material comprovado."
+    }
+  ],
+  "answer": "A",
+  "comment": "A regra legal usa limite percentual e teto nominal. A multa não é automaticamente de cinquenta milhões e não se confunde com indenização civil.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

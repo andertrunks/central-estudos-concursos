@@ -1,0 +1,38 @@
+{
+  "id": "Q-LEG-005-INDEPAC-021",
+  "contentId": "LEG-005",
+  "banca": "Autoral — Central de Estudos (estilo INDEPAC)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "LEG-005-07"
+  ],
+  "statement": "Um controlador identifica incidente que pode acarretar risco relevante aos titulares. Qual é o prazo geral previsto pela regulamentação vigente da ANPD para comunicação à Autoridade e aos titulares, salvo prazo específico em outra legislação?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Vinte e quatro horas corridas."
+    },
+    {
+      "id": "B",
+      "text": "Três dias úteis."
+    },
+    {
+      "id": "C",
+      "text": "Quinze dias úteis."
+    },
+    {
+      "id": "D",
+      "text": "Trinta dias corridos."
+    }
+  ],
+  "answer": "B",
+  "comment": "A Resolução CD/ANPD nº 15/2024 regulamentou o artigo 48 e fixou prazo geral de três dias úteis. A LGPD, em sua redação legal, utiliza formulação de prazo razoável definido pela autoridade nacional.",
+  "source_ids": [
+    "SRC-LGPD-PLANALTO-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
