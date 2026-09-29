@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-006",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “Felizmente, o atendimento foi restabelecido antes do horário previsto.”\nA palavra “felizmente”:",
+  "options": [
+    {
+      "id": "A",
+      "text": "indica lugar."
+    },
+    {
+      "id": "B",
+      "text": "introduz avaliação positiva do enunciador."
+    },
+    {
+      "id": "C",
+      "text": "elimina a informação sobre horário."
+    },
+    {
+      "id": "D",
+      "text": "significa incerteza."
+    },
+    {
+      "id": "E",
+      "text": "torna a frase impessoal."
+    }
+  ],
+  "answer": "B",
+  "comment": "“Felizmente” é marca explícita de avaliação positiva.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

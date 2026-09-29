@@ -161,5 +161,40 @@
     "channel": "Enap",
     "verifiedAt": "2026-09-24",
     "original": false
+  },
+  {
+    "id": "PORT-001-IMG-001",
+    "contentId": "PORT-001",
+    "type": "imagem",
+    "title": "Interpretação de textos — caminho seguro até a resposta",
+    "caption": "Diagrama original de cinco etapas: comando, evidência, inferência, controle de sentido e resposta; inclui exemplos de extrapolações frequentes.",
+    "alt": "Diagrama horizontal com cinco etapas para resolver questões de interpretação de textos, seguido de um quadro com pegadinhas como transformar possibilidade em certeza, parte em totalidade e correlação em causa.",
+    "file": "media/PORT-001-IMG-001.png",
+    "verifiedAt": "2026-09-24",
+    "original": true
+  },
+  {
+    "id": "PORT-001-YT-001",
+    "contentId": "PORT-001",
+    "type": "YouTube",
+    "title": "PM SP: Leitura e Interpretação de Textos | Aula 01 — Ideia Central, Tema e Inferências",
+    "caption": "Complemento opcional sobre ideia central, tema, finalidade, informações explícitas, inferências e pegadinhas. O material canônico permanece suficiente.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=tPKFlgUX9-8",
+    "channel": "Thayná Concursos",
+    "verifiedAt": "2026-09-24",
+    "original": false
+  },
+  {
+    "id": "PORT-001-YT-002",
+    "contentId": "PORT-001",
+    "type": "YouTube",
+    "title": "Concurso Caixa - Aula de Língua portuguesa: Compreensão e Interpretação de textos",
+    "caption": "Complemento amplo de compreensão e interpretação para concursos; não substitui o material canônico.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=PiniCe6Xgno",
+    "channel": "Qconcursos",
+    "verifiedAt": "2026-09-24",
+    "original": false
   }
 ]

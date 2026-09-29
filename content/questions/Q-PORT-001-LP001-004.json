@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP001-004",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "Texto: “O acesso ao prédio será permitido mediante apresentação de documento oficial com foto.”\nA alternativa que extrapola o texto é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "exige-se documento oficial com foto para o acesso."
+    },
+    {
+      "id": "B",
+      "text": "há uma condição para entrada no prédio."
+    },
+    {
+      "id": "C",
+      "text": "qualquer pessoa sem documento será autorizada mediante identificação verbal."
+    },
+    {
+      "id": "D",
+      "text": "a apresentação do documento está vinculada à permissão de acesso."
+    },
+    {
+      "id": "E",
+      "text": "o enunciado estabelece uma regra de entrada."
+    }
+  ],
+  "answer": "C",
+  "comment": "A identificação verbal não foi mencionada. A alternativa inventa uma exceção e, portanto, extrapola.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

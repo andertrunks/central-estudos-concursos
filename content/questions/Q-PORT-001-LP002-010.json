@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-010",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “O relatório parece indicar melhora, mas os dados ainda são insuficientes para uma conclusão definitiva.”\nO ponto de vista expresso é de:",
+  "options": [
+    {
+      "id": "A",
+      "text": "certeza absoluta."
+    },
+    {
+      "id": "B",
+      "text": "cautela diante dos dados."
+    },
+    {
+      "id": "C",
+      "text": "rejeição total da hipótese de melhora."
+    },
+    {
+      "id": "D",
+      "text": "afirmação de piora definitiva."
+    },
+    {
+      "id": "E",
+      "text": "ausência de qualquer avaliação."
+    }
+  ],
+  "answer": "B",
+  "comment": "“Parece” e “dados ainda insuficientes” expressam cautela.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

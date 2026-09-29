@@ -1,0 +1,43 @@
+{
+  "id": "Q-LP-001-E3-06",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "Em “a manhã parecia correr mais depressa que ela”, a linguagem do Texto B produz:",
+  "options": [
+    {
+      "id": "A",
+      "text": "descrição física de um relógio em funcionamento."
+    },
+    {
+      "id": "B",
+      "text": "medida cronométrica objetiva."
+    },
+    {
+      "id": "C",
+      "text": "personificação/imagem subjetiva da percepção de passagem do tempo."
+    },
+    {
+      "id": "D",
+      "text": "localização do bilhete."
+    },
+    {
+      "id": "E",
+      "text": "notícia administrativa sobre horário."
+    }
+  ],
+  "answer": "C",
+  "comment": "A metáfora apresenta vivência subjetiva do tempo contraposta ao relógio parado, não seu movimento literal.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

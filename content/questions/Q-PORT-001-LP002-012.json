@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-012",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Uma charge mostra uma placa “Atendimento imediato” diante de uma fila extensa, e um personagem segura um calendário.\nA inferência mais bem sustentada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "o atendimento é de fato instantâneo."
+    },
+    {
+      "id": "B",
+      "text": "a charge critica a demora apesar da promessa de rapidez."
+    },
+    {
+      "id": "C",
+      "text": "a fila é causada por uma greve, necessariamente."
+    },
+    {
+      "id": "D",
+      "text": "o personagem é servidor público."
+    },
+    {
+      "id": "E",
+      "text": "o local é um tribunal."
+    }
+  ],
+  "answer": "B",
+  "comment": "A contradição entre “imediato” e a longa fila sustenta crítica à demora. As demais alternativas inventam fatos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

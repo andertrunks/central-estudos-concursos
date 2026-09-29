@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-014",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “O pesquisador alegou que os resultados confirmavam sua hipótese.”\nO verbo “alegou”, nesse contexto, pode:",
+  "options": [
+    {
+      "id": "A",
+      "text": "marcar certo distanciamento do enunciador em relação à afirmação."
+    },
+    {
+      "id": "B",
+      "text": "garantir que a hipótese foi comprovada."
+    },
+    {
+      "id": "C",
+      "text": "transformar a frase em ordem."
+    },
+    {
+      "id": "D",
+      "text": "eliminar a existência do pesquisador."
+    },
+    {
+      "id": "E",
+      "text": "significar obrigatoriamente que houve mentira."
+    }
+  ],
+  "answer": "A",
+  "comment": "“Alegou” pode marcar distanciamento, mas não prova falsidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

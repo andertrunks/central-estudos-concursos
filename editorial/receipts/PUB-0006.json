@@ -1,0 +1,9 @@
+{
+  "queueId": "PUB-0006",
+  "contentId": "PORT-001",
+  "driveDocumentId": "1hR1Zh5G1BPDwk0HycguP3ENYdp6mlrSA4VCzIhzbkrc",
+  "integratedAt": "2026-09-29T11:29:18.482Z",
+  "status": "integrado; aguardando testes e deploy",
+  "publishedCommit": null,
+  "siteUrl": null
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP001-003",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "Texto: “Depois de três adiamentos, o órgão finalmente publicou o cronograma.”\nO emprego de “finalmente” indica:",
+  "options": [
+    {
+      "id": "A",
+      "text": "neutralidade absoluta em relação ao tempo."
+    },
+    {
+      "id": "B",
+      "text": "ideia de que a publicação ocorreu após demora."
+    },
+    {
+      "id": "C",
+      "text": "certeza de que não houve adiamento."
+    },
+    {
+      "id": "D",
+      "text": "dúvida sobre a existência do cronograma."
+    },
+    {
+      "id": "E",
+      "text": "indicação de lugar."
+    }
+  ],
+  "answer": "B",
+  "comment": "“Finalmente” sugere conclusão de algo esperado após demora, reforçada pela expressão “depois de três adiamentos”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

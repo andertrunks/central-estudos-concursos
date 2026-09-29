@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-013",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “A medida não é exclusivamente econômica.”\nÉ correto concluir que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "a medida não possui qualquer dimensão econômica."
+    },
+    {
+      "id": "B",
+      "text": "a dimensão econômica pode existir, mas não é a única."
+    },
+    {
+      "id": "C",
+      "text": "a medida é exclusivamente social."
+    },
+    {
+      "id": "D",
+      "text": "o texto nega qualquer relação com economia."
+    },
+    {
+      "id": "E",
+      "text": "a medida é necessariamente jurídica."
+    }
+  ],
+  "answer": "B",
+  "comment": "“Não exclusivamente” nega exclusividade, não existência.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

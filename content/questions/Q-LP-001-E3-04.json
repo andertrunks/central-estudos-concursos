@@ -1,0 +1,43 @@
+{
+  "id": "Q-LP-001-E3-04",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "A frase sobre o horário presencial, colocada após a oferta de atendimento remoto, estabelece principalmente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "equivalência integral dos dois serviços."
+    },
+    {
+      "id": "B",
+      "text": "oposição informativa entre uma novidade digital e a continuidade do horário presencial."
+    },
+    {
+      "id": "C",
+      "text": "proibição de atendimento presencial."
+    },
+    {
+      "id": "D",
+      "text": "demonstração de que o remoto encerrou às 16 horas."
+    },
+    {
+      "id": "E",
+      "text": "causa provada da melhoria decisória."
+    }
+  ],
+  "answer": "B",
+  "comment": "Contraste entre novidade remota e manutenção presencial; o texto não prova proibição, igualdade integral nem causalidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

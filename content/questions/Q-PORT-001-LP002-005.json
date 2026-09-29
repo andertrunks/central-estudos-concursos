@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-005",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “A empresa informou que os preços subiram após a mudança tributária.”\nCom base apenas na sequência apresentada, é incorreto afirmar automaticamente que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "os preços subiram."
+    },
+    {
+      "id": "B",
+      "text": "houve mudança tributária antes da alta mencionada."
+    },
+    {
+      "id": "C",
+      "text": "a mudança tributária causou necessariamente toda a alta."
+    },
+    {
+      "id": "D",
+      "text": "a empresa relacionou temporalmente os dois fatos."
+    },
+    {
+      "id": "E",
+      "text": "existe uma afirmação da empresa."
+    }
+  ],
+  "answer": "C",
+  "comment": "A sequência temporal não autoriza atribuir causalidade total e necessária.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

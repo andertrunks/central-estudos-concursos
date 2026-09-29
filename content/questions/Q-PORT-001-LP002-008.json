@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-008",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “Depois de quatro adiamentos, o órgão finalmente publicou o resultado.”\nO termo “finalmente” sugere:",
+  "options": [
+    {
+      "id": "A",
+      "text": "surpresa com a rapidez."
+    },
+    {
+      "id": "B",
+      "text": "avaliação de que houve demora."
+    },
+    {
+      "id": "C",
+      "text": "dúvida sobre a publicação."
+    },
+    {
+      "id": "D",
+      "text": "indicação de lugar."
+    },
+    {
+      "id": "E",
+      "text": "neutralidade absoluta."
+    }
+  ],
+  "answer": "B",
+  "comment": "“Finalmente”, reforçado pelos quatro adiamentos, sugere demora.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-LP-001-E3-02",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "A ampliação de outros serviços digitais, de acordo com a equipe, depende de:",
+  "options": [
+    {
+      "id": "A",
+      "text": "conclusão de testes com usuários."
+    },
+    {
+      "id": "B",
+      "text": "fechamento do atendimento presencial."
+    },
+    {
+      "id": "C",
+      "text": "aprovação de nova lei não mencionada."
+    },
+    {
+      "id": "D",
+      "text": "prazo fixado para a semana seguinte."
+    },
+    {
+      "id": "E",
+      "text": "aumento garantido da qualidade decisória."
+    }
+  ],
+  "answer": "A",
+  "comment": "A equipe subordina futura ampliação a testes; as demais alternativas criam condições ou prazos inexistentes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

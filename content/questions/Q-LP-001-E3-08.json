@@ -1,0 +1,43 @@
+{
+  "id": "Q-LP-001-E3-08",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "Qual conclusão o Texto B NÃO autoriza?",
+  "options": [
+    {
+      "id": "A",
+      "text": "O relógio encontrado estava parado."
+    },
+    {
+      "id": "B",
+      "text": "Helena reconheceu a letra do pai."
+    },
+    {
+      "id": "C",
+      "text": "O bilhete continha uma orientação genérica."
+    },
+    {
+      "id": "D",
+      "text": "O bilhete identificava precisamente o local do que Helena buscava."
+    },
+    {
+      "id": "E",
+      "text": "Helena se sentou para lembrar."
+    }
+  ],
+  "answer": "D",
+  "comment": "O original afirma expressamente que o recado NÃO dizia onde estava o que ela procurava; D contradiz o texto.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

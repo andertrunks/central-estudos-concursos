@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-011",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “Que maravilha: o elevador parou novamente entre dois andares.”\nO efeito predominante é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "elogio literal ao elevador."
+    },
+    {
+      "id": "B",
+      "text": "ironia."
+    },
+    {
+      "id": "C",
+      "text": "instrução."
+    },
+    {
+      "id": "D",
+      "text": "descrição neutra."
+    },
+    {
+      "id": "E",
+      "text": "definição técnica."
+    }
+  ],
+  "answer": "B",
+  "comment": "O elogio aparente entra em choque com a situação negativa, produzindo ironia.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

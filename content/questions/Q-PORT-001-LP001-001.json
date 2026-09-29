@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP001-001",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "Texto: “A empresa ampliou o horário de atendimento em duas unidades, mas manteve inalterado o funcionamento das demais.”\nÉ correto concluir que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "todas as unidades passaram a funcionar por mais tempo."
+    },
+    {
+      "id": "B",
+      "text": "nenhuma unidade sofreu alteração."
+    },
+    {
+      "id": "C",
+      "text": "apenas parte das unidades teve o horário ampliado."
+    },
+    {
+      "id": "D",
+      "text": "as demais unidades serão fechadas."
+    },
+    {
+      "id": "E",
+      "text": "o atendimento foi reduzido."
+    }
+  ],
+  "answer": "C",
+  "comment": "O texto afirma que duas unidades tiveram ampliação e que as demais permaneceram iguais. Logo, somente parte das unidades mudou.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

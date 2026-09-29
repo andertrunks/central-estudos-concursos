@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-007",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “Segundo o sindicato, a proposta reduz direitos. O governo afirma que ela moderniza as relações de trabalho.”\nÉ correto afirmar que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "o autor necessariamente concorda com o sindicato."
+    },
+    {
+      "id": "B",
+      "text": "o autor necessariamente concorda com o governo."
+    },
+    {
+      "id": "C",
+      "text": "o trecho apresenta duas avaliações atribuídas a fontes diferentes."
+    },
+    {
+      "id": "D",
+      "text": "as duas fontes defendem a mesma posição."
+    },
+    {
+      "id": "E",
+      "text": "não há vozes distintas."
+    }
+  ],
+  "answer": "C",
+  "comment": "As posições pertencem ao sindicato e ao governo; o trecho não revela adesão do autor.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

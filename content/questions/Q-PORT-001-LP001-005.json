@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP001-005",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "Texto: “A adoção de sistemas digitais pode reduzir etapas burocráticas, desde que os procedimentos sejam redesenhados e os usuários recebam orientação adequada.”\nÉ correto afirmar que o texto:",
+  "options": [
+    {
+      "id": "A",
+      "text": "garante redução da burocracia em qualquer situação."
+    },
+    {
+      "id": "B",
+      "text": "apresenta a digitalização como suficiente por si só."
+    },
+    {
+      "id": "C",
+      "text": "condiciona o possível ganho de eficiência a outras medidas."
+    },
+    {
+      "id": "D",
+      "text": "rejeita o uso de sistemas digitais."
+    },
+    {
+      "id": "E",
+      "text": "afirma que orientação aos usuários é desnecessária."
+    }
+  ],
+  "answer": "C",
+  "comment": "O verbo “pode” expressa possibilidade, e “desde que” introduz condições. O texto não garante resultado automático.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

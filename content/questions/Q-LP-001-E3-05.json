@@ -1,0 +1,43 @@
+{
+  "id": "Q-LP-001-E3-05",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "A síntese fiel do Texto A é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "toda a atividade judiciária passou ao meio digital com qualidade integralmente comprovada."
+    },
+    {
+      "id": "B",
+      "text": "o atendimento presencial foi extinto após os testes."
+    },
+    {
+      "id": "C",
+      "text": "houve nova possibilidade de pedido remoto, mediu-se redução do tempo de protocolo, mas não se avaliou a qualidade das decisões."
+    },
+    {
+      "id": "D",
+      "text": "a expansão de serviços foi rejeitada."
+    },
+    {
+      "id": "E",
+      "text": "o levantamento provou o desempenho de todas as atividades do Tribunal."
+    }
+  ],
+  "answer": "C",
+  "comment": "É a única síntese que retém alteração de canal, resultado mensurado e limite do levantamento, sem reduzir ou exagerar o sentido.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

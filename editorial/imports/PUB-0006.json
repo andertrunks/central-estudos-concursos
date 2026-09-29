@@ -1,0 +1,74 @@
+{
+  "queueId": "PUB-0006",
+  "driveDocumentId": "1hR1Zh5G1BPDwk0HycguP3ENYdp6mlrSA4VCzIhzbkrc",
+  "status": "pronto para publicação",
+  "sourceDocuments": [
+    {
+      "id": "1hR1Zh5G1BPDwk0HycguP3ENYdp6mlrSA4VCzIhzbkrc",
+      "title": "LP-001 — Compreensão e interpretação de textos",
+      "modifiedAt": "2026-09-28T19:49:06.420Z",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1oVnUNKpB1IO6Rj-i-qVkACtzNdGJkfyWwhwRRnXe38E",
+      "title": "LP-002 — Informações literais, inferências e ponto de vista do autor",
+      "modifiedAt": "2026-09-28T10:38:08.191Z",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "PORT-001-01",
+    "PORT-001-02"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-PORT-001-LP001-001",
+    "Q-PORT-001-LP001-002",
+    "Q-PORT-001-LP001-003",
+    "Q-PORT-001-LP001-004",
+    "Q-PORT-001-LP001-005",
+    "Q-LP-001-E3-01",
+    "Q-LP-001-E3-02",
+    "Q-LP-001-E3-03",
+    "Q-LP-001-E3-04",
+    "Q-LP-001-E3-05",
+    "Q-LP-001-E3-06",
+    "Q-LP-001-E3-07",
+    "Q-LP-001-E3-08",
+    "Q-PORT-001-LP002-001",
+    "Q-PORT-001-LP002-002",
+    "Q-PORT-001-LP002-003",
+    "Q-PORT-001-LP002-004",
+    "Q-PORT-001-LP002-005",
+    "Q-PORT-001-LP002-006",
+    "Q-PORT-001-LP002-007",
+    "Q-PORT-001-LP002-008",
+    "Q-PORT-001-LP002-009",
+    "Q-PORT-001-LP002-010",
+    "Q-PORT-001-LP002-011",
+    "Q-PORT-001-LP002-012",
+    "Q-PORT-001-LP002-013",
+    "Q-PORT-001-LP002-014",
+    "Q-PORT-001-LP002-015"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-137",
+    "QREF-QUAD-138",
+    "QREF-QUAD-139",
+    "QREF-INDEPAC-001",
+    "QREF-INDEPAC-002",
+    "QREF-INDEPAC-003"
+  ],
+  "imageSha256": "f1b000857c7d840d0b88cdd894452c3236a92209d81c3daa59133cf9d78c3b09",
+  "drivePublishedStatusUpdated": false,
+  "transformation": {
+    "fullLP001AndLP002MaterialReused": true,
+    "answersAndCommentsInAttemptGatedSchema": true,
+    "unverifiedHistoricalReferencesExcludedFromScoring": true,
+    "privateDriveLinksRemoved": true,
+    "learnerProgressPreserved": true,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  }
+}

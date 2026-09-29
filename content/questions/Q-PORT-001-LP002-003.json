@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-003",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “O novo aplicativo pode facilitar o acesso aos serviços.”\nA alternativa que preserva o sentido é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "o aplicativo certamente facilitará o acesso."
+    },
+    {
+      "id": "B",
+      "text": "há possibilidade de o aplicativo facilitar o acesso."
+    },
+    {
+      "id": "C",
+      "text": "o aplicativo deve obrigatoriamente facilitar o acesso."
+    },
+    {
+      "id": "D",
+      "text": "o aplicativo já facilitou todos os serviços."
+    },
+    {
+      "id": "E",
+      "text": "o aplicativo não tem relação com acesso."
+    }
+  ],
+  "answer": "B",
+  "comment": "“Pode” exprime possibilidade, não certeza ou obrigação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

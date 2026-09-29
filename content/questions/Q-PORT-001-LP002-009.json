@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-001-LP002-009",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-02"
+  ],
+  "statement": "Texto: “Alguns setores registraram crescimento.”\nA alternativa incompatível com o texto é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "houve setores que cresceram."
+    },
+    {
+      "id": "B",
+      "text": "o texto não afirma que todos cresceram."
+    },
+    {
+      "id": "C",
+      "text": "ao menos parte dos setores registrou crescimento."
+    },
+    {
+      "id": "D",
+      "text": "todos os setores registraram crescimento."
+    },
+    {
+      "id": "E",
+      "text": "a informação tem alcance parcial."
+    }
+  ],
+  "answer": "D",
+  "comment": "“Alguns” não permite generalizar para “todos”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

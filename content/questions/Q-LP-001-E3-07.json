@@ -1,0 +1,43 @@
+{
+  "id": "Q-LP-001-E3-07",
+  "contentId": "PORT-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-001-01"
+  ],
+  "statement": "O gesto final de Helena, em relação ao bilhete, permite inferir com apoio textual que ela:",
+  "options": [
+    {
+      "id": "A",
+      "text": "encontrou exatamente o objeto perdido."
+    },
+    {
+      "id": "B",
+      "text": "interrompeu a busca física para voltar-se à lembrança."
+    },
+    {
+      "id": "C",
+      "text": "decidiu vender o arquivo."
+    },
+    {
+      "id": "D",
+      "text": "recebeu explicação de seu pai em pessoa naquele momento."
+    },
+    {
+      "id": "E",
+      "text": "descobriu o endereço de quem escreveu o recado."
+    }
+  ],
+  "answer": "B",
+  "comment": "O trecho 'Em vez de abrir outra gaveta, Helena sentou-se para lembrar' sustenta suspensão momentânea da procura física e foco na memória, sem assegurar desfecho.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
