@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-11",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 11\r\nResolver recursivo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "necessariamente é autoritativo para todos os domínios"
+    },
+    {
+      "id": "B",
+      "text": "tenta obter resposta final para o cliente"
+    },
+    {
+      "id": "C",
+      "text": "nunca usa cache"
+    },
+    {
+      "id": "D",
+      "text": "nunca consulta outros servidores"
+    },
+    {
+      "id": "E",
+      "text": "serve apenas zonas locais"
+    }
+  ],
+  "answer": "B",
+  "comment": "O recursivo busca a resposta final.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

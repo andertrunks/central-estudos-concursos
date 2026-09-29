@@ -1,0 +1,32 @@
+{
+  "id": "Q-RED-002-14",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "ARP tem como função principal traduzir nomes DNS em endereços IPv4.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "DNS resolve nomes; ARP faz resolução de endereço de protocolo em endereço de enlace local.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

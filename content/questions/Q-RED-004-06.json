@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-06",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 6\r\nEm MX, normalmente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "maior valor = maior preferência"
+    },
+    {
+      "id": "B",
+      "text": "menor valor = maior preferência"
+    },
+    {
+      "id": "C",
+      "text": "valor não tem função"
+    },
+    {
+      "id": "D",
+      "text": "só existe valor zero"
+    },
+    {
+      "id": "E",
+      "text": "preferência é determinada pelo TTL"
+    }
+  ],
+  "answer": "B",
+  "comment": "Menor preferência numérica é normalmente priorizada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

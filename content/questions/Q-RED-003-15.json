@@ -1,0 +1,34 @@
+{
+  "id": "Q-RED-003-15",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Neighbor Discovery é funcionalmente mais amplo que simplesmente resolver endereço IPv6 em endereço de enlace, pois inclui também descoberta de roteadores, prefixos e detecção de alcançabilidade de vizinhos.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "o RFC 4861 inclui Router Discovery, Prefix Discovery, Address Resolution e Neighbor Unreachability Detection, entre outras funções.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

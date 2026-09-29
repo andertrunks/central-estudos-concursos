@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-10",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "O bloco fc00::/7 é associado a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "multicast"
+    },
+    {
+      "id": "B",
+      "text": "Unique Local IPv6 Unicast"
+    },
+    {
+      "id": "C",
+      "text": "link-local"
+    },
+    {
+      "id": "D",
+      "text": "loopback"
+    },
+    {
+      "id": "E",
+      "text": "endereço não especificado"
+    }
+  ],
+  "answer": "B",
+  "comment": "fc00::/7 identifica Unique Local IPv6 Unicast.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

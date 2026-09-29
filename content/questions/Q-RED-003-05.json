@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-05",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Na forma canônica recomendada pelo RFC 5952, se duas sequências de campos zero possuem o mesmo maior comprimento, comprime-se:",
+  "options": [
+    {
+      "id": "A",
+      "text": "obrigatoriamente a última"
+    },
+    {
+      "id": "B",
+      "text": "a primeira"
+    },
+    {
+      "id": "C",
+      "text": "ambas com duas ocorrências de ::"
+    },
+    {
+      "id": "D",
+      "text": "nenhuma"
+    },
+    {
+      "id": "E",
+      "text": "apenas a que estiver no final do endereço"
+    }
+  ],
+  "answer": "B",
+  "comment": "em empate entre as maiores sequências de zeros, RFC 5952 recomenda comprimir a primeira.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

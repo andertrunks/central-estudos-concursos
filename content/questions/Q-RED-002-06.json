@@ -1,0 +1,32 @@
+{
+  "id": "Q-RED-002-06",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "A fórmula 2^h − 2 pode ser aplicada sem qualquer exceção a todos os prefixos IPv4, inclusive /31 e /32.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "/31 e /32 exigem tratamento específico; RFC 3021 é a exceção clássica ao raciocínio 2^h−2.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

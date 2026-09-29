@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-RED-002-INDEPAC-002",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Sobre o transporte utilizado pelo Domain Name System, DNS, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "DNS utiliza exclusivamente TCP na porta 80."
+    },
+    {
+      "id": "B",
+      "text": "DNS utiliza exclusivamente UDP na porta 53."
+    },
+    {
+      "id": "C",
+      "text": "DNS pode utilizar UDP e TCP na porta 53, conforme a operação e as condições da comunicação."
+    },
+    {
+      "id": "D",
+      "text": "DNS utiliza SMTP para realizar consultas recursivas."
+    }
+  ],
+  "answer": "C",
+  "comment": "Consultas DNS tradicionais usam frequentemente UDP na porta 53, mas TCP também é previsto, por exemplo em transferências de zona e em situações que exigem comunicação por TCP. As alternativas A, B e D transformam comportamentos específicos em regras absolutas incorretas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

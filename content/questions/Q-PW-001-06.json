@@ -1,0 +1,34 @@
+{
+  "id": "Q-PW-001-06",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-04"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 6\r\nUma resposta HTTP de classe 2xx indica, em termos gerais, sucesso da requisição.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. 2xx é a classe de respostas de sucesso.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC9110-RED-002",
+    "SRC-IETF-RFC9112-RED-002",
+    "SRC-IETF-RFC8446-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

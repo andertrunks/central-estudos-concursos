@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-13",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Sobre anycast em IPv6, assinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "possui obrigatoriamente prefixo ff00::/8"
+    },
+    {
+      "id": "B",
+      "text": "entrega uma cópia a todas as interfaces do grupo"
+    },
+    {
+      "id": "C",
+      "text": "utiliza endereços do espaço unicast e encaminha a uma das interfaces que compartilham o endereço"
+    },
+    {
+      "id": "D",
+      "text": "é sinônimo de broadcast"
+    },
+    {
+      "id": "E",
+      "text": "só existe em IPv4"
+    }
+  ],
+  "answer": "C",
+  "comment": "anycast usa formato de unicast e entrega a uma das interfaces que compartilham o endereço, conforme roteamento.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

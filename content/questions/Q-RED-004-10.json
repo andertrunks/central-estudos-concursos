@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-10",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 10\r\nA zona reversa IPv6 utiliza:",
+  "options": [
+    {
+      "id": "A",
+      "text": "in-addr.arpa"
+    },
+    {
+      "id": "B",
+      "text": "ip6.arpa"
+    },
+    {
+      "id": "C",
+      "text": "ipv6.local"
+    },
+    {
+      "id": "D",
+      "text": "root6.net"
+    },
+    {
+      "id": "E",
+      "text": "aaaa.arpa"
+    }
+  ],
+  "answer": "B",
+  "comment": "IPv6 reverso usa ip6.arpa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

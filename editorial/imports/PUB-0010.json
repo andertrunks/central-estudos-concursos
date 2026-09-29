@@ -1,0 +1,143 @@
+{
+  "queueId": "PUB-0010",
+  "contentId": "TI-RED-002",
+  "status": "build/deploy concluídos; inspeção renderizada pública pendente",
+  "sourceDocuments": [
+    {
+      "id": "19QsROVmHb8quT3sVymTj1p8ZZ_0NOzgfDCYBJrh5ArI",
+      "title": "RED-002 — IPv4",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1DHADjuRWIpgNeerqzFuWkV5DApeJmK-DLmHb4vbzDXE",
+      "title": "RED-003 — IPv6",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1CxTazt8TZsLCSFiTTrFtcq2el_fxcUb_nlCTMWuBQuw",
+      "title": "RED-004 — DNS",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1ZO2sFqYKm1CglgDSc0uDG8Lg83x0jbZ3TUU-IY6qnvw",
+      "title": "PW-001 — Fundamentos da Web",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1RyYDe_DpOCsN-omoioXLpeKFDMs72qUmVXVevWlXrwU",
+      "title": "TI-RED-002 — complemento editorial",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-RED-002-01",
+    "TI-RED-002-02",
+    "TI-RED-002-03",
+    "TI-RED-002-04",
+    "TI-RED-002-05"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-RED-002-01",
+    "Q-RED-002-02",
+    "Q-RED-002-03",
+    "Q-RED-002-04",
+    "Q-RED-002-05",
+    "Q-RED-002-06",
+    "Q-RED-002-07",
+    "Q-RED-002-08",
+    "Q-RED-002-09",
+    "Q-RED-002-10",
+    "Q-RED-002-11",
+    "Q-RED-002-12",
+    "Q-RED-002-13",
+    "Q-RED-002-14",
+    "Q-RED-002-15",
+    "Q-RED-002-16",
+    "Q-RED-002-17",
+    "Q-RED-002-18",
+    "Q-RED-003-01",
+    "Q-RED-003-02",
+    "Q-RED-003-03",
+    "Q-RED-003-04",
+    "Q-RED-003-05",
+    "Q-RED-003-06",
+    "Q-RED-003-07",
+    "Q-RED-003-08",
+    "Q-RED-003-09",
+    "Q-RED-003-10",
+    "Q-RED-003-11",
+    "Q-RED-003-12",
+    "Q-RED-003-13",
+    "Q-RED-003-14",
+    "Q-RED-003-15",
+    "Q-RED-003-16",
+    "Q-RED-003-17",
+    "Q-RED-003-18",
+    "Q-RED-003-19",
+    "Q-RED-003-20",
+    "Q-RED-004-01",
+    "Q-RED-004-02",
+    "Q-RED-004-03",
+    "Q-RED-004-04",
+    "Q-RED-004-05",
+    "Q-RED-004-06",
+    "Q-RED-004-07",
+    "Q-RED-004-08",
+    "Q-RED-004-09",
+    "Q-RED-004-10",
+    "Q-RED-004-11",
+    "Q-RED-004-12",
+    "Q-RED-004-13",
+    "Q-RED-004-14",
+    "Q-RED-004-15",
+    "Q-RED-004-16",
+    "Q-RED-004-17",
+    "Q-RED-004-18",
+    "Q-RED-004-19",
+    "Q-RED-004-20",
+    "Q-PW-001-01",
+    "Q-PW-001-02",
+    "Q-PW-001-03",
+    "Q-PW-001-04",
+    "Q-PW-001-05",
+    "Q-PW-001-06",
+    "Q-PW-001-07",
+    "Q-PW-001-08",
+    "Q-PW-001-09",
+    "Q-PW-001-10",
+    "Q-PW-001-11",
+    "Q-PW-001-12",
+    "Q-PW-001-13",
+    "Q-PW-001-14",
+    "Q-PW-001-15",
+    "Q-TI-RED-002-INDEPAC-001",
+    "Q-TI-RED-002-INDEPAC-002",
+    "Q-TI-RED-002-INDEPAC-003",
+    "Q-TI-RED-002-INDEPAC-004"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-INDEPAC-RED-002-001",
+    "QREF-QUAD-RED-002-001",
+    "QREF-QUAD-RED-002-002",
+    "QREF-QUAD-RED-002-003",
+    "QREF-QUAD-RED-002-004"
+  ],
+  "exclusions": [
+    "RED-005 DHCP permanece fora do escopo desta aula."
+  ],
+  "media": [
+    "TI-RED-002-IMG-001",
+    "TI-RED-002-YT-001",
+    "TI-RED-002-YT-002"
+  ],
+  "publication": {
+    "contentCommit": "PENDING",
+    "workflowRun": null,
+    "workflowConclusion": "pending",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-RED-002",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "Não baixar no controle do Drive até inspeção da página renderizada. Runtime do navegador indisponível nesta execução."
+  },
+  "matrixControl": "data/matriz-editais.json — aula marcada para inclusão no deploy; atualizar o Google Sheet somente depois da verificação pública."
+}

@@ -336,5 +336,40 @@
     "channel": "Zindiak Limited",
     "verifiedAt": "2026-09-24",
     "original": false
+  },
+  {
+    "id": "TI-RED-002-IMG-001",
+    "contentId": "TI-RED-002",
+    "type": "imagem",
+    "title": "Principais protocolos de rede — visão integrada",
+    "caption": "Imagem didática original que organiza protocolos pelas camadas de aplicação, transporte, Internet e enlace; inclui TCP/UDP, handshake, IPv4/IPv6, HTTP/HTTPS, FTP, SMTP, DNS e portas usuais.",
+    "alt": "Visão integrada das camadas de aplicação, transporte, Internet e enlace, com os protocolos TCP, UDP, IPv4, IPv6, HTTP, HTTPS, FTP, SMTP e DNS e portas usuais.",
+    "file": "media/TI-RED-002-IMG-001.png",
+    "verifiedAt": "2026-09-25",
+    "original": true
+  },
+  {
+    "id": "TI-RED-002-YT-001",
+    "contentId": "TI-RED-002",
+    "type": "YouTube",
+    "title": "TCP vs UDP",
+    "caption": "Vídeo introdutório de comparação entre TCP e UDP.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=3MvynTbLPIw",
+    "channel": "UNIVESP",
+    "verifiedAt": "2026-09-25",
+    "original": false
+  },
+  {
+    "id": "TI-RED-002-YT-002",
+    "contentId": "TI-RED-002",
+    "type": "YouTube",
+    "title": "Protocolos de rede",
+    "caption": "Revisão de protocolos de rede.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=h_qeUwWGyTE",
+    "channel": "Hardware Redes Brasil",
+    "verifiedAt": "2026-09-25",
+    "original": false
   }
 ]

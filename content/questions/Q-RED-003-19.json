@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-19",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Assinale a alternativa que contém apenas prefixos atualmente registrados para documentação IPv6:",
+  "options": [
+    {
+      "id": "A",
+      "text": "2001:db8::/32 e 3fff::/20"
+    },
+    {
+      "id": "B",
+      "text": "fe80::/10 e fc00::/7"
+    },
+    {
+      "id": "C",
+      "text": "ff00::/8 e ::1/128"
+    },
+    {
+      "id": "D",
+      "text": "2000::/3 e fe80::/10"
+    },
+    {
+      "id": "E",
+      "text": "fc00::/7 e 2001:db8::/32"
+    }
+  ],
+  "answer": "A",
+  "comment": "IANA registra 2001:db8::/32 e 3fff::/20 como Documentation.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

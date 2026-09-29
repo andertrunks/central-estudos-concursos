@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-07",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 7\r\nNS:",
+  "options": [
+    {
+      "id": "A",
+      "text": "guarda endereço IP diretamente como dado principal"
+    },
+    {
+      "id": "B",
+      "text": "aponta nome de servidor de nomes"
+    },
+    {
+      "id": "C",
+      "text": "é registro de e-mail"
+    },
+    {
+      "id": "D",
+      "text": "é alias"
+    },
+    {
+      "id": "E",
+      "text": "é PTR"
+    }
+  ],
+  "answer": "B",
+  "comment": "NS contém nome de servidor de nomes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

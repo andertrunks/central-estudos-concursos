@@ -1,0 +1,43 @@
+{
+  "id": "Q-TI-RED-002-INDEPAC-004",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-05"
+  ],
+  "statement": "No File Transfer Protocol, FTP, a diferença essencial entre os modos ativo e passivo está relacionada à conexão de dados. Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "No modo ativo, o cliente inicia a conexão de dados; no passivo, o servidor inicia."
+    },
+    {
+      "id": "B",
+      "text": "No modo ativo, o servidor inicia a conexão de dados em direção ao cliente; no passivo, o cliente inicia a conexão de dados em direção ao servidor."
+    },
+    {
+      "id": "C",
+      "text": "Nos dois modos, somente UDP é utilizado para a conexão de dados."
+    },
+    {
+      "id": "D",
+      "text": "O modo passivo elimina a conexão de controle do FTP."
+    }
+  ],
+  "answer": "B",
+  "comment": "No FTP ativo, o servidor inicia a conexão de dados em direção ao cliente. No passivo, o servidor informa onde está aguardando a conexão de dados e o cliente a inicia. A conexão de controle continua existindo, e o FTP clássico utiliza TCP.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC9293-RED-002",
+    "SRC-IETF-RFC768-RED-002",
+    "SRC-IETF-RFC5321-RED-002",
+    "SRC-IETF-RFC959-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-17",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 17\r\nA porta tradicional do DNS é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "21"
+    },
+    {
+      "id": "B",
+      "text": "22"
+    },
+    {
+      "id": "C",
+      "text": "25"
+    },
+    {
+      "id": "D",
+      "text": "53"
+    },
+    {
+      "id": "E",
+      "text": "443"
+    }
+  ],
+  "answer": "D",
+  "comment": "Porta tradicional: 53.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

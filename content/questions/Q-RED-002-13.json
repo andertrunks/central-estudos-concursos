@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-13",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "Um host 192.168.1.10/24 usa gateway 192.168.1.1 e quer alcançar 203.0.113.50. No primeiro enlace Ethernet, o host normalmente precisa conhecer:",
+  "options": [
+    {
+      "id": "A",
+      "text": "o MAC de 203.0.113.50 através de ARP global"
+    },
+    {
+      "id": "B",
+      "text": "o MAC do gateway 192.168.1.1"
+    },
+    {
+      "id": "C",
+      "text": "apenas a porta TCP do roteador"
+    },
+    {
+      "id": "D",
+      "text": "o nome DNS do gateway obrigatoriamente"
+    },
+    {
+      "id": "E",
+      "text": "o endereço IPv6 do destino"
+    }
+  ],
+  "answer": "B",
+  "comment": "para destino remoto, o primeiro quadro é enviado ao next hop local; ARP resolve o endereço de enlace do gateway.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

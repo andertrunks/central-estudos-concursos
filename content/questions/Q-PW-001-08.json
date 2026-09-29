@@ -1,0 +1,34 @@
+{
+  "id": "Q-PW-001-08",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-04"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 8\r\nHTML está relacionado à estrutura e semântica do documento, enquanto CSS está relacionado à apresentação.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. Essa é a separação conceitual básica entre HTML e CSS.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC9110-RED-002",
+    "SRC-IETF-RFC9112-RED-002",
+    "SRC-IETF-RFC8446-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

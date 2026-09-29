@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-20",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 20\r\nAssinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "DNS substitui DHCP"
+    },
+    {
+      "id": "B",
+      "text": "DNSSEC fornece confidencialidade por si só"
+    },
+    {
+      "id": "C",
+      "text": "CNAME é redirecionamento HTTP"
+    },
+    {
+      "id": "D",
+      "text": "cache reduz consultas repetidas aos autoritativos"
+    },
+    {
+      "id": "E",
+      "text": "PTR mapeia nome para IPv4"
+    }
+  ],
+  "answer": "D",
+  "comment": "Cache reduz consultas repetitivas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

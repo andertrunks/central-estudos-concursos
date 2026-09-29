@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-01",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Um endereço IPv6 possui:",
+  "options": [
+    {
+      "id": "A",
+      "text": "32 bits"
+    },
+    {
+      "id": "B",
+      "text": "48 bits"
+    },
+    {
+      "id": "C",
+      "text": "64 bits"
+    },
+    {
+      "id": "D",
+      "text": "128 bits"
+    },
+    {
+      "id": "E",
+      "text": "256 bits"
+    }
+  ],
+  "answer": "D",
+  "comment": "IPv6 utiliza endereços de 128 bits.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

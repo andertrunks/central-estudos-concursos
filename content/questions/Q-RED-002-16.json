@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-16",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "Dividindo um /24 em quatro sub-redes iguais, o novo prefixo será:",
+  "options": [
+    {
+      "id": "A",
+      "text": "/25"
+    },
+    {
+      "id": "B",
+      "text": "/26"
+    },
+    {
+      "id": "C",
+      "text": "/27"
+    },
+    {
+      "id": "D",
+      "text": "/28"
+    },
+    {
+      "id": "E",
+      "text": "/30"
+    }
+  ],
+  "answer": "B",
+  "comment": "quatro sub-redes exigem dois bits adicionais: /24 → /26.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "Q-RED-002-15",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "Ao encaminhar tráfego IPv4 para destino remoto, o endereço IP final do pacote e o endereço MAC do primeiro quadro necessariamente identificam o mesmo equipamento.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "IP de destino final permanece remoto, enquanto o MAC do quadro identifica o próximo salto no enlace atual.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

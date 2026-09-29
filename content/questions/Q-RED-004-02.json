@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-02",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 2\r\nUm registro A associa:",
+  "options": [
+    {
+      "id": "A",
+      "text": "nome a IPv6"
+    },
+    {
+      "id": "B",
+      "text": "nome a IPv4"
+    },
+    {
+      "id": "C",
+      "text": "domínio a MX"
+    },
+    {
+      "id": "D",
+      "text": "endereço a nome"
+    },
+    {
+      "id": "E",
+      "text": "alias a alias"
+    }
+  ],
+  "answer": "B",
+  "comment": "A mapeia nome para IPv4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

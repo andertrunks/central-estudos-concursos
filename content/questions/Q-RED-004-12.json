@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-12",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 12\r\nNa resolução iterativa:",
+  "options": [
+    {
+      "id": "A",
+      "text": "o cliente/resolvedor segue referrals sucessivos"
+    },
+    {
+      "id": "B",
+      "text": "nenhum servidor responde"
+    },
+    {
+      "id": "C",
+      "text": "não existe hierarquia"
+    },
+    {
+      "id": "D",
+      "text": "só se usa CNAME"
+    },
+    {
+      "id": "E",
+      "text": "não há consulta DNS"
+    }
+  ],
+  "answer": "A",
+  "comment": "A resolução iterativa segue referrals.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

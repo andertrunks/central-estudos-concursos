@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-08",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "Qual endereço pertence ao bloco privado RFC 1918 172.16.0.0/12?",
+  "options": [
+    {
+      "id": "A",
+      "text": "172.15.10.1"
+    },
+    {
+      "id": "B",
+      "text": "172.20.10.1"
+    },
+    {
+      "id": "C",
+      "text": "172.40.10.1"
+    },
+    {
+      "id": "D",
+      "text": "173.20.10.1"
+    },
+    {
+      "id": "E",
+      "text": "171.31.10.1"
+    }
+  ],
+  "answer": "B",
+  "comment": "172.16/12 cobre 172.16.0.0 a 172.31.255.255.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

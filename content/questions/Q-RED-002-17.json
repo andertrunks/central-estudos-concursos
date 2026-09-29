@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-17",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "A máscara 255.255.252.0 corresponde ao prefixo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "/18"
+    },
+    {
+      "id": "B",
+      "text": "/20"
+    },
+    {
+      "id": "C",
+      "text": "/22"
+    },
+    {
+      "id": "D",
+      "text": "/24"
+    },
+    {
+      "id": "E",
+      "text": "/26"
+    }
+  ],
+  "answer": "C",
+  "comment": "252 = seis bits 1 no terceiro octeto; 8 + 8 + 6 = /22.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

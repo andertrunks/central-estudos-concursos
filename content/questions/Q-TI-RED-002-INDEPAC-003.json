@@ -1,0 +1,43 @@
+{
+  "id": "Q-TI-RED-002-INDEPAC-003",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-05"
+  ],
+  "statement": "Em uma arquitetura tradicional de correio eletrônico, qual protocolo tem como função principal o envio e a transferência de mensagens entre clientes e servidores ou entre servidores de correio?",
+  "options": [
+    {
+      "id": "A",
+      "text": "SMTP."
+    },
+    {
+      "id": "B",
+      "text": "FTP."
+    },
+    {
+      "id": "C",
+      "text": "DNS."
+    },
+    {
+      "id": "D",
+      "text": "ARP."
+    }
+  ],
+  "answer": "A",
+  "comment": "SMTP é o protocolo associado ao envio e à transferência de correio eletrônico. POP3 e IMAP, embora não apareçam nas alternativas, estão ligados ao acesso às mensagens pelo usuário. FTP transfere arquivos; DNS resolve nomes; ARP relaciona endereços em redes locais IPv4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC9293-RED-002",
+    "SRC-IETF-RFC768-RED-002",
+    "SRC-IETF-RFC5321-RED-002",
+    "SRC-IETF-RFC959-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

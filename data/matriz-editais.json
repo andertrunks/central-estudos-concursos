@@ -762,10 +762,10 @@
     ],
     "coverage": "Parcial",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": "SETEC não enumera todos"
+    "notes": "Aula integral publicada; inspeção renderizada da rota pública e baixa no controle do Drive pendentes por indisponibilidade do runtime do navegador."
   },
   {
     "id": "TI-RED-003",

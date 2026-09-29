@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-18",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Em 2026, o RFC que tornou-se o Internet Standard atual para DHCPv6, obsoletando o RFC 8415, é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "RFC 791"
+    },
+    {
+      "id": "B",
+      "text": "RFC 4291"
+    },
+    {
+      "id": "C",
+      "text": "RFC 4861"
+    },
+    {
+      "id": "D",
+      "text": "RFC 8200"
+    },
+    {
+      "id": "E",
+      "text": "RFC 9915"
+    }
+  ],
+  "answer": "E",
+  "comment": "RFC 9915, publicado em janeiro de 2026, obsoletou RFC 8415 e é STD 102.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

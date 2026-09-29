@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-20",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "Sobre a incidência formal no TRF3/2023, assinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "IPv6 não consta de nenhum dos cargos de Informática auditados."
+    },
+    {
+      "id": "B",
+      "text": "IPv6, segmentação e endereçamento constam dos dois cargos de Informática auditados; termos específicos como SLAAC e Neighbor Discovery não devem ser declarados literais do edital sem confirmação documental própria."
+    },
+    {
+      "id": "C",
+      "text": "Neighbor Discovery é citado literalmente no mesmo item para ambos e substitui todo o conteúdo de IPv6."
+    },
+    {
+      "id": "D",
+      "text": "Apenas o Técnico exige IPv6."
+    },
+    {
+      "id": "E",
+      "text": "O edital exige exclusivamente IPv4."
+    }
+  ],
+  "answer": "B",
+  "comment": "preserva o que foi documentalmente auditado: IPv6/segmentação/endereçamento são formais; aprofundamentos específicos não são inventados como itens literais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

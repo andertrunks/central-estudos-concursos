@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-19",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 19\r\nNo TRF3/2023:",
+  "options": [
+    {
+      "id": "A",
+      "text": "DNS não consta de nenhum cargo de Informática auditado"
+    },
+    {
+      "id": "B",
+      "text": "DNS aparece formalmente em Analista TI e Técnico TI"
+    },
+    {
+      "id": "C",
+      "text": "DNS aparece apenas no Técnico"
+    },
+    {
+      "id": "D",
+      "text": "DNS aparece apenas no Analista"
+    },
+    {
+      "id": "E",
+      "text": "DNS só aparece em cargo administrativo"
+    }
+  ],
+  "answer": "B",
+  "comment": "Os dois cargos possuem vínculo documental.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-12",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "Um host 192.168.1.10/24 deseja enviar um pacote para 192.168.1.200. Considerando apenas o prefixo, o destino está:",
+  "options": [
+    {
+      "id": "A",
+      "text": "na mesma rede /24"
+    },
+    {
+      "id": "B",
+      "text": "obrigatoriamente atrás do gateway padrão"
+    },
+    {
+      "id": "C",
+      "text": "em rede loopback"
+    },
+    {
+      "id": "D",
+      "text": "em bloco de documentação"
+    },
+    {
+      "id": "E",
+      "text": "em outra rede /16 apenas"
+    }
+  ],
+  "answer": "A",
+  "comment": "ambos pertencem ao prefixo 192.168.1.0/24.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

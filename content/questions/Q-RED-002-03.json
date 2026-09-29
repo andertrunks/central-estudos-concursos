@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-03",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "O endereço 192.168.10.77/26 pertence à rede:",
+  "options": [
+    {
+      "id": "A",
+      "text": "192.168.10.0"
+    },
+    {
+      "id": "B",
+      "text": "192.168.10.32"
+    },
+    {
+      "id": "C",
+      "text": "192.168.10.64"
+    },
+    {
+      "id": "D",
+      "text": "192.168.10.77"
+    },
+    {
+      "id": "E",
+      "text": "192.168.10.128"
+    }
+  ],
+  "answer": "C",
+  "comment": "bloco de 64; 77 pertence ao intervalo 64–127.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

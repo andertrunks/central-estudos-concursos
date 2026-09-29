@@ -1,0 +1,43 @@
+{
+  "id": "Q-TI-RED-002-INDEPAC-001",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-05"
+  ],
+  "statement": "Uma aplicação necessita de entrega ordenada, controle de fluxo e retransmissão automática dos dados perdidos. Qual protocolo da camada de transporte atende diretamente a essas características?",
+  "options": [
+    {
+      "id": "A",
+      "text": "UDP."
+    },
+    {
+      "id": "B",
+      "text": "TCP."
+    },
+    {
+      "id": "C",
+      "text": "IP."
+    },
+    {
+      "id": "D",
+      "text": "ARP."
+    }
+  ],
+  "answer": "B",
+  "comment": "O TCP é orientado à conexão e fornece mecanismos de confiabilidade, ordenação, reconhecimento, retransmissão e controle de fluxo. O UDP não fornece essas garantias por si só. IP e ARP não são protocolos de transporte equivalentes ao TCP.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC9293-RED-002",
+    "SRC-IETF-RFC768-RED-002",
+    "SRC-IETF-RFC5321-RED-002",
+    "SRC-IETF-RFC959-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

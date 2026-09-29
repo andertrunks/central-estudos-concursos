@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-18",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 18\r\nDomínio e zona:",
+  "options": [
+    {
+      "id": "A",
+      "text": "são sempre sinônimos"
+    },
+    {
+      "id": "B",
+      "text": "podem ter limites diferentes devido a delegações"
+    },
+    {
+      "id": "C",
+      "text": "nunca se relacionam"
+    },
+    {
+      "id": "D",
+      "text": "só existem em DNSSEC"
+    },
+    {
+      "id": "E",
+      "text": "são registros MX"
+    }
+  ],
+  "answer": "B",
+  "comment": "Delegações podem separar zona e domínio.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

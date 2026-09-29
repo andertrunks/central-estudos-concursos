@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-004-15",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-03"
+  ],
+  "statement": "Questão 15\r\nNODATA significa:",
+  "options": [
+    {
+      "id": "A",
+      "text": "domínio não existe"
+    },
+    {
+      "id": "B",
+      "text": "nome existe, mas não há dados do tipo solicitado"
+    },
+    {
+      "id": "C",
+      "text": "falha obrigatória de rede"
+    },
+    {
+      "id": "D",
+      "text": "TTL igual a zero sempre"
+    },
+    {
+      "id": "E",
+      "text": "servidor não autoritativo"
+    }
+  ],
+  "answer": "B",
+  "comment": "NODATA é nome existente sem dados do tipo consultado.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC1034-RED-002",
+    "SRC-IETF-RFC1035-RED-002",
+    "SRC-IETF-RFC7766-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

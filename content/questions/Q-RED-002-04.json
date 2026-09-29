@@ -1,0 +1,44 @@
+{
+  "id": "Q-RED-002-04",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-01"
+  ],
+  "statement": "O broadcast tradicional da rede 192.168.10.64/26 é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "192.168.10.63"
+    },
+    {
+      "id": "B",
+      "text": "192.168.10.126"
+    },
+    {
+      "id": "C",
+      "text": "192.168.10.127"
+    },
+    {
+      "id": "D",
+      "text": "192.168.10.128"
+    },
+    {
+      "id": "E",
+      "text": "192.168.10.255"
+    }
+  ],
+  "answer": "C",
+  "comment": "em /26 iniciado em .64, o broadcast tradicional é .127.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC791-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

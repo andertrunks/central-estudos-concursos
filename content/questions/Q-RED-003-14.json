@@ -1,0 +1,46 @@
+{
+  "id": "Q-RED-003-14",
+  "contentId": "TI-RED-002",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-002-02"
+  ],
+  "statement": "A resolução de endereço de enlace de um vizinho IPv6 no mesmo link é normalmente realizada por:",
+  "options": [
+    {
+      "id": "A",
+      "text": "ARP IPv4"
+    },
+    {
+      "id": "B",
+      "text": "Neighbor Discovery, com mensagens ICMPv6 apropriadas"
+    },
+    {
+      "id": "C",
+      "text": "DNS exclusivamente"
+    },
+    {
+      "id": "D",
+      "text": "SMTP"
+    },
+    {
+      "id": "E",
+      "text": "BGP exclusivamente"
+    }
+  ],
+  "answer": "B",
+  "comment": "Neighbor Discovery/ICMPv6 realiza a resolução de vizinhos; não se usa ARP IPv4 como mecanismo normal.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IETF-RFC8200-RED-002",
+    "SRC-IETF-RFC4291-RED-002",
+    "SRC-IETF-RFC5952-RED-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
