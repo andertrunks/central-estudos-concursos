@@ -1,0 +1,26 @@
+{
+  "queueId": "PUB-0010",
+  "contentId": "TI-RED-002",
+  "driveDocumentId": "1RyYDe_DpOCsN-omoioXLpeKFDMs72qUmVXVevWlXrwU",
+  "integratedAt": "2026-09-29T12:48:01Z",
+  "status": "deploy concluído; inspeção pública pendente",
+  "integratedCommit": "d1309abdc6dd60cbcb5749ca97a5d3b69e2d9336",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-RED-002",
+  "workflowRunId": 36570555041,
+  "verifiedAt": null,
+  "verification": {
+    "actions": "success",
+    "publicLesson": "pending—browser runtime timeout",
+    "questions": 77,
+    "answersGatedUntilAttempt": true,
+    "unverifiedReferencesExcludedFromScoring": true,
+    "drivePublishedStatusUpdated": false
+  },
+  "pendingReferences": [
+    "QREF-INDEPAC-RED-002-001",
+    "QREF-QUAD-RED-002-001",
+    "QREF-QUAD-RED-002-002",
+    "QREF-QUAD-RED-002-003",
+    "QREF-QUAD-RED-002-004"
+  ]
+}

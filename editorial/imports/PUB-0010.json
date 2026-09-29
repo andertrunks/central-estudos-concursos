@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0010",
   "contentId": "TI-RED-002",
-  "status": "build/deploy concluídos; inspeção renderizada pública pendente",
+  "status": "deploy concluído; inspeção pública renderizada pendente",
   "sourceDocuments": [
     {
       "id": "19QsROVmHb8quT3sVymTj1p8ZZ_0NOzgfDCYBJrh5ArI",
@@ -131,13 +131,13 @@
     "TI-RED-002-YT-002"
   ],
   "publication": {
-    "contentCommit": "PENDING",
-    "workflowRun": null,
-    "workflowConclusion": "pending",
+    "contentCommit": "d1309abdc6dd60cbcb5749ca97a5d3b69e2d9336",
+    "workflowRun": 36570555041,
+    "workflowConclusion": "success",
     "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-RED-002",
     "publicPageVerified": false,
     "drivePublishedStatusUpdated": false,
-    "checkpointNote": "Não baixar no controle do Drive até inspeção da página renderizada. Runtime do navegador indisponível nesta execução."
+    "checkpointNote": "GitHub Actions concluiu npm run check e deploy do GitHub Pages. A tentativa de abrir a rota pelo navegador integrado expirou após 300 s; a abertura via web também não está disponível. Não atualizar status no Google Sheet até inspeção renderizada."
   },
   "matrixControl": "data/matriz-editais.json — aula marcada para inclusão no deploy; atualizar o Google Sheet somente depois da verificação pública."
 }

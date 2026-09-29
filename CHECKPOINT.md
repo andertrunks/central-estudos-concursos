@@ -42,3 +42,12 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Recibo técnico: `editorial/receipts/TRILHA-2026-09-24.json`. A fila editorial não foi alterada. Na leitura mais recente, PUB-0005 já está pronto para validação com mídia concluída; a anotação anterior de produção é histórica.
 - Este registro de fechamento não muda o código funcional. A publicação do próprio registro gera um novo checkpoint automático: consultar seu SHA/horário no artefato do workflow, sem confundi-lo com o commit funcional testado acima.
 - Recibo também salvo e relido em `09_PUBLICADO` no Drive: `1XUFNvt9N4iU6WDpRfQQYxiBRoNk5fs_L`.
+
+
+## Retomada contínua — 2026-09-29
+
+- PUB-0010 — TI-RED-002 integrado no commit d1309abdc6dd60cbcb5749ca97a5d3b69e2d9336 com cinco materiais integrais reaproveitados, imagem original e 77 questões autorais interativas.
+- GitHub Actions 36570555041: `npm run check` e deploy GitHub Pages concluídos com sucesso. Rota: https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-RED-002.
+- Inspeção renderizada pública pendente: o navegador integrado expirou após 300 segundos e o web fetch não acessou a página. Controle canônico do Drive permanece inalterado; não registrar baixa editorial até verificação visual.
+- QREF-INDEPAC-RED-002-001 e QREF-QUAD-RED-002-001 a 004 seguem pendentes e fora da pontuação. DHCP permanece separado.
+- Último pacote integrado: PUB-0010. Primeiro pacote pendente: PUB-0011 — TI-SEG-002 (criptografia e autenticação). Retomar conferindo rota pública e, se runtime disponível, atualizar controle do Drive; em seguida continuar a fila.
