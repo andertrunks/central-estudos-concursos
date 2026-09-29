@@ -1,0 +1,61 @@
+{
+  "queueId": "PUB-0014",
+  "contentId": "TI-ES-004",
+  "status": "pronto para build",
+  "sourceDocuments": [
+    {
+      "id": "1adt9U2N9KFLqXOv8N9W9LLQifBexqfVFWOvx2eYZSmk",
+      "title": "TI-ES-004 — Scrum e Kanban — complemento e auditoria Central de Estudos",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1RVjt3ZyOZQXJI3DrIfpt8R40DRL2Wi8kuKMoTRhVbDc",
+      "title": "ES-001 — Fundamentos de Engenharia de Software (pré-requisito integrado em TI-ES-001)",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1HdMqO1V9RBaUv00nMsjxQKhVXSnYt4G1JUwyr58UNE4",
+      "title": "ES-002 — Processos e modelos de ciclo de vida (pré-requisito integrado em TI-ES-001)",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1m-Qv7gJLtxd_hF9CKY5BL1NjpXMlplBaNI_-neJDgJs",
+      "title": "GSTI-004 — Gerenciamento de projetos (pré-requisito reutilizado)",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-ES-004-01"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-TI-ES-004-INDEPAC-001",
+    "Q-TI-ES-004-INDEPAC-002",
+    "Q-TI-ES-004-INDEPAC-003",
+    "Q-TI-ES-004-INDEPAC-004",
+    "Q-TI-ES-004-INDEPAC-005",
+    "Q-TI-ES-004-INDEPAC-006"
+  ],
+  "pendingUnscoredReferences": [
+    "Q4059504",
+    "Q4059506",
+    "Q3784764",
+    "Q1981183",
+    "Q4189874",
+    "Q3812675",
+    "Q3812674",
+    "Q4146477"
+  ],
+  "media": [
+    "TI-ES-004-IMG-001",
+    "TI-ES-004-YT-001",
+    "TI-ES-004-YT-002"
+  ],
+  "publication": {
+    "contentCommit": "PENDING",
+    "workflowRun": null,
+    "workflowConclusion": "pending",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-ES-004",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false
+  }
+}

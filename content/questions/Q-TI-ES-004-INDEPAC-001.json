@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-ES-004-INDEPAC-001",
+  "contentId": "TI-ES-004",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-004-01"
+  ],
+  "statement": "Em uma Scrum Team, a responsabilidade pela gestão eficaz do Product Backlog, incluindo ordenação de seus itens, pertence a quem?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Scrum Master."
+    },
+    {
+      "id": "B",
+      "text": "Product Owner."
+    },
+    {
+      "id": "C",
+      "text": "Exclusivamente aos stakeholders externos."
+    },
+    {
+      "id": "D",
+      "text": "Gerente de projetos obrigatoriamente designado pelo framework."
+    }
+  ],
+  "answer": "B",
+  "comment": "O Product Owner é accountable pela gestão eficaz do Product Backlog e por maximizar valor. Pode delegar atividades, mas não essa accountability. O Scrum Master ajuda a equipe a aplicar o framework e a melhorar sua efetividade. O Scrum Guide não define obrigatoriamente um gerente de projetos hierárquico.",
+  "source_ids": [
+    "SRC-SCRUM-GUIDE-2020-ES-004",
+    "SRC-KANBAN-GUIDE-2025-ES-004",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

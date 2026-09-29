@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-ES-004-INDEPAC-006",
+  "contentId": "TI-ES-004",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-004-01"
+  ],
+  "statement": "Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Kanban obriga Product Owner, Scrum Master e os eventos do Scrum."
+    },
+    {
+      "id": "B",
+      "text": "Scrum e Kanban proíbem sua utilização conjunta."
+    },
+    {
+      "id": "C",
+      "text": "Scrum define Sprints e artefatos com compromissos; Kanban otimiza o fluxo por workflow explícito, gestão ativa e melhoria, podendo complementar Scrum."
+    },
+    {
+      "id": "D",
+      "text": "Em Scrum, o Increment não precisa atender a uma Definition of Done."
+    }
+  ],
+  "answer": "C",
+  "comment": "O Scrum Guide define responsabilidades, eventos, artefatos e compromissos. O Kanban Guide define práticas de fluxo e métricas; métodos podem coexistir. Um Increment exige cumprimento da Definition of Done.",
+  "source_ids": [
+    "SRC-SCRUM-GUIDE-2020-ES-004",
+    "SRC-KANBAN-GUIDE-2025-ES-004",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

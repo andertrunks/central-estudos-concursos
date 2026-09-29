@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-ES-004-INDEPAC-002",
+  "contentId": "TI-ES-004",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-004-01"
+  ],
+  "statement": "Qual alternativa descreve corretamente a finalidade da Sprint Retrospective?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Apresentar formalmente o Increment aos stakeholders e decidir exclusivamente sobre a próxima versão do produto."
+    },
+    {
+      "id": "B",
+      "text": "Reunir os Developers por quinze minutos para informar individualmente ao Scrum Master as tarefas concluídas."
+    },
+    {
+      "id": "C",
+      "text": "Inspecionar a maneira como ocorreu a Sprint e planejar melhorias de qualidade e efetividade para o trabalho da Scrum Team."
+    },
+    {
+      "id": "D",
+      "text": "Ordenar sozinho o Product Backlog em nome do Product Owner."
+    }
+  ],
+  "answer": "C",
+  "comment": "Retrospective trata de melhoria da equipe e de sua forma de trabalhar. Review inspeciona resultados da Sprint com stakeholders. Daily Scrum é dos Developers e orientada ao Sprint Goal, não um relatório hierárquico. Product Backlog é accountability do Product Owner.",
+  "source_ids": [
+    "SRC-SCRUM-GUIDE-2020-ES-004",
+    "SRC-KANBAN-GUIDE-2025-ES-004",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-ES-004-INDEPAC-004",
+  "contentId": "TI-ES-004",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-004-01"
+  ],
+  "statement": "Uma equipe Kanban atingiu o controle definido para itens em teste. Qual ação condiz com a gestão ativa do fluxo?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Iniciar indefinidamente novas atividades para manter todos ocupados."
+    },
+    {
+      "id": "B",
+      "text": "Ignorar toda política WIP até o fim do mês."
+    },
+    {
+      "id": "C",
+      "text": "Tornar o impedimento explícito e colaborar para concluir ou desbloquear itens, selecionando novos trabalhos quando houver sinal de capacidade."
+    },
+    {
+      "id": "D",
+      "text": "Criar obrigatoriamente uma Sprint de quatro semanas para eliminar o gargalo."
+    }
+  ],
+  "answer": "C",
+  "comment": "Kanban exige controle explícito de WIP e gestão ativa de bloqueios e envelhecimento. O sistema puxado favorece entrada de trabalho quando há capacidade. Uma Sprint fixa não é exigência do Kanban.",
+  "source_ids": [
+    "SRC-SCRUM-GUIDE-2020-ES-004",
+    "SRC-KANBAN-GUIDE-2025-ES-004",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

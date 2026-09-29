@@ -488,5 +488,40 @@
     "channel": "Professor George Oliveira",
     "verifiedAt": "2026-09-25",
     "original": false
+  },
+  {
+    "id": "TI-ES-004-IMG-001",
+    "contentId": "TI-ES-004",
+    "type": "imagem",
+    "title": "Scrum e Kanban — conceitos para concursos de TI",
+    "caption": "Material visual original com os conceitos Scrum e Kanban.",
+    "alt": "Infográfico de apoio à unidade Scrum e Kanban.",
+    "file": "media/TI-ES-004-IMG-001.png",
+    "verifiedAt": "2026-09-26",
+    "original": true
+  },
+  {
+    "id": "TI-ES-004-YT-001",
+    "contentId": "TI-ES-004",
+    "type": "YouTube",
+    "title": "Scrum fundamentals",
+    "caption": "Material audiovisual complementar da UNIVESP.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=Y7mu9IidMc8",
+    "channel": "UNIVESP",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-ES-004-YT-002",
+    "contentId": "TI-ES-004",
+    "type": "YouTube",
+    "title": "Applying Scrum",
+    "caption": "Material audiovisual complementar da UNIVESP.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=DnHdaZ0Peq8",
+    "channel": "UNIVESP",
+    "verifiedAt": "2026-09-26",
+    "original": false
   }
 ]

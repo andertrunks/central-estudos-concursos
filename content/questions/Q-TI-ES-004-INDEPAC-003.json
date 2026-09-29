@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-ES-004-INDEPAC-003",
+  "contentId": "TI-ES-004",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-004-01"
+  ],
+  "statement": "Assinale a associação correta segundo o Scrum Guide de 2020.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Product Backlog — Definition of Done."
+    },
+    {
+      "id": "B",
+      "text": "Sprint Backlog — Product Goal."
+    },
+    {
+      "id": "C",
+      "text": "Increment — Sprint Goal."
+    },
+    {
+      "id": "D",
+      "text": "Increment — Definition of Done."
+    }
+  ],
+  "answer": "D",
+  "comment": "O Product Backlog tem compromisso Product Goal; Sprint Backlog, Sprint Goal; e Increment, Definition of Done. Os compromissos não são eventos adicionais.",
+  "source_ids": [
+    "SRC-SCRUM-GUIDE-2020-ES-004",
+    "SRC-KANBAN-GUIDE-2025-ES-004",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

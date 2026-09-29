@@ -1858,5 +1858,25 @@
     "version": "2001",
     "verifiedAt": "2026-09-29",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-SCRUM-GUIDE-2020-ES-004",
+    "title": "The Scrum Guide",
+    "level": "P1",
+    "author": "Ken Schwaber e Jeff Sutherland",
+    "url": "https://scrumguides.org/scrum-guide.html",
+    "version": "November 2020",
+    "verifiedAt": "2026-09-29",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-KANBAN-GUIDE-2025-ES-004",
+    "title": "The Kanban Guide",
+    "level": "P1",
+    "author": "Kanban Guides",
+    "url": "https://kanbanguides.org/the-kanban-guide/",
+    "version": "2025.5 (2025-05-01)",
+    "verifiedAt": "2026-09-29",
+    "status": "ativo"
   }
 ]
