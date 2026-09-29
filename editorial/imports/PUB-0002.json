@@ -2,7 +2,7 @@
   "queueId": "PUB-0002",
   "contentId": "TI-RED-001",
   "legacyContentId": "RED-001",
-  "status": "integrado — aguardando build, deploy e inspeção pública",
+  "status": "build e deploy concluídos; inspeção renderizada pendente — runtime do navegador offline",
   "sourceDocuments": [
     {
       "id": "1QbwltMKnr5snP4yj2K1JL2mlXkeH6vw4Y5qhDONyEEs",
@@ -79,5 +79,14 @@
       "CRBIO01-2026-ATI",
       "SETEC-2026-ATI"
     ]
+  },
+  "publication": {
+    "contentCommit": "f7abc7f3dbdf349e7e1382655aacbc7dfe94d0a8",
+    "workflowRun": 36567099787,
+    "workflowConclusion": "success",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-RED-001",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "GitHub Actions passou lint, typecheck, testes e build e concluiu deploy no GitHub Pages. O serviço de navegador retorna environment_offline e o mecanismo web não abre github.io; não marcar como editorialmente publicado no Drive sem inspeção renderizada."
   }
 }
