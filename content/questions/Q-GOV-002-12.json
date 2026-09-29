@@ -1,0 +1,44 @@
+{
+  "id": "Q-GOV-002-12",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-02"
+  ],
+  "statement": "Qual é fator de desenho?",
+  "options": [
+    {
+      "id": "A",
+      "text": "modelo de sourcing de TI"
+    },
+    {
+      "id": "B",
+      "text": "marca do notebook do usuário"
+    },
+    {
+      "id": "C",
+      "text": "linguagem obrigatória universal"
+    },
+    {
+      "id": "D",
+      "text": "quantidade fixa de comitês"
+    },
+    {
+      "id": "E",
+      "text": "ferramenta GRC específica"
+    }
+  ],
+  "answer": "A",
+  "comment": "— Modelo de sourcing de TI é um dos onze design factors.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

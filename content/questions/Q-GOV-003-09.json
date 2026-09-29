@@ -1,0 +1,44 @@
+{
+  "id": "Q-GOV-003-09",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-03"
+  ],
+  "statement": "Qual NÃO é atividade da Service Value Chain?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Plan"
+    },
+    {
+      "id": "B",
+      "text": "Engage"
+    },
+    {
+      "id": "C",
+      "text": "Obtain/Build"
+    },
+    {
+      "id": "D",
+      "text": "Deliver and Support"
+    },
+    {
+      "id": "E",
+      "text": "Service Operation"
+    }
+  ],
+  "answer": "E",
+  "comment": "— Service Operation remete à estrutura de versão anterior, não é uma das seis atividades do SVC.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

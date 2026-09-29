@@ -1318,5 +1318,65 @@
     "version": "consultado em 2026-09-23",
     "verifiedAt": "2026-09-23",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-ISACA-COBIT-GOV-001",
+    "title": "COBIT — governança e gestão de informação e tecnologia",
+    "level": "P1",
+    "author": "ISACA",
+    "url": "https://www.isaca.org/resources/cobit",
+    "version": "consultado em 2026-09-24",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ISO38500-GOV-001",
+    "title": "ISO/IEC 38500:2024 — Governance of IT for the organization",
+    "level": "P1",
+    "author": "International Organization for Standardization",
+    "url": "https://www.iso.org/standard/81684.html",
+    "version": "consultado em 2026-09-24",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PDTIC-GOV-001",
+    "title": "Plano Diretor de TIC — guia do gestor SISP",
+    "level": "P1",
+    "author": "Brasil — Governo Digital/SISP",
+    "url": "https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/sisp/guia-do-gestor/pdtic",
+    "version": "consultado em 2026-09-24",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PEOPLECERT-ITIL-GOV-001",
+    "title": "ITIL — gestão de serviços e produtos digitais",
+    "level": "P1",
+    "author": "PeopleCert",
+    "url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management",
+    "version": "consultado em 2026-09-24",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PMI-PROJECT-GOV-001",
+    "title": "What is Project Management?",
+    "level": "P1",
+    "author": "Project Management Institute",
+    "url": "https://www.pmi.org/about/what-is-project-management",
+    "version": "consultado em 2026-09-24",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-PMI-PMBOK-GOV-001",
+    "title": "PMBOK Guide and Standards",
+    "level": "P1",
+    "author": "Project Management Institute",
+    "url": "https://www.pmi.org/standards/pmbok",
+    "version": "consultado em 2026-09-24",
+    "verifiedAt": "2026-09-24",
+    "status": "ativo"
   }
 ]

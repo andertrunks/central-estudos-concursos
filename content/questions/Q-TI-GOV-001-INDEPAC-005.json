@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-GOV-001-INDEPAC-005",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-03"
+  ],
+  "statement": "No ITIL 4, qual elemento representa o modelo operacional central formado por atividades interligadas que podem ser combinadas em diferentes fluxos de valor?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Service Value Chain."
+    },
+    {
+      "id": "B",
+      "text": "Service Desk."
+    },
+    {
+      "id": "C",
+      "text": "COBIT Core Model."
+    },
+    {
+      "id": "D",
+      "text": "Project Management Office."
+    }
+  ],
+  "answer": "A",
+  "comment": "A Service Value Chain, ou cadeia de valor de serviço, é o modelo operacional central do Service Value System. Suas atividades são combinadas conforme o value stream necessário. Service Desk é uma prática. COBIT Core Model pertence a outro framework. Project Management Office não é componente obrigatório do ITIL 4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-GOV-001-INDEPAC-003",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-02"
+  ],
+  "statement": "No COBIT 2019, qual domínio pertence à governança, e não à gestão?",
+  "options": [
+    {
+      "id": "A",
+      "text": "APO."
+    },
+    {
+      "id": "B",
+      "text": "BAI."
+    },
+    {
+      "id": "C",
+      "text": "EDM."
+    },
+    {
+      "id": "D",
+      "text": "DSS."
+    }
+  ],
+  "answer": "C",
+  "comment": "EDM, Evaluate, Direct and Monitor, reúne objetivos de governança. APO, BAI, DSS e MEA pertencem à gestão.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "Q-GOV-002-14",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-02"
+  ],
+  "statement": "Focus area:",
+  "options": [
+    {
+      "id": "A",
+      "text": "substitui o Core Model"
+    },
+    {
+      "id": "B",
+      "text": "é sempre um sexto domínio"
+    },
+    {
+      "id": "C",
+      "text": "permite tratar tema ou contexto específico com objetivos e componentes relevantes"
+    },
+    {
+      "id": "D",
+      "text": "elimina os design factors"
+    },
+    {
+      "id": "E",
+      "text": "pertence apenas ao COBIT 5"
+    }
+  ],
+  "answer": "C",
+  "comment": "— Focus area trata contexto ou tema específico sem criar novo domínio.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "Q-GOV-001-06",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-01"
+  ],
+  "statement": "Assinale a alternativa que NÃO representa mecanismo típico de governança:",
+  "options": [
+    {
+      "id": "A",
+      "text": "comitê"
+    },
+    {
+      "id": "B",
+      "text": "política"
+    },
+    {
+      "id": "C",
+      "text": "processo de priorização"
+    },
+    {
+      "id": "D",
+      "text": "fórum entre negócio e TI"
+    },
+    {
+      "id": "E",
+      "text": "compilador de linguagem"
+    }
+  ],
+  "answer": "E",
+  "comment": "Compilador é ferramenta técnica, não mecanismo de governança.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001",
+    "SRC-ISO38500-GOV-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

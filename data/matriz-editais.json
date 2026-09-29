@@ -1359,10 +1359,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "GSTI-001/002/003 reutilizados integralmente nas quatro unidades. Seis IDs autorais INDEPAC preservados e 52 questões autorais interativas; feedback após tentativa. 11 referências Quadrix aguardam caderno e gabarito definitivo, sem pontuação."
   },
   {
     "id": "TI-GOV-002",

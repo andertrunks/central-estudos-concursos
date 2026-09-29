@@ -1,0 +1,32 @@
+{
+  "id": "Q-GOV-002-01",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-02"
+  ],
+  "statement": "No COBIT 2019, governança e gestão constituem atividades equivalentes.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "— COBIT distingue explicitamente governança de gestão.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

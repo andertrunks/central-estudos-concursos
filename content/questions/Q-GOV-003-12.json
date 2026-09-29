@@ -1,0 +1,32 @@
+{
+  "id": "Q-GOV-003-12",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-03"
+  ],
+  "statement": "Uma solicitação padrão de acesso, sem falha de serviço, pode ser tratada como service request.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "— Requisições normais não dependem de falha.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

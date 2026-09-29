@@ -1,0 +1,130 @@
+{
+  "queueId": "PUB-0004",
+  "contentId": "TI-GOV-001",
+  "legacyContentIds": [
+    "GSTI-001",
+    "GSTI-002",
+    "GSTI-003"
+  ],
+  "status": "integrado — aguardando build, deploy e inspeção pública",
+  "sourceDocuments": [
+    {
+      "id": "1sSoVSmC8lGC0jZkzqMfnlwi2szr3i_ndp7-cM1AEPUY",
+      "title": "GSTI-001 — Governança e Gestão de TI",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "13Ulq3BD55mVdBBJutdq4yJR67hqcLtykDBm0bjr_Few",
+      "title": "GSTI-002 — COBIT 2019",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1pEFrTaXhZQbyzEHFiYLJ57TR8uW9sHGtWx7Fl37WFWA",
+      "title": "GSTI-003 — ITIL 4",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-GOV-001-01",
+    "TI-GOV-001-02",
+    "TI-GOV-001-03",
+    "TI-GOV-001-04"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-TI-GOV-001-INDEPAC-001",
+    "Q-TI-GOV-001-INDEPAC-002",
+    "Q-TI-GOV-001-INDEPAC-003",
+    "Q-TI-GOV-001-INDEPAC-004",
+    "Q-TI-GOV-001-INDEPAC-005",
+    "Q-TI-GOV-001-INDEPAC-006",
+    "Q-GOV-001-01",
+    "Q-GOV-001-02",
+    "Q-GOV-001-03",
+    "Q-GOV-001-04",
+    "Q-GOV-001-05",
+    "Q-GOV-001-06",
+    "Q-GOV-001-07",
+    "Q-GOV-001-08",
+    "Q-GOV-001-09",
+    "Q-GOV-001-10",
+    "Q-GOV-001-11",
+    "Q-GOV-001-12",
+    "Q-GOV-001-13",
+    "Q-GOV-001-14",
+    "Q-GOV-001-15",
+    "Q-GOV-002-01",
+    "Q-GOV-002-02",
+    "Q-GOV-002-03",
+    "Q-GOV-002-04",
+    "Q-GOV-002-05",
+    "Q-GOV-002-06",
+    "Q-GOV-002-07",
+    "Q-GOV-002-08",
+    "Q-GOV-002-09",
+    "Q-GOV-002-10",
+    "Q-GOV-002-11",
+    "Q-GOV-002-12",
+    "Q-GOV-002-13",
+    "Q-GOV-002-14",
+    "Q-GOV-002-15",
+    "Q-GOV-002-16",
+    "Q-GOV-002-17",
+    "Q-GOV-003-01",
+    "Q-GOV-003-02",
+    "Q-GOV-003-03",
+    "Q-GOV-003-04",
+    "Q-GOV-003-05",
+    "Q-GOV-003-06",
+    "Q-GOV-003-07",
+    "Q-GOV-003-08",
+    "Q-GOV-003-09",
+    "Q-GOV-003-10",
+    "Q-GOV-003-11",
+    "Q-GOV-003-12",
+    "Q-GOV-003-13",
+    "Q-GOV-003-14",
+    "Q-GOV-003-15",
+    "Q-GOV-003-16",
+    "Q-GOV-003-17",
+    "Q-GOV-003-18",
+    "Q-GOV-003-19",
+    "Q-GOV-003-20"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-077",
+    "QREF-QUAD-078",
+    "QREF-QUAD-079",
+    "QREF-QUAD-080",
+    "QREF-QUAD-081",
+    "QREF-QUAD-082",
+    "QREF-QUAD-083",
+    "QREF-QUAD-084",
+    "QREF-QUAD-085",
+    "QREF-QUAD-086",
+    "QREF-QUAD-087"
+  ],
+  "documentedNegativeSearches": [
+    "BUSCA-INDEPAC-GOV-001-01",
+    "BUSCA-INDEPAC-GOV-001-02",
+    "BUSCA-INDEPAC-GOV-001-03",
+    "BUSCA-INDEPAC-GOV-001-04"
+  ],
+  "media": [
+    "TI-GOV-001-IMG-001",
+    "TI-GOV-001-YT-001",
+    "TI-GOV-001-YT-002"
+  ],
+  "imageTransfer": "diagrama vetorial novo no site baseado na descrição acessível da mídia; imagem PNG fonte continua no Drive",
+  "transformation": {
+    "allThreeLegacyDocumentsReused": true,
+    "allFourUnitsComplete": true,
+    "answersAndCommentsInAttemptGatedSchema": true,
+    "unverifiedQuadrixReferencesExcludedFromScoring": true,
+    "negativeINDEPACSearchesPreserved": true,
+    "learnerProgressPreserved": true,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  }
+}

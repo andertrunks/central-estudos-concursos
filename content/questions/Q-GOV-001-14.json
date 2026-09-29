@@ -1,0 +1,46 @@
+{
+  "id": "Q-GOV-001-14",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-04"
+  ],
+  "statement": "Assinale a alternativa correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "governança é tarefa exclusiva dos analistas de infraestrutura"
+    },
+    {
+      "id": "B",
+      "text": "gestão define todos os direitos de decisão da alta administração"
+    },
+    {
+      "id": "C",
+      "text": "governança pode envolver valor, risco, recursos e desempenho"
+    },
+    {
+      "id": "D",
+      "text": "conformidade elimina necessidade de estratégia"
+    },
+    {
+      "id": "E",
+      "text": "indicadores não possuem relação com governança"
+    }
+  ],
+  "answer": "C",
+  "comment": "Valor, risco, recursos e desempenho são eixos centrais de governança.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001",
+    "SRC-ISO38500-GOV-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

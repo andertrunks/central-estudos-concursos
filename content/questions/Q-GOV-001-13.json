@@ -1,0 +1,34 @@
+{
+  "id": "Q-GOV-001-13",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-04"
+  ],
+  "statement": "Se existe versão mais recente de um framework, o projeto deve substituir automaticamente a versão indicada em edital anterior.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "O edital é a referência formal. Versão expressamente exigida deve ser preservada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001",
+    "SRC-ISO38500-GOV-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

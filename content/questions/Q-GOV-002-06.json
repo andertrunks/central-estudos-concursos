@@ -1,0 +1,44 @@
+{
+  "id": "Q-GOV-002-06",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-02"
+  ],
+  "statement": "O COBIT 2019 Core Model contém:",
+  "options": [
+    {
+      "id": "A",
+      "text": "37 objetivos em 5 domínios"
+    },
+    {
+      "id": "B",
+      "text": "40 objetivos em 5 domínios"
+    },
+    {
+      "id": "C",
+      "text": "40 objetivos em 4 domínios"
+    },
+    {
+      "id": "D",
+      "text": "34 objetivos em 7 domínios"
+    },
+    {
+      "id": "E",
+      "text": "11 objetivos em 5 domínios"
+    }
+  ],
+  "answer": "B",
+  "comment": "— O Core Model possui 40 objetivos em cinco domínios.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

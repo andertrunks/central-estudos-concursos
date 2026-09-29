@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-GOV-001-INDEPAC-001",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-01"
+  ],
+  "statement": "Assinale a alternativa que descreve corretamente a relação entre governança e gestão de tecnologia da informação.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Governança e gestão são sinônimos e possuem exatamente as mesmas responsabilidades."
+    },
+    {
+      "id": "B",
+      "text": "Governança define direção e monitora resultados, enquanto a gestão planeja e executa ações para cumprir a direção estabelecida."
+    },
+    {
+      "id": "C",
+      "text": "Governança executa exclusivamente tarefas operacionais, enquanto a gestão pertence apenas à alta administração."
+    },
+    {
+      "id": "D",
+      "text": "Gestão de TI existe apenas quando a organização adota COBIT."
+    }
+  ],
+  "answer": "B",
+  "comment": "Governança e gestão são relacionadas, mas distintas. Governança avalia, direciona e monitora; gestão organiza e executa atividades alinhadas à direção estabelecida. As demais alternativas confundem papéis ou criam dependências inexistentes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

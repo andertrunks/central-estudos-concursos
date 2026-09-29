@@ -1,0 +1,34 @@
+{
+  "id": "Q-GOV-001-11",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-04"
+  ],
+  "statement": "Gestão de projetos e governança são sinônimos, pois ambas tratam de decisões estratégicas.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Projetos são instrumentos de execução; governança define direção e critérios de decisão em nível superior.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001",
+    "SRC-ISO38500-GOV-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

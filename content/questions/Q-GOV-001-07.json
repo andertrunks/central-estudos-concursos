@@ -1,0 +1,34 @@
+{
+  "id": "Q-GOV-001-07",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-01"
+  ],
+  "statement": "Conformidade normativa, embora importante, não esgota o conceito de governança.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Governança inclui, além de conformidade, estratégia, valor, risco, recursos e desempenho.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001",
+    "SRC-ISO38500-GOV-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

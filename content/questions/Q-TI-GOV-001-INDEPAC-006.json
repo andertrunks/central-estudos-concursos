@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-GOV-001-INDEPAC-006",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-03"
+  ],
+  "statement": "Sobre o Service Desk no ITIL 4, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Atua exclusivamente de forma reativa e somente registra incidentes."
+    },
+    {
+      "id": "B",
+      "text": "É o ponto de contato entre provedor e usuários para captar demanda por incidentes e requisições, apoiando também a comunicação."
+    },
+    {
+      "id": "C",
+      "text": "Substitui obrigatoriamente todas as equipes especializadas."
+    },
+    {
+      "id": "D",
+      "text": "É a prática responsável por definir a governança corporativa de toda a organização."
+    }
+  ],
+  "answer": "B",
+  "comment": "Service Desk funciona como ponto de entrada e contato com os usuários. Ele pode registrar, comunicar, orientar, resolver ou encaminhar demandas. Não é sinônimo de incident management, não substitui todas as equipes especializadas e não é o mecanismo de governança corporativa da organização.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -301,5 +301,40 @@
     "channel": "Curso em Vídeo",
     "verifiedAt": "2026-09-23",
     "original": false
+  },
+  {
+    "id": "TI-GOV-001-IMG-001",
+    "contentId": "TI-GOV-001",
+    "type": "imagem",
+    "title": "ITIL e COBIT — papéis complementares",
+    "caption": "Recriação vetorial do projeto baseada na descrição do diagrama original; a figura fonte permanece incorporada ao documento canônico no Drive.",
+    "alt": "Diagrama comparando COBIT 2019, à esquerda, com governança e gestão de informação e tecnologia; ITIL 4, à direita, com gerenciamento de serviços e cocriação de valor; na parte inferior, complementaridade sem equivalência.",
+    "file": "media/TI-GOV-001-IMG-001.svg",
+    "verifiedAt": "2026-09-29",
+    "original": true
+  },
+  {
+    "id": "TI-GOV-001-YT-001",
+    "contentId": "TI-GOV-001",
+    "type": "YouTube",
+    "title": "Introducing COBIT 2019",
+    "caption": "Vídeo introdutório oficial da ISACA sobre COBIT 2019 e o desenho de governança adaptado à organização.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=KJLAJSZbfIM",
+    "channel": "ISACA HQ",
+    "verifiedAt": "2026-09-24",
+    "original": false
+  },
+  {
+    "id": "TI-GOV-001-YT-002",
+    "contentId": "TI-GOV-001",
+    "type": "YouTube",
+    "title": "ITIL 4 Foundation - Introduction to ITIL 4",
+    "caption": "Introdução curta complementar ao ITIL 4; não substitui as fontes técnicas oficiais PeopleCert.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=Or9RN8Uhs-U",
+    "channel": "Zindiak Limited",
+    "verifiedAt": "2026-09-24",
+    "original": false
   }
 ]

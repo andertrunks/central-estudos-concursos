@@ -1,0 +1,44 @@
+{
+  "id": "Q-GOV-003-07",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-03"
+  ],
+  "statement": "Qual é uma das quatro dimensões do gerenciamento de serviços?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Value streams and processes"
+    },
+    {
+      "id": "B",
+      "text": "Service strategy lifecycle"
+    },
+    {
+      "id": "C",
+      "text": "Continual service operation"
+    },
+    {
+      "id": "D",
+      "text": "Project governance office"
+    },
+    {
+      "id": "E",
+      "text": "Software factory"
+    }
+  ],
+  "answer": "A",
+  "comment": "— Value streams and processes é uma das quatro dimensões.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

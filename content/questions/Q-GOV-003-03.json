@@ -1,0 +1,44 @@
+{
+  "id": "Q-GOV-003-03",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-03"
+  ],
+  "statement": "Qual papel utiliza diretamente o serviço?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Sponsor"
+    },
+    {
+      "id": "B",
+      "text": "User"
+    },
+    {
+      "id": "C",
+      "text": "Provider"
+    },
+    {
+      "id": "D",
+      "text": "Auditor"
+    },
+    {
+      "id": "E",
+      "text": "Supplier"
+    }
+  ],
+  "answer": "B",
+  "comment": "— User é o papel que utiliza o serviço.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

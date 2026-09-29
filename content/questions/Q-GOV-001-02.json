@@ -1,0 +1,46 @@
+{
+  "id": "Q-GOV-001-02",
+  "contentId": "TI-GOV-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-GOV-001-01"
+  ],
+  "statement": "Assinale a alternativa que melhor representa função de governança:",
+  "options": [
+    {
+      "id": "A",
+      "text": "executar backup diário"
+    },
+    {
+      "id": "B",
+      "text": "instalar atualização de servidor"
+    },
+    {
+      "id": "C",
+      "text": "definir direção e acompanhar resultados de TI"
+    },
+    {
+      "id": "D",
+      "text": "configurar roteador"
+    },
+    {
+      "id": "E",
+      "text": "corrigir bug em aplicação"
+    }
+  ],
+  "answer": "C",
+  "comment": "Definição de direção e acompanhamento de resultados são funções típicas de governança.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISACA-COBIT-GOV-001",
+    "SRC-ISO38500-GOV-001",
+    "SRC-PEOPLECERT-ITIL-GOV-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
