@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-11",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-01"
+  ],
+  "statement": "A topologia em que diversos nós se conectam a um ponto central é denominada:",
+  "options": [
+    {
+      "id": "A",
+      "text": "barramento"
+    },
+    {
+      "id": "B",
+      "text": "estrela"
+    },
+    {
+      "id": "C",
+      "text": "anel"
+    },
+    {
+      "id": "D",
+      "text": "malha completa"
+    },
+    {
+      "id": "E",
+      "text": "ponto a ponto obrigatório"
+    }
+  ],
+  "answer": "B",
+  "comment": "A estrela conecta nós a um ponto central.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "Q-RED-001-09",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-04"
+  ],
+  "statement": "O roteador distingue-se do host comum principalmente por implementar função de encaminhamento de datagramas entre redes.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "A",
+  "comment": "Certo. RFC 1812 destaca o forwarding como característica central dos roteadores.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

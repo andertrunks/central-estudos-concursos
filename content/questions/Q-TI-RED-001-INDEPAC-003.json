@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-003",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-02"
+  ],
+  "statement": "Durante o envio de dados por uma rede, considere a sequência didática de unidades de dados: dados da aplicação, unidade de transporte, pacote IP, quadro e bits. Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "A camada de enlace forma quadros para transportar o pacote recebido da camada de rede."
+    },
+    {
+      "id": "B",
+      "text": "A camada física acrescenta endereços IP ao quadro."
+    },
+    {
+      "id": "C",
+      "text": "A camada de rede transforma o pacote em segmento TCP obrigatoriamente."
+    },
+    {
+      "id": "D",
+      "text": "A camada de transporte transmite diretamente sinais elétricos ou ópticos no meio."
+    }
+  ],
+  "answer": "A",
+  "comment": "A camada de enlace encapsula a unidade recebida da camada de rede em um quadro apropriado ao enlace. A camada física lida com a transmissão dos bits por sinais. Endereços IP pertencem ao problema de rede, não à camada física. Segmentos TCP pertencem ao transporte e não são produzidos pela camada de rede.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

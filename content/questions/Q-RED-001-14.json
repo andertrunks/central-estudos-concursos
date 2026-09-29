@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-14",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-05"
+  ],
+  "statement": "Em relação aos modelos OSI e TCP/IP, é correto afirmar que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "são idênticos camada por camada"
+    },
+    {
+      "id": "B",
+      "text": "o OSI possui sete camadas e o TCP/IP de quatro camadas agrupa algumas funções"
+    },
+    {
+      "id": "C",
+      "text": "TCP/IP não possui camada de transporte"
+    },
+    {
+      "id": "D",
+      "text": "OSI não possui camada de rede"
+    },
+    {
+      "id": "E",
+      "text": "ambos são definidos exclusivamente pelo IEEE 802"
+    }
+  ],
+  "answer": "B",
+  "comment": "Não há correspondência perfeita; a visão TCP/IP de quatro camadas agrupa funções.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

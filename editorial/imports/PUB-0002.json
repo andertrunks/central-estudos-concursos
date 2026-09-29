@@ -1,0 +1,83 @@
+{
+  "queueId": "PUB-0002",
+  "contentId": "TI-RED-001",
+  "legacyContentId": "RED-001",
+  "status": "integrado — aguardando build, deploy e inspeção pública",
+  "sourceDocuments": [
+    {
+      "id": "1QbwltMKnr5snP4yj2K1JL2mlXkeH6vw4Y5qhDONyEEs",
+      "title": "RED-001 — Fundamentos de Redes de Computadores",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-RED-001-01",
+    "TI-RED-001-02",
+    "TI-RED-001-03",
+    "TI-RED-001-04",
+    "TI-RED-001-05",
+    "TI-RED-001-06"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-TI-RED-001-INDEPAC-001",
+    "Q-TI-RED-001-INDEPAC-002",
+    "Q-TI-RED-001-INDEPAC-003",
+    "Q-TI-RED-001-INDEPAC-004",
+    "Q-TI-RED-001-INDEPAC-005",
+    "Q-TI-RED-001-INDEPAC-006",
+    "Q-TI-RED-001-INDEPAC-007",
+    "Q-TI-RED-001-INDEPAC-008",
+    "Q-TI-RED-001-INDEPAC-009",
+    "Q-TI-RED-001-INDEPAC-010",
+    "Q-RED-001-01",
+    "Q-RED-001-02",
+    "Q-RED-001-03",
+    "Q-RED-001-04",
+    "Q-RED-001-05",
+    "Q-RED-001-06",
+    "Q-RED-001-07",
+    "Q-RED-001-08",
+    "Q-RED-001-09",
+    "Q-RED-001-10",
+    "Q-RED-001-11",
+    "Q-RED-001-12",
+    "Q-RED-001-13",
+    "Q-RED-001-14",
+    "Q-RED-001-15"
+  ],
+  "pendingUnscoredReferences": [
+    "QREF-QUAD-058",
+    "QREF-QUAD-059",
+    "QREF-QUAD-060",
+    "QREF-QUAD-061",
+    "QREF-QUAD-062",
+    "QREF-QUAD-063",
+    "QREF-QUAD-064"
+  ],
+  "documentedNegativeSearches": [
+    "BUSCA-INDEPAC-RED-001-01",
+    "BUSCA-INDEPAC-RED-001-02",
+    "BUSCA-INDEPAC-RED-001-03",
+    "BUSCA-INDEPAC-RED-001-04",
+    "BUSCA-INDEPAC-RED-001-05",
+    "BUSCA-INDEPAC-RED-001-06"
+  ],
+  "media": [
+    "TI-RED-001-IMG-001",
+    "TI-RED-001-YT-001",
+    "TI-RED-001-YT-002"
+  ],
+  "imageTransfer": "original Drive PNG transferred byte-for-byte",
+  "transformation": {
+    "fullRED001MaterialReused": true,
+    "legacyIdPreservedInSourceRecord": true,
+    "answersAndCommentsInAttemptGatedSchema": true,
+    "unverifiedHistoricalReferencesExcludedFromScoring": true,
+    "negativeINDEPACSearchFallbackExplicit": true,
+    "learnerProgressPreserved": true,
+    "contests": [
+      "CRBIO01-2026-ATI",
+      "SETEC-2026-ATI"
+    ]
+  }
+}

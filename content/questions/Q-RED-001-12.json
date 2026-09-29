@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-12",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-03"
+  ],
+  "statement": "Sobre MAC e IP, assinale a correta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "MAC e IP têm exatamente a mesma função"
+    },
+    {
+      "id": "B",
+      "text": "MAC é o endereço lógico usado por roteadores para selecionar redes distantes"
+    },
+    {
+      "id": "C",
+      "text": "IP está associado ao endereçamento lógico entre redes, enquanto MAC atua no contexto de enlace"
+    },
+    {
+      "id": "D",
+      "text": "IP existe apenas na camada física"
+    },
+    {
+      "id": "E",
+      "text": "MAC identifica portas TCP"
+    }
+  ],
+  "answer": "C",
+  "comment": "IP é endereçamento lógico de rede; MAC atua no contexto local de enlace.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

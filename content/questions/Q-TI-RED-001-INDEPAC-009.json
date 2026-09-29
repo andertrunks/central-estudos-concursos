@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-009",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-05"
+  ],
+  "statement": "Sobre a correspondência didática entre OSI e TCP/IP, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "As sete camadas OSI possuem sempre correspondência um para um com sete camadas TCP/IP."
+    },
+    {
+      "id": "B",
+      "text": "No modelo TCP/IP de quatro camadas, funções de Aplicação, Apresentação e Sessão do OSI são frequentemente agrupadas na camada de Aplicação."
+    },
+    {
+      "id": "C",
+      "text": "A camada de Rede do OSI corresponde à camada de Transporte do TCP/IP."
+    },
+    {
+      "id": "D",
+      "text": "A camada Física do OSI corresponde à camada de Aplicação do TCP/IP."
+    }
+  ],
+  "answer": "B",
+  "comment": "A correspondência mais usada para estudo agrupa as três camadas superiores do OSI na Aplicação TCP/IP. Rede aproxima-se da camada Internet. Transporte corresponde ao Transporte. Enlace e Física costumam ser reunidas no acesso à rede no modelo de quatro camadas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

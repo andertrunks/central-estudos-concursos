@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-07",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-03"
+  ],
+  "statement": "O dispositivo que, em sua função clássica, repete sinais para múltiplas portas sem aprender endereços MAC é o:",
+  "options": [
+    {
+      "id": "A",
+      "text": "roteador"
+    },
+    {
+      "id": "B",
+      "text": "switch"
+    },
+    {
+      "id": "C",
+      "text": "hub"
+    },
+    {
+      "id": "D",
+      "text": "firewall"
+    },
+    {
+      "id": "E",
+      "text": "gateway de aplicação"
+    }
+  ],
+  "answer": "C",
+  "comment": "Hub clássico é repetidor multiporta, sem aprendizagem de MAC.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

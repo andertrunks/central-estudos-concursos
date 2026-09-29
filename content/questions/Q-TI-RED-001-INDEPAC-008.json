@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-008",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-04"
+  ],
+  "statement": "Sobre a arquitetura TCP/IP, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "O nome TCP/IP indica que somente TCP e IP podem ser usados na Internet."
+    },
+    {
+      "id": "B",
+      "text": "A camada de aplicação do TCP/IP pode reunir funções que o OSI separa em sessão, apresentação e aplicação."
+    },
+    {
+      "id": "C",
+      "text": "O protocolo IP pertence à camada de transporte."
+    },
+    {
+      "id": "D",
+      "text": "A comunicação processo a processo pertence obrigatoriamente à camada de aplicação."
+    }
+  ],
+  "answer": "B",
+  "comment": "A arquitetura TCP/IP é uma suíte ampla de protocolos. Em um mapeamento pedagógico comum, a camada de Aplicação reúne funções das três camadas superiores do OSI. IP pertence à camada Internet, e comunicação processo a processo é função do Transporte. 24.5 Auditoria de banca — TI-RED-001-05 — OSI x TCP/IP e dispositivos no contexto das camadas",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

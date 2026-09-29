@@ -1098,5 +1098,65 @@
     "version": "Publicado em 08/04/2026; consultado em 24/09/2026",
     "verifiedAt": "2026-09-24",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-ISO-OSI-RED-001",
+    "title": "ISO/IEC 7498-1:1994 — Information technology — Open Systems Interconnection — Basic Reference Model: The Basic Model",
+    "level": "P1",
+    "author": "International Organization for Standardization",
+    "url": "https://www.iso.org/standard/20269.html",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-IETF-RFC1122-RED-001",
+    "title": "RFC 1122 — Requirements for Internet Hosts — Communication Layers",
+    "level": "P1",
+    "author": "Internet Engineering Task Force / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-IETF-RFC1123-RED-001",
+    "title": "RFC 1123 — Requirements for Internet Hosts — Application and Support",
+    "level": "P1",
+    "author": "Internet Engineering Task Force / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc1123.html",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-IETF-RFC1812-RED-001",
+    "title": "RFC 1812 — Requirements for IP Version 4 Routers",
+    "level": "P1",
+    "author": "Internet Engineering Task Force / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc1812/",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-IEEE802-RED-001",
+    "title": "IEEE 802-2024 — Standard for Local and Metropolitan Area Networks: Overview and Architecture; IEEE 802 family",
+    "level": "P1",
+    "author": "IEEE Standards Association",
+    "url": "https://standards.ieee.org/featured/ieee-802/",
+    "version": "IEEE 802-2024",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-NIST-FW-RED-001",
+    "title": "SP 800-41 Rev. 1 — Guidelines on Firewalls and Firewall Policy",
+    "level": "P1",
+    "author": "National Institute of Standards and Technology",
+    "url": "https://www.nist.gov/publications/guidelines-firewalls-and-firewall-policy",
+    "version": "consultado em 2026-09-23",
+    "verifiedAt": "2026-09-23",
+    "status": "ativo"
   }
 ]

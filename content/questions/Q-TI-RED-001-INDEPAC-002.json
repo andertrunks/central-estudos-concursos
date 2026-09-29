@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-002",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-01"
+  ],
+  "statement": "Em uma rede local, todos os computadores possuem enlaces individuais até um switch central. Assinale a alternativa que identifica a topologia física descrita.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Barramento."
+    },
+    {
+      "id": "B",
+      "text": "Anel."
+    },
+    {
+      "id": "C",
+      "text": "Estrela."
+    },
+    {
+      "id": "D",
+      "text": "Malha completa."
+    }
+  ],
+  "answer": "C",
+  "comment": "Na topologia em estrela, cada nó possui uma ligação própria com um ponto central, que pode ser um switch. No barramento, vários nós compartilham um meio principal. No anel, os nós formam um circuito. Em uma malha completa, cada nó possui ligação direta com todos os demais. Os itens inéditos já existentes na seção seguinte permanecem como treino complementar genérico. Eles não são questões anteriores e não substituem a busca de banca nem os itens INDEPAC de quatro alternativas criados após a busca negativa. 24.2 Auditoria de banca — TI-RED-001-02 — Arquitetura em camadas e encapsulamento",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

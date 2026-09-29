@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-005",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-03"
+  ],
+  "statement": "Assinale a alternativa que apresenta, na ordem da camada mais baixa para a mais alta, as sete camadas do modelo OSI.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação."
+    },
+    {
+      "id": "B",
+      "text": "Física, Rede, Enlace, Sessão, Transporte, Aplicação e Apresentação."
+    },
+    {
+      "id": "C",
+      "text": "Enlace, Física, Rede, Transporte, Aplicação, Sessão e Apresentação."
+    },
+    {
+      "id": "D",
+      "text": "Física, Enlace, Transporte, Rede, Sessão, Aplicação e Apresentação."
+    }
+  ],
+  "answer": "A",
+  "comment": "Da camada 1 para a 7, a ordem é Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação. Memorizar a ordem é útil, mas a prova costuma exigir também a função de cada nível.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

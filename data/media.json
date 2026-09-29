@@ -231,5 +231,40 @@
     "channel": "Professora Angela",
     "verifiedAt": "2026-09-24",
     "original": false
+  },
+  {
+    "id": "TI-RED-001-IMG-001",
+    "contentId": "TI-RED-001",
+    "type": "imagem",
+    "title": "Modelos OSI e TCP/IP — correspondência pedagógica e encapsulamento",
+    "caption": "Diagrama original do projeto, compartilhado da revisão final de TI-RED-001.",
+    "alt": "Diagrama comparando as sete camadas do modelo OSI às quatro camadas do modelo TCP/IP e mostrando o fluxo de encapsulamento de dados até bits.",
+    "file": "media/TI-RED-001-IMG-001.png",
+    "verifiedAt": "2026-09-23",
+    "original": true
+  },
+  {
+    "id": "TI-RED-001-YT-001",
+    "contentId": "TI-RED-001",
+    "type": "YouTube",
+    "title": "O QUE É O MODELO OSI? GUIA DEFINITIVO — Redes de Computadores para iniciantes",
+    "caption": "OSI, TCP/IP, encapsulamento, desencapsulamento, PDUs e equipamentos.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=bmgvIlvVAlc",
+    "channel": "Learn with Teacher Nattane",
+    "verifiedAt": "2026-09-23",
+    "original": false
+  },
+  {
+    "id": "TI-RED-001-YT-002",
+    "contentId": "TI-RED-001",
+    "type": "YouTube",
+    "title": "Aula 1 - Introdução às Redes de Computadores: Modelos OSI e TCP/IP",
+    "caption": "Introdução a redes e comparação entre modelos OSI e TCP/IP.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=EHV0E6M1wv4",
+    "channel": "Prof. Carlos Viegas - DCA-UFRN",
+    "verifiedAt": "2026-09-23",
+    "original": false
   }
 ]

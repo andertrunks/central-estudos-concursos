@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-02",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-02"
+  ],
+  "statement": "No modelo OSI, o encaminhamento lógico entre redes é função associada principalmente à camada:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Física"
+    },
+    {
+      "id": "B",
+      "text": "Enlace"
+    },
+    {
+      "id": "C",
+      "text": "Rede"
+    },
+    {
+      "id": "D",
+      "text": "Sessão"
+    },
+    {
+      "id": "E",
+      "text": "Apresentação"
+    }
+  ],
+  "answer": "C",
+  "comment": "A camada de Rede trata endereçamento lógico e encaminhamento entre redes.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

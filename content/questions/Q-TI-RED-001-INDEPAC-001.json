@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-001",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-01"
+  ],
+  "statement": "Considere uma rede que interliga computadores e impressoras dentro de um único prédio, utilizando switches Ethernet. Quanto à abrangência e à tecnologia apresentada, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Trata-se de uma LAN, e Ethernet é compatível com esse tipo de rede local."
+    },
+    {
+      "id": "B",
+      "text": "Trata-se necessariamente de uma WAN, pois utiliza equipamentos de comutação."
+    },
+    {
+      "id": "C",
+      "text": "Trata-se necessariamente de uma MAN, pois existe mais de um dispositivo conectado."
+    },
+    {
+      "id": "D",
+      "text": "Trata-se de uma WLAN, ainda que não exista comunicação sem fio."
+    }
+  ],
+  "answer": "A",
+  "comment": "Uma rede restrita a um prédio é um exemplo típico de LAN. Ethernet é amplamente associada às LANs cabeadas. Uma WAN cobre distâncias muito maiores. Uma MAN possui escala metropolitana. WLAN é uma rede local sem fio e, portanto, não descreve corretamente o cenário cabeado apresentado.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

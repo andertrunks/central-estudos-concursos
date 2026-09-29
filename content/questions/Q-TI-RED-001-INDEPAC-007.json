@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-007",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-04"
+  ],
+  "statement": "Considerando o modelo TCP/IP em quatro camadas adotado nesta aula, assinale a alternativa que associa corretamente uma função à camada correspondente.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Transporte — comunicação processo a processo e uso de portas."
+    },
+    {
+      "id": "B",
+      "text": "Aplicação — encaminhamento de datagramas IP entre redes."
+    },
+    {
+      "id": "C",
+      "text": "Internet — apresentação e codificação de dados para a aplicação."
+    },
+    {
+      "id": "D",
+      "text": "Enlace — controle das sessões entre aplicações remotas."
+    }
+  ],
+  "answer": "A",
+  "comment": "A camada de Transporte realiza a comunicação entre processos e utiliza portas para identificar pontos de comunicação. A camada Internet cuida da entrega IP entre redes. A camada de Aplicação reúne serviços usados pelas aplicações. A camada de Enlace trata do acesso e da entrega no enlace local.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-010",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-05"
+  ],
+  "statement": "Em uma WLAN no modo infraestrutura, um access point encaminha tráfego entre estações sem fio e a infraestrutura local. Considerando a função de bridging, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Essa função é associada principalmente à camada de Enlace."
+    },
+    {
+      "id": "B",
+      "text": "Essa função transforma o access point em um roteador de camada 3 obrigatoriamente."
+    },
+    {
+      "id": "C",
+      "text": "O access point clássico atua somente na camada de Aplicação."
+    },
+    {
+      "id": "D",
+      "text": "O access point não participa de nenhuma função relacionada a quadros."
+    }
+  ],
+  "answer": "A",
+  "comment": "A função de bridge trabalha no enlace e com quadros. O access point também possui funções físicas de rádio, mas isso não elimina sua atuação de camada 2 no encaminhamento entre o meio sem fio e o sistema de distribuição. 25. QUESTÕES INÉDITAS — ESTILO DE CONCURSO As questões abaixo são inéditas e foram criadas para treinamento. Não são questões oficiais de banca. 1. Uma LAN é definida obrigatoriamente pelo uso de cabos Ethernet. A) Certo B) Errado 2. No modelo OSI, o encaminhamento lógico entre redes é função associada principalmente à camada: A) Física B) Enlace C) Rede D) Sessão E) Apresentação 3. A sequência correta do OSI, da camada 7 para a 1, é: A) Aplicação, Apresentação, Sessão, Transporte, Rede, Enlace, Física B) Aplicação, Sessão, Apresentação, Rede, Transporte, Física, Enlace C) Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação D) Aplicação, Transporte, Internet, Enlace, Física, Sessão, Apresentação E) Aplicação, Apresentação, Transporte, Sessão, Rede, Física, Enlace 4. Na visão de quatro camadas adotada para TCP/IP, as funções que o OSI separa em Sessão, Apresentação e Aplicação são tratadas pedagogicamente na camada de: A) Internet B) Enl",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-006",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-03"
+  ],
+  "statement": "Em uma questão sobre o modelo OSI, são citados endereços lógicos, escolha de rota e encaminhamento entre redes. Assinale a alternativa que identifica a camada correspondente.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Física."
+    },
+    {
+      "id": "B",
+      "text": "Enlace."
+    },
+    {
+      "id": "C",
+      "text": "Rede."
+    },
+    {
+      "id": "D",
+      "text": "Sessão."
+    }
+  ],
+  "answer": "C",
+  "comment": "Endereçamento lógico e roteamento são funções características da camada de Rede. A camada de Enlace trabalha com entrega local e quadros; a Física lida com sinais e bits; Sessão organiza diálogos entre aplicações em uma visão clássica do modelo. 24.4 Auditoria de banca — TI-RED-001-04 — Modelo TCP/IP",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -737,10 +737,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "RED-001 integralmente reutilizado em seis unidades. 10 questões INDEPAC autorais com IDs permanentes e 15 questões autorais gerais, todas com feedback pós-tentativa. Sete QREF Quadrix preservados sem pontuação até cotejo com cadernos e gabaritos definitivos."
   },
   {
     "id": "TI-RED-002",

@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-03",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-02"
+  ],
+  "statement": "A sequência correta do OSI, da camada 7 para a 1, é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Aplicação, Apresentação, Sessão, Transporte, Rede, Enlace, Física"
+    },
+    {
+      "id": "B",
+      "text": "Aplicação, Sessão, Apresentação, Rede, Transporte, Física, Enlace"
+    },
+    {
+      "id": "C",
+      "text": "Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação"
+    },
+    {
+      "id": "D",
+      "text": "Aplicação, Transporte, Internet, Enlace, Física, Sessão, Apresentação"
+    },
+    {
+      "id": "E",
+      "text": "Aplicação, Apresentação, Transporte, Sessão, Rede, Física, Enlace"
+    }
+  ],
+  "answer": "A",
+  "comment": "É a ordem das sete camadas do OSI do topo para a base.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

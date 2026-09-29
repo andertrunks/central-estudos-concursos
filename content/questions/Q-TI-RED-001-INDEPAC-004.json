@@ -1,0 +1,40 @@
+{
+  "id": "Q-TI-RED-001-INDEPAC-004",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa registrada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-02"
+  ],
+  "statement": "Sobre encapsulamento em redes de computadores, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Encapsulamento é sinônimo obrigatório de criptografia."
+    },
+    {
+      "id": "B",
+      "text": "O mesmo quadro de enlace permanece inalterado de origem a destino, mesmo quando há roteadores intermediários."
+    },
+    {
+      "id": "C",
+      "text": "Cada nível pode acrescentar informações de controle e a unidade formada por uma camada transporta como carga útil os dados recebidos da camada superior."
+    },
+    {
+      "id": "D",
+      "text": "Desencapsulamento ocorre somente no roteador e nunca no host de destino."
+    }
+  ],
+  "answer": "C",
+  "comment": "Encapsulamento acrescenta informações de controle conforme os dados descem a pilha. Isso não é sinônimo de criptografia. Em redes roteadas, quadros são locais aos enlaces e podem ser substituídos a cada salto. No destino, o desencapsulamento remove e interpreta sucessivamente as informações até que os dados cheguem à aplicação. 24.3 Auditoria de banca — TI-RED-001-03 — Modelo OSI",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

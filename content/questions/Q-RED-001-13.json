@@ -1,0 +1,45 @@
+{
+  "id": "Q-RED-001-13",
+  "contentId": "TI-RED-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-RED-001-05"
+  ],
+  "statement": "O modelo OSI deve ser entendido como:",
+  "options": [
+    {
+      "id": "A",
+      "text": "um único software obrigatório para toda rede"
+    },
+    {
+      "id": "B",
+      "text": "modelo de referência para organizar funções de interconexão"
+    },
+    {
+      "id": "C",
+      "text": "sinônimo exato de TCP/IP"
+    },
+    {
+      "id": "D",
+      "text": "protocolo de roteamento"
+    },
+    {
+      "id": "E",
+      "text": "padrão exclusivo de Wi‑Fi"
+    }
+  ],
+  "answer": "B",
+  "comment": "A ISO define o OSI como modelo de referência, não como implementação obrigatória.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-ISO-OSI-RED-001",
+    "SRC-IETF-RFC1122-RED-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
