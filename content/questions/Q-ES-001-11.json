@@ -1,0 +1,34 @@
+{
+  "id": "Q-ES-001-11",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-01"
+  ],
+  "statement": "Em métodos ágeis, requisitos, arquitetura, testes e documentação deixam de existir.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. Ágil muda a forma e a cadência das atividades; não elimina disciplinas essenciais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "Q-ES-002-09",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-02"
+  ],
+  "statement": "A ISO/IEC/IEEE 12207:2026 prescreve obrigatoriamente um modelo único de ciclo de vida.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. A norma não exige um modelo específico.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

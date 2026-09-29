@@ -1,0 +1,34 @@
+{
+  "id": "Q-ES-001-06",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-01"
+  ],
+  "statement": "O desenvolvimento iterativo e o incremental são conceitos incompatíveis entre si.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Certo"
+    },
+    {
+      "id": "B",
+      "text": "Errado"
+    }
+  ],
+  "answer": "B",
+  "comment": "Errado. Um desenvolvimento pode ser simultaneamente iterativo e incremental.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-ES-001-INDEPAC-001",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-02"
+  ],
+  "statement": "Assinale a alternativa que apresenta corretamente uma relação entre etapas do ciclo de vida de software.",
+  "options": [
+    {
+      "id": "A",
+      "text": "A fase de requisitos define exclusivamente a implementação técnica de classes e banco de dados."
+    },
+    {
+      "id": "B",
+      "text": "A implantação disponibiliza a solução para uso, enquanto a manutenção trata mudanças e evolução após sua entrega."
+    },
+    {
+      "id": "C",
+      "text": "Testes e validação somente podem ocorrer depois do encerramento definitivo do projeto."
+    },
+    {
+      "id": "D",
+      "text": "Manutenção existe apenas quando o software foi desenvolvido sem processo de Engenharia de Software."
+    }
+  ],
+  "answer": "B",
+  "comment": "Requisitos descrevem necessidades e condições; projeto e implementação tratam a solução técnica. Implantação disponibiliza a solução. Manutenção continua após a entrega e pode ocorrer mesmo em sistemas desenvolvidos com boas práticas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

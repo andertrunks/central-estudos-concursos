@@ -1,0 +1,46 @@
+{
+  "id": "Q-ES-001-09",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-01"
+  ],
+  "statement": "Corrigir um erro de cálculo em produção é exemplo típico de manutenção:",
+  "options": [
+    {
+      "id": "A",
+      "text": "adaptativa."
+    },
+    {
+      "id": "B",
+      "text": "corretiva."
+    },
+    {
+      "id": "C",
+      "text": "perfectiva."
+    },
+    {
+      "id": "D",
+      "text": "preventiva."
+    },
+    {
+      "id": "E",
+      "text": "evolutiva normativa."
+    }
+  ],
+  "answer": "B",
+  "comment": "Corrigir defeito caracteriza manutenção corretiva.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "Q-ES-001-08",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-01"
+  ],
+  "statement": "Um protótipo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "precisa obrigatoriamente ser transformado no produto final."
+    },
+    {
+      "id": "B",
+      "text": "só pode existir depois da implantação."
+    },
+    {
+      "id": "C",
+      "text": "pode ser criado para explorar requisitos e ser descartado."
+    },
+    {
+      "id": "D",
+      "text": "substitui testes."
+    },
+    {
+      "id": "E",
+      "text": "elimina a necessidade de validação com usuários."
+    }
+  ],
+  "answer": "C",
+  "comment": "Protótipos podem ser experimentais e descartáveis.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

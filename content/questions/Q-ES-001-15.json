@@ -1,0 +1,46 @@
+{
+  "id": "Q-ES-001-15",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-01"
+  ],
+  "statement": "Qual associação está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Preventiva — corrigir defeito já manifestado."
+    },
+    {
+      "id": "B",
+      "text": "Adaptativa — melhorar aparência sem mudança externa."
+    },
+    {
+      "id": "C",
+      "text": "Corretiva — adequar protocolo externo."
+    },
+    {
+      "id": "D",
+      "text": "Perfectiva — melhorar desempenho ou usabilidade."
+    },
+    {
+      "id": "E",
+      "text": "Prototipação — manutenção de software legado."
+    }
+  ],
+  "answer": "D",
+  "comment": "Melhorias de desempenho/usabilidade são exemplos comuns de manutenção perfectiva.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

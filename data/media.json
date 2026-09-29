@@ -453,5 +453,40 @@
     "channel": "UNIVESP",
     "verifiedAt": "2026-09-25",
     "original": false
+  },
+  {
+    "id": "TI-ES-001-IMG-001",
+    "contentId": "TI-ES-001",
+    "type": "imagem",
+    "title": "Engenharia de software — ciclo de vida",
+    "caption": "Infográfico sobre ciclo de vida, cascata, abordagens iterativas e incrementais, espiral, prototipação, artefatos e pegadinhas.",
+    "alt": "Infográfico complementar com etapas do ciclo de vida, cascata, abordagens iterativas e incrementais, espiral, prototipação, artefatos e pegadinhas.",
+    "file": "media/TI-ES-001-IMG-001.png",
+    "verifiedAt": "2026-09-26",
+    "original": true
+  },
+  {
+    "id": "TI-ES-001-YT-001",
+    "contentId": "TI-ES-001",
+    "type": "YouTube",
+    "title": "Engenharia de Software — Aula 01 — Modelos de processo de software e atividades de software",
+    "caption": "Consolidação de processos, atividades e modelos; usar após ES-001 e ES-002.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=kO1PSkzTsYc",
+    "channel": "UNIVESP",
+    "verifiedAt": "2026-09-25",
+    "original": false
+  },
+  {
+    "id": "TI-ES-001-YT-002",
+    "contentId": "TI-ES-001",
+    "type": "YouTube",
+    "title": "Ciclo de Vida de Software",
+    "caption": "Revisão complementar e concisa do ciclo de vida de software.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=DzqranCyk6w",
+    "channel": "Professor George Oliveira",
+    "verifiedAt": "2026-09-25",
+    "original": false
   }
 ]

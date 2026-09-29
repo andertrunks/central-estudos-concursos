@@ -1,0 +1,46 @@
+{
+  "id": "Q-ES-001-12",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (questão inédita)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-01"
+  ],
+  "statement": "O modelo em V:",
+  "options": [
+    {
+      "id": "A",
+      "text": "proíbe testes."
+    },
+    {
+      "id": "B",
+      "text": "associa etapas de definição/projeto a níveis correspondentes de verificação e validação."
+    },
+    {
+      "id": "C",
+      "text": "é sinônimo de prototipação descartável."
+    },
+    {
+      "id": "D",
+      "text": "é um modelo sem qualquer preocupação com qualidade."
+    },
+    {
+      "id": "E",
+      "text": "determina manutenção apenas corretiva."
+    }
+  ],
+  "answer": "B",
+  "comment": "O V-model enfatiza a relação entre definição e atividades correspondentes de teste.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "queueId": "PUB-0013",
+  "contentId": "TI-ES-001",
+  "status": "pronto para build",
+  "sourceDocuments": [
+    {
+      "id": "1RVjt3ZyOZQXJI3DrIfpt8R40DRL2Wi8kuKMoTRhVbDc",
+      "title": "ES-001 — Fundamentos de Engenharia de Software e ciclo de vida: produto, processo, requisitos, desenvolvimento, testes, implantação e manutenção",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1HdMqO1V9RBaUv00nMsjxQKhVXSnYt4G1JUwyr58UNE4",
+      "title": "ES-002 — Processos, modelos de ciclo de vida e desenvolvimento incremental/iterativo em maior profundidade",
+      "paragraphsPreserved": true
+    },
+    {
+      "id": "1LSXLw6s79VQSCqWgjpgwSouS2sAfmE_uBzlSL9CaOt0",
+      "title": "TI-ES-001 — Engenharia de software — ciclo de vida — complemento e auditoria Central de Estudos",
+      "paragraphsPreserved": true
+    }
+  ],
+  "canonicalSections": [
+    "TI-ES-001-01",
+    "TI-ES-001-02",
+    "TI-ES-001-03"
+  ],
+  "integratedAuthoredQuestionIds": [
+    "Q-ES-001-15",
+    "Q-ES-001-14",
+    "Q-ES-001-13",
+    "Q-ES-001-12",
+    "Q-ES-001-11",
+    "Q-ES-001-10",
+    "Q-ES-001-09",
+    "Q-ES-001-08",
+    "Q-ES-001-07",
+    "Q-ES-001-06",
+    "Q-ES-001-05",
+    "Q-ES-001-04",
+    "Q-ES-001-03",
+    "Q-ES-001-02",
+    "Q-ES-001-01",
+    "Q-ES-002-01",
+    "Q-ES-002-02",
+    "Q-ES-002-03",
+    "Q-ES-002-04",
+    "Q-ES-002-05",
+    "Q-ES-002-06",
+    "Q-ES-002-07",
+    "Q-ES-002-08",
+    "Q-ES-002-09",
+    "Q-ES-002-10",
+    "Q-ES-002-11",
+    "Q-ES-002-12",
+    "Q-ES-002-13",
+    "Q-ES-002-14",
+    "Q-ES-002-15",
+    "Q-ES-002-16",
+    "Q-ES-002-17",
+    "Q-ES-002-18",
+    "Q-TI-ES-001-INDEPAC-001",
+    "Q-TI-ES-001-INDEPAC-002",
+    "Q-TI-ES-001-INDEPAC-003",
+    "Q-TI-ES-001-INDEPAC-004"
+  ],
+  "pendingUnscoredReferences": [
+    "Q1976030",
+    "Q3009669",
+    "Q3009670",
+    "Q3009671",
+    "Q3009672",
+    "Q3009673",
+    "Q3009674"
+  ],
+  "media": [
+    "TI-ES-001-IMG-001",
+    "TI-ES-001-YT-001",
+    "TI-ES-001-YT-002"
+  ],
+  "publication": {
+    "contentCommit": "PENDING",
+    "workflowRun": null,
+    "workflowConclusion": "pending",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-ES-001",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false
+  }
+}

@@ -1108,10 +1108,10 @@
     ],
     "coverage": "Comum",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": ""
+    "notes": "Conteúdo integral ES-001 + ES-002; sete localizadores Quadrix aguardam validação com caderno/gabarito e não pontuam; verificação visual/Drive pendente."
   },
   {
     "id": "TI-ES-002",

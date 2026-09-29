@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-ES-001-INDEPAC-004",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-02"
+  ],
+  "statement": "Sobre o modelo cascata, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "É a única abordagem reconhecida pela Engenharia de Software."
+    },
+    {
+      "id": "B",
+      "text": "Organiza o desenvolvimento em fluxo predominantemente sequencial, mas sua existência não invalida modelos iterativos, incrementais ou adaptativos."
+    },
+    {
+      "id": "C",
+      "text": "Impede qualquer documentação de requisitos."
+    },
+    {
+      "id": "D",
+      "text": "É sinônimo de Scrum."
+    }
+  ],
+  "answer": "B",
+  "comment": "O modelo cascata representa um fluxo predominantemente sequencial ou preditivo. Ele é uma entre diversas formas de organizar o ciclo de vida e não é sinônimo de método ágil.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

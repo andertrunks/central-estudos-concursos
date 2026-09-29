@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-ES-001-INDEPAC-003",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-02"
+  ],
+  "statement": "No modelo em espiral, um elemento especialmente característico é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "a eliminação de qualquer análise de risco."
+    },
+    {
+      "id": "B",
+      "text": "a orientação por riscos ao longo dos ciclos."
+    },
+    {
+      "id": "C",
+      "text": "a proibição de protótipos."
+    },
+    {
+      "id": "D",
+      "text": "a obrigação de concluir todo o produto em uma única entrega."
+    }
+  ],
+  "answer": "B",
+  "comment": "O modelo em espiral é uma abordagem evolutiva e iterativa fortemente orientada à identificação e ao tratamento de riscos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

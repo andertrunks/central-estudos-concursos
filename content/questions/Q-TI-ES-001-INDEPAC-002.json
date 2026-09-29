@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-ES-001-INDEPAC-002",
+  "contentId": "TI-ES-001",
+  "banca": "Autoral — Central de Estudos (busca INDEPAC negativa documentada)",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-ES-001-02"
+  ],
+  "statement": "Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Iteração significa obrigatoriamente entregar nova funcionalidade ao usuário em cada ciclo."
+    },
+    {
+      "id": "B",
+      "text": "Incremento significa repetição do mesmo trabalho sem acréscimo de capacidade ao produto."
+    },
+    {
+      "id": "C",
+      "text": "Um processo pode ser iterativo e incremental ao mesmo tempo."
+    },
+    {
+      "id": "D",
+      "text": "Todo desenvolvimento incremental utiliza obrigatoriamente Scrum."
+    }
+  ],
+  "answer": "C",
+  "comment": "Iteração está associada a repetição, aprendizado e refinamento. Incremento está associado a acréscimo funcional ou de capacidade. As duas características podem coexistir, mas não são sinônimas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-IEEE-SWEBOK-ES-001",
+    "SRC-ISO-12207-2026-ES-001",
+    "SRC-AGILE-MANIFESTO-ES-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

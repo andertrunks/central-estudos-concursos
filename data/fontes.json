@@ -1828,5 +1828,35 @@
     "version": "Referência consultada em 14/09/2026",
     "verifiedAt": "2026-09-14",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-IEEE-SWEBOK-ES-001",
+    "title": "IEEE Computer Society — Guide to the Software Engineering Body of Knowledge (SWEBOK), Version 4.0a",
+    "level": "P1",
+    "author": "IEEE Computer Society",
+    "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "version": "Version 4.0a",
+    "verifiedAt": "2026-09-29",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-ISO-12207-2026-ES-001",
+    "title": "ISO/IEC/IEEE 12207:2026 — Software life cycle processes",
+    "level": "P1",
+    "author": "International Organization for Standardization",
+    "url": "https://www.iso.org/standard/90219.html",
+    "version": "2026",
+    "verifiedAt": "2026-09-29",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-AGILE-MANIFESTO-ES-001",
+    "title": "Manifesto para Desenvolvimento Ágil de Software",
+    "level": "P1",
+    "author": "Autores do Manifesto Ágil",
+    "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+    "version": "2001",
+    "verifiedAt": "2026-09-29",
+    "status": "ativo"
   }
 ]
