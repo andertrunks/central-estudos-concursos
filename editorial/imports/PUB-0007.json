@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0007",
   "contentId": "MAT-003",
-  "status": "integrado — aguardando build, publicação e conferência pública",
+  "status": "build e deploy concluídos; inspeção renderizada pendente — runtime do navegador offline",
   "sourceDocuments": [
     {
       "id": "1KQVWRGjgzKwSvTxeDVQlbEEv-5NGJN4EFI70QxOneKE",
@@ -78,5 +78,16 @@
       "CRBIO01-2026-ATI",
       "SETEC-2026-ATI"
     ]
+  },
+  "publication": {
+    "contentCommit": "96620f1c949a2d36c1b1459595c150a8cc026e08",
+    "diagramCommit": "2a121cf60b04f31d39fbdba20977de7e3bfa4834",
+    "catalogCommit": "5fc429b8c2065c907973e2b463c59174e0bed0d4",
+    "workflowRun": 36566121838,
+    "workflowConclusion": "success",
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/MAT-003",
+    "publicPageVerified": false,
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "GitHub Actions passou lint, typecheck, testes e build, e concluiu deploy do GitHub Pages. Não foi possível abrir/renderizar a rota pública porque cua_repl retorna environment_offline; não dar baixa editorial até verificação."
   }
 }
