@@ -70,3 +70,14 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Verificação renderizada pública pendente pelo timeout do navegador integrado e indisponibilidade do web fetch. Google Sheet sem baixa editorial.
 - Q4059481, Q4189836, Q4189837, Q4189840, Q4189847, Q4189862, Q3185247, Q4059480, Q1991091 e Q1990747 não pontuam sem validação do conjunto integral.
 - Último pacote integrado: PUB-0012. Primeiro pacote pendente: PUB-0013 — TI-ES-001 (ciclo de vida de software).
+
+
+## Continuidade editorial — 2026-09-29
+
+- PUB-0013 — TI-ES-001: deploy do commit a77ea81281650dd26ca2cdd21f7217b0255c9330 concluído pelo workflow 36574427448; inspeção renderizada no navegador pendente. Drive não atualizado.
+- PUB-0014 — TI-ES-004 Scrum e Kanban: seis questões autorais interativas; oito referências Quadrix seguem não pontuáveis até confronto com caderno e gabarito definitivo. Commit funcional/deploy: 4f855a1f74976d1c20d5e70dca06147a6dea2660; workflow 36576539096 passou npm run check e deploy Pages.
+- Ajuste técnico mínimo: limite do precache PWA elevado de 3 para 4 MiB, pois o bundle completo com a aula excedia o limite anterior. Conteúdo e imagem original estão vinculados; IndexedDB/progresso preservados.
+- Verificação pública visual pendente: o navegador integrado expirou após 300 s e o leitor web não consegue acessar GitHub Pages. Manter status canônico do Drive sem baixa até abrir a rota e confirmar leitura/questões/navegação.
+- PUB-0015 — TI-SEG-004 Backup e continuidade é o próximo ID da fila, mas o próprio documento canônico marca “em produção” e determina não publicar antes da conclusão de teoria, questões, mídia, fontes e revisões. Aguardar revisão editorial.
+- PUB-0016 — TI-CRB-003, PUB-0017 — TI-CRB-004, PUB-0018 — TI-SEG-005 e PUB-0019 — TI-CRB-002: documentos canônicos consultados marcam conteúdo EM PRODUÇÃO; não importar como aula finalizada.
+- Próxima ação: (1) inspeção renderizada dos pacotes já implantados e, após confirmação, atualizar o controle do Drive; (2) aguardar conclusão editorial do PUB-0015; (3) retomar a fila sem tocar em ING-001.

@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0014",
   "contentId": "TI-ES-004",
-  "status": "pronto para build",
+  "status": "deploy concluído; inspeção pública renderizada pendente",
   "sourceDocuments": [
     {
       "id": "1adt9U2N9KFLqXOv8N9W9LLQifBexqfVFWOvx2eYZSmk",
@@ -51,11 +51,12 @@
     "TI-ES-004-YT-002"
   ],
   "publication": {
-    "contentCommit": "PENDING",
-    "workflowRun": null,
-    "workflowConclusion": "pending",
+    "contentCommit": "4f855a1f74976d1c20d5e70dca06147a6dea2660",
+    "workflowRun": 36576539096,
+    "workflowConclusion": "success",
     "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-ES-004",
     "publicPageVerified": false,
-    "drivePublishedStatusUpdated": false
+    "drivePublishedStatusUpdated": false,
+    "checkpointNote": "npm run check e deploy Pages concluídos; a ferramenta de navegador expirou e o leitor web não acessa GitHub Pages. Não atualizar controle canônico até inspeção renderizada."
   }
 }
