@@ -1,0 +1,30 @@
+{
+  "queueId": "PUB-0013",
+  "contentId": "TI-ES-001",
+  "driveDocumentId": "1LSXLw6s79VQSCqWgjpgwSouS2sAfmE_uBzlSL9CaOt0",
+  "integratedAt": "2026-09-29T13:20:56Z",
+  "status": "deploy concluído; inspeção pública pendente",
+  "integratedCommit": "a77ea81281650dd26ca2cdd21f7217b0255c9330",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-ES-001",
+  "workflowRunId": 36574427448,
+  "verifiedAt": null,
+  "verification": {
+    "actions": "success",
+    "npmRunCheck": "success",
+    "build": "success",
+    "publicLesson": "pending—browser runtime timeout; web reader URL inaccessible",
+    "questions": 37,
+    "answersGatedUntilAttempt": true,
+    "unverifiedReferencesExcludedFromScoring": true,
+    "drivePublishedStatusUpdated": false
+  },
+  "pendingReferences": [
+    "Q1976030",
+    "Q3009669",
+    "Q3009670",
+    "Q3009671",
+    "Q3009672",
+    "Q3009673",
+    "Q3009674"
+  ]
+}
