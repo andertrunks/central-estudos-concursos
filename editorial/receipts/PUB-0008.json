@@ -3,7 +3,7 @@
   "contentId": "TI-BD-001",
   "driveDocumentId": "1OzdwjEQLahKgjMMtcwddDS1px3Ta7KpnwTbuwlGY-90",
   "integratedAt": "2026-09-29T00:59:27.095Z",
-  "status": "integrado; aguardando testes e deploy",
-  "publishedCommit": null,
-  "siteUrl": null
+  "status": "publicado",
+  "publishedCommit": "51e66f65c2864a8b698e4b5f812b2c05da983b15",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-BD-001"
 }
