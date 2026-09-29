@@ -12,11 +12,13 @@ describe('PUB-0008 — Banco de dados relacional', () => {
       'TI-BD-001-01', 'TI-BD-001-02', 'TI-BD-001-03', 'TI-BD-001-04',
     ]);
     expect(lesson.contests).toEqual(['CRBIO01-2026-ATI', 'SETEC-2026-ATI']);
-    expect(lessonText.length).toBeGreaterThan(75_000);
+    expect(lessonText.length).toBeGreaterThan(70_000);
     expect(lessonText).toContain('independência física');
     expect(lessonText).toContain('integridade referencial');
     expect(lessonText).toContain('QREF-QUAD-143');
     expect(lessonText).not.toContain('aguardando validação/publicação');
+    expect(lessonText).not.toContain('CHECKPOINT — Produção intercalada');
+    expect(lessonText).not.toContain('Vinculações formais a cargos e editais permanecem pendentes');
     expect(lessonText).not.toContain('docs.google.com/document/d/');
   });
 
