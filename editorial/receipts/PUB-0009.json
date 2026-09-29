@@ -2,8 +2,18 @@
   "queueId": "PUB-0009",
   "contentId": "TI-BD-002",
   "driveDocumentId": "1S9QOO4FTQSJ5cwYaAz99yxNao_iQOgPNounlk3MQIBo",
-  "integratedAt": "2026-09-29T10:28:29.680Z",
-  "status": "integrado; aguardando testes e deploy",
-  "publishedCommit": null,
-  "siteUrl": null
+  "integratedAt": "2026-09-29T10:37:11.934Z",
+  "status": "publicado",
+  "publishedCommit": "dcd5c430a5aad8a84ef472bb1f17e77b1f6c859c",
+  "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/TI-BD-002",
+  "verifiedAt": "2026-09-29T18:24:00Z",
+  "workflowRunId": 36556808366,
+  "verification": {
+    "actions": "success",
+    "publicLesson": "confirmed",
+    "questions": 59,
+    "answersGatedUntilAttempt": true,
+    "unverifiedQuadrixReferencesExcludedFromScoring": true,
+    "progressDataPreserved": true
+  }
 }
