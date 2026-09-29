@@ -1,7 +1,7 @@
 {
   "queueId": "PUB-0005",
   "driveDocumentId": "1_Z3usaRmCpgdCbkFwJzfpvoRb4Ofx_wAw_5x8Ua9BIs",
-  "status": "pronto para publicação",
+  "status": "publicado",
   "sourceDocuments": [
     {
       "id": "1_Z3usaRmCpgdCbkFwJzfpvoRb4Ofx_wAw_5x8Ua9BIs",
@@ -122,5 +122,12 @@
     ]
   },
   "imageSha256": "f51232d9c317bc06437de7dc07a65615e7705253b7b8ff35ab515075381e9177",
-  "drivePublishedStatusUpdated": false
+  "drivePublishedStatusUpdated": true,
+  "publishedAt": "2026-09-29T11:14:00Z",
+  "publication": {
+    "contentCommit": "6f1f814bbf96d9f1aefeb66612691c16e33b0c33",
+    "receiptCommit": "2a8e9acee99022b2c176034fdb54f6ca6020daca",
+    "workflowRun": 36560661262,
+    "siteUrl": "https://andertrunks.github.io/central-estudos-concursos/#/biblioteca/LEG-005"
+  }
 }
