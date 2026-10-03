@@ -47,7 +47,7 @@ export function WritingEditor({ proposal: d, showContinue = true }: { proposal: 
       <h2>{d.title}</h2>
       <p>{d.theme}</p>
         <Prose text={d.instructions} />
-        {d.modelAnswer && <details><summary>Espelho de correção e resposta-modelo</summary><Prose text={d.modelAnswer} /></details>}
+        {d.modelAnswer && previous?.status === 'concluída' && previous.text.trim() && <details><summary>Espelho de correção e resposta-modelo</summary><Prose text={d.modelAnswer} /></details>}
       <label htmlFor={`${d.id}-response`}>Sua resposta</label>
         <textarea
           id={`${d.id}-response`}
