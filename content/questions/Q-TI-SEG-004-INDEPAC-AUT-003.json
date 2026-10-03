@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-003",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Qual afirmação corresponde a uma estratégia de proteção de dados tecnicamente adequada?",
+  "options": [
+    {
+      "id": "A",
+      "text": "RAID substitui backup porque sempre recupera arquivos excluídos pelo usuário."
+    },
+    {
+      "id": "B",
+      "text": "A replicação impede que corrupção lógica ou ransomware sejam propagados ao destino."
+    },
+    {
+      "id": "C",
+      "text": "Um snapshot mantido no mesmo equipamento é necessariamente protegido contra a perda total desse equipamento."
+    },
+    {
+      "id": "D",
+      "text": "RAID, replicação e snapshots oferecem recursos distintos, mas não dispensam automaticamente cópias de segurança independentes, com retenção e restauração verificadas."
+    }
+  ],
+  "answer": "D",
+  "comment": "RAID pode proteger contra determinadas falhas físicas; réplica pode acelerar disponibilidade; snapshot pode registrar estado em certo instante. Nenhum deles garante, por definição, uma versão independente recuperável diante de exclusão, ataque ou desastre. A atribui ao RAID capacidade que ele não garante; B desconsidera propagação de corrupção; C ignora o domínio de falha compartilhado.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

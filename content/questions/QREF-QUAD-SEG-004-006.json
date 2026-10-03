@@ -1,0 +1,37 @@
+{
+  "id": "QREF-QUAD-SEG-004-006",
+  "contentId": "TI-SEG-004",
+  "banca": "Quadrix",
+  "type": "certo/errado",
+  "origin": "real",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "provenance": {
+    "orgao": "CRO-SP",
+    "prova": "2025 — caderno 404, item 118, página 6; gabarito definitivo 20/10/2025, seção 2.7, página 3; Q3659177",
+    "year": 2025,
+    "cargo": "Analista de Infraestrutura de Tecnologia de Informação",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/138454/quadrix-2025-cro-sp-analista-de-suporte-de-tecnologia-de-informacao-prova.pdf"
+  },
+  "statement": "Acerca da solução de backup Bacula, dos conceitos de snapshots e replicação e do RPO (Recovery Point Objective) e RTO (Recovery Time Objective), julgue o item.\n\nA replicação de dados é uma técnica que pode reduzir o RTO, pois disponibiliza cópias ativas de sistemas em diferentes locais para rápida retomada em caso de falha.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Replicar dados e manter outra instância operacional pode reduzir o tempo-alvo de recuperação porque permite comutação ou retomada em outro local mais rapidamente que reconstruir todo o ambiente. Isso não garante recuperação histórica: uma exclusão, corrupção ou ataque pode propagar-se à réplica. Replicação contribui à disponibilidade, mas não dispensa cópias protegidas, retenção de versões e testes.",
+  "source_ids": [
+    "SRC-QUADRIX-CROSP-2025-BACKUP-RPO-RTO"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

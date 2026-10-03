@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-004",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Uma equipe adota a regra 3-2-1 e teme que um invasor obtenha credenciais administrativas do ambiente de produção. Qual ação adicional contribui diretamente para preservar a capacidade de restauração?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Manter ao menos uma cópia protegida em domínio de administração segregado, offline ou com mecanismos efetivos de imutabilidade, e testar a recuperação."
+    },
+    {
+      "id": "B",
+      "text": "Guardar três cópias com o mesmo administrador e a mesma senha, todas montadas continuamente no servidor principal."
+    },
+    {
+      "id": "C",
+      "text": "Substituir as cópias por sincronização automática bidirecional dos arquivos."
+    },
+    {
+      "id": "D",
+      "text": "Excluir os backups anteriores imediatamente após cada nova execução bem-sucedida."
+    }
+  ],
+  "answer": "A",
+  "comment": "a segregação reduz a possibilidade de uma credencial comprometida alcançar todas as cópias; testes comprovam restaurabilidade. B mantém um ponto único de comprometimento; C pode sincronizar exclusões ou arquivos contaminados; D elimina o histórico necessário quando o problema só é descoberto depois. A heurística 3-2-1 não dispensa política de acesso, retenção e recuperação.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

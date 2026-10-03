@@ -99,6 +99,7 @@ export const sourceSchema = z.object({
   version: text,
   verifiedAt: date,
   status: z.enum(["ativo", "revisar", "superado", "arquivado"]),
+  notes: z.string().optional(),
 });
 export const mediaSchema = z.object({
   id,

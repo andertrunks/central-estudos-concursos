@@ -1,0 +1,49 @@
+{
+  "id": "QREF-QUAD-SEG-004-002",
+  "contentId": "TI-SEG-004",
+  "banca": "Quadrix",
+  "type": "múltipla escolha",
+  "origin": "real",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "provenance": {
+    "orgao": "CRM-ES",
+    "prova": "2025 — caderno 404, questão 30, página 7; gabarito definitivo 20/10/2025; Q3621691",
+    "year": 2025,
+    "cargo": "Jornalista",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/137479/quadrix-2025-crm-es-jornalista-prova.pdf"
+  },
+  "statement": "Ao realizar backups de dados, é comum que se empreguem diferentes estratégias para equilibrar o tempo de backup, o espaço de armazenamento e a facilidade de restauração. A partir dessa informação e considerando a diferença entre backup incremental e backup diferencial, assinale a opção correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "No backup incremental, copiam‑se todos os dados a cada execução, enquanto no backup diferencial copiam‑se somente os dados novos ou alterados desde o último backup completo."
+    },
+    {
+      "id": "B",
+      "text": "O backup diferencial copia apenas os dados modificados desde o último backup incremental realizado, acumulando as diferenças de cada dia separadamente."
+    },
+    {
+      "id": "C",
+      "text": "Um backup incremental isolado, sem backup completo anterior, é suficiente para restaurar todo o sistema, pois ele contém todos os dados necessários."
+    },
+    {
+      "id": "D",
+      "text": "A restauração a partir de uma cadeia de backups incrementais é mais rápida e simples do que a restauração a partir de um backup diferencial único."
+    },
+    {
+      "id": "E",
+      "text": "O backup incremental copia apenas os arquivos alterados desde o último backup realizado (seja ele completo ou incremental), enquanto o backup diferencial copia os arquivos alterados desde o último backup completo."
+    }
+  ],
+  "answer": "E",
+  "comment": "alternativa E descreve corretamente as bases de comparação. A presume que incremental sempre copia tudo; B toma o incremental como referência do diferencial; C imagina que incremental isolado contém necessariamente tudo; D generaliza erroneamente que reconstruir cadeia incremental será sempre mais rápido e simples que restaurar um diferencial.",
+  "source_ids": [
+    "SRC-QUADRIX-CRMES-2025-OFICIAL-PDFS"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

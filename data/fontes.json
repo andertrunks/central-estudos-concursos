@@ -1878,5 +1878,148 @@
     "version": "2025.5 (2025-05-01)",
     "verifiedAt": "2026-09-29",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-CISA-STOPRANSOMWARE-2026",
+    "title": "CISA — StopRansomware Guide",
+    "level": "P1",
+    "author": "CISA",
+    "url": "https://www.cisa.gov/stopransomware/ransomware-guide",
+    "version": "Página consultada em 26/09/2026",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo. Cópias offline, cifradas, testes de restauração e recuperação segura"
+  },
+  {
+    "id": "SRC-NIST-SP80034R1UPD1",
+    "title": "NIST SP 800-34 Rev.1 — Contingency Planning Guide",
+    "level": "P1",
+    "author": "NIST / CSRC",
+    "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "version": "Maio de 2010; atualização 11/11/2010",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo. Análise de impacto, estratégias, teste e manutenção de plano de contingência"
+  },
+  {
+    "id": "SRC-ISO22301-2019A1-2024",
+    "title": "ISO 22301:2019 — Business continuity management systems",
+    "level": "P1",
+    "author": "ISO",
+    "url": "https://www.iso.org/standard/75106.html",
+    "version": "Edição 2 de 2019; alteração publicada em 2024",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo. Identificação e status da norma; apenas descrição pública, sem reprodução da íntegra"
+  },
+  {
+    "id": "SRC-MS-SQL-BACKUP-OVERVIEW",
+    "title": "Microsoft Learn — Visão geral de backup SQL Server",
+    "level": "P1",
+    "author": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/pt-br/sql/relational-databases/backup-restore/backup-overview-sql-server?view=sql-server-ver17",
+    "version": "Documentação SQL Server 2025 / ver17",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo. Diferenças entre backup de dados, diferencial e log; exemplo técnico específico do SQL Server"
+  },
+  {
+    "id": "SRC-QUADRIX-CRMMG-2025-BACKUP",
+    "title": "Quadrix — CRM-MG 2025 — Q3326379 e certame oficial",
+    "level": "P2",
+    "author": "QConcursos / Instituto Quadrix",
+    "url": "https://quadrix.org.br/informacoes/1041/",
+    "version": "Concurso CRM-MG 2025",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo com ressalva. Questão real localizada por Q3326379; conferir caderno e gabarito definitivo antes de uso literal"
+  },
+  {
+    "id": "SRC-QUADRIX-CRMES-2025-BACKUP",
+    "title": "Quadrix — CRM-ES 2025 — Q3621691",
+    "level": "P2",
+    "author": "QConcursos / certame Quadrix",
+    "url": "https://www.qconcursos.com/questoes-de-concursos/questoes/fa93d6f3-9a",
+    "version": "Prova de 2025",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo com ressalva. Questão real localizada sobre incremental e diferencial; identificar caderno/cargo e gabarito definitivo"
+  },
+  {
+    "id": "SRC-QUADRIX-CRMMG-2025-OFICIAL-PDFS",
+    "title": "Quadrix — CRM-MG 2025 — caderno e gabarito definitivo",
+    "level": "P2",
+    "author": "Instituto Quadrix",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/131193/quadrix-2025-crm-mg-analista-de-licitacao-prova.pdf",
+    "version": "Caderno prova 27/04/2025; gabarito definitivo 21/05/2025",
+    "verifiedAt": "2026-09-26",
+    "status": "revisar",
+    "notes": "Estado editorial original: verificado. Conferência da questão 15 e resposta oficial D"
+  },
+  {
+    "id": "SRC-QUADRIX-CRMES-2025-OFICIAL-PDFS",
+    "title": "Quadrix — CRM-ES 2025 — caderno e gabarito definitivo",
+    "level": "P2",
+    "author": "Instituto Quadrix",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/137479/quadrix-2025-crm-es-jornalista-prova.pdf",
+    "version": "Caderno prova 21/09/2025; gabarito definitivo 20/10/2025",
+    "verifiedAt": "2026-09-26",
+    "status": "revisar",
+    "notes": "Estado editorial original: verificado. Conferência de questões 27 (B) e 30 (E) do caderno Jornalista"
+  },
+  {
+    "id": "SRC-QUADRIX-CROSP-2025-BACKUP-RPO-RTO",
+    "title": "Quadrix — CRO-SP 2025 — caderno aplicado do Analista Infraestrutura TI e gabarito definitivo",
+    "level": "P2",
+    "author": "Instituto Quadrix; arquivos PDF espelhados",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/138454/quadrix-2025-cro-sp-analista-de-suporte-de-tecnologia-de-informacao-prova.pdf",
+    "version": "Prova de 21/09/2025; gabarito definitivo de 20/10/2025",
+    "verifiedAt": "2026-09-26",
+    "status": "revisar",
+    "notes": "Estado editorial original: verificado. Questões 116–120 confrontadas com a seção 2.7 do gabarito definitivo; sequência C,E,C,E,C"
+  },
+  {
+    "id": "SRC-BACULA-CONSOLE-ENTERPRISE-2026",
+    "title": "Bacula Enterprise — User Interfaces: Console Bacula",
+    "level": "P1",
+    "author": "Bacula Systems",
+    "url": "https://docs.baculasystems.com/pdf/bsys-baculauiconsole.pdf",
+    "version": "Edição disponibilizada em 2026",
+    "verifiedAt": "2026-09-26",
+    "status": "revisar",
+    "notes": "Estado editorial original: verificado. Sintaxe run e parâmetros de nível de job para comentário da questão 116 CRO-SP"
+  },
+  {
+    "id": "SRC-BACULA-CLOUD-FEATURES-2026",
+    "title": "Bacula Enterprise — funcionalidades e drivers de armazenamento Cloud",
+    "level": "P1",
+    "author": "Bacula Systems",
+    "url": "https://docs.baculasystems.com/BENewFeatures/EnterpriseNewFeatures/BEFeatures/index.html",
+    "version": "Documentação consultada em 26/09/2026",
+    "verifiedAt": "2026-09-26",
+    "status": "revisar",
+    "notes": "Estado editorial original: verificado. Comprova presença de drivers S3, Azure, Google e Oracle; comentário da questão 117 CRO-SP"
+  },
+  {
+    "id": "SRC-INDEPAC-BERTIOGA-2024-SEG004",
+    "title": "INDEPAC — Câmara Bertioga — Concurso 01/2023 — publicação oficial",
+    "level": "P2",
+    "author": "Câmara Municipal de Bertioga / INDEPAC",
+    "url": "https://www.bertioga.sp.leg.br/institucional/concursos/concurso-01-2023",
+    "version": "Prova aplicada em 10/03/2024",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo com ressalva. Analista Sistemas e Técnico Informática considerados, mas sem caderno com questão específica de backup recuperada nesta etapa"
+  },
+  {
+    "id": "SRC-INDEPAC-LENCOIS-2023-SEG004",
+    "title": "INDEPAC — Câmara Lençóis Paulista — Concurso 01/2023",
+    "level": "P2",
+    "author": "Câmara Municipal de Lençóis Paulista / INDEPAC",
+    "url": "https://institutoindepac.org.br/anexos/3592-5s4N.pdf",
+    "version": "Prova aplicada em 14/05/2023; gabarito após recursos indicado em 26/05/2023",
+    "verifiedAt": "2026-09-26",
+    "status": "ativo",
+    "notes": "Estado editorial original: ativo com ressalva. Edital identifica Analista Sistemas com 10 questões específicas e quatro alternativas; caderno da prova não recuperado"
   }
 ]

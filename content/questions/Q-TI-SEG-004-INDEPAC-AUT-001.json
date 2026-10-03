@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-001",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Um órgão realiza backup completo no domingo. De segunda a quinta-feira, usa backup incremental tradicional, sempre tomando por referência a cópia anterior. Depois da cópia de quinta-feira, o servidor perde todos os dados. Para recuperar o estado de quinta-feira, qual conjunto é necessário, considerando que todas as cópias estão íntegras?",
+  "options": [
+    {
+      "id": "A",
+      "text": "O completo de domingo e somente o incremental de quinta-feira."
+    },
+    {
+      "id": "B",
+      "text": "Somente os incrementais de quarta e quinta-feira."
+    },
+    {
+      "id": "C",
+      "text": "O completo de domingo e todos os incrementais necessários de segunda a quinta-feira, na ordem de restauração."
+    },
+    {
+      "id": "D",
+      "text": "O completo de domingo e somente o incremental de segunda-feira."
+    }
+  ],
+  "answer": "C",
+  "comment": "a cadeia incremental tradicional depende da base completa e dos elos subsequentes. A erra porque quinta-feira contém apenas a mudança de sua referência anterior; B ignora a base completa e mudanças anteriores; D perde alterações após segunda-feira. O diferencial, por sua vez, poderia exigir somente o completo de referência e o diferencial do dia desejado, se essa fosse a estratégia utilizada.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

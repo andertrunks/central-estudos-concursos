@@ -1,0 +1,37 @@
+{
+  "id": "QREF-QUAD-SEG-004-004",
+  "contentId": "TI-SEG-004",
+  "banca": "Quadrix",
+  "type": "certo/errado",
+  "origin": "real",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "provenance": {
+    "orgao": "CRO-SP",
+    "prova": "2025 — caderno 404, item 120, página 6; gabarito definitivo 20/10/2025, seção 2.7, página 3; Q3659179",
+    "year": 2025,
+    "cargo": "Analista de Infraestrutura de Tecnologia de Informação",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/138454/quadrix-2025-cro-sp-analista-de-suporte-de-tecnologia-de-informacao-prova.pdf"
+  },
+  "statement": "Acerca da solução de backup Bacula, dos conceitos de snapshots e replicação e do RPO (Recovery Point Objective) e RTO (Recovery Time Objective), julgue o item.\n\nUm RPO de cinco minutos e um RTO de duas horas significam que, em caso de falha, a perda de dados será limitada a cinco minutos, e o sistema deverá estar plenamente restaurado e funcional em até duas horas.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "O item apresenta RPO de cinco minutos e RTO de duas horas. RPO, Recovery Point Objective, especifica o ponto-limite de recuperação que corresponde à perda de dados tolerável; RTO, Recovery Time Objective, fixa o objetivo temporal de recuperação do serviço. A assertiva expõe a interpretação dos objetivos, não uma evidência de que certa implementação os esteja cumprindo. O cumprimento real depende da arquitetura, das dependências e de testes. Não confundir RPO com duração para voltar a operar nem RTO com quantidade de dados perdidos.",
+  "source_ids": [
+    "SRC-QUADRIX-CROSP-2025-BACKUP-RPO-RTO"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "QREF-QUAD-SEG-004-007",
+  "contentId": "TI-SEG-004",
+  "banca": "Quadrix",
+  "type": "certo/errado",
+  "origin": "real",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "provenance": {
+    "orgao": "CRO-SP",
+    "prova": "2025 — caderno 404, item 117, página 6; gabarito definitivo 20/10/2025, seção 2.7, página 3; Q3659176",
+    "year": 2025,
+    "cargo": "Analista de Infraestrutura de Tecnologia de Informação",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/138454/quadrix-2025-cro-sp-analista-de-suporte-de-tecnologia-de-informacao-prova.pdf"
+  },
+  "statement": "Acerca da solução de backup Bacula, dos conceitos de snapshots e replicação e do RPO (Recovery Point Objective) e RTO (Recovery Time Objective), julgue o item.\n\nO Bacula, na sua versão Enterprise, permite automação de tarefas de backup, de duplicação de dados e integração com SAN (Storage Area Networks), mas não possui suporte nativo para backups em nuvem pública.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "O item nega suporte nativo a backups em nuvem pública pelo Bacula Enterprise. A negação é falsa: a documentação do fabricante descreve drivers e armazenamento para serviços como Amazon S3 e Microsoft Azure. O detalhe de produto deve ser conferido na edição Enterprise, sem transferir suas capacidades automaticamente à versão Community. Referência adicional: https://docs.baculasystems.com/BENewFeatures/EnterpriseNewFeatures/BEFeatures/index.html .",
+  "source_ids": [
+    "SRC-QUADRIX-CROSP-2025-BACKUP-RPO-RTO"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

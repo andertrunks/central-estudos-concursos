@@ -1,0 +1,24 @@
+[
+  {
+    "id": "SRC-GSTI005-INTERNO-SEG004",
+    "title": "GSTI-005 — ITIL 4 e continuidade de serviços",
+    "url": "https://docs.google.com/document/d/1xT8q1WNEtDfujantka1M3P0YbFLgVYqk_n-1MjzR50U/edit",
+    "status": "ativo",
+    "notes": "Reutilizar explicações de RTO, RPO, BIA e continuidade sem duplicar aula",
+    "contentIds": [
+      "TI-SEG-004",
+      "TI-SEG-004-03"
+    ]
+  },
+  {
+    "id": "SRC-SI006-INTERNO-SEG004",
+    "title": "SI-006 — Resposta a incidentes de segurança",
+    "url": "https://docs.google.com/document/d/1ijqeQGjApVPBBuEqn87fM_kSQVA2hfwUSe0Ifb-Mi8U/edit",
+    "status": "ativo",
+    "notes": "Reutilizar fluxo de recuperação segura após ransomware e relação com continuidade",
+    "contentIds": [
+      "TI-SEG-004",
+      "TI-SEG-004-03"
+    ]
+  }
+]

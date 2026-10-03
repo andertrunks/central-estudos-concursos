@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-010",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Após um ataque, há cópias históricas, mas a equipe suspeita de que parte delas foi produzida quando o ambiente já estava comprometido. Qual procedimento é coerente?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Restaurar sem avaliação a cópia mais nova diretamente no servidor comprometido."
+    },
+    {
+      "id": "B",
+      "text": "Coordenar resposta ao incidente, selecionar um ponto confiável, usar ambiente e credenciais apropriados, restaurar e validar antes da retomada plena."
+    },
+    {
+      "id": "C",
+      "text": "Descartar a análise de segurança assim que o armazenamento do backup informar arquivo íntegro."
+    },
+    {
+      "id": "D",
+      "text": "Preservar somente a réplica continuamente sincronizada, ainda que também esteja afetada."
+    }
+  ],
+  "answer": "B",
+  "comment": "recuperação segura inclui delimitação e contenção do ataque, investigação da origem e da persistência, escolha de ponto limpo, preservação de evidências quando necessária, restauração em ambiente confiável e verificação funcional. A e D podem reintroduzir o problema; C confunde integridade da cópia com ausência de comprometimento do ambiente. Para o fluxo completo de incidentes, consultar SI-006, sem duplicar integralmente aquela aula.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

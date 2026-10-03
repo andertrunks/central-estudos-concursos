@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-002",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "O sistema possui RPO de quinze minutos e RTO de duas horas. Uma interrupção começou às 10 horas. A última cópia confiável permite voltar ao estado das 9h40, e o serviço ficou plenamente operacional às 11h30. Considerando a medição do RPO em relação ao início do incidente, o exercício demonstrou:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Cumprimento de ambos os objetivos, porque o sistema voltou antes do meio-dia."
+    },
+    {
+      "id": "B",
+      "text": "Cumprimento do RTO, mas não do RPO."
+    },
+    {
+      "id": "C",
+      "text": "Cumprimento do RPO, mas não do RTO."
+    },
+    {
+      "id": "D",
+      "text": "Descumprimento de ambos os objetivos."
+    }
+  ],
+  "answer": "B",
+  "comment": "a recuperação consumiu uma hora e trinta minutos, abaixo das duas horas do RTO; porém o ponto restaurado fica vinte minutos antes da interrupção, excedendo os quinze minutos do RPO. A e C confundem tempo de indisponibilidade com perda temporal de dados; D ignora que o serviço foi restaurado dentro do RTO. O resultado depende da definição de início e término estabelecida na política, aqui expressa no enunciado.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

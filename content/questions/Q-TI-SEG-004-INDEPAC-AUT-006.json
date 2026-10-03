@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-006",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Os arquivos de um setor são sincronizados em tempo real com uma pasta na nuvem. Um operador apaga acidentalmente um diretório, e a exclusão propaga-se aos dispositivos associados. Qual conclusão é apropriada?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A sincronização, por si só, garante retenção histórica e recuperação independente em todos os serviços."
+    },
+    {
+      "id": "B",
+      "text": "É necessário verificar versionamento, retenção e restauração, pois sincronização de estado atual não substitui automaticamente uma política de backup."
+    },
+    {
+      "id": "C",
+      "text": "A nuvem torna desnecessário testar o tempo e o custo de recuperação."
+    },
+    {
+      "id": "D",
+      "text": "Replicar a pasta com as mesmas credenciais elimina a possibilidade de exclusão em todos os destinos."
+    }
+  ],
+  "answer": "B",
+  "comment": "uma sincronização pode propagar exclusões, alterações indevidas e dados corrompidos. A depende de funcionalidades que não foram especificadas; C ignora dependências de acesso, reidratação, banda e custos; D conserva o mesmo domínio de credenciais e não elimina o risco. A política deve avaliar versões protegidas, segregação, controle de acesso e recuperação comprovada.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

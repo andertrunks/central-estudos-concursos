@@ -523,5 +523,16 @@
     "channel": "UNIVESP",
     "verifiedAt": "2026-09-26",
     "original": false
+  },
+  {
+    "id": "TI-SEG-004-IMG-001",
+    "contentId": "TI-SEG-004",
+    "type": "imagem",
+    "title": "Backup e continuidade — conceitos para concursos de TI",
+    "caption": "Tipos de backup, proteção das cópias, RPO/RTO e tecnologias que não substituem backup.",
+    "alt": "o backup completo estabelece uma referência; na cadeia incremental tradicional, a recuperação exige a referência completa e os incrementais necessários, enquanto um diferencial tradicional pode ser combinado com a base completa. A heurística 3-2-1 preconiza três cópias, em dois tipos de mídia ou armazenamento e ao menos uma fora do local principal, acompanhadas de segregação de credenciais, monitoramento e teste de restauração. RPO representa a perda de dados tolerável expressa no tempo; RTO, o tempo-alvo para recuperar serviço ou capacidade. RAID, replicação e snapshots são recursos úteis, mas não garantem, isoladamente, cópias históricas independentes. A existência de um arquivo íntegro não comprova, sozinha, que o serviço completo possa ser restaurado e validado.",
+    "file": "media/TI-SEG-004-IMG-001.png",
+    "verifiedAt": "2026-10-03",
+    "original": true
   }
 ]

@@ -1,0 +1,37 @@
+{
+  "id": "QREF-QUAD-SEG-004-005",
+  "contentId": "TI-SEG-004",
+  "banca": "Quadrix",
+  "type": "certo/errado",
+  "origin": "real",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "provenance": {
+    "orgao": "CRO-SP",
+    "prova": "2025 — caderno 404, item 119, página 6; gabarito definitivo 20/10/2025, seção 2.7, página 3; Q3659178",
+    "year": 2025,
+    "cargo": "Analista de Infraestrutura de Tecnologia de Informação",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/138454/quadrix-2025-cro-sp-analista-de-suporte-de-tecnologia-de-informacao-prova.pdf"
+  },
+  "statement": "Acerca da solução de backup Bacula, dos conceitos de snapshots e replicação e do RPO (Recovery Point Objective) e RTO (Recovery Time Objective), julgue o item.\n\nUma vez criado, um snapshot consome o mesmo espaço em disco que o volume original, pois ele replica todos os blocos existentes para garantir a integridade dos dados.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "A afirmação sustenta que cada snapshot necessariamente consome espaço equivalente a todos os blocos do volume original. Snapshots podem usar estruturas de metadados, cópia sob escrita, redirecionamento de escrita e/ou blocos compartilhados, conforme a tecnologia. O consumo depende da implementação e das mudanças; a universalização feita pelo item é indevida. Snapshot não equivale automaticamente a backup independente, sobretudo se mantido no mesmo domínio de falha ou administração.",
+  "source_ids": [
+    "SRC-QUADRIX-CROSP-2025-BACKUP-RPO-RTO"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

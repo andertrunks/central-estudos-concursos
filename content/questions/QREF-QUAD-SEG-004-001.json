@@ -1,0 +1,49 @@
+{
+  "id": "QREF-QUAD-SEG-004-001",
+  "contentId": "TI-SEG-004",
+  "banca": "Quadrix",
+  "type": "múltipla escolha",
+  "origin": "real",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "provenance": {
+    "orgao": "CRM-MG",
+    "prova": "2025 — caderno 401, questão 15, página 3; gabarito definitivo 21/05/2025; Q3326379",
+    "year": 2025,
+    "cargo": "Analista de Licitação",
+    "url": "https://arquivos.qconcursos.com/prova/arquivo_prova/131193/quadrix-2025-crm-mg-analista-de-licitacao-prova.pdf"
+  },
+  "statement": "Assinale a opção que apresenta a principal diferença entre um backup incremental e um backup diferencial.",
+  "options": [
+    {
+      "id": "A",
+      "text": "O backup incremental copia todos os dados, enquanto o diferencial copia apenas os dados novos."
+    },
+    {
+      "id": "B",
+      "text": "O backup diferencial copia todos os dados, enquanto o incremental copia apenas os dados novos."
+    },
+    {
+      "id": "C",
+      "text": "O backup incremental copia os dados alterados desde o último backup completo, enquanto o diferencial copia os dados alterados desde o último backup incremental."
+    },
+    {
+      "id": "D",
+      "text": "O backup incremental copia os dados alterados desde o último backup (completo ou incremental), enquanto o diferencial copia os dados alterados desde o último backup completo."
+    },
+    {
+      "id": "E",
+      "text": "O backup incremental copia dados e um conjunto pré‑definido de arquivos e o backup diferencial copia dados de todos os arquivos do disco."
+    }
+  ],
+  "answer": "D",
+  "comment": "na rotina tradicional, o incremental registra alterações desde o último backup pertinente, completo ou incremental; o diferencial acumula alterações desde o completo de referência. As alternativas A e B confundem cópia de todas as informações com alterações; C inverte as referências; E atribui abrangências de arquivos que não definem os métodos.",
+  "source_ids": [
+    "SRC-QUADRIX-CRMMG-2025-OFICIAL-PDFS"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

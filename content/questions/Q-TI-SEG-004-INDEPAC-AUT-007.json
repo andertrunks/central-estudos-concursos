@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-007",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Na preparação para um desastre, uma instituição identifica serviços críticos, processos dependentes, consequências da interrupção conforme sua duração e ordem de recuperação. Essa etapa está diretamente ligada a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Exclusão de qualquer necessidade de testar o plano de continuidade."
+    },
+    {
+      "id": "B",
+      "text": "Definição exclusiva da topologia física de uma rede, sem relação com processos do negócio."
+    },
+    {
+      "id": "C",
+      "text": "Substituição automática de plano de recuperação de desastres por gestão de incidentes."
+    },
+    {
+      "id": "D",
+      "text": "Análise de impacto no negócio, ou BIA, que subsidia prioridades e objetivos de recuperação."
+    }
+  ],
+  "answer": "D",
+  "comment": "a BIA fornece base para selecionar prioridades, dependências e requisitos de recuperação. A é falsa porque as estratégias precisam ser exercitadas; B desconsidera impactos de processos e serviços; C confunde documentos relacionados, mas de escopos distintos. O PCN organiza continuidade de processos críticos e o PRD/DRP descreve a recuperação técnica necessária, de acordo com o cenário e a organização.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

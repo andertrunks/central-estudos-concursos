@@ -1,0 +1,41 @@
+{
+  "id": "Q-TI-SEG-004-INDEPAC-AUT-005",
+  "contentId": "TI-SEG-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-004-04"
+  ],
+  "statement": "Um banco de dados permanece atendendo transações quando um operador copia diretamente arquivos de dados abertos, sem mecanismo de consistência. Qual é o risco principal dessa abordagem?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Todo backup feito durante expediente é, por definição, irrecuperável."
+    },
+    {
+      "id": "B",
+      "text": "Qualquer cópia de arquivo equivale automaticamente a uma restauração pontual de banco."
+    },
+    {
+      "id": "C",
+      "text": "Os arquivos capturados podem corresponder a estados transacionais incompatíveis, exigindo recurso de backup consciente da aplicação, coordenação e, quando aplicável, logs."
+    },
+    {
+      "id": "D",
+      "text": "O risco é eliminado apenas acrescentando um disco RAID, sem alterar o procedimento de cópia."
+    }
+  ],
+  "answer": "C",
+  "comment": "o backup deve preservar estado coerente de arquivos e transações. Soluções específicas podem operar com banco online e coordenar páginas, checkpoints e registros de transações. A generaliza indevidamente: backup a quente pode ser seguro quando suportado; B não considera integridade e sequência transacional; D confunde tolerância a falha física com consistência lógica. A documentação do SQL Server é exemplo de implementação específica, não regra idêntica de todos os bancos.",
+  "source_ids": [
+    "SRC-CISA-STOPRANSOMWARE-2026",
+    "SRC-NIST-SP80034R1UPD1",
+    "SRC-ISO22301-2019A1-2024",
+    "SRC-MS-SQL-BACKUP-OVERVIEW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
