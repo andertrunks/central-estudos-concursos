@@ -24,6 +24,49 @@ beforeEach(async () => {
   db.close();
 });
 describe('trilha única e persistência', () => {
+  function twoDisciplines() {
+    const copy = structuredClone(data);
+    const ref = copy.references.find(r => r.id === 'TI-BD-003')!;
+    copy.references.push({ ...ref, id: 'TEST-POR', discipline: 'Português', priority: 1 });
+    copy.lessons.push({ ...copy.lessons[0]!, id: 'TEST-POR', sections: undefined });
+    return copy;
+  }
+  function history(kind: 'aula' | 'revisão' | 'reforço', sequence = 1) {
+    return { id: `HISTORY-${sequence}`, kind, contentId: 'TI-BD-003', title: 'Fixture',
+      questionIds: [], reviewIds: [], startedAt: day, completedAt: day, sequence };
+  }
+  it('alterna disciplina após uma conclusão mesmo com maior pontuação na matéria anterior', () => {
+    const state = { ...empty, activities: [history('aula')], reviews: [
+      { id: 'DUE', contentId: 'TI-BD-003', stage: 'D1' as const, due: day, doneAt: null },
+    ] };
+    expect(recommendations(twoDisciplines(), state, day)[0]?.contentId).toBe('TEST-POR');
+    expect(recommendations(data, state, day)[0]?.kind).toBe('revisão');
+  });
+  it('retomada iniciada prevalece sobre a alternância', () => {
+    const current = { ...history('aula', 2), id: 'IN-PROGRESS', completedAt: null };
+    const state = { ...empty, activities: [history('aula'), current] };
+    expect(recommendations(twoDisciplines(), state, day)[0]?.id).toBe(current.id);
+  });
+  it('revisão e reforço consecutivos também reservam avanço curricular', () => {
+    const state = { ...empty, activities: [history('revisão'), history('reforço', 2)], reviews: [
+      { id: 'DUE', contentId: 'TI-BD-003', stage: 'D1' as const, due: day, doneAt: null },
+    ] };
+    expect(recommendations(data, state, day)[0]?.kind).toBe('aula');
+    expect(recommendations(twoDisciplines(), state, day)[0]?.contentId).toBe('TEST-POR');
+  });
+  it('alternativa já concluída não bloqueia atividade disponível', () => {
+    const copy = twoDisciplines();
+    const done = { ...history('aula'), id: 'aula:TEST-POR:TEST-POR', contentId: 'TEST-POR', unitId: 'TEST-POR' };
+    const state = { ...empty, activities: [done, history('aula', 2)] };
+    expect(recommendations(copy, state, day).every(c => c.contentId === 'TI-BD-003')).toBe(true);
+    expect(recommendations(copy, state, day).length).toBeGreaterThan(0);
+  });
+  it('catálogo vazio não produz atividades e recomendação não altera histórico', () => {
+    const state = structuredClone(empty);
+    expect(recommendations({ ...data, lessons: [] }, state, day)).toEqual([]);
+    recommendations(twoDisciplines(), state, day);
+    expect(state).toEqual(empty);
+  });
   it('oferece somente aula publicada e primeiro subtema, compartilhado entre concursos', () => {
     const result = recommendations(data, empty, day);
     expect(result[0]?.unitId).toBe('TI-BD-003-01');

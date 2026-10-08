@@ -102,12 +102,27 @@ export function recommendations(data: Catalog, state: Backup, now = today()): Re
       questionIds: sim.questionIds, reviewIds: [], score: 1700, reasons: ['Consolidação dos conteúdos estudados'],
     });
   }
-  // At most two consecutive activities of the same kind when alternatives exist.
-  if (last && run >= 2 && candidates.some(c => c.kind !== last.kind)) {
-    for (const c of candidates) if (c.kind === last.kind) c.score -= 10000;
-  }
-  const sorted = candidates.filter(c => !activities.some(a => a.id === c.id && a.completedAt))
-    .sort((a,b) => b.score - a.score || a.id.localeCompare(b.id));
+  // Only actionable candidates may influence rotation. Completed alternatives
+  // must not suppress the work that is still available.
+  const available = candidates.filter(c => !activities.some(a => a.id === c.id && a.completedAt));
+  const isRecovery = (kind: Activity['kind']) => kind === 'revisão' || kind === 'reforço';
+  const recoveryRun = completed.findIndex(a => !isRecovery(a.kind));
+  const recoveryCount = recoveryRun < 0 ? completed.length : recoveryRun;
+  const advance = recoveryCount >= 2 && available.some(c => c.kind === 'aula');
+  const varyKind = last && run >= 2 && available.some(c => c.kind !== last.kind);
+  const discipline = (contentId: string) => data.references.find(r => r.id === contentId)?.discipline;
+  const lastDiscipline = last && discipline(last.contentId);
+  // Reserve curricular progress after two recovery blocks, even if review and
+  // reinforcement alternated. Within that tier, alternate known disciplines.
+  const tier = (c: Recommendation) => advance ? Number(c.kind !== 'aula')
+    : Number(Boolean(varyKind && c.kind === last?.kind));
+  const firstTier = Math.min(...available.map(tier));
+  const alternate = Boolean(lastDiscipline && available.some(c => tier(c) === firstTier
+    && discipline(c.contentId) && discipline(c.contentId) !== lastDiscipline));
+  const repeatsDiscipline = (c: Recommendation) => Number(alternate && discipline(c.contentId) === lastDiscipline);
+  const sorted = available.sort((a,b) => tier(a) - tier(b)
+    || repeatsDiscipline(a) - repeatsDiscipline(b)
+    || b.score - a.score || a.id.localeCompare(b.id));
   const current = activities.filter(a => !a.completedAt)
     .sort((a,b) => b.sequence - a.sequence)
     .find(a => data.lessons.some(l => l.id === a.contentId) && data.references.some(r => r.id === a.contentId && r.contests.some(c => active.some(x => x.id === c.contestId))));
