@@ -121,7 +121,8 @@ try {
   await expect(page.getByText('0 questões · página 0 de 0')).toBeVisible();
   await expect(page.locator('.answer')).toHaveCount(0);
   checks.push('PUB-0008: quatro subtemas, imagem e vídeos; questão autoral sem gabarito até tentativa; localizador Quadrix sem item pontuável');
-  await page.goto(`${base}#/biblioteca/TI-RED-001`);
+  // TI-RED-001 was published in f7abc7f; canonical TI-PROG-001 remains absent.
+  await page.goto(`${base}#/biblioteca/TI-PROG-001`);
   await expect(
     page.getByRole("heading", { name: "Aula planejada, ainda não publicada" }),
   ).toBeVisible();
