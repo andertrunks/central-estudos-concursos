@@ -92,3 +92,18 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - Build: 19 aulas publicáveis no catálogo; bundle JavaScript bruto 4.048,18 kB / gzip 996,91 kB; PWA com 29 entradas e 24.962,75 KiB. Alerta de chunk grande mantido, sem remover funcionalidade.
 - Estado desta entrada: integração e testes concluídos; commit, push, deploy e verificação pública ainda pendentes.
 - Próxima ação exata: criar commit atômico dos PUB-0016 a PUB-0019 sobre `d8f03ec23819c99862dd966f91bb79a701a7fd62`, mover `main`, acompanhar `Validate and publish`, abrir as quatro rotas públicas, confirmar seções/imagens/questões e então atualizar recibos e controle editorial sem alterar progresso do estudante.
+
+
+## Fechamento de publicação — PUB-0016 a PUB-0019 — 2026-10-09
+
+- Projeto/repositório/branch: Central de Estudos — Concursos Contínuos; `andertrunks/central-estudos-concursos`; `main`.
+- Commit inicial: `d8f03ec23819c99862dd966f91bb79a701a7fd62`. Commit funcional final: `e68fd5019de137ab96534c067d85824103647a20`.
+- Itens concluídos e publicados: PUB-0016/TI-CRB-003, PUB-0017/TI-CRB-004, PUB-0018/TI-SEG-005 e PUB-0019/TI-CRB-002.
+- Arquivos/conteúdo: 63 arquivos no lote; 135 seções; 299.464 caracteres de teoria; 36 questões objetivas autorais; duas discursivas; quatro PNGs originais; sete vídeos; 54 fontes. Os 1.016 parágrafos dos documentos canônicos foram conferidos sem perda.
+- Testes: `npm run queue`, lint, TypeScript, 51/51 testes, integridade do catálogo e build PWA aprovados. `npm run test:trail` não iniciou por ausência da distribuição local do Edge; não foi marcado como aprovado.
+- Push: concluído no commit funcional acima. Build/deploy: GitHub Actions `37878264408` concluído com sucesso.
+- Verificação publicada: `version.json` retornou commit `e68fd5019de137ab96534c067d85824103647a20`, builtAt `2026-10-09T03:13:47.397Z`. As quatro rotas públicas abriram com os títulos e as 135 seções; 36 IDs de questões autorais; sete vínculos de vídeo; duas discursivas na rota própria. Os quatro PNGs públicos retornaram HTTP 200 e SHA-256 idêntico aos originais do Drive.
+- Controle editorial canônico atualizado e relido às 00:20 America/Sao_Paulo: FILA_PUBLICACAO!G17:M20 e MATRIZ_EDITAIS!J42:K42/J69:K71 agora registram `publicado`, commit, workflow e URL. A inspeção visual do Google Sheets ficou bloqueada por reconfirmação de identidade; valores, validações e wrap foram conferidos via API.
+- URL verificada: https://andertrunks.github.io/central-estudos-concursos/ e rotas `#/biblioteca/TI-CRB-003`, `TI-CRB-004`, `TI-SEG-005`, `TI-CRB-002`; `#/discursivas` para QDISC-TI-CRB-002-001/002.
+- Bloqueios preservados: reprodução integral dos vídeos não foi certificada; somente disponibilidade de links e metadados oEmbed. Questões anuladas, sem resposta válida ou sem caderno/gabarito definitivo continuam não pontuáveis.
+- Próxima ação exata: reler FILA_PUBLICACAO a partir da linha 21, localizar o primeiro item com status editorial apto posterior a PUB-0019, conferir o documento canônico e a mídia, importar somente se completo e executar `npm run check` antes de novo commit.
