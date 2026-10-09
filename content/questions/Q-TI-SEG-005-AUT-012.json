@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-012",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Uma questão de prova de 2022 que mencione expressamente ISO/IEC 27001:2013 e ISO/IEC 27002:2013 deve ser corrigida usando a contagem de controles da edição 2022, mesmo que a banca tenha cobrado estrutura anterior.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "O ano constante no enunciado governa o referencial da questão histórica; não adulterar gabarito ou contexto original por atualização posterior da aula.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

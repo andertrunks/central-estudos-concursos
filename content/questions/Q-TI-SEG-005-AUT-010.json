@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-010",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Se o sistema de backup registra execução diária bem-sucedida, auditoria e análise crítica podem presumir que a restauração integral e o cumprimento do RTO já foram demonstrados, mesmo sem ensaio.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Execução de cópia não demonstra recuperação funcional nem duração efetiva da restauração; são necessárias evidências adequadas de teste e acompanhamento, conforme o plano pertinente.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

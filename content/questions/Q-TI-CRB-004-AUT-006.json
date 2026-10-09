@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-006",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A contratada apresenta painel mensal “verde” com disponibilidade alta, embora usuários registrem falha de autenticação diária em horário crítico. Qual ação pode aperfeiçoar a fiscalização?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Considerar a percepção dos usuários sem valor e encerrar definitivamente todas as reclamações."
+    },
+    {
+      "id": "B",
+      "text": "Alterar unilateralmente e retroativamente os critérios de pagamento sem base contratual."
+    },
+    {
+      "id": "C",
+      "text": "Usar exclusivamente declaração verbal da contratada, descartando logs."
+    },
+    {
+      "id": "D",
+      "text": "Conferir fonte e fórmula dos indicadores, horário elegível, eventos e requisitos funcionais pactuados, incluindo evidência da experiência do usuário."
+    }
+  ],
+  "answer": "D",
+  "comment": "A exclui serviço efetivamente prestado ao usuário; B desconsidera regra e formalização; C compromete auditabilidade; D reconhece que métrica isolada pode não representar a necessidade real, sem criar obrigação retrospectiva.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

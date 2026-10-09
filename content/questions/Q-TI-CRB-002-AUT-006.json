@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-006",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Ao examinar processos de backup, o auditor recebe relatório do fornecedor declarando 100% de êxito. Qual abordagem é adequada?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Aceitar sem análise, porque o fornecedor possui competência técnica."
+    },
+    {
+      "id": "B",
+      "text": "Descartar logs e limitar a auditoria a entrevistas não documentadas."
+    },
+    {
+      "id": "C",
+      "text": "Declarar conformidade de recuperação com base apenas em tarefas de cópia executadas."
+    },
+    {
+      "id": "D",
+      "text": "Verificar procedência, completude e integridade da evidência, confrontar critérios/relatórios com logs e, quando pertinente, testes de restauração autorizados; documentar limites e conclusões."
+    }
+  ],
+  "answer": "D",
+  "comment": "A e C equiparam declaração/cópia a resultado comprovado; B enfraquece evidências. O objetivo e escopo definem o teste necessário.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

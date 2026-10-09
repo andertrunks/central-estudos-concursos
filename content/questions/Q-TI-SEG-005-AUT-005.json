@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-005",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "O fato de o Anexo A da ISO/IEC 27001:2022 reunir 93 controles significa que qualquer organização precisa implementá-los indiscriminadamente, ainda que o controle não tenha pertinência ao seu escopo e aos riscos.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "A organização identifica controles necessários conforme tratamento de riscos, compara com a referência para verificar omissões e justifica aplicabilidade/exclusões na SoA.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

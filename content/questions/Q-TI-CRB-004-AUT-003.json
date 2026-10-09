@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-003",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "À luz da Lei nº 14.133/2021, art. 140, e considerando prestação de serviço, assinale a opção que distingue corretamente os recebimentos.",
+  "options": [
+    {
+      "id": "A",
+      "text": "O provisório encerra todas as obrigações do contratado, dispensando aceite definitivo."
+    },
+    {
+      "id": "B",
+      "text": "O definitivo deve ser sempre realizado pelo fornecedor sem participação da Administração."
+    },
+    {
+      "id": "C",
+      "text": "Ambos são apenas expressões equivalentes à emissão da nota fiscal."
+    },
+    {
+      "id": "D",
+      "text": "O provisório verifica inicialmente a execução, e o definitivo formaliza o reconhecimento de conformidade por servidor/comissão designados, conforme regras aplicáveis, sem afastar automaticamente responsabilidades legais."
+    }
+  ],
+  "answer": "D",
+  "comment": "A confunde fases e ignora responsabilidades; B atribui ato público à parte privada; C troca evidência fiscal por recebimento do objeto. No âmbito do Decreto 11.246 atualizado em 2026, observar especificamente seu art.25, sem transplantar automaticamente suas designações para toda entidade.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

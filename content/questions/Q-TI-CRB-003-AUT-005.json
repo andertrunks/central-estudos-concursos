@@ -1,0 +1,38 @@
+{
+  "id": "Q-TI-CRB-003-AUT-005",
+  "contentId": "TI-CRB-003",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma versão de TR lista objeto, prazo e requisitos técnicos, mas nada dispõe sobre forma e critérios de seleção, modelos de execução e gestão nem medição e pagamento. Qual apreciação é apropriada?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Esses elementos pertencem exclusivamente ao currículo profissional do fornecedor."
+    },
+    {
+      "id": "B",
+      "text": "A ausência de critérios de medição é suprida automaticamente pelo preço global."
+    },
+    {
+      "id": "C",
+      "text": "O ETP deve ser alterado para receber todas as atribuições dos fiscais, e o TR pode ficar vazio."
+    },
+    {
+      "id": "D",
+      "text": "Basta escrever “serviço de alta qualidade” ao final do documento."
+    },
+    {
+      "id": "E",
+      "text": "A minuta está incompleta em relação aos elementos do artigo 6º, inciso XXIII, e deve integrar os componentes legalmente exigidos, observadas hipóteses e regime concreto."
+    }
+  ],
+  "answer": "E",
+  "comment": "E considera o núcleo legal do TR. A e C trocam as funções de documentos; B confunde preço e comprovação de execução; D permanece vaga e não define meios de aferição.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-003"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-001",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "O responsável por serviço crítico pede que uma conta privilegiada permaneça ativa por dez dias após a saída de prestador, alegando urgência. Qual conduta é tecnicamente consistente?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Cumprir a solicitação verbal e não registrar nada, pois a direção pode sempre dispensar política."
+    },
+    {
+      "id": "B",
+      "text": "Formalizar a necessidade, avaliar risco e possibilidade legal, obter autorização da instância competente, estabelecer prazo e medidas compensatórias quando admissíveis e registrar revisão e encerramento da exceção."
+    },
+    {
+      "id": "C",
+      "text": "Dar aprovação retroativa automática após transcorrido o período, mesmo se houver proibição legal."
+    },
+    {
+      "id": "D",
+      "text": "Apagar os registros da concessão para prevenir exposição."
+    }
+  ],
+  "answer": "B",
+  "comment": "A dispensa avaliação/evidência; C ignora competência e requisitos indisponíveis; D destrói rastreabilidade. A exceção só existe se juridicamente e institucionalmente possível; autorização não apaga riscos.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

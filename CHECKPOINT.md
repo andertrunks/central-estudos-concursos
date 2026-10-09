@@ -81,3 +81,14 @@ O checkpoint de deploy é gerado após a implantação, evitando commit autorref
 - PUB-0015 — TI-SEG-004 Backup e continuidade é o próximo ID da fila, mas o próprio documento canônico marca “em produção” e determina não publicar antes da conclusão de teoria, questões, mídia, fontes e revisões. Aguardar revisão editorial.
 - PUB-0016 — TI-CRB-003, PUB-0017 — TI-CRB-004, PUB-0018 — TI-SEG-005 e PUB-0019 — TI-CRB-002: documentos canônicos consultados marcam conteúdo EM PRODUÇÃO; não importar como aula finalizada.
 - Próxima ação: (1) inspeção renderizada dos pacotes já implantados e, após confirmação, atualizar o controle do Drive; (2) aguardar conclusão editorial do PUB-0015; (3) retomar a fila sem tocar em ING-001.
+
+## Publicação integral da fila pronta — 2026-10-08
+
+- Repositório/branch: `andertrunks/central-estudos-concursos`, `main`. Commit inicial: `d8f03ec23819c99862dd966f91bb79a701a7fd62`.
+- A leitura atual do controle editorial substitui a anotação histórica acima: PUB-0016 (TI-CRB-003), PUB-0017 (TI-CRB-004), PUB-0018 (TI-SEG-005) e PUB-0019 (TI-CRB-002) constam como concluídos editorialmente e prontos para validação Work.
+- Integrados nesta etapa, preservando integralmente os documentos canônicos: 135 seções, 299.464 caracteres de teoria, 36 questões autorais objetivas, duas propostas discursivas, quatro imagens originais, sete vídeos e 54 novas fontes catalogadas. Todos os 1.016 parágrafos não vazios dos quatro Google Docs foram localizados sem perda no conteúdo das aulas.
+- Itens anulados, localizadores sem caderno/gabarito definitivo e questões com resposta ainda não comprovada permanecem apenas no histórico textual, sem alternativa artificial e fora da pontuação.
+- Validação concluída antes do push: pacotes `npm run queue` aprovados; `npm run lint`, `npm run typecheck`, 51/51 testes, integridade do catálogo e build PWA aprovados. O teste de trilha em navegador local não iniciou porque a distribuição `msedge` não existe neste ambiente; não registrar esse teste como aprovado.
+- Build: 19 aulas publicáveis no catálogo; bundle JavaScript bruto 4.048,18 kB / gzip 996,91 kB; PWA com 29 entradas e 24.962,75 KiB. Alerta de chunk grande mantido, sem remover funcionalidade.
+- Estado desta entrada: integração e testes concluídos; commit, push, deploy e verificação pública ainda pendentes.
+- Próxima ação exata: criar commit atômico dos PUB-0016 a PUB-0019 sobre `d8f03ec23819c99862dd966f91bb79a701a7fd62`, mover `main`, acompanhar `Validate and publish`, abrir as quatro rotas públicas, confirmar seções/imagens/questões e então atualizar recibos e controle editorial sem alterar progresso do estudante.

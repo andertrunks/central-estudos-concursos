@@ -12,7 +12,7 @@ describe("publicação canônica de SQL", () => {
     expect(sql.questions).toHaveLength(252);
     expect(data.questions.filter(q => q.contentId === sql.id).every(q => q.banca.startsWith("Autoral"))).toBe(true);
     expect(sql.materials?.find(m => m.id === "Q-TI-BD-003")?.text).toContain("Q-TI-BD-003-AN-036");
-    expect(data.discursives).toHaveLength(9);
+    expect(data.discursives.filter(d => d.contentIds.includes(sql.id))).toHaveLength(9);
     expect(data.media.filter(m => m.contentId === sql.id && m.type === "imagem")).toHaveLength(2);
     expect(data.media.filter(m => m.contentId === sql.id && m.type === "YouTube")).toHaveLength(3);
     expect(validateCatalog(data).lessons.map(lesson => lesson.id)).toContain(sql.id);

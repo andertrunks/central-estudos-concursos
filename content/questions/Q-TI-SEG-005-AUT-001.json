@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-001",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "No âmbito de um SGSI, estabelecer política, responsabilidades e processo de melhoria é dispensável quando a organização já utiliza antivírus e criptografia.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Controles técnicos isolados não substituem requisitos de contexto, liderança, avaliação de riscos, desempenho e melhoria exigidos ao sistema de gestão.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

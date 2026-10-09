@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-008",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "É suficiente atribuir a aceitação de risco residual ao técnico que opera o controle, independentemente das responsabilidades e autoridades estabelecidas pelo SGSI.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "O responsável pela operação não equivale necessariamente ao dono do risco nem detém automaticamente competência para aceitar risco residual.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

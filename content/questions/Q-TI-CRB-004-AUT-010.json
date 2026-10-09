@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-010",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Sobre a IN SGD/ME nº 94/2022, que detalha papéis e métricas de contratação de soluções TIC, qual leitura é tecnicamente e juridicamente cuidadosa para estudar o edital do CRBio-01?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A IN 94 tem abrangência indistinta sobre qualquer conselho profissional e elimina a Lei 14.133."
+    },
+    {
+      "id": "B",
+      "text": "Todo seu conteúdo é obrigatório porque o termo TIC aparece no edital, mesmo sem indicação de norma."
+    },
+    {
+      "id": "C",
+      "text": "É norma privada sem utilidade para interpretar papéis e modelo de gestão."
+    },
+    {
+      "id": "D",
+      "text": "É referência setorial do SISP, útil como modelo didático dos papéis/artefatos, cuja aplicabilidade jurídica à entidade concreta não deve ser presumida sem examinar âmbito e regime pertinente."
+    }
+  ],
+  "answer": "D",
+  "comment": "A e B generalizam indevidamente o âmbito normativo; C descarta referência oficial útil; D diferencia lei geral e norma setorial. O Decreto 11.246 tem âmbito próprio e redação do art.25 alterada em 2026.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

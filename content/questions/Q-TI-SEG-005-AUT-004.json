@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-004",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A edição 2022 do conjunto de referência conserva 114 controles em 14 domínios, pois a alteração de número de controles ocorreu apenas na emenda climática de 2024.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Os 114 controles em 14 domínios correspondem à estrutura de 2013; em 2022 o conjunto passou a 93 controles em quatro temas. A emenda 2024 diz respeito ao contexto climático da 27001, não à contagem.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

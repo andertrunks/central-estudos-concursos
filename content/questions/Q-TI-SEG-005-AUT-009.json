@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-009",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Na versão 2022, a classificação temática de controles distingue 37 organizacionais, oito de pessoas, 14 físicos e 34 tecnológicos.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "A soma é 93. Não confundir os quatro grupos com os atributos ou com os 14 domínios históricos da edição 2013.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

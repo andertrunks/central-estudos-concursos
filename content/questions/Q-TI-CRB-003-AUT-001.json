@@ -1,0 +1,38 @@
+{
+  "id": "Q-TI-CRB-003-AUT-001",
+  "contentId": "TI-CRB-003",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "No planejamento de contratação de TIC, o ETP conclui pela necessidade de exportação dos dados em formato utilizável ao término do contrato. O TR detalha apenas implantação e operação corrente, sem cláusula ou requisito de saída. Qual providência atende à lógica dos artefatos?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Manter o TR como está; o ETP não interfere na definição do objeto."
+    },
+    {
+      "id": "B",
+      "text": "Exigir verbalmente a exportação depois da adjudicação."
+    },
+    {
+      "id": "C",
+      "text": "Rever o TR para refletir o requisito fundamentado, descrevendo obrigações, entregas e forma de verificar a exportação antes da seleção."
+    },
+    {
+      "id": "D",
+      "text": "Presumir que qualquer solução de nuvem exportará automaticamente os dados em formato interoperável."
+    },
+    {
+      "id": "E",
+      "text": "Substituir a definição do objeto pelo nome do fornecedor preferido."
+    }
+  ],
+  "answer": "C",
+  "comment": "C preserva a coerência entre estudo e contratação. A ignora a fundamentação do TR no ETP; B introduz condição não comunicada previamente; D afirma garantia tecnológica não especificada; E troca necessidade e resultados por escolha prévia de marca.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-003"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "Q-TI-CRB-003-AUT-002",
+  "contentId": "TI-CRB-003",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual associação corresponde aos conceitos previstos no artigo 6º, inciso XXIII?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Execução: modo pelo qual o contratado produz resultados; gestão: modo pelo qual a Administração acompanha e fiscaliza."
+    },
+    {
+      "id": "B",
+      "text": "Execução: cálculo de orçamento; gestão: escolha da modalidade."
+    },
+    {
+      "id": "C",
+      "text": "Execução: gabarito da seleção; gestão: mera assinatura do contrato."
+    },
+    {
+      "id": "D",
+      "text": "Execução: registro da demanda; gestão: pesquisa de preço na internet."
+    },
+    {
+      "id": "E",
+      "text": "Execução: procedimentos internos do licitante sem relação com o objeto; gestão: somente declaração de conclusão da despesa."
+    }
+  ],
+  "answer": "A",
+  "comment": "A distingue as duas funções. B e D deslocam elementos de planejamento/seleção para os modelos; C ignora a execução e o acompanhamento; E exclui evidências e fiscalização das atividades contratuais.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-003"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

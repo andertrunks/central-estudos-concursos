@@ -1,0 +1,38 @@
+{
+  "id": "Q-TI-CRB-003-AUT-003",
+  "contentId": "TI-CRB-003",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma equipe recebeu três orçamentos para serviço de suporte: o primeiro inclui implantação e migração; o segundo cobra implantação à parte; o terceiro não inclui atendimento aos fins de semana, requisito da solução. Qual ação faz sentido na análise de preços?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Calcular a média sem examinar escopo."
+    },
+    {
+      "id": "B",
+      "text": "Excluir custos de implantação e migração de todos os cenários para reduzir o preço apresentado."
+    },
+    {
+      "id": "C",
+      "text": "Escolher a menor mensalidade independentemente do objeto."
+    },
+    {
+      "id": "D",
+      "text": "Equalizar condições técnicas, quantitativos e períodos, registrar diferenças e memória de cálculo antes de comparar valores."
+    },
+    {
+      "id": "E",
+      "text": "Adotar automaticamente o orçamento mais recente como valor contratual."
+    }
+  ],
+  "answer": "D",
+  "comment": "D permite análise de comparabilidade. A e E tomam a existência da proposta como prova suficiente; B omite custos necessários; C compara objetos distintos e despreza o ciclo de vida.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-003"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

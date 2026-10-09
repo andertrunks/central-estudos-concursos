@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-007",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "No caso de conta de fornecedor não revogada, bloquear imediatamente o acesso pode corrigir a ocorrência, enquanto identificar e eliminar a causa de falha do fluxo de desligamento integra uma ação corretiva.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Ação corretiva investiga e enfrenta causas para prevenir repetição; correção remedia a não conformidade identificada.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

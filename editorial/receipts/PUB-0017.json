@@ -1,0 +1,9 @@
+{
+  "queueId": "PUB-0017",
+  "contentId": "TI-CRB-004",
+  "driveDocumentId": "1EgxChirKFCJTd4XxOsLJgbWLPr1CT7-y5TPiHS3OiRA",
+  "integratedAt": "2026-10-09T03:07:30.392Z",
+  "status": "integrado; aguardando testes e deploy",
+  "publishedCommit": null,
+  "siteUrl": null
+}

@@ -534,5 +534,133 @@
     "file": "media/TI-SEG-004-IMG-001.png",
     "verifiedAt": "2026-10-03",
     "original": true
+  },
+  {
+    "id": "TI-CRB-003-YT-001",
+    "contentId": "TI-CRB-003",
+    "type": "YouTube",
+    "title": "Webinário: O ETP na Nova Lei de Licitações e Contratos",
+    "caption": "Publicação 31/03/2023. Usar após seções 5–7/16–17/28. Não afirmar que reprodução integral foi assistida.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=xbyINr6ol90",
+    "channel": "Escola de Gestão do Paraná",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-CRB-003-YT-002",
+    "contentId": "TI-CRB-003",
+    "type": "YouTube",
+    "title": "Termo de Referência na Lei nº 14.133/2021",
+    "caption": "Publicação 12/09/2025. Usar após seções 8–9/18/26/28; Work verificar reprodução, duração e pertinência antes de publicar.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=GuiGVLFqQf4",
+    "channel": "Escola de Gestão do Paraná",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-CRB-003-IMG-001",
+    "contentId": "TI-CRB-003",
+    "type": "imagem",
+    "title": "Contratação de soluções de TIC — fluxo DFD, ETP, TR, seleção e gestão (arte revisada)",
+    "caption": "Arquivo PNG ID 1q7vMWETZxrBWf_j5H_IRLhi-BMxoGvU_; Google Doc seção 34, objeto kix.g0h0zpapx3z2, aproximadamente 450 x 253 pt, legenda e descrição textual. Versões preliminares com problemas gráficos NÃO aprovadas; Work deve conferir renderização final.",
+    "alt": "Infográfico original revisado: modalidades legais separadas de contratação direta, fases da contratação, execução versus gestão, risco transversal e ressalva de IN SGD/ME nº 94/2022 específica aos integrantes SISP.",
+    "file": "media/TI-CRB-003-IMG-001.png",
+    "verifiedAt": "2026-09-26",
+    "original": true
+  },
+  {
+    "id": "TI-CRB-004-YT-001",
+    "contentId": "TI-CRB-004",
+    "type": "YouTube",
+    "title": "Gestão e fiscalização de contratos: pontos essenciais da lei 14.133/21",
+    "caption": "Publicação 15/11/2024; após seções3–10, antes do bloco real CREFITO. Checar áudio, tempo e eventual desatualização legal.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=nelU8d2khJM",
+    "channel": "Portal de Compras Públicas",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-CRB-004-YT-002",
+    "contentId": "TI-CRB-004",
+    "type": "YouTube",
+    "title": "O que é o Acordo de Nível de Serviços ANS ou SLA — ITIL 4 Foundation",
+    "caption": "Publicação 21/08/2023; usar com conteúdo GSTI-005. Não confundir SLA, OLA e contrato de apoio.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=RhdO-FP6v-0",
+    "channel": "Prof. Adriano Martins Antonio",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-CRB-004-IMG-001",
+    "contentId": "TI-CRB-004",
+    "type": "imagem",
+    "title": "Fiscalização de contratos TIC — papéis, recebimento, indicadores/SLA, glosa e sanção",
+    "caption": "PNG Drive ID 1jLgLkFOje7ApLxQEBCMJhyQ8SmwFtQgl; Google Doc TI-CRB-004 seção 29, objeto kix.e3m05l1tn1w9, 460×230 pt, legenda e descrição textual acessível. Work validar qualidade visual no site, zoom e responsividade; não declarar PDF visual QA nesta etapa.",
+    "alt": "Infográfico horizontal de quatro painéis: gestor, fiscal técnico, administrativo e requisitante quando previsto; provisório x definitivo; fórmula de disponibilidade e primeira resposta x solução; glosa x sanção; ressalva Lei 14.133 geral versus IN SGD/ME 94 âmbito SISP.",
+    "file": "media/TI-CRB-004-IMG-001.png",
+    "verifiedAt": "2026-09-26",
+    "original": true
+  },
+  {
+    "id": "TI-SEG-005-YT-001",
+    "contentId": "TI-SEG-005",
+    "type": "YouTube",
+    "title": "Segurança da Informação: ISO/IEC 27001:2022 | Aula Completa para Concursos de TI",
+    "caption": "Publicado 01/07/2026. Após seções3–10. Não usar vídeo de 2018 com edição2013 como substituto do atual sem ressalvas.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=zhiyydfYG4s",
+    "channel": "FOCA TI - CONCURSOS",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-SEG-005-IMG-001",
+    "contentId": "TI-SEG-005",
+    "type": "imagem",
+    "title": "ISO/IEC 27001 e 27002 — SGSI, SoA, riscos, quatro temas de controles",
+    "caption": "PNG Drive 18EaDSyycXMJqzVM7Q1PVSRR0qhffZVu6, Google Doc seção 29 e objeto kix.6j19c0vlouj4, largura 460 pt, descrição textual acessível. Work verificar legibilidade, contraste e zoom no site; não foi executada revisão visual PDF.",
+    "alt": "Infográfico horizontal com 27001:2022 requisitos SGSI versus 27002:2022 orientação de controles; avaliar riscos → escolher controles → conferir Anexo A → justificar na SoA → tratar/monitorar; 37 organizacionais, 8 pessoas, 14 físicos, 34 tecnológicos (93); ciclo contexto, liderança, planejamento, apoio, operação, avaliação, melhoria; emenda 1:2024 não cria nova edição.",
+    "file": "media/TI-SEG-005-IMG-001.png",
+    "verifiedAt": "2026-09-26",
+    "original": true
+  },
+  {
+    "id": "TI-CRB-002-YT-001",
+    "contentId": "TI-CRB-002",
+    "type": "YouTube",
+    "title": "Auditoria Governamental - Concurso CGU 2026: Serviços de Avaliação",
+    "caption": "27/06/2026; cap. 21:19 planejamento, 34:04 matriz, 36:22 execução, 39:25 comunicação, 42:45 monitoramento. Fonte normativa CGU Manual e IIA aplicabilidade delimitada.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=tIqTMNdykxI",
+    "channel": "Prof. Marcelo Soares",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-CRB-002-YT-002",
+    "contentId": "TI-CRB-002",
+    "type": "YouTube",
+    "title": "Como criar Políticas de Gestão de Riscos que realmente funcionam",
+    "caption": "16/01/2026. Não transformar ISO27005/NIST RMF citados pelo apresentador em exigências literais edital CRBio.",
+    "alt": "Não se aplica",
+    "url": "https://www.youtube.com/watch?v=bIMdh1S2PH8",
+    "channel": "TIexames",
+    "verifiedAt": "2026-09-26",
+    "original": false
+  },
+  {
+    "id": "TI-CRB-002-IMG-001",
+    "contentId": "TI-CRB-002",
+    "type": "imagem",
+    "title": "Políticas, normas, auditoria e conformidade de TIC — diretriz à evidência e ciclo de auditoria",
+    "caption": "Imagem 1536 × 1024 PNG; no Google Doc seção32, objeto com largura 460 pt; arte legível na inspeção visual inicial, revisão final de layout em PDF/site e Edge pendente Work.",
+    "alt": "Infográfico com dois painéis: política, norma interna, padrão, procedimento, registro e revisão; planejamento de auditoria por riscos, execução com testes e evidências, achado fundamentado, relatório e monitoramento. Controles preventivos, detectivos e corretivos; gestão opera os controles e auditoria os avalia com independência.",
+    "file": "media/TI-CRB-002-IMG-001.png",
+    "verifiedAt": "2026-09-26",
+    "original": true
   }
 ]

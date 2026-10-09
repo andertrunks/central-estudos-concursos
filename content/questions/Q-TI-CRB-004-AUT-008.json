@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-008",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "O fiscal identifica irregularidade que ultrapassa suas atribuições de correção. Segundo a lógica do art. 117 da Lei nº 14.133/2021, deve:",
+  "options": [
+    {
+      "id": "A",
+      "text": "decidir a extinção do contrato e aplicar todas as sanções sem instrução."
+    },
+    {
+      "id": "B",
+      "text": "ocultar a ocorrência até o encerramento para reduzir burocracia."
+    },
+    {
+      "id": "C",
+      "text": "registrar e informar tempestivamente aos superiores/instância competente para providências, conservando o histórico."
+    },
+    {
+      "id": "D",
+      "text": "alterar a cláusula de níveis de serviço por comunicação verbal à contratada."
+    }
+  ],
+  "answer": "C",
+  "comment": "O fiscal registra e eleva o que supera sua competência. A e D excedem atribuições; B inviabiliza controle, contraditório e continuidade de serviço.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "Q-TI-CRB-003-AUT-006",
+  "contentId": "TI-CRB-003",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "O TR prevê uma avaliação de amostra vinculada a critérios técnicos divulgados no edital. Na fase de julgamento, a área técnica propõe, após conhecer as propostas, um requisito novo e não previsto. Qual análise corresponde ao procedimento?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A alteração é livre, pois qualquer requisito tecnológico supera as regras da seleção."
+    },
+    {
+      "id": "B",
+      "text": "É suficiente que a nova condição seja verbal e aplicada apenas à empresa preferida."
+    },
+    {
+      "id": "C",
+      "text": "O processo de seleção dispensa critérios predefinidos quando houver software."
+    },
+    {
+      "id": "D",
+      "text": "A avaliação deve observar os parâmetros publicados e os limites legais; não se introduz requisito subjetivo novo para alterar o julgamento."
+    },
+    {
+      "id": "E",
+      "text": "Prova de conceito é sempre obrigatória em contratações de soluções de TIC."
+    }
+  ],
+  "answer": "D",
+  "comment": "D preserva transparência e objetividade. A, B e C permitem alterar a disputa após conhecimento de propostas; E transforma uma possibilidade legal condicionada em obrigação universal. Conferir a Lei nº 14.133, art. 41, II e parágrafo único, nos casos de licitações para fornecimento de bens; avaliar regras pertinentes ao objeto efetivo.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-003"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

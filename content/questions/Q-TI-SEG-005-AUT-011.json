@@ -1,0 +1,26 @@
+{
+  "id": "Q-TI-SEG-005-AUT-011",
+  "contentId": "TI-SEG-005",
+  "banca": "Central de Estudos — autoral",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Uma certificação de SGSI é associada ao escopo auditado e não significa garantia de risco zero, ausência de incidentes ou certificação automática de toda pessoa jurídica e de seus fornecedores.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Escopo, critérios de conformidade, risco residual e melhoria permanecem relevantes durante a operação.",
+  "source_ids": [
+    "SRC-DOC-TI-SEG-005"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-009",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma empresa registra tempo individual de atendimento e número de tickets reabertos; o TR fixa meta de 95% de chamados elegíveis respondidos no prazo. Qual afirmação está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Meta é a evidência bruta e substitui a fórmula do indicador."
+    },
+    {
+      "id": "B",
+      "text": "Medidas brutas alimentam indicadores; a meta é o valor de desempenho esperado, que deve ser verificado segundo período e regras contratadas."
+    },
+    {
+      "id": "C",
+      "text": "KPI é sinônimo de penalidade automática e não depende de fonte de dados."
+    },
+    {
+      "id": "D",
+      "text": "Todo indicador deve ser fixado unilateralmente pelo fornecedor, pois o cliente não pode acompanhar seu desempenho."
+    }
+  ],
+  "answer": "B",
+  "comment": "B distingue dado, indicador e meta. A inverte definições; C confunde acompanhamento e consequência; D nega construção de níveis pactuados e fiscalização.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

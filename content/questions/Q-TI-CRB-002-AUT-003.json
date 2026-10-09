@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-003",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A instituição declara revisar trimestralmente acessos privilegiados. Qual evidência favorece demonstrar se o controle funcionou NO PERÍODO auditado?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Somente o modelo de planilha vazia."
+    },
+    {
+      "id": "B",
+      "text": "O compromisso verbal do gerente, sem intervalo e amostra definidos."
+    },
+    {
+      "id": "C",
+      "text": "Contrato de compra de ferramenta ainda não implantada."
+    },
+    {
+      "id": "D",
+      "text": "População e amostra justificadas do período, relatórios preenchidos, aprovações verificáveis, exceções investigadas e comprovação de providências tomadas."
+    }
+  ],
+  "answer": "D",
+  "comment": "O desenho/implantação pode ser visto em documentos e sistemas, mas a efetividade exige observar execução consistente. A, B e C não demonstram isso.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

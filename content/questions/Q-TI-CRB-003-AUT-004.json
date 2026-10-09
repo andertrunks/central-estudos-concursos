@@ -1,0 +1,38 @@
+{
+  "id": "Q-TI-CRB-003-AUT-004",
+  "contentId": "TI-CRB-003",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Um risco de indisponibilidade foi registrado na preparação, mas, após a seleção, detectou-se nova dependência de fornecedor externo. No modelo de gerenciamento de riscos que acompanha as fases da contratação, a conduta coerente é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Eliminar o risco inicial sem justificativa, pois a seleção já terminou."
+    },
+    {
+      "id": "B",
+      "text": "Atualizar avaliação e tratamento do risco identificado e acompanhar as medidas conforme responsabilidades."
+    },
+    {
+      "id": "C",
+      "text": "Substituir toda a gestão contratual por uma cópia do DFD."
+    },
+    {
+      "id": "D",
+      "text": "Considerar o mapa de riscos automaticamente igual à matriz de alocação contratual."
+    },
+    {
+      "id": "E",
+      "text": "Aguardar o encerramento para registrar a dependência."
+    }
+  ],
+  "answer": "B",
+  "comment": "B reconhece atualização dinâmica. A e E ignoram novos eventos; C mistura funções documentais; D confunde gestão do risco do processo com alocação contratual de riscos entre partes. A referência à IN nº 94 é contextual e limitada a integrantes SISP.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-003"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

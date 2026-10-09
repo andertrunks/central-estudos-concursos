@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-002",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma política aprovada exige autorização prévia e revisão independente para perfis críticos. O procedimento permite que o administrador solicite, aprove e implemente sozinho o próprio privilégio. O que essa observação evidencia diretamente?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Fragilidade de DESENHO/segregação do controle, que exige correção antes de supor efetividade por existir um documento."
+    },
+    {
+      "id": "B",
+      "text": "Efetividade comprovada pela assinatura do documento, sem outros testes."
+    },
+    {
+      "id": "C",
+      "text": "Ausência de vulnerabilidade porque o sistema registra log."
+    },
+    {
+      "id": "D",
+      "text": "Impossibilidade de auditoria de controles em sistemas."
+    }
+  ],
+  "answer": "A",
+  "comment": "B confunde formalização e operação; C trata registro como substituto de salvaguarda; D nega a finalidade da avaliação.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

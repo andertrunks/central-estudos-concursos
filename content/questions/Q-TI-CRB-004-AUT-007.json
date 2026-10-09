@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-007",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Um SLA de atendimento estabelece prazo diferente por severidade, horário útil, momento de início da contagem e situações taxativas em que o relógio pode parar. Qual procedimento produz indicador auditável?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Manter trilha de horário/severidade/evento, aplicar exclusivamente pausas contratualmente autorizadas e permitir reconstituição do cálculo."
+    },
+    {
+      "id": "B",
+      "text": "Excluir automaticamente todo chamado reaberto para tornar a meta atingível."
+    },
+    {
+      "id": "C",
+      "text": "Deixar o fornecedor definir critérios de exclusão depois de conhecer o resultado mensal."
+    },
+    {
+      "id": "D",
+      "text": "Misturar chamado recebido de madrugada com chamado recebido em horário útil sem considerar o método pactuado."
+    }
+  ],
+  "answer": "A",
+  "comment": "A mantém regra prévia e evidência. B manipula denominador; C destrói previsibilidade/independência; D ignora o período elegível e pode distorcer prazo.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

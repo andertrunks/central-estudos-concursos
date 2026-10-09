@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-004",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "O serviço entrega relatórios de chamados, mas não cumpre uma integração obrigatória. A documentação fiscal da empresa está regular. Qual procedimento é coerente?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Aceitar integralmente o serviço porque a regularidade fiscal supre falha técnica."
+    },
+    {
+      "id": "B",
+      "text": "Delegar ao fornecedor a decisão final sobre conformidade, sem registro administrativo."
+    },
+    {
+      "id": "C",
+      "text": "Registrar e verificar a falha técnica, articular os papéis designados, instruir medição e eventuais efeitos contratuais conforme evidências e competências."
+    },
+    {
+      "id": "D",
+      "text": "Aplicar multa imediatamente, por decisão informal e exclusiva do fiscal técnico."
+    }
+  ],
+  "answer": "C",
+  "comment": "C respeita papéis, evidência e procedimento; A confunde documentação com objeto; B abdica da fiscalização; D confunde registro de descumprimento com sanção após procedimento legalmente exigível.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

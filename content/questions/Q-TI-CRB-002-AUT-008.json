@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-008",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Um conselho terceiriza sistema de inscrição de profissionais. Qual prática integra segurança do processo e conformidade de modo coerente?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Considerar os dados e riscos inteiramente alheios porque o banco está hospedado fora da sede."
+    },
+    {
+      "id": "B",
+      "text": "Permitir que o contrato elimine automaticamente qualquer obrigação própria sobre dados e acessos."
+    },
+    {
+      "id": "C",
+      "text": "Identificar fluxos e requisitos, definir responsabilidades próprias e do fornecedor, autorizações, prazos de revogação, evidências de acesso, continuidade e descarte conforme contrato, riscos e regras aplicáveis."
+    },
+    {
+      "id": "D",
+      "text": "Publicar todas as bases de cadastro para facilitar auditoria externa indiscriminada."
+    }
+  ],
+  "answer": "C",
+  "comment": "Hospedagem terceirizada não extingue governança; publicação indiscriminada pode violar obrigações de proteção. A aplicação concreta depende da legislação e do instrumento contratual.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

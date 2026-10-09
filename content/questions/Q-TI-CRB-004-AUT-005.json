@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-005",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "O modelo de pagamento prevê redução por parcela efetivamente não entregue, e houve fato que também pode configurar infração contratual. Qual distinção é adequada?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Glosa e sanção administrativa são sempre o mesmo ato e dispensam motivação."
+    },
+    {
+      "id": "B",
+      "text": "Ajuste/glosa da remuneração segundo medição pactuada tem fundamento distinto de sanção por infração, esta sujeita a competências e procedimento próprios."
+    },
+    {
+      "id": "C",
+      "text": "Qualquer descumprimento deve gerar multa estipulada livremente pelo fiscal requisitante."
+    },
+    {
+      "id": "D",
+      "text": "Nenhuma medição pode afetar a remuneração enquanto um contrato estiver vigente."
+    }
+  ],
+  "answer": "B",
+  "comment": "B distingue efeitos financeiros da medição e o regime sancionatório. A elimina critérios; C ignora competência e devido processo; D nega a natureza de contratos medidos por entrega e desempenho. Não há tabela legal única de percentuais a inventar.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

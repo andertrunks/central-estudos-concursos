@@ -1,0 +1,9 @@
+{
+  "queueId": "PUB-0018",
+  "contentId": "TI-SEG-005",
+  "driveDocumentId": "1aXAzPlQrhKhj9eprN9L1mP6KRNn1Do2NWYBGXXcVv0g",
+  "integratedAt": "2026-10-09T03:07:30.843Z",
+  "status": "integrado; aguardando testes e deploy",
+  "publishedCommit": null,
+  "siteUrl": null
+}

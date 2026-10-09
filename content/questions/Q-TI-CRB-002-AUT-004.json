@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-004",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A regra vigente exige revogar contas em até 24 horas após notificação formal de desligamento. Na amostra examinada, quatro contas permaneceram ativas depois do prazo. A equipe não verificou ainda por que ocorreu. Qual formulação é correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A causa provada é má-fé do responsável pela TI, dispensando investigação."
+    },
+    {
+      "id": "B",
+      "text": "O critério são as quatro contas e a condição é o prazo normativo."
+    },
+    {
+      "id": "C",
+      "text": "Critério: prazo previsto em norma; condição: quatro contas ativas além do prazo; causa: ainda a investigar; risco: eventual acesso indevido; recomendar análise do fluxo e medidas proporcionais."
+    },
+    {
+      "id": "D",
+      "text": "Não existe achado enquanto o gestor não confessar ter cometido erro."
+    }
+  ],
+  "answer": "C",
+  "comment": "A inventa motivo; B inverte conceitos; D confunde evidência do fato e adesão pessoal ao relatório. O achado exige rastrear o objeto, população e período.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

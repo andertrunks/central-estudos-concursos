@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-001",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Um SLA considera elegíveis 720 horas de serviço no mês, das quais 60 minutos foram de indisponibilidade elegível e comprovada. A meta pactuada é 99,9%, sem regra especial de arredondamento. Qual resultado corresponde ao período?",
+  "options": [
+    {
+      "id": "A",
+      "text": "99,9% exatos, porque uma hora é insignificante no mês."
+    },
+    {
+      "id": "B",
+      "text": "Aproximadamente 99,8611%; a meta de 99,9% não foi cumprida."
+    },
+    {
+      "id": "C",
+      "text": "Aproximadamente 99,8611%; a meta foi cumprida porque o valor se aproxima de 100%."
+    },
+    {
+      "id": "D",
+      "text": "98,61%, o que evidencia falha superior a dez horas."
+    }
+  ],
+  "answer": "B",
+  "comment": "A fórmula é (720 - 1) ÷ 720 × 100 = 99,8611%. A ignora a medição; C substitui comparação objetiva por impressão; D desloca indevidamente a casa decimal. A apuração de eventual glosa depende da regra contratual, não é deduzida apenas desse percentual.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

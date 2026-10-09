@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-002-AUT-007",
+  "contentId": "TI-CRB-002",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma auditoria recomendou revogar contas órfãs e instituir reconciliação mensal. O setor auditado remete um novo procedimento aprovado, mas não demonstra execução das medidas. Para encerrar o acompanhamento, deve-se:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Verificar a implementação e eficácia das providências por evidências, distinguindo publicação de procedimento e correção dos acessos existentes."
+    },
+    {
+      "id": "B",
+      "text": "Encerrar automaticamente porque a aprovação normativa prova todas as revogações passadas e futuras."
+    },
+    {
+      "id": "C",
+      "text": "Aplicar sanção diretamente pelo auditor sem competência e procedimento."
+    },
+    {
+      "id": "D",
+      "text": "Eliminar o achado do histórico para evitar reincidência."
+    }
+  ],
+  "answer": "A",
+  "comment": "B confunde regra e operação; C extrapola mandato; D destrói controle histórico. A conclusão sobre atendimento deve corresponder a evidência verificável.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-002"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

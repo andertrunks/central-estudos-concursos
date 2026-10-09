@@ -1,0 +1,34 @@
+{
+  "id": "Q-TI-CRB-004-AUT-002",
+  "contentId": "TI-CRB-004",
+  "banca": "Central de Estudos — autoral",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Num período foram registrados 400 chamados elegíveis; 372 receberam primeira resposta dentro do prazo. Nada foi informado sobre encerramento válido ou solução definitiva. Qual indicador foi calculado?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Primeira resposta no prazo de 93%; não é possível inferir daí o percentual de solução no prazo."
+    },
+    {
+      "id": "B",
+      "text": "Resolução definitiva no prazo de 93%, porque resposta é sinônimo de solução."
+    },
+    {
+      "id": "C",
+      "text": "Disponibilidade de 93%, porque cada chamado equivale a uma hora de serviço."
+    },
+    {
+      "id": "D",
+      "text": "Tempo médio de resolução de 93 minutos."
+    }
+  ],
+  "answer": "A",
+  "comment": "A define numerador e denominador corretos. B troca eventos distintos; C mistura tickets com horas; D tenta inferir média temporal a partir de uma proporção sem tempos individuais.",
+  "source_ids": [
+    "SRC-DOC-TI-CRB-004"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}
