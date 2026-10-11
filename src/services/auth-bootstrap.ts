@@ -19,7 +19,9 @@ export type AuthBootstrap = {
 type BootstrapOptions = {
   config?: CloudConfig;
   readConfig?: () => CloudConfig;
-  getClient?: (config: CloudConfig) => SupabaseClient | null;
+  getClient?: (
+    config: CloudConfig,
+  ) => SupabaseClient | null | Promise<SupabaseClient | null>;
 };
 
 export async function bootstrapAuthSession(
@@ -41,7 +43,7 @@ export async function bootstrapAuthSession(
     return { config, client: null, session: null, candidateScope: null, error: "" };
 
   try {
-    const client = (options.getClient ?? getSupabaseBrowserClient)(config);
+    const client = await (options.getClient ?? getSupabaseBrowserClient)(config);
     if (!client)
       return { config, client: null, session: null, candidateScope: null, error: "" };
     const { data, error } = await client.auth.getSession();
