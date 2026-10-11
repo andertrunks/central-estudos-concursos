@@ -134,7 +134,12 @@ export async function atomicPutWithOutbox(
   const entityStore = tx.objectStore(store) as unknown as {
     put(value: unknown): Promise<IDBValidKey>;
   };
-  await entityStore.put(value);
-  await tx.objectStore("syncOutbox").add(entry);
-  await tx.done;
+  try {
+    await entityStore.put(value);
+    await tx.objectStore("syncOutbox").add(entry);
+    await tx.done;
+  } catch (error) {
+    await tx.done.catch(() => undefined);
+    throw error;
+  }
 }
