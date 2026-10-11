@@ -15,7 +15,9 @@
     "preview": "vite preview",
     "sync": "node --import tsx scripts/sync.ts",
     "queue": "node --import tsx scripts/queue.ts",
-    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+    "privacy:source": "node --import tsx scripts/privacy.ts source",
+    "privacy:dist": "node --import tsx scripts/privacy.ts dist",
+    "check": "npm run privacy:source && npm run lint && npm run typecheck && npm test && npm run build && npm run privacy:dist"
   },
   "dependencies": {
     "idb": "^8.0.3",
