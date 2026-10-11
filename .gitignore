@@ -7,3 +7,10 @@ work/
 test-results/
 playwright-report/
 *.local
+
+# Public repository: editorial data is default-deny.
+editorial/*
+!editorial/contest-columns.json
+!editorial/last-sync.json
+!editorial/source-policy.md
+data/estado-atual.json
