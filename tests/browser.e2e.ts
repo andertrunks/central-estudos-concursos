@@ -106,6 +106,11 @@ try {
   await expect.poll(() => page.locator('figure img').first().evaluate(e => (e as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
   await expect(page.getByRole('link', {name:'Assistir no YouTube ↗'})).toHaveCount(2);
   const authoredId = 'Q-TI-BD-001-INDEPAC-001';
+  // PUB-0008 preserves 29 questions; this item is beyond the first ten.
+  // The canonical four authored IDs remain unchanged (commit 828075a).
+  await expect(page.getByText('29 questões · página 1 de 3')).toBeVisible();
+  await page.getByLabel('Buscar questão por ID ou enunciado').fill(authoredId);
+  await expect(page.getByText('1 questões · página 1 de 1')).toBeVisible();
   const authoredCard = page.locator('article.card').filter({hasText:authoredId}).first();
   await expect(authoredCard.locator('.answer')).toHaveCount(0);
   await authoredCard.locator(`input[name="${authoredId}"][value="B"]`).check();
@@ -116,7 +121,8 @@ try {
   await expect(page.getByText('0 questões · página 0 de 0')).toBeVisible();
   await expect(page.locator('.answer')).toHaveCount(0);
   checks.push('PUB-0008: quatro subtemas, imagem e vídeos; questão autoral sem gabarito até tentativa; localizador Quadrix sem item pontuável');
-  await page.goto(`${base}#/biblioteca/TI-RED-001`);
+  // TI-RED-001 was published in f7abc7f; canonical TI-PROG-001 remains absent.
+  await page.goto(`${base}#/biblioteca/TI-PROG-001`);
   await expect(
     page.getByRole("heading", { name: "Aula planejada, ainda não publicada" }),
   ).toBeVisible();
