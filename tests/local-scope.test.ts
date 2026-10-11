@@ -16,10 +16,7 @@ import {
   deleteSyncMetaDatabase,
   openSyncMetaDatabase,
 } from "../src/services/sync-meta";
-import type {
-  Submission,
-  SyncOutboxEntry,
-} from "../src/types/cloud";
+import type { Submission, SyncOutboxEntry } from "../src/types/cloud";
 import type { StudyProgress } from "../src/types/schema";
 
 const databases = new Set<string>();
@@ -93,7 +90,7 @@ describe("PR-1 LOCAL-SCOPE — StudyDB v3", () => {
     await old.put("progress", progress(25));
     old.close();
     const scope = await deriveAccountScope("project-ref", "migration-user");
-    const upgraded = await openScopedStudyDatabase(scope, { dbName }) as IDBDatabase & StudyDBV3;
+    const upgraded = await openScopedStudyDatabase(scope, { dbName }) as unknown as IDBDatabase & StudyDBV3;
     expect(upgraded.version).toBe(3);
     expect([...upgraded.objectStoreNames]).toEqual(expect.arrayContaining([
       "activities", "progress", "reviews", "attempts", "writings", "results",
@@ -119,7 +116,7 @@ describe("PR-1 LOCAL-SCOPE — StudyDB v3", () => {
     a.close(); b.close();
     const again = await openScopedStudyDatabase(scopeA);
     expect(again.version).toBe(3);
-    expect((await (again as IDBDatabase & { get(store: string, key: string): Promise<StudyProgress> }).get("progress", "TI-BD-003")).percent).toBe(10);
+    expect((await (again as unknown as { get(store: string, key: string): Promise<StudyProgress> }).get("progress", "TI-BD-003")).percent).toBe(10);
     again.close();
   });
 
@@ -128,12 +125,10 @@ describe("PR-1 LOCAL-SCOPE — StudyDB v3", () => {
     const scope = await deriveAccountScope("project-ref", "atomic-user");
     const db = await openScopedStudyDatabase(scope, { dbName });
     if (db.version !== 3) throw new Error("versão inválida");
-    const typed = db as IDBDatabase & StudyDBV3;
+    const typed = db as unknown as IDBDatabase & StudyDBV3;
     await atomicPutWithOutbox(typed as never, "progress", progress(10), outbox("mutation-1", null, progress(10)));
     await expect(atomicPutWithOutbox(typed as never, "progress", progress(80), outbox("mutation-1", progress(10), progress(80)))).rejects.toBeTruthy();
-    const raw = db as unknown as {
-      get(store: string, key: string): Promise<unknown>;
-    };
+    const raw = db as unknown as { get(store: string, key: string): Promise<unknown> };
     expect((await raw.get("progress", "TI-BD-003") as StudyProgress).percent).toBe(10);
     expect((await raw.get("syncOutbox", "mutation-1") as SyncOutboxEntry).basePayload).toBeNull();
     db.close();
