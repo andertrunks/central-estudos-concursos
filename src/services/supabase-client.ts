@@ -1,28 +1,33 @@
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import type { CloudConfig } from "./cloud-config";
 
-let cached: { signature: string; client: SupabaseClient } | null = null;
+let cachedSignature: string | null = null;
+let cachedClient: Promise<SupabaseClient> | null = null;
 
-export function getSupabaseBrowserClient(config: CloudConfig): SupabaseClient | null {
+export async function getSupabaseBrowserClient(
+  config: CloudConfig,
+): Promise<SupabaseClient | null> {
   if (config.mode === "off") return null;
   const signature = `${config.projectUrl}\u0000${config.publishableKey}`;
-  if (cached) {
-    if (cached.signature !== signature)
-      throw new Error("A configuração Supabase mudou durante a sessão do navegador");
-    return cached.client;
+  if (cachedSignature && cachedSignature !== signature)
+    throw new Error("A configuração Supabase mudou durante a sessão do navegador");
+  if (!cachedClient) {
+    cachedSignature = signature;
+    cachedClient = import("@supabase/supabase-js").then(({ createClient }) =>
+      createClient(config.projectUrl, config.publishableKey, {
+        auth: {
+          flowType: "pkce",
+          detectSessionInUrl: true,
+          persistSession: true,
+          autoRefreshToken: true,
+        },
+      }),
+    );
   }
-  const client = createClient(config.projectUrl, config.publishableKey, {
-    auth: {
-      flowType: "pkce",
-      detectSessionInUrl: true,
-      persistSession: true,
-      autoRefreshToken: true,
-    },
-  });
-  cached = { signature, client };
-  return client;
+  return cachedClient;
 }
 
 export function resetSupabaseBrowserClientForTests() {
-  cached = null;
+  cachedSignature = null;
+  cachedClient = null;
 }
