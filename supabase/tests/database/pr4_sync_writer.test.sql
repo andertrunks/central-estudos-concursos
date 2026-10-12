@@ -1,7 +1,7 @@
 begin;
 
 create extension if not exists pgtap with schema extensions;
-select plan(23);
+select plan(24);
 
 select ok(
   exists (
@@ -16,6 +16,13 @@ select ok(
     where n.nspname = 'public' and p.proname = 'central_apply_cloud_mutations' and p.prosecdef
   ),
   'writer is SECURITY INVOKER, never SECURITY DEFINER'
+);
+select ok(
+  position(
+    'pg_advisory_xact_lock' in
+    pg_get_functiondef('public.central_apply_cloud_mutations(uuid,jsonb)'::regprocedure)
+  ) > 0,
+  'writer serializes same-user calls before receipt/CAS evaluation'
 );
 select ok(
   has_function_privilege('service_role', 'public.central_apply_cloud_mutations(uuid,jsonb)', 'EXECUTE'),

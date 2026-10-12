@@ -142,6 +142,13 @@ begin
     raise exception 'INVALID_MUTATION_BATCH_SIZE' using errcode = '22023';
   end if;
 
+  -- Serialize writer calls for one account. This closes the race where two tabs
+-- can observe the same missing receipt/current revision before either commits.
+-- The lock is transaction-scoped and does not block writes for other accounts.
+perform pg_catalog.pg_advisory_xact_lock(
+  pg_catalog.hashtextextended('central-cloud-sync:' || p_user_id::text, 0)
+);
+
   -- Pass 1: validate the complete request before any side effect.
   for v_item in select value from jsonb_array_elements(p_mutations)
   loop
