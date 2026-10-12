@@ -144,11 +144,16 @@ describe("PR-5 BOOTSTRAP — apply local atômico", () => {
 describe("PR-5 BOOTSTRAP — legado preservado e rollback", () => {
   it("copia legacy-v2 sem apagar origem e rollback restaura o alvo vazio", async () => {
     const legacyName = dbName("legacy");
+    const fixture = backup();
+    const annulledAttempt = fixture.attempts[0];
+    const validAttempt = fixture.attempts[1];
+    const activity = fixture.activities[0];
+    if (!annulledAttempt || !validAttempt || !activity) throw new Error("fixture sintética incompleta");
     const legacy = await openLegacyStudyDatabase(legacyName);
     await legacy.put("progress", progress(44));
-    await legacy.put("attempts", backup().attempts[0]);
-    await legacy.put("attempts", backup().attempts[1]);
-    await legacy.put("activities", backup().activities[0]);
+    await legacy.put("attempts", annulledAttempt);
+    await legacy.put("attempts", validAttempt);
+    await legacy.put("activities", activity);
     legacy.close();
 
     const target = await scope("legacy-target");
