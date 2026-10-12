@@ -69,6 +69,7 @@ export interface RevealedCorrection {
   revealedAt: string;
 }
 
+/** Stores present in StudyDB v3. Not every store is cloud-enabled. */
 export type SyncableStore =
   | "activities"
   | "progress"
@@ -80,17 +81,74 @@ export type SyncableStore =
   | "simulationSubmissions"
   | "revealedCorrections";
 
+/** AUD110 deny-by-default allowlist for PR-4. */
+export type CloudSyncStore =
+  | "activities"
+  | "progress"
+  | "reviews"
+  | "attempts"
+  | "writings"
+  | "results";
+
+export type CloudEntityKind =
+  | "activity"
+  | "progress"
+  | "review"
+  | "attempt"
+  | "writing"
+  | "simulation_result";
+
+export type CloudOperation = "upsert" | "delete";
+export type OutboxStatus = "queued" | "sending" | "blocked_conflict" | "poisoned";
+
+export interface SyncConflictSnapshot {
+  currentRevision: number;
+  currentPayloadHash: string | null;
+  deleted: boolean;
+}
+
 export interface SyncOutboxEntry {
   id: string;
+  recordType: "mutation";
   mutationId: string;
-  entityType: SyncableStore;
+  entityType: CloudSyncStore;
+  entityKind: CloudEntityKind;
   entityId: string;
-  operation: "put" | "delete";
+  operation: CloudOperation;
+  schemaVersion: 1;
+  baseRevision: number;
   basePayload: unknown | null;
-  nextPayload: unknown | null;
+  targetPayload: unknown | null;
+  payloadHash: string;
+  requestHash: string;
+  predecessorMutationId: string | null;
   createdAt: string;
-  status: "pending";
+  status: OutboxStatus;
+  retryCount: number;
+  nextRetryAt: string | null;
+  conflict: SyncConflictSnapshot | null;
 }
+
+export interface SyncCursorRecord {
+  id: "__cloud_sync_cursor__";
+  recordType: "cursor";
+  cursor: number;
+}
+
+export interface SyncRemoteStateRecord {
+  id: string;
+  recordType: "remote";
+  entityType: CloudSyncStore;
+  entityKind: CloudEntityKind;
+  entityId: string;
+  revision: number;
+  changeSeq: number;
+  payloadHash: string | null;
+  deleted: boolean;
+  payload: unknown | null;
+}
+
+export type SyncOutboxRecord = SyncOutboxEntry | SyncCursorRecord | SyncRemoteStateRecord;
 
 export interface RemoteBaseRecord {
   id: string;

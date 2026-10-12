@@ -9,11 +9,12 @@ import type {
 import type { Activity } from "./trail";
 import type {
   AccountScope,
+  CloudSyncStore,
   RevealedCorrection,
   SimulationSubmission,
   Submission,
   SyncOutboxEntry,
-  SyncableStore,
+  SyncOutboxRecord,
 } from "../types/cloud";
 
 export type StoredAttemptV3 = Attempt & { submissionId?: string };
@@ -46,7 +47,7 @@ export interface StudyDBV3 extends DBSchema {
   };
   syncOutbox: {
     key: string;
-    value: SyncOutboxEntry;
+    value: SyncOutboxRecord;
     indexes: { "by-status": string; "by-entity": string };
   };
 }
@@ -124,7 +125,7 @@ export async function deleteStudyDatabase(dbName: string) {
 
 export async function atomicPutWithOutbox(
   db: IDBPDatabase<StudyDBV3>,
-  store: SyncableStore,
+  store: CloudSyncStore,
   value: unknown,
   entry: SyncOutboxEntry,
 ) {

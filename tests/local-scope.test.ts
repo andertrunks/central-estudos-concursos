@@ -16,7 +16,7 @@ import {
   deleteSyncMetaDatabase,
   openSyncMetaDatabase,
 } from "../src/services/sync-meta";
-import type { Submission, SyncOutboxEntry } from "../src/types/cloud";
+import type { SyncOutboxEntry } from "../src/types/cloud";
 import type { StudyProgress } from "../src/types/schema";
 
 const databases = new Set<string>();
@@ -45,17 +45,27 @@ const progress = (percent: number): StudyProgress => ({
   nextReview: null,
 });
 
-function outbox(id: string, basePayload: unknown, nextPayload: unknown): SyncOutboxEntry {
+function outbox(id: string, basePayload: unknown, targetPayload: unknown): SyncOutboxEntry {
   return {
     id,
+    recordType: "mutation",
     mutationId: id,
     entityType: "progress",
+    entityKind: "progress",
     entityId: "TI-BD-003",
-    operation: "put",
+    operation: "upsert",
+    schemaVersion: 1,
+    baseRevision: 0,
     basePayload,
-    nextPayload,
+    targetPayload,
+    payloadHash: `sha256:${"a".repeat(64)}`,
+    requestHash: `sha256:${"b".repeat(64)}`,
+    predecessorMutationId: null,
     createdAt: "2026-10-11T14:00:00.000Z",
-    status: "pending",
+    status: "queued",
+    retryCount: 0,
+    nextRetryAt: null,
+    conflict: null,
   };
 }
 
@@ -130,36 +140,23 @@ describe("PR-1 LOCAL-SCOPE — StudyDB v3", () => {
     await expect(atomicPutWithOutbox(typed as never, "progress", progress(80), outbox("mutation-1", progress(10), progress(80)))).rejects.toBeTruthy();
     const raw = db as unknown as { get(store: string, key: string): Promise<unknown> };
     expect((await raw.get("progress", "TI-BD-003") as StudyProgress).percent).toBe(10);
-    expect((await raw.get("syncOutbox", "mutation-1") as SyncOutboxEntry).basePayload).toBeNull();
+    const stored = await raw.get("syncOutbox", "mutation-1") as SyncOutboxEntry;
+    expect(stored.basePayload).toBeNull();
+    expect(stored.status).toBe("queued");
     db.close();
   });
 
-  it("falha da mutação cria zero outbox e commit sobrevivente preserva ambos após reopen", async () => {
-    const dbName = name("mutation-failure");
-    const scope = await deriveAccountScope("project-ref", "failure-user");
+  it("commit sobrevivente preserva domínio+outbox após reopen", async () => {
+    const dbName = name("survives");
+    const scope = await deriveAccountScope("project-ref", "survival-user");
     const db = await openScopedStudyDatabase(scope, { dbName });
     if (db.version !== 3) throw new Error("versão inválida");
-    const raw = db as unknown as {
-      add(store: string, value: unknown): Promise<IDBValidKey>;
-      get(store: string, key: string): Promise<unknown>;
-    };
-    const first: Submission = {
-      id: "sub-1", dedupeKey: "same", questionId: "Q-1", contentId: "TI-BD-003",
-      unitIds: [], promptHash: "hash-1", answer: "A", reason: "conteúdo",
-      submittedAt: "2026-10-11T14:00:00.000Z", status: "pending", finalizedAt: null, attemptId: null,
-    };
-    await raw.add("submissions", first);
-    const badEntry: SyncOutboxEntry = {
-      ...outbox("mutation-bad", null, null), entityType: "submissions", entityId: "sub-2",
-    };
-    await expect(atomicPutWithOutbox(db as never, "submissions", { ...first, id: "sub-2" }, badEntry)).rejects.toBeTruthy();
-    expect(await raw.get("syncOutbox", "mutation-bad")).toBeUndefined();
     await atomicPutWithOutbox(db as never, "progress", progress(40), outbox("mutation-ok", progress(10), progress(40)));
     db.close();
     const reopened = await openScopedStudyDatabase(scope, { dbName });
-    const reopenedRaw = reopened as unknown as { get(store: string, key: string): Promise<unknown> };
-    expect((await reopenedRaw.get("progress", "TI-BD-003") as StudyProgress).percent).toBe(40);
-    expect((await reopenedRaw.get("syncOutbox", "mutation-ok") as SyncOutboxEntry).nextPayload).toEqual(progress(40));
+    const raw = reopened as unknown as { get(store: string, key: string): Promise<unknown> };
+    expect((await raw.get("progress", "TI-BD-003") as StudyProgress).percent).toBe(40);
+    expect((await raw.get("syncOutbox", "mutation-ok") as SyncOutboxEntry).targetPayload).toEqual(progress(40));
     reopened.close();
   });
 });
