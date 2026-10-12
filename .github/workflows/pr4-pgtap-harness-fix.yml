@@ -20,15 +20,8 @@ jobs:
           text = p.read_text()
           assert text.count("select plan(24);") == 1
           text = text.replace("select plan(24);", "select plan(27);", 1)
-          marker = """          ));
-          set local role service_role;
-          select throws_ok(
-          """
-          replacement = """          ));
-          grant select on table pr4_invalid_batches to service_role;
-          set local role service_role;
-          select throws_ok(
-          """
+          marker = "));\nset local role service_role;\nselect throws_ok("
+          replacement = "));\ngrant select on table pr4_invalid_batches to service_role;\nset local role service_role;\nselect throws_ok("
           assert text.count(marker) == 1
           text = text.replace(marker, replacement, 1)
           p.write_text(text)
