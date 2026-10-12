@@ -1,0 +1,40 @@
+name: PR-4 compact SQL fix
+on:
+  push:
+    branches: [chore/pr4-sync-engine]
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chore/pr4-sync-engine
+      - name: Fix two compact writer calls
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path("supabase/tests/database/pr4_sync_writer.test.sql")
+          text = p.read_text()
+          for mutation_id in [
+            "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+            "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
+          ]:
+            start = text.index("'mutationId','" + mutation_id + "'")
+            end = text.index("reset role;", start)
+            block = text[start:end]
+            assert block.count("\n  ));\n") == 1, mutation_id
+            block = block.replace("\n  ));\n", "\n  )));\n", 1)
+            text = text[:start] + block + text[end:]
+          p.write_text(text)
+      - name: Commit changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add supabase/tests/database/pr4_sync_writer.test.sql
+          git diff --cached --quiet && exit 0
+          git commit -m "test(pr4): close compact writer calls correctly"
+          git push origin HEAD:chore/pr4-sync-engine
