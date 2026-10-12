@@ -58,6 +58,10 @@ type RawTx = {
   objectStore(name: string): RawStore;
   done: Promise<void>;
 };
+type RawDb = {
+  get(store: string, key: IDBValidKey): Promise<unknown>;
+  getAll(store: string): Promise<unknown[]>;
+};
 
 function sorted<T extends { id: string }>(values: T[]) {
   return [...values].sort((a, b) => a.id.localeCompare(b.id));
@@ -112,6 +116,18 @@ function importedKeys(snapshot: Backup): ImportedKeys {
     writings: snapshot.writings.map((value) => value.id),
     results: snapshot.results.map((value) => value.id),
   };
+}
+
+function ids(values: unknown[]) {
+  return values
+    .map((value) => (value as { id?: unknown }).id)
+    .filter((value): value is string => typeof value === "string")
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function sameKeys(actual: string[], expected: string[]) {
+  const sortedExpected = [...expected].sort((a, b) => a.localeCompare(b));
+  return actual.length === sortedExpected.length && actual.every((value, index) => value === sortedExpected[index]);
 }
 
 async function targetIsEmpty(scope: AccountScope) {
@@ -176,15 +192,15 @@ function txFor(db: IDBDatabase & StudyDBV3): RawTx {
   return db.transaction([...ALL_STORES], "readwrite") as unknown as RawTx;
 }
 
-async function currentSnapshotFromTx(tx: RawTx): Promise<Backup> {
+async function currentSnapshotFromDb(db: RawDb): Promise<Backup> {
   return backupSchema.parse({
     version: 1,
-    activities: sorted((await tx.objectStore("activities").getAll()) as Backup["activities"] extends (infer T)[] | undefined ? T[] : never),
-    progress: sorted((await tx.objectStore("progress").getAll()) as Backup["progress"]),
-    reviews: sorted((await tx.objectStore("reviews").getAll()) as Backup["reviews"]),
-    attempts: sorted((await tx.objectStore("attempts").getAll()) as Backup["attempts"]),
-    writings: sorted((await tx.objectStore("writings").getAll()) as Backup["writings"]),
-    results: sorted((await tx.objectStore("results").getAll()) as Backup["results"]),
+    activities: sorted((await db.getAll("activities")) as NonNullable<Backup["activities"]>),
+    progress: sorted((await db.getAll("progress")) as Backup["progress"]),
+    reviews: sorted((await db.getAll("reviews")) as Backup["reviews"]),
+    attempts: sorted((await db.getAll("attempts")) as Backup["attempts"]),
+    writings: sorted((await db.getAll("writings")) as Backup["writings"]),
+    results: sorted((await db.getAll("results")) as Backup["results"]),
   });
 }
 
@@ -266,32 +282,51 @@ export async function rollbackBootstrap(scope: AccountScope): Promise<BootstrapR
     db.close();
     throw new Error("Rollback exige StudyDB v3");
   }
-  const tx = txFor(db as unknown as IDBDatabase & StudyDBV3);
+  const rawDb = db as unknown as RawDb;
   try {
-    const receipt = await tx.objectStore("syncOutbox").get(RECEIPT_ID);
-    if (!isReceipt(receipt)) {
-      await tx.done;
+    // Crypto must happen before the write transaction. IndexedDB is allowed to
+    // auto-commit while awaiting unrelated async work such as subtle.digest().
+    const preflightReceipt = await rawDb.get("syncOutbox", RECEIPT_ID);
+    if (!isReceipt(preflightReceipt))
       return { status: "not_applied", sourceFingerprint: null };
-    }
-    const syncRecords = await tx.objectStore("syncOutbox").getAll();
-    if (syncRecords.some((record) => !isReceipt(record)))
+    const preflightSyncRecords = await rawDb.getAll("syncOutbox");
+    if (preflightSyncRecords.some((record) => !isReceipt(record)))
       throw new Error("Rollback bloqueado: há estado de sync posterior ao bootstrap");
     for (const store of AUX_STORES)
-      if ((await tx.objectStore(store).getAll()).length)
+      if ((await rawDb.getAll(store)).length)
         throw new Error("Rollback bloqueado: há estado criado após o bootstrap");
-
-    const current = await currentSnapshotFromTx(tx);
-    if ((await fingerprint(current)) !== receipt.appliedStateFingerprint)
+    const preflightSnapshot = await currentSnapshotFromDb(rawDb);
+    if ((await fingerprint(preflightSnapshot)) !== preflightReceipt.appliedStateFingerprint)
       throw new Error("Rollback bloqueado: o estado local mudou após o bootstrap");
 
-    for (const store of DOMAIN_STORES)
-      for (const key of receipt.importedKeys[store]) await tx.objectStore(store).delete(key);
-    await tx.objectStore("syncOutbox").delete(RECEIPT_ID);
-    await tx.done;
-    return { status: "rolled_back", sourceFingerprint: receipt.sourceFingerprint };
-  } catch (error) {
-    await tx.done.catch(() => undefined);
-    throw error;
+    // Open a fresh write transaction only after hashing. Re-read all structural
+    // guards inside the transaction so concurrent insert/delete activity cannot
+    // silently turn rollback into a partial delete.
+    const tx = txFor(db as unknown as IDBDatabase & StudyDBV3);
+    try {
+      const receipt = await tx.objectStore("syncOutbox").get(RECEIPT_ID);
+      if (!isReceipt(receipt) || receipt.sourceFingerprint !== preflightReceipt.sourceFingerprint)
+        throw new Error("Rollback bloqueado: receipt do bootstrap mudou");
+      const syncRecords = await tx.objectStore("syncOutbox").getAll();
+      if (syncRecords.length !== 1 || !isReceipt(syncRecords[0]))
+        throw new Error("Rollback bloqueado: há estado de sync posterior ao bootstrap");
+      for (const store of AUX_STORES)
+        if ((await tx.objectStore(store).getAll()).length)
+          throw new Error("Rollback bloqueado: há estado criado após o bootstrap");
+      for (const store of DOMAIN_STORES) {
+        const currentKeys = ids(await tx.objectStore(store).getAll());
+        if (!sameKeys(currentKeys, receipt.importedKeys[store]))
+          throw new Error("Rollback bloqueado: o conjunto local mudou após o bootstrap");
+      }
+      for (const store of DOMAIN_STORES)
+        for (const key of receipt.importedKeys[store]) await tx.objectStore(store).delete(key);
+      await tx.objectStore("syncOutbox").delete(RECEIPT_ID);
+      await tx.done;
+      return { status: "rolled_back", sourceFingerprint: receipt.sourceFingerprint };
+    } catch (error) {
+      await tx.done.catch(() => undefined);
+      throw error;
+    }
   } finally {
     db.close();
   }
