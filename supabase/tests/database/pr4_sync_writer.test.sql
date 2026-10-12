@@ -1,7 +1,7 @@
 begin;
 
 create extension if not exists pgtap with schema extensions;
-select plan(24);
+select plan(27);
 
 select ok(
   exists (
@@ -228,6 +228,7 @@ values (jsonb_build_array(
     'requestHash',public.central_cloud_request_hash('14141414-1414-4414-8414-141414141414'::uuid,'review','SHOULD-NOT-WRITE','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
   )
 ));
+grant select on table pr4_invalid_batches to service_role;
 set local role service_role;
 select throws_ok(
   $$select public.central_apply_cloud_mutations(
