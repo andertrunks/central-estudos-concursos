@@ -1,0 +1,97 @@
+name: PR-4 test gate fix
+on:
+  push:
+    branches: [chore/pr4-sync-engine]
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chore/pr4-sync-engine
+      - name: Apply narrow test-only fixes
+        shell: python
+        run: |
+          from pathlib import Path
+
+          ts = Path("tests/cloud-sync-engine.test.ts")
+          text = ts.read_text()
+          needle = '''function mutations(records: SyncOutboxRecord[]) {
+            return records.filter((record): record is SyncOutboxEntry => record.recordType === "mutation");
+          }
+          '''
+          replacement = needle + '''
+          function only<T>(items: T[]): T {
+            expect(items).toHaveLength(1);
+            const item = items[0];
+            if (!item) throw new Error("fixture expected exactly one item");
+            return item;
+          }
+          '''
+          if "function only<T>(items: T[]): T" not in text:
+            assert text.count(needle) == 1
+            text = text.replace(needle, replacement)
+
+          replacements = {
+            'expect((mutations(await db.getAll("syncOutbox"))[0].targetPayload as StudyProgress).percent).toBe(20);': 'expect((only(mutations(await db.getAll("syncOutbox"))).targetPayload as StudyProgress).percent).toBe(20);',
+            'expect(frozen[0].mutationId).toBe(first.mutationId);': 'expect(only(frozen).mutationId).toBe(first.mutationId);',
+            'requestHash: frozen[0].requestHash,': 'requestHash: only(frozen).requestHash,',
+            'stateHash: frozen[0].payloadHash,': 'stateHash: only(frozen).payloadHash,',
+            'expect(b[0].mutationId).toBe(a[0].mutationId);': 'expect(only(b).mutationId).toBe(only(a).mutationId);',
+            'expect(first[0].outcome).toBe("applied");': 'expect(only(first).outcome).toBe("applied");',
+            'expect(duplicate[0].outcome).toBe("duplicate");': 'expect(only(duplicate).outcome).toBe("duplicate");',
+            'expect(retry[0]).toEqual(batch[0]);': 'expect(only(retry)).toEqual(only(batch));',
+            'expect(duplicate[0].revision).toBe(1);': 'expect(only(duplicate).revision).toBe(1);',
+          }
+          for old, new in replacements.items():
+            if old in text:
+              text = text.replace(old, new)
+          ts.write_text(text)
+
+          sql = Path("supabase/tests/database/pr4_sync_writer.test.sql")
+          text = sql.read_text()
+          old = '''-- Complete-request validation: annulled question rejects before any item is written.
+          do $$
+          begin
+            set local role service_role;
+            perform public.central_apply_cloud_mutations('''
+          new = '''-- Complete-request validation: annulled question rejects before any item is written.
+          set local role service_role;
+          do $$
+          begin
+            perform public.central_apply_cloud_mutations('''
+          assert text.count(old) == 1
+          text = text.replace(old, new)
+          old_tail = '''  );
+            reset role;
+            insert into pr4_flags values ('annulled-rejected', false);
+          exception when invalid_parameter_value then
+            reset role;
+            insert into pr4_flags values ('annulled-rejected', true);
+          end $$;
+          select is((select value from pr4_flags where label='annulled-rejected'), true, 'QREF032 is rejected by writer validation');'''
+          new_tail = '''  );
+            insert into pr4_flags values ('annulled-rejected', false);
+          exception when invalid_parameter_value then
+            insert into pr4_flags values ('annulled-rejected', true);
+          end $$;
+          reset role;
+          select is((select value from pr4_flags where label='annulled-rejected'), true, 'QREF032 is rejected by writer validation');'''
+          assert text.count(old_tail) == 1
+          text = text.replace(old_tail, new_tail)
+          sql.write_text(text)
+      - name: Commit fixes when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- tests/cloud-sync-engine.test.ts supabase/tests/database/pr4_sync_writer.test.sql; then
+            echo "No patch required"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/cloud-sync-engine.test.ts supabase/tests/database/pr4_sync_writer.test.sql
+          git commit -m "test(pr4): repair strict assertions and pgTAP role scope"
+          git push origin HEAD:chore/pr4-sync-engine
