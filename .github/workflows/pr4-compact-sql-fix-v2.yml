@@ -1,4 +1,4 @@
-name: PR-4 compact SQL fix
+name: PR-4 compact SQL fix v2
 on:
   push:
     branches: [chore/pr4-sync-engine]
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: chore/pr4-sync-engine
-      - name: Fix two compact writer calls
+      - name: Fix exact bbbb and cccc writer statements
         shell: python
         run: |
           from pathlib import Path
@@ -21,12 +21,12 @@ jobs:
             "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
             "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
           ]:
-            start = text.index("'mutationId','" + mutation_id + "'")
-            end = text.index("reset role;", start)
-            block = text[start:end]
-            assert block.count("\n  ));\n") == 1, mutation_id
-            block = block.replace("\n  ));\n", "\n  )));\n", 1)
-            text = text[:start] + block + text[end:]
+            needle = "'requestHash', public.central_cloud_request_hash('" + mutation_id
+            start = text.index(needle)
+            close = text.index("\n  ));", start)
+            next_reset = text.index("reset role;", start)
+            assert close < next_reset
+            text = text[:close] + "\n  )));" + text[close + len("\n  ));"):]
           p.write_text(text)
       - name: Commit changes
         shell: bash
