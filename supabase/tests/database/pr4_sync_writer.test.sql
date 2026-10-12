@@ -213,9 +213,8 @@ select ok((select deleted_at is not null and revision=3 from public.central_stud
 
 -- Complete-request validation: annulled question rejects before any item is written.
 set local role service_role;
-do $$
-begin
-  perform public.central_apply_cloud_mutations(
+select throws_ok(
+  $$select public.central_apply_cloud_mutations(
     '11111111-1111-4111-8111-111111111111'::uuid,
     jsonb_build_array(
       jsonb_build_object(
@@ -231,13 +230,12 @@ begin
         'requestHash',public.central_cloud_request_hash('14141414-1414-4414-8414-141414141414'::uuid,'review','SHOULD-NOT-WRITE','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
       )
     )
-  );
-  insert into pr4_flags values ('annulled-rejected', false);
-exception when invalid_parameter_value then
-  insert into pr4_flags values ('annulled-rejected', true);
-end $$;
+  )$$,
+  '22023',
+  'ANNULLED_QUESTION_FORBIDDEN',
+  'QREF032 is rejected by writer validation'
+);
 reset role;
-select is((select value from pr4_flags where label='annulled-rejected'), true, 'QREF032 is rejected by writer validation');
 select is((select count(*)::bigint from public.central_sync_mutations where mutation_id in ('13131313-1313-4313-8313-131313131313','14141414-1414-4414-8414-141414141414')), 0::bigint, 'invalid batch creates no semantic receipts');
 select is((select count(*)::bigint from public.central_study_records where entity_id='SHOULD-NOT-WRITE'), 0::bigint, 'invalid batch creates no other domain row');
 
