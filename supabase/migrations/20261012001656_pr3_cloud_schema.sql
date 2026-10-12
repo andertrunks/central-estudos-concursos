@@ -140,13 +140,13 @@ create policy central_study_records_select_own
   on public.central_study_records
   for select
   to authenticated
-  using ((select auth.uid()) = user_id);
+  using ((select auth.uid()) is not null and (select auth.uid()) = user_id);
 
 create policy central_sync_mutations_select_own
   on public.central_sync_mutations
   for select
   to authenticated
-  using ((select auth.uid()) = user_id);
+  using ((select auth.uid()) is not null and (select auth.uid()) = user_id);
 
 -- Explicitly undo Supabase public-schema default grants. PR-3 is read-only from
 -- the browser. The backend writer receives its minimal privileges only when its
