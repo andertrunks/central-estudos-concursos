@@ -1,3 +1,4 @@
+# One-shot branch repair workflow. Remove after the bot commits the test fix.
 name: PR-4 pgTAP harness fix
 on:
   push:
