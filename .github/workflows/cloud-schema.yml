@@ -22,7 +22,9 @@ jobs:
         with:
           version: 2.120.0
       - name: Start disposable local Supabase
-        run: supabase start --exclude studio,mail,realtime,storage,functions,analytics,pooler
+        run: >-
+          supabase start
+          --exclude edge-runtime,imgproxy,kong,logflare,mailpit,postgres-meta,postgrest,realtime,storage-api,studio,supavisor,vector
       - name: Replay migrations from scratch
         run: supabase db reset
       - name: Run database tests
