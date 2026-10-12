@@ -64,7 +64,7 @@ select lives_ok(
       'payload', '{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":10,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
       'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":10,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
       'requestHash', public.central_cloud_request_hash(
-        'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'::uuid,'progress','TI-BD-003','upsert',1,0,
+        'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'::uuid,'progress','TI-BD-003','upsert',1::smallint,0::bigint,
         public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":10,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb)
       )
     ))
@@ -95,7 +95,7 @@ select lives_ok(
       'payload', '{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":10,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
       'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":10,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
       'requestHash', public.central_cloud_request_hash(
-        'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'::uuid,'progress','TI-BD-003','upsert',1,0,
+        'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'::uuid,'progress','TI-BD-003','upsert',1::smallint,0::bigint,
         public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":10,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb)
       )
     ))
@@ -124,7 +124,7 @@ begin
       'entityKind','progress','entityId','TI-BD-003','operation','upsert','schemaVersion',1,'baseRevision',1,
       'payload','{"id":"TI-BD-003"}'::jsonb,
       'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003"}'::jsonb),
-      'requestHash', public.central_cloud_request_hash('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'::uuid,'progress','TI-BD-003','upsert',1,1,public.central_cloud_hash('{"id":"TI-BD-003"}'::jsonb))
+      'requestHash', public.central_cloud_request_hash('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa'::uuid,'progress','TI-BD-003','upsert',1::smallint,1::bigint,public.central_cloud_hash('{"id":"TI-BD-003"}'::jsonb))
     ))
   );
   reset role;
@@ -143,7 +143,7 @@ select public.central_apply_cloud_mutations(
     'entityKind','progress','entityId','TI-BD-003','operation','upsert','schemaVersion',1,'baseRevision',1,
     'payload', '{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
     'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
-    'requestHash', public.central_cloud_request_hash('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb'::uuid,'progress','TI-BD-003','upsert',1,1,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
+    'requestHash', public.central_cloud_request_hash('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb'::uuid,'progress','TI-BD-003','upsert',1::smallint,1::bigint,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
   ));
 select public.central_apply_cloud_mutations(
   '11111111-1111-4111-8111-111111111111'::uuid,
@@ -152,7 +152,7 @@ select public.central_apply_cloud_mutations(
     'entityKind','progress','entityId','TI-BD-003','operation','upsert','schemaVersion',1,'baseRevision',1,
     'payload', '{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
     'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
-    'requestHash', public.central_cloud_request_hash('cccccccc-cccc-4ccc-8ccc-cccccccccccc'::uuid,'progress','TI-BD-003','upsert',1,1,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
+    'requestHash', public.central_cloud_request_hash('cccccccc-cccc-4ccc-8ccc-cccccccccccc'::uuid,'progress','TI-BD-003','upsert',1::smallint,1::bigint,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
   ));
 reset role;
 select is((select revision from public.central_study_records where user_id='11111111-1111-4111-8111-111111111111' and kind='progress' and entity_id='TI-BD-003'), 2::bigint, 'only one device advances shared base revision');
@@ -166,13 +166,13 @@ select public.central_apply_cloud_mutations(
       'mutationId','dddddddd-dddd-4ddd-8ddd-dddddddddddd','entityKind','progress','entityId','TI-BD-003','operation','upsert','schemaVersion',1,'baseRevision',1,
       'payload','{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":40,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
       'payloadHash',public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":40,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
-      'requestHash',public.central_cloud_request_hash('dddddddd-dddd-4ddd-8ddd-dddddddddddd'::uuid,'progress','TI-BD-003','upsert',1,1,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":40,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
+      'requestHash',public.central_cloud_request_hash('dddddddd-dddd-4ddd-8ddd-dddddddddddd'::uuid,'progress','TI-BD-003','upsert',1::smallint,1::bigint,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":40,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
     ),
     jsonb_build_object(
       'mutationId','eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee','entityKind','review','entityId','TI-BD-003:R1','operation','upsert','schemaVersion',1,'baseRevision',0,
       'payload','{"id":"TI-BD-003:R1","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb,
       'payloadHash',public.central_cloud_hash('{"id":"TI-BD-003:R1","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb),
-      'requestHash',public.central_cloud_request_hash('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee'::uuid,'review','TI-BD-003:R1','upsert',1,0,public.central_cloud_hash('{"id":"TI-BD-003:R1","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
+      'requestHash',public.central_cloud_request_hash('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee'::uuid,'review','TI-BD-003:R1','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"TI-BD-003:R1","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
     )
   ));
 reset role;
@@ -186,7 +186,7 @@ select public.central_apply_cloud_mutations(
     'mutationId','ffffffff-ffff-4fff-8fff-ffffffffffff','entityKind','progress','entityId','TI-BD-003','operation','delete','schemaVersion',1,'baseRevision',2,
     'payload',null,
     'payloadHash',public.central_cloud_hash('null'::jsonb),
-    'requestHash',public.central_cloud_request_hash('ffffffff-ffff-4fff-8fff-ffffffffffff'::uuid,'progress','TI-BD-003','delete',1,2,public.central_cloud_hash('null'::jsonb))
+    'requestHash',public.central_cloud_request_hash('ffffffff-ffff-4fff-8fff-ffffffffffff'::uuid,'progress','TI-BD-003','delete',1::smallint,2::bigint,public.central_cloud_hash('null'::jsonb))
   )));
 reset role;
 select ok((select deleted_at is not null and payload is null and payload_hash is null and revision=3 from public.central_study_records where user_id='11111111-1111-4111-8111-111111111111' and kind='progress' and entity_id='TI-BD-003'), 'delete produces revisioned tombstone without hard delete');
@@ -198,7 +198,7 @@ select public.central_apply_cloud_mutations(
     'mutationId','12121212-1212-4212-8212-121212121212','entityKind','progress','entityId','TI-BD-003','operation','upsert','schemaVersion',1,'baseRevision',2,
     'payload','{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":99,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
     'payloadHash',public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":99,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
-    'requestHash',public.central_cloud_request_hash('12121212-1212-4212-8212-121212121212'::uuid,'progress','TI-BD-003','upsert',1,2,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":99,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
+    'requestHash',public.central_cloud_request_hash('12121212-1212-4212-8212-121212121212'::uuid,'progress','TI-BD-003','upsert',1::smallint,2::bigint,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":99,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
   )));
 reset role;
 select is((select result_code from public.central_sync_mutations where mutation_id='12121212-1212-4212-8212-121212121212'), 'conflict', 'stale upsert against tombstone conflicts');
@@ -215,13 +215,13 @@ begin
         'mutationId','13131313-1313-4313-8313-131313131313','entityKind','attempt','entityId','ATT-ANNULLED','operation','upsert','schemaVersion',1,'baseRevision',0,
         'payload','{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb,
         'payloadHash',public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb),
-        'requestHash',public.central_cloud_request_hash('13131313-1313-4313-8313-131313131313'::uuid,'attempt','ATT-ANNULLED','upsert',1,0,public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb))
+        'requestHash',public.central_cloud_request_hash('13131313-1313-4313-8313-131313131313'::uuid,'attempt','ATT-ANNULLED','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb))
       ),
       jsonb_build_object(
         'mutationId','14141414-1414-4414-8414-141414141414','entityKind','review','entityId','SHOULD-NOT-WRITE','operation','upsert','schemaVersion',1,'baseRevision',0,
         'payload','{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb,
         'payloadHash',public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb),
-        'requestHash',public.central_cloud_request_hash('14141414-1414-4414-8414-141414141414'::uuid,'review','SHOULD-NOT-WRITE','upsert',1,0,public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
+        'requestHash',public.central_cloud_request_hash('14141414-1414-4414-8414-141414141414'::uuid,'review','SHOULD-NOT-WRITE','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
       )
     )
   );
