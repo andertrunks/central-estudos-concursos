@@ -58,6 +58,13 @@ function mutations(records: SyncOutboxRecord[]) {
   return records.filter((record): record is SyncOutboxEntry => record.recordType === "mutation");
 }
 
+function only<T>(items: T[]): T {
+  expect(items).toHaveLength(1);
+  const item = items[0];
+  if (!item) throw new Error("fixture expected exactly one item");
+  return item;
+}
+
 class MemoryTransport implements CloudSyncTransport {
   private seq = 0;
   private records = new Map<string, RemoteCloudRecord>();
@@ -171,7 +178,7 @@ describe("AUD110 PR-4 — durable outbox and protocol", () => {
     const second = await putCloudEntity(db, "progress", "TI-BD-003", progress("TI-BD-003", 20));
     expect(second.mutationId).toBe(first.mutationId);
     expect(mutations(await db.getAll("syncOutbox"))).toHaveLength(1);
-    expect((mutations(await db.getAll("syncOutbox"))[0].targetPayload as StudyProgress).percent).toBe(20);
+    expect((only(mutations(await db.getAll("syncOutbox"))).targetPayload as StudyProgress).percent).toBe(20);
     db.close();
   });
 
@@ -180,7 +187,7 @@ describe("AUD110 PR-4 — durable outbox and protocol", () => {
     const g = guard();
     const first = await putCloudEntity(db, "progress", "TI-BD-003", progress("TI-BD-003", 10));
     const frozen = await preparePushBatch(db, g);
-    expect(frozen[0].mutationId).toBe(first.mutationId);
+    expect(only(frozen).mutationId).toBe(first.mutationId);
     const successor = await putCloudEntity(db, "progress", "TI-BD-003", progress("TI-BD-003", 30));
     expect(successor.mutationId).not.toBe(first.mutationId);
     expect(successor.predecessorMutationId).toBe(first.mutationId);
@@ -197,11 +204,11 @@ describe("AUD110 PR-4 — durable outbox and protocol", () => {
     const successor = await putCloudEntity(db, "progress", "TI-BD-003", progress("TI-BD-003", 30));
     await applyPushResults(db, g, [{
       mutationId: first.mutationId,
-      requestHash: frozen[0].requestHash,
+      requestHash: only(frozen).requestHash,
       outcome: "applied",
       revision: 1,
       changeSeq: 77,
-      stateHash: frozen[0].payloadHash,
+      stateHash: only(frozen).payloadHash,
     }]);
     const next = await db.get("syncOutbox", successor.mutationId) as SyncOutboxEntry;
     expect(next.predecessorMutationId).toBeNull();
@@ -289,11 +296,11 @@ describe("AUD110 PR-4 — durable outbox and protocol", () => {
     await putCloudEntity(db, "progress", "TI-BD-003", progress("TI-BD-003", 70));
     const a = await preparePushBatch(db, g);
     const b = await preparePushBatch(db, g);
-    expect(b[0].mutationId).toBe(a[0].mutationId);
+    expect(only(b).mutationId).toBe(only(a).mutationId);
     const first = await server.push({ userId: USER, mutations: a });
     const duplicate = await server.push({ userId: USER, mutations: b });
-    expect(first[0].outcome).toBe("applied");
-    expect(duplicate[0].outcome).toBe("duplicate");
+    expect(only(first).outcome).toBe("applied");
+    expect(only(duplicate).outcome).toBe("duplicate");
     await applyPushResults(db, g, duplicate);
     expect(mutations(await db.getAll("syncOutbox"))).toHaveLength(0);
     db.close();
@@ -308,10 +315,10 @@ describe("AUD110 PR-4 — durable outbox and protocol", () => {
     server.loseNextResponse = true;
     await expect(server.push({ userId: USER, mutations: batch })).rejects.toThrow("lost response");
     const retry = await preparePushBatch(db, g);
-    expect(retry[0]).toEqual(batch[0]);
+    expect(only(retry)).toEqual(only(batch));
     const duplicate = await server.push({ userId: USER, mutations: retry });
-    expect(duplicate[0].outcome).toBe("duplicate");
-    expect(duplicate[0].revision).toBe(1);
+    expect(only(duplicate).outcome).toBe("duplicate");
+    expect(only(duplicate).revision).toBe(1);
     await applyPushResults(db, g, duplicate);
     db.close();
   });
