@@ -1,0 +1,2 @@
+-- Intentionally empty. PR-3 database tests create synthetic users/state inside
+-- transactions and roll them back; no real student or editorial data belongs here.
