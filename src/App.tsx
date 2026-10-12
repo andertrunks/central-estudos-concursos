@@ -9,6 +9,7 @@ import { Questions, Reviews, Errors } from "./pages/Practice";
 import { Simulations, Discursives } from "./pages/Training";
 import Settings from "./pages/Settings";
 import { Empty } from "./components/Common";
+import { useCloudSync } from "./components/CloudSyncContext";
 import { useStudy } from "./components/StudyContext";
 const navigation = [
   ["/", "Estudar", "◫"],
@@ -73,16 +74,7 @@ function RouteFocus() {
 }
 export default function App() {
   const { error, ready } = useStudy();
-  const [online, setOnline] = useState(navigator.onLine);
-  useEffect(() => {
-    const update = () => setOnline(navigator.onLine);
-    window.addEventListener("online", update);
-    window.addEventListener("offline", update);
-    return () => {
-      window.removeEventListener("online", update);
-      window.removeEventListener("offline", update);
-    };
-  }, []);
+  const cloud = useCloudSync();
   return (
     <>
       <a className="skip" href="#main">
@@ -115,9 +107,15 @@ export default function App() {
         <header className="topbar">
           <span>Seu próximo passo começa aqui.</span>
           <span className="connection">
-            <i className={online ? "online" : "offline"} />
-            {online ? "Disponível neste dispositivo" : "Modo offline"}
+            <i className={cloud.online ? "online" : "offline"} />
+            {cloud.online ? "Disponível neste dispositivo" : "Modo offline"}
           </span>
+          {cloud.cloudAvailable && (
+            <span className="connection" role="status" aria-live="polite">
+              <i aria-hidden="true" />
+              {cloud.view.label}
+            </span>
+          )}
         </header>
         <main id="main">
           <RouteFocus />
