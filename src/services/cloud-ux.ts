@@ -98,7 +98,7 @@ export function cloudStatusView(status: CloudPublicStatus, pending = 0, conflict
     case "PENDING_OFFLINE":
       return {
         status,
-        label: `${pending} alteração${pending === 1 ? "" : "ões"} aguardando conexão`,
+        label: `${pending} ${pending === 1 ? "alteração" : "alterações"} aguardando conexão`,
         detail: "As alterações estão salvas localmente e serão enviadas quando houver conexão.",
       };
     case "AUTH_REQUIRED":
