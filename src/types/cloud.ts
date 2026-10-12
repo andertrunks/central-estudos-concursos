@@ -148,7 +148,22 @@ export interface SyncRemoteStateRecord {
   payload: unknown | null;
 }
 
-export type SyncOutboxRecord = SyncOutboxEntry | SyncCursorRecord | SyncRemoteStateRecord;
+/** Local-only PR-5 adoption receipt. It shares the technical store for atomicity,
+ * but is never a cloud mutation and is ignored by the sync engine. */
+export interface BootstrapReceipt {
+  id: "__bootstrap_receipt__";
+  recordType: "bootstrap";
+  status: "bootstrap";
+  entityId: "__bootstrap__";
+  sourceKind: "legacy-v2" | "backup-v1";
+  sourceFingerprint: string;
+  targetScopeHash: string;
+  appliedStateFingerprint: string;
+  importedKeys: Record<CloudSyncStore, string[]>;
+  appliedAt: string;
+}
+
+export type SyncOutboxRecord = SyncOutboxEntry | SyncCursorRecord | SyncRemoteStateRecord | BootstrapReceipt;
 
 export interface RemoteBaseRecord {
   id: string;
