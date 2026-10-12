@@ -151,7 +151,7 @@ select public.central_apply_cloud_mutations(
     'payload', '{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
     'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
     'requestHash', public.central_cloud_request_hash('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb'::uuid,'progress','TI-BD-003','upsert',1::smallint,1::bigint,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":20,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
-  ));
+  )));
 select public.central_apply_cloud_mutations(
   '11111111-1111-4111-8111-111111111111'::uuid,
   jsonb_build_array(jsonb_build_object(
@@ -160,7 +160,7 @@ select public.central_apply_cloud_mutations(
     'payload', '{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb,
     'payloadHash', public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb),
     'requestHash', public.central_cloud_request_hash('cccccccc-cccc-4ccc-8ccc-cccccccccccc'::uuid,'progress','TI-BD-003','upsert',1::smallint,1::bigint,public.central_cloud_hash('{"id":"TI-BD-003","status":"em andamento","startedAt":"2026-10-12","completedAt":null,"lastAccess":"2026-10-12","percent":30,"correct":0,"wrong":0,"total":0,"lastReview":null,"nextReview":null}'::jsonb))
-  ));
+  )));
 reset role;
 select is((select revision from public.central_study_records where user_id='11111111-1111-4111-8111-111111111111' and kind='progress' and entity_id='TI-BD-003'), 2::bigint, 'only one device advances shared base revision');
 select is((select result_code from public.central_sync_mutations where user_id='11111111-1111-4111-8111-111111111111' and mutation_id='cccccccc-cccc-4ccc-8ccc-cccccccccccc'), 'conflict', 'losing stale mutation gets durable conflict receipt');
