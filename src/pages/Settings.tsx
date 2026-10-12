@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useCloudSync } from "../components/CloudSyncContext";
 import { useStudy } from "../components/StudyContext";
 import { importBackup } from "../services/storage";
 import { PageHeading, formatDate } from "../components/Common";
 import { catalog } from "../services/catalog";
 export default function Settings() {
   const { state, run, ready } = useStudy();
+  const cloud = useCloudSync();
   const [message, setMessage] = useState("");
   function download() {
     const url = URL.createObjectURL(
@@ -25,7 +27,21 @@ export default function Settings() {
         O progresso fica neste navegador. Exporte uma cópia para trocar de
         dispositivo.
       </PageHeading>
-      <section className="card">
+      {cloud.cloudAvailable && (
+        <section className="card" aria-labelledby="cloud-status-title">
+          <h2 id="cloud-status-title">Progresso na nuvem</h2>
+          <p role="status" aria-live="polite">
+            <strong>{cloud.view.label}</strong>
+          </p>
+          <p>{cloud.view.detail}</p>
+          <p>
+            A nuvem está em validação controlada. Entrar em uma conta não copia,
+            substitui nem remove o progresso deste dispositivo. A adoção exige uma
+            escolha explícita e um preview antes de qualquer cópia.
+          </p>
+        </section>
+      )}
+      <section className={`card${cloud.cloudAvailable ? " section-space" : ""}`}>
         <h2>Backup do progresso</h2>
         <p>
           A limpeza dos dados do navegador remove seus registros locais. O
@@ -68,8 +84,9 @@ export default function Settings() {
       <section className="card section-space">
         <h2>Uma biblioteca independente</h2>
         <p>
-          O site recebe uma cópia validada dos dados editoriais. Ele não acessa
-          o Google Drive privado e não envia seu progresso para servidores.
+          {cloud.cloudAvailable
+            ? "O catálogo editorial continua independente do seu progresso. A sincronização de progresso ainda não é ativada automaticamente e exige adoção explícita."
+            : "O site recebe uma cópia validada dos dados editoriais. Ele não acessa o Google Drive privado e não envia seu progresso para servidores."}
         </p>
         <p>Última sincronização editorial: {formatDate(catalog.syncedAt)}.</p>
         <p>
