@@ -1,46 +1,64 @@
-// Follow this setup guide to integrate the Deno language server with your editor:
-// https://deno.land/manual/getting_started/setup_your_environment
-// This enables autocomplete, go to definition, etc.
-
-// Setup type definitions for built-in Supabase Runtime APIs
 import "@supabase/functions-js/edge-runtime.d.ts";
 import { withSupabase } from "@supabase/server";
 
-console.log("Hello from Functions!");
-
-// This endpoint uses 'publishable' | 'secret' access, apiKey is required.
-// Use publishable for Client-facing, key-validated endpoints
-// Use secret for Server-to-server, internal calls
-export default {
-  fetch: withSupabase({ auth: ["publishable", "secret"] }, async (req, ctx) => {
-    // Called by another service with a secret key
-    // ctx.supabaseAdmin bypasses RLS — use for privileged operations
-    /*
-    if (ctx.authMode === "secret") {
-      const { user_id } = await req.json();
-      const { data } = await ctx.supabaseAdmin.auth.admin.getUserById(user_id);
-
-      return Response.json({
-        email: data?.user?.email,
-      });
-    }
-    */
-
-    const { name } = await req.json();
-
-    return Response.json({
-      message: `Hello ${name}!`,
-    });
-  }),
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Vary": "Origin",
 };
 
-/* To invoke locally:
+const responseHeaders = {
+  ...corsHeaders,
+  "Cache-Control": "no-store",
+  "Content-Type": "application/json",
+};
 
-  1. Run `supabase start` (see: https://supabase.com/docs/reference/cli/supabase-start)
-  2. Make an HTTP request:
+function json(body: unknown, status = 200) {
+  return new Response(JSON.stringify(body), { status, headers: responseHeaders });
+}
 
-  curl -i --location --request POST 'http://127.0.0.1:54321/functions/v1/cloud-sync-write' \
-    --header 'apiKey: sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH' \
-    --data '{"name":"Functions"}'
+const secured = withSupabase({ auth: "user" }, async (req, ctx) => {
+  if (req.method !== "POST") return json({ error: "method_not_allowed" }, 405);
 
-*/
+  let body: unknown;
+  try {
+    body = await req.json();
+  } catch {
+    return json({ error: "invalid_json" }, 400);
+  }
+  if (!body || typeof body !== "object") return json({ error: "invalid_body" }, 400);
+  const input = body as { userId?: unknown; mutations?: unknown };
+  if ("userId" in input) return json({ error: "user_id_must_not_be_supplied" }, 400);
+  if (!Array.isArray(input.mutations) || input.mutations.length < 1 || input.mutations.length > 50)
+    return json({ error: "invalid_mutation_batch" }, 422);
+
+  const userId = ctx.userClaims?.id;
+  if (!userId) return json({ error: "unauthorized" }, 401);
+
+  const { data, error } = await ctx.supabaseAdmin.rpc("central_apply_cloud_mutations", {
+    p_user_id: userId,
+    p_mutations: input.mutations,
+  });
+
+  if (error) {
+    const message = error.message ?? "writer_error";
+    if (message.includes("INTEGRITY_CONFLICT")) return json({ error: "integrity_conflict" }, 409);
+    if (
+      message.includes("INVALID_") ||
+      message.includes("FORBIDDEN") ||
+      message.includes("HASH_MISMATCH") ||
+      message.includes("DELETE_REQUIRES")
+    ) return json({ error: "invalid_mutation" }, 422);
+    return json({ error: "writer_error" }, 500);
+  }
+
+  return json({ results: data });
+});
+
+export default {
+  fetch(req: Request) {
+    if (req.method === "OPTIONS") return new Response("ok", { headers: responseHeaders });
+    return secured(req);
+  },
+};

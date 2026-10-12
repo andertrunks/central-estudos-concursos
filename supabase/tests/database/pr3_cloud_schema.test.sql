@@ -32,7 +32,7 @@ select ok(not has_table_privilege('authenticated', 'public.central_sync_mutation
 select ok(not has_table_privilege('authenticated', 'public.central_sync_mutations', 'UPDATE'), 'authenticated cannot update receipts directly');
 select ok(not has_table_privilege('authenticated', 'public.central_sync_mutations', 'DELETE'), 'authenticated cannot delete receipts directly');
 select ok(not has_sequence_privilege('authenticated', 'public.central_study_change_seq', 'USAGE'), 'authenticated cannot allocate change_seq');
-select ok(not has_table_privilege('service_role', 'public.central_study_records', 'INSERT'), 'PR-3 does not grant writer privileges early');
+select ok(not has_table_privilege('service_role', 'public.central_study_records', 'DELETE'), 'backend writer cannot hard-delete study records');
 
 select is(
   (select count(*)::bigint from pg_policies where schemaname = 'public' and tablename = 'central_study_records'),
@@ -71,7 +71,7 @@ select ok(
     join pg_namespace n on n.oid = p.pronamespace
     where n.nspname = 'public' and p.proname like 'central_%' and p.prosecdef
   ),
-  'PR-3 exposes no SECURITY DEFINER writer'
+  'cloud schema exposes no SECURITY DEFINER writer'
 );
 
 insert into auth.users (id, email) values
