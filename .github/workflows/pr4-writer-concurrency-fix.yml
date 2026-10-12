@@ -1,0 +1,80 @@
+name: PR-4 writer concurrency fix
+on:
+  push:
+    branches: [chore/pr4-sync-engine]
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chore/pr4-sync-engine
+      - name: Serialize writer calls per user and assert contract
+        shell: python
+        run: |
+          from pathlib import Path
+
+          migration = Path("supabase/migrations/20261012113915_pr4_sync_writer.sql")
+          text = migration.read_text()
+          anchor = '''  if jsonb_array_length(p_mutations) < 1 or jsonb_array_length(p_mutations) > 50 then
+            raise exception 'INVALID_MUTATION_BATCH_SIZE' using errcode = '22023';
+          end if;
+
+          -- Pass 1: validate the complete request before any side effect.
+          '''
+          replacement = '''  if jsonb_array_length(p_mutations) < 1 or jsonb_array_length(p_mutations) > 50 then
+            raise exception 'INVALID_MUTATION_BATCH_SIZE' using errcode = '22023';
+          end if;
+
+          -- Serialize writer calls for one account. This closes the race where two tabs
+          -- can observe the same missing receipt/current revision before either commits.
+          -- The lock is transaction-scoped and does not block writes for other accounts.
+          perform pg_catalog.pg_advisory_xact_lock(
+            pg_catalog.hashtextextended('central-cloud-sync:' || p_user_id::text, 0)
+          );
+
+          -- Pass 1: validate the complete request before any side effect.
+          '''
+          if "pg_advisory_xact_lock" not in text:
+            assert text.count(anchor) == 1
+            text = text.replace(anchor, replacement)
+          migration.write_text(text)
+
+          test = Path("supabase/tests/database/pr4_sync_writer.test.sql")
+          text = test.read_text()
+          text = text.replace("select plan(23);", "select plan(24);", 1)
+          anchor = '''select ok(
+            not exists (
+              select 1 from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+              where n.nspname = 'public' and p.proname = 'central_apply_cloud_mutations' and p.prosecdef
+            ),
+            'writer is SECURITY INVOKER, never SECURITY DEFINER'
+          );
+          '''
+          addition = anchor + '''select ok(
+            position(
+              'pg_advisory_xact_lock' in
+              pg_get_functiondef('public.central_apply_cloud_mutations(uuid,jsonb)'::regprocedure)
+            ) > 0,
+            'writer serializes same-user calls before receipt/CAS evaluation'
+          );
+          '''
+          if "writer serializes same-user calls" not in text:
+            assert text.count(anchor) == 1
+            text = text.replace(anchor, addition)
+          test.write_text(text)
+      - name: Commit concurrency fix when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- supabase/migrations/20261012113915_pr4_sync_writer.sql supabase/tests/database/pr4_sync_writer.test.sql; then
+            echo "No patch required"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add supabase/migrations/20261012113915_pr4_sync_writer.sql supabase/tests/database/pr4_sync_writer.test.sql
+          git commit -m "fix(pr4): serialize same-user writer transactions"
+          git push origin HEAD:chore/pr4-sync-engine
