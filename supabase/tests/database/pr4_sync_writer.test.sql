@@ -212,24 +212,27 @@ select is((select result_code from public.central_sync_mutations where mutation_
 select ok((select deleted_at is not null and revision=3 from public.central_study_records where user_id='11111111-1111-4111-8111-111111111111' and kind='progress' and entity_id='TI-BD-003'), 'stale device cannot resurrect tombstone');
 
 -- Complete-request validation: annulled question rejects before any item is written.
+create temp table pr4_invalid_batches (payload jsonb not null);
+insert into pr4_invalid_batches(payload)
+values (jsonb_build_array(
+  jsonb_build_object(
+    'mutationId','13131313-1313-4313-8313-131313131313','entityKind','attempt','entityId','ATT-ANNULLED','operation','upsert','schemaVersion',1,'baseRevision',0,
+    'payload','{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb,
+    'payloadHash',public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb),
+    'requestHash',public.central_cloud_request_hash('13131313-1313-4313-8313-131313131313'::uuid,'attempt','ATT-ANNULLED','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb))
+  ),
+  jsonb_build_object(
+    'mutationId','14141414-1414-4414-8414-141414141414','entityKind','review','entityId','SHOULD-NOT-WRITE','operation','upsert','schemaVersion',1,'baseRevision',0,
+    'payload','{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb,
+    'payloadHash',public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb),
+    'requestHash',public.central_cloud_request_hash('14141414-1414-4414-8414-141414141414'::uuid,'review','SHOULD-NOT-WRITE','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
+  )
+));
 set local role service_role;
 select throws_ok(
   $$select public.central_apply_cloud_mutations(
     '11111111-1111-4111-8111-111111111111'::uuid,
-    jsonb_build_array(
-      jsonb_build_object(
-        'mutationId','13131313-1313-4313-8313-131313131313','entityKind','attempt','entityId','ATT-ANNULLED','operation','upsert','schemaVersion',1,'baseRevision',0,
-        'payload','{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb,
-        'payloadHash',public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb),
-        'requestHash',public.central_cloud_request_hash('13131313-1313-4313-8313-131313131313'::uuid,'attempt','ATT-ANNULLED','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"ATT-ANNULLED","questionId":"QREF-QUAD-ING001-032","contentId":"ING-001","date":"2026-10-12","answer":"A","correct":false,"reason":"conteúdo","resolvedAt":null}'::jsonb))
-      ),
-      jsonb_build_object(
-        'mutationId','14141414-1414-4414-8414-141414141414','entityKind','review','entityId','SHOULD-NOT-WRITE','operation','upsert','schemaVersion',1,'baseRevision',0,
-        'payload','{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb,
-        'payloadHash',public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb),
-        'requestHash',public.central_cloud_request_hash('14141414-1414-4414-8414-141414141414'::uuid,'review','SHOULD-NOT-WRITE','upsert',1::smallint,0::bigint,public.central_cloud_hash('{"id":"SHOULD-NOT-WRITE","contentId":"TI-BD-003","stage":"D1","due":"2026-10-13","doneAt":null}'::jsonb))
-      )
-    )
+    (select payload from pr4_invalid_batches limit 1)
   )$$,
   '22023',
   'ANNULLED_QUESTION_FORBIDDEN',
