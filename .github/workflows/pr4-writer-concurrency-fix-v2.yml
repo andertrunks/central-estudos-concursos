@@ -1,0 +1,61 @@
+name: PR-4 writer concurrency fix v2
+on:
+  push:
+    branches: [chore/pr4-sync-engine]
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chore/pr4-sync-engine
+      - name: Apply same-user writer serialization
+        shell: python
+        run: |
+          from pathlib import Path
+
+          migration = Path("supabase/migrations/20261012113915_pr4_sync_writer.sql")
+          text = migration.read_text()
+          marker = "  -- Pass 1: validate the complete request before any side effect."
+          lock = """  -- Serialize writer calls for one account. This closes the race where two tabs
+          -- can observe the same missing receipt/current revision before either commits.
+          -- The lock is transaction-scoped and does not block writes for other accounts.
+          perform pg_catalog.pg_advisory_xact_lock(
+            pg_catalog.hashtextextended('central-cloud-sync:' || p_user_id::text, 0)
+          );
+
+          """
+          if "pg_advisory_xact_lock" not in text:
+            assert text.count(marker) == 1
+            text = text.replace(marker, lock + marker, 1)
+          migration.write_text(text)
+
+          test = Path("supabase/tests/database/pr4_sync_writer.test.sql")
+          text = test.read_text()
+          assert text.count("select plan(23);") == 1
+          text = text.replace("select plan(23);", "select plan(24);", 1)
+          marker = "  'writer is SECURITY INVOKER, never SECURITY DEFINER'\n);"
+          contract = """
+          select ok(
+            position(
+              'pg_advisory_xact_lock' in
+              pg_get_functiondef('public.central_apply_cloud_mutations(uuid,jsonb)'::regprocedure)
+            ) > 0,
+            'writer serializes same-user calls before receipt/CAS evaluation'
+          );"""
+          if "writer serializes same-user calls" not in text:
+            assert text.count(marker) == 1
+            text = text.replace(marker, marker + contract, 1)
+          test.write_text(text)
+      - name: Commit changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add supabase/migrations/20261012113915_pr4_sync_writer.sql supabase/tests/database/pr4_sync_writer.test.sql
+          git diff --cached --quiet && exit 0
+          git commit -m "fix(pr4): serialize same-user writer transactions"
+          git push origin HEAD:chore/pr4-sync-engine
