@@ -93,11 +93,7 @@ export async function requestHashFor(input: {
 
 export function projectForCloud(store: CloudSyncStore, value: unknown): unknown {
   switch (store) {
-    case "activities": {
-      const parsed = activitySchema.parse(value);
-      const { sequence: _sequence, ...projected } = parsed;
-      return activityCloudSchema.parse(projected);
-    }
+    case "activities": return activityCloudSchema.parse(activitySchema.parse(value));
     case "progress": return progressSchema.parse(value);
     case "reviews": return reviewSchema.parse(value);
     case "attempts": {

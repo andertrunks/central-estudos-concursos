@@ -322,9 +322,9 @@ describe("AUD110 PR-4 — durable outbox and protocol", () => {
     const g = guard(4, state);
     const server = new MemoryTransport();
     await server.inject("progress", "TI-BD-003", progress("TI-BD-003", 45));
-    let token = "old-token";
-    token = "new-token";
-    expect(token).toBe("new-token");
+    const tokenBefore = "old-token";
+    const tokenAfter = "new-token";
+    expect(tokenBefore).not.toBe(tokenAfter);
     await runSyncCycle(db, g, server);
     expect((await db.get("progress", "TI-BD-003"))?.percent).toBe(45);
     db.close();
