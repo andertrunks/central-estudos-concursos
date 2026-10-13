@@ -3,6 +3,7 @@ import { applyBootstrapPlan, previewLegacyBootstrap, readLegacyBackup } from "./
 import { openScopedStudyDatabase } from "./storage-db";
 import {
   readCloudAdoptionSettings,
+  updateCloudSyncPreference,
   writeCloudAdoptionSettings,
   type CloudAdoptionSettings,
 } from "./sync-meta";
@@ -107,6 +108,7 @@ export async function keepLegacyLocalOnly(
     choice: "local_only",
     adopted: true,
     syncEnabled: false,
+    reconcileRequired: true,
     decidedAt,
   };
   await writeCloudAdoptionSettings(scope, value);
@@ -126,6 +128,7 @@ export async function copyLegacyIntoAccount(
     choice: "copy_legacy",
     adopted: true,
     syncEnabled: false,
+    reconcileRequired: true,
     decidedAt,
     sourceFingerprint: applied.sourceFingerprint,
   };
@@ -153,8 +156,25 @@ export async function startEmptyAccount(
     choice: "empty_account",
     adopted: true,
     syncEnabled: false,
+    reconcileRequired: true,
     decidedAt,
   };
   await writeCloudAdoptionSettings(scope, value);
   return value;
+}
+
+export async function pauseCloudSync(
+  scope: AccountScope,
+  updatedAt = new Date().toISOString(),
+) {
+  requireAccount(scope);
+  return updateCloudSyncPreference(scope, false, updatedAt);
+}
+
+export async function resumeCloudSync(
+  scope: AccountScope,
+  updatedAt = new Date().toISOString(),
+) {
+  requireAccount(scope);
+  return updateCloudSyncPreference(scope, true, updatedAt);
 }
