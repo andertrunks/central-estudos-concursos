@@ -15,6 +15,17 @@ import type { StudyProgress } from "../src/types/schema";
 
 const names = new Set<string>();
 
+type RawStudyDb = {
+  get(store: string, key: string): Promise<unknown>;
+  count(store: string): Promise<number>;
+  put(store: string, value: unknown): Promise<IDBValidKey>;
+  close(): void;
+};
+
+function raw(db: unknown) {
+  return db as RawStudyDb;
+}
+
 function progress(percent: number): StudyProgress {
   return {
     id: "TI-BD-003",
@@ -66,7 +77,7 @@ describe("PR-6 adoção explícita — preflight local", () => {
     expect(decision.syncEnabled).toBe(false);
     expect((await readAdoptionDecision(scope))?.choice).toBe("local_only");
 
-    const account = await openScopedStudyDatabase(scope);
+    const account = raw(await openScopedStudyDatabase(scope));
     expect(await account.count("progress")).toBe(0);
     account.close();
     const legacy = await openLegacyStudyDatabase(legacyDbName);
@@ -94,8 +105,8 @@ describe("PR-6 adoção explícita — preflight local", () => {
     expect(first.sourceFingerprint).toBe(second.sourceFingerprint);
     expect(second.choice).toBe("copy_legacy");
 
-    const account = await openScopedStudyDatabase(scope);
-    expect((await account.get("progress", "TI-BD-003"))?.percent).toBe(42);
+    const account = raw(await openScopedStudyDatabase(scope));
+    expect((await account.get("progress", "TI-BD-003") as StudyProgress | undefined)?.percent).toBe(42);
     expect(await account.count("progress")).toBe(1);
     expect(await account.count("attempts")).toBe(0);
     account.close();
@@ -110,7 +121,7 @@ describe("PR-6 adoção explícita — preflight local", () => {
     const empty = await fixture("empty");
     const decision = await startEmptyAccount(empty.scope, "2026-10-13T10:00:00.000Z");
     expect(decision.choice).toBe("empty_account");
-    const account = await openScopedStudyDatabase(empty.scope);
+    const account = raw(await openScopedStudyDatabase(empty.scope));
     expect(await account.count("progress")).toBe(0);
     account.close();
     const legacy = await openLegacyStudyDatabase(empty.legacyDbName);
@@ -118,7 +129,7 @@ describe("PR-6 adoção explícita — preflight local", () => {
     legacy.close();
 
     const occupied = await fixture("occupied");
-    const occupiedDb = await openScopedStudyDatabase(occupied.scope);
+    const occupiedDb = raw(await openScopedStudyDatabase(occupied.scope));
     await occupiedDb.put("progress", progress(90));
     occupiedDb.close();
     await expect(startEmptyAccount(occupied.scope)).rejects.toThrow(/já contém dados/);
@@ -131,7 +142,7 @@ describe("PR-6 adoção explícita — preflight local", () => {
     expect((await readAdoptionDecision(scope))?.choice).toBe("local_only");
     await copyLegacyIntoAccount(scope, "2026-10-13T10:05:00.000Z", legacyDbName);
     expect((await readAdoptionDecision(scope))?.choice).toBe("copy_legacy");
-    const account = await openScopedStudyDatabase(scope);
+    const account = raw(await openScopedStudyDatabase(scope));
     expect(await account.count("progress")).toBe(1);
     account.close();
   });
