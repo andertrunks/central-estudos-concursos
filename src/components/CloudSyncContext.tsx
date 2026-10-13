@@ -7,8 +7,8 @@ import {
   type ReactNode,
 } from "react";
 import { useAuthSession } from "./AuthSessionContext";
-import { localAccountScope } from "../services/account-scope";
 import {
+  activeStudyScopeForAdoption,
   copyLegacyIntoAccount,
   keepLegacyLocalOnly,
   readAdoptionDecision,
@@ -124,15 +124,10 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  const activeScope = useMemo<AccountScope>(() => {
-    const scope = auth.candidateScope;
-    if (
-      scope?.mode === "account" &&
-      effectiveAdoption &&
-      effectiveAdoption.choice !== "local_only"
-    ) return scope;
-    return localAccountScope();
-  }, [auth.candidateScope, effectiveAdoption]);
+  const activeScope = useMemo<AccountScope>(
+    () => activeStudyScopeForAdoption(auth.candidateScope, effectiveAdoption),
+    [auth.candidateScope, effectiveAdoption],
+  );
 
   const status = deriveCloudPublicStatus({
     cloudMode: auth.cloudMode,
