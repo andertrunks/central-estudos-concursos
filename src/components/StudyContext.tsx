@@ -89,8 +89,9 @@ export function StudyProvider({ children }: { children: ReactNode }) {
 
   const error = failure?.scopeKey === desiredScopeKey ? failure.message : "";
   const ready = loadedScopeKey === desiredScopeKey && !error;
+  const visibleState = ready ? state : initial;
   return (
-    <Context.Provider value={{ state, ready, error, day,run }}>
+    <Context.Provider value={{ state: visibleState, ready, error, day,run }}>
       {children}
     </Context.Provider>
   );
