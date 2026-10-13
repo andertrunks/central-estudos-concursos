@@ -6,7 +6,9 @@ import {
   activeStudyScopeForAdoption,
   copyLegacyIntoAccount,
   keepLegacyLocalOnly,
+  pauseCloudSync,
   readAdoptionDecision,
+  resumeCloudSync,
   startEmptyAccount,
   summarizeLegacyProgress,
 } from "../src/services/cloud-adoption";
@@ -166,5 +168,38 @@ describe("PR-6 adoção explícita — preflight local", () => {
     const account = raw(await openScopedStudyDatabase(scope));
     expect(await account.count("progress")).toBe(1);
     account.close();
+  });
+
+  it("pausa e reativa sem apagar estado e exige reconciliação após reativar", async () => {
+    const { scope } = await fixture("pause-resume");
+    await startEmptyAccount(scope, "2026-10-13T10:00:00.000Z");
+    const account = raw(await openScopedStudyDatabase(scope));
+    await account.put("progress", progress(73));
+    account.close();
+
+    const resumed = await resumeCloudSync(scope, "2026-10-13T10:05:00.000Z");
+    expect(resumed.syncEnabled).toBe(true);
+    expect(resumed.reconcileRequired).toBe(true);
+    expect(resumed.syncPreferenceUpdatedAt).toBe("2026-10-13T10:05:00.000Z");
+
+    const paused = await pauseCloudSync(scope, "2026-10-13T10:06:00.000Z");
+    expect(paused.syncEnabled).toBe(false);
+    expect(paused.reconcileRequired).toBe(true);
+
+    const afterPause = raw(await openScopedStudyDatabase(scope));
+    expect((await afterPause.get("progress", "TI-BD-003") as StudyProgress | undefined)?.percent).toBe(73);
+    expect(await afterPause.count("syncOutbox")).toBe(0);
+    afterPause.close();
+
+    const resumedAgain = await resumeCloudSync(scope, "2026-10-13T10:07:00.000Z");
+    expect(resumedAgain.syncEnabled).toBe(true);
+    expect(resumedAgain.reconcileRequired).toBe(true);
+  });
+
+  it("não permite reativar sync enquanto a opção A mantém o estudo no legado", async () => {
+    const { scope } = await fixture("local-only-resume");
+    await keepLegacyLocalOnly(scope, "2026-10-13T10:00:00.000Z");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/Copie ou inicie/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
   });
 });
