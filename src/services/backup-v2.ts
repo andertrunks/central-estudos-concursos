@@ -348,7 +348,7 @@ export async function importPedagogicalBackup(input: unknown) {
       activities: value.activities,
       progress: value.progress,
       reviews: value.reviews,
-      attempts: value.attempts.map(({ submissionId: _submissionId, ...attempt }) => attempt),
+      attempts: value.attempts.map((attempt) => attemptSchema.parse(attempt)),
       writings: value.writings,
       results: value.results,
     };
