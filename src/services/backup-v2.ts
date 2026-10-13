@@ -209,7 +209,7 @@ export async function exportBackupV2(db: IDBPDatabase<StudyDBV3>): Promise<Backu
     db.getAll("submissions"),
     db.getAll("simulationSubmissions"),
   ]);
-  const value = buildBackupV2({
+  const value = parseBackupV2(buildBackupV2({
     activities,
     progress,
     reviews,
@@ -218,14 +218,14 @@ export async function exportBackupV2(db: IDBPDatabase<StudyDBV3>): Promise<Backu
     results,
     submissions,
     simulationSubmissions,
-  });
+  }));
   assertBackupV2Privacy(value);
   return value;
 }
 
 export async function exportActiveBackupV2(): Promise<BackupV2> {
   const scope = getActiveStudyScope();
-  if (scope.mode === "off") return migrateBackupV1ToV2(await loadState());
+  if (scope.mode === "off") return parseBackupV2(migrateBackupV1ToV2(await loadState()));
   const db = await openScopedStudyDatabase(scope);
   try {
     if (db.version !== 3) throw new Error("BackupV2 exige StudyDB v3 para estado de conta");
