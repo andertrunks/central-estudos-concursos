@@ -11,7 +11,7 @@ import { ANNULLED_ING001_032 } from "../src/services/cloud-protocol";
 import { openLegacyStudyDatabase, openScopedStudyDatabase, type StudyDBV3 } from "../src/services/storage-db";
 import { setActiveStudyScope } from "../src/services/study-storage-route";
 import { progressFor } from "../src/services/study";
-import type { Submission } from "../src/types/cloud";
+import type { SimulationSubmission, Submission } from "../src/types/cloud";
 import type { AccountScope } from "../src/types/cloud";
 import type { IDBPDatabase } from "idb";
 
@@ -44,6 +44,36 @@ function finalizedSubmission(): Submission {
     status: "finalized",
     finalizedAt: "2026-10-13T12:05:00.000Z",
     attemptId: "attempt-synthetic-1",
+  };
+}
+
+function pendingSimulationSubmission(): SimulationSubmission {
+  return {
+    id: "simulation-submission-synthetic-1",
+    dedupeKey: "simulation-dedupe-synthetic-1",
+    simulationId: "SIM-SYNTH-001",
+    activityId: "activity-synthetic-sim",
+    submittedAt: "2026-10-13T13:00:00.000Z",
+    seconds: 321,
+    status: "pending",
+    finalizedAt: null,
+    resultId: null,
+    scoringSnapshot: {
+      correctPoints: 1,
+      wrongPoints: 0,
+      blankPoints: 0,
+    },
+    items: [
+      {
+        questionId: "QAUT-SYNTH-SIM-001",
+        contentId: "TI-BD-003",
+        discipline: "Tecnologia da Informação",
+        unitIds: ["TI-BD-003-U1"],
+        promptHash: "sha256-synthetic-simulation-prompt",
+        answer: "C",
+      },
+    ],
+    annulledQuestionIds: [],
   };
 }
 
@@ -114,6 +144,44 @@ describe("PR-6 BackupV2 — import e round-trip", () => {
     expect(await targetDb.count("syncOutbox")).toBe(0);
     expect((await targetDb.get("progress", "TI-BD-003"))?.percent).toBe(50);
     targetDb.close();
+  });
+
+  it("faz round-trip de SimulationSubmission pending sem criar resultado ou outbox", async () => {
+    const source = await account("simulation-source");
+    setActiveStudyScope(source);
+    const sourceDb = await db(source);
+    await sourceDb.put("simulationSubmissions", pendingSimulationSubmission());
+    sourceDb.close();
+
+    const exported = await exportActiveBackupV2();
+    expect(exported.simulationSubmissions).toEqual([pendingSimulationSubmission()]);
+
+    const target = await account("simulation-target");
+    setActiveStudyScope(target);
+    await importPedagogicalBackup(exported);
+    await importPedagogicalBackup(exported);
+    const targetDb = await db(target);
+    expect(await targetDb.count("simulationSubmissions")).toBe(1);
+    expect(await targetDb.get("simulationSubmissions", "simulation-submission-synthetic-1"))
+      .toEqual(pendingSimulationSubmission());
+    expect(await targetDb.count("results")).toBe(0);
+    expect(await targetDb.count("syncOutbox")).toBe(0);
+    targetDb.close();
+  });
+
+  it("exportação estrita recusa campo inesperado persistido no store", async () => {
+    const scope = await account("strict-export");
+    setActiveStudyScope(scope);
+    const studyDb = await db(scope);
+    await (studyDb as unknown as {
+      put(store: string, value: unknown): Promise<IDBValidKey>;
+    }).put("submissions", {
+      ...pendingSubmission(),
+      internalSecret: "should-never-export",
+    });
+    studyDb.close();
+
+    await expect(exportActiveBackupV2()).rejects.toThrow();
   });
 
   it("não rebaixa Submission finalized para pending", async () => {
