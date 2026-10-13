@@ -3,6 +3,7 @@ import "fake-indexeddb/auto";
 import { deleteDB } from "idb";
 import { deriveAccountScope } from "../src/services/account-scope";
 import {
+  activeStudyScopeForAdoption,
   copyLegacyIntoAccount,
   keepLegacyLocalOnly,
   readAdoptionDecision,
@@ -11,6 +12,7 @@ import {
 } from "../src/services/cloud-adoption";
 import { ANNULLED_ING001_032 } from "../src/services/cloud-protocol";
 import { openLegacyStudyDatabase, openScopedStudyDatabase } from "../src/services/storage-db";
+import type { CloudAdoptionSettings } from "../src/services/sync-meta";
 import type { StudyProgress } from "../src/types/schema";
 
 const names = new Set<string>();
@@ -42,6 +44,16 @@ function progress(percent: number): StudyProgress {
   };
 }
 
+function decision(choice: CloudAdoptionSettings["choice"]): CloudAdoptionSettings {
+  return {
+    id: "adoption",
+    choice,
+    adopted: true,
+    syncEnabled: false,
+    decidedAt: "2026-10-13T10:00:00.000Z",
+  };
+}
+
 async function fixture(label: string) {
   const legacyDbName = `test-adoption-legacy-${label}-${crypto.randomUUID()}`;
   names.add(legacyDbName);
@@ -61,6 +73,15 @@ afterEach(async () => {
 });
 
 describe("PR-6 adoção explícita — preflight local", () => {
+  it("ativa AccountScope somente para B/C; A e decisão ausente ficam no legado", async () => {
+    const { scope } = await fixture("scope-selection");
+    expect(activeStudyScopeForAdoption(scope, null).mode).toBe("off");
+    expect(activeStudyScopeForAdoption(scope, decision("local_only")).mode).toBe("off");
+    expect(activeStudyScopeForAdoption(scope, decision("copy_legacy"))).toEqual(scope);
+    expect(activeStudyScopeForAdoption(scope, decision("empty_account"))).toEqual(scope);
+    expect(activeStudyScopeForAdoption(null, decision("copy_legacy")).mode).toBe("off");
+  });
+
   it("resume o legado sem escrever no AccountScope", async () => {
     const { scope, legacyDbName } = await fixture("summary");
     const summary = await summarizeLegacyProgress(legacyDbName);
@@ -72,9 +93,9 @@ describe("PR-6 adoção explícita — preflight local", () => {
 
   it("opção A registra local-only sem copiar nem apagar o legado", async () => {
     const { scope, legacyDbName } = await fixture("local");
-    const decision = await keepLegacyLocalOnly(scope, "2026-10-13T10:00:00.000Z");
-    expect(decision.choice).toBe("local_only");
-    expect(decision.syncEnabled).toBe(false);
+    const saved = await keepLegacyLocalOnly(scope, "2026-10-13T10:00:00.000Z");
+    expect(saved.choice).toBe("local_only");
+    expect(saved.syncEnabled).toBe(false);
     expect((await readAdoptionDecision(scope))?.choice).toBe("local_only");
 
     const account = raw(await openScopedStudyDatabase(scope));
@@ -119,8 +140,8 @@ describe("PR-6 adoção explícita — preflight local", () => {
 
   it("opção C prepara conta vazia e recusa alvo que já tenha estado", async () => {
     const empty = await fixture("empty");
-    const decision = await startEmptyAccount(empty.scope, "2026-10-13T10:00:00.000Z");
-    expect(decision.choice).toBe("empty_account");
+    const saved = await startEmptyAccount(empty.scope, "2026-10-13T10:00:00.000Z");
+    expect(saved.choice).toBe("empty_account");
     const account = raw(await openScopedStudyDatabase(empty.scope));
     expect(await account.count("progress")).toBe(0);
     account.close();
