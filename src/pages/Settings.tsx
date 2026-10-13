@@ -100,21 +100,21 @@ export default function Settings() {
                 </button>{" "}
                 <button
                   disabled={!backupConfirmed || cloud.adoptionBusy || !cloud.legacySummary}
-                  onClick={() => void decide(cloud.copyLegacy, "Cópia local preparada para esta conta. O progresso original foi preservado.")}
+                  onClick={() => void decide(cloud.copyLegacy, "Cópia local ativada para esta conta. O progresso original foi preservado.")}
                 >
                   Copiar meu progresso para a conta
                 </button>{" "}
                 <button
                   disabled={!backupConfirmed || cloud.adoptionBusy}
-                  onClick={() => void decide(cloud.startEmpty, "Espaço local vazio preparado para esta conta. O progresso original foi preservado.")}
+                  onClick={() => void decide(cloud.startEmpty, "Espaço local vazio ativado para esta conta. O progresso original foi preservado.")}
                 >
                   Começar a conta sem importar este progresso
                 </button>
               </div>
               <p className="muted">
-                Nesta etapa, B e C apenas preparam o banco local escopado da conta. A
-                troca do estudo ativo e qualquer sincronização remota permanecem
-                desligadas até o próximo gate técnico.
+                B e C passam a usar, somente neste navegador, o banco local isolado
+                desta conta. A sincronização remota continua desligada: não há pull,
+                push ou envio de progresso ao servidor nesta etapa.
               </p>
               {cloud.adoptionError && <div className="notice error" role="alert">{cloud.adoptionError}</div>}
             </div>
@@ -124,9 +124,9 @@ export default function Settings() {
             <div className="section-space notice">
               <strong>Decisão registrada neste dispositivo</strong>
               <p>
-                {cloud.adoption.choice === "local_only" && "Continuar somente no banco local legado."}
-                {cloud.adoption.choice === "copy_legacy" && "Uma cópia do progresso foi preparada no banco local desta conta."}
-                {cloud.adoption.choice === "empty_account" && "Um banco local vazio foi preparado para esta conta."}
+                {cloud.adoption.choice === "local_only" && "O estudo continua no banco local legado deste dispositivo."}
+                {cloud.adoption.choice === "copy_legacy" && "O estudo usa agora a cópia local isolada desta conta."}
+                {cloud.adoption.choice === "empty_account" && "O estudo usa agora o banco local vazio isolado desta conta."}
               </p>
               <p>Nenhum progresso foi enviado à nuvem e o banco legado não foi apagado.</p>
             </div>
@@ -175,7 +175,7 @@ export default function Settings() {
         <h2>Uma biblioteca independente</h2>
         <p>
           {cloud.cloudAvailable
-            ? "O catálogo editorial continua independente do seu progresso. A sincronização de progresso ainda não é ativada automaticamente e exige adoção explícita."
+            ? "O catálogo editorial continua independente do seu progresso. A sincronização remota de progresso ainda não é ativada automaticamente e exige gates adicionais."
             : "O site recebe uma cópia validada dos dados editoriais. Ele não acessa o Google Drive privado e não envia seu progresso para servidores."}
         </p>
         <p>Última sincronização editorial: {formatDate(catalog.syncedAt)}.</p>
