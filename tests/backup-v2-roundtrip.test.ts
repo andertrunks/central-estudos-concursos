@@ -1,6 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
 import "fake-indexeddb/auto";
-import { deleteDB } from "idb";
 import { deriveAccountScope, localAccountScope } from "../src/services/account-scope";
 import {
   exportActiveBackupV2,
@@ -16,13 +15,9 @@ import type { Submission } from "../src/types/cloud";
 import type { AccountScope } from "../src/types/cloud";
 import type { IDBPDatabase } from "idb";
 
-const databases = new Set<string>();
-
 async function account(label: string): Promise<AccountScope> {
   const scope = await deriveAccountScope(`backup-${label}-${crypto.randomUUID()}`, `user-${label}`);
   if (scope.mode !== "account") throw new Error("fixture inválida");
-  databases.add(scope.studyDbName);
-  databases.add(scope.syncMetaDbName);
   return scope;
 }
 
@@ -72,11 +67,10 @@ async function db(scope: AccountScope) {
   return value as IDBPDatabase<StudyDBV3>;
 }
 
-afterEach(async () => {
+afterEach(() => {
+  // Account fixtures use unique DB names. Do not delete a database while the
+  // production storage layer may legitimately keep an IndexedDB handle open.
   setActiveStudyScope(localAccountScope());
-  await Promise.all([...databases].map((name) => deleteDB(name)));
-  databases.clear();
-  await deleteDB("central-estudos");
 });
 
 describe("PR-6 BackupV2 — import e round-trip", () => {
