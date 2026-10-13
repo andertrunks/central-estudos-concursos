@@ -1,3 +1,4 @@
+import { localAccountScope } from "./account-scope";
 import { applyBootstrapPlan, previewLegacyBootstrap, readLegacyBackup } from "./bootstrap-migration";
 import { openScopedStudyDatabase } from "./storage-db";
 import {
@@ -49,6 +50,18 @@ function latestDate(input: unknown): string | null {
   if (Array.isArray(input)) input.forEach(visit);
   else visit(input);
   return values.sort().at(-1) ?? null;
+}
+
+export function activeStudyScopeForAdoption(
+  candidate: AccountScope | null,
+  adoption: CloudAdoptionSettings | null,
+): AccountScope {
+  if (
+    candidate?.mode === "account" &&
+    adoption &&
+    adoption.choice !== "local_only"
+  ) return candidate;
+  return localAccountScope();
 }
 
 export async function summarizeLegacyProgress(dbName = "central-estudos"): Promise<LegacySummary> {
