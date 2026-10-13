@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { useCloudSync } from "../components/CloudSyncContext";
 import { useStudy } from "../components/StudyContext";
-import { importBackup } from "../services/storage";
+import {
+  exportActiveBackupV2,
+  importPedagogicalBackup,
+} from "../services/backup-v2";
 import { PageHeading, formatDate } from "../components/Common";
 import { catalog } from "../services/catalog";
 
@@ -12,21 +15,29 @@ function formatBytes(bytes: number) {
 }
 
 export default function Settings() {
-  const { state, run, ready } = useStudy();
+  const { run, ready } = useStudy();
   const cloud = useCloudSync();
   const [message, setMessage] = useState("");
   const [backupConfirmed, setBackupConfirmed] = useState(false);
 
-  function download(markPreAdoption = false) {
-    const url = URL.createObjectURL(
-      new Blob([JSON.stringify(state, null, 2)], { type: "application/json" }),
-    );
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `central-estudos-progresso-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-    if (markPreAdoption) setBackupConfirmed(true);
+  async function download(markPreAdoption = false) {
+    setMessage("");
+    try {
+      const backup = await exportActiveBackupV2();
+      const url = URL.createObjectURL(
+        new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }),
+      );
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `central-estudos-backup-v2-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      if (markPreAdoption) setBackupConfirmed(true);
+      setMessage("BackupV2 exportado com o estado pedagógico deste espaço local.");
+    } catch (cause) {
+      setMessage(cause instanceof Error ? cause.message : "Não foi possível exportar o backup.");
+      throw cause;
+    }
   }
 
   async function decide(action: () => Promise<void>, success: string) {
@@ -86,10 +97,13 @@ export default function Settings() {
                 Antes de copiar ou iniciar o espaço da conta, baixe um backup. O banco
                 original <strong>será preservado</strong> em todas as opções.
               </p>
-              <button disabled={!ready || cloud.adoptionBusy} onClick={() => download(true)}>
+              <button
+                disabled={!ready || cloud.adoptionBusy}
+                onClick={() => void download(true).catch(() => undefined)}
+              >
                 Exportar backup antes de decidir
               </button>
-              {backupConfirmed && <p role="status">Backup solicitado neste navegador. As opções de preparação foram liberadas.</p>}
+              {backupConfirmed && <p role="status">Backup exportado neste navegador. As opções de preparação foram liberadas.</p>}
 
               <div className="section-space">
                 <button
@@ -138,10 +152,12 @@ export default function Settings() {
         <h2>Backup do progresso</h2>
         <p>
           A limpeza dos dados do navegador remove seus registros locais. O
-          arquivo de backup inclui progresso, revisões, respostas, simulados e
-          textos discursivos.
+          BackupV2 inclui progresso, revisões, respostas, simulados, textos e,
+          quando este espaço usa StudyDB v3, submissões ainda pendentes. Ele não
+          inclui sessão, tokens, fila de sync, conflitos técnicos ou correções
+          reveladas.
         </p>
-        <button disabled={!ready} onClick={() => download(false)}>
+        <button disabled={!ready} onClick={() => void download(false).catch(() => undefined)}>
           Exportar meu progresso
         </button>
         <label className="section-space">
@@ -158,12 +174,16 @@ export default function Settings() {
               }
               void file
                 .text()
-                .then((text) => run(() => importBackup(JSON.parse(text))))
+                .then((text) => run(() => importPedagogicalBackup(JSON.parse(text))))
                 .then(() =>
-                  setMessage("Backup importado. Registros com o mesmo ID foram atualizados."),
+                  setMessage("Backup restaurado. Registros com o mesmo ID foram reconciliados sem reexecutar métricas."),
                 )
-                .catch(() =>
-                  setMessage("Não foi possível importar. Verifique se é um backup válido da Central de Estudos."),
+                .catch((cause: unknown) =>
+                  setMessage(
+                    cause instanceof Error
+                      ? cause.message
+                      : "Não foi possível importar. Verifique se é um backup válido da Central de Estudos.",
+                  ),
                 );
             }}
           />
