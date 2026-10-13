@@ -16,6 +16,9 @@ import {
 import { today, progressFor, scheduleReviews, addDays } from "./study";
 import { activitySchema, lessonUnits, recommendations, type Activity } from './trail';
 import type { Catalog } from '../types/schema';
+import { openScopedStudyDatabase } from "./storage-db";
+import { getActiveStudyScope } from "./study-storage-route";
+
 interface StudyDB extends DBSchema {
   activities: { key: string; value: Activity };
   progress: { key: string; value: StudyProgress };
@@ -34,29 +37,37 @@ export const backupSchema = z.object({
   results: z.array(resultSchema),
 });
 export type Backup = z.infer<typeof backupSchema>;
-export async function database() {
+
+function legacyDatabase() {
   return new Promise<IDBPDatabase<StudyDB>>((resolve, reject) => {
     let blocked = false;
     const opening = openDB<StudyDB>("central-estudos", 2, {
-    blocked() {
-      blocked = true;
-      reject(new Error('Feche as outras abas da Central de Estudos e recarregue esta página para atualizar o progresso com segurança.'));
-    },
-    blocking() { void opening.then(db => db.close()); },
-    upgrade(db, oldVersion) {
-      if (oldVersion < 1) {
-      db.createObjectStore("progress", { keyPath: "id" });
-      db.createObjectStore("reviews", { keyPath: "id" });
-      db.createObjectStore("attempts", { keyPath: "id" });
-      db.createObjectStore("writings", { keyPath: "id" });
-      db.createObjectStore("results", { keyPath: "id" });
-      }
-      if (oldVersion < 2) db.createObjectStore("activities", { keyPath: "id" });
-    },
+      blocked() {
+        blocked = true;
+        reject(new Error('Feche as outras abas da Central de Estudos e recarregue esta página para atualizar o progresso com segurança.'));
+      },
+      blocking() { void opening.then(db => db.close()); },
+      upgrade(db, oldVersion) {
+        if (oldVersion < 1) {
+          db.createObjectStore("progress", { keyPath: "id" });
+          db.createObjectStore("reviews", { keyPath: "id" });
+          db.createObjectStore("attempts", { keyPath: "id" });
+          db.createObjectStore("writings", { keyPath: "id" });
+          db.createObjectStore("results", { keyPath: "id" });
+        }
+        if (oldVersion < 2) db.createObjectStore("activities", { keyPath: "id" });
+      },
     });
     void opening.then(db => { if (blocked) db.close(); else resolve(db); }, reject);
   });
 }
+
+export async function database(): Promise<IDBPDatabase<StudyDB>> {
+  const scope = getActiveStudyScope();
+  if (scope.mode === "off") return legacyDatabase();
+  return openScopedStudyDatabase(scope) as unknown as Promise<IDBPDatabase<StudyDB>>;
+}
+
 export async function loadState(): Promise<Backup> {
   const db = await database();
   const [progress, reviews, attempts, writings, results] = await Promise.all([
