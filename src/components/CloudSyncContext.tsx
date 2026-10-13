@@ -64,18 +64,27 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let current = true;
     const scope = auth.candidateScope;
-    setAdoption(null);
-    setAdoptionError("");
-    setLegacySummary(null);
-    if (!scope || scope.mode !== "account") return () => { current = false; };
+    const clear = () => {
+      if (!current) return;
+      setAdoption(null);
+      setAdoptionError("");
+      setLegacySummary(null);
+    };
+    if (!scope || scope.mode !== "account") {
+      queueMicrotask(clear);
+      return () => { current = false; };
+    }
     void Promise.all([readAdoptionDecision(scope), summarizeLegacyProgress()])
       .then(([decision, summary]) => {
         if (!current) return;
         setAdoption(decision);
+        setAdoptionError("");
         setLegacySummary(summary);
       })
       .catch((cause: unknown) => {
         if (!current) return;
+        setAdoption(null);
+        setLegacySummary(null);
         setAdoptionError(cause instanceof Error ? cause.message : "Não foi possível preparar a adoção local");
       });
     return () => { current = false; };
