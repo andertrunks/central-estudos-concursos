@@ -46,6 +46,7 @@ const Context = createContext<CloudSyncValue | null>(null);
 export function CloudSyncProvider({ children }: { children: ReactNode }) {
   const auth = useAuthSession();
   const [online, setOnline] = useState(() => navigator.onLine);
+  const [loadedScopeHash, setLoadedScopeHash] = useState<string | null>(null);
   const [adoption, setAdoption] = useState<CloudAdoptionSettings | null>(null);
   const [adoptionBusy, setAdoptionBusy] = useState(false);
   const [adoptionError, setAdoptionError] = useState("");
@@ -66,6 +67,7 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     const scope = auth.candidateScope;
     const clear = () => {
       if (!current) return;
+      setLoadedScopeHash(null);
       setAdoption(null);
       setAdoptionError("");
       setLegacySummary(null);
@@ -77,18 +79,30 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     void Promise.all([readAdoptionDecision(scope), summarizeLegacyProgress()])
       .then(([decision, summary]) => {
         if (!current) return;
+        setLoadedScopeHash(scope.scopeHash);
         setAdoption(decision);
         setAdoptionError("");
         setLegacySummary(summary);
       })
       .catch((cause: unknown) => {
         if (!current) return;
+        setLoadedScopeHash(scope.scopeHash);
         setAdoption(null);
         setLegacySummary(null);
         setAdoptionError(cause instanceof Error ? cause.message : "Não foi possível preparar a adoção local");
       });
     return () => { current = false; };
   }, [auth.candidateScope]);
+
+  const candidateHash = auth.candidateScope?.mode === "account"
+    ? auth.candidateScope.scopeHash
+    : null;
+  const effectiveAdoption = candidateHash && loadedScopeHash === candidateHash
+    ? adoption
+    : null;
+  const effectiveSummary = candidateHash && loadedScopeHash === candidateHash
+    ? legacySummary
+    : null;
 
   async function applyDecision(
     action: (scope: AccountScope) => Promise<CloudAdoptionSettings>,
@@ -99,6 +113,7 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     setAdoptionError("");
     try {
       const decision = await action(scope);
+      setLoadedScopeHash(scope.scopeHash);
       setAdoption(decision);
     } catch (cause) {
       const message = cause instanceof Error ? cause.message : "Não foi possível concluir a escolha";
@@ -109,23 +124,29 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  // This PR intentionally prepares the account copy/decision but does not yet
-  // route the live StudyProvider into the account DB. That switch must change
-  // reads and writes together in the next narrow PR.
-  const activeScope = useMemo(() => localAccountScope(), []);
+  const activeScope = useMemo<AccountScope>(() => {
+    const scope = auth.candidateScope;
+    if (
+      scope?.mode === "account" &&
+      effectiveAdoption &&
+      effectiveAdoption.choice !== "local_only"
+    ) return scope;
+    return localAccountScope();
+  }, [auth.candidateScope, effectiveAdoption]);
+
   const status = deriveCloudPublicStatus({
     cloudMode: auth.cloudMode,
     authenticated: Boolean(auth.session),
-    hadCloudAccount: Boolean(adoption),
-    adopted: Boolean(adoption),
-    syncEnabled: adoption?.syncEnabled ?? false,
+    hadCloudAccount: Boolean(effectiveAdoption),
+    adopted: Boolean(effectiveAdoption),
+    syncEnabled: effectiveAdoption?.syncEnabled ?? false,
     online,
     queued: 0,
     sending: 0,
     conflicts: 0,
     blockedError: Boolean(auth.error),
     syncing: false,
-    currentScopeHash: auth.candidateScope?.mode === "account" ? auth.candidateScope.scopeHash : null,
+    currentScopeHash: candidateHash,
     sessionGeneration: auth.sessionGeneration,
     lastConfirmedScopeHash: null,
     lastConfirmedSessionGeneration: null,
@@ -141,10 +162,10 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
         activeScope,
         candidateScope: auth.candidateScope,
         cloudAvailable: auth.cloudMode !== "off",
-        adoption,
+        adoption: effectiveAdoption,
         adoptionBusy,
         adoptionError,
-        legacySummary,
+        legacySummary: effectiveSummary,
         keepLocalOnly: () => applyDecision(keepLegacyLocalOnly),
         copyLegacy: () => applyDecision(copyLegacyIntoAccount),
         startEmpty: () => applyDecision(startEmptyAccount),
