@@ -51,8 +51,8 @@ function latestDate(input: unknown): string | null {
   return values.sort().at(-1) ?? null;
 }
 
-export async function summarizeLegacyProgress(): Promise<LegacySummary> {
-  const backup = await readLegacyBackup();
+export async function summarizeLegacyProgress(dbName = "central-estudos"): Promise<LegacySummary> {
+  const backup = await readLegacyBackup(dbName);
   const all = [
     ...(backup.activities ?? []),
     ...backup.progress,
@@ -103,9 +103,10 @@ export async function keepLegacyLocalOnly(
 export async function copyLegacyIntoAccount(
   scope: AccountScope,
   decidedAt = new Date().toISOString(),
+  legacyDbName = "central-estudos",
 ): Promise<CloudAdoptionSettings> {
   requireAccount(scope);
-  const plan = await previewLegacyBootstrap(scope);
+  const plan = await previewLegacyBootstrap(scope, legacyDbName);
   const applied = await applyBootstrapPlan(plan, scope, decidedAt);
   const value: CloudAdoptionSettings = {
     id: "adoption",
