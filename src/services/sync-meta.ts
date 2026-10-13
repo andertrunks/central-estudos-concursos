@@ -13,9 +13,11 @@ export interface CloudAdoptionSettings {
   id: "adoption";
   choice: CloudAdoptionChoice;
   adopted: true;
-  syncEnabled: false;
+  syncEnabled: boolean;
   decidedAt: string;
   sourceFingerprint?: string;
+  reconcileRequired?: boolean;
+  syncPreferenceUpdatedAt?: string;
 }
 
 interface SyncMetaDB extends DBSchema {
@@ -71,6 +73,26 @@ export async function writeCloudAdoptionSettings(
   } finally {
     db.close();
   }
+}
+
+export async function updateCloudSyncPreference(
+  scope: AccountScope,
+  enabled: boolean,
+  updatedAt = new Date().toISOString(),
+) {
+  if (scope.mode !== "account") throw new Error("Preferência de sync exige escopo de conta");
+  const current = await readCloudAdoptionSettings(scope);
+  if (!current) throw new Error("Escolha a adoção local antes de configurar sincronização");
+  if (enabled && current.choice === "local_only")
+    throw new Error("Copie ou inicie o espaço isolado da conta antes de reativar a sincronização");
+  const next: CloudAdoptionSettings = {
+    ...current,
+    syncEnabled: enabled,
+    reconcileRequired: enabled ? true : (current.reconcileRequired ?? true),
+    syncPreferenceUpdatedAt: updatedAt,
+  };
+  await writeCloudAdoptionSettings(scope, next);
+  return next;
 }
 
 export async function deleteSyncMetaDatabase(
