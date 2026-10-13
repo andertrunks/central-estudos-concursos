@@ -32,7 +32,6 @@ export function StudyProvider({ children }: { children: ReactNode }) {
   const cloud = useCloudSync();
   const desiredScopeKey = studyScopeKey(cloud.activeScope);
   const desiredScopeKeyRef = useRef(desiredScopeKey);
-  desiredScopeKeyRef.current = desiredScopeKey;
   const [state, setState] = useState(initial);
   const [loadedScopeKey, setLoadedScopeKey] = useState<string | null>(null);
   const [failure, setFailure] = useState<{ scopeKey: string; message: string } | null>(null);
@@ -41,6 +40,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
   useEffect(()=>{const update=()=>setDay(today());const timer=window.setInterval(update,60_000);document.addEventListener('visibilitychange',update);return()=>{window.clearInterval(timer);document.removeEventListener('visibilitychange',update);};},[]);
 
   useLayoutEffect(() => {
+    desiredScopeKeyRef.current = desiredScopeKey;
     setActiveStudyScope(cloud.activeScope);
   }, [cloud.activeScope, desiredScopeKey]);
 
