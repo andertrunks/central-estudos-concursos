@@ -143,6 +143,42 @@ export default function Settings() {
                 {cloud.adoption.choice === "empty_account" && "O estudo usa agora o banco local vazio isolado desta conta."}
               </p>
               <p>Nenhum progresso foi enviado à nuvem e o banco legado não foi apagado.</p>
+
+              {cloud.adoption.choice !== "local_only" && (
+                <div className="section-space" aria-labelledby="sync-preference-title">
+                  <h3 id="sync-preference-title">Preferência de sincronização</h3>
+                  <p>
+                    {cloud.adoption.syncEnabled
+                      ? "A preferência está reativada, mas esta sessão ainda exige uma reconciliação completa antes de poder aparecer como sincronizada."
+                      : "A sincronização está pausada neste dispositivo. Seus dados locais e remotos não são apagados."}
+                  </p>
+                  {cloud.adoption.syncEnabled ? (
+                    <button
+                      disabled={cloud.adoptionBusy}
+                      onClick={() => void decide(
+                        cloud.pauseSync,
+                        "Sincronização pausada neste dispositivo. Nenhum dado local foi apagado.",
+                      )}
+                    >
+                      Pausar sincronização
+                    </button>
+                  ) : (
+                    <button
+                      disabled={cloud.adoptionBusy}
+                      onClick={() => void decide(
+                        cloud.resumeSync,
+                        "Preferência reativada. Uma nova reconciliação será obrigatória antes do estado Sincronizado.",
+                      )}
+                    >
+                      Reativar sincronização
+                    </button>
+                  )}
+                  <p className="muted">
+                    Nesta fase, pausar ou reativar altera somente a preferência local.
+                    O transporte remoto continua desligado e nenhum pull/push é executado.
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </section>
