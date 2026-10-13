@@ -9,11 +9,20 @@ import {
 import { useAuthSession } from "./AuthSessionContext";
 import { localAccountScope } from "../services/account-scope";
 import {
+  copyLegacyIntoAccount,
+  keepLegacyLocalOnly,
+  readAdoptionDecision,
+  startEmptyAccount,
+  summarizeLegacyProgress,
+  type LegacySummary,
+} from "../services/cloud-adoption";
+import {
   cloudStatusView,
   deriveCloudPublicStatus,
   type CloudPublicStatus,
   type CloudStatusView,
 } from "../services/cloud-ux";
+import type { CloudAdoptionSettings } from "../services/sync-meta";
 import type { AccountScope } from "../types/cloud";
 
 type CloudSyncValue = {
@@ -23,6 +32,13 @@ type CloudSyncValue = {
   activeScope: AccountScope;
   candidateScope: AccountScope | null;
   cloudAvailable: boolean;
+  adoption: CloudAdoptionSettings | null;
+  adoptionBusy: boolean;
+  adoptionError: string;
+  legacySummary: LegacySummary | null;
+  keepLocalOnly: () => Promise<void>;
+  copyLegacy: () => Promise<void>;
+  startEmpty: () => Promise<void>;
 };
 
 const Context = createContext<CloudSyncValue | null>(null);
@@ -30,6 +46,10 @@ const Context = createContext<CloudSyncValue | null>(null);
 export function CloudSyncProvider({ children }: { children: ReactNode }) {
   const auth = useAuthSession();
   const [online, setOnline] = useState(() => navigator.onLine);
+  const [adoption, setAdoption] = useState<CloudAdoptionSettings | null>(null);
+  const [adoptionBusy, setAdoptionBusy] = useState(false);
+  const [adoptionError, setAdoptionError] = useState("");
+  const [legacySummary, setLegacySummary] = useState<LegacySummary | null>(null);
 
   useEffect(() => {
     const update = () => setOnline(navigator.onLine);
@@ -41,15 +61,64 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  // PR-6 foundation is deliberately fail-closed. Until the explicit adoption
-  // UX is implemented and confirmed, the active study path remains legacy.
+  useEffect(() => {
+    let current = true;
+    const scope = auth.candidateScope;
+    const clear = () => {
+      if (!current) return;
+      setAdoption(null);
+      setAdoptionError("");
+      setLegacySummary(null);
+    };
+    if (!scope || scope.mode !== "account") {
+      queueMicrotask(clear);
+      return () => { current = false; };
+    }
+    void Promise.all([readAdoptionDecision(scope), summarizeLegacyProgress()])
+      .then(([decision, summary]) => {
+        if (!current) return;
+        setAdoption(decision);
+        setAdoptionError("");
+        setLegacySummary(summary);
+      })
+      .catch((cause: unknown) => {
+        if (!current) return;
+        setAdoption(null);
+        setLegacySummary(null);
+        setAdoptionError(cause instanceof Error ? cause.message : "Não foi possível preparar a adoção local");
+      });
+    return () => { current = false; };
+  }, [auth.candidateScope]);
+
+  async function applyDecision(
+    action: (scope: AccountScope) => Promise<CloudAdoptionSettings>,
+  ) {
+    const scope = auth.candidateScope;
+    if (!scope || scope.mode !== "account") throw new Error("Entre na conta antes de escolher a adoção");
+    setAdoptionBusy(true);
+    setAdoptionError("");
+    try {
+      const decision = await action(scope);
+      setAdoption(decision);
+    } catch (cause) {
+      const message = cause instanceof Error ? cause.message : "Não foi possível concluir a escolha";
+      setAdoptionError(message);
+      throw cause;
+    } finally {
+      setAdoptionBusy(false);
+    }
+  }
+
+  // This PR intentionally prepares the account copy/decision but does not yet
+  // route the live StudyProvider into the account DB. That switch must change
+  // reads and writes together in the next narrow PR.
   const activeScope = useMemo(() => localAccountScope(), []);
   const status = deriveCloudPublicStatus({
     cloudMode: auth.cloudMode,
     authenticated: Boolean(auth.session),
-    hadCloudAccount: false,
-    adopted: false,
-    syncEnabled: false,
+    hadCloudAccount: Boolean(adoption),
+    adopted: Boolean(adoption),
+    syncEnabled: adoption?.syncEnabled ?? false,
     online,
     queued: 0,
     sending: 0,
@@ -72,6 +141,13 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
         activeScope,
         candidateScope: auth.candidateScope,
         cloudAvailable: auth.cloudMode !== "off",
+        adoption,
+        adoptionBusy,
+        adoptionError,
+        legacySummary,
+        keepLocalOnly: () => applyDecision(keepLegacyLocalOnly),
+        copyLegacy: () => applyDecision(copyLegacyIntoAccount),
+        startEmpty: () => applyDecision(startEmptyAccount),
       }}
     >
       {children}

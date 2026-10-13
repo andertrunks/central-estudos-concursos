@@ -7,11 +7,23 @@ import type {
   RevisionRecord,
 } from "../types/cloud";
 
+export type CloudAdoptionChoice = "local_only" | "copy_legacy" | "empty_account";
+
+export interface CloudAdoptionSettings {
+  id: "adoption";
+  choice: CloudAdoptionChoice;
+  adopted: true;
+  syncEnabled: false;
+  decidedAt: string;
+  sourceFingerprint?: string;
+}
+
 interface SyncMetaDB extends DBSchema {
   remoteBase: { key: string; value: RemoteBaseRecord };
   revisions: { key: string; value: RevisionRecord };
   conflicts: { key: string; value: ConflictRecord };
   leases: { key: string; value: LeaseRecord };
+  settings: { key: string; value: CloudAdoptionSettings };
 }
 
 function resolveName(scope: AccountScope, override?: string) {
@@ -25,14 +37,40 @@ export function openSyncMetaDatabase(
   options: { dbName?: string } = {},
 ) {
   const name = resolveName(scope, options.dbName);
-  return openDB<SyncMetaDB>(name, 1, {
-    upgrade(db) {
-      db.createObjectStore("remoteBase", { keyPath: "id" });
-      db.createObjectStore("revisions", { keyPath: "id" });
-      db.createObjectStore("conflicts", { keyPath: "id" });
-      db.createObjectStore("leases", { keyPath: "id" });
+  return openDB<SyncMetaDB>(name, 2, {
+    upgrade(db, oldVersion) {
+      if (oldVersion < 1) {
+        db.createObjectStore("remoteBase", { keyPath: "id" });
+        db.createObjectStore("revisions", { keyPath: "id" });
+        db.createObjectStore("conflicts", { keyPath: "id" });
+        db.createObjectStore("leases", { keyPath: "id" });
+      }
+      if (oldVersion < 2) db.createObjectStore("settings", { keyPath: "id" });
     },
   });
+}
+
+export async function readCloudAdoptionSettings(scope: AccountScope) {
+  if (scope.mode !== "account") return null;
+  const db = await openSyncMetaDatabase(scope);
+  try {
+    return (await db.get("settings", "adoption")) ?? null;
+  } finally {
+    db.close();
+  }
+}
+
+export async function writeCloudAdoptionSettings(
+  scope: AccountScope,
+  value: CloudAdoptionSettings,
+) {
+  if (scope.mode !== "account") throw new Error("Adoção exige escopo de conta");
+  const db = await openSyncMetaDatabase(scope);
+  try {
+    await db.put("settings", value);
+  } finally {
+    db.close();
+  }
 }
 
 export async function deleteSyncMetaDatabase(
