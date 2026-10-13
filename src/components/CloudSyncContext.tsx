@@ -11,7 +11,9 @@ import {
   activeStudyScopeForAdoption,
   copyLegacyIntoAccount,
   keepLegacyLocalOnly,
+  pauseCloudSync,
   readAdoptionDecision,
+  resumeCloudSync,
   startEmptyAccount,
   summarizeLegacyProgress,
   type LegacySummary,
@@ -39,6 +41,8 @@ type CloudSyncValue = {
   keepLocalOnly: () => Promise<void>;
   copyLegacy: () => Promise<void>;
   startEmpty: () => Promise<void>;
+  pauseSync: () => Promise<void>;
+  resumeSync: () => Promise<void>;
 };
 
 const Context = createContext<CloudSyncValue | null>(null);
@@ -124,6 +128,26 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     }
   }
 
+  async function applySyncPreference(
+    action: (scope: AccountScope) => Promise<CloudAdoptionSettings>,
+  ) {
+    const scope = auth.candidateScope;
+    if (!scope || scope.mode !== "account") throw new Error("Entre na conta antes de configurar sincronização");
+    setAdoptionBusy(true);
+    setAdoptionError("");
+    try {
+      const next = await action(scope);
+      setLoadedScopeHash(scope.scopeHash);
+      setAdoption(next);
+    } catch (cause) {
+      const message = cause instanceof Error ? cause.message : "Não foi possível alterar a sincronização";
+      setAdoptionError(message);
+      throw cause;
+    } finally {
+      setAdoptionBusy(false);
+    }
+  }
+
   const activeScope = useMemo<AccountScope>(
     () => activeStudyScopeForAdoption(auth.candidateScope, effectiveAdoption),
     [auth.candidateScope, effectiveAdoption],
@@ -140,7 +164,10 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
     sending: 0,
     conflicts: 0,
     blockedError: Boolean(auth.error),
-    syncing: false,
+    syncing: Boolean(
+      effectiveAdoption?.syncEnabled &&
+      (effectiveAdoption.reconcileRequired ?? true)
+    ),
     currentScopeHash: candidateHash,
     sessionGeneration: auth.sessionGeneration,
     lastConfirmedScopeHash: null,
@@ -164,6 +191,8 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
         keepLocalOnly: () => applyDecision(keepLegacyLocalOnly),
         copyLegacy: () => applyDecision(copyLegacyIntoAccount),
         startEmpty: () => applyDecision(startEmptyAccount),
+        pauseSync: () => applySyncPreference(pauseCloudSync),
+        resumeSync: () => applySyncPreference(resumeCloudSync),
       }}
     >
       {children}
