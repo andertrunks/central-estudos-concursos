@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-02",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Um capital de R$ 5.000,00 produz R$ 750,00 de juros simples em 10 meses. Qual foi a taxa mensal?",
+  "options": [
+    {
+      "id": "A",
+      "text": "0,5%"
+    },
+    {
+      "id": "B",
+      "text": "1,0%"
+    },
+    {
+      "id": "C",
+      "text": "1,5%"
+    },
+    {
+      "id": "D",
+      "text": "2,0%"
+    },
+    {
+      "id": "E",
+      "text": "2,5%"
+    }
+  ],
+  "answer": "C",
+  "comment": "i = 750/(5.000·10) = 0,015 = 1,5% a.m.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

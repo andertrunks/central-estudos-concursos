@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-07",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "Mantidos capital e taxa positivos e considerando mais de um período, é correto afirmar:",
+  "options": [
+    {
+      "id": "A",
+      "text": "o montante simples é sempre maior;"
+    },
+    {
+      "id": "B",
+      "text": "os montantes são sempre iguais;"
+    },
+    {
+      "id": "C",
+      "text": "o montante composto é maior que o simples;"
+    },
+    {
+      "id": "D",
+      "text": "o juro composto é calculado apenas sobre o capital inicial;"
+    },
+    {
+      "id": "E",
+      "text": "o montante composto cresce linearmente."
+    }
+  ],
+  "answer": "C",
+  "comment": "Para taxa positiva e t>1, a base dos juros cresce em cada período.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-15",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Um capital de R$ 12.000,00 aplicado a juros simples de 10% ao ano por 6 meses gera montante de:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 12.300,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 12.500,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 12.600,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 13.000,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 13.200,00"
+    }
+  ],
+  "answer": "C",
+  "comment": "6 meses = 0,5 ano. J = 12.000·0,10·0,5 = 600; M = 12.600.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

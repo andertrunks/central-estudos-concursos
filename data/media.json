@@ -662,5 +662,16 @@
     "file": "media/TI-CRB-002-IMG-001.png",
     "verifiedAt": "2026-09-26",
     "original": true
+  },
+  {
+    "id": "MAT-005-IMG-001",
+    "contentId": "MAT-005",
+    "type": "imagem",
+    "title": "Juros simples x compostos: crescimento linear e exponencial",
+    "caption": "Comparação dos regimes, fórmulas essenciais e exemplo conferido.",
+    "alt": "Infográfico compara juros simples e compostos. Para capital de R$ 1.000 a 5% ao mês por seis meses: montante simples R$ 1.300 e composto R$ 1.340,10. Taxa e tempo devem usar a mesma unidade.",
+    "file": "media/MAT-005-IMG-001.png",
+    "verifiedAt": "2026-10-16",
+    "original": true
   }
 ]

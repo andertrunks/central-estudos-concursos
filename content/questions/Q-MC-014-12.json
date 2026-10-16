@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-12",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "Um equipamento de R$ 3.200,00 perde 20% de seu valor por ano. Após 2 anos, aplicando a redução sucessivamente, ele valerá:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 1.920,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 2.048,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 2.240,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 2.400,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 2.560,00"
+    }
+  ],
+  "answer": "B",
+  "comment": "3.200×0,80²=2.048.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

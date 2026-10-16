@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-03",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "Um capital de R$ 1.000,00 cresce 20% por período durante 3 períodos em regime composto. O montante é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 1.440,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 1.600,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 1.680,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 1.720,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 1.728,00"
+    }
+  ],
+  "answer": "E",
+  "comment": "1.000×1,20³=1.728.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

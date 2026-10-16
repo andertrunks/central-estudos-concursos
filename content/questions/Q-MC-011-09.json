@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-09",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Em juros simples, mantendo capital e taxa constantes, se o tempo dobra, os juros:",
+  "options": [
+    {
+      "id": "A",
+      "text": "permanecem iguais"
+    },
+    {
+      "id": "B",
+      "text": "reduzem à metade"
+    },
+    {
+      "id": "C",
+      "text": "dobram"
+    },
+    {
+      "id": "D",
+      "text": "quadruplicam"
+    },
+    {
+      "id": "E",
+      "text": "passam a depender do montante"
+    }
+  ],
+  "answer": "C",
+  "comment": "J é diretamente proporcional a t no regime simples.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

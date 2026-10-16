@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-17",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "Com taxa positiva fixa, os juros gerados no segundo período de uma aplicação composta, comparados aos juros do primeiro período:",
+  "options": [
+    {
+      "id": "A",
+      "text": "são sempre menores;"
+    },
+    {
+      "id": "B",
+      "text": "são iguais;"
+    },
+    {
+      "id": "C",
+      "text": "são maiores porque incidem sobre saldo aumentado;"
+    },
+    {
+      "id": "D",
+      "text": "são zero;"
+    },
+    {
+      "id": "E",
+      "text": "dependem apenas do tempo, não da taxa."
+    }
+  ],
+  "answer": "C",
+  "comment": "No segundo período a taxa incide sobre C(1+i), não apenas C.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

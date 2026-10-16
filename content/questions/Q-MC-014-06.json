@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-06",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "Uma taxa de 5% por período, aplicada por 2 períodos em juros compostos, produz taxa efetiva acumulada de:",
+  "options": [
+    {
+      "id": "A",
+      "text": "9,75%"
+    },
+    {
+      "id": "B",
+      "text": "10,00%"
+    },
+    {
+      "id": "C",
+      "text": "10,05%"
+    },
+    {
+      "id": "D",
+      "text": "10,25%"
+    },
+    {
+      "id": "E",
+      "text": "11,00%"
+    }
+  ],
+  "answer": "D",
+  "comment": "1,05²-1=0,1025=10,25%.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-14",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Um capital de R$ 9.000,00 gerou R$ 1.080,00 de juros simples à taxa de 2% ao mês. O tempo de aplicação foi:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4 meses"
+    },
+    {
+      "id": "B",
+      "text": "5 meses"
+    },
+    {
+      "id": "C",
+      "text": "6 meses"
+    },
+    {
+      "id": "D",
+      "text": "7 meses"
+    },
+    {
+      "id": "E",
+      "text": "8 meses"
+    }
+  ],
+  "answer": "C",
+  "comment": "t = 1.080/(9.000·0,02) = 1.080/180 = 6 meses.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

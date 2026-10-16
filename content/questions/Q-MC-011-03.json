@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-03",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "A juros simples de 3% ao mês, um capital de R$ 4.000,00 deverá permanecer aplicado por quanto tempo para produzir R$ 720,00 de juros?",
+  "options": [
+    {
+      "id": "A",
+      "text": "4 meses"
+    },
+    {
+      "id": "B",
+      "text": "5 meses"
+    },
+    {
+      "id": "C",
+      "text": "6 meses"
+    },
+    {
+      "id": "D",
+      "text": "7 meses"
+    },
+    {
+      "id": "E",
+      "text": "8 meses"
+    }
+  ],
+  "answer": "C",
+  "comment": "t = 720/(4.000·0,03) = 720/120 = 6 meses.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

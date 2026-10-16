@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-09",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "Um capital de R$ 2.500,00 transforma-se em R$ 3.025,00 após 2 meses, em juros compostos. A taxa mensal é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "5%"
+    },
+    {
+      "id": "B",
+      "text": "8%"
+    },
+    {
+      "id": "C",
+      "text": "10%"
+    },
+    {
+      "id": "D",
+      "text": "11%"
+    },
+    {
+      "id": "E",
+      "text": "21%"
+    }
+  ],
+  "answer": "C",
+  "comment": "3.025/2.500=1,21=1,10²; taxa=10%.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

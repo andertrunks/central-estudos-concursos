@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-11",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Um capital rende R$ 450,00 de juros simples em 5 meses, à taxa de 1,5% ao mês. O capital é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 4.000,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 5.000,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 6.000,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 7.500,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 9.000,00"
+    }
+  ],
+  "answer": "C",
+  "comment": "C = 450/(0,015·5) = 450/0,075 = 6.000.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

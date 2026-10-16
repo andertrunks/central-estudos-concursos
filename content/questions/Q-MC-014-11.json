@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-11",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "R$ 8.000,00 são aplicados a 1% ao mês por 6 meses. O montante aproximado é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 8.240,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 8.360,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 8.480,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 8.492,16"
+    },
+    {
+      "id": "E",
+      "text": "R$ 8.800,00"
+    }
+  ],
+  "answer": "D",
+  "comment": "8.000×1,01^6≈8.492,16.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

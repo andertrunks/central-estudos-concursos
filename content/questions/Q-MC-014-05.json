@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-05",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "R$ 3.000,00 são aplicados a 2% ao mês por 3 meses, a juros compostos. O valor dos juros, aproximadamente, é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 120,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 180,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 183,62"
+    },
+    {
+      "id": "D",
+      "text": "R$ 200,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 240,00"
+    }
+  ],
+  "answer": "C",
+  "comment": "M=3.000×1,02³=3.183,624; J=183,624≈183,62.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

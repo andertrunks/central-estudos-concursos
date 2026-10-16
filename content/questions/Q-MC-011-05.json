@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-05",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Um capital de R$ 10.000,00 foi aplicado a 12% ao ano, no regime simples, durante 9 meses. Os juros são:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 600,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 700,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 800,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 900,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 1.200,00"
+    }
+  ],
+  "answer": "D",
+  "comment": "9 meses = 0,75 ano. J = 10.000·0,12·0,75 = 900.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

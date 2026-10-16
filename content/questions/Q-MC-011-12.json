@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-011-12",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-011"
+  ],
+  "statement": "Uma aplicação de R$ 7.500,00 resulta em montante de R$ 8.400,00 no regime de juros simples. O valor dos juros é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 600,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 750,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 800,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 900,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 1.050,00"
+    }
+  ],
+  "answer": "D",
+  "comment": "J = M - C = 8.400 - 7.500 = 900.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

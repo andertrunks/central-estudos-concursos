@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-014-02",
+  "contentId": "MAT-005",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MC-014"
+  ],
+  "statement": "R$ 4.000,00 são aplicados a 10% ao ano por 2 anos, em juros compostos. O montante é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 4.400,00"
+    },
+    {
+      "id": "B",
+      "text": "R$ 4.600,00"
+    },
+    {
+      "id": "C",
+      "text": "R$ 4.800,00"
+    },
+    {
+      "id": "D",
+      "text": "R$ 4.840,00"
+    },
+    {
+      "id": "E",
+      "text": "R$ 4.880,00"
+    }
+  ],
+  "answer": "D",
+  "comment": "4.000×1,10²=4.840.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
