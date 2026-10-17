@@ -1,0 +1,28 @@
+{
+  "id": "Q-MC-016-01",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A sequência 5, 8, 11, 14, ... é uma PA de razão 3.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "as diferenças sucessivas são todas iguais a 3.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

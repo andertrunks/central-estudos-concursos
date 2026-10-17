@@ -1,0 +1,28 @@
+{
+  "id": "Q-MC-016-13",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Se a2=12 e a5=324 em uma PG de razão positiva, então q=3 e a1=4.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "324/12=q^3=27; q=3; a1=12/3=4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

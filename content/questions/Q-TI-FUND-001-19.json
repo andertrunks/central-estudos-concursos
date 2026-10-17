@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-FUND-001-19",
+  "contentId": "TI-FUND-001",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual alternativa descreve corretamente memória virtual?",
+  "options": [
+    {
+      "id": "A",
+      "text": "memória cache física adicionada à CPU"
+    },
+    {
+      "id": "B",
+      "text": "área de armazenamento usada pelo SO como complemento ao espaço de memória, mais lenta que RAM"
+    },
+    {
+      "id": "C",
+      "text": "cópia permanente do firmware"
+    },
+    {
+      "id": "D",
+      "text": "sinônimo de SSD NVMe"
+    },
+    {
+      "id": "E",
+      "text": "barramento da placa-mãe"
+    }
+  ],
+  "answer": "B",
+  "comment": "Resposta canônica: área de armazenamento usada pelo SO como complemento ao espaço de memória, mais lenta que RAM. CPU: executa instruções e coordena processamento.\nPlaca-mãe: interconecta componentes e fornece interfaces/slots.\nRegistradores: memória mais próxima da execução da CPU.\nCache: memória rápida entre CPU e RAM, em visão didática.\nRAM: memória principal volátil de trabalho.\nFirmware: software de baixo nível associado ao equipamento.\nBIOS/UEFI: firmware de inicialização/configuração da plataforma.\nHDD/SSD: armazenamento secundário não volátil.\nPeriférico de entrada: envia dados ao sistema.\nPeriférico de saída: apresenta dados do sistema.\nTouchscreen: exemplo clássico de entrada e saída.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

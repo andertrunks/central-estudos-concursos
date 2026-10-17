@@ -1,0 +1,28 @@
+{
+  "id": "Q-MC-016-14",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Na PG 256,128,64,..., o sexto termo é 8.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "q=1/2 e a6=256·(1/2)^5=8.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

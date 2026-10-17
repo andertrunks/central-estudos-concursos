@@ -1,0 +1,99 @@
+{
+  "id": "MAT-011",
+  "title": "Progressões aritmética e geométrica — razão, termo geral, somas e aplicações",
+  "discipline": "Matemática/RLM",
+  "subject": "Progressões aritmética e geométrica",
+  "subtopic": "Progressões aritmética e geométrica — razão, termo geral, somas e aplicações",
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ],
+  "objectives": [
+    "O edital do CRBio-01 exige apenas “Progressões (aritmética e geométrica)”. Para transformar essa redação ampla em uma aula operacional para concurso, este núcleo cobre o conjunto padrão necessário para resolver questões de PA e PG:\n\n\n- reconhecer sequências e padrões;\n- identificar uma progressão aritmética (PA) e sua razão;\n- calcular termo geral de uma PA;\n- recuperar termo inicial, razão ou posição a partir de outros termos;\n- calcular soma dos primeiros termos de uma PA;\n- reconhecer uma progressão geométrica (PG) e sua razão;\n- calcular termo geral de uma PG;\n- recuperar termo inicial, razão ou posição em uma PG;\n- calcular soma dos primeiros termos de uma PG finita;\n- resolver situações contextualizadas de crescimento aditivo e multiplicativo;\n- distinguir PA de PG rapidamente.\n\n\nA soma de uma PG infinita é tratada ao final como extensão útil, porque é um desenvolvimento clássico do tema, mas NÃO é promovida como exigência literal autônoma do edital."
+  ],
+  "theory": "O edital do CRBio-01 exige apenas “Progressões (aritmética e geométrica)”. Para transformar essa redação ampla em uma aula operacional para concurso, este núcleo cobre o conjunto padrão necessário para resolver questões de PA e PG:\n\n\n- reconhecer sequências e padrões;\n- identificar uma progressão aritmética (PA) e sua razão;\n- calcular termo geral de uma PA;\n- recuperar termo inicial, razão ou posição a partir de outros termos;\n- calcular soma dos primeiros termos de uma PA;\n- reconhecer uma progressão geométrica (PG) e sua razão;\n- calcular termo geral de uma PG;\n- recuperar termo inicial, razão ou posição em uma PG;\n- calcular soma dos primeiros termos de uma PG finita;\n- resolver situações contextualizadas de crescimento aditivo e multiplicativo;\n- distinguir PA de PG rapidamente.\n\n\nA soma de uma PG infinita é tratada ao final como extensão útil, porque é um desenvolvimento clássico do tema, mas NÃO é promovida como exigência literal autônoma do edital.",
+  "examples": "PA:\n- operação entre termos: somar/subtrair r;\n- diferença constante;\n- termo geral linear em n;\n- crescimento aditivo.\n\n\nPG:\n- operação entre termos: multiplicar/dividir por q;\n- quociente constante;\n- termo geral exponencial em n;\n- crescimento multiplicativo.\n\n\nExemplo 1:\n\n\n10, 15, 20, 25 → +5 → PA.\n\n\nExemplo 2:\n\n\n10, 15, 22,5, 33,75 → ×1,5 → PG.",
+  "pitfalls": "1) Confundir diferença com quociente.\n2) Usar n em vez de n−1 no termo geral.\n3) Esquecer que, em a10, foram dados 9 “saltos” desde a1.\n4) Aplicar fórmula de soma sem descobrir n.\n5) Tratar aumento percentual constante como PA.\n6) Em PG, dividir por um termo igual a zero sem analisar o caso separadamente.\n7) Esquecer que q pode ser negativo.\n8) Aplicar a fórmula da soma infinita quando |q| ≥ 1.\n9) Confundir “crescimento na semana” com “total acumulado”.\n10) Memorizar fórmula sem identificar primeiro o padrão do problema.",
+  "summary": "PA:\nr = a(n+1)−an\nan = a1+(n−1)r\nSn = n(a1+an)/2\n\n\nPG:\nq = a(n+1)/an, quando an ≠ 0\nan = a1·q^(n−1)\nSn = a1(q^n−1)/(q−1), q ≠ 1\nS∞ = a1/(1−q), somente se |q|<1 — extensão",
+  "review": "- PA = diferença constante.\n- PG = quociente constante.\n- PA: an = a1+(n−1)r.\n- PG: an = a1·q^(n−1).\n- PA: Sn = n(a1+an)/2.\n- PG finita: Sn = a1(q^n−1)/(q−1).\n- Em três termos consecutivos de PA, o termo central é a média aritmética dos extremos.\n- Em três termos consecutivos de PG, o quadrado do central é o produto dos extremos.\n- Aumento fixo → PA.\n- Aumento percentual fixo → PG.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "media": [
+    "MAT-011-IMG-001"
+  ],
+  "questions": [
+    "Q-MC-016-01",
+    "Q-MC-016-02",
+    "Q-MC-016-03",
+    "Q-MC-016-04",
+    "Q-MC-016-05",
+    "Q-MC-016-06",
+    "Q-MC-016-07",
+    "Q-MC-016-08",
+    "Q-MC-016-09",
+    "Q-MC-016-10",
+    "Q-MC-016-11",
+    "Q-MC-016-12",
+    "Q-MC-016-13",
+    "Q-MC-016-14",
+    "Q-MC-016-15",
+    "Q-MC-016-16",
+    "Q-MC-016-17",
+    "Q-MC-016-18",
+    "Q-MC-016-19",
+    "Q-MC-016-20"
+  ],
+  "updatedAt": "2026-10-17",
+  "requirements": {
+    "image": true,
+    "videos": false,
+    "questions": true
+  },
+  "exception": "O handoff canônico registra recursos institucionais de apoio; vídeos candidatos permanecem em validação audiovisual e não são apresentados como verificados. Teoria integral, imagem original, flashcards, exercícios autorais e treinos preservados.",
+  "sections": [
+    {
+      "id": "MAT-011-01",
+      "title": "Progressão aritmética — PA",
+      "text": "SEQUÊNCIAS: A IDEIA ANTES DA FÓRMULA\n\nUma sequência é uma lista ordenada de números. Cada valor ocupa uma posição:\n\n\na1, a2, a3, ..., an.\n\n\nO índice indica a posição. Assim, a7 é o sétimo termo, e não “a multiplicado por 7”.\n\n\nAntes de aplicar qualquer fórmula, pergunte:\n\n\n1) o que muda de um termo para o seguinte?\n2) a mudança ocorre por soma/subtração constante?\n3) a mudança ocorre por multiplicação/divisão constante?\n\n\nSe a diferença entre termos consecutivos é constante, há PA.\nSe a razão entre termos consecutivos é constante, há PG.\n\nPROGRESSÃO ARITMÉTICA — PA\n\n3.1 Definição\n\n\nUma progressão aritmética é uma sequência em que a diferença entre um termo e o anterior é constante.\n\n\nEssa constante é a razão r:\n\n\nr = a(n+1) − an.\n\n\nExemplo:\n\n\n4, 9, 14, 19, 24, ...\n\n\nDiferenças:\n\n\n9−4 = 5\n14−9 = 5\n19−14 = 5\n\n\nLogo, é uma PA de razão r = 5.\n\n\n3.2 Classificação básica\n\n\n- r > 0: PA crescente;\n- r < 0: PA decrescente;\n- r = 0: PA constante.\n\n\nExemplos:\n\n\n2, 5, 8, 11 → r = 3, crescente.\n20, 16, 12, 8 → r = −4, decrescente.\n7, 7, 7, 7 → r = 0, constante.\n\n\n3.3 Termo geral da PA\n\n\nA fórmula central é:\n\n\nan = a1 + (n−1)r.\n\n\nEla decorre da repetição da mesma diferença.\n\n\nExemplo:\n\n\na1 = 7, r = 4. Calcular a10.\n\n\na10 = 7 + (10−1)·4\n= 7 + 36\n= 43.\n\n\n3.4 Usando dois termos quaisquer\n\n\nSe conhecemos ap e aq:\n\n\naq = ap + (q−p)r.\n\n\nExemplo:\n\n\na4 = 12 e a9 = 27.\n\n\n27 = 12 + (9−4)r\n15 = 5r\nr = 3.\n\n\nDepois:\n\n\n12 = a1 + 3·3\n12 = a1 + 9\na1 = 3.\n\n\n3.5 Termos equidistantes\n\n\nEm uma PA, um termo intermediário é a média aritmética dos termos equidistantes dele.\n\n\nSe x, y, z são três termos consecutivos de uma PA:\n\n\ny = (x+z)/2.\n\n\nExemplo:\n\n\n7, x, 19.\n\n\nx = (7+19)/2 = 13.\n\n\n3.6 Soma dos n primeiros termos da PA\n\n\nSn = n(a1+an)/2.\n\n\nComo an = a1+(n−1)r, também é possível escrever:\n\n\nSn = n[2a1+(n−1)r]/2.\n\n\nExemplo:\n\n\nPA 1, 3, 5, ..., 19.\n\n\nr = 2.\nPara achar n:\n\n\n19 = 1 + (n−1)·2\n18 = 2(n−1)\nn = 10.\n\n\nS10 = 10(1+19)/2 = 100.\n\n\n3.7 Reconhecimento em problemas\n\n\nPA aparece quando há acréscimo ou decréscimo constante:\n\n\n- produção aumenta 500 unidades por período;\n- quantidade diária cresce sempre 4 unidades;\n- mensalidade sofre acréscimo fixo;\n- distância entre marcas aumenta de modo constante;\n- sequência é construída adicionando sempre o mesmo número.\n\n\nAtenção: “crescer 10% por período” NÃO é PA; é comportamento multiplicativo e tende a PG."
+    },
+    {
+      "id": "MAT-011-02",
+      "title": "Progressão geométrica — PG; soma infinita como extensão",
+      "text": "PROGRESSÃO GEOMÉTRICA — PG\n\n4.1 Definição\n\n\nUma progressão geométrica é uma sequência em que cada termo é obtido multiplicando o anterior por uma constante q, chamada razão.\n\n\nQuando o termo anterior é diferente de zero:\n\n\nq = a(n+1)/an.\n\n\nExemplo:\n\n\n3, 6, 12, 24, 48, ...\n\n\n6/3 = 2\n12/6 = 2\n24/12 = 2\n\n\nLogo, é uma PG de razão q = 2.\n\n\n4.2 Casos frequentes\n\n\n- q > 1, com a1 positivo: crescimento multiplicativo;\n- 0 < q < 1, com a1 positivo: decaimento;\n- q = 1: PG constante;\n- q < 0: sinais alternam, salvo termos nulos.\n\n\nExemplo de decaimento:\n\n\n256, 128, 64, 32, ...\n\n\nq = 1/2.\n\n\nExemplo com razão negativa:\n\n\n8, −4, 2, −1, ...\n\n\nq = −1/2.\n\n\n4.3 Termo geral da PG\n\n\nan = a1·q^(n−1).\n\n\nExemplo:\n\n\na1 = 5, q = 3. Calcular a5.\n\n\na5 = 5·3^4 = 5·81 = 405.\n\n\n4.4 Usando dois termos quaisquer\n\n\nSe conhecemos ap e aq:\n\n\naq = ap·q^(q−p).\n\n\nExemplo:\n\n\na2 = 12 e a5 = 324.\n\n\n324 = 12·q^3\nq^3 = 27\nq = 3.\n\n\nComo a2 = a1·3:\n\n\na1 = 4.\n\n\n4.5 Propriedade de três termos consecutivos\n\n\nSe x, y, z são três termos consecutivos de uma PG, então:\n\n\ny² = xz.\n\n\nEssa relação é especialmente útil quando a questão fornece três termos algébricos.\n\n\n4.6 Soma dos n primeiros termos de uma PG finita\n\n\nPara q ≠ 1:\n\n\nSn = a1(q^n−1)/(q−1).\n\n\nForma equivalente:\n\n\nSn = a1(1−q^n)/(1−q).\n\n\nEscolha a forma que evita erros de sinal.\n\n\nSe q = 1:\n\n\nSn = n·a1.\n\n\nExemplo:\n\n\n2, 6, 18, 54, 162.\n\n\na1 = 2, q = 3, n = 5.\n\n\nS5 = 2(3^5−1)/(3−1)\n= 2(243−1)/2\n= 242.\n\n\n4.7 Crescimento percentual e PG\n\n\nSe uma quantidade cresce p% a cada período, o fator multiplicativo é:\n\n\nq = 1 + p/100.\n\n\nExemplo: crescimento de 10% por período → q = 1,10.\n\n\nSe cai p%:\n\n\nq = 1 − p/100.\n\n\nExemplo: redução de 20% por período → q = 0,80.\n\n\nIsso conecta PG a juros compostos e crescimento exponencial, mas o tratamento financeiro detalhado permanece no núcleo de Matemática Financeira.\n\nEXTENSÃO — SOMA DE PG INFINITA\n\nSomente quando |q| < 1, a soma infinita converge:\n\n\nS∞ = a1/(1−q).\n\n\nExemplo:\n\n\n9 + 3 + 1 + 1/3 + ...\n\n\nq = 1/3.\n\n\nS∞ = 9/(1−1/3)\n= 9/(2/3)\n= 27/2\n= 13,5.\n\n\nRegra editorial: este tópico é complementar. Não deve aparecer na matriz como subitem literal do edital; serve apenas para blindar o aluno contra uma cobrança clássica possível dentro do tema amplo “progressões”."
+    }
+  ],
+  "materials": [
+    {
+      "id": "MAT-011-MATERIAL-01",
+      "title": "ESCOPO CENTRAL",
+      "text": "O edital do CRBio-01 exige apenas “Progressões (aritmética e geométrica)”. Para transformar essa redação ampla em uma aula operacional para concurso, este núcleo cobre o conjunto padrão necessário para resolver questões de PA e PG:\n\n\n- reconhecer sequências e padrões;\n- identificar uma progressão aritmética (PA) e sua razão;\n- calcular termo geral de uma PA;\n- recuperar termo inicial, razão ou posição a partir de outros termos;\n- calcular soma dos primeiros termos de uma PA;\n- reconhecer uma progressão geométrica (PG) e sua razão;\n- calcular termo geral de uma PG;\n- recuperar termo inicial, razão ou posição em uma PG;\n- calcular soma dos primeiros termos de uma PG finita;\n- resolver situações contextualizadas de crescimento aditivo e multiplicativo;\n- distinguir PA de PG rapidamente.\n\n\nA soma de uma PG infinita é tratada ao final como extensão útil, porque é um desenvolvimento clássico do tema, mas NÃO é promovida como exigência literal autônoma do edital."
+    },
+    {
+      "id": "MAT-011-MATERIAL-07",
+      "title": "PADRÃO QUADRIX OBSERVADO EM 2026",
+      "text": "A pesquisa de questões recentes da banca mostra incidência real de:\n\n\n- reconhecimento de razão de PA;\n- termo geral e identificação de termos positivos;\n- soma dos primeiros termos de PA;\n- situações práticas com crescimento diário aditivo;\n- identificação de PG e sua razão;\n- crescimento por duplicação;\n- problemas de PA com três valores e relações algébricas.\n\n\nHá referência Quadrix 2026 de PG aplicada a Analista de Sistemas do CRF-PR, o que torna esse padrão especialmente útil para a preparação do cargo de Analista de Tecnologia da Informação do CRBio-01.\n\n\nAs referências reais ficam no banco apenas com metadados e resumo temático; o texto integral da questão não é reproduzido como conteúdo autoral."
+    },
+    {
+      "id": "MAT-011-MATERIAL-11",
+      "title": "FLASHCARDS — IDs PERMANENTES",
+      "text": "F-MC-016-01 — O que caracteriza uma PA? Diferença constante entre termos consecutivos.\nF-MC-016-02 — Como calcular a razão de uma PA? r = a(n+1)−an.\nF-MC-016-03 — Fórmula do termo geral da PA? an = a1+(n−1)r.\nF-MC-016-04 — PA com r>0? Crescente.\nF-MC-016-05 — PA com r<0? Decrescente.\nF-MC-016-06 — PA com r=0? Constante.\nF-MC-016-07 — Soma dos n primeiros termos de uma PA? Sn = n(a1+an)/2.\nF-MC-016-08 — Em três termos consecutivos de PA, como achar o central? Média aritmética dos extremos.\nF-MC-016-09 — Quantos saltos existem de a1 até an? n−1.\nF-MC-016-10 — Acréscimo fixo por período sugere qual progressão? PA.\nF-MC-016-11 — Se a4 e a9 são conhecidos, quantos intervalos de razão os separam? 5.\nF-MC-016-12 — Crescimento percentual constante normalmente sugere PA ou PG? PG.\nF-MC-016-13 — O que caracteriza uma PG? Multiplicação por razão constante.\nF-MC-016-14 — Como calcular q em termos não nulos? q = a(n+1)/an.\nF-MC-016-15 — Fórmula do termo geral da PG? an = a1·q^(n−1).\nF-MC-016-16 — PG positiva com q>1 tende a quê? Crescimento.\nF-MC-016-17 — PG positiva com 0<q<1 tende a quê? Decaimento.\nF-MC-016-18 — O que ocorre frequentemente quando q<0? Alternância de sinais.\nF-MC-016-19 — Soma finita da PG para q≠1? Sn = a1(q^n−1)/(q−1).\nF-MC-016-20 — Soma finita da PG quando q=1? Sn = n·a1.\nF-MC-016-21 — Relação de três termos consecutivos de PG? y²=xz.\nF-MC-016-22 — Aumento de 10% por período corresponde a qual razão? q=1,10.\nF-MC-016-23 — Quando existe soma infinita clássica de PG? Quando |q|<1.\nF-MC-016-24 — Fórmula da soma infinita convergente? S∞=a1/(1−q)."
+    },
+    {
+      "id": "MAT-011-MATERIAL-13",
+      "title": "TREINOS GUIADOS — IDs PERMANENTES",
+      "text": "T-MC-016-01 — Classifique 6,10,14,18 como PA ou PG e determine a razão. Resposta: PA, r=4.\nT-MC-016-02 — PA: a1=9, r=6. Calcule a12. Resposta: 75.\nT-MC-016-03 — PA: a5=23 e a11=47. Determine r e a1. Resposta: r=4; a1=7.\nT-MC-016-04 — PA: 5,8,11,... até a20. Calcule a20 e S20. Resposta: a20=62; S20=670.\nT-MC-016-05 — Três termos consecutivos de uma PA são 12, x, 30. Determine x. Resposta: 21.\nT-MC-016-06 — Um setor processa 30 documentos no primeiro dia e aumenta 5 por dia. Ache a quantidade do 15º dia e o total em 15 dias. Resposta: 100; 975.\nT-MC-016-07 — Classifique 81,27,9,3 como PA ou PG e determine a razão. Resposta: PG, q=1/3.\nT-MC-016-08 — PG: a1=4, q=3. Calcule a7. Resposta: 2.916.\nT-MC-016-09 — PG: a3=20 e a6=160, q positivo. Determine q e a1. Resposta: q=2; a1=5.\nT-MC-016-10 — PG: 3,6,12,24,... Calcule S8. Resposta: 765.\nT-MC-016-11 — PG: −16,8,−4,2,... Determine q e a7. Resposta: q=−1/2; a7=−1/4.\nT-MC-016-12 — EXTENSÃO: calcule 12+6+3+1,5+... até o infinito. Resposta: 24."
+    },
+    {
+      "id": "MAT-011-MATERIAL-14",
+      "title": "COBERTURA EDITORIAL PROPOSTA",
+      "text": "MAT-011-01 — Progressão aritmética: definição, razão, classificação, termo geral, relações entre termos e soma finita.\nMAT-011-02 — Progressão geométrica: definição, razão, termo geral, relações entre termos, soma finita e aplicações de crescimento/decrescimento multiplicativo.\n\n\nA soma infinita de PG fica como extensão dentro de MAT-011-02, sem criar subitem formal separado."
+    },
+    {
+      "id": "MAT-011-MATERIAL-15",
+      "title": "FONTES E LIMITES",
+      "text": "Fonte formal primária: SRC-CRBIO01-EDITAL-001, item 18.2.2.2, 1.4 Progressões (aritmética e geométrica).\n\n\nApoio pedagógico institucional:\n- Portal da OBMEP/IMPA — Progressões Aritméticas — https://portaldaobmep.impa.br/index.php/modulo/ver?modulo=79\n- Portal da OBMEP/IMPA — Progressões Geométricas — https://portaldaobmep.impa.br/index.php/modulo/ver?modulo=80\n\n\nApoio interno já existente no Drive:\n- Telecurso — Matemática, Ensino Médio, Livro de Atividades; aulas 33 a 36 trabalham PA, soma de PA, PG e soma de PG. Usado apenas como referência de cobertura e prática; não reproduzir exercícios ou texto protegido no site."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "Q-MC-016-12",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Em uma PG com a1=5 e q=3, a5=405.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "a5=5·3^4=405.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

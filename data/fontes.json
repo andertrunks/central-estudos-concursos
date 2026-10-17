@@ -2645,5 +2645,45 @@
     "level": "P1",
     "verifiedAt": "2026-10-17",
     "status": "ativo"
+  },
+  {
+    "id": "SRC-TIFUND-IBM-HW-001",
+    "title": "O que é hardware de computador?",
+    "author": "IBM",
+    "url": "https://www.ibm.com/br-pt/think/topics/hardware",
+    "level": "P2",
+    "version": "Página institucional consultada em 17/10/2026",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-TIFUND-INTEL-RAM-001",
+    "title": "What Is RAM Vs. Processor?",
+    "author": "Intel",
+    "url": "https://www.intel.com/content/www/us/en/learn/what-is-ram-vs-processor.html",
+    "level": "P2",
+    "version": "Página institucional consultada em 17/10/2026",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MAT011-OBMEP-PA-001",
+    "title": "Progressões Aritméticas",
+    "author": "IMPA / Portal da OBMEP",
+    "url": "https://portaldaobmep.impa.br/index.php/modulo/ver?modulo=79",
+    "level": "P2",
+    "version": "Página institucional consultada em 17/10/2026",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-MAT011-OBMEP-PG-001",
+    "title": "Progressões Geométricas",
+    "author": "IMPA / Portal da OBMEP",
+    "url": "https://portaldaobmep.impa.br/index.php/modulo/ver?modulo=80",
+    "level": "P2",
+    "version": "Página institucional consultada em 17/10/2026",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
   }
 ]

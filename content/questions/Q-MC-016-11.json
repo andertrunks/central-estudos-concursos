@@ -1,0 +1,28 @@
+{
+  "id": "Q-MC-016-11",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A sequência 3,6,12,24,... é uma PG de razão 2.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "cada termo é o anterior multiplicado por 2.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

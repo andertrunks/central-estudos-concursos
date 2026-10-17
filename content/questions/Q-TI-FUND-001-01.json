@@ -1,0 +1,30 @@
+{
+  "id": "Q-TI-FUND-001-01",
+  "contentId": "TI-FUND-001",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Hardware corresponde aos componentes físicos do sistema; software corresponde a programas e instruções.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "a oposição físico x lógico é a distinção básica.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

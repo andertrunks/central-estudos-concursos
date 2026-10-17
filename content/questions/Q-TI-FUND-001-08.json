@@ -1,0 +1,30 @@
+{
+  "id": "Q-TI-FUND-001-08",
+  "contentId": "TI-FUND-001",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Em uma organização típica, registradores e caches estão mais próximos da CPU e oferecem menor latência que a RAM.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Resposta canônica: Certo. CPU: executa instruções e coordena processamento.\nPlaca-mãe: interconecta componentes e fornece interfaces/slots.\nRegistradores: memória mais próxima da execução da CPU.\nCache: memória rápida entre CPU e RAM, em visão didática.\nRAM: memória principal volátil de trabalho.\nFirmware: software de baixo nível associado ao equipamento.\nBIOS/UEFI: firmware de inicialização/configuração da plataforma.\nHDD/SSD: armazenamento secundário não volátil.\nPeriférico de entrada: envia dados ao sistema.\nPeriférico de saída: apresenta dados do sistema.\nTouchscreen: exemplo clássico de entrada e saída.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

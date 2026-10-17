@@ -684,5 +684,27 @@
     "file": "media/TI-RED-003-IMG-001.png",
     "verifiedAt": "2026-10-17",
     "original": true
+  },
+  {
+    "id": "TI-FUND-001-IMG-001",
+    "contentId": "TI-FUND-001",
+    "type": "imagem",
+    "title": "Arquitetura de computadores — hardware, software, memória, armazenamento e periféricos",
+    "caption": "Imagem didática original do pacote editorial canônico.",
+    "alt": "Arquitetura de computadores — hardware, software, memória, armazenamento e periféricos — esquema didático com conceitos e aplicações detalhados no texto da aula.",
+    "file": "media/TI-FUND-001-IMG-001.png",
+    "verifiedAt": "2026-10-17",
+    "original": true
+  },
+  {
+    "id": "MAT-011-IMG-001",
+    "contentId": "MAT-011",
+    "type": "imagem",
+    "title": "Progressões aritmética e geométrica — razão, termo geral, somas e aplicações",
+    "caption": "Imagem didática original do pacote editorial canônico.",
+    "alt": "Progressões aritmética e geométrica — razão, termo geral, somas e aplicações — esquema didático com conceitos e aplicações detalhados no texto da aula.",
+    "file": "media/MAT-011-IMG-001.png",
+    "verifiedAt": "2026-10-17",
+    "original": true
   }
 ]

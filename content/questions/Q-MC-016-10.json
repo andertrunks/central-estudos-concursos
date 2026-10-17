@@ -1,0 +1,40 @@
+{
+  "id": "Q-MC-016-10",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Uma PA tem a1=12, r=5 e 8 termos. A soma é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "196"
+    },
+    {
+      "id": "B",
+      "text": "216"
+    },
+    {
+      "id": "C",
+      "text": "226"
+    },
+    {
+      "id": "D",
+      "text": "236"
+    },
+    {
+      "id": "E",
+      "text": "246"
+    }
+  ],
+  "answer": "D",
+  "comment": "a8=47; S8=8(12+47)/2=236.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

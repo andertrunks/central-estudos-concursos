@@ -1,0 +1,30 @@
+{
+  "id": "Q-TI-FUND-001-02",
+  "contentId": "TI-FUND-001",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A memória RAM é utilizada principalmente para manter arquivos do usuário de forma permanente após o desligamento do computador.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "RAM é memória de trabalho volátil; armazenamento permanente fica em SSD/HDD e outros meios não voláteis.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

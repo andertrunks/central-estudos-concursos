@@ -1,0 +1,30 @@
+{
+  "id": "Q-TI-FUND-001-09",
+  "contentId": "TI-FUND-001",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A cache L3 é, por definição, sempre exclusiva de cada núcleo, e a L1 é, por definição, compartilhada por todos os núcleos.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "a organização depende da arquitetura; em muitos processadores ocorre justamente L1 privada e L3 compartilhada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

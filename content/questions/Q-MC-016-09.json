@@ -1,0 +1,40 @@
+{
+  "id": "Q-MC-016-09",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Em uma PA, a3=11 e a8=31. O primeiro termo é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "1"
+    },
+    {
+      "id": "B",
+      "text": "2"
+    },
+    {
+      "id": "C",
+      "text": "3"
+    },
+    {
+      "id": "D",
+      "text": "4"
+    },
+    {
+      "id": "E",
+      "text": "5"
+    }
+  ],
+  "answer": "C",
+  "comment": "r=(31−11)/5=4; a1=11−2·4=3.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -3,6 +3,23 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
   base: "/central-estudos-concursos/",
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: (id) => {
+                const lesson = id.replaceAll("\\", "/").match(/\/content\/lessons\/([^/]+)\.json$/);
+                return lesson ? `lesson-${lesson[1]}` : null;
+              },
+            },
+            { name: "question-bank", test: /content[\\/]questions[\\/]/ },
+          ],
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({

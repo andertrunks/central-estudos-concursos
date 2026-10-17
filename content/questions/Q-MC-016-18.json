@@ -1,0 +1,40 @@
+{
+  "id": "Q-MC-016-18",
+  "contentId": "MAT-011",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A soma infinita 9+3+1+1/3+... é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "12"
+    },
+    {
+      "id": "B",
+      "text": "13"
+    },
+    {
+      "id": "C",
+      "text": "13,5"
+    },
+    {
+      "id": "D",
+      "text": "14"
+    },
+    {
+      "id": "E",
+      "text": "18"
+    }
+  ],
+  "answer": "C",
+  "comment": "q=1/3; S∞=9/(1−1/3)=13,5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-MAT011-OBMEP-PA-001",
+    "SRC-MAT011-OBMEP-PG-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

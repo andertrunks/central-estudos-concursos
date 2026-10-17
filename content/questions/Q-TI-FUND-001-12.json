@@ -1,0 +1,42 @@
+{
+  "id": "Q-TI-FUND-001-12",
+  "contentId": "TI-FUND-001",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual opção apresenta memória principal volátil usada por programas em execução?",
+  "options": [
+    {
+      "id": "A",
+      "text": "HDD"
+    },
+    {
+      "id": "B",
+      "text": "SSD"
+    },
+    {
+      "id": "C",
+      "text": "RAM"
+    },
+    {
+      "id": "D",
+      "text": "pen drive"
+    },
+    {
+      "id": "E",
+      "text": "DVD"
+    }
+  ],
+  "answer": "C",
+  "comment": "Resposta canônica: RAM. CPU: executa instruções e coordena processamento.\nPlaca-mãe: interconecta componentes e fornece interfaces/slots.\nRegistradores: memória mais próxima da execução da CPU.\nCache: memória rápida entre CPU e RAM, em visão didática.\nRAM: memória principal volátil de trabalho.\nFirmware: software de baixo nível associado ao equipamento.\nBIOS/UEFI: firmware de inicialização/configuração da plataforma.\nHDD/SSD: armazenamento secundário não volátil.\nPeriférico de entrada: envia dados ao sistema.\nPeriférico de saída: apresenta dados do sistema.\nTouchscreen: exemplo clássico de entrada e saída.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

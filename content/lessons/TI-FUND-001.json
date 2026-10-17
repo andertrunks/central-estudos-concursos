@@ -1,0 +1,111 @@
+{
+  "id": "TI-FUND-001",
+  "title": "Arquitetura de computadores — hardware, software, memória, armazenamento e periféricos",
+  "discipline": "TI",
+  "subject": "Arquitetura de computadores",
+  "subtopic": "Arquitetura de computadores — hardware, software, memória, armazenamento e periféricos",
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ],
+  "objectives": [
+    "TI-FUND-001 cobre a base necessária para compreender um sistema computacional físico e lógico, com ênfase em questões de concurso sobre componentes, funções e relações entre eles. O núcleo contempla:\n- diferença entre hardware, software e firmware;\n- placa-mãe, processador, núcleos, clock, chipset e barramentos;\n- memória: registradores, cache, RAM e ROM/flash de firmware;\n- armazenamento secundário: HDD, SSD, pen drive e cartões de memória;\n- periféricos de entrada, saída e entrada/saída;\n- interfaces e portas em nível conceitual;\n- processo básico de inicialização, POST e BIOS/UEFI;\n- interpretação de gargalos e compatibilidade sem entrar em eletrônica avançada.\n\n\nLimite editorial: não transformar este núcleo em disciplina de microarquitetura avançada. Pipeline, superscalar, branch prediction, coerência de cache multiprocessada, ISA detalhada, assembly e projeto lógico ficam fora do escopo formal enquanto não houver exigência explícita."
+  ],
+  "theory": "TI-FUND-001 cobre a base necessária para compreender um sistema computacional físico e lógico, com ênfase em questões de concurso sobre componentes, funções e relações entre eles. O núcleo contempla:\n- diferença entre hardware, software e firmware;\n- placa-mãe, processador, núcleos, clock, chipset e barramentos;\n- memória: registradores, cache, RAM e ROM/flash de firmware;\n- armazenamento secundário: HDD, SSD, pen drive e cartões de memória;\n- periféricos de entrada, saída e entrada/saída;\n- interfaces e portas em nível conceitual;\n- processo básico de inicialização, POST e BIOS/UEFI;\n- interpretação de gargalos e compatibilidade sem entrar em eletrônica avançada.\n\n\nLimite editorial: não transformar este núcleo em disciplina de microarquitetura avançada. Pipeline, superscalar, branch prediction, coerência de cache multiprocessada, ISA detalhada, assembly e projeto lógico ficam fora do escopo formal enquanto não houver exigência explícita.",
+  "examples": "Quadrix cobra com frequência afirmações curtas de Certo/Errado que trocam a função de componentes, a volatilidade das memórias, a posição da CPU e o papel de BIOS/UEFI. Também aparece arquitetura de memória/cache e placa-mãe em nível mais técnico.\n\n\nINDEPAC tende a cobrar identificação direta de dispositivos e funções em múltipla escolha. A referência pública localizada para hardware pergunta qual item é uma unidade de armazenamento, reforçando classificação objetiva de componentes.",
+  "pitfalls": "1) chamar CPU de gabinete inteiro;\n2) afirmar que RAM é permanente;\n3) afirmar que cache serve para backup;\n4) dizer que placa-mãe executa as operações aritméticas da CPU;\n5) classificar teclado como saída;\n6) classificar monitor como entrada;\n7) dizer que SSD possui discos magnéticos giratórios;\n8) confundir software de sistema com hardware;\n9) tratar BIOS/UEFI como sistema operacional;\n10) afirmar que maior clock sempre significa processador mais rápido, sem contexto;\n11) dizer que L3 é necessariamente privada e L1 necessariamente compartilhada — a organização depende da arquitetura;\n12) confundir memória virtual com RAM física.",
+  "summary": "CPU: executa instruções e coordena processamento.\nPlaca-mãe: interconecta componentes e fornece interfaces/slots.\nRegistradores: memória mais próxima da execução da CPU.\nCache: memória rápida entre CPU e RAM, em visão didática.\nRAM: memória principal volátil de trabalho.\nFirmware: software de baixo nível associado ao equipamento.\nBIOS/UEFI: firmware de inicialização/configuração da plataforma.\nHDD/SSD: armazenamento secundário não volátil.\nPeriférico de entrada: envia dados ao sistema.\nPeriférico de saída: apresenta dados do sistema.\nTouchscreen: exemplo clássico de entrada e saída.",
+  "review": "F-TI-FUND-001-01 — O que é hardware? Conjunto de componentes físicos de um sistema computacional.\nF-TI-FUND-001-02 — O que é software? Programas e instruções executados pelo hardware.\nF-TI-FUND-001-03 — O que é firmware? Software de baixo nível associado diretamente a um equipamento e normalmente armazenado em memória não volátil.\nF-TI-FUND-001-04 — BIOS/UEFI é hardware ou firmware? Firmware; o chip que o armazena é hardware.\nF-TI-FUND-001-05 — Função central da CPU? Executar instruções e coordenar o processamento.\nF-TI-FUND-001-06 — O que é um núcleo de CPU? Uma unidade de processamento dentro do processador.\nF-TI-FUND-001-07 — Clock mede o quê? Ciclos por segundo, normalmente expressos em GHz.\nF-TI-FUND-001-08 — Clock maior sempre implica CPU mais rápida? Não; arquitetura, IPC, núcleos, cache e carga também importam.\nF-TI-FUND-001-09 — Qual memória fica mais próxima da execução da CPU: registrador ou RAM? Registrador.\nF-TI-FUND-001-10 — RAM é volátil? Sim, em uso convencional perde conteúdo sem alimentação.\nF-TI-FUND-001-11 — Principal função da cache? Reduzir a latência média de acesso a dados/instruções usados pela CPU.\nF-TI-FUND-001-12 — L1 costuma ser maior ou menor que L3? Menor e mais próxima do núcleo.\nF-TI-FUND-001-13 — HDD é volátil? Não.\nF-TI-FUND-001-14 — SSD usa discos magnéticos giratórios? Não; SSD usa memória flash não volátil.\nF-TI-FUND-001-15 — Pen drive é memória RAM? Não; é armazenamento flash não volátil.\nF-TI-FUND-001-16 — O que diferencia SATA de NVMe/PCIe em visão básica? São interfaces/protocolos/caminhos diferentes de conexão e acesso ao armazenamento; NVMe normalmente opera sobre PCIe.\nF-TI-FUND-001-17 — Teclado é periférico de quê? Entrada.\nF-TI-FUND-001-18 — Impressora é periférico de quê? Saída.\nF-TI-FUND-001-19 — Touchscreen pode ser entrada e saída? Sim.\nF-TI-FUND-001-20 — Scanner é entrada ou saída? Entrada.\nF-TI-FUND-001-21 — O que é POST? Verificação inicial básica de hardware realizada durante a inicialização da plataforma.\nF-TI-FUND-001-22 — Função de BIOS/UEFI no boot? Inicializar/configurar a plataforma e localizar/iniciar o processo de carregamento do sistema.\nF-TI-FUND-001-23 — O que é memória virtual? Técnica do SO que usa armazenamento secundário para complementar o espaço de memória/endereço, com desempenho inferior à RAM.\nF-TI-FUND-001-24 — Qual a diferença essencial entre RAM e SSD/HDD? RAM é memória principal de trabalho, normalmente volátil; SSD/HDD são armazenamento secundário não volátil.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001",
+    "SRC-TIFUND-IBM-HW-001",
+    "SRC-TIFUND-INTEL-RAM-001"
+  ],
+  "media": [
+    "TI-FUND-001-IMG-001"
+  ],
+  "questions": [
+    "Q-TI-FUND-001-01",
+    "Q-TI-FUND-001-02",
+    "Q-TI-FUND-001-03",
+    "Q-TI-FUND-001-04",
+    "Q-TI-FUND-001-05",
+    "Q-TI-FUND-001-06",
+    "Q-TI-FUND-001-07",
+    "Q-TI-FUND-001-08",
+    "Q-TI-FUND-001-09",
+    "Q-TI-FUND-001-10",
+    "Q-TI-FUND-001-11",
+    "Q-TI-FUND-001-12",
+    "Q-TI-FUND-001-13",
+    "Q-TI-FUND-001-14",
+    "Q-TI-FUND-001-15",
+    "Q-TI-FUND-001-16",
+    "Q-TI-FUND-001-17",
+    "Q-TI-FUND-001-18",
+    "Q-TI-FUND-001-19",
+    "Q-TI-FUND-001-20"
+  ],
+  "updatedAt": "2026-10-17",
+  "requirements": {
+    "image": true,
+    "videos": false,
+    "questions": true
+  },
+  "exception": "O handoff canônico registra recursos institucionais de apoio; vídeos candidatos permanecem em validação audiovisual e não são apresentados como verificados. Teoria integral, imagem original, flashcards, exercícios autorais e treinos preservados.",
+  "sections": [
+    {
+      "id": "TI-FUND-001-01",
+      "title": "Hardware, software, CPU e placa-mãe",
+      "text": "HARDWARE, SOFTWARE E FIRMWARE\n\nHardware é o conjunto de componentes físicos do sistema: processador, memória, placa-mãe, unidades de armazenamento, interfaces, cabos e periféricos. Software é o conjunto de programas e instruções executadas pelo hardware. Sistema operacional é software de sistema; navegador, editor de textos e planilha são exemplos de software aplicativo.\n\n\nFirmware é software de baixo nível armazenado em memória não volátil e associado diretamente ao funcionamento de um equipamento. BIOS/UEFI é o exemplo mais frequente em provas: inicializa e configura aspectos do hardware e participa do processo de boot.\n\n\nPegadinha clássica: BIOS/UEFI não é “hardware” só porque fica gravada em um chip. O chip é hardware; o código gravado é firmware.\n\nPLACA-MÃE, CPU, CHIPSET E BARRAMENTOS\n\nA placa-mãe é a principal placa de circuito do computador e oferece conexões físicas e lógicas entre CPU, memória, armazenamento, dispositivos de expansão e interfaces de entrada/saída.\n\n\nA CPU executa instruções e coordena o processamento. Conceitos essenciais:\n- núcleo (core): unidade de processamento dentro do processador;\n- thread: fluxo de execução de software; tecnologias de multithreading podem permitir mais de uma thread lógica por núcleo, conforme a arquitetura;\n- clock/frequência: mede ciclos por segundo, normalmente em GHz; maior clock isoladamente não garante maior desempenho entre arquiteturas diferentes;\n- registradores: memória extremamente rápida e pequena dentro da CPU, usada diretamente durante a execução;\n- cache: memória rápida que reduz o custo de buscar dados/instruções na RAM.\n\n\nO chipset historicamente concentrou funções de interconexão entre CPU, memória e periféricos. Em arquiteturas atuais, algumas funções antes atribuídas ao chipset, como o controlador de memória, podem estar integradas ao processador. Em prova, a resposta deve respeitar a arquitetura descrita e evitar generalizações absolutas.\n\n\nBarramentos são caminhos de comunicação. Didaticamente, aparecem como:\n- barramento de dados: transporta dados;\n- barramento de endereços: indica localizações/endereço de origem ou destino;\n- barramento de controle: transporta sinais de controle e sincronização."
+    },
+    {
+      "id": "TI-FUND-001-02",
+      "title": "Hierarquia de memória",
+      "text": "HIERARQUIA DE MEMÓRIA\n\nA hierarquia de memória busca equilibrar velocidade, capacidade e custo. Em uma visão típica, da mais rápida/menor para a mais lenta/maior:\nregistradores → cache L1 → cache L2 → cache L3 → RAM → armazenamento secundário.\n\n\nEssa ordem é conceitual; detalhes variam entre processadores. O ponto central de prova é que as memórias mais próximas da CPU tendem a ser mais rápidas, menores e mais caras por bit.\n\n\nRAM:\n- memória principal de trabalho;\n- normalmente volátil: perde o conteúdo sem alimentação;\n- mantém dados e instruções em uso;\n- não substitui armazenamento permanente.\n\n\nCache:\n- muito mais rápida que a RAM em termos de latência;\n- armazena cópias de dados/instruções usados ou provavelmente necessários;\n- L1 costuma ser menor e mais próxima do núcleo; L2 é intermediária; L3 costuma ser maior e pode ser compartilhada, dependendo da arquitetura.\n\n\nROM/flash de firmware:\n- memória não volátil;\n- pode armazenar firmware de inicialização;\n- não deve ser confundida com RAM nem com unidade de armazenamento de arquivos do usuário.\n\n\nMemória virtual é técnica do sistema operacional que utiliza espaço de armazenamento secundário como extensão do espaço de endereçamento quando necessário. Ela não transforma o SSD/HDD em RAM física e costuma ter desempenho inferior à RAM."
+    },
+    {
+      "id": "TI-FUND-001-03",
+      "title": "Armazenamento secundário",
+      "text": "ARMAZENAMENTO SECUNDÁRIO\n\nArmazenamento secundário mantém dados de forma não volátil.\n\n\nHDD:\n- usa mídia magnética e partes mecânicas móveis;\n- costuma oferecer bom custo por capacidade;\n- possui maior latência mecânica que SSDs.\n\n\nSSD:\n- usa memória flash não volátil;\n- não possui partes mecânicas móveis para leitura/escrita;\n- geralmente apresenta menor latência e maior desempenho que HDDs;\n- pode usar interfaces diferentes, como SATA ou PCIe/NVMe; interface e tecnologia não são sinônimos.\n\n\nPen drive e cartões de memória também usam memória flash e são armazenamento não volátil. Não são RAM, cache nem registradores.\n\n\nUnidades ópticas, quando presentes, usam mídias como CD/DVD/Blu-ray. Em concursos modernos aparecem menos que HDD/SSD/flash, mas ainda podem surgir em classificação de armazenamento."
+    },
+    {
+      "id": "TI-FUND-001-04",
+      "title": "Periféricos e interfaces",
+      "text": "PERIFÉRICOS E ENTRADA/SAÍDA\n\nPeriféricos são dispositivos usados para entrada, saída, comunicação ou armazenamento em relação ao núcleo do sistema computacional.\n\n\nEntrada:\n- teclado;\n- mouse;\n- scanner;\n- microfone;\n- câmera.\n\n\nSaída:\n- monitor;\n- impressora;\n- caixas de som;\n- projetor.\n\n\nEntrada e saída:\n- tela sensível ao toque, porque exibe informação e recebe toque;\n- placa/interface de rede, porque envia e recebe dados;\n- multifuncional pode atuar com entrada (scanner) e saída (impressora).\n\n\nArmazenamento, como SSD ou pen drive, é frequentemente tratado em categorias próprias; dependendo da abordagem da prova, também pode ser visto como dispositivo de entrada/saída de dados. Leia o contexto do item.\n\nINTERFACES E PORTAS — VISÃO DE CONCURSO\n\nUSB é uma interface amplamente usada para periféricos e armazenamento externo. HDMI é voltada à transmissão digital de áudio e vídeo. Ethernet é usada em redes cabeadas. PCI Express é uma interface/barramento de expansão de alta velocidade utilizada por placas e também por SSDs NVMe.\n\n\nNão memorize apenas a forma do conector: diferencie o padrão lógico da interface, o conector físico e a função típica."
+    },
+    {
+      "id": "TI-FUND-001-05",
+      "title": "Inicialização e boot",
+      "text": "INICIALIZAÇÃO: POST, BIOS/UEFI E BOOT\n\nFluxo simplificado:\n1) alimentação do sistema;\n2) firmware BIOS/UEFI inicia a plataforma e executa verificações básicas, incluindo POST;\n3) firmware identifica/configura dispositivos necessários ao boot;\n4) é localizado um dispositivo/gerenciador de inicialização;\n5) o sistema operacional é carregado para execução.\n\n\nUEFI é a interface de firmware moderna que sucedeu o BIOS legado em PCs atuais. Em prova, ambos podem aparecer agrupados como firmware de inicialização.\n\n\nPegadinha: BIOS/UEFI não guarda “as últimas alterações do usuário”, não executa o papel da RAM e não substitui o sistema operacional."
+    },
+    {
+      "id": "TI-FUND-001-06",
+      "title": "Desempenho e gargalos",
+      "text": "DESEMPENHO E GARGALOS\n\nDesempenho é resultado do conjunto. Exemplos:\n- pouca RAM pode aumentar paginação/memória virtual e prejudicar multitarefa;\n- armazenamento lento pode aumentar tempo de boot e carregamento;\n- CPU com muitos núcleos pode ajudar em cargas paralelizáveis, mas nem todo software escala igualmente;\n- clock maior não permite comparar processadores de gerações/arquiteturas diferentes de forma absoluta;\n- cache reduz a dependência de acessos frequentes à RAM, mas não substitui memória principal nem armazenamento."
+    }
+  ],
+  "materials": [
+    {
+      "id": "TI-FUND-001-MATERIAL-01",
+      "title": "ESCOPO CENTRAL",
+      "text": "TI-FUND-001 cobre a base necessária para compreender um sistema computacional físico e lógico, com ênfase em questões de concurso sobre componentes, funções e relações entre eles. O núcleo contempla:\n- diferença entre hardware, software e firmware;\n- placa-mãe, processador, núcleos, clock, chipset e barramentos;\n- memória: registradores, cache, RAM e ROM/flash de firmware;\n- armazenamento secundário: HDD, SSD, pen drive e cartões de memória;\n- periféricos de entrada, saída e entrada/saída;\n- interfaces e portas em nível conceitual;\n- processo básico de inicialização, POST e BIOS/UEFI;\n- interpretação de gargalos e compatibilidade sem entrar em eletrônica avançada.\n\n\nLimite editorial: não transformar este núcleo em disciplina de microarquitetura avançada. Pipeline, superscalar, branch prediction, coerência de cache multiprocessada, ISA detalhada, assembly e projeto lógico ficam fora do escopo formal enquanto não houver exigência explícita."
+    },
+    {
+      "id": "TI-FUND-001-MATERIAL-15",
+      "title": "TREINOS GUIADOS — IDs PERMANENTES",
+      "text": "T-TI-FUND-001-01 — Classifique: teclado, monitor, touchscreen, scanner e multifuncional. Resposta: entrada; saída; entrada/saída; entrada; entrada/saída.\nT-TI-FUND-001-02 — Ordene por proximidade/latência típica: RAM, registradores, L1, L3, SSD. Resposta: registradores → L1 → L3 → RAM → SSD.\nT-TI-FUND-001-03 — Explique por que SSD não é RAM. Resposta esperada: SSD é armazenamento secundário não volátil; RAM é memória principal de trabalho e normalmente volátil.\nT-TI-FUND-001-04 — Um PC fica lento ao alternar entre muitos aplicativos e começa a usar paginação. Qual recurso está pressionado? Resposta: RAM; a falta de memória principal aumenta uso de memória virtual.\nT-TI-FUND-001-05 — Um enunciado afirma que cache serve para backup. Identifique o erro. Resposta: cache reduz latência de acesso e não é armazenamento de backup.\nT-TI-FUND-001-06 — Diferencie hardware, software e firmware com um exemplo de cada. Resposta: componente físico; programa; código de baixo nível associado ao equipamento, como UEFI.\nT-TI-FUND-001-07 — Descreva o boot simplificado do botão de energia ao SO. Resposta: alimentação → firmware/POST → detecção/configuração → seleção do bootloader/dispositivo → carregamento do SO.\nT-TI-FUND-001-08 — Explique por que 4 GHz não prova que uma CPU é sempre mais rápida que outra de 3,5 GHz. Resposta: arquitetura, IPC, cache, núcleos, limites térmicos e carga influenciam.\nT-TI-FUND-001-09 — Dado HDD, SSD, RAM e cache, separe em volátil/não volátil e principal/secundário. Resposta: RAM/cache voláteis; HDD/SSD não voláteis; RAM principal; HDD/SSD secundários; cache é memória intermediária de alta velocidade.\nT-TI-FUND-001-10 — Em uma questão, “CPU” é usada como sinônimo de gabinete. Qual a correção técnica? Resposta: CPU é processador; gabinete contém diversos componentes, inclusive a CPU.\nT-TI-FUND-001-11 — Relacione barramento de dados, endereços e controle. Resposta: dados transporta conteúdo; endereços indica localizações; controle leva sinais de comando/sincronização.\nT-TI-FUND-001-12 — Monte um diagnóstico conceitual: boot rápido melhorou após troca de HDD por SSD, mas processamento pesado continua lento. Resposta: SSD reduz latência de armazenamento/boot; carga computacional pode continuar limitada por CPU/RAM/outros recursos."
+    },
+    {
+      "id": "TI-FUND-001-MATERIAL-16",
+      "title": "REFERÊNCIAS REAIS DE BANCA — SOMENTE METADADOS/LOCALIZADORES",
+      "text": "QREF-TIFUND-QUAD-001 — Quadrix 2026 — CRT-SP — Q4241884 — memória cache L1/L3 e compartilhamento por núcleo. URL: https://www.qconcursos.com/questoes-de-concursos/questoes/3484e4f5-9a\nUso: calibrar pegadinha sobre organização de cache. Não reproduzir enunciado integral.\n\n\nQREF-TIFUND-QUAD-002 — Quadrix 2026 — CRF-DF — Q3937282 — papel da BIOS na inicialização do hardware e carregamento do sistema. URL: https://www.qconcursos.com/questoes-de-concursos/questoes/b37ba9c5-22\nUso: calibrar firmware/boot.\n\n\nQREF-TIFUND-QUAD-003 — Quadrix 2026 — CREA-RO — Q4250075 — classificação de periféricos de entrada/saída. URL: https://www.qconcursos.com/questoes-de-concursos/questoes/6ce706fc-9c\nUso: calibrar conceitos de periféricos.\n\n\nQREF-TIFUND-QUAD-004 — Quadrix 2024 — CREFITO-18 — Q3031088 — placa-mãe/chipset e interface entre componentes. URL: https://www.qconcursos.com/questoes-de-concursos/questoes/f65016f6-83\nUso: calibrar placa-mãe e chipset com ressalva de evolução arquitetural.\n\n\nQREF-TIFUND-QUAD-005 — Quadrix 2025 — CFBio — Q3274610 — BIOS e memória não volátil. URL: https://www.qconcursos.com/questoes-de-concursos/provas/quadrix-2025-cfbio-analista-de-desenvolvimento/questoes?discipline_ids%5B%5D=93\nUso: calibrar BIOS/firmware em contexto próximo ao sistema CFBio/CRBio.\n\n\nQREF-TIFUND-INDEPAC-001 — INDEPAC 2018 — Câmara de Guarujá-SP — Q2191756 — identificação de unidade de armazenamento. URL: https://www.qconcursos.com/questoes-de-concursos/questoes/38425598-0c\nUso: calibrar múltipla escolha direta sobre hardware/armazenamento.\n\n\nRegra: referências reais ficam como metadados e resumo temático; não incorporar enunciados protegidos à aula."
+    },
+    {
+      "id": "TI-FUND-001-MATERIAL-17",
+      "title": "FONTES CONCEITUAIS E APOIO",
+      "text": "IBM — O que é hardware de computador? https://www.ibm.com/br-pt/think/topics/hardware\nUso: distinção hardware/software e funções de CPU, RAM, armazenamento, placa-mãe e periféricos.\n\n\nIntel — What Is RAM Vs. Processor? https://www.intel.com/content/www/us/en/learn/what-is-ram-vs-processor.html\nUso: papel de RAM e CPU.\n\n\nIntel — What Is CPU Clock Speed? https://www.intel.com/content/www/us/en/gaming/resources/cpu-clock-speed.html\nUso: clock, ciclos e cautela ao comparar desempenho apenas por frequência."
+    }
+  ]
+}
