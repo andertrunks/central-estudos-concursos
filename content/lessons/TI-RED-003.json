@@ -1,0 +1,100 @@
+{
+  "id": "TI-RED-003",
+  "title": "Equipamentos de rede — switches, roteadores, access points e firewalls",
+  "discipline": "TI",
+  "subject": "Equipamentos de rede",
+  "subtopic": "Switches, roteadores, APs e firewalls",
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ],
+  "objectives": [
+    "Reconhecer o papel funcional dos principais equipamentos de rede, a informação usada para encaminhamento, a unidade de dados associada ao contexto e os limites de cada dispositivo."
+  ],
+  "theory": "ESCOPO E FRONTEIRAS\n\nTI-RED-003 deve permitir reconhecer o papel funcional dos principais equipamentos de rede, a informação usada para encaminhamento, a unidade de dados associada ao contexto e os limites de cada dispositivo.\n\n\nInclui:\n- repetidor e hub como contraste histórico/conceitual;\n- bridge e switch Ethernet, aprendizagem de MAC e encaminhamento local;\n- roteador, interfaces, redes IP, tabela de encaminhamento, próximo salto e separação de domínios de broadcast;\n- access point em modo infraestrutura como integração entre estações 802.11 e a LAN;\n- firewall como dispositivo ou software que aplica política ao fluxo de tráfego;\n- equipamentos multifunção e a regra de separar função lógica de produto comercial.\n\n\nFicam fora do fechamento formal desta aula:\n- protocolos e endereçamento detalhados, já pertencentes a TI-RED-002;\n- algoritmos/protocolos de roteamento, switching avançado, STP e VLANs, pertencentes a TI-RED-004;\n- DNS, DHCP, NAT e serviços, pertencentes a TI-RED-005;\n- padrões Wi-Fi, canais, associação, autenticação e segurança sem fio, pertencentes a TI-RED-006;\n- malwares, vulnerabilidades, IDS/IPS, EDR e defesa em profundidade, pertencentes a TI-SEG-003.\n\nREUTILIZAÇÃO CANÔNICA DE RED-001\n\nReutilizar, sem duplicar IDs, os conceitos de RED-001 sobre:\n- hub/repetidor: camada física e repetição de sinais;\n- switch/bridge L2: quadros e endereços MAC;\n- roteador: datagramas IP e encaminhamento entre redes;\n- access point: função de bridge em WLAN de infraestrutura;\n- firewall: aplicação de política de controle de tráfego;\n- domínio de colisão e domínio de broadcast em nível introdutório.\n\n\nO aprofundamento abaixo acrescenta decisão de encaminhamento, comportamento com tráfego conhecido/desconhecido, comparação funcional e cenários de prova.",
+  "examples": "Cenário A — Hub substituído por switch: espera-se menor replicação indiscriminada de tráfego unicast conhecido e enlaces/portas separados.\nCenário B — Computadores de uma LAN precisam acessar outra rede: a função de roteamento é necessária.\nCenário C — Notebook precisa entrar na LAN via Wi-Fi: AP fornece a associação/acesso sem fio; roteamento pode ocorrer em outro dispositivo.\nCenário D — Política deve negar conexões TCP para determinado serviço entre redes: função típica de firewall.\nCenário E — Produto único oferece Wi-Fi, quatro portas Ethernet, NAT e firewall: é um appliance multifunção; cada papel continua conceitualmente distinto.",
+  "pitfalls": "1) hub aprende MAC — errado;\n2) switch L2 escolhe rotas IP como função básica — errado;\n3) roteador encaminha quadros apenas por MAC entre redes — errado;\n4) AP é obrigatoriamente roteador — errado;\n5) firewall é necessariamente hardware dedicado — errado;\n6) qualquer switch elimina domínio de broadcast — errado; sem VLAN/L3, o broadcast permanece no mesmo domínio;\n7) broadcast e unicast desconhecido são sempre tratados de forma idêntica em qualquer produto/configuração — generalização indevida;\n8) um equipamento comercial só pode exercer uma função — errado;\n9) substituir hub por switch transforma automaticamente toda rede em redes IP separadas — errado;\n10) firewall substitui todos os controles de segurança — errado.",
+  "summary": "Hub/repetidor — foco: sinal/bits; decisão seletiva por MAC: não; função típica: repetir/regenerar.\nSwitch L2 — foco: quadros/MAC; decisão: tabela MAC; função típica: comutação local.\nRoteador — foco: pacote/datagrama IP; decisão: tabela de encaminhamento/roteamento; função típica: interligar redes.\nAccess point — foco: acesso WLAN e bridging; decisão/encaminhamento: quadros no contexto 802.11/infraestrutura; função típica: integrar clientes sem fio à LAN.\nFirewall — foco: política de segurança do tráfego; decisão: regras/estado/atributos conforme tecnologia; função típica: permitir, bloquear ou inspecionar fluxos.",
+  "review": "F-TI-RED-003-01 — O que faz um hub clássico? Repete sinais para múltiplas portas sem decisão baseada em MAC.\nF-TI-RED-003-02 — Hub mantém tabela MAC? Não.\nF-TI-RED-003-03 — Função central do switch L2? Encaminhar quadros usando informações de enlace/MAC.\nF-TI-RED-003-04 — O que o switch aprende do quadro recebido? O MAC de origem associado à porta de entrada.\nF-TI-RED-003-05 — Destino MAC conhecido em outra porta? Encaminhamento seletivo para a porta associada.\nF-TI-RED-003-06 — Unicast MAC desconhecido? Em regra didática, flooding no domínio correspondente até aprendizagem/expiração.\nF-TI-RED-003-07 — Broadcast atravessa roteador automaticamente? Não; roteadores separam domínios de broadcast L2.\nF-TI-RED-003-08 — Switch L2 separa domínio de broadcast por porta? Não, sem segmentação lógica como VLAN.\nF-TI-RED-003-09 — O que um roteador encaminha entre redes? Datagramas/pacotes IP.\nF-TI-RED-003-10 — Roteador decide com base principalmente em quê? Endereço IP de destino e tabela de encaminhamento/roteamento.\nF-TI-RED-003-11 — Quadro Ethernet permanece igual após roteador? Não necessariamente; o pacote é reenquadrado para o enlace de saída.\nF-TI-RED-003-12 — O que é próximo salto? Elemento seguinte para o qual o roteador encaminha o pacote rumo ao destino.\nF-TI-RED-003-13 — Gateway padrão do host serve para quê? Alcançar destinos fora da rede local, em cenário típico.\nF-TI-RED-003-14 — Função central de um AP? Permitir acesso WLAN e integrar estações sem fio à infraestrutura local.\nF-TI-RED-003-15 — AP é sempre roteador? Não.\nF-TI-RED-003-16 — Roteador Wi-Fi pode combinar quais funções? Roteador, switch, AP e firewall, entre outras.\nF-TI-RED-003-17 — Definição funcional de firewall? Controle do fluxo de tráfego conforme política/regras.\nF-TI-RED-003-18 — Firewall é sempre hardware? Não; pode ser dispositivo, appliance, função integrada ou software no host.\nF-TI-RED-003-19 — Firewall substitui antivírus? Não.\nF-TI-RED-003-20 — Switch L3 pode fazer roteamento? Sim, conforme recursos/configuração.\nF-TI-RED-003-21 — Hub e switch têm o mesmo comportamento? Não; hub repete, switch comuta seletivamente quando conhece o destino.\nF-TI-RED-003-22 — MAC e IP resolvem o mesmo problema? Não; MAC é enlace/local, IP é endereçamento lógico entre redes.\nF-TI-RED-003-23 — Produto multifunção torna conceitos sinônimos? Não.\nF-TI-RED-003-24 — Como responder questão sobre equipamento? Identificar a função descrita antes do nome comercial.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "media": [
+    "TI-RED-003-IMG-001"
+  ],
+  "questions": [
+    "Q-TI-RED-003-01",
+    "Q-TI-RED-003-02",
+    "Q-TI-RED-003-03",
+    "Q-TI-RED-003-04",
+    "Q-TI-RED-003-05",
+    "Q-TI-RED-003-06",
+    "Q-TI-RED-003-07",
+    "Q-TI-RED-003-08",
+    "Q-TI-RED-003-09",
+    "Q-TI-RED-003-10",
+    "Q-TI-RED-003-11",
+    "Q-TI-RED-003-12",
+    "Q-TI-RED-003-13",
+    "Q-TI-RED-003-14",
+    "Q-TI-RED-003-15",
+    "Q-TI-RED-003-16",
+    "Q-TI-RED-003-17",
+    "Q-TI-RED-003-18",
+    "Q-TI-RED-003-19",
+    "Q-TI-RED-003-20"
+  ],
+  "updatedAt": "2026-10-17",
+  "requirements": {
+    "image": true,
+    "videos": false,
+    "questions": true
+  },
+  "exception": "O pacote canônico PUB-0029 utiliza quatro recursos web IEEE/IETF/NIST no campo de mídia complementar, sem vídeo obrigatório. A imagem original e as questões autorais foram preservadas.",
+  "sections": [
+    {
+      "id": "TI-RED-003-01",
+      "title": "Hub e repetidor como contraste",
+      "text": "Repetidor recebe sinais degradados e os regenera/retransmite no nível físico. O hub clássico é um repetidor multiporta. Em visão de concurso, ele não aprende endereços MAC e não escolhe seletivamente uma porta de destino a partir do conteúdo do quadro.\n\n\nConsequências didáticas:\n- o tráfego recebido em uma porta tende a ser repetido às demais;\n- os dispositivos compartilham o mesmo meio lógico de colisão na visão Ethernet clássica;\n- não há tabela MAC;\n- hub não deve ser confundido com switch.\n\n\nPegadinha: dizer que hub encaminha quadros por endereço MAC mistura funções da camada física com funções de enlace."
+    },
+    {
+      "id": "TI-RED-003-02",
+      "title": "Bridge e switch Ethernet",
+      "text": "Bridge encaminha quadros usando informações de enlace. Um switch Ethernet de camada 2 pode ser entendido, conceitualmente, como bridge multiporta de alto desempenho.\n\n\n4.1 Aprendizagem de endereços MAC\nAo receber um quadro, o switch pode aprender o endereço MAC de origem e associá-lo à porta de entrada. A tabela resultante é frequentemente chamada de tabela MAC, CAM ou tabela de encaminhamento de camada 2, conforme o material.\n\n\nA decisão básica de saída utiliza o MAC de destino:\n- destino conhecido em outra porta: encaminha para a porta associada;\n- destino conhecido na mesma porta de entrada: o quadro não precisa ser enviado a outras portas;\n- destino unicast ainda desconhecido: em Ethernet com bridge/switch, ocorre flooding no domínio de broadcast/VLAN correspondente, conforme a configuração;\n- broadcast: é difundido no domínio de broadcast correspondente;\n- multicast: o tratamento depende dos recursos e da configuração, não devendo ser reduzido a regra universal de prova sem contexto.\n\n\n4.2 Colisões e broadcast\nCada porta de switch cria, em visão clássica, um segmento separado para colisões; em Ethernet full-duplex moderna, colisões deixam de ser parte do funcionamento normal do enlace ponto a ponto. Um switch L2 sem segmentação lógica mantém os dispositivos no mesmo domínio de broadcast. VLANs alteram essa análise, mas o aprofundamento de VLAN pertence a TI-RED-004.\n\n\n4.3 Switch L2 x switch L3\nSwitch L2 toma decisões principais de camada 2 com base em informações de enlace, como MAC. Produtos chamados switches de camada 3 também executam funções de roteamento IP. Portanto, a palavra switch não garante que o equipamento comercial opere somente em uma camada; a prova deve ser lida pela função descrita."
+    },
+    {
+      "id": "TI-RED-003-03",
+      "title": "Roteador",
+      "text": "Roteador interliga redes IP e implementa encaminhamento de datagramas entre interfaces. A decisão usa endereçamento IP e informações de encaminhamento/roteamento.\n\n\nElementos essenciais:\n- interfaces podem pertencer a redes/sub-redes diferentes;\n- a tabela de encaminhamento associa destinos/prefixos a uma interface de saída e, quando necessário, a um próximo salto;\n- o roteador recebe um quadro no enlace de entrada, processa o pacote IP e cria um novo quadro adequado ao enlace de saída;\n- roteadores separam domínios de broadcast de camada 2 entre interfaces/redes;\n- gateway padrão de um host é, em cenário típico, o endereço de um roteador/elemento L3 usado para alcançar destinos fora da rede local.\n\n\nLimite: seleção de rota, protocolos de roteamento, métricas e convergência pertencem a TI-RED-004.\n\n\nPegadinha: switch L2 e roteador podem coexistir no mesmo appliance, mas MAC e IP continuam resolvendo problemas diferentes."
+    },
+    {
+      "id": "TI-RED-003-04",
+      "title": "Access point",
+      "text": "Um access point sem fio permite que dispositivos 802.11 se conectem à infraestrutura de rede. No modo infraestrutura, sua função central de encaminhamento pode ser compreendida como bridge de camada 2 entre o meio sem fio e o sistema de distribuição/LAN, além das funções físicas de rádio.\n\n\nDiferenciar:\n- AP: fornece acesso sem fio à rede;\n- roteador: interliga redes IP e encaminha pacotes entre elas;\n- roteador sem fio doméstico/corporativo: produto que pode reunir roteador, switch Ethernet, access point e firewall no mesmo equipamento.\n\n\nPegadinha: um AP não se transforma obrigatoriamente em roteador só porque conecta clientes Wi-Fi; produtos multifunção podem combinar papéis.\n\n\nLimite: frequências, canais, MIMO, roaming, WPA e segurança Wi-Fi pertencem a TI-RED-006."
+    },
+    {
+      "id": "TI-RED-003-05",
+      "title": "Firewall como equipamento/função de rede",
+      "text": "Firewall é dispositivo ou programa que controla o fluxo de tráfego entre redes ou hosts com posturas de segurança distintas, aplicando regras/políticas.\n\n\nEm nível adequado a TI-RED-003, reconhecer:\n- firewall de rede pode ficar entre segmentos/redes e filtrar tráfego;\n- firewall host-based executa no próprio host;\n- filtragem pode considerar endereços, protocolos, portas, estado da conexão e, em tecnologias mais avançadas, atributos de aplicação;\n- firewall não é sinônimo de roteador, embora um appliance possa reunir funções de roteamento e firewall;\n- firewall não substitui, sozinho, antivírus, autenticação, atualização, backup ou demais controles.\n\n\nAqui o firewall é estudado como equipamento/função da infraestrutura. Ameaças, vulnerabilidades e arquitetura defensiva aprofundada ficam em TI-SEG-003."
+    },
+    {
+      "id": "TI-RED-003-06",
+      "title": "Comparação funcional e equipamentos multifunção",
+      "text": "Produtos reais frequentemente combinam várias funções. Um roteador Wi-Fi pode integrar:\n- roteamento IP;\n- switch Ethernet;\n- access point;\n- NAT e DHCP;\n- firewall.\n\n\nNão conclua que os conceitos são sinônimos. Em prova, identifique qual função o enunciado descreve."
+    }
+  ],
+  "materials": [
+    {
+      "id": "TI-RED-003-REFERENCIAS",
+      "title": "REFERÊNCIAS REAIS DE BANCA — METADADOS/LOCALIZADORES",
+      "text": "Reutilizadas, sem duplicar registro:\n- QREF-QUAD-060 — Quadrix 2018, CRO-MT, Q1085788 — hub/camada física/PDU; usada em RED-001 e reutilizada em TI-RED-003.\n- QREF-QUAD-064 — Quadrix 2026, CREF 11ª Região-MS/MT, Q4146460 — access point como bridge/camada de enlace; reutilizada em TI-RED-003.\n\n\nNovas referências para calibração:\n- QREF-TIRED003-QUAD-001 — Quadrix 2026, CRT-ES, Q4201092 — substituição de hub por switch e encaminhamento seletivo em LAN.\n- QREF-TIRED003-QUAD-002 — Quadrix 2026, CRT-SP, Q4241889 — switch encaminhando quadros com base em MAC.\n- QREF-TIRED003-QUAD-003 — Quadrix 2026, CREF 15ª Região PI-MA, Q4309822 — firewall controlando tráfego conforme regras.\n- QREF-TIRED003-QUAD-004 — Quadrix 2026, CREFITO 17ª Região, Q4059490 — firewall de inspeção de estado e distinção em relação ao filtro de pacotes estático.\n\n\nRegra autoral: itens reais ficam somente como metadados e resumo temático; não reproduzir enunciados protegidos no material.\n\n\nPesquisa INDEPAC atual: buscas por switch, roteador, access point e firewall não localizaram questão técnica literal suficientemente aderente a TI-RED-003 nos resultados públicos consultados. Registrar BUSCA-INDEPAC-TIRED003-001 e autorizar fallbacks autorais em formato de quatro alternativas.\n\nFONTES CONCEITUAIS\n\nSRC-TIRED003-RED001 — RED-001, núcleo canônico interno de fundamentos de redes, especialmente seções sobre dispositivos fundamentais, camadas e domínios de colisão/broadcast.\nSRC-TIRED003-CISCO-SW — Cisco, “What Is Network Switching?”, para função de switch, comparação com hub e roteador.\nSRC-TIRED003-CISCO-RT — Cisco, “O que é um roteador?”, para função de encaminhamento entre redes.\nSRC-TIRED003-CISCO-AP — Cisco, “What is an Access Point?”, para função de access point e integração sem fio/cabeada.\nSRC-TIRED003-NIST-FW — NIST SP 800-41 Rev. 1, Guidelines on Firewalls and Firewall Policy, para definição e papel de firewalls.\n\n\nSRC-TIRED003-IEEE-BRIDGE — IEEE 802.1Q-2022, padrão ativo para bridges e bridged networks: https://standards.ieee.org/ieee/802.1Q/10323/\nSRC-TIRED003-RFC1812 — IETF RFC 1812, requisitos para roteadores IPv4 e função de forwarding/próximo salto: https://www.rfc-editor.org/info/rfc1812/\nSRC-TIRED003-IEEE-WLAN — IEEE 802.11-2024, padrão ativo de WLAN para MAC e PHY: https://standards.ieee.org/ieee/802.11/10548/"
+    },
+    {
+      "id": "TI-RED-003-TREINOS",
+      "title": "TREINOS GUIADOS — IDs PERMANENTES",
+      "text": "T-TI-RED-003-01 — Monte tabela hub x switch x roteador x AP x firewall indicando unidade/identificador/função predominante.\nT-TI-RED-003-02 — Explique por que hub não deve ser descrito como equipamento que aprende MAC.\nT-TI-RED-003-03 — Simule aprendizagem: porta 1 recebe quadro de MAC A para B desconhecido; descreva o que o switch aprende e como encaminha.\nT-TI-RED-003-04 — Depois do treino 03, suponha que B responda pela porta 3. Mostre como a tabela passa a permitir encaminhamento seletivo A↔B.\nT-TI-RED-003-05 — Desenhe duas LANs ligadas por roteador e marque onde termina cada domínio de broadcast L2.\nT-TI-RED-003-06 — Explique por que um switch L2 não substitui roteamento quando o destino está em outra rede IP.\nT-TI-RED-003-07 — Diferencie AP de roteador sem fio usando um produto multifunção como exemplo.\nT-TI-RED-003-08 — Dado um fluxo bloqueado por regra entre duas redes, identifique a função de firewall e o que não se pode concluir sobre antivírus/backup.\nT-TI-RED-003-09 — Classifique cinco descrições: repete sinal; aprende MAC; consulta prefixo IP; conecta cliente Wi-Fi; aplica regra de segurança.\nT-TI-RED-003-10 — Explique por que o quadro de entrada pode não ser o mesmo quadro no enlace de saída de um roteador.\nT-TI-RED-003-11 — Liste três pegadinhas causadas por appliances que combinam roteador, switch, AP e firewall.\nT-TI-RED-003-12 — Resolva um diagnóstico: usuários locais se comunicam entre si, mas não alcançam outra sub-rede; indique qual função deve ser investigada primeiro e justifique."
+    }
+  ]
+}

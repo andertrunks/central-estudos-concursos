@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-01",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Um hub Ethernet clássico mantém tabela de endereços MAC para enviar cada quadro somente à porta associada ao destino.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Hub não aprende MAC; essa é função típica de bridge/switch L2.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

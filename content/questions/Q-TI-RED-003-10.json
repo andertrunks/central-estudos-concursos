@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-10",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A função típica de um switch Ethernet L2 é selecionar rotas entre redes com base em prefixos IP.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Essa é função L3; switch L2 trabalha com quadros/MAC.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

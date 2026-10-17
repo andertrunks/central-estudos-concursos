@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-06",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Em um switch L2 sem VLANs, cada porta constitui necessariamente um domínio de broadcast diferente.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Portas segmentam enlaces/colisões; broadcast permanece no domínio L2 correspondente.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

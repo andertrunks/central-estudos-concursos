@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-04",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Todo access point é, por definição, um roteador IP.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "AP pode exercer bridging sem realizar roteamento.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

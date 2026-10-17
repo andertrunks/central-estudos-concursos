@@ -2615,5 +2615,35 @@
     "verifiedAt": "2026-09-26",
     "status": "revisar",
     "notes": "Q4146483, localizar número impresso, caderno integral e linha de gabarito definitivo antes de atribuir C/E — Arquivo anual da banca lista CREF-11-MS_2026.zip https://ajuda.quadrix.org.br/pt-BR/articles/14626899-provas-anteriores-realizadas-em-2026-em-progresso ; não inferir gabarito. | Status anterior: parcial — não pontuável."
+  },
+  {
+    "id": "SRC-TIRED003-IEEE-BRIDGE",
+    "title": "IEEE 802.1Q-2022",
+    "author": "IEEE",
+    "url": "https://standards.ieee.org/ieee/802.1Q/10323/",
+    "version": "2022",
+    "level": "P1",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-TIRED003-RFC1812",
+    "title": "Requirements for IP Version 4 Routers",
+    "author": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc1812/",
+    "version": "RFC 1812; atualizações RFC 2644 e RFC 6633",
+    "level": "P1",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
+  },
+  {
+    "id": "SRC-TIRED003-NIST-FW",
+    "title": "Guidelines on Firewalls and Firewall Policy",
+    "author": "NIST",
+    "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+    "version": "SP 800-41 Rev.1",
+    "level": "P1",
+    "verifiedAt": "2026-10-17",
+    "status": "ativo"
   }
 ]

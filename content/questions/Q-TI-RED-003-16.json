@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-16",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Um switch recebe quadro unicast para MAC ainda não presente na tabela. Em visão didática Ethernet L2, o comportamento esperado é",
+  "options": [
+    {
+      "id": "A",
+      "text": "descartar sempre"
+    },
+    {
+      "id": "B",
+      "text": "enviar apenas ao roteador, obrigatoriamente"
+    },
+    {
+      "id": "C",
+      "text": "fazer flooding no domínio correspondente, exceto na porta de entrada"
+    },
+    {
+      "id": "D",
+      "text": "converter o quadro em DNS"
+    }
+  ],
+  "answer": "C",
+  "comment": "Bridge encaminha quadros usando informações de enlace. Um switch Ethernet de camada 2 pode ser entendido, conceitualmente, como bridge multiporta de alto desempenho.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

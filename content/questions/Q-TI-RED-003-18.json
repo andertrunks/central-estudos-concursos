@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-18",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Em um produto chamado “roteador Wi-Fi”, qual afirmação é correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "só pode executar roteamento"
+    },
+    {
+      "id": "B",
+      "text": "AP e roteador são conceitos idênticos"
+    },
+    {
+      "id": "C",
+      "text": "o produto pode integrar funções de roteador, switch, AP e firewall"
+    },
+    {
+      "id": "D",
+      "text": "não pode possuir portas Ethernet"
+    }
+  ],
+  "answer": "C",
+  "comment": "Produtos reais frequentemente combinam várias funções. Um roteador Wi-Fi pode integrar:\n- roteamento IP;\n- switch Ethernet;\n- access point;\n- NAT e DHCP;\n- firewall.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

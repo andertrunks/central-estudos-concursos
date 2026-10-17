@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-15",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual função decide permitir ou bloquear um fluxo segundo regras de segurança?",
+  "options": [
+    {
+      "id": "A",
+      "text": "patch panel"
+    },
+    {
+      "id": "B",
+      "text": "firewall"
+    },
+    {
+      "id": "C",
+      "text": "teclado"
+    },
+    {
+      "id": "D",
+      "text": "hub"
+    }
+  ],
+  "answer": "B",
+  "comment": "Firewall é dispositivo ou programa que controla o fluxo de tráfego entre redes ou hosts com posturas de segurança distintas, aplicando regras/políticas.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

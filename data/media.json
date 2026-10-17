@@ -673,5 +673,16 @@
     "file": "media/MAT-005-IMG-001.png",
     "verifiedAt": "2026-10-16",
     "original": true
+  },
+  {
+    "id": "TI-RED-003-IMG-001",
+    "contentId": "TI-RED-003",
+    "type": "imagem",
+    "title": "Quem decide o quê?",
+    "caption": "Hub, switch, roteador, access point e firewall — função lógica típica em prova.",
+    "alt": "Infográfico comparando hub, switch, roteador, access point e firewall pela informação usada na decisão e pela função predominante na rede.",
+    "file": "media/TI-RED-003-IMG-001.png",
+    "verifiedAt": "2026-10-17",
+    "original": true
   }
 ]

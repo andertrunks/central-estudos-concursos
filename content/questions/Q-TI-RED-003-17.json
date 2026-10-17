@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-17",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual associação está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "switch L2 — prefixos IP como função básica"
+    },
+    {
+      "id": "B",
+      "text": "roteador — encaminhamento entre redes IP"
+    },
+    {
+      "id": "C",
+      "text": "hub — tabela MAC"
+    },
+    {
+      "id": "D",
+      "text": "AP — servidor DNS obrigatório"
+    }
+  ],
+  "answer": "B",
+  "comment": "Roteador interliga redes IP e implementa encaminhamento de datagramas entre interfaces. A decisão usa endereçamento IP e informações de encaminhamento/roteamento.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

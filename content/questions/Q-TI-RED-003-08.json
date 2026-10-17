@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-08",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Um equipamento comercial que reúne roteamento, Wi-Fi e firewall torna esses conceitos equivalentes.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "São funções distintas reunidas em um mesmo produto.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

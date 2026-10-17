@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-05",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Firewalls podem existir como software no host ou como função de equipamento/appliance de rede.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Firewall é dispositivo ou programa que controla o fluxo de tráfego entre redes ou hosts com posturas de segurança distintas, aplicando regras/políticas.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

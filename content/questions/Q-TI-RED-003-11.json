@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-11",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual equipamento clássico repete o sinal recebido para várias portas sem consultar tabela MAC?",
+  "options": [
+    {
+      "id": "A",
+      "text": "roteador"
+    },
+    {
+      "id": "B",
+      "text": "switch L2"
+    },
+    {
+      "id": "C",
+      "text": "hub"
+    },
+    {
+      "id": "D",
+      "text": "firewall stateful"
+    }
+  ],
+  "answer": "C",
+  "comment": "Repetidor recebe sinais degradados e os regenera/retransmite no nível físico. O hub clássico é um repetidor multiporta. Em visão de concurso, ele não aprende endereços MAC e não escolhe seletivamente uma porta de destino a partir do conteúdo do quadro.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

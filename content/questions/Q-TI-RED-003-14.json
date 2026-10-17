@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-14",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual dispositivo permite que clientes Wi-Fi ingressem em uma rede local no modo infraestrutura, atuando como ponte entre o meio sem fio e a distribuição?",
+  "options": [
+    {
+      "id": "A",
+      "text": "AP"
+    },
+    {
+      "id": "B",
+      "text": "hub"
+    },
+    {
+      "id": "C",
+      "text": "modem analógico"
+    },
+    {
+      "id": "D",
+      "text": "repetidor de cabo apenas"
+    }
+  ],
+  "answer": "A",
+  "comment": "Um access point sem fio permite que dispositivos 802.11 se conectem à infraestrutura de rede. No modo infraestrutura, sua função central de encaminhamento pode ser compreendida como bridge de camada 2 entre o meio sem fio e o sistema de distribuição/LAN, além das funções físicas de rádio.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

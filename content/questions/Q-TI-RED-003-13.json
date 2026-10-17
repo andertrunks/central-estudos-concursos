@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-13",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Para conectar duas redes IP distintas e encaminhar tráfego entre elas, a função central necessária é de",
+  "options": [
+    {
+      "id": "A",
+      "text": "hub"
+    },
+    {
+      "id": "B",
+      "text": "access point apenas"
+    },
+    {
+      "id": "C",
+      "text": "roteador"
+    },
+    {
+      "id": "D",
+      "text": "patch panel"
+    }
+  ],
+  "answer": "C",
+  "comment": "Roteador interliga redes IP e implementa encaminhamento de datagramas entre interfaces. A decisão usa endereçamento IP e informações de encaminhamento/roteamento.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

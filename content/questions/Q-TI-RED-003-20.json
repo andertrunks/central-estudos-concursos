@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-RED-003-20",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Ao comparar firewall e roteador, é correto afirmar que",
+  "options": [
+    {
+      "id": "A",
+      "text": "são sempre sinônimos"
+    },
+    {
+      "id": "B",
+      "text": "firewall aplica política ao tráfego; roteador encaminha entre redes, embora um appliance possa reunir as duas funções"
+    },
+    {
+      "id": "C",
+      "text": "firewall só existe como software e roteador só como hardware"
+    },
+    {
+      "id": "D",
+      "text": "roteador trabalha apenas com endereços MAC"
+    }
+  ],
+  "answer": "B",
+  "comment": "Firewall é dispositivo ou programa que controla o fluxo de tráfego entre redes ou hosts com posturas de segurança distintas, aplicando regras/políticas.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

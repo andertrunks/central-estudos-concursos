@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-003-02",
+  "contentId": "TI-RED-003",
+  "banca": "Autoral — treinamento",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Um switch de camada 2 pode aprender o endereço MAC de origem de quadros recebidos e associá-lo à porta de entrada.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Bridge encaminha quadros usando informações de enlace. Um switch Ethernet de camada 2 pode ser entendido, conceitualmente, como bridge multiporta de alto desempenho.",
+  "source_ids": [
+    "SRC-TIRED003-IEEE-BRIDGE",
+    "SRC-TIRED003-RFC1812",
+    "SRC-TIRED003-NIST-FW"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}
