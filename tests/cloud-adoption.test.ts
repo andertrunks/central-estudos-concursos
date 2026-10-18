@@ -13,6 +13,8 @@ import {
   summarizeLegacyProgress,
 } from "../src/services/cloud-adoption";
 import { ANNULLED_ING001_032 } from "../src/services/cloud-protocol";
+import { inspectLocalCloudConsistency } from "../src/services/cloud-local-consistency";
+import { openSyncMetaDatabase, writeCloudAdoptionSettings } from "../src/services/sync-meta";
 import { openLegacyStudyDatabase, openScopedStudyDatabase } from "../src/services/storage-db";
 import type { CloudAdoptionSettings } from "../src/services/sync-meta";
 import type { StudyProgress } from "../src/types/schema";
@@ -202,4 +204,96 @@ describe("PR-6 adoção explícita — preflight local", () => {
     await expect(resumeCloudSync(scope)).rejects.toThrow(/Copie ou inicie/);
     expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
   });
+  it("bloqueia reativação se o recibo de adoção StudyDB não corresponde ao SyncMetaDB", async () => {
+    const { scope, legacyDbName } = await fixture("adoption-mismatch");
+    const adopted = await copyLegacyIntoAccount(scope, "2026-10-13T10:00:00.000Z", legacyDbName);
+    await writeCloudAdoptionSettings(scope, { ...adopted, sourceFingerprint: "sha256:unexpected" });
+    const check = await inspectLocalCloudConsistency(scope);
+    expect(check.readyForExplicitResume).toBe(false);
+    expect(check.reasons).toContain("BOOTSTRAP_FINGERPRINT_MISMATCH");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/CLOUD_LOCAL_CONSISTENCY_BLOCKED/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
+    const study = raw(await openScopedStudyDatabase(scope));
+    expect((await study.get("progress", "TI-BD-003") as StudyProgress)?.percent).toBe(42);
+    study.close();
+  });
+
+  it("detecta receipt StudyDB órfão após falha SyncMetaDB e permite reexecução idempotente explícita", async () => {
+    const { scope, legacyDbName } = await fixture("missing-meta");
+    await copyLegacyIntoAccount(scope, "2026-10-13T10:00:00.000Z", legacyDbName);
+    const meta = await openSyncMetaDatabase(scope);
+    await meta.delete("settings", "adoption");
+    meta.close();
+
+    const blocked = await inspectLocalCloudConsistency(scope);
+    expect(blocked.readyForExplicitResume).toBe(false);
+    expect(blocked.reasons).toContain("ADOPTION_METADATA_MISSING");
+    expect(blocked.reasons).toContain("BOOTSTRAP_ADOPTION_MISMATCH");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/CLOUD_LOCAL_CONSISTENCY_BLOCKED/);
+
+    const rerun = await copyLegacyIntoAccount(scope, "2026-10-13T10:01:00.000Z", legacyDbName);
+    expect(rerun.syncEnabled).toBe(false);
+    expect((await inspectLocalCloudConsistency(scope)).readyForExplicitResume).toBe(true);
+    const study = raw(await openScopedStudyDatabase(scope));
+    expect(await study.count("progress")).toBe(1);
+    study.close();
+  });
+
+  it("não habilita sync com conflitos exclusivos do SyncMetaDB até revisão explícita", async () => {
+    const { scope } = await fixture("meta-conflict");
+    await startEmptyAccount(scope);
+    const meta = await openSyncMetaDatabase(scope);
+    await meta.put("conflicts", {
+      id: "qa-conflict", entityType: "writings", entityId: "QA-WRITING",
+      localPayload: { text: "local fictício" }, remotePayload: { text: "remoto fictício" },
+      detectedAt: "2026-10-17T10:00:00.000Z",
+    });
+    meta.close();
+    const check = await inspectLocalCloudConsistency(scope);
+    expect(check.reasons).toContain("SYNC_META_CONFLICTS_PRESENT");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/SYNC_META_CONFLICTS_PRESENT/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
+    const metadata = await openSyncMetaDatabase(scope);
+    expect(await metadata.count("conflicts")).toBe(1);
+    await metadata.delete("conflicts", "qa-conflict");
+    metadata.close();
+    const resumed = await resumeCloudSync(scope);
+    expect(resumed.syncEnabled).toBe(true);
+    expect(resumed.reconcileRequired).toBe(true);
+  });
+
+  it("recusa reativação com mutação Writing bloqueada no StudyDB sem perder o dado", async () => {
+    const { scope } = await fixture("blocked-outbox");
+    await startEmptyAccount(scope);
+    const study = raw(await openScopedStudyDatabase(scope));
+    await study.put("syncOutbox", {
+      id: "qa-blocked", recordType: "mutation", mutationId: "qa-blocked",
+      entityKind: "writing", entityId: "QA-WRITING", status: "blocked_conflict",
+    });
+    const check = await inspectLocalCloudConsistency(scope);
+    expect(check.reasons).toContain("STUDY_DB_BLOCKED_MUTATION");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/STUDY_DB_BLOCKED_MUTATION/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
+    expect(await study.get("syncOutbox", "qa-blocked")).toBeDefined();
+    study.close();
+  });
+
+  it("protege escopos de conta distintos e recusa preflight no legado", async () => {
+    const a = await fixture("account-a");
+    const b = await fixture("account-b");
+    await startEmptyAccount(a.scope);
+    await startEmptyAccount(b.scope);
+    const aMeta = await openSyncMetaDatabase(a.scope);
+    await aMeta.put("conflicts", {
+      id: "qa-only-a", entityType: "writing", entityId: "QA-WR",
+      localPayload: null, remotePayload: null,
+      detectedAt: "2026-10-17T12:00:00.000Z",
+    });
+    aMeta.close();
+    expect((await inspectLocalCloudConsistency(a.scope)).readyForExplicitResume).toBe(false);
+    expect((await inspectLocalCloudConsistency(b.scope)).readyForExplicitResume).toBe(true);
+    await expect(inspectLocalCloudConsistency({ mode: "off", scopeHash: null, studyDbName: "central-estudos", syncMetaDbName: null }))
+      .rejects.toThrow(/ACCOUNT_REQUIRED/);
+  });
+
 });
