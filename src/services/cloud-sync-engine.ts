@@ -307,10 +307,32 @@ export async function applyPushResults(
       if (!entryRaw || !isMutationRecord(entryRaw)) continue;
       if (entryRaw.requestHash !== result.requestHash) continue;
       const outcome = effectiveOutcome(result);
+      // PR-6 resolution ACKs are never trusted while a CAS write is only queued.
+      // Preserve the local audit and outbox on forged, replayed or stale replies.
+      const resolutionAudit = await store.get("__writing_conflict_audit__:" + entryRaw.mutationId);
+      if (resolutionAudit?.recordType === "writing_conflict_audit") {
+        if (entryRaw.status !== "sending" || resolutionAudit.state !== "awaiting_cas") continue;
+        const priorRemote = await store.get(remoteStateId(entryRaw.entityKind, entryRaw.entityId));
+        if (
+          priorRemote?.recordType !== "remote" ||
+          priorRemote.revision !== entryRaw.baseRevision ||
+          (outcome === "applied" && (
+            !Number.isSafeInteger(result.revision) ||
+            result.revision !== priorRemote.revision + 1 ||
+            !Number.isSafeInteger(result.changeSeq) ||
+            (result.changeSeq ?? 0) <= priorRemote.changeSeq
+          ))
+        ) throw new Error("WRITING_RESOLUTION_STALE_CAS_ACK");
+      }
       if (outcome === "applied") {
         if (!result.revision || !result.changeSeq)
           throw new Error("ACK aplicado sem revisão/change_seq");
         await store.delete(entryRaw.id);
+        const auditRecord = await store.get("__writing_conflict_audit__:" + entryRaw.mutationId);
+        if (auditRecord?.recordType === "writing_conflict_audit") {
+          auditRecord.state = "cas_applied";
+          await store.put(auditRecord);
+        }
         const remote: SyncRemoteStateRecord = {
           id: remoteStateId(entryRaw.entityKind, entryRaw.entityId),
           recordType: "remote",
@@ -345,10 +367,20 @@ export async function applyPushResults(
           blocked.conflict = conflict;
           await store.put(blocked);
         }
+        const auditRecord = await store.get("__writing_conflict_audit__:" + entryRaw.mutationId);
+        if (auditRecord?.recordType === "writing_conflict_audit") {
+          auditRecord.state = "cas_conflict";
+          await store.put(auditRecord);
+        }
       } else {
         entryRaw.status = "poisoned";
         entryRaw.conflict = null;
         await store.put(entryRaw);
+        const auditRecord = await store.get("__writing_conflict_audit__:" + entryRaw.mutationId);
+        if (auditRecord?.recordType === "writing_conflict_audit") {
+          auditRecord.state = "needs_review";
+          await store.put(auditRecord);
+        }
       }
     }
     if (!guard.isCurrent()) tx.abort();

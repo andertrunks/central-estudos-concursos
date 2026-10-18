@@ -1,0 +1,476 @@
+import { afterEach, describe, expect, it } from "vitest";
+import "fake-indexeddb/auto";
+import { deleteDB, type IDBPDatabase } from "idb";
+import type { Writing } from "../src/types/schema";
+import type {
+  SyncOutboxEntry,
+  WritingConflictResolutionAuditRecord,
+} from "../src/types/cloud";
+import { deriveAccountScope } from "../src/services/account-scope";
+import { isMutationRecord, payloadHashFor } from "../src/services/cloud-protocol";
+import {
+  applyPullPage,
+  applyPushResults,
+  preparePushBatch,
+  type SyncScopeGuard,
+} from "../src/services/cloud-sync-engine";
+import { putCloudEntity } from "../src/services/cloud-mutations";
+import {
+  commitWritingConflictResolution,
+  type CommitWritingConflictInput,
+} from "../src/services/writing-conflict-commit";
+import { openScopedStudyDatabase, type StudyDBV3 } from "../src/services/storage-db";
+import { readWritingResolutionStatus } from "../src/services/writing-conflict-status";
+
+const USER = "11111111-1111-4111-8111-111111111111";
+const databases = new Set<string>();
+const handles = new Set<IDBPDatabase<StudyDBV3>>();
+
+function writing(text: string): Writing {
+  return {
+    id: "DISC-001",
+    theme: "SQL",
+    contentIds: ["TI-BD-003"],
+    contestId: "CRBIO01-2026-ATI",
+    text,
+    date: "2026-10-17",
+    status: "rascunho",
+    evaluation: "",
+    notes: "",
+  };
+}
+
+function guard(scope = { current: true }): SyncScopeGuard {
+  return { userId: USER, scopeEpoch: 1, isCurrent: () => scope.current };
+}
+
+async function createDb() {
+  const scope = await deriveAccountScope("project-ref", USER);
+  if (scope.mode !== "account") throw new Error("Test scope missing");
+  const dbName = "pr6-writing-transaction-" + crypto.randomUUID();
+  databases.add(dbName);
+  const db = await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+  handles.add(db);
+  return db;
+}
+
+async function conflictFixture() {
+  const db = await createDb();
+  const g = guard();
+  const first = writing("Remote before conflict");
+  const remote = writing("Remote newer");
+  const local = writing("Draft on this device");
+  const initialHash = await payloadHashFor("upsert", first);
+  const remoteHash = await payloadHashFor("upsert", remote);
+
+  await applyPullPage(db, g, {
+    records: [{
+      userId: USER, entityKind: "writing", entityId: first.id,
+      schemaVersion: 1, revision: 1, changeSeq: 1,
+      payload: first, payloadHash: initialHash, deleted: false,
+    }],
+    nextCursor: 1,
+    hasMore: false,
+  });
+  const previous = await putCloudEntity(db, "writings", local.id, local);
+  await applyPullPage(db, g, {
+    records: [{
+      userId: USER, entityKind: "writing", entityId: remote.id,
+      schemaVersion: 1, revision: 2, changeSeq: 2,
+      payload: remote, payloadHash: remoteHash, deleted: false,
+    }],
+    nextCursor: 2,
+    hasMore: false,
+  });
+  const blocked = await db.get("syncOutbox", previous.id) as SyncOutboxEntry;
+  expect(blocked.status).toBe("blocked_conflict");
+
+  const input: CommitWritingConflictInput = {
+    entityId: local.id,
+    expectedLocal: local,
+    remotePayload: remote,
+    remoteRevision: 2,
+    remoteChangeSeq: 2,
+    remotePayloadHash: remoteHash,
+    blockedMutationIds: [blocked.mutationId],
+    choice: "local",
+    mutationId: "resolution-1",
+    now: "2026-10-17T20:00:00.000Z",
+  };
+  return { db, g, input, previous, local, remote };
+}
+
+function mutations(records: unknown[]): SyncOutboxEntry[] {
+  return records.filter(isMutationRecord);
+}
+
+async function allMutations(db: IDBPDatabase<StudyDBV3>) {
+  return mutations(await db.getAll("syncOutbox"));
+}
+
+async function readAudit(db: IDBPDatabase<StudyDBV3>, mutationId = "resolution-1") {
+  const row = await db.get("syncOutbox", "__writing_conflict_audit__:" + mutationId);
+  if (row?.recordType !== "writing_conflict_audit") throw new Error("Missing audit");
+  return row as WritingConflictResolutionAuditRecord;
+}
+
+afterEach(async () => {
+  for (const db of handles) db.close();
+  handles.clear();
+  for (const name of databases) await deleteDB(name);
+  databases.clear();
+});
+
+describe("PR-6 Writing local atomic conflict resolution staging", () => {
+  it("archives the blocked chain and leaves exactly one queued head", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    const heads = (await allMutations(db)).filter((item) => item.predecessorMutationId === null);
+    expect(heads).toHaveLength(1);
+    expect(heads[0]?.id).toBe(entry.id);
+    expect(heads[0]?.status).toBe("queued");
+    expect(heads[0]?.baseRevision).toBe(2);
+    expect(heads[0]?.targetPayload).toEqual(local);
+    expect(await db.get("syncOutbox", previous.id)).toBeUndefined();
+    const audit = await readAudit(db);
+    expect(audit.state).toBe("awaiting_cas");
+    expect(audit.supersededMutations).toHaveLength(1);
+    expect(audit.supersededMutations[0]?.id).toBe(previous.id);
+    expect(audit.supersededMutations[0]?.status).toBe("blocked_conflict");
+    expect(audit.previousLocal).toEqual(local);
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+    db.close();
+  });
+
+  it("marks audit as cas_applied only after the matching confirmed CAS ACK", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash,
+      outcome: "applied", revision: 3, changeSeq: 3,
+    }]);
+    expect(await allMutations(db)).toHaveLength(0);
+    const audit = await readAudit(db);
+    expect(audit.state).toBe("cas_applied");
+    expect(audit.supersededMutations).toHaveLength(1);
+    db.close();
+  });
+
+  it("preserves the audit as a conflict if the CAS revision races", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash,
+      outcome: "conflict", currentRevision: 4,
+      currentPayloadHash: "sha256:changed", deleted: false,
+    }]);
+    expect((await readAudit(db)).state).toBe("cas_conflict");
+    expect((await allMutations(db))[0]?.status).toBe("blocked_conflict");
+    db.close();
+  });
+
+  it("rejects a stale remote revision without modifying Writing or the outbox", async () => {
+    const { db, g, input, local, previous } = await conflictFixture();
+    const metaId = "__cloud_remote__:writing:" + local.id;
+    const meta = await db.get("syncOutbox", metaId);
+    if (meta?.recordType !== "remote") throw new Error("Missing remote meta");
+    await db.put("syncOutbox", { ...meta, revision: 3 });
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/REMOTE_CHANGED/);
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-1")).toBeUndefined();
+    db.close();
+  });
+
+  it("rejects an unexpected concurrent head without replacing any mutation", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    const rogue = {
+      ...previous, id: "rogue", mutationId: "rogue", status: "queued" as const,
+      predecessorMutationId: null, requestHash: "rogue-hash",
+    };
+    await db.put("syncOutbox", rogue);
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/BLOCKED_CHAIN_CHANGED/);
+    expect((await allMutations(db)).map((x) => x.id).sort()).toEqual([previous.id, "rogue"].sort());
+    db.close();
+  });
+
+  it("refuses scope changes before any destructive work", async () => {
+    const { db, input, previous, local } = await conflictFixture();
+    await expect(commitWritingConflictResolution(db, guard({ current: false }), input))
+      .rejects.toThrow(/STALE_ACCOUNT_SCOPE/);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+    db.close();
+  });
+
+  it("does not overwrite an existing mutation identifier", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    await db.put("syncOutbox", { ...previous, id: "resolution-1", mutationId: "resolution-1" });
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/MUTATION_ID_COLLISION|BLOCKED_CHAIN_CHANGED/);
+    expect(await db.get("syncOutbox", previous.id)).toBeDefined();
+    db.close();
+  });
+
+  it("rejects invalid merged structural identities with no local side effects", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input, choice: "merged",
+      mergedPayload: { ...writing("merged text"), contentIds: ["MAT-001"] },
+    })).rejects.toThrow(/MERGED_IDENTITY_MISMATCH/);
+    expect(await db.get("syncOutbox", previous.id)).toBeDefined();
+    db.close();
+  });
+
+  it("stages an explicit remote choice without silently declaring CAS success", async () => {
+    const { db, g, input, remote } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, {
+      ...input, choice: "remote",
+    });
+    expect(entry.status).toBe("queued");
+    expect(entry.targetPayload).toEqual(remote);
+    expect((await db.get("writings", remote.id))?.text).toBe(remote.text);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    db.close();
+  });
+  it("aborts atomically when scope switches immediately before transaction commit", async () => {
+    const { db, input, previous, local } = await conflictFixture();
+    const state = { checks: 0 };
+    const switchingGuard: SyncScopeGuard = {
+      userId: USER,
+      scopeEpoch: 1,
+      isCurrent: () => ++state.checks < 4,
+    };
+    await expect(commitWritingConflictResolution(db, switchingGuard, input))
+      .rejects.toThrow(/STALE_ACCOUNT_SCOPE/);
+    expect(state.checks).toBeGreaterThanOrEqual(4);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+    expect(await db.get("syncOutbox", "resolution-1")).toBeUndefined();
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-1")).toBeUndefined();
+  });
+
+  it("rejects stale local payload without deleting the blocked chain", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const later = writing("Editing continued after the conflict preview");
+    await db.put("writings", later);
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/LOCAL_CHANGED/);
+    expect((await db.get("writings", local.id))?.text).toBe(later.text);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-1")).toBeUndefined();
+  });
+
+  it("rejects a remote tombstone even when the preview supplied an older payload", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const key = "__cloud_remote__:writing:" + input.entityId;
+    const remoteMeta = await db.get("syncOutbox", key);
+    if (remoteMeta?.recordType !== "remote") throw new Error("Missing remote metadata");
+    await db.put("syncOutbox", { ...remoteMeta, deleted: true, payload: null, payloadHash: null, revision: 3, changeSeq: 3 });
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/REMOTE_CHANGED/);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+  });
+
+  it("rejects remote hash spoofing and invalid remote cursor without writing", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input,
+      remotePayloadHash: "sha256:invalid",
+    })).rejects.toThrow(/REMOTE_HASH_MISMATCH/);
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input,
+      remoteChangeSeq: 0,
+    })).rejects.toThrow(/CHANGE_SEQ_INVALID/);
+    expect(await db.get("syncOutbox", previous.id)).toBeDefined();
+    expect(await db.get("syncOutbox", "resolution-1")).toBeUndefined();
+  });
+
+  it("does not accept a mismatched or incomplete CAS ACK", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id,
+      requestHash: "sha256:wrong",
+      outcome: "applied",
+      revision: 3,
+      changeSeq: 3,
+    }]);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect(await db.get("syncOutbox", entry.id)).toBeDefined();
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.id,
+      requestHash: entry.requestHash,
+      outcome: "applied",
+    }])).rejects.toThrow(/WRITING_RESOLUTION_STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
+  });
+
+  it("survives database close and reopen while CAS is still pending", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    const dbName = db.name;
+    db.close();
+    const scope = await deriveAccountScope("project-ref", USER);
+    if (scope.mode !== "account") throw new Error("Account scope missing");
+    const reopened = await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+    handles.add(reopened);
+    expect((await readAudit(reopened)).state).toBe("awaiting_cas");
+    expect((await readAudit(reopened)).supersededMutations[0]?.id).toBe(previous.id);
+    expect((await reopened.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+    expect((await reopened.get("writings", local.id))?.text).toBe(local.text);
+    expect(await allMutations(reopened)).toHaveLength(1);
+  });
+
+  it("rejects a second resolution on the same blocked snapshot after first staging", async () => {
+    const { db, g, input } = await conflictFixture();
+    await commitWritingConflictResolution(db, g, input);
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input, mutationId: "resolution-2",
+    })).rejects.toThrow(/BLOCKED_CHAIN_CHANGED/);
+    expect((await allMutations(db)).map((x) => x.id)).toEqual(["resolution-1"]);
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-2")).toBeUndefined();
+  });
+
+  it("ignores unsolicited success for a queued Writing resolution (not sent yet)", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 3, changeSeq: 3,
+    }]);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+  });
+
+  it("rejects a stale success revision and does not overwrite remote state", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 2, changeSeq: 3,
+    }])).rejects.toThrow(/STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
+    const remote = await db.get("syncOutbox", "__cloud_remote__:writing:" + input.entityId);
+    expect(remote?.recordType === "remote" && remote.revision).toBe(2);
+  });
+
+  it("rejects a success ACK whose change sequence did not advance", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await preparePushBatch(db, g);
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 3, changeSeq: 2,
+    }])).rejects.toThrow(/STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+  });
+
+  it("reads a durable pending decision, then reports CAS only after a valid ACK", async () => {
+    const { db, g, input } = await conflictFixture();
+    expect(await readWritingResolutionStatus(db, g, input.entityId)).toBeNull();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect(await readWritingResolutionStatus(db, g, input.entityId)).toEqual({
+      auditId: "__writing_conflict_audit__:resolution-1",
+      mutationId: entry.mutationId,
+      state: "awaiting_cas",
+      choice: "local",
+    });
+    await preparePushBatch(db, g);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 3, changeSeq: 3,
+    }]);
+    expect((await readWritingResolutionStatus(db, g, input.entityId))?.state).toBe("cas_applied");
+  });
+
+  it("blocks audit reads on stale account scope and ambiguous pending decisions", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await expect(readWritingResolutionStatus(db, guard({ current: false }), input.entityId))
+      .rejects.toThrow(/STALE_ACCOUNT_SCOPE/);
+    const original = await readAudit(db);
+    await db.put("syncOutbox", {
+      ...original,
+      id: "__writing_conflict_audit__:another",
+      resolutionMutationId: "another",
+      createdAt: "2026-10-17T21:00:00.000Z",
+    });
+    await expect(readWritingResolutionStatus(db, g, input.entityId))
+      .rejects.toThrow(/MULTIPLE_PENDING_AUDITS/);
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+  });
+
+  it("retries an unacknowledged sending head after reload without duplicating the CAS request", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    const initialBatch = await preparePushBatch(db, g);
+    expect(initialBatch.map((item) => item.mutationId)).toEqual([entry.mutationId]);
+    const fingerprint = initialBatch[0]?.requestHash;
+    const dbName = db.name;
+    db.close();
+    const scope = await deriveAccountScope("project-ref", USER);
+    if (scope.mode !== "account") throw new Error("Account scope missing");
+    const reopened = await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+    handles.add(reopened);
+    const retryBatch = await preparePushBatch(reopened, g);
+    expect(retryBatch).toHaveLength(1);
+    expect(retryBatch[0]?.mutationId).toBe(entry.mutationId);
+    expect(retryBatch[0]?.requestHash).toBe(fingerprint);
+    expect((await readAudit(reopened)).state).toBe("awaiting_cas");
+    await applyPushResults(reopened, g, [{
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "duplicate", originalOutcome: "applied", revision: 3, changeSeq: 3,
+    }]);
+    expect((await readAudit(reopened)).state).toBe("cas_applied");
+    expect(await allMutations(reopened)).toHaveLength(0);
+  });
+
+  it("ignores a delayed duplicate CAS ACK after an already-applied result", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await preparePushBatch(db, g);
+    const reply = {
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "applied" as const, revision: 3, changeSeq: 3,
+    };
+    await applyPushResults(db, g, [reply]);
+    await applyPushResults(db, g, [reply]);
+    const audit = await readAudit(db);
+    const remote = await db.get("syncOutbox", "__cloud_remote__:writing:" + input.entityId);
+    expect(audit.state).toBe("cas_applied");
+    expect(await allMutations(db)).toHaveLength(0);
+    expect(remote?.recordType === "remote" && remote.revision).toBe(3);
+    expect(remote?.recordType === "remote" && remote.changeSeq).toBe(3);
+  });
+
+  it("rolls back an out-of-order CAS ACK, then accepts a valid successor without losing the archive", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await preparePushBatch(db, g);
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "applied", revision: 3, changeSeq: 2,
+    }])).rejects.toThrow(/STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
+    await applyPushResults(db, g, [{
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "applied", revision: 3, changeSeq: 3,
+    }]);
+    expect((await readAudit(db)).state).toBe("cas_applied");
+    expect((await readAudit(db)).supersededMutations[0]?.id).toBe(previous.id);
+    expect((await db.get("syncOutbox", "__cloud_remote__:writing:" + input.entityId))?.recordType).toBe("remote");
+  });
+
+});

@@ -1,6 +1,9 @@
 import { describe, expect, it, vi } from "vitest";
 import { renderToStaticMarkup } from "react-dom/server";
 import { CloudConflictPanel } from "../src/components/CloudConflictPanel";
+import { WritingConflictResolutionController } from "../src/components/WritingConflictResolutionController";
+import type { IDBPDatabase } from "idb";
+import type { StudyDBV3 } from "../src/services/storage-db";
 
 function render() {
   return renderToStaticMarkup(
@@ -76,4 +79,29 @@ describe("PR-6 conflict UX foundation", () => {
     );
     expect(html).toBe("");
   });
+  it("não exibe confirmação de resolução antes de verificar auditoria e conta", () => {
+    const sample = {
+      id: "WRITING-1", theme: "Redação de teste",
+      contentIds: ["TI-BD-003"], contestId: "CRBIO01-2026-ATI",
+      text: "Texto local de exemplo", date: "2026-10-17",
+      status: "rascunho" as const, evaluation: "", notes: "",
+    };
+    // Server rendering never triggers a write or account/network discovery.
+    const html = renderToStaticMarkup(
+      <WritingConflictResolutionController
+        db={{} as IDBPDatabase<StudyDBV3>}
+        guard={{ isCurrent: () => true }}
+        snapshot={{
+          entityId: sample.id, baseText: null,
+          localPayload: sample, remotePayload: { ...sample, text: "Texto remoto" },
+          remoteRevision: 2, remoteChangeSeq: 2, remotePayloadHash: "sha256:placeholder",
+          blockedMutationIds: ["blocked-1"],
+        }}
+      />,
+    );
+    expect(html).toContain("Conferindo o histórico local do conflito");
+    expect(html).not.toContain("Confirmar decisão local");
+    expect(html).not.toContain("cas_applied");
+  });
+
 });

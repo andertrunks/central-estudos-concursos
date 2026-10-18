@@ -163,7 +163,27 @@ export interface BootstrapReceipt {
   appliedAt: string;
 }
 
-export type SyncOutboxRecord = SyncOutboxEntry | SyncCursorRecord | SyncRemoteStateRecord | BootstrapReceipt;
+/** Durable account-local audit, never eligible for cloud transport. */
+export interface WritingConflictResolutionAuditRecord {
+  id: string;
+  recordType: "writing_conflict_audit";
+  entityKind: "writing";
+  entityId: string;
+  resolutionMutationId: string;
+  state: "awaiting_cas" | "cas_applied" | "cas_conflict" | "needs_review";
+  choice: "local" | "remote" | "merged";
+  createdAt: string;
+  previousLocal: import("./schema").Writing;
+  previousRemoteRevision: number;
+  supersededMutations: SyncOutboxEntry[];
+}
+
+export type SyncOutboxRecord =
+  | SyncOutboxEntry
+  | SyncCursorRecord
+  | SyncRemoteStateRecord
+  | BootstrapReceipt
+  | WritingConflictResolutionAuditRecord;
 
 export interface RemoteBaseRecord {
   id: string;

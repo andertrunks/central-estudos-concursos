@@ -1,11 +1,13 @@
 import { localAccountScope } from "./account-scope";
 import { applyBootstrapPlan, previewLegacyBootstrap, readLegacyBackup } from "./bootstrap-migration";
 import { openScopedStudyDatabase } from "./storage-db";
+import { inspectLocalCloudConsistency } from "./cloud-local-consistency";
 import {
   readCloudAdoptionSettings,
   updateCloudSyncPreference,
   writeCloudAdoptionSettings,
   type CloudAdoptionSettings,
+  type LocalPreferenceGuard,
 } from "./sync-meta";
 import type { AccountScope } from "../types/cloud";
 
@@ -174,7 +176,21 @@ export async function pauseCloudSync(
 export async function resumeCloudSync(
   scope: AccountScope,
   updatedAt = new Date().toISOString(),
+  guard?: LocalPreferenceGuard,
 ) {
   requireAccount(scope);
-  return updateCloudSyncPreference(scope, true, updatedAt);
+  if (guard && !guard.isCurrent()) throw new Error("STALE_ACCOUNT_SCOPE");
+  // StudyDB and SyncMetaDB are independent. Preflight is deliberately
+  // conservative; the subsequent SyncMetaDB settings write is separately
+  // atomic and must match the same recorded adoption choice.
+  const check = await inspectLocalCloudConsistency(scope);
+  if (guard && !guard.isCurrent()) throw new Error("STALE_ACCOUNT_SCOPE");
+  if (check.reasons.includes("LOCAL_ONLY_CHOICE"))
+    throw new Error("Copie ou inicie o espaço isolado da conta antes de reativar a sincronização");
+  if (!check.readyForExplicitResume)
+    throw new Error("CLOUD_LOCAL_CONSISTENCY_BLOCKED: " + check.reasons.join(","));
+  return updateCloudSyncPreference(scope, true, updatedAt, {
+    guard,
+    expectedChoiceStamp: check.observedChoiceStamp,
+  });
 }

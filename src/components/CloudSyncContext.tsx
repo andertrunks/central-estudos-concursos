@@ -3,6 +3,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -24,7 +25,7 @@ import {
   type CloudPublicStatus,
   type CloudStatusView,
 } from "../services/cloud-ux";
-import type { CloudAdoptionSettings } from "../services/sync-meta";
+import type { CloudAdoptionSettings, LocalPreferenceGuard } from "../services/sync-meta";
 import type { AccountScope } from "../types/cloud";
 
 type CloudSyncValue = {
@@ -101,6 +102,16 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
   const candidateHash = auth.candidateScope?.mode === "account"
     ? auth.candidateScope.scopeHash
     : null;
+  const latestAuthRef = useRef({
+    scopeHash: candidateHash,
+    sessionGeneration: auth.sessionGeneration,
+  });
+  useEffect(() => {
+    latestAuthRef.current = {
+      scopeHash: candidateHash,
+      sessionGeneration: auth.sessionGeneration,
+    };
+  }, [candidateHash, auth.sessionGeneration]);
   const effectiveAdoption = candidateHash && loadedScopeHash === candidateHash
     ? adoption
     : null;
@@ -129,19 +140,26 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
   }
 
   async function applySyncPreference(
-    action: (scope: AccountScope) => Promise<CloudAdoptionSettings>,
+    action: (scope: AccountScope, guard: LocalPreferenceGuard) => Promise<CloudAdoptionSettings>,
   ) {
     const scope = auth.candidateScope;
     if (!scope || scope.mode !== "account") throw new Error("Entre na conta antes de configurar sincronização");
+    const capturedGeneration = auth.sessionGeneration;
+    const guard: LocalPreferenceGuard = {
+      isCurrent: () => latestAuthRef.current.scopeHash === scope.scopeHash &&
+        latestAuthRef.current.sessionGeneration === capturedGeneration,
+    };
+    if (!guard.isCurrent()) throw new Error("STALE_ACCOUNT_SCOPE");
     setAdoptionBusy(true);
     setAdoptionError("");
     try {
-      const next = await action(scope);
+      const next = await action(scope, guard);
+      if (!guard.isCurrent()) throw new Error("STALE_ACCOUNT_SCOPE");
       setLoadedScopeHash(scope.scopeHash);
       setAdoption(next);
     } catch (cause) {
       const message = cause instanceof Error ? cause.message : "Não foi possível alterar a sincronização";
-      setAdoptionError(message);
+      if (guard.isCurrent()) setAdoptionError(message);
       throw cause;
     } finally {
       setAdoptionBusy(false);
@@ -191,8 +209,8 @@ export function CloudSyncProvider({ children }: { children: ReactNode }) {
         keepLocalOnly: () => applyDecision(keepLegacyLocalOnly),
         copyLegacy: () => applyDecision(copyLegacyIntoAccount),
         startEmpty: () => applyDecision(startEmptyAccount),
-        pauseSync: () => applySyncPreference(pauseCloudSync),
-        resumeSync: () => applySyncPreference(resumeCloudSync),
+        pauseSync: () => applySyncPreference((scope) => pauseCloudSync(scope)),
+        resumeSync: () => applySyncPreference((scope, guard) => resumeCloudSync(scope, undefined, guard)),
       }}
     >
       {children}
