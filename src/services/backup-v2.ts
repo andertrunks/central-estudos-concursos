@@ -13,7 +13,7 @@ import {
   type Backup,
 } from "./storage";
 import { getActiveStudyScope } from "./study-storage-route";
-import { ANNULLED_ING001_032 } from "./cloud-protocol";
+import { ANNULLED_ING001_032, isMutationRecord } from "./cloud-protocol";
 import {
   attemptSchema,
   progressSchema,
@@ -274,8 +274,22 @@ async function importV2IntoAccount(value: BackupV2) {
     "results",
     "submissions",
     "simulationSubmissions",
+    "syncOutbox",
   ], "readwrite");
   try {
+    // A pedagogical backup deliberately omits cloud outbox/audit metadata.
+    // Restoring a Writing while it has queued/sending/blocked CAS intents
+    // would silently replace its local text without updating those intents.
+    // Fail closed in the SAME transaction as all other restored stores.
+    const outbox = tx.objectStore("syncOutbox");
+    for (const item of value.writings) {
+      const records = await outbox.index("by-entity").getAll(item.id);
+      if (records.some((record) =>
+        (isMutationRecord(record) && record.entityKind === "writing") ||
+        (record.recordType === "writing_conflict_audit" &&
+          record.entityKind === "writing" && record.state !== "cas_applied")
+      )) throw new Error("BACKUP_WRITING_SYNC_CONFLICT: restauração bloqueada por mutação ou conflito Writing pendente");
+    }
     for (const item of value.activities) await tx.objectStore("activities").put(item);
     for (const item of value.progress) await tx.objectStore("progress").put(item);
     for (const item of value.reviews) await tx.objectStore("reviews").put(item);
