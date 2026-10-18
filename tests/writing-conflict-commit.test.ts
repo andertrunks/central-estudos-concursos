@@ -11,6 +11,7 @@ import { isMutationRecord, payloadHashFor } from "../src/services/cloud-protocol
 import {
   applyPullPage,
   applyPushResults,
+  preparePushBatch,
   type SyncScopeGuard,
 } from "../src/services/cloud-sync-engine";
 import { putCloudEntity } from "../src/services/cloud-mutations";
@@ -144,6 +145,7 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
     const { db, g, input } = await conflictFixture();
     const { entry } = await commitWritingConflictResolution(db, g, input);
     expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
     await applyPushResults(db, g, [{
       mutationId: entry.id, requestHash: entry.requestHash,
       outcome: "applied", revision: 3, changeSeq: 3,
@@ -158,6 +160,7 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
   it("preserves the audit as a conflict if the CAS revision races", async () => {
     const { db, g, input } = await conflictFixture();
     const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
     await applyPushResults(db, g, [{
       mutationId: entry.id, requestHash: entry.requestHash,
       outcome: "conflict", currentRevision: 4,
@@ -291,6 +294,7 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
   it("does not accept a mismatched or incomplete CAS ACK", async () => {
     const { db, g, input } = await conflictFixture();
     const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
     await applyPushResults(db, g, [{
       mutationId: entry.id,
       requestHash: "sha256:wrong",
@@ -306,7 +310,7 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
       outcome: "applied",
     }])).rejects.toThrow(/sem revisão/);
     expect((await readAudit(db)).state).toBe("awaiting_cas");
-    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
   });
 
   it("survives database close and reopen while CAS is still pending", async () => {
@@ -333,6 +337,42 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
     })).rejects.toThrow(/BLOCKED_CHAIN_CHANGED/);
     expect((await allMutations(db)).map((x) => x.id)).toEqual(["resolution-1"]);
     expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-2")).toBeUndefined();
+  });
+
+  it("ignores unsolicited success for a queued Writing resolution (not sent yet)", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 3, changeSeq: 3,
+    }]);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+  });
+
+  it("rejects a stale success revision and does not overwrite remote state", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect((await preparePushBatch(db, g)).map((x) => x.mutationId)).toEqual([entry.id]);
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 2, changeSeq: 3,
+    }])).rejects.toThrow(/STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
+    const remote = await db.get("syncOutbox", "__cloud_remote__:writing:" + input.entityId);
+    expect(remote?.recordType === "remote" && remote.revision).toBe(2);
+  });
+
+  it("rejects a success ACK whose change sequence did not advance", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await preparePushBatch(db, g);
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 3, changeSeq: 2,
+    }])).rejects.toThrow(/STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
   });
 
 });
