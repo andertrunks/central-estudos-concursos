@@ -308,7 +308,7 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
       mutationId: entry.id,
       requestHash: entry.requestHash,
       outcome: "applied",
-    }])).rejects.toThrow(/sem revisão/);
+    }])).rejects.toThrow(/WRITING_RESOLUTION_STALE_CAS_ACK/);
     expect((await readAudit(db)).state).toBe("awaiting_cas");
     expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
   });
