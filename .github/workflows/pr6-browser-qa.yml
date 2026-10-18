@@ -5,6 +5,9 @@ on:
     paths:
       - ".github/workflows/pr6-browser-qa.yml"
       - "tests/pr6-browser.e2e.ts"
+      - "tests/pr6-conflict-*.tsx"
+      - "tests/pr6-conflict-*.ts"
+      - "tests/pr6-conflict-harness.html"
       - "src/services/writing-conflict-commit.ts"
       - "src/services/cloud-sync-engine.ts"
       - "src/components/CloudConflictPanel.tsx"
@@ -24,6 +27,7 @@ jobs:
       PR6_BROWSER: ${{ matrix.browser }}
       SITE_URL: "http://127.0.0.1:4174/central-estudos-concursos/"
       OUTPUT_DIR: "test-results/pr6-browser"
+      PR6_QA_SITE_URL: "http://127.0.0.1:4175/central-estudos-concursos/tests/pr6-conflict-harness.html"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,6 +52,18 @@ jobs:
           exit 1
       - name: Browser smoke + WCAG axe + local Writing persistence
         run: node --import tsx tests/pr6-browser.e2e.ts
+      - name: Serve dev-only interactive controller fixture on localhost
+        shell: bash
+        run: |
+          npm run dev -- --host 127.0.0.1 --port 4175 --strictPort > /tmp/pr6-qa-dev.log 2>&1 &
+          for i in $(seq 1 40); do
+            if curl --fail --silent --output /dev/null "$PR6_QA_SITE_URL?case=healthcheck"; then exit 0; fi
+            sleep 2
+          done
+          cat /tmp/pr6-qa-dev.log
+          exit 1
+      - name: Interactive Writing conflict controller with fake CAS
+        run: node --import tsx tests/pr6-conflict-interactive.e2e.ts
       - name: Upload isolated QA artifact
         if: always()
         uses: actions/upload-artifact@v4
