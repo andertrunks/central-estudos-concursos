@@ -22,6 +22,7 @@ import { openScopedStudyDatabase, type StudyDBV3 } from "../src/services/storage
 
 const USER = "11111111-1111-4111-8111-111111111111";
 const databases = new Set<string>();
+const handles = new Set<IDBPDatabase<StudyDBV3>>();
 
 function writing(text: string): Writing {
   return {
@@ -46,7 +47,9 @@ async function createDb() {
   if (scope.mode !== "account") throw new Error("Test scope missing");
   const dbName = "pr6-writing-transaction-" + crypto.randomUUID();
   databases.add(dbName);
-  return await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+  const db = await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+  handles.add(db);
+  return db;
 }
 
 async function conflictFixture() {
@@ -110,6 +113,8 @@ async function readAudit(db: IDBPDatabase<StudyDBV3>, mutationId = "resolution-1
 }
 
 afterEach(async () => {
+  for (const db of handles) db.close();
+  handles.clear();
   for (const name of databases) await deleteDB(name);
   databases.clear();
 });
@@ -127,7 +132,9 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
     expect(await db.get("syncOutbox", previous.id)).toBeUndefined();
     const audit = await readAudit(db);
     expect(audit.state).toBe("awaiting_cas");
-    expect(audit.supersededMutations).toEqual([previous]);
+    expect(audit.supersededMutations).toHaveLength(1);
+    expect(audit.supersededMutations[0]?.id).toBe(previous.id);
+    expect(audit.supersededMutations[0]?.status).toBe("blocked_conflict");
     expect(audit.previousLocal).toEqual(local);
     expect((await db.get("writings", local.id))?.text).toBe(local.text);
     db.close();
