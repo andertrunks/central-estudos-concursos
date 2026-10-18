@@ -1,0 +1,39 @@
+name: PR-6 dependency advisory investigation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/pr6-dependency-audit.yml"
+      - "package-lock.json"
+permissions:
+  contents: read
+jobs:
+  dependency-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Identify npm advisories without modifying dependencies
+        shell: bash
+        run: |
+          npm audit --json > /tmp/pr6-npm-audit.json || true
+          node - <<'NODE'
+          const fs = require("node:fs");
+          const report = JSON.parse(fs.readFileSync("/tmp/pr6-npm-audit.json", "utf8"));
+          console.log("Audit metadata:", JSON.stringify(report.metadata?.vulnerabilities || {}));
+          for (const [name, v] of Object.entries(report.vulnerabilities || {})) {
+            if (!["high", "critical"].includes(v.severity)) continue;
+            console.log("HIGH_OR_CRITICAL_ADVISORY", JSON.stringify({
+              package: name,
+              severity: v.severity,
+              range: v.range,
+              direct: v.isDirect,
+              via: (v.via || []).map(x => typeof x === "string" ? x : {
+                name: x.name, title: x.title, url: x.url, range: x.range,
+              }),
+              fixAvailable: v.fixAvailable,
+            }));
+          }
+          NODE
