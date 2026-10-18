@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/pr6-dependency-audit.yml"
       - "package-lock.json"
+      - "package.json"
 permissions:
   contents: read
 jobs:
@@ -36,8 +37,11 @@ jobs:
               fixAvailable: v.fixAvailable,
             }));
           }
+          if (report.error || !report.metadata?.vulnerabilities) {
+            console.error("AUDIT_UNAVAILABLE", report.error?.code || "missing metadata");
+            process.exitCode = 1;
+          } else if (report.metadata.vulnerabilities.high > 0 || report.metadata.vulnerabilities.critical > 0) {
+            console.error("SECURITY_BLOCK: high/critical npm advisories remain");
+            process.exitCode = 1;
+          }
           NODE
-      - name: Read patched package distribution metadata (no install)
-        shell: bash
-        run: |
-          npm view source-map-js@1.2.2 version dist.tarball dist.integrity engines license --json
