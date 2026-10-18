@@ -12,7 +12,8 @@ const base = process.env.SITE_URL ?? "http://127.0.0.1:4174/central-estudos-conc
 const resultsDir = path.resolve(process.env.OUTPUT_DIR ?? "test-results/pr6-browser");
 await mkdir(resultsDir, { recursive: true });
 
-const browser = await chromium.launch({ headless: true });
+const selectedBrowser = process.env.PR6_BROWSER === "msedge" ? "msedge" : "chromium";
+const browser = await chromium.launch({ channel: selectedBrowser, headless: true });
 const context = await browser.newContext({
   viewport: { width: 1365, height: 900 },
   locale: "pt-BR",
@@ -81,6 +82,7 @@ try {
   expect(errors, "No uncaught browser errors").toEqual([]);
   await writeFile(path.join(resultsDir, "result.json"), JSON.stringify({
     site: "localhost, ephemeral Vite preview",
+    browser: selectedBrowser,
     cloudMode: "off",
     checks,
     prohibitedRequests,
