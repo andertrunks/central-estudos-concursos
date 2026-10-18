@@ -344,4 +344,45 @@ describe("PR-6 adoção explícita — preflight local", () => {
     keep.close();
   });
 
+  it("bloqueia reativação com auditoria Writing cas_conflict mesmo sem mutação ativa", async () => {
+    const { scope } = await fixture("writing-audit-conflict");
+    await startEmptyAccount(scope);
+    const db = raw(await openScopedStudyDatabase(scope));
+    await db.put("syncOutbox", {
+      id: "__writing_conflict_audit__:qa", recordType: "writing_conflict_audit",
+      entityKind: "writing", entityId: "QA-WRITING",
+      resolutionMutationId: "qa", state: "cas_conflict",
+      choice: "local", createdAt: "2026-10-17T23:58:00.000Z",
+      previousLocal: { id: "QA-WRITING", text: "fictício" },
+      previousRemoteRevision: 2, supersededMutations: [],
+    });
+    db.close();
+    const check = await inspectLocalCloudConsistency(scope);
+    expect(check.reasons).toContain("STUDY_DB_UNRESOLVED_WRITING_AUDIT");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/STUDY_DB_UNRESOLVED_WRITING_AUDIT/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
+    const verify = raw(await openScopedStudyDatabase(scope));
+    expect(await verify.get("syncOutbox", "__writing_conflict_audit__:qa")).toBeDefined();
+    verify.close();
+  });
+
+  it("recusa mutação poisoned de qualquer disciplina sem apagar progresso", async () => {
+    const { scope } = await fixture("poisoned-account-outbox");
+    await startEmptyAccount(scope);
+    const db = raw(await openScopedStudyDatabase(scope));
+    await db.put("progress", progress(53));
+    await db.put("syncOutbox", {
+      id: "qa-poisoned", recordType: "mutation", mutationId: "qa-poisoned",
+      entityKind: "progress", entityId: "TI-BD-003", status: "poisoned",
+    });
+    db.close();
+    const check = await inspectLocalCloudConsistency(scope);
+    expect(check.reasons).toContain("STUDY_DB_BLOCKED_MUTATION");
+    await expect(resumeCloudSync(scope)).rejects.toThrow(/STUDY_DB_BLOCKED_MUTATION/);
+    const verify = raw(await openScopedStudyDatabase(scope));
+    expect((await verify.get("progress", "TI-BD-003") as StudyProgress)?.percent).toBe(53);
+    expect(await verify.get("syncOutbox", "qa-poisoned")).toBeDefined();
+    verify.close();
+  });
+
 });
