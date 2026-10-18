@@ -20,6 +20,7 @@ import {
   type CommitWritingConflictInput,
 } from "../src/services/writing-conflict-commit";
 import { openScopedStudyDatabase, type StudyDBV3 } from "../src/services/storage-db";
+import { readWritingResolutionStatus } from "../src/services/writing-conflict-status";
 
 const USER = "11111111-1111-4111-8111-111111111111";
 const databases = new Set<string>();
@@ -373,6 +374,41 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
       revision: 3, changeSeq: 2,
     }])).rejects.toThrow(/STALE_CAS_ACK/);
     expect((await readAudit(db)).state).toBe("awaiting_cas");
+  });
+
+  it("reads a durable pending decision, then reports CAS only after a valid ACK", async () => {
+    const { db, g, input } = await conflictFixture();
+    expect(await readWritingResolutionStatus(db, g, input.entityId)).toBeNull();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    expect(await readWritingResolutionStatus(db, g, input.entityId)).toEqual({
+      auditId: "__writing_conflict_audit__:resolution-1",
+      mutationId: entry.mutationId,
+      state: "awaiting_cas",
+      choice: "local",
+    });
+    await preparePushBatch(db, g);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id, requestHash: entry.requestHash, outcome: "applied",
+      revision: 3, changeSeq: 3,
+    }]);
+    expect((await readWritingResolutionStatus(db, g, input.entityId))?.state).toBe("cas_applied");
+  });
+
+  it("blocks audit reads on stale account scope and ambiguous pending decisions", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await expect(readWritingResolutionStatus(db, guard({ current: false }), input.entityId))
+      .rejects.toThrow(/STALE_ACCOUNT_SCOPE/);
+    const original = await readAudit(db);
+    await db.put("syncOutbox", {
+      ...original,
+      id: "__writing_conflict_audit__:another",
+      resolutionMutationId: "another",
+      createdAt: "2026-10-17T21:00:00.000Z",
+    });
+    await expect(readWritingResolutionStatus(db, g, input.entityId))
+      .rejects.toThrow(/MULTIPLE_PENDING_AUDITS/);
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
   });
 
 });
