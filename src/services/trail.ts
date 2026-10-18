@@ -15,6 +15,7 @@ export const activitySchema = z.object({
   startedAt: z.iso.date(),
   completedAt: z.iso.date().nullable(),
   sequence: z.number().int().nonnegative(),
+  simulationDraft: z.object({started: z.number().nonnegative(), answers: z.record(z.string(), z.string())}).optional(),
 });
 export type Activity = z.infer<typeof activitySchema>;
 export type Recommendation = Omit<Activity, 'startedAt' | 'completedAt' | 'sequence'> & { score: number; reasons: string[] };
@@ -102,6 +103,23 @@ export function recommendations(data: Catalog, state: Backup, now = today()): Re
       questionIds: sim.questionIds, reviewIds: [], score: 1700, reasons: ['Consolidação dos conteúdos estudados'],
     });
   }
+  // Short pedagogical simulations use only questions whose theory has been studied.
+  // This scoring is a learning aid, never an official exam scoring rule.
+  const studiedLessons = data.lessons.filter(l => state.progress.some(p => p.id === l.id && p.completedAt)
+    && data.references.some(r=>r.id===l.id&&r.status==='publicado'&&r.contests.some(c=>active.some(a=>a.id===c.contestId))));
+  const cycle = Math.floor(studiedLessons.length / 3);
+  const autoId = `TREINO-AUTOMATICO-${cycle}`;
+  const pool = data.questions.filter(q => studiedLessons.some(l => l.id === q.contentId)
+    && q.contests.some(c => active.some(a => a.id === c)))
+    .sort((a,b) => a.id.localeCompare(b.id));
+  const byContent = studiedLessons.map(l => pool.filter(q => q.contentId === l.id));
+  const mixed = Array.from({length: 10}, (_,i) => byContent.flatMap(group => group[i] ? [group[i]!] : [])).flat().slice(0,10);
+  if(cycle > 0 && mixed.length >= 3 && !state.results.some(r => r.simulationId === autoId)) candidates.push({
+    id: `simulado:${autoId}`, kind: 'simulado', contentId: mixed[0]!.contentId,
+    title: `Simulado automático de revisão ${cycle}`, targetId: autoId,
+    questionIds: mixed.map(q => q.id), reviewIds: [], score: 1800,
+    reasons: ['Treino com conteúdo estudado; 1 ponto por acerto, sem penalidade'],
+  });
   // Only actionable candidates may influence rotation. Completed alternatives
   // must not suppress the work that is still available.
   const available = candidates.filter(c => !activities.some(a => a.id === c.id && a.completedAt));

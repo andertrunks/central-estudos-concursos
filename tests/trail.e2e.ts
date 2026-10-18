@@ -22,11 +22,11 @@ const mathTitle = 'MAT-003-01 — Regra de três simples direta';
 const nextLawTitle = '2. LEG-005-02 — Princípios, bases legais e consentimento';
 const nextMathTitle = 'MAT-003-02 — Regra de três simples inversa';
 async function finish() {
-  await page.getByRole('button', { name: 'Concluir atividade', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Atividade concluída' })).toBeVisible();
+  const previous=page.url();
+  await page.getByRole('button', { name: 'Concluir e continuar', exact: true }).click();
+  await expect(page).not.toHaveURL(previous);
 }
 async function advance(title: string, kind: string) {
-  await page.getByRole('button', { name: 'Continuar', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
   await expect(page.locator('.page-heading .eyebrow')).toContainText(kind);
 }
@@ -50,7 +50,7 @@ try {
   await page.screenshot({ path: path.join(destination, 'trilha-inicial.png'), fullPage: true });
   await finish();
   await page.reload();
-  await expect(page.getByRole('heading', { name: 'Atividade concluída' })).toBeVisible();
+  await expect(page.getByRole('heading', { level:1 })).toHaveText(mathTitle);
   // Alternate from Legislation to Mathematics despite a due Legislation review.
   await advance(mathTitle, 'AULA');
   await finish();
@@ -64,7 +64,7 @@ try {
   await advance('Prática de Regra de três', 'QUESTÕES');
   const ids = ['Q-MC-005-01', 'Q-MC-005-04', 'Q-MC-005-16'];
   await expect(page.locator('article.card fieldset')).toHaveCount(ids.length);
-  await expect(page.getByRole('button', { name: 'Concluir atividade', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: 'Concluir e continuar', exact: true })).toBeDisabled();
   for (const id of ids) {
     const question = data.questions.find(q => q.id === id)!;
     expect(question.unitIds).toContain('MAT-003-01');
@@ -77,7 +77,7 @@ try {
   await page.reload();
   await expect(page.getByRole('heading', { name: 'Vamos revisar este ponto' })).toHaveCount(ids.length);
   await expect(page.getByRole('button', { name: 'Conferir resposta' })).toHaveCount(0);
-  await expect(page.getByRole('button', { name: 'Concluir atividade', exact: true })).toBeEnabled();
+  await expect(page.getByRole('button', { name: 'Concluir e continuar', exact: true })).toBeEnabled();
   await finish();
   await advance(nextLawTitle, 'REVISÃO');
   await finish();

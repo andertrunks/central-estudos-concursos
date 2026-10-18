@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useStudy } from '../components/StudyContext';
 import { ContinueStudy } from '../components/ContinueStudy';
 import { Empty, PageHeading, Prose } from '../components/Common';
 import { catalog } from '../services/catalog';
-import { finishActivity } from '../services/storage';
+import { beginNextActivity, finishActivity } from '../services/storage';
 import { lessonUnits, recommendations, type Activity } from '../services/trail';
 import { QuestionCard } from './Practice';
 import { WritingEditor, SimulationRunner } from './Training';
@@ -20,22 +20,33 @@ export default function StudyActivity() {
 function ActivityContent({ activity: a }: { activity: Activity }) {
   const { run, state, day } = useStudy();
   const [busy, setBusy] = useState(false);
+  const navigate=useNavigate();
   const lesson = catalog.lessons.find(l => l.id === a.contentId);
   const ref = catalog.references.find(r => r.id === a.contentId);
   if (!lesson || !ref) return <Empty title="Material temporariamente indisponível">Seu progresso foi preservado.</Empty>;
   const units = lessonUnits(lesson);
   const unit = units.find(u => u.id === a.unitId);
   const writing = catalog.discursives.find(d => d.id === a.targetId);
-  const simulation = catalog.simulations.find(s => s.id === a.targetId);
+  const simulation = catalog.simulations.find(s => s.id === a.targetId) ?? (a.kind === 'simulado' && a.targetId?.startsWith('TREINO-AUTOMATICO-') ? {
+    id:a.targetId,title:a.title,contestId:ref.contests[0]!.contestId,questionIds:a.questionIds,
+    durationMinutes:a.questionIds.length*3,correctPoints:1,wrongPoints:0,blankPoints:0,source_ids:[],
+  } : undefined);
   const questions = a.questionIds.map(id => catalog.questions.find(q => q.id === id)).filter(q => q !== undefined);
   const answered = a.questionIds.filter(id => state.attempts.some(t => t.activityId === a.id && t.questionId === id)).length;
+  const simulationResult=state.results.find(r=>r.simulationId===a.targetId);
   const canFinish = a.kind === 'questões' ? answered === a.questionIds.length
     : a.kind === 'discursiva' ? state.writings.some(w => w.id === a.targetId && w.status === 'concluída')
     : a.kind === 'simulado' ? state.results.some(r => r.simulationId === a.targetId) : true;
   const upcoming = recommendations(catalog, state, day).find(next => next.id !== a.id);
   async function finish() {
     setBusy(true);
-    try { await run(() => finishActivity(a.id, catalog)); }
+    try {
+      await run(async () => {
+        await finishActivity(a.id, catalog);
+        const next=await beginNextActivity(catalog);
+        if(next) navigate(`/estudar/${encodeURIComponent(next.id)}`);
+      });
+    }
     catch { /* Provider reports failure; remain on the current activity. */ }
     finally { setBusy(false); }
   }
@@ -57,11 +68,11 @@ function ActivityContent({ activity: a }: { activity: Activity }) {
       </>}
       {a.kind === 'questões' && <><p>{answered} de {a.questionIds.length} respostas registradas. Leia o comentário de cada resposta antes de concluir.</p>{questions.map(q => <QuestionCard key={q.id} question={q} activityId={a.id} initialAttempt={state.attempts.find(t => t.activityId === a.id && t.questionId === q.id)} />)}</>}
       {a.kind === 'discursiva' && writing && <WritingEditor proposal={writing} showContinue={false} />}
-      {a.kind === 'simulado' && simulation && (!canFinish ? <SimulationRunner simulation={simulation} showContinue={false} /> : <p>Resultado registrado. Você já pode concluir esta atividade.</p>)}
+      {a.kind === 'simulado' && simulation && (!canFinish ? <SimulationRunner simulation={simulation} activity={a} showContinue={false} /> : <section><h2>Resultado registrado</h2><p>{simulationResult?.correct} acertos · {simulationResult?.wrong} erros · {simulationResult?.unanswered} em branco. {simulationResult?.score} pontos.</p>{questions.map(q=><details key={q.id}><summary>Conferir {q.id}</summary><Prose text={q.statement}/><p>Resposta: {q.options.find(o=>o.id===q.answer)?.text}</p><Prose text={q.comment}/></details>)}</section>)}
       <details className="section-space"><summary>Fontes, imagens e materiais complementares</summary><Link to={`/biblioteca/${lesson.id}`}>Consultar aula completa e referências</Link></details>
     </article>}
     <section className="card section-space activity-actions" aria-label="Próximo passo">
-      {!a.completedAt ? <><button className="button" disabled={busy || !canFinish} onClick={() => void finish()}>{busy ? 'Salvando…' : 'Concluir atividade'}</button>{!canFinish && <p>Termine e registre as respostas para liberar a conclusão.</p>}</> : <ContinueStudy label="Continuar" />}
+      {!a.completedAt ? <><button className="button" disabled={busy || !canFinish} onClick={() => void finish()}>{busy ? 'Salvando…' : 'Concluir e continuar'}</button>{!canFinish && <p>Termine e registre as respostas para liberar a conclusão.</p>}</> : <ContinueStudy label="Continuar" />}
     </section>
   </>;
 }
