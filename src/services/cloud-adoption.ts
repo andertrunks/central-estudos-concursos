@@ -1,6 +1,7 @@
 import { localAccountScope } from "./account-scope";
 import { applyBootstrapPlan, previewLegacyBootstrap, readLegacyBackup } from "./bootstrap-migration";
 import { openScopedStudyDatabase } from "./storage-db";
+import { inspectLocalCloudConsistency } from "./cloud-local-consistency";
 import {
   readCloudAdoptionSettings,
   updateCloudSyncPreference,
@@ -176,5 +177,10 @@ export async function resumeCloudSync(
   updatedAt = new Date().toISOString(),
 ) {
   requireAccount(scope);
+  // Separate StudyDB and SyncMetaDB cannot commit atomically together.
+  // Refuse opt-in on contradictory evidence; never auto-repair or clear data.
+  const check = await inspectLocalCloudConsistency(scope);
+  if (!check.readyForExplicitResume)
+    throw new Error("CLOUD_LOCAL_CONSISTENCY_BLOCKED: " + check.reasons.join(","));
   return updateCloudSyncPreference(scope, true, updatedAt);
 }
