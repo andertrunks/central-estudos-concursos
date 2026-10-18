@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-19",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "Para q(x)=x²-9, q(4) é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "-7"
+    },
+    {
+      "id": "B",
+      "text": "-5"
+    },
+    {
+      "id": "C",
+      "text": "0"
+    },
+    {
+      "id": "D",
+      "text": "7"
+    },
+    {
+      "id": "E",
+      "text": "25"
+    }
+  ],
+  "answer": "D",
+  "comment": "4²-9=16-9=7.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -373,10 +373,10 @@
   {
     "id": "MAT-006",
     "type": "aula",
-    "title": "Equações",
+    "title": "Equações e funções",
     "discipline": "Matemática/RLM",
-    "subject": "Equações",
-    "subtopic": "Funções/equações; 1º grau",
+    "subject": "Equações e funções",
+    "subtopic": "Equações/funções 1º grau comuns; 2º grau somente CRBio",
     "category": "Matemática/RLM",
     "contests": [
       {
@@ -390,10 +390,10 @@
     ],
     "coverage": "Parcial",
     "priority": 4,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
-    "notes": "Escopos não idênticos"
+    "notes": "MAT-006 composta por MC-006 e MC-015; 4 recortes; 40 questões com 16 comuns e 24 CRBio; SETEC encerra no primeiro grau."
   },
   {
     "id": "MAT-007",

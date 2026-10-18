@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-09",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Qual é o conjunto-solução de 2x²−8x=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "{0,4}"
+    },
+    {
+      "id": "B",
+      "text": "{−4,0}"
+    },
+    {
+      "id": "C",
+      "text": "{2,4}"
+    },
+    {
+      "id": "D",
+      "text": "{4}"
+    },
+    {
+      "id": "E",
+      "text": "{0}"
+    }
+  ],
+  "answer": "A",
+  "comment": "Fatore: 2x(x−4)=0. Portanto x=0 ou x=4. Dividir diretamente por x apagaria uma raiz legítima.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

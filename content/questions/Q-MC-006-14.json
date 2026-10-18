@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-14",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Quais são as raízes de x²−7x+12=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "3 e 4"
+    },
+    {
+      "id": "B",
+      "text": "−3 e −4"
+    },
+    {
+      "id": "C",
+      "text": "2 e 6"
+    },
+    {
+      "id": "D",
+      "text": "0 e 7"
+    },
+    {
+      "id": "E",
+      "text": "1 e 12"
+    }
+  ],
+  "answer": "A",
+  "comment": "x²−7x+12=(x−3)(x−4). Produto nulo: x=3 ou x=4. Soma 7, produto 12.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

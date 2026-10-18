@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-20",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Na equação 2x²−10x=0, qual é a raiz NÃO nula?",
+  "options": [
+    {
+      "id": "A",
+      "text": "0"
+    },
+    {
+      "id": "B",
+      "text": "2"
+    },
+    {
+      "id": "C",
+      "text": "−5"
+    },
+    {
+      "id": "D",
+      "text": "10"
+    },
+    {
+      "id": "E",
+      "text": "5"
+    }
+  ],
+  "answer": "E",
+  "comment": "2x²−10x=2x(x−5)=0; as raízes são 0 e 5. A raiz solicitada NÃO nula é 5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

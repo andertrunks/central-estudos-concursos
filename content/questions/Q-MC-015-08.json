@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-015-08",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-02"
+  ],
+  "statement": "Para f(x)=-x+6, o valor de f(2) é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "2"
+    },
+    {
+      "id": "B",
+      "text": "3"
+    },
+    {
+      "id": "C",
+      "text": "4"
+    },
+    {
+      "id": "D",
+      "text": "6"
+    },
+    {
+      "id": "E",
+      "text": "8"
+    }
+  ],
+  "answer": "C",
+  "comment": "-2+6=4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

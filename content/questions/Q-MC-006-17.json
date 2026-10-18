@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-17",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Quais são as soluções reais de (x²−4)/3=4?",
+  "options": [
+    {
+      "id": "A",
+      "text": "−2 e 2"
+    },
+    {
+      "id": "B",
+      "text": "−3 e 3"
+    },
+    {
+      "id": "C",
+      "text": "−4 e 4"
+    },
+    {
+      "id": "D",
+      "text": "−8 e 8"
+    },
+    {
+      "id": "E",
+      "text": "apenas 4"
+    }
+  ],
+  "answer": "C",
+  "comment": "Multiplicando a igualdade por 3: x²−4=12, ou x²=16; x=−4 ou 4. Não escolher só a raiz principal positiva.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

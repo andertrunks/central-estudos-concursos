@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-08",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Quais são as raízes de x²−5x+6=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "1 e 6"
+    },
+    {
+      "id": "B",
+      "text": "−2 e −3"
+    },
+    {
+      "id": "C",
+      "text": "−1 e −6"
+    },
+    {
+      "id": "D",
+      "text": "2 e 3"
+    },
+    {
+      "id": "E",
+      "text": "0 e 5"
+    }
+  ],
+  "answer": "D",
+  "comment": "x²−5x+6=(x−2)(x−3). Produto nulo dá x=2 ou x=3. Ambas satisfazem a igualdade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

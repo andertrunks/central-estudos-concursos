@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-16",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "A função q(x)=x²+2x+5, nos reais:",
+  "options": [
+    {
+      "id": "A",
+      "text": "possui dois zeros reais"
+    },
+    {
+      "id": "B",
+      "text": "possui um zero real duplo"
+    },
+    {
+      "id": "C",
+      "text": "não possui zeros reais"
+    },
+    {
+      "id": "D",
+      "text": "é linear"
+    },
+    {
+      "id": "E",
+      "text": "possui máximo"
+    }
+  ],
+  "answer": "C",
+  "comment": "Δ=4-20=-16<0, logo não há zeros reais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

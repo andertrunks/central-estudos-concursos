@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-006-06",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-01"
+  ],
+  "statement": "Resolva 5(x−2)=3x+8.",
+  "options": [
+    {
+      "id": "A",
+      "text": "x=6"
+    },
+    {
+      "id": "B",
+      "text": "x=9"
+    },
+    {
+      "id": "C",
+      "text": "x=8"
+    },
+    {
+      "id": "D",
+      "text": "x=10"
+    },
+    {
+      "id": "E",
+      "text": "x=12"
+    }
+  ],
+  "answer": "B",
+  "comment": "5x−10=3x+8; logo 2x=18 e x=9. No original, ambos os lados valem 35.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-11",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Qual é a raiz real distinta de x²+4x+4=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2"
+    },
+    {
+      "id": "B",
+      "text": "−2"
+    },
+    {
+      "id": "C",
+      "text": "4"
+    },
+    {
+      "id": "D",
+      "text": "−4"
+    },
+    {
+      "id": "E",
+      "text": "não há raiz real"
+    }
+  ],
+  "answer": "B",
+  "comment": "x²+4x+4=(x+2)²=0. Logo x=−2, raiz real dupla; existe apenas uma raiz distinta.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

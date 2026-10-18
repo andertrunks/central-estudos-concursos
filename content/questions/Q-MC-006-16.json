@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-16",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "A equação x²+6x+9=0 tem como única raiz real distinta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "3"
+    },
+    {
+      "id": "B",
+      "text": "−3"
+    },
+    {
+      "id": "C",
+      "text": "−3 e 3"
+    },
+    {
+      "id": "D",
+      "text": "−9"
+    },
+    {
+      "id": "E",
+      "text": "nenhuma raiz real"
+    }
+  ],
+  "answer": "B",
+  "comment": "x²+6x+9=(x+3)²; x=−3. O discriminante é zero e a raiz é dupla.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

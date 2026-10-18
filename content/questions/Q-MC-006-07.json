@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-07",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Qual é o conjunto-solução real de x²−9=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "{−9,9}"
+    },
+    {
+      "id": "B",
+      "text": "{3}"
+    },
+    {
+      "id": "C",
+      "text": "{−3,3}"
+    },
+    {
+      "id": "D",
+      "text": "{0,3}"
+    },
+    {
+      "id": "E",
+      "text": "vazio"
+    }
+  ],
+  "answer": "C",
+  "comment": "x²=9, portanto x=+3 ou −3. O conjunto real é {−3,3}; não se deve esquecer a raiz negativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}
