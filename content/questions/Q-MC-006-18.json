@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-18",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "As soluções de x²+x−42=0 são:",
+  "options": [
+    {
+      "id": "A",
+      "text": "7 e −6"
+    },
+    {
+      "id": "B",
+      "text": "6 e 7"
+    },
+    {
+      "id": "C",
+      "text": "−6 e −7"
+    },
+    {
+      "id": "D",
+      "text": "6 e −7"
+    },
+    {
+      "id": "E",
+      "text": "−7 e 7"
+    }
+  ],
+  "answer": "D",
+  "comment": "x²+x−42=(x+7)(x−6); portanto x=−7 ou 6. Confira: 49−7−42=0 e 36+6−42=0.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

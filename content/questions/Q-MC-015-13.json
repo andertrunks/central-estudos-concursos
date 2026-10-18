@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-13",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "O vértice de q(x)=x²-6x+5 é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "(2,-3)"
+    },
+    {
+      "id": "B",
+      "text": "(3,-4)"
+    },
+    {
+      "id": "C",
+      "text": "(3,4)"
+    },
+    {
+      "id": "D",
+      "text": "(-3,-4)"
+    },
+    {
+      "id": "E",
+      "text": "(6,5)"
+    }
+  ],
+  "answer": "B",
+  "comment": "xv=3 e q(3)=-4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

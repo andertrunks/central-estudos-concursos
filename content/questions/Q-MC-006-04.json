@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-006-04",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-01"
+  ],
+  "statement": "Resolva x/4+x/2=9.",
+  "options": [
+    {
+      "id": "A",
+      "text": "x=12"
+    },
+    {
+      "id": "B",
+      "text": "x=9"
+    },
+    {
+      "id": "C",
+      "text": "x=8"
+    },
+    {
+      "id": "D",
+      "text": "x=6"
+    },
+    {
+      "id": "E",
+      "text": "x=18"
+    }
+  ],
+  "answer": "A",
+  "comment": "x/4+x/2=9. Multiplique por 4: x+2x=36; 3x=36; x=12. Verificação: 3+6=9.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

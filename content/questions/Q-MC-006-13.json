@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-13",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Quais são as raízes de 2x²−7x+3=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "−3 e −1/2"
+    },
+    {
+      "id": "B",
+      "text": "1 e 3"
+    },
+    {
+      "id": "C",
+      "text": "0 e 3"
+    },
+    {
+      "id": "D",
+      "text": "1/2 e 3"
+    },
+    {
+      "id": "E",
+      "text": "2 e 3"
+    }
+  ],
+  "answer": "D",
+  "comment": "a=2, b=−7, c=3. Δ=49−24=25; x=(7±5)/4. As raízes são 3 e 1/2.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

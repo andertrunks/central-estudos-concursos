@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-14",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "O valor máximo de q(x)=-x²+4x+5 é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4"
+    },
+    {
+      "id": "B",
+      "text": "5"
+    },
+    {
+      "id": "C",
+      "text": "8"
+    },
+    {
+      "id": "D",
+      "text": "9"
+    },
+    {
+      "id": "E",
+      "text": "13"
+    }
+  ],
+  "answer": "D",
+  "comment": "xv=2 e q(2)=9; como a<0, é máximo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

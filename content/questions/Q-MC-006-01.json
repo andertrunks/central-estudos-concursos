@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-006-01",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-01"
+  ],
+  "statement": "Resolva 4x−7=21.",
+  "options": [
+    {
+      "id": "A",
+      "text": "x=5"
+    },
+    {
+      "id": "B",
+      "text": "x=6"
+    },
+    {
+      "id": "C",
+      "text": "x=7"
+    },
+    {
+      "id": "D",
+      "text": "x=8"
+    },
+    {
+      "id": "E",
+      "text": "x=9"
+    }
+  ],
+  "answer": "C",
+  "comment": "4x−7=21. Somando 7 aos dois lados, 4x=28 e x=7. Verificação: 28−7=21.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

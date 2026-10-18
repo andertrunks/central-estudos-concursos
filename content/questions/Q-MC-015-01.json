@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-015-01",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-02"
+  ],
+  "statement": "Para f(x)=3x-5, f(4) vale:",
+  "options": [
+    {
+      "id": "A",
+      "text": "5"
+    },
+    {
+      "id": "B",
+      "text": "7"
+    },
+    {
+      "id": "C",
+      "text": "9"
+    },
+    {
+      "id": "D",
+      "text": "12"
+    },
+    {
+      "id": "E",
+      "text": "17"
+    }
+  ],
+  "answer": "B",
+  "comment": "3·4-5=12-5=7.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

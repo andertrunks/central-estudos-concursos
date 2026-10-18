@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-17",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "Para q(x)=2(x-1)²-8, o valor mínimo é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "-8"
+    },
+    {
+      "id": "B",
+      "text": "-2"
+    },
+    {
+      "id": "C",
+      "text": "0"
+    },
+    {
+      "id": "D",
+      "text": "1"
+    },
+    {
+      "id": "E",
+      "text": "8"
+    }
+  ],
+  "answer": "A",
+  "comment": "A forma de vértice mostra mínimo -8 em x=1.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-015-05",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-02"
+  ],
+  "statement": "Um serviço cobra R$ 50 fixos e R$ 12 por unidade. Para 8 unidades, o custo é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "R$ 96"
+    },
+    {
+      "id": "B",
+      "text": "R$ 112"
+    },
+    {
+      "id": "C",
+      "text": "R$ 134"
+    },
+    {
+      "id": "D",
+      "text": "R$ 146"
+    },
+    {
+      "id": "E",
+      "text": "R$ 150"
+    }
+  ],
+  "answer": "D",
+  "comment": "50+12·8=50+96=146.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

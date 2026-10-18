@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-12",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Sobre a equação x²+1=0, no conjunto dos números reais, é correto afirmar:",
+  "options": [
+    {
+      "id": "A",
+      "text": "as soluções são −1 e 1"
+    },
+    {
+      "id": "B",
+      "text": "a solução é 0"
+    },
+    {
+      "id": "C",
+      "text": "não há raiz real"
+    },
+    {
+      "id": "D",
+      "text": "a solução é 1"
+    },
+    {
+      "id": "E",
+      "text": "a solução é −1"
+    }
+  ],
+  "answer": "C",
+  "comment": "Isolando, x²=−1. Nenhum número real elevado ao quadrado vale −1. O conjunto-solução real é vazio.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

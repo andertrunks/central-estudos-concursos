@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-015-06",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-02"
+  ],
+  "statement": "Uma função afim possui f(0)=5 e f(3)=14. Sua expressão é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "2x+5"
+    },
+    {
+      "id": "B",
+      "text": "3x+5"
+    },
+    {
+      "id": "C",
+      "text": "3x+14"
+    },
+    {
+      "id": "D",
+      "text": "5x+3"
+    },
+    {
+      "id": "E",
+      "text": "9x+5"
+    }
+  ],
+  "answer": "B",
+  "comment": "a=(14-5)/3=3 e b=5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-006-03",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-01"
+  ],
+  "statement": "Resolva 3x+5=2x+17.",
+  "options": [
+    {
+      "id": "A",
+      "text": "x=6"
+    },
+    {
+      "id": "B",
+      "text": "x=8"
+    },
+    {
+      "id": "C",
+      "text": "x=10"
+    },
+    {
+      "id": "D",
+      "text": "x=14"
+    },
+    {
+      "id": "E",
+      "text": "x=12"
+    }
+  ],
+  "answer": "E",
+  "comment": "3x+5=2x+17. Subtraindo 2x e depois 5, x=12. Conferência: 41=41.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

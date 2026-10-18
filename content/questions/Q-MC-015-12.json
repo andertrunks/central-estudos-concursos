@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-12",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "Os zeros de q(x)=x²-6x+5 são:",
+  "options": [
+    {
+      "id": "A",
+      "text": "1 e 5"
+    },
+    {
+      "id": "B",
+      "text": "-1 e -5"
+    },
+    {
+      "id": "C",
+      "text": "2 e 4"
+    },
+    {
+      "id": "D",
+      "text": "0 e 6"
+    },
+    {
+      "id": "E",
+      "text": "3 e 5"
+    }
+  ],
+  "answer": "A",
+  "comment": "x²-6x+5=(x-1)(x-5).",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

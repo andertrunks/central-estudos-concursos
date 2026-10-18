@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-006-10",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-03"
+  ],
+  "statement": "Qual é o discriminante de 2x²−3x+1=0?",
+  "options": [
+    {
+      "id": "A",
+      "text": "−1"
+    },
+    {
+      "id": "B",
+      "text": "0"
+    },
+    {
+      "id": "C",
+      "text": "2"
+    },
+    {
+      "id": "D",
+      "text": "5"
+    },
+    {
+      "id": "E",
+      "text": "1"
+    }
+  ],
+  "answer": "E",
+  "comment": "Δ=b²−4ac=(−3)²−4×2×1=9−8=1. O quadrado de −3 é positivo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

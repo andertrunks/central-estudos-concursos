@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-015-20",
+  "contentId": "MAT-006",
+  "banca": "Autoral — treino",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-006-04"
+  ],
+  "statement": "O valor máximo de q(x)=-2x²+8x é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4"
+    },
+    {
+      "id": "B",
+      "text": "6"
+    },
+    {
+      "id": "C",
+      "text": "8"
+    },
+    {
+      "id": "D",
+      "text": "10"
+    },
+    {
+      "id": "E",
+      "text": "16"
+    }
+  ],
+  "answer": "C",
+  "comment": "xv=-8/(2·-2)=2; q(2)=-8+16=8.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

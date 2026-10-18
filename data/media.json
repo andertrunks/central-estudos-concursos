@@ -706,5 +706,16 @@
     "file": "media/MAT-011-IMG-001.png",
     "verifiedAt": "2026-10-17",
     "original": true
+  },
+  {
+    "id": "MAT-006-IMG-001",
+    "contentId": "MAT-006",
+    "type": "imagem",
+    "title": "Equações e funções: reta, parábola, zeros e vértice",
+    "caption": "Infográfico original que compara equações e funções de primeiro grau (comuns CRBio+SETEC) e de segundo grau (extensão CRBio).",
+    "alt": "Infográfico: equação linear ax+b=0 tem solução x=-b/a, sua função afim é uma reta; equação quadrática ax²+bx+c=0 tem discriminante e até duas raízes reais, e sua função quadrática é uma parábola com vértice e concavidade. Segundo grau é extensão exclusiva CRBio.",
+    "file": "media/MAT-006-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]
