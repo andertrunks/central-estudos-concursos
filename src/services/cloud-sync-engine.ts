@@ -320,7 +320,7 @@ export async function applyPushResults(
             !Number.isSafeInteger(result.revision) ||
             result.revision !== priorRemote.revision + 1 ||
             !Number.isSafeInteger(result.changeSeq) ||
-            result.changeSeq <= priorRemote.changeSeq
+            (result.changeSeq ?? 0) <= priorRemote.changeSeq
           ))
         ) throw new Error("WRITING_RESOLUTION_STALE_CAS_ACK");
       }
