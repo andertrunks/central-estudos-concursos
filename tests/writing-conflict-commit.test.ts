@@ -411,4 +411,66 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
     expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
   });
 
+  it("retries an unacknowledged sending head after reload without duplicating the CAS request", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    const initialBatch = await preparePushBatch(db, g);
+    expect(initialBatch.map((item) => item.mutationId)).toEqual([entry.mutationId]);
+    const fingerprint = initialBatch[0]?.requestHash;
+    const dbName = db.name;
+    db.close();
+    const scope = await deriveAccountScope("project-ref", USER);
+    if (scope.mode !== "account") throw new Error("Account scope missing");
+    const reopened = await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+    handles.add(reopened);
+    const retryBatch = await preparePushBatch(reopened, g);
+    expect(retryBatch).toHaveLength(1);
+    expect(retryBatch[0]?.mutationId).toBe(entry.mutationId);
+    expect(retryBatch[0]?.requestHash).toBe(fingerprint);
+    expect((await readAudit(reopened)).state).toBe("awaiting_cas");
+    await applyPushResults(reopened, g, [{
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "duplicate", originalOutcome: "applied", revision: 3, changeSeq: 3,
+    }]);
+    expect((await readAudit(reopened)).state).toBe("cas_applied");
+    expect(await allMutations(reopened)).toHaveLength(0);
+  });
+
+  it("ignores a delayed duplicate CAS ACK after an already-applied result", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await preparePushBatch(db, g);
+    const reply = {
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "applied" as const, revision: 3, changeSeq: 3,
+    };
+    await applyPushResults(db, g, [reply]);
+    await applyPushResults(db, g, [reply]);
+    const audit = await readAudit(db);
+    const remote = await db.get("syncOutbox", "__cloud_remote__:writing:" + input.entityId);
+    expect(audit.state).toBe("cas_applied");
+    expect(await allMutations(db)).toHaveLength(0);
+    expect(remote?.recordType === "remote" && remote.revision).toBe(3);
+    expect(remote?.recordType === "remote" && remote.changeSeq).toBe(3);
+  });
+
+  it("rolls back an out-of-order CAS ACK, then accepts a valid successor without losing the archive", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await preparePushBatch(db, g);
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "applied", revision: 3, changeSeq: 2,
+    }])).rejects.toThrow(/STALE_CAS_ACK/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("sending");
+    await applyPushResults(db, g, [{
+      mutationId: entry.mutationId, requestHash: entry.requestHash,
+      outcome: "applied", revision: 3, changeSeq: 3,
+    }]);
+    expect((await readAudit(db)).state).toBe("cas_applied");
+    expect((await readAudit(db)).supersededMutations[0]?.id).toBe(previous.id);
+    expect((await db.get("syncOutbox", "__cloud_remote__:writing:" + input.entityId))?.recordType).toBe("remote");
+  });
+
 });
