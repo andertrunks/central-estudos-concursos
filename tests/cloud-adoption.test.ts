@@ -14,7 +14,7 @@ import {
 } from "../src/services/cloud-adoption";
 import { ANNULLED_ING001_032 } from "../src/services/cloud-protocol";
 import { inspectLocalCloudConsistency } from "../src/services/cloud-local-consistency";
-import { openSyncMetaDatabase, writeCloudAdoptionSettings } from "../src/services/sync-meta";
+import { adoptionChoiceStamp, openSyncMetaDatabase, updateCloudSyncPreference, writeCloudAdoptionSettings } from "../src/services/sync-meta";
 import { openLegacyStudyDatabase, openScopedStudyDatabase } from "../src/services/storage-db";
 import type { CloudAdoptionSettings } from "../src/services/sync-meta";
 import type { StudyProgress } from "../src/types/schema";
@@ -294,6 +294,54 @@ describe("PR-6 adoção explícita — preflight local", () => {
     expect((await inspectLocalCloudConsistency(b.scope)).readyForExplicitResume).toBe(true);
     await expect(inspectLocalCloudConsistency({ mode: "off", scopeHash: null, studyDbName: "central-estudos", syncMetaDbName: null }))
       .rejects.toThrow(/ACCOUNT_REQUIRED/);
+  });
+
+  it("recusa preferência após mudança da conta durante transação e faz rollback", async () => {
+    const { scope } = await fixture("epoch-during-transaction");
+    await startEmptyAccount(scope);
+    let checks = 0;
+    const guard = { isCurrent: () => ++checks < 7 };
+    await expect(resumeCloudSync(scope, "2026-10-17T23:55:00.000Z", guard))
+      .rejects.toThrow(/STALE_ACCOUNT_SCOPE/);
+    expect(checks).toBeGreaterThanOrEqual(7);
+    const decision = await readAdoptionDecision(scope);
+    expect(decision?.syncEnabled).toBe(false);
+    expect(decision?.syncPreferenceUpdatedAt).toBeUndefined();
+  });
+
+  it("impede ativação se a decisão SyncMetaDB mudar entre preflight e commit", async () => {
+    const { scope } = await fixture("preflight-choice-race");
+    const adopted = await startEmptyAccount(scope);
+    const stamp = adoptionChoiceStamp(adopted);
+    await writeCloudAdoptionSettings(scope, {
+      ...adopted,
+      decidedAt: "2026-10-17T23:57:00.000Z",
+    });
+    await expect(updateCloudSyncPreference(scope, true, "2026-10-17T23:58:00.000Z", {
+      expectedChoiceStamp: stamp,
+    })).rejects.toThrow(/CLOUD_ADOPTION_CHANGED_AFTER_PREFLIGHT/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
+  });
+
+  it("transação SyncMetaDB recusa conflito recém-criado entre inspeção e gravação", async () => {
+    const { scope } = await fixture("late-legacy-conflict");
+    await startEmptyAccount(scope);
+    const before = await inspectLocalCloudConsistency(scope);
+    expect(before.readyForExplicitResume).toBe(true);
+    const meta = await openSyncMetaDatabase(scope);
+    await meta.put("conflicts", {
+      id: "qa-late-conflict", entityType: "writing", entityId: "QA-WRITING-1",
+      localPayload: { text: "fictício A" }, remotePayload: { text: "fictício B" },
+      detectedAt: "2026-10-17T23:59:00.000Z",
+    });
+    meta.close();
+    await expect(updateCloudSyncPreference(scope, true, "2026-10-17T23:59:30.000Z", {
+      expectedChoiceStamp: before.observedChoiceStamp,
+    })).rejects.toThrow(/SYNC_META_CONFLICTS_PRESENT/);
+    expect((await readAdoptionDecision(scope))?.syncEnabled).toBe(false);
+    const keep = await openSyncMetaDatabase(scope);
+    expect(await keep.count("conflicts")).toBe(1);
+    keep.close();
   });
 
 });
