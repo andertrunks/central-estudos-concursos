@@ -1,5 +1,5 @@
 import { openScopedStudyDatabase, type StudyDBV3 } from "./storage-db";
-import { openSyncMetaDatabase } from "./sync-meta";
+import { adoptionChoiceStamp, openSyncMetaDatabase } from "./sync-meta";
 import { isMutationRecord } from "./cloud-protocol";
 import type { AccountScope } from "../types/cloud";
 import type { IDBPDatabase } from "idb";
@@ -12,6 +12,7 @@ import type { IDBPDatabase } from "idb";
 export async function inspectLocalCloudConsistency(scope: AccountScope): Promise<{
   readyForExplicitResume: boolean;
   reasons: string[];
+  observedChoiceStamp: string | null;
 }> {
   if (scope.mode !== "account") throw new Error("CLOUD_CONSISTENCY_ACCOUNT_REQUIRED");
   const study = await openScopedStudyDatabase(scope);
@@ -55,7 +56,7 @@ export async function inspectLocalCloudConsistency(scope: AccountScope): Promise
         (row.state === "cas_conflict" || row.state === "needs_review")))
         reasons.push("STUDY_DB_UNRESOLVED_WRITING_AUDIT");
 
-      return { readyForExplicitResume: reasons.length === 0, reasons };
+      return { readyForExplicitResume: reasons.length === 0, reasons, observedChoiceStamp: adoptionChoiceStamp(adoption ?? null) };
     } finally {
       meta.close();
     }
