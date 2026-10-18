@@ -37,3 +37,7 @@ jobs:
             }));
           }
           NODE
+      - name: Read patched package distribution metadata (no install)
+        shell: bash
+        run: |
+          npm view source-map-js@1.2.2 version dist.tarball dist.integrity engines license --json
