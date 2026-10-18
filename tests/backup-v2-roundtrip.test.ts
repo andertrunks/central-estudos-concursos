@@ -8,6 +8,7 @@ import {
   parseBackupV2,
 } from "../src/services/backup-v2";
 import { ANNULLED_ING001_032 } from "../src/services/cloud-protocol";
+import { putCloudEntity } from "../src/services/cloud-mutations";
 import { openLegacyStudyDatabase, openScopedStudyDatabase, type StudyDBV3 } from "../src/services/storage-db";
 import { setActiveStudyScope } from "../src/services/study-storage-route";
 import { progressFor } from "../src/services/study";
@@ -296,4 +297,53 @@ describe("PR-6 BackupV2 — import e round-trip", () => {
     expect(() => parseBackupV2({ ...emptyV2(), scopeHash: "secret" })).toThrow();
     expect(() => parseBackupV2({ ...emptyV2(), revealedCorrections: [] })).toThrow();
   });
+  it("aborta restauração de Writing com mutação queued e preserva os demais stores", async () => {
+    const scope = await account("pending-writing-restore");
+    setActiveStudyScope(scope);
+    const target = await db(scope);
+    const writing = {
+      id: "QA-WRITING-1", theme: "SQL", contentIds: ["TI-BD-003"],
+      contestId: "CRBIO01-2026-ATI", text: "Texto local em espera",
+      date: "2026-10-17", status: "rascunho" as const, evaluation: "", notes: "",
+    };
+    await putCloudEntity(target, "writings", writing.id, writing);
+    await target.put("progress", {
+      ...progressFor("TI-BD-003", "2026-10-13"), percent: 20, status: "em andamento",
+    });
+    const beforeOutbox = await target.getAll("syncOutbox");
+    target.close();
+    await expect(importPedagogicalBackup({
+      ...emptyV2(),
+      writings: [{ ...writing, text: "Backup não deve sobrescrever" }],
+      progress: [{ ...progressFor("TI-BD-003", "2026-10-13"), percent: 95, status: "em andamento" }],
+    })).rejects.toThrow(/BACKUP_WRITING_SYNC_CONFLICT/);
+    const verify = await db(scope);
+    expect((await verify.get("writings", writing.id))?.text).toBe(writing.text);
+    expect((await verify.get("progress", "TI-BD-003"))?.percent).toBe(20);
+    expect(await verify.getAll("syncOutbox")).toEqual(beforeOutbox);
+    verify.close();
+  });
+
+  it("não sobrescreve Writing em blocked_conflict ao importar BackupV2", async () => {
+    const scope = await account("blocked-writing-restore");
+    setActiveStudyScope(scope);
+    const target = await db(scope);
+    const writing = {
+      id: "QA-WRITING-2", theme: "SQL", contentIds: ["TI-BD-003"],
+      contestId: "CRBIO01-2026-ATI", text: "Texto local bloqueado",
+      date: "2026-10-17", status: "rascunho" as const, evaluation: "", notes: "",
+    };
+    const entry = await putCloudEntity(target, "writings", writing.id, writing);
+    await target.put("syncOutbox", { ...entry, status: "blocked_conflict" });
+    target.close();
+    await expect(importPedagogicalBackup({
+      ...emptyV2(),
+      writings: [{ ...writing, text: "Importação bloqueada" }],
+    })).rejects.toThrow(/BACKUP_WRITING_SYNC_CONFLICT/);
+    const verify = await db(scope);
+    expect((await verify.get("writings", writing.id))?.text).toBe(writing.text);
+    expect((await verify.get("syncOutbox", entry.id) as typeof entry).status).toBe("blocked_conflict");
+    verify.close();
+  });
+
 });
