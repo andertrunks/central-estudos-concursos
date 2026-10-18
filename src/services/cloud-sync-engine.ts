@@ -307,6 +307,23 @@ export async function applyPushResults(
       if (!entryRaw || !isMutationRecord(entryRaw)) continue;
       if (entryRaw.requestHash !== result.requestHash) continue;
       const outcome = effectiveOutcome(result);
+      // PR-6 resolution ACKs are never trusted while a CAS write is only queued.
+      // Preserve the local audit and outbox on forged, replayed or stale replies.
+      const resolutionAudit = await store.get("__writing_conflict_audit__:" + entryRaw.mutationId);
+      if (resolutionAudit?.recordType === "writing_conflict_audit") {
+        if (entryRaw.status !== "sending" || resolutionAudit.state !== "awaiting_cas") continue;
+        const priorRemote = await store.get(remoteStateId(entryRaw.entityKind, entryRaw.entityId));
+        if (
+          priorRemote?.recordType !== "remote" ||
+          priorRemote.revision !== entryRaw.baseRevision ||
+          (outcome === "applied" && (
+            !Number.isSafeInteger(result.revision) ||
+            result.revision !== priorRemote.revision + 1 ||
+            !Number.isSafeInteger(result.changeSeq) ||
+            result.changeSeq <= priorRemote.changeSeq
+          ))
+        ) throw new Error("WRITING_RESOLUTION_STALE_CAS_ACK");
+      }
       if (outcome === "applied") {
         if (!result.revision || !result.changeSeq)
           throw new Error("ACK aplicado sem revisão/change_seq");
