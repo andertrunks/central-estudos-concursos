@@ -84,7 +84,7 @@ describe("PR-6 conflict UX foundation", () => {
       id: "WRITING-1", theme: "Redação de teste",
       contentIds: ["TI-BD-003"], contestId: "CRBIO01-2026-ATI",
       text: "Texto local de exemplo", date: "2026-10-17",
-      status: "rascunho", evaluation: "", notes: "",
+      status: "rascunho" as const, evaluation: "", notes: "",
     };
     // Server rendering never triggers a write or account/network discovery.
     const html = renderToStaticMarkup(
