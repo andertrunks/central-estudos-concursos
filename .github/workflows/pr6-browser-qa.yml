@@ -15,8 +15,13 @@ jobs:
   browser-smoke:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, msedge]
     env:
       VITE_CLOUD_MODE: "off"
+      PR6_BROWSER: ${{ matrix.browser }}
       SITE_URL: "http://127.0.0.1:4174/central-estudos-concursos/"
       OUTPUT_DIR: "test-results/pr6-browser"
     steps:
@@ -27,8 +32,8 @@ jobs:
           cache: npm
       - name: Install exactly locked dependencies
         run: npm ci
-      - name: Install disposable Playwright Chromium
-        run: npx playwright install --with-deps chromium
+      - name: Install disposable Playwright browser
+        run: npx playwright install --with-deps ${{ matrix.browser }}
       - name: Build with cloud transport disabled
         run: npm run build
       - name: Start local preview (never production)
@@ -47,7 +52,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pr6-browser-qa
+          name: pr6-browser-qa-${{ matrix.browser }}
           path: test-results/pr6-browser/
           if-no-files-found: ignore
           retention-days: 14
