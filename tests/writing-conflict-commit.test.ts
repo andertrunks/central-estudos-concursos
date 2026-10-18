@@ -120,10 +120,10 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
     const { entry } = await commitWritingConflictResolution(db, g, input);
     const heads = (await allMutations(db)).filter((item) => item.predecessorMutationId === null);
     expect(heads).toHaveLength(1);
-    expect(heads[0].id).toBe(entry.id);
-    expect(heads[0].status).toBe("queued");
-    expect(heads[0].baseRevision).toBe(2);
-    expect(heads[0].targetPayload).toEqual(local);
+    expect(heads[0]?.id).toBe(entry.id);
+    expect(heads[0]?.status).toBe("queued");
+    expect(heads[0]?.baseRevision).toBe(2);
+    expect(heads[0]?.targetPayload).toEqual(local);
     expect(await db.get("syncOutbox", previous.id)).toBeUndefined();
     const audit = await readAudit(db);
     expect(audit.state).toBe("awaiting_cas");
@@ -157,7 +157,7 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
       currentPayloadHash: "sha256:changed", deleted: false,
     }]);
     expect((await readAudit(db)).state).toBe("cas_conflict");
-    expect((await allMutations(db))[0].status).toBe("blocked_conflict");
+    expect((await allMutations(db))[0]?.status).toBe("blocked_conflict");
     db.close();
   });
 
