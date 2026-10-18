@@ -306,6 +306,16 @@ export async function beginNextActivity(data: Catalog, day = today()) {
   return activity;
 }
 
+export async function saveSimulationDraft(activityId: string, draft: {started:number;answers:Record<string,string>}) {
+  const db=await database();
+  const tx=db.transaction('activities','readwrite');
+  const a=await tx.store.get(activityId);
+  if(!a || a.kind !== 'simulado' || a.completedAt) throw new Error('Simulado indisponível.');
+  if(Object.keys(draft.answers).some(id=>!a.questionIds.includes(id)))throw new Error('Questão fora do simulado.');
+  await tx.store.put(activitySchema.parse({...a,simulationDraft:draft}));
+  await tx.done;
+}
+
 export async function finishActivity(id: string, data: Catalog, day = today()) {
   const db = await database();
   const tx = db.transaction(['activities','progress','reviews','attempts','writings','results'], 'readwrite');

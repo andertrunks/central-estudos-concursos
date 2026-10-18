@@ -7,7 +7,8 @@ import type {
 } from "../types/schema";
 import { catalog } from "../services/catalog";
 import { today } from "../services/study";
-import { saveWriting, completeSimulation } from "../services/storage";
+import type { Activity } from "../services/trail";
+import { saveWriting, completeSimulation, saveSimulationDraft } from "../services/storage";
 import { useStudy } from "../components/StudyContext";
 import { Empty, PageHeading, formatDate, Prose } from "../components/Common";
 import { ContinueStudy } from '../components/ContinueStudy';
@@ -104,15 +105,25 @@ export function Discursives() {
     </>
   );
 }
-export function SimulationRunner({ simulation: s, showContinue = true }: { simulation: Simulation; showContinue?: boolean }) {
+export function SimulationRunner({ simulation: s, activity, showContinue = true }: { simulation: Simulation; activity?:Activity; showContinue?: boolean }) {
   const { run } = useStudy();
-  const [started, setStarted] = useState<number | null>(null);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [started, setStarted] = useState<number | null>(activity?.simulationDraft?.started ?? null);
+  const [answers, setAnswers] = useState<Record<string, string>>(activity?.simulationDraft?.answers ?? {});
   const [result, setResult] = useState<SimulationResult | null>(null);
   const [busy, setBusy] = useState(false);
   const questions = catalog.questions.filter((q) =>
     s.questionIds.includes(q.id),
   );
+  async function saveDraft(next:Record<string,string>, start=started) {
+    if(start===null)return;
+    const previousAnswers=answers,previousStart=started;
+    setAnswers(next);setStarted(start);
+    setBusy(true);
+    try {
+      if(activity)await run(()=>saveSimulationDraft(activity.id,{started:start,answers:next}));
+    } catch { setAnswers(previousAnswers);setStarted(previousStart); /* Provider reports the failure. */ }
+    finally {setBusy(false)}
+  }
   async function finish(finishedAt: number) {
     if (started === null) return;
     setBusy(true);
@@ -191,12 +202,11 @@ export function SimulationRunner({ simulation: s, showContinue = true }: { simul
           ))}
         </div>
       ) : started === null ? (
-        <button onClick={() => setStarted(Date.now())}>Iniciar simulado</button>
+        <button disabled={busy} onClick={() => void saveDraft({},Date.now())}>Iniciar simulado</button>
       ) : (
         <>
           <p className="notice">
-            Simulado em andamento. Finalize antes de sair para registrar suas
-            respostas.
+            Simulado em andamento. Na trilha, suas respostas são salvas a cada escolha e podem ser retomadas após sair.
           </p>
           {questions.map((q) => (
             <fieldset disabled={busy} key={q.id}>
@@ -207,12 +217,12 @@ export function SimulationRunner({ simulation: s, showContinue = true }: { simul
                     type="radio"
                     name={`sim-${q.id}`}
                     checked={answers[q.id] === o.id}
-                    onChange={() => setAnswers({ ...answers, [q.id]: o.id })}
+                    onChange={() => void saveDraft({ ...answers, [q.id]: o.id })}
                   />
                   {o.text}
                 </label>
               ))}
-              <button onClick={() => setAnswers({ ...answers, [q.id]: "" })}>
+              <button onClick={() => void saveDraft({ ...answers, [q.id]: "" })}>
                 Deixar em branco
               </button>
             </fieldset>
@@ -230,18 +240,14 @@ export function Simulations() {
   return (
     <>
       <PageHeading eyebrow="TREINO EM CONDIÇÕES DE PROVA" title="Simulados">
-        Configuração e pontuação próprias para cada concurso.
+        A trilha prepara simulados curtos com os conteúdos já estudados, a cada três aulas completas. O treino automático usa um ponto por acerto e não reproduz a nota oficial de um concurso.
       </PageHeading>
       {catalog.simulations.length ? (
         catalog.simulations.map((s) => (
           <SimulationRunner key={s.id} simulation={s} />
         ))
       ) : (
-        <Empty title="Nenhum simulado publicado">
-          CRBio usa certo/errado e SETEC, múltipla escolha. Os simulados serão
-          disponibilizados após a validação das questões e das regras de
-          pontuação.
-        </Empty>
+        <section className="card"><h2>Simulados pela sua trilha</h2><p>Estude e pratique pela sequência automática. Quando houver conteúdo estudado suficiente, o próximo passo será um simulado de revisão.</p><ContinueStudy /></section>
       )}
       {state.results.length > 0 && (
         <section>
