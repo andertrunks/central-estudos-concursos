@@ -180,6 +180,8 @@ export async function resumeCloudSync(
   // Separate StudyDB and SyncMetaDB cannot commit atomically together.
   // Refuse opt-in on contradictory evidence; never auto-repair or clear data.
   const check = await inspectLocalCloudConsistency(scope);
+  if (check.reasons.includes("LOCAL_ONLY_CHOICE"))
+    throw new Error("Copie ou inicie o espaço isolado da conta antes de reativar a sincronização");
   if (!check.readyForExplicitResume)
     throw new Error("CLOUD_LOCAL_CONSISTENCY_BLOCKED: " + check.reasons.join(","));
   return updateCloudSyncPreference(scope, true, updatedAt);
