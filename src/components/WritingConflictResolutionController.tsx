@@ -45,10 +45,6 @@ export function WritingConflictResolutionController({
 
   useEffect(() => {
     let mounted = true;
-    setLoading(true);
-    setChoice(null);
-    setAudit(null);
-    setError("");
     void readWritingResolutionStatus(db, guard, snapshot.entityId)
       .then((record) => { if (mounted) setAudit(record); })
       .catch((cause: unknown) => {
