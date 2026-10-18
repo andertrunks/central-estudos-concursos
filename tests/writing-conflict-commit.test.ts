@@ -234,4 +234,105 @@ describe("PR-6 Writing local atomic conflict resolution staging", () => {
     expect((await readAudit(db)).state).toBe("awaiting_cas");
     db.close();
   });
+  it("aborts atomically when scope switches immediately before transaction commit", async () => {
+    const { db, input, previous, local } = await conflictFixture();
+    const state = { checks: 0 };
+    const switchingGuard: SyncScopeGuard = {
+      userId: USER,
+      scopeEpoch: 1,
+      isCurrent: () => ++state.checks < 4,
+    };
+    await expect(commitWritingConflictResolution(db, switchingGuard, input))
+      .rejects.toThrow(/STALE_ACCOUNT_SCOPE/);
+    expect(state.checks).toBeGreaterThanOrEqual(4);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+    expect(await db.get("syncOutbox", "resolution-1")).toBeUndefined();
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-1")).toBeUndefined();
+  });
+
+  it("rejects stale local payload without deleting the blocked chain", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const later = writing("Editing continued after the conflict preview");
+    await db.put("writings", later);
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/LOCAL_CHANGED/);
+    expect((await db.get("writings", local.id))?.text).toBe(later.text);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-1")).toBeUndefined();
+  });
+
+  it("rejects a remote tombstone even when the preview supplied an older payload", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const key = "__cloud_remote__:writing:" + input.entityId;
+    const remoteMeta = await db.get("syncOutbox", key);
+    if (remoteMeta?.recordType !== "remote") throw new Error("Missing remote metadata");
+    await db.put("syncOutbox", { ...remoteMeta, deleted: true, payload: null, payloadHash: null, revision: 3, changeSeq: 3 });
+    await expect(commitWritingConflictResolution(db, g, input))
+      .rejects.toThrow(/REMOTE_CHANGED/);
+    expect((await db.get("syncOutbox", previous.id) as SyncOutboxEntry).status).toBe("blocked_conflict");
+    expect((await db.get("writings", local.id))?.text).toBe(local.text);
+  });
+
+  it("rejects remote hash spoofing and invalid remote cursor without writing", async () => {
+    const { db, g, input, previous } = await conflictFixture();
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input,
+      remotePayloadHash: "sha256:invalid",
+    })).rejects.toThrow(/REMOTE_HASH_MISMATCH/);
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input,
+      remoteChangeSeq: 0,
+    })).rejects.toThrow(/CHANGE_SEQ_INVALID/);
+    expect(await db.get("syncOutbox", previous.id)).toBeDefined();
+    expect(await db.get("syncOutbox", "resolution-1")).toBeUndefined();
+  });
+
+  it("does not accept a mismatched or incomplete CAS ACK", async () => {
+    const { db, g, input } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    await applyPushResults(db, g, [{
+      mutationId: entry.id,
+      requestHash: "sha256:wrong",
+      outcome: "applied",
+      revision: 3,
+      changeSeq: 3,
+    }]);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect(await db.get("syncOutbox", entry.id)).toBeDefined();
+    await expect(applyPushResults(db, g, [{
+      mutationId: entry.id,
+      requestHash: entry.requestHash,
+      outcome: "applied",
+    }])).rejects.toThrow(/sem revisão/);
+    expect((await readAudit(db)).state).toBe("awaiting_cas");
+    expect((await db.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+  });
+
+  it("survives database close and reopen while CAS is still pending", async () => {
+    const { db, g, input, previous, local } = await conflictFixture();
+    const { entry } = await commitWritingConflictResolution(db, g, input);
+    const dbName = db.name;
+    db.close();
+    const scope = await deriveAccountScope("project-ref", USER);
+    if (scope.mode !== "account") throw new Error("Account scope missing");
+    const reopened = await openScopedStudyDatabase(scope, { dbName }) as IDBPDatabase<StudyDBV3>;
+    handles.add(reopened);
+    expect((await readAudit(reopened)).state).toBe("awaiting_cas");
+    expect((await readAudit(reopened)).supersededMutations[0]?.id).toBe(previous.id);
+    expect((await reopened.get("syncOutbox", entry.id) as SyncOutboxEntry).status).toBe("queued");
+    expect((await reopened.get("writings", local.id))?.text).toBe(local.text);
+    expect(await allMutations(reopened)).toHaveLength(1);
+  });
+
+  it("rejects a second resolution on the same blocked snapshot after first staging", async () => {
+    const { db, g, input } = await conflictFixture();
+    await commitWritingConflictResolution(db, g, input);
+    await expect(commitWritingConflictResolution(db, g, {
+      ...input, mutationId: "resolution-2",
+    })).rejects.toThrow(/BLOCKED_CHAIN_CHANGED/);
+    expect((await allMutations(db)).map((x) => x.id)).toEqual(["resolution-1"]);
+    expect(await db.get("syncOutbox", "__writing_conflict_audit__:resolution-2")).toBeUndefined();
+  });
+
 });
