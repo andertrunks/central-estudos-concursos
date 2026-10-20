@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-07",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "O valor de uma tabela passa de 80 para 100 unidades. Qual é o aumento percentual em relação ao valor inicial?",
+  "options": [
+    {
+      "id": "A",
+      "text": "15%"
+    },
+    {
+      "id": "B",
+      "text": "20%"
+    },
+    {
+      "id": "C",
+      "text": "22%"
+    },
+    {
+      "id": "D",
+      "text": "25%"
+    },
+    {
+      "id": "E",
+      "text": "80%"
+    }
+  ],
+  "answer": "D",
+  "comment": "Aumento absoluto=20. Base inicial=80. Percentual=20/80×100=25%.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

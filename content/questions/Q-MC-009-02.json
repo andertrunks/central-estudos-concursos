@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-02",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Uma tabela apresenta x=1,2,3 e y=7,10,13. Se a regra afim de acréscimo constante continuar, qual será y para x=4?",
+  "options": [
+    {
+      "id": "A",
+      "text": "13"
+    },
+    {
+      "id": "B",
+      "text": "14"
+    },
+    {
+      "id": "C",
+      "text": "15"
+    },
+    {
+      "id": "D",
+      "text": "16"
+    },
+    {
+      "id": "E",
+      "text": "17"
+    }
+  ],
+  "answer": "D",
+  "comment": "As diferenças sucessivas de y são 3. Logo, após 13 vem 16, correspondente a y=3x+4 para x=4.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

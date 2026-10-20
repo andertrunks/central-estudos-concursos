@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-19",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Uma tabela apresenta duas massas: 12 kg e 800 g. Qual é a soma em quilogramas?",
+  "options": [
+    {
+      "id": "A",
+      "text": "12,8 kg"
+    },
+    {
+      "id": "B",
+      "text": "20 kg"
+    },
+    {
+      "id": "C",
+      "text": "12,08 kg"
+    },
+    {
+      "id": "D",
+      "text": "800,12 kg"
+    },
+    {
+      "id": "E",
+      "text": "12.800 kg"
+    }
+  ],
+  "answer": "A",
+  "comment": "800 g=0,8 kg. A soma é 12+0,8=12,8 kg. Antes de comparar medidas, uniformize unidades.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

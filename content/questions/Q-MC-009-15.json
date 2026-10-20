@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-15",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Três barras representam 15, 20 e 25 unidades de categorias distintas e sem sobreposição. Qual é o total?",
+  "options": [
+    {
+      "id": "A",
+      "text": "40"
+    },
+    {
+      "id": "B",
+      "text": "45"
+    },
+    {
+      "id": "C",
+      "text": "50"
+    },
+    {
+      "id": "D",
+      "text": "55"
+    },
+    {
+      "id": "E",
+      "text": "60"
+    }
+  ],
+  "answer": "E",
+  "comment": "Soma de parcelas distintas: 15+20+25=60 unidades.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

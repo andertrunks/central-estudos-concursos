@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-13",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Um gráfico usa eixo vertical começando em 90 e apresenta valores 95 e 100. Qual é a diferença aritmética entre os valores?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2"
+    },
+    {
+      "id": "B",
+      "text": "4"
+    },
+    {
+      "id": "C",
+      "text": "5"
+    },
+    {
+      "id": "D",
+      "text": "10"
+    },
+    {
+      "id": "E",
+      "text": "90"
+    }
+  ],
+  "answer": "C",
+  "comment": "A escala truncada pode alterar a aparência, mas 100−95=5 unidades.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

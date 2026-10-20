@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-16",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Os valores mensais são janeiro=40, fevereiro=55 e março=51. Qual intervalo apresenta o MAIOR aumento absoluto?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Fevereiro para março, 4"
+    },
+    {
+      "id": "B",
+      "text": "Janeiro para fevereiro, 15"
+    },
+    {
+      "id": "C",
+      "text": "Janeiro para março, 11"
+    },
+    {
+      "id": "D",
+      "text": "Fevereiro para março, 15"
+    },
+    {
+      "id": "E",
+      "text": "Ambos os intervalos aumentam igualmente"
+    }
+  ],
+  "answer": "B",
+  "comment": "Janeiro→fevereiro: +15. Fevereiro→março: −4 (queda). O maior aumento é +15 entre janeiro e fevereiro.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

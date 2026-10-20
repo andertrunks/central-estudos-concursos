@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-14",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "A tabela mostra x=1,3,5 e y=5,9,13. Se a regra de aumento constante observada continuar, qual y corresponde a x=7?",
+  "options": [
+    {
+      "id": "A",
+      "text": "17"
+    },
+    {
+      "id": "B",
+      "text": "15"
+    },
+    {
+      "id": "C",
+      "text": "16"
+    },
+    {
+      "id": "D",
+      "text": "18"
+    },
+    {
+      "id": "E",
+      "text": "21"
+    }
+  ],
+  "answer": "A",
+  "comment": "Ao aumentar x em 2, y aumenta em 4; a taxa é 2 por unidade de x. y=2x+3; para x=7, y=17.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

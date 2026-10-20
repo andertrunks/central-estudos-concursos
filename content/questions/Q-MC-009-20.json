@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-20",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Os valores x=1,2,3 correspondem a y=5,10,15. Se o enunciado garante que y é diretamente proporcional a x em todo o intervalo considerado, qual y corresponde a x=4?",
+  "options": [
+    {
+      "id": "A",
+      "text": "16"
+    },
+    {
+      "id": "B",
+      "text": "18"
+    },
+    {
+      "id": "C",
+      "text": "19"
+    },
+    {
+      "id": "D",
+      "text": "20,5"
+    },
+    {
+      "id": "E",
+      "text": "20"
+    }
+  ],
+  "answer": "E",
+  "comment": "A constante é y/x=5. Sob a proporcionalidade expressamente garantida, y=5×4=20.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

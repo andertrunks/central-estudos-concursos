@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-08",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "A tabela x=2,4,6 e y=7,14,21 descreve relação diretamente proporcional. Qual é a constante y/x?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2"
+    },
+    {
+      "id": "B",
+      "text": "3"
+    },
+    {
+      "id": "C",
+      "text": "3,5"
+    },
+    {
+      "id": "D",
+      "text": "4"
+    },
+    {
+      "id": "E",
+      "text": "7"
+    }
+  ],
+  "answer": "C",
+  "comment": "Para qualquer par, y/x=7/2=14/4=21/6=3,5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

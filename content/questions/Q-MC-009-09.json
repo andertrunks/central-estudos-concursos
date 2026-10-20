@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-09",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Uma relação tem y=3x+5. Qual propriedade mostra que ela NÃO é diretamente proporcional?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Quando x=0, y=5 e não zero"
+    },
+    {
+      "id": "B",
+      "text": "O coeficiente de x é positivo"
+    },
+    {
+      "id": "C",
+      "text": "Para x=1, y=8"
+    },
+    {
+      "id": "D",
+      "text": "Se x aumenta, y aumenta"
+    },
+    {
+      "id": "E",
+      "text": "A relação pode ser representada em tabela"
+    }
+  ],
+  "answer": "A",
+  "comment": "Proporção direta exige y=kx, portanto y=0 para x=0. Aqui há termo constante 5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

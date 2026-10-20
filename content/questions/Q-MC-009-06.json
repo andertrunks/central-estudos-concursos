@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-06",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Em gráfico tempo–produção, são mostrados os pontos (0 h,4 unidades) e (2 h,10 unidades). Qual é a taxa MÉDIA de aumento entre esses pontos?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2 unidades/h"
+    },
+    {
+      "id": "B",
+      "text": "3 unidades/h"
+    },
+    {
+      "id": "C",
+      "text": "5 unidades/h"
+    },
+    {
+      "id": "D",
+      "text": "6 unidades/h"
+    },
+    {
+      "id": "E",
+      "text": "7 unidades/h"
+    }
+  ],
+  "answer": "B",
+  "comment": "Variação vertical=10−4=6; tempo decorrido=2−0=2 h; taxa média=6/2=3 unidades por hora.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

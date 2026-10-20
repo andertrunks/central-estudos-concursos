@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-10",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Um gráfico de setores reúne categorias do mesmo total: A=20% e B=35%. Que percentual corresponde à categoria restante C?",
+  "options": [
+    {
+      "id": "A",
+      "text": "35%"
+    },
+    {
+      "id": "B",
+      "text": "40%"
+    },
+    {
+      "id": "C",
+      "text": "55%"
+    },
+    {
+      "id": "D",
+      "text": "65%"
+    },
+    {
+      "id": "E",
+      "text": "45%"
+    }
+  ],
+  "answer": "E",
+  "comment": "Como o mesmo todo totaliza 100%, C=100−20−35=45%.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

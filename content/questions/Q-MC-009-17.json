@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-17",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Uma tabela registra distância de 240 km em 4 h e 360 km em 6 h. Mantendo velocidade constante indicada, qual distância em 9 h?",
+  "options": [
+    {
+      "id": "A",
+      "text": "480 km"
+    },
+    {
+      "id": "B",
+      "text": "500 km"
+    },
+    {
+      "id": "C",
+      "text": "520 km"
+    },
+    {
+      "id": "D",
+      "text": "540 km"
+    },
+    {
+      "id": "E",
+      "text": "600 km"
+    }
+  ],
+  "answer": "D",
+  "comment": "Ambas as razões são 60 km/h (240/4=360/6). Em 9 horas, 60×9=540 km.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

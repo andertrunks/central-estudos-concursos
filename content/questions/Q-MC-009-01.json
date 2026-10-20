@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-01",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Tabela: para x=2,4,6 os valores de y são 8,16,24. Se a proporcionalidade direta informada continua, qual será y quando x=8?",
+  "options": [
+    {
+      "id": "A",
+      "text": "24"
+    },
+    {
+      "id": "B",
+      "text": "32"
+    },
+    {
+      "id": "C",
+      "text": "28"
+    },
+    {
+      "id": "D",
+      "text": "36"
+    },
+    {
+      "id": "E",
+      "text": "40"
+    }
+  ],
+  "answer": "B",
+  "comment": "A razão y/x é 4 em todos os pares: 8/2=16/4=24/6=4. Sob a regra y=4x, quando x=8, y=32.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

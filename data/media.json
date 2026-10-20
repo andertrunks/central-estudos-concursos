@@ -717,5 +717,16 @@
     "file": "media/MAT-006-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "MAT-007-IMG-001",
+    "contentId": "MAT-007",
+    "type": "imagem",
+    "title": "Leitura segura de tabelas e gráficos",
+    "caption": "Dados fictícios: Jan 120, Fev 150, Mar 180, Abr 200, Mai 170. Tabela, colunas e linha representam os mesmos valores.",
+    "alt": "Infográfico com checklist: título, fonte, legenda, eixos, escalas e unidades; tabela e dois gráficos; alertas sobre dado ausente e eixo truncado.",
+    "file": "media/MAT-007-IMG-001.png",
+    "verifiedAt": "2026-10-20",
+    "original": true
   }
 ]

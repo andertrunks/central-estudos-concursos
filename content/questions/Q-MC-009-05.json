@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-05",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Com os mesmos dados (segunda 12, terça 20, quarta 15), quantos atendimentos a mais ocorreram na terça em relação à segunda?",
+  "options": [
+    {
+      "id": "A",
+      "text": "5"
+    },
+    {
+      "id": "B",
+      "text": "6"
+    },
+    {
+      "id": "C",
+      "text": "7"
+    },
+    {
+      "id": "D",
+      "text": "12"
+    },
+    {
+      "id": "E",
+      "text": "8"
+    }
+  ],
+  "answer": "E",
+  "comment": "A comparação pedida é diferença: 20−12=8 atendimentos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

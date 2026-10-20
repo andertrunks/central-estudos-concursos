@@ -1,0 +1,43 @@
+{
+  "id": "Q-MC-009-11",
+  "contentId": "MAT-007",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-007-01"
+  ],
+  "statement": "Duas séries têm valores no período 2: série A=9 e série B=9. Qual a comparação correta nesse período?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A é 9 unidades maior"
+    },
+    {
+      "id": "B",
+      "text": "Há empate"
+    },
+    {
+      "id": "C",
+      "text": "B é 9 unidades maior"
+    },
+    {
+      "id": "D",
+      "text": "A representa dobro de B"
+    },
+    {
+      "id": "E",
+      "text": "Não é possível compará-las mesmo com a mesma unidade"
+    }
+  ],
+  "answer": "B",
+  "comment": "As duas séries valem 9 no mesmo período e unidade, portanto empatam.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
