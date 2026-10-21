@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-20",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Em um problema de orientação, uma alternativa descreve uma disposição que satisfaz todas as condições, mas há outra disposição diferente que também as satisfaz. Então a primeira disposição é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "necessariamente a única solução"
+    },
+    {
+      "id": "B",
+      "text": "impossível"
+    },
+    {
+      "id": "C",
+      "text": "possível, mas não necessariamente única"
+    },
+    {
+      "id": "D",
+      "text": "contraditória"
+    },
+    {
+      "id": "E",
+      "text": "equivalente a uma conclusão obrigatória"
+    }
+  ],
+  "answer": "C",
+  "comment": "Satisfazer as condições mostra possibilidade, não unicidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

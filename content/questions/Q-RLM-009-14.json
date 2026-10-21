@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-14",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "“Ou A ou B, mas não ambos.” Se A ocorre, então:",
+  "options": [
+    {
+      "id": "A",
+      "text": "B também ocorre"
+    },
+    {
+      "id": "B",
+      "text": "B não ocorre"
+    },
+    {
+      "id": "C",
+      "text": "nada sobre B"
+    },
+    {
+      "id": "D",
+      "text": "A não ocorre"
+    },
+    {
+      "id": "E",
+      "text": "ambos são falsos"
+    }
+  ],
+  "answer": "B",
+  "comment": "A frase explicita exclusividade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-16",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "Uma conclusão aparece em um cenário válido, mas não em outro cenário igualmente válido. Ela é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "necessária"
+    },
+    {
+      "id": "B",
+      "text": "impossível"
+    },
+    {
+      "id": "C",
+      "text": "possível, mas não necessária"
+    },
+    {
+      "id": "D",
+      "text": "contraditória"
+    },
+    {
+      "id": "E",
+      "text": "universal"
+    }
+  ],
+  "answer": "C",
+  "comment": "Existência em algum cenário torna possível; falha em outro impede necessidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

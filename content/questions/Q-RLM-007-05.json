@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-05",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "A e C estão ambos à esquerda de B. Com essas informações:",
+  "options": [
+    {
+      "id": "A",
+      "text": "A necessariamente está à esquerda de C"
+    },
+    {
+      "id": "B",
+      "text": "C necessariamente está à esquerda de A"
+    },
+    {
+      "id": "C",
+      "text": "A e C necessariamente ocupam a mesma posição"
+    },
+    {
+      "id": "D",
+      "text": "a ordem entre A e C não está determinada"
+    },
+    {
+      "id": "E",
+      "text": "B está à esquerda de ambos"
+    }
+  ],
+  "answer": "D",
+  "comment": "Ambos estão do mesmo lado de B, mas a ordem entre A e C pode variar.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

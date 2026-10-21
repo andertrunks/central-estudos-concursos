@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-10",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "Na mesma regra, sabe-se apenas que Pedro atende chamadas. Pode-se concluir que ele está de plantão?",
+  "options": [
+    {
+      "id": "A",
+      "text": "sim, obrigatoriamente"
+    },
+    {
+      "id": "B",
+      "text": "não necessariamente"
+    },
+    {
+      "id": "C",
+      "text": "sim, por definição"
+    },
+    {
+      "id": "D",
+      "text": "não, é impossível"
+    },
+    {
+      "id": "E",
+      "text": "apenas se for gestor"
+    }
+  ],
+  "answer": "B",
+  "comment": "Atender pode decorrer de outro motivo; não se inverte a regra.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

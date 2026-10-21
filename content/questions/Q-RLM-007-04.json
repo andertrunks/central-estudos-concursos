@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-04",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "A está à esquerda de B, e B está à esquerda de C. É necessariamente verdadeiro que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "C está à esquerda de A"
+    },
+    {
+      "id": "B",
+      "text": "A está à esquerda de C"
+    },
+    {
+      "id": "C",
+      "text": "A está imediatamente à esquerda de C"
+    },
+    {
+      "id": "D",
+      "text": "B está à direita de C"
+    },
+    {
+      "id": "E",
+      "text": "A e C estão na mesma posição"
+    }
+  ],
+  "answer": "B",
+  "comment": "Pela transitividade linear, A fica à esquerda de C; não se garante adjacência.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

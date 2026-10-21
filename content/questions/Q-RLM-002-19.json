@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-19",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "Qual afirmação distingue corretamente dedução de indução?",
+  "options": [
+    {
+      "id": "A",
+      "text": "toda indução gera conclusão necessária"
+    },
+    {
+      "id": "B",
+      "text": "dedução válida preserva necessidade lógica; indução sustenta conclusão provável"
+    },
+    {
+      "id": "C",
+      "text": "dedução sempre parte de muitos casos"
+    },
+    {
+      "id": "D",
+      "text": "indução nunca usa evidências"
+    },
+    {
+      "id": "E",
+      "text": "ambas garantem a verdade da conclusão independentemente das premissas"
+    }
+  ],
+  "answer": "B",
+  "comment": "Expressa a diferença central entre necessidade dedutiva e probabilidade indutiva.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

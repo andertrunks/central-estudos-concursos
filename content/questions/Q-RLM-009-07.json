@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-07",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "“Exatamente dois candidatos faltaram.” Qual afirmação é correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "podem ter faltado três"
+    },
+    {
+      "id": "B",
+      "text": "faltaram no mínimo dois"
+    },
+    {
+      "id": "C",
+      "text": "faltaram dois, nem mais nem menos"
+    },
+    {
+      "id": "D",
+      "text": "ninguém faltou"
+    },
+    {
+      "id": "E",
+      "text": "faltou apenas um"
+    }
+  ],
+  "answer": "C",
+  "comment": "“Exatamente” fixa a quantidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

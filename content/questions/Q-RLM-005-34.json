@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-34",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Considere: Todo A é B. Algum B é C. Qual conclusão é necessariamente válida?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Algum A é C."
+    },
+    {
+      "id": "B",
+      "text": "Todo C é A."
+    },
+    {
+      "id": "C",
+      "text": "Nenhum A é C."
+    },
+    {
+      "id": "D",
+      "text": "Todo B é A."
+    },
+    {
+      "id": "E",
+      "text": "Nenhuma das alternativas anteriores é necessariamente válida."
+    }
+  ],
+  "answer": "E",
+  "comment": "Nenhuma das quatro primeiras conclusões é forçada pelas premissas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

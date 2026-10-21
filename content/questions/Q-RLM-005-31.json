@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-31",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "A frase “Nenhum analista é terceirizado” corresponde a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Analistas contidos em terceirizados."
+    },
+    {
+      "id": "B",
+      "text": "Terceirizados contidos em analistas."
+    },
+    {
+      "id": "C",
+      "text": "Interseção vazia entre analistas e terceirizados."
+    },
+    {
+      "id": "D",
+      "text": "Existência de analista terceirizado."
+    },
+    {
+      "id": "E",
+      "text": "Igualdade das duas classes."
+    }
+  ],
+  "answer": "C",
+  "comment": "“Nenhum” corresponde a interseção vazia.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

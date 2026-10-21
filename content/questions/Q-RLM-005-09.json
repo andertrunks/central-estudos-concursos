@@ -1,0 +1,31 @@
+{
+  "id": "Q-RLM-005-09",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "A negação de “Algum A não é B” é “Todo A é B”.",
+  "options": [
+    {
+      "id": "C",
+      "text": "CERTO"
+    },
+    {
+      "id": "E",
+      "text": "ERRADO"
+    }
+  ],
+  "answer": "C",
+  "comment": "Se é falso que exista A fora de B, então todo A está em B.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

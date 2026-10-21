@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-11",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\n3, 6, 12, 24, 48, ?",
+  "options": [
+    {
+      "id": "A",
+      "text": "72"
+    },
+    {
+      "id": "B",
+      "text": "84"
+    },
+    {
+      "id": "C",
+      "text": "96"
+    },
+    {
+      "id": "D",
+      "text": "108"
+    },
+    {
+      "id": "E",
+      "text": "120"
+    }
+  ],
+  "answer": "C",
+  "comment": "Dobra a cada passo: 48×2=96.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

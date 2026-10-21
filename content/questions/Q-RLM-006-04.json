@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-04",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\n2, 6, 8, 24, 26, 78, ?",
+  "options": [
+    {
+      "id": "A",
+      "text": "80"
+    },
+    {
+      "id": "B",
+      "text": "104"
+    },
+    {
+      "id": "C",
+      "text": "156"
+    },
+    {
+      "id": "D",
+      "text": "234"
+    },
+    {
+      "id": "E",
+      "text": "236"
+    }
+  ],
+  "answer": "A",
+  "comment": "Alternam ×3 e +2: 2×3=6; +2=8; ×3=24; +2=26; ×3=78; +2=80.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

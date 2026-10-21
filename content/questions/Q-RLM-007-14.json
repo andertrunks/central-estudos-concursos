@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-14",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "A atividade P ocorre das 10h00 às 11h15 e Q das 10h45 às 12h00. O período de sobreposição é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "15 minutos"
+    },
+    {
+      "id": "B",
+      "text": "30 minutos"
+    },
+    {
+      "id": "C",
+      "text": "45 minutos"
+    },
+    {
+      "id": "D",
+      "text": "60 minutos"
+    },
+    {
+      "id": "E",
+      "text": "75 minutos"
+    }
+  ],
+  "answer": "B",
+  "comment": "O intervalo comum vai de 10h45 a 11h15: 30 minutos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

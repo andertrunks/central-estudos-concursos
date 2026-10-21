@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-08",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "Se p = F e q = F, então p → q vale:",
+  "options": [
+    {
+      "id": "A",
+      "text": "V."
+    },
+    {
+      "id": "B",
+      "text": "F."
+    },
+    {
+      "id": "C",
+      "text": "indeterminado."
+    },
+    {
+      "id": "D",
+      "text": "não é proposição."
+    },
+    {
+      "id": "E",
+      "text": "depende da linguagem natural."
+    }
+  ],
+  "answer": "A",
+  "comment": "Com antecedente falso, a condicional não é violada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

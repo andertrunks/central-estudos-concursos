@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-12",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Uma atividade começou às 8h50 e terminou às 9h10. A duração foi:",
+  "options": [
+    {
+      "id": "A",
+      "text": "10 minutos"
+    },
+    {
+      "id": "B",
+      "text": "20 minutos"
+    },
+    {
+      "id": "C",
+      "text": "30 minutos"
+    },
+    {
+      "id": "D",
+      "text": "40 minutos"
+    },
+    {
+      "id": "E",
+      "text": "60 minutos"
+    }
+  ],
+  "answer": "B",
+  "comment": "10 minutos até 9h00 + 10 minutos = 20.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

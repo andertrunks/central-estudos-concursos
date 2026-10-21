@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-04",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "“Nenhum A é B” e x é A. Então:",
+  "options": [
+    {
+      "id": "A",
+      "text": "x é B"
+    },
+    {
+      "id": "B",
+      "text": "x pode ser B"
+    },
+    {
+      "id": "C",
+      "text": "x não é B"
+    },
+    {
+      "id": "D",
+      "text": "todo B é A"
+    },
+    {
+      "id": "E",
+      "text": "nada se conclui"
+    }
+  ],
+  "answer": "C",
+  "comment": "A e B são disjuntos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

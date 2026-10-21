@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-07",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível intermediário\nTrês apresentações A, B e C ocorrem às 9h, 10h e 11h. A ocorre antes de B. B não ocorre às 10h. C não ocorre às 11h. Qual afirmação deve ser verdadeira?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A ocorre às 9h."
+    },
+    {
+      "id": "B",
+      "text": "B ocorre às 11h."
+    },
+    {
+      "id": "C",
+      "text": "C ocorre às 10h."
+    },
+    {
+      "id": "D",
+      "text": "C ocorre às 9h."
+    },
+    {
+      "id": "E",
+      "text": "A ocorre às 10h."
+    }
+  ],
+  "answer": "B",
+  "comment": "B não pode ser 10h. Como A ocorre antes de B, B também não pode ser 9h. Portanto B=11h. A e C podem ocupar 9h e 10h em duas ordens compatíveis com as demais condições.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

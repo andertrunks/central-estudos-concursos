@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-39",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Qual relação é simétrica?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Todo A é B."
+    },
+    {
+      "id": "B",
+      "text": "Algum A não é B."
+    },
+    {
+      "id": "C",
+      "text": "Somente A são B."
+    },
+    {
+      "id": "D",
+      "text": "Algum A é B."
+    },
+    {
+      "id": "E",
+      "text": "A está propriamente incluído em B."
+    }
+  ],
+  "answer": "D",
+  "comment": "“Algum A é B” é simétrico, porque descreve a mesma interseção.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

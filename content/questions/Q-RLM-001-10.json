@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-10",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível concurso\nEm uma sequência de quatro posições, C está imediatamente depois de A. B está depois de C. D não está na primeira posição. Qual configuração é válida?",
+  "options": [
+    {
+      "id": "A",
+      "text": "D, A, C, B."
+    },
+    {
+      "id": "B",
+      "text": "A, B, C, D."
+    },
+    {
+      "id": "C",
+      "text": "C, A, D, B."
+    },
+    {
+      "id": "D",
+      "text": "A, C, D, B."
+    },
+    {
+      "id": "E",
+      "text": "B, A, C, D."
+    }
+  ],
+  "answer": "D",
+  "comment": "A e C devem aparecer juntos como [A,C]. B vem depois de C e D não pode ser primeiro. A configuração A, C, D, B satisfaz todas as condições.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

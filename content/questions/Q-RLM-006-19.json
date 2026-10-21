@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-19",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\nEm uma sequência periódica de ciclo 4, o 26º termo corresponde à:",
+  "options": [
+    {
+      "id": "A",
+      "text": "1ª posição do ciclo"
+    },
+    {
+      "id": "B",
+      "text": "2ª posição do ciclo"
+    },
+    {
+      "id": "C",
+      "text": "3ª posição do ciclo"
+    },
+    {
+      "id": "D",
+      "text": "4ª posição do ciclo"
+    },
+    {
+      "id": "E",
+      "text": "26ª posição independente"
+    }
+  ],
+  "answer": "B",
+  "comment": "26 = 4×6 + 2; corresponde à segunda posição do ciclo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

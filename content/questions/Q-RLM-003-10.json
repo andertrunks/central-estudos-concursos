@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-10",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "“O acesso será liberado somente se houver autenticação.” Se p = “o acesso será liberado” e q = “há autenticação”, a forma correta é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "q → p."
+    },
+    {
+      "id": "B",
+      "text": "p → q."
+    },
+    {
+      "id": "C",
+      "text": "p ∧ q."
+    },
+    {
+      "id": "D",
+      "text": "p ∨ q."
+    },
+    {
+      "id": "E",
+      "text": "¬p → q."
+    }
+  ],
+  "answer": "B",
+  "comment": "“p somente se q” significa p → q.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

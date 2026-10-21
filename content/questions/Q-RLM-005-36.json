@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-36",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Considere: Nenhum A é B. Todo C é A. Algum C existe. Qual conclusão é necessária?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Algum C é B."
+    },
+    {
+      "id": "B",
+      "text": "Nenhum C é B."
+    },
+    {
+      "id": "C",
+      "text": "Todo B é C."
+    },
+    {
+      "id": "D",
+      "text": "Todo A é C."
+    },
+    {
+      "id": "E",
+      "text": "Algum B é A."
+    }
+  ],
+  "answer": "B",
+  "comment": "C está dentro de A e A é disjunto de B.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-05",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível básico\nSe uma tarefa deve ocorrer em exatamente um dos horários 8h, 9h ou 10h, e ela não pode ocorrer às 8h nem às 10h, então:",
+  "options": [
+    {
+      "id": "A",
+      "text": "a tarefa pode ocorrer em qualquer horário."
+    },
+    {
+      "id": "B",
+      "text": "a tarefa ocorre às 9h."
+    },
+    {
+      "id": "C",
+      "text": "a tarefa ocorre às 8h."
+    },
+    {
+      "id": "D",
+      "text": "a tarefa ocorre às 10h."
+    },
+    {
+      "id": "E",
+      "text": "as condições são contraditórias."
+    }
+  ],
+  "answer": "B",
+  "comment": "Como 8h e 10h foram eliminados e exatamente um horário deve ser usado, resta 9h.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

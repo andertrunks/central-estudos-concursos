@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-06",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Uma pessoa parte de um ponto, anda 3 para norte, 2 para leste, 3 para sul e 2 para oeste. Ao final:",
+  "options": [
+    {
+      "id": "A",
+      "text": "está 5 unidades ao norte"
+    },
+    {
+      "id": "B",
+      "text": "está 5 unidades ao sul"
+    },
+    {
+      "id": "C",
+      "text": "retornou ao ponto inicial"
+    },
+    {
+      "id": "D",
+      "text": "está 2 unidades a leste"
+    },
+    {
+      "id": "E",
+      "text": "está 3 unidades a oeste"
+    }
+  ],
+  "answer": "C",
+  "comment": "Norte/sul e leste/oeste se anulam.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

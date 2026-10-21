@@ -1,0 +1,31 @@
+{
+  "id": "Q-RLM-005-28",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Se uma conclusão é verdadeira em um diagrama compatível com as premissas, então ela é necessariamente verdadeira.",
+  "options": [
+    {
+      "id": "C",
+      "text": "CERTO"
+    },
+    {
+      "id": "E",
+      "text": "ERRADO"
+    }
+  ],
+  "answer": "E",
+  "comment": "Verdade em um único modelo mostra possibilidade, não necessidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

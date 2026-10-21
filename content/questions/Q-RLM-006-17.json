@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-17",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\n4, 9, 16, 25, ?",
+  "options": [
+    {
+      "id": "A",
+      "text": "30"
+    },
+    {
+      "id": "B",
+      "text": "32"
+    },
+    {
+      "id": "C",
+      "text": "34"
+    },
+    {
+      "id": "D",
+      "text": "36"
+    },
+    {
+      "id": "E",
+      "text": "49"
+    }
+  ],
+  "answer": "D",
+  "comment": "São quadrados consecutivos a partir de 2²: 4,9,16,25,36.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-16",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "Todos os servidores do setor A usam crachá. Lia trabalha no setor A. Logo, Lia usa crachá. Esse raciocínio é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "indutivo"
+    },
+    {
+      "id": "B",
+      "text": "dedutivo"
+    },
+    {
+      "id": "C",
+      "text": "analógico"
+    },
+    {
+      "id": "D",
+      "text": "probabilístico"
+    },
+    {
+      "id": "E",
+      "text": "circular"
+    }
+  ],
+  "answer": "B",
+  "comment": "É dedução por aplicação de regra universal a um caso.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

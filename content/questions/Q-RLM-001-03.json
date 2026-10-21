@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-03",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível básico\nAna, Bruno e Carla trabalham, cada um, em um setor diferente: Arquivo, Protocolo e Atendimento. Carla está no Arquivo. Ana não está no Protocolo. Logo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ana está no Arquivo."
+    },
+    {
+      "id": "B",
+      "text": "Bruno está no Arquivo."
+    },
+    {
+      "id": "C",
+      "text": "Ana está no Atendimento."
+    },
+    {
+      "id": "D",
+      "text": "Bruno está no Atendimento."
+    },
+    {
+      "id": "E",
+      "text": "não é possível determinar nenhuma associação."
+    }
+  ],
+  "answer": "C",
+  "comment": "Carla ocupa Arquivo. Sobram Protocolo e Atendimento. Como Ana não está no Protocolo, Ana está no Atendimento e Bruno no Protocolo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

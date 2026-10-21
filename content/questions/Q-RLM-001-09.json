@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-09",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível concurso\nQuatro servidores A, B, C e D são distribuídos, um por setor, entre Arquivo, Protocolo, Atendimento e Compras. A está no Arquivo. B não está no Protocolo nem no Atendimento. C está no Atendimento. Qual setor deve ser ocupado por B?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Arquivo."
+    },
+    {
+      "id": "B",
+      "text": "Protocolo."
+    },
+    {
+      "id": "C",
+      "text": "Atendimento."
+    },
+    {
+      "id": "D",
+      "text": "Compras."
+    },
+    {
+      "id": "E",
+      "text": "Não é possível determinar."
+    }
+  ],
+  "answer": "D",
+  "comment": "A ocupa Arquivo e C ocupa Atendimento. Restam Protocolo e Compras para B e D. Como B não pode Protocolo, B ocupa Compras.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

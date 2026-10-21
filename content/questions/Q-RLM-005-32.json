@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-32",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "A negação de “Todos os processos são eletrônicos” é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Nenhum processo é eletrônico."
+    },
+    {
+      "id": "B",
+      "text": "Alguns processos são eletrônicos."
+    },
+    {
+      "id": "C",
+      "text": "Algum processo não é eletrônico."
+    },
+    {
+      "id": "D",
+      "text": "Todos os processos não são eletrônicos."
+    },
+    {
+      "id": "E",
+      "text": "Não existem processos eletrônicos."
+    }
+  ],
+  "answer": "C",
+  "comment": "Um único processo não eletrônico já nega a universal afirmativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

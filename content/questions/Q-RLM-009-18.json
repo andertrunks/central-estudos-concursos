@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-18",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "“Nem Paulo nem Rita compareceram.” Significa:",
+  "options": [
+    {
+      "id": "A",
+      "text": "só Paulo compareceu"
+    },
+    {
+      "id": "B",
+      "text": "só Rita compareceu"
+    },
+    {
+      "id": "C",
+      "text": "ambos compareceram"
+    },
+    {
+      "id": "D",
+      "text": "nenhum dos dois compareceu"
+    },
+    {
+      "id": "E",
+      "text": "ao menos um compareceu"
+    }
+  ],
+  "answer": "D",
+  "comment": "“Nem... nem...” nega os dois termos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

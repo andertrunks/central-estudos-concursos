@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-05",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\n1, 20, 2, 18, 3, 16, 4, ?",
+  "options": [
+    {
+      "id": "A",
+      "text": "10"
+    },
+    {
+      "id": "B",
+      "text": "12"
+    },
+    {
+      "id": "C",
+      "text": "14"
+    },
+    {
+      "id": "D",
+      "text": "15"
+    },
+    {
+      "id": "E",
+      "text": "20"
+    }
+  ],
+  "answer": "C",
+  "comment": "Ímpares: 1,2,3,4. Pares: 20,18,16,14.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

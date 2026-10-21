@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-11",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível concurso\nConsidere as condições:\nI. A está antes de B.\nII. C está depois de B.\nIII. D pode ocupar qualquer posição não determinada pelas condições anteriores.\nQual afirmação é necessariamente verdadeira?",
+  "options": [
+    {
+      "id": "A",
+      "text": "D é o primeiro."
+    },
+    {
+      "id": "B",
+      "text": "B é o segundo."
+    },
+    {
+      "id": "C",
+      "text": "A está antes de C."
+    },
+    {
+      "id": "D",
+      "text": "C é o último."
+    },
+    {
+      "id": "E",
+      "text": "D está depois de B."
+    }
+  ],
+  "answer": "C",
+  "comment": "As condições I e II produzem A < B < C. Portanto A está necessariamente antes de C. Nada fixa posição absoluta de B, C ou D.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

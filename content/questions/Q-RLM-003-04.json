@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-04",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "Se p = V e q = F, o valor de p ∧ q é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "V."
+    },
+    {
+      "id": "B",
+      "text": "F."
+    },
+    {
+      "id": "C",
+      "text": "V e F simultaneamente."
+    },
+    {
+      "id": "D",
+      "text": "indeterminado."
+    },
+    {
+      "id": "E",
+      "text": "depende da ordem."
+    }
+  ],
+  "answer": "B",
+  "comment": "Conjunção exige as duas componentes verdadeiras.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

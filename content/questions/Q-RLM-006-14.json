@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-14",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\nConsidere duas subsequências intercaladas: nas posições ímpares aparecem 5, 10, 15, 20; nas posições pares aparecem 100, 90, 80, 70. Qual é o 8º termo da sequência completa?",
+  "options": [
+    {
+      "id": "A",
+      "text": "20"
+    },
+    {
+      "id": "B",
+      "text": "60"
+    },
+    {
+      "id": "C",
+      "text": "70"
+    },
+    {
+      "id": "D",
+      "text": "80"
+    },
+    {
+      "id": "E",
+      "text": "90"
+    }
+  ],
+  "answer": "C",
+  "comment": "A 8ª posição é par; a quarta parcela da subsequência par é 70.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

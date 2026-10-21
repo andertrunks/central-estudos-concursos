@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-20",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "Ao resolver raciocínio verbal, a prática mais segura é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "usar senso comum"
+    },
+    {
+      "id": "B",
+      "text": "ignorar quantificadores"
+    },
+    {
+      "id": "C",
+      "text": "verificar cada conclusão contra todas as condições"
+    },
+    {
+      "id": "D",
+      "text": "inverter condicionais"
+    },
+    {
+      "id": "E",
+      "text": "escolher a frase mais longa"
+    }
+  ],
+  "answer": "C",
+  "comment": "A conclusão precisa respeitar simultaneamente todas as premissas.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-14",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "Se p = V, q = F e r = F, o valor de p ∨ (q ∧ r) é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "V."
+    },
+    {
+      "id": "B",
+      "text": "F."
+    },
+    {
+      "id": "C",
+      "text": "indeterminado."
+    },
+    {
+      "id": "D",
+      "text": "igual a q."
+    },
+    {
+      "id": "E",
+      "text": "igual a r."
+    }
+  ],
+  "answer": "A",
+  "comment": "q ∧ r = F; p ∨ F = V.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

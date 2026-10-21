@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-11",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 11\nPremissa: “Alguns integrantes da equipe conhecem SQL.” Sabendo apenas isso, é correto afirmar que “Carlos, integrante da equipe, conhece SQL” é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "conclusão necessária"
+    },
+    {
+      "id": "B",
+      "text": "conclusão impossível"
+    },
+    {
+      "id": "C",
+      "text": "conclusão apenas possível, não necessária"
+    },
+    {
+      "id": "D",
+      "text": "consequência de modus tollens"
+    },
+    {
+      "id": "E",
+      "text": "consequência de contraposição"
+    }
+  ],
+  "answer": "C",
+  "comment": "A premissa não identifica quem conhece SQL. Carlos pode conhecer, mas isso não é obrigatório.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

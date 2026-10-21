@@ -1,0 +1,31 @@
+{
+  "id": "Q-RLM-005-11",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Se algum A é B e todo B é C, então algum A é C.",
+  "options": [
+    {
+      "id": "C",
+      "text": "CERTO"
+    },
+    {
+      "id": "E",
+      "text": "ERRADO"
+    }
+  ],
+  "answer": "C",
+  "comment": "O A que é B também pertence a C porque todo B é C.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

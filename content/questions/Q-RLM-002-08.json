@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-08",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 8\nConsidere: “Nenhum documento sigiloso é de acesso irrestrito. O documento X é sigiloso.” Conclusão necessária:",
+  "options": [
+    {
+      "id": "A",
+      "text": "X é de acesso irrestrito"
+    },
+    {
+      "id": "B",
+      "text": "X não é de acesso irrestrito"
+    },
+    {
+      "id": "C",
+      "text": "X é público"
+    },
+    {
+      "id": "D",
+      "text": "X foi desclassificado"
+    },
+    {
+      "id": "E",
+      "text": "nenhuma conclusão é possível"
+    }
+  ],
+  "answer": "B",
+  "comment": "Se nenhum sigiloso é irrestrito e X é sigiloso, então X não pode ser irrestrito.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

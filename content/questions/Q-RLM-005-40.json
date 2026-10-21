@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-40",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Se todo A é B e nenhum B é C, qual diagrama verbal é compatível com as premissas?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A dentro de B e B separado de C."
+    },
+    {
+      "id": "B",
+      "text": "B dentro de A e A dentro de C."
+    },
+    {
+      "id": "C",
+      "text": "A e C necessariamente sobrepostos."
+    },
+    {
+      "id": "D",
+      "text": "A fora de B e B dentro de C."
+    },
+    {
+      "id": "E",
+      "text": "A, B e C necessariamente iguais."
+    }
+  ],
+  "answer": "A",
+  "comment": "É a representação direta de A incluído em B e B separado de C.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

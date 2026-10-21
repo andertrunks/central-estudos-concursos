@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-18",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "João chegou antes de Paula. Rita chegou depois de Paula. Necessariamente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Rita chegou antes de João"
+    },
+    {
+      "id": "B",
+      "text": "Paula chegou antes de João"
+    },
+    {
+      "id": "C",
+      "text": "João chegou antes de Rita"
+    },
+    {
+      "id": "D",
+      "text": "João e Rita chegaram juntos"
+    },
+    {
+      "id": "E",
+      "text": "não há relação entre João e Rita"
+    }
+  ],
+  "answer": "C",
+  "comment": "João < Paula < Rita.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-05",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 5\n“Se Ana é analista, então é servidora. Ana não é analista. Logo, Ana não é servidora.” A forma apresentada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "modus tollens"
+    },
+    {
+      "id": "B",
+      "text": "negar o antecedente"
+    },
+    {
+      "id": "C",
+      "text": "modus ponens"
+    },
+    {
+      "id": "D",
+      "text": "contraposição"
+    },
+    {
+      "id": "E",
+      "text": "argumento necessariamente válido"
+    }
+  ],
+  "answer": "B",
+  "comment": "P → Q; não P; logo não Q é negar o antecedente, forma inválida.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

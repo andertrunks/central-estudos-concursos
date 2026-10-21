@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-08",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível intermediário\nCinco pessoas ocupam uma fila. Bruno está em uma das extremidades e Ana está antes de Bruno. É correto concluir que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Bruno é necessariamente o primeiro."
+    },
+    {
+      "id": "B",
+      "text": "Bruno é necessariamente o último."
+    },
+    {
+      "id": "C",
+      "text": "Ana é necessariamente a primeira."
+    },
+    {
+      "id": "D",
+      "text": "Ana está imediatamente antes de Bruno."
+    },
+    {
+      "id": "E",
+      "text": "há exatamente uma pessoa entre Ana e Bruno."
+    }
+  ],
+  "answer": "B",
+  "comment": "Bruno está em uma extremidade. Como Ana precisa estar antes de Bruno, Bruno não pode ser o primeiro. Logo, Bruno é o último.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-08",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Em uma fila, todos estão voltados para a mesma porta. B está imediatamente atrás de A e C imediatamente atrás de B. Da frente para trás, a ordem é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "C, B, A"
+    },
+    {
+      "id": "B",
+      "text": "B, A, C"
+    },
+    {
+      "id": "C",
+      "text": "A, C, B"
+    },
+    {
+      "id": "D",
+      "text": "A, B, C"
+    },
+    {
+      "id": "E",
+      "text": "B, C, A"
+    }
+  ],
+  "answer": "D",
+  "comment": "A está à frente de B, que está à frente de C.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

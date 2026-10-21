@@ -1,0 +1,31 @@
+{
+  "id": "Q-RLM-005-20",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Se A ⊆ B, é possível que haja elementos de B que não estejam em A.",
+  "options": [
+    {
+      "id": "C",
+      "text": "CERTO"
+    },
+    {
+      "id": "E",
+      "text": "ERRADO"
+    }
+  ],
+  "answer": "C",
+  "comment": "Inclusão permite que B tenha elementos adicionais.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

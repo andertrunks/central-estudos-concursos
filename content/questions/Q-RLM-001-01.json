@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-01",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível inicial\nTrês pessoas — Ana, Bruno e Carla — ocupam as posições 1, 2 e 3. Ana está antes de Bruno e Carla ocupa a posição 1. Qual afirmação deve ser verdadeira?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ana ocupa a posição 1."
+    },
+    {
+      "id": "B",
+      "text": "Bruno ocupa a posição 2."
+    },
+    {
+      "id": "C",
+      "text": "Ana ocupa a posição 2."
+    },
+    {
+      "id": "D",
+      "text": "Carla ocupa a posição 3."
+    },
+    {
+      "id": "E",
+      "text": "Bruno está antes de Ana."
+    }
+  ],
+  "answer": "C",
+  "comment": "Carla ocupa a primeira posição. Restam 2 e 3 para Ana e Bruno. Como Ana está antes de Bruno, Ana=2 e Bruno=3.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

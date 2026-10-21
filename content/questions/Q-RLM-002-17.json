@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-17",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "Em 30 medições independentes de um processo, a taxa ficou entre 9,8 e 10,2. Com base nisso, afirma-se que a próxima medição provavelmente ficará próxima de 10. A inferência é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "dedutiva necessária"
+    },
+    {
+      "id": "B",
+      "text": "contraditória"
+    },
+    {
+      "id": "C",
+      "text": "indutiva"
+    },
+    {
+      "id": "D",
+      "text": "tautológica"
+    },
+    {
+      "id": "E",
+      "text": "impossível"
+    }
+  ],
+  "answer": "C",
+  "comment": "Projeta padrão observado, portanto indução.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

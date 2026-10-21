@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-19",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Ana e Bruno estão frente a frente. Sobre “direita de Ana” e “direita de Bruno”, é correto afirmar, em relação ao espaço:",
+  "options": [
+    {
+      "id": "A",
+      "text": "apontam necessariamente para o mesmo lado"
+    },
+    {
+      "id": "B",
+      "text": "apontam para lados opostos"
+    },
+    {
+      "id": "C",
+      "text": "são sempre norte"
+    },
+    {
+      "id": "D",
+      "text": "são sempre sul"
+    },
+    {
+      "id": "E",
+      "text": "não dependem da orientação dos dois"
+    }
+  ],
+  "answer": "B",
+  "comment": "Em posição frente a frente, as direitas apontam para lados opostos do espaço.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-37",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "Considere: Algum A é B. Algum B é C. A conclusão “Algum A é C” é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "necessariamente verdadeira."
+    },
+    {
+      "id": "B",
+      "text": "necessariamente falsa."
+    },
+    {
+      "id": "C",
+      "text": "possível, mas não necessária."
+    },
+    {
+      "id": "D",
+      "text": "impossível."
+    },
+    {
+      "id": "E",
+      "text": "equivalente à primeira premissa."
+    }
+  ],
+  "answer": "C",
+  "comment": "Os dois elementos de B podem coincidir ou ser diferentes; a interseção A-C é possível, mas não obrigatória.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

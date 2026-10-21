@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-12",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "Ana conhece Bia e Bia conhece Carla. É obrigatório que Ana conheça Carla?",
+  "options": [
+    {
+      "id": "A",
+      "text": "sim"
+    },
+    {
+      "id": "B",
+      "text": "não"
+    },
+    {
+      "id": "C",
+      "text": "somente se Ana for mais velha"
+    },
+    {
+      "id": "D",
+      "text": "sempre em lógica"
+    },
+    {
+      "id": "E",
+      "text": "sim, por transitividade universal"
+    }
+  ],
+  "answer": "B",
+  "comment": "Conhecimento entre pessoas não é necessariamente transitivo.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-13",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "A expressão “X ocorreu imediatamente antes de Y” significa que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "X e Y foram simultâneos"
+    },
+    {
+      "id": "B",
+      "text": "Y ocorreu antes de X"
+    },
+    {
+      "id": "C",
+      "text": "pode haver qualquer número de eventos entre X e Y"
+    },
+    {
+      "id": "D",
+      "text": "não há evento intermediário na ordenação considerada"
+    },
+    {
+      "id": "E",
+      "text": "X ocorreu muito tempo antes de Y"
+    }
+  ],
+  "answer": "D",
+  "comment": "“Imediatamente” elimina posição intermediária na ordenação considerada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

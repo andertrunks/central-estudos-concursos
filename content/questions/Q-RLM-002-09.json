@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-09",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 9\nEm P → Q, é correto afirmar que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "P é condição necessária para Q e Q suficiente para P"
+    },
+    {
+      "id": "B",
+      "text": "P e Q são sempre equivalentes"
+    },
+    {
+      "id": "C",
+      "text": "P é condição suficiente para Q e Q necessária para P"
+    },
+    {
+      "id": "D",
+      "text": "Q implica necessariamente P"
+    },
+    {
+      "id": "E",
+      "text": "não P implica necessariamente não Q"
+    }
+  ],
+  "answer": "C",
+  "comment": "Em P → Q, P é suficiente para Q; Q é necessária para P.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

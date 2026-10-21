@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-03",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\n1, 4, 8, 13, 19, ?",
+  "options": [
+    {
+      "id": "A",
+      "text": "24"
+    },
+    {
+      "id": "B",
+      "text": "25"
+    },
+    {
+      "id": "C",
+      "text": "26"
+    },
+    {
+      "id": "D",
+      "text": "27"
+    },
+    {
+      "id": "E",
+      "text": "28"
+    }
+  ],
+  "answer": "C",
+  "comment": "As diferenças são +3, +4, +5, +6; a próxima é +7; 19+7=26.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

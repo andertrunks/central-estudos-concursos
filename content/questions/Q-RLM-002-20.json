@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-20",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "Após observar apenas dois atendimentos de um setor e ambos demorarem menos de cinco minutos, alguém conclui que todos os atendimentos do ano levam menos de cinco minutos. A principal fragilidade é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "amostra insuficiente para generalização indutiva forte"
+    },
+    {
+      "id": "B",
+      "text": "contradição formal"
+    },
+    {
+      "id": "C",
+      "text": "modus ponens"
+    },
+    {
+      "id": "D",
+      "text": "equivalência bicondicional"
+    },
+    {
+      "id": "E",
+      "text": "tautologia"
+    }
+  ],
+  "answer": "A",
+  "comment": "Generaliza a partir de evidência pequena e pouco representativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

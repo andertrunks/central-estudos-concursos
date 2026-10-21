@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-10",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\nNa sequência 7, 11, 15, 19, ..., qual é o 12º termo?",
+  "options": [
+    {
+      "id": "A",
+      "text": "47"
+    },
+    {
+      "id": "B",
+      "text": "48"
+    },
+    {
+      "id": "C",
+      "text": "49"
+    },
+    {
+      "id": "D",
+      "text": "50"
+    },
+    {
+      "id": "E",
+      "text": "51"
+    }
+  ],
+  "answer": "E",
+  "comment": "Termo inicial 7 e diferença 4. Do 1º ao 12º são 11 incrementos: 7+11×4=51.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

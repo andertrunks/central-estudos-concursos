@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-15",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\nUma seta segue o ciclo cima → direita → baixo → esquerda. A 14ª seta aponta para:",
+  "options": [
+    {
+      "id": "A",
+      "text": "cima"
+    },
+    {
+      "id": "B",
+      "text": "direita"
+    },
+    {
+      "id": "C",
+      "text": "baixo"
+    },
+    {
+      "id": "D",
+      "text": "esquerda"
+    },
+    {
+      "id": "E",
+      "text": "não há padrão"
+    }
+  ],
+  "answer": "B",
+  "comment": "O ciclo tem 4. 14 = 4×3 + 2; segunda direção = direita.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

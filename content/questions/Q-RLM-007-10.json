@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-10",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "A ocorreu antes de C e B também ocorreu antes de C. É correto afirmar que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "A ocorreu necessariamente antes de B"
+    },
+    {
+      "id": "B",
+      "text": "B ocorreu necessariamente antes de A"
+    },
+    {
+      "id": "C",
+      "text": "A e B ocorreram simultaneamente"
+    },
+    {
+      "id": "D",
+      "text": "a ordem entre A e B não é determinada"
+    },
+    {
+      "id": "E",
+      "text": "C ocorreu antes de ambos"
+    }
+  ],
+  "answer": "D",
+  "comment": "Ambas as relações terminam em C e não ordenam A contra B.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

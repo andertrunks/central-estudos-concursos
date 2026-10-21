@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-13",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 13\nConsidere o argumento: “Se o sistema está indisponível, o protocolo falha. O protocolo falhou. Logo, o sistema estava indisponível.” Para mostrar que o argumento é inválido, basta:",
+  "options": [
+    {
+      "id": "A",
+      "text": "provar que o sistema nunca falha"
+    },
+    {
+      "id": "B",
+      "text": "encontrar uma situação em que o protocolo falhe por outra causa com o sistema disponível"
+    },
+    {
+      "id": "C",
+      "text": "transformar a conclusão em premissa"
+    },
+    {
+      "id": "D",
+      "text": "negar as duas premissas"
+    },
+    {
+      "id": "E",
+      "text": "demonstrar que a conclusão é verdadeira"
+    }
+  ],
+  "answer": "B",
+  "comment": "Um contraexemplo com premissas verdadeiras e conclusão falsa demonstra invalidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

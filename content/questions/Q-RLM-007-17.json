@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-17",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Uma pessoa anda 4 unidades para leste e 4 para oeste. É correto afirmar que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "não percorreu distância alguma"
+    },
+    {
+      "id": "B",
+      "text": "percorreu 8 unidades e teve deslocamento líquido zero"
+    },
+    {
+      "id": "C",
+      "text": "percorreu 4 unidades e teve deslocamento líquido 4"
+    },
+    {
+      "id": "D",
+      "text": "percorreu 8 unidades e terminou 8 a leste"
+    },
+    {
+      "id": "E",
+      "text": "percorreu zero unidade e terminou no ponto inicial"
+    }
+  ],
+  "answer": "B",
+  "comment": "Caminho total 8; posição final igual à inicial.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

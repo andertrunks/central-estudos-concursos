@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-12",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 12\n“P somente se Q” deve ser representado como:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Q → P"
+    },
+    {
+      "id": "B",
+      "text": "P → Q"
+    },
+    {
+      "id": "C",
+      "text": "P ∨ Q"
+    },
+    {
+      "id": "D",
+      "text": "não P → Q"
+    },
+    {
+      "id": "E",
+      "text": "P e Q são independentes"
+    }
+  ],
+  "answer": "B",
+  "comment": "“P somente se Q” significa que Q é necessária para P: P → Q.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

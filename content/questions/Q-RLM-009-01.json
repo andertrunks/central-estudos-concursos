@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-01",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "Todo analista é servidor. Lucas é analista. É obrigatório concluir que Lucas:",
+  "options": [
+    {
+      "id": "A",
+      "text": "é terceirizado"
+    },
+    {
+      "id": "B",
+      "text": "é servidor"
+    },
+    {
+      "id": "C",
+      "text": "é gestor"
+    },
+    {
+      "id": "D",
+      "text": "não é servidor"
+    },
+    {
+      "id": "E",
+      "text": "é técnico"
+    }
+  ],
+  "answer": "B",
+  "comment": "De analista decorre servidor pela regra universal.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

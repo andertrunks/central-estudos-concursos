@@ -1,0 +1,31 @@
+{
+  "id": "Q-RLM-005-25",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "“Algum A é B” implica que também existe algum A que não seja B.",
+  "options": [
+    {
+      "id": "C",
+      "text": "CERTO"
+    },
+    {
+      "id": "E",
+      "text": "ERRADO"
+    }
+  ],
+  "answer": "E",
+  "comment": "A interseção existente não obriga elemento de A fora de B.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

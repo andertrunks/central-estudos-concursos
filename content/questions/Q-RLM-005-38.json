@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-005-38",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-03"
+  ],
+  "statement": "A frase “Nem todo servidor é efetivo” equivale a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Nenhum servidor é efetivo."
+    },
+    {
+      "id": "B",
+      "text": "Todo servidor é não efetivo."
+    },
+    {
+      "id": "C",
+      "text": "Algum servidor não é efetivo."
+    },
+    {
+      "id": "D",
+      "text": "Algum efetivo não é servidor."
+    },
+    {
+      "id": "E",
+      "text": "Todo efetivo é servidor."
+    }
+  ],
+  "answer": "C",
+  "comment": "“Nem todo” é particular negativa.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

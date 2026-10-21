@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-06",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "Na disjunção exclusiva p ⊕ q, com p = V e q = V, o resultado é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "V."
+    },
+    {
+      "id": "B",
+      "text": "F."
+    },
+    {
+      "id": "C",
+      "text": "V ou F aleatoriamente."
+    },
+    {
+      "id": "D",
+      "text": "p."
+    },
+    {
+      "id": "E",
+      "text": "q."
+    }
+  ],
+  "answer": "B",
+  "comment": "Na exclusiva, V,V produz F porque ambos não podem ocorrer simultaneamente.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

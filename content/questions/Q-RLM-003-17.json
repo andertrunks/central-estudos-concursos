@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-17",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "A expressão “p se e somente se q” corresponde a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "p ∧ q."
+    },
+    {
+      "id": "B",
+      "text": "p ∨ q."
+    },
+    {
+      "id": "C",
+      "text": "p → q apenas."
+    },
+    {
+      "id": "D",
+      "text": "p ↔ q."
+    },
+    {
+      "id": "E",
+      "text": "¬p."
+    }
+  ],
+  "answer": "D",
+  "comment": "“se e somente se” representa bicondicional.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

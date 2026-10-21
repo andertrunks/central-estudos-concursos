@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-18",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "Uma generalização afirma que todos os equipamentos de certo modelo falham após 100 horas. Encontrar um equipamento desse modelo funcionando após 150 horas constitui:",
+  "options": [
+    {
+      "id": "A",
+      "text": "confirmação definitiva"
+    },
+    {
+      "id": "B",
+      "text": "contraexemplo à generalização universal"
+    },
+    {
+      "id": "C",
+      "text": "dedução da regra"
+    },
+    {
+      "id": "D",
+      "text": "equivalência lógica"
+    },
+    {
+      "id": "E",
+      "text": "silogismo válido"
+    }
+  ],
+  "answer": "B",
+  "comment": "Fornece caso incompatível com a universalidade proposta.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

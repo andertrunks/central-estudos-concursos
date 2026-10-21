@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-16",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Uma pessoa voltada para o norte gira 270° à direita. A direção final é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "norte"
+    },
+    {
+      "id": "B",
+      "text": "leste"
+    },
+    {
+      "id": "C",
+      "text": "sul"
+    },
+    {
+      "id": "D",
+      "text": "oeste"
+    },
+    {
+      "id": "E",
+      "text": "nordeste"
+    }
+  ],
+  "answer": "D",
+  "comment": "270° à direita a partir do norte termina no oeste.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

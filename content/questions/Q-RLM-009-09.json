@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-009-09",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-07"
+  ],
+  "statement": "“Se o servidor está de plantão, atende chamadas.” Pedro está de plantão. Logo:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Pedro atende chamadas"
+    },
+    {
+      "id": "B",
+      "text": "Pedro não atende"
+    },
+    {
+      "id": "C",
+      "text": "todos estão de plantão"
+    },
+    {
+      "id": "D",
+      "text": "plantão é impossível"
+    },
+    {
+      "id": "E",
+      "text": "nada"
+    }
+  ],
+  "answer": "A",
+  "comment": "A condição foi satisfeita; aplica-se a consequência.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

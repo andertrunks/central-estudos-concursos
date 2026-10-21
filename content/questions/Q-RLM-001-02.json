@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-001-02",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-01"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO — nível inicial\nEm uma fila, Pedro está imediatamente antes de Lucas. Isso significa necessariamente que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Pedro é o primeiro."
+    },
+    {
+      "id": "B",
+      "text": "Lucas é o último."
+    },
+    {
+      "id": "C",
+      "text": "não existe pessoa entre Pedro e Lucas."
+    },
+    {
+      "id": "D",
+      "text": "Pedro e Lucas ocupam as duas primeiras posições."
+    },
+    {
+      "id": "E",
+      "text": "Lucas está antes de Pedro."
+    }
+  ],
+  "answer": "C",
+  "comment": "“Imediatamente antes” significa que Pedro vem antes de Lucas sem ninguém entre os dois. Não informa que o par esteja no início ou no fim da fila.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

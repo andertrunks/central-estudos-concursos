@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-006-12",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-05"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO\n10, 9, 7, 4, 0, ?",
+  "options": [
+    {
+      "id": "A",
+      "text": "-3"
+    },
+    {
+      "id": "B",
+      "text": "-4"
+    },
+    {
+      "id": "C",
+      "text": "-5"
+    },
+    {
+      "id": "D",
+      "text": "-6"
+    },
+    {
+      "id": "E",
+      "text": "-7"
+    }
+  ],
+  "answer": "C",
+  "comment": "Subtrações -1,-2,-3,-4; a próxima é -5: 0-5=-5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

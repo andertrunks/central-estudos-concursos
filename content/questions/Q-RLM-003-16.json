@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-003-16",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-04"
+  ],
+  "statement": "Assinale a correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Proposição falsa deixa de ser proposição."
+    },
+    {
+      "id": "B",
+      "text": "Toda pergunta é proposição."
+    },
+    {
+      "id": "C",
+      "text": "Uma proposição deve admitir V ou F."
+    },
+    {
+      "id": "D",
+      "text": "Toda sentença aberta é falsa."
+    },
+    {
+      "id": "E",
+      "text": "Ordens são sempre verdadeiras."
+    }
+  ],
+  "answer": "C",
+  "comment": "A propriedade definidora é admitir valor V ou F.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

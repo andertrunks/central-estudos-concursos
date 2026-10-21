@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-007-02",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-06"
+  ],
+  "statement": "Uma pessoa está voltada para o leste, gira 180° e depois 90° à esquerda. Sua direção final é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "norte"
+    },
+    {
+      "id": "B",
+      "text": "sul"
+    },
+    {
+      "id": "C",
+      "text": "leste"
+    },
+    {
+      "id": "D",
+      "text": "oeste"
+    },
+    {
+      "id": "E",
+      "text": "nordeste"
+    }
+  ],
+  "answer": "B",
+  "comment": "Leste + 180° = oeste; 90° à esquerda a partir de oeste = sul.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

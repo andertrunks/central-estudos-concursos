@@ -440,8 +440,8 @@
     ],
     "coverage": "Parcial",
     "priority": 5,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 1",
     "notes": "SETEC traz Raciocínio Lógico de forma genérica"
   },

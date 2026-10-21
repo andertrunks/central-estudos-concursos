@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-06",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 6\nDe “Todo A é B” e “Todo B é C”, conclui-se necessariamente que:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Todo C é A"
+    },
+    {
+      "id": "B",
+      "text": "Algum C não é B"
+    },
+    {
+      "id": "C",
+      "text": "Todo A é C"
+    },
+    {
+      "id": "D",
+      "text": "Nenhum A é C"
+    },
+    {
+      "id": "E",
+      "text": "Todo B é A"
+    }
+  ],
+  "answer": "C",
+  "comment": "Se A está contido em B e B em C, então A está contido em C.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

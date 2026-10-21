@@ -728,5 +728,16 @@
     "file": "media/MAT-007-IMG-001.png",
     "verifiedAt": "2026-10-20",
     "original": true
+  },
+  {
+    "id": "MAT-008-IMG-001",
+    "contentId": "MAT-008",
+    "type": "imagem",
+    "title": "Raciocínio lógico — estruturas, inferências e padrões",
+    "caption": "Infográfico didático original da composição MAT-008.",
+    "alt": "Infográfico de raciocínio lógico com estruturas, argumentação, diagramas, proposições, sequências, orientação espacial e raciocínio verbal.",
+    "file": "media/MAT-008-IMG-001.png",
+    "verifiedAt": "2026-10-21",
+    "original": true
   }
 ]

@@ -1,0 +1,43 @@
+{
+  "id": "Q-RLM-002-03",
+  "contentId": "MAT-008",
+  "banca": "Autoral — estilo de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-008-02"
+  ],
+  "statement": "QUESTÃO INÉDITA — ESTILO DE CONCURSO 3\nSe P → Q e não Q, então é logicamente válido concluir:",
+  "options": [
+    {
+      "id": "A",
+      "text": "P"
+    },
+    {
+      "id": "B",
+      "text": "Q"
+    },
+    {
+      "id": "C",
+      "text": "não P"
+    },
+    {
+      "id": "D",
+      "text": "P e Q"
+    },
+    {
+      "id": "E",
+      "text": "nada pode ser concluído"
+    }
+  ],
+  "answer": "C",
+  "comment": "P → Q; não Q; logo não P é modus tollens.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
