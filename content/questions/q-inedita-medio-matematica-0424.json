@@ -1,0 +1,29 @@
+{
+  "id": "q-inedita-medio-matematica-0424",
+  "contentId": "MAT-009",
+  "banca": "Autoral — estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Uma urna contém 8 bolas brancas e 4 pretas. Duas bolas são retiradas sucessivamente, sem reposição. Julgue o item: a probabilidade de ambas serem brancas é igual a 14/33.",
+  "options": [
+    {
+      "id": "CERTO",
+      "text": "Certo"
+    },
+    {
+      "id": "ERRADO",
+      "text": "Errado"
+    }
+  ],
+  "answer": "CERTO",
+  "comment": "P=8/12 × 7/11 = 56/132 = 14/33.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

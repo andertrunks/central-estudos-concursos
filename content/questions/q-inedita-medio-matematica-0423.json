@@ -1,0 +1,29 @@
+{
+  "id": "q-inedita-medio-matematica-0423",
+  "contentId": "MAT-009",
+  "banca": "Autoral — estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Em uma caixa há 5 fichas azuis, 3 verdes e 2 amarelas. Uma ficha é escolhida ao acaso. Sabendo-se que a ficha escolhida não é amarela, julgue o item: a probabilidade de ela ser azul é igual a 5/8.",
+  "options": [
+    {
+      "id": "CERTO",
+      "text": "Certo"
+    },
+    {
+      "id": "ERRADO",
+      "text": "Errado"
+    }
+  ],
+  "answer": "CERTO",
+  "comment": "Condicionando ao fato de não ser amarela, restam 8 resultados possíveis, dos quais 5 são azuis. Logo, P(azul | não amarela)=5/8.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0409",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Se a probabilidade de determinado evento ocorrer é 28%, a probabilidade de ele não ocorrer é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "28%"
+    },
+    {
+      "id": "B",
+      "text": "42%"
+    },
+    {
+      "id": "C",
+      "text": "62%"
+    },
+    {
+      "id": "D",
+      "text": "72%"
+    },
+    {
+      "id": "E",
+      "text": "78%"
+    }
+  ],
+  "answer": "D",
+  "comment": "Use o complementar: `100%-28%=72%`. Logo, a alternativa correta é D.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

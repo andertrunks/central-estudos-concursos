@@ -1,0 +1,29 @@
+{
+  "id": "q-inedita-medio-matematica-0427",
+  "contentId": "MAT-009",
+  "banca": "Autoral — estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "Sete tarefas distintas serão executadas uma vez cada. Se uma tarefa específica deve ser a primeira e outra tarefa específica deve ser a última, julgue o item: as cinco tarefas restantes podem ser ordenadas de 120 maneiras.",
+  "options": [
+    {
+      "id": "CERTO",
+      "text": "Certo"
+    },
+    {
+      "id": "ERRADO",
+      "text": "Errado"
+    }
+  ],
+  "answer": "CERTO",
+  "comment": "Duas posições já estão fixadas; restam 5 tarefas para 5 posições, logo 5!=120.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

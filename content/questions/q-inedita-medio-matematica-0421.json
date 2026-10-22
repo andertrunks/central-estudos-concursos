@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0421",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "A palavra ARARA possui 5 letras, sendo A repetida 3 vezes e R repetida 2 vezes. A quantidade de anagramas distintos é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "5"
+    },
+    {
+      "id": "B",
+      "text": "10"
+    },
+    {
+      "id": "C",
+      "text": "20"
+    },
+    {
+      "id": "D",
+      "text": "30"
+    },
+    {
+      "id": "E",
+      "text": "120"
+    }
+  ],
+  "answer": "B",
+  "comment": "`5!/(3!2!)=120/12=10`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

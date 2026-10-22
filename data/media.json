@@ -739,5 +739,16 @@
     "file": "media/MAT-008-IMG-001.png",
     "verifiedAt": "2026-10-21",
     "original": true
+  },
+  {
+    "id": "MAT-009-IMG-001",
+    "contentId": "MAT-009",
+    "type": "imagem",
+    "title": "Árvore de decisão da análise combinatória e probabilidade",
+    "caption": "Infográfico original em duas zonas: escolha da técnica de contagem e fluxo da probabilidade elementar.",
+    "alt": "Infográfico em duas zonas. Na zona de contagem, uma árvore de decisão conduz de princípio fundamental da contagem para permutação simples ou com repetição, arranjo e combinação conforme uso de todos os elementos, repetição e importância da ordem. Na zona de probabilidade, o fluxo vai de experimento para espaço amostral, evento e probabilidade, com atalhos de complementar, independência, sem reposição e pelo menos um. O material é exclusivo de MAT-009 e CRBio-01.",
+    "file": "media/MAT-009-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]

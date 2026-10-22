@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0425",
+  "contentId": "MAT-009",
+  "banca": "Autoral — estilo Quadrix",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Dois sistemas independentes apresentam probabilidades de falha de 20% e 10%, respectivamente. Qual é a probabilidade de pelo menos um deles falhar?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2%"
+    },
+    {
+      "id": "B",
+      "text": "18%"
+    },
+    {
+      "id": "C",
+      "text": "20%"
+    },
+    {
+      "id": "D",
+      "text": "28%"
+    },
+    {
+      "id": "E",
+      "text": "30%"
+    }
+  ],
+  "answer": "D",
+  "comment": "P(nenhum falhar)=0,8×0,9=0,72. Portanto, P(pelo menos um)=1−0,72=0,28=28%.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

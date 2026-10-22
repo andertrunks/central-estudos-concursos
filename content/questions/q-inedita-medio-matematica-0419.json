@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0419",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Uma caixa possui 10 peças, das quais 2 são defeituosas. A probabilidade de escolher uma peça não defeituosa é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "10%"
+    },
+    {
+      "id": "B",
+      "text": "20%"
+    },
+    {
+      "id": "C",
+      "text": "40%"
+    },
+    {
+      "id": "D",
+      "text": "80%"
+    },
+    {
+      "id": "E",
+      "text": "90%"
+    }
+  ],
+  "answer": "D",
+  "comment": "Há `10-2=8` peças não defeituosas em 10. Assim, `8/10=0,8=80%`. Alternativa D.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

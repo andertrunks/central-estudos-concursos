@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0420",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Uma urna possui 3 bolas verdes e 2 amarelas. Duas bolas verdes são retiradas sucessivamente, sem reposição. A probabilidade é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "`1/5`"
+    },
+    {
+      "id": "B",
+      "text": "`3/10`"
+    },
+    {
+      "id": "C",
+      "text": "`2/5`"
+    },
+    {
+      "id": "D",
+      "text": "`1/2`"
+    },
+    {
+      "id": "E",
+      "text": "`3/5`"
+    }
+  ],
+  "answer": "B",
+  "comment": "`3/5·2/4=6/20=3/10`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

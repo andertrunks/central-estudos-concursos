@@ -1,0 +1,29 @@
+{
+  "id": "q-inedita-medio-matematica-0426",
+  "contentId": "MAT-009",
+  "banca": "Autoral — estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "De 10 servidores distintos, devem ser escolhidos 4 para formar uma comissão sem cargos diferenciados. Julgue o item: existem 210 comissões possíveis.",
+  "options": [
+    {
+      "id": "CERTO",
+      "text": "Certo"
+    },
+    {
+      "id": "ERRADO",
+      "text": "Errado"
+    }
+  ],
+  "answer": "CERTO",
+  "comment": "A ordem não importa, portanto C(10,4)=10!/(4!6!)=210.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

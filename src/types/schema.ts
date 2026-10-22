@@ -1,5 +1,8 @@
 import { z } from "zod";
-const id = z.string().regex(/^[A-Z0-9][A-Z0-9-]*$/);
+// IDs editoriais legados podem ser minúsculos (por exemplo, os IDs estáveis
+// q-inedita-* importados do acervo canônico). A validação preserva esses IDs
+// sem renomeá-los, mantendo o mesmo alfabeto seguro usado pelos IDs novos.
+const id = z.string().regex(/^[A-Za-z0-9][A-Za-z0-9-]*$/);
 export const date = z.iso.date();
 const text = z.string().trim().min(1);
 const url = z

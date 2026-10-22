@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0412",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "Uma pessoa pode escolher entre 4 camisas e 3 calças. Quantos conjuntos diferentes com uma camisa e uma calça podem ser formados?",
+  "options": [
+    {
+      "id": "A",
+      "text": "7"
+    },
+    {
+      "id": "B",
+      "text": "9"
+    },
+    {
+      "id": "C",
+      "text": "10"
+    },
+    {
+      "id": "D",
+      "text": "12"
+    },
+    {
+      "id": "E",
+      "text": "24"
+    }
+  ],
+  "answer": "D",
+  "comment": "Pelo princípio fundamental da contagem, há 4 escolhas de camisa e 3 de calça: `4·3=12`. Alternativa D.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0414",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "Quantos anagramas distintos possui a palavra AMOR?",
+  "options": [
+    {
+      "id": "A",
+      "text": "4"
+    },
+    {
+      "id": "B",
+      "text": "8"
+    },
+    {
+      "id": "C",
+      "text": "12"
+    },
+    {
+      "id": "D",
+      "text": "16"
+    },
+    {
+      "id": "E",
+      "text": "24"
+    }
+  ],
+  "answer": "E",
+  "comment": "AMOR possui 4 letras distintas. Como usamos todas e a ordem importa, há `4!=24` anagramas. Alternativa E.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

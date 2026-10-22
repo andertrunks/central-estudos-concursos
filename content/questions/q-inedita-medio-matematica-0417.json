@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0417",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "De cinco pessoas, devem ser escolhidas duas para uma comissão, sem distinção de função. Quantas comissões são possíveis?",
+  "options": [
+    {
+      "id": "A",
+      "text": "5"
+    },
+    {
+      "id": "B",
+      "text": "8"
+    },
+    {
+      "id": "C",
+      "text": "10"
+    },
+    {
+      "id": "D",
+      "text": "20"
+    },
+    {
+      "id": "E",
+      "text": "25"
+    }
+  ],
+  "answer": "C",
+  "comment": "`C(5,2)=10`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

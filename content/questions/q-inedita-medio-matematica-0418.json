@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0418",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "Assinale a situação em que a ordem **não** importa.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Definir campeão e vice."
+    },
+    {
+      "id": "B",
+      "text": "Criar senha de três algarismos distintos."
+    },
+    {
+      "id": "C",
+      "text": "Escolher três membros de uma comissão."
+    },
+    {
+      "id": "D",
+      "text": "Ordenar cinco livros numa estante."
+    },
+    {
+      "id": "E",
+      "text": "Escolher presidente e secretário."
+    }
+  ],
+  "answer": "C",
+  "comment": "Em uma comissão, a ordem dos integrantes não cria uma nova comissão. Portanto, a situação em que a ordem não importa é a alternativa C.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

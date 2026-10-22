@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0416",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-01"
+  ],
+  "statement": "Cinco candidatos disputam os cargos de presidente e vice-presidente de uma comissão. Quantas duplas ordenadas podem ser formadas?",
+  "options": [
+    {
+      "id": "A",
+      "text": "10"
+    },
+    {
+      "id": "B",
+      "text": "15"
+    },
+    {
+      "id": "C",
+      "text": "20"
+    },
+    {
+      "id": "D",
+      "text": "25"
+    },
+    {
+      "id": "E",
+      "text": "120"
+    }
+  ],
+  "answer": "C",
+  "comment": "`5·4=20`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

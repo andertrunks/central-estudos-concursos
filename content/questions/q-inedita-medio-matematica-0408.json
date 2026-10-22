@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0408",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Em uma urna há 5 bolas azuis e 3 vermelhas. Retirando-se uma bola ao acaso, a probabilidade de ela ser vermelha é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "`3/5`"
+    },
+    {
+      "id": "B",
+      "text": "`3/8`"
+    },
+    {
+      "id": "C",
+      "text": "`5/8`"
+    },
+    {
+      "id": "D",
+      "text": "`5/3`"
+    },
+    {
+      "id": "E",
+      "text": "`8/3`"
+    }
+  ],
+  "answer": "B",
+  "comment": "Há 3 casos favoráveis em 8 possíveis.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

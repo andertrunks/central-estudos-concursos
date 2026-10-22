@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0422",
+  "contentId": "MAT-009",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-009-02"
+  ],
+  "statement": "Em três sorteios independentes, a probabilidade de sucesso em cada sorteio é `1/2`. A probabilidade de ocorrer **exatamente um sucesso** é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "`1/8`"
+    },
+    {
+      "id": "B",
+      "text": "`1/4`"
+    },
+    {
+      "id": "C",
+      "text": "`3/8`"
+    },
+    {
+      "id": "D",
+      "text": "`1/2`"
+    },
+    {
+      "id": "E",
+      "text": "`3/4`"
+    }
+  ],
+  "answer": "C",
+  "comment": "As posições possíveis são:\n\n`SNN`, `NSN`, `NNS`.\n\nCada uma tem probabilidade:\n\n`1/8`.\n\nTotal:\n\n`3/8`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}
