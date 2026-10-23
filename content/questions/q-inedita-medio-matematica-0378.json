@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0378",
+  "contentId": "MAT-010",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-02"
+  ],
+  "statement": "Considere os dados: `4,5,5,6,7,5,8`. A moda é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4"
+    },
+    {
+      "id": "B",
+      "text": "5"
+    },
+    {
+      "id": "C",
+      "text": "6"
+    },
+    {
+      "id": "D",
+      "text": "7"
+    },
+    {
+      "id": "E",
+      "text": "8"
+    }
+  ],
+  "answer": "B",
+  "comment": "Moda é o valor que aparece com maior frequência. O número 5 ocorre três vezes, mais do que qualquer outro valor. Portanto, a moda é `5`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

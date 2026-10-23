@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0391",
+  "contentId": "MAT-010",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-03"
+  ],
+  "statement": "Uma turma obteve notas `5,5,6,7,7,7,8,9`. Moda e mediana são, respectivamente:",
+  "options": [
+    {
+      "id": "A",
+      "text": "5 e 6"
+    },
+    {
+      "id": "B",
+      "text": "7 e 7"
+    },
+    {
+      "id": "C",
+      "text": "7 e 6,5"
+    },
+    {
+      "id": "D",
+      "text": "8 e 7"
+    },
+    {
+      "id": "E",
+      "text": "9 e 7"
+    }
+  ],
+  "answer": "B",
+  "comment": "Moda = 7, pois é o valor mais frequente. Há oito dados; os centrais são o 4º e o 5º, ambos 7. Logo, a mediana também é 7.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0380",
+  "contentId": "MAT-010",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-03"
+  ],
+  "statement": "A mediana de `3,5,8,10` é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "5"
+    },
+    {
+      "id": "B",
+      "text": "6"
+    },
+    {
+      "id": "C",
+      "text": "6,5"
+    },
+    {
+      "id": "D",
+      "text": "7"
+    },
+    {
+      "id": "E",
+      "text": "9"
+    }
+  ],
+  "answer": "C",
+  "comment": "Há quatro valores. Os dois centrais são 5 e 8; portanto, a mediana é `(5+8)/2=6,5`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

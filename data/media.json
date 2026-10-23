@@ -750,5 +750,16 @@
     "file": "media/MAT-009-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "MAT-010-IMG-001",
+    "contentId": "MAT-010",
+    "type": "imagem",
+    "title": "Média, moda e mediana: como decidir e calcular",
+    "caption": "Infográfico original em três colunas: cálculo da média, identificação da moda e determinação da mediana.",
+    "alt": "Infográfico com três colunas. Média: somar os valores e dividir pela quantidade, com alerta de sensibilidade a extremos. Moda: localizar a maior frequência, inclusive conjuntos amodais e bimodais. Mediana: ordenar os dados e escolher o valor central ou calcular a média dos dois centrais. O rodapé compara as três medidas.",
+    "file": "media/MAT-010-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]

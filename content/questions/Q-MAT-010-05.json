@@ -1,0 +1,41 @@
+{
+  "id": "Q-MAT-010-05",
+  "contentId": "MAT-010",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-01"
+  ],
+  "statement": "Seis valores possuem média aritmética 8. A soma de cinco deles é 37. O sexto valor é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "8"
+    },
+    {
+      "id": "B",
+      "text": "9"
+    },
+    {
+      "id": "C",
+      "text": "10"
+    },
+    {
+      "id": "D",
+      "text": "11"
+    },
+    {
+      "id": "E",
+      "text": "12"
+    }
+  ],
+  "answer": "D",
+  "comment": "Total=6×8=48; 48−37=11.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

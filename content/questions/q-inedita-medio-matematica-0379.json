@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0379",
+  "contentId": "MAT-010",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-03"
+  ],
+  "statement": "A mediana do conjunto `2,4,7,8,9` é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4"
+    },
+    {
+      "id": "B",
+      "text": "5"
+    },
+    {
+      "id": "C",
+      "text": "7"
+    },
+    {
+      "id": "D",
+      "text": "8"
+    },
+    {
+      "id": "E",
+      "text": "9"
+    }
+  ],
+  "answer": "C",
+  "comment": "Os dados já estão ordenados e há cinco valores. A mediana é o valor central, isto é, o 3º elemento: `7`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

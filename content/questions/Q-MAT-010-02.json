@@ -1,0 +1,29 @@
+{
+  "id": "Q-MAT-010-02",
+  "contentId": "MAT-010",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-03"
+  ],
+  "statement": "Para os valores 12, 5, 9, 7, 4 e 8, a mediana é 7,5.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Rol 4,5,7,8,9,12; mediana=(7+8)/2=7,5.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

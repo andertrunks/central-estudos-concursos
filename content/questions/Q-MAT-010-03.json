@@ -1,0 +1,29 @@
+{
+  "id": "Q-MAT-010-03",
+  "contentId": "MAT-010",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-02"
+  ],
+  "statement": "O conjunto 3, 4, 4, 5, 5 e 6 possui uma única moda igual a 5.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "4 e 5 aparecem duas vezes; o conjunto é bimodal.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

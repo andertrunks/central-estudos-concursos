@@ -1,0 +1,41 @@
+{
+  "id": "q-inedita-medio-matematica-0381",
+  "contentId": "MAT-010",
+  "banca": "Autoral — calibração de concurso",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-01"
+  ],
+  "statement": "A média aritmética de `6,8,7,9` é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "7"
+    },
+    {
+      "id": "B",
+      "text": "7,25"
+    },
+    {
+      "id": "C",
+      "text": "7,5"
+    },
+    {
+      "id": "D",
+      "text": "8"
+    },
+    {
+      "id": "E",
+      "text": "8,5"
+    }
+  ],
+  "answer": "C",
+  "comment": "Some os valores: `6+8+7+9=30`. Dividindo pela quantidade de dados, `30/4=7,5`.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

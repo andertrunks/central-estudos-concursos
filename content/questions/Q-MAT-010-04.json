@@ -1,0 +1,29 @@
+{
+  "id": "Q-MAT-010-04",
+  "contentId": "MAT-010",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-01"
+  ],
+  "statement": "Ao inserir um valor muito superior aos demais em um conjunto de dados, a média aritmética tende a sofrer alteração maior que a mediana.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "A média incorpora diretamente todos os valores; a mediana depende sobretudo da posição central após ordenação.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}

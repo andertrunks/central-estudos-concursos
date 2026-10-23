@@ -1,0 +1,29 @@
+{
+  "id": "Q-MAT-010-01",
+  "contentId": "MAT-010",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-010-01"
+  ],
+  "statement": "Os valores 4, 6, 6, 8 e 11 possuem média aritmética igual a 7.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "4+6+6+8+11=35; 35/5=7.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI"
+  ]
+}
