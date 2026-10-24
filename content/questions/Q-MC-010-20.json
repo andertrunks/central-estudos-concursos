@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-010-20",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-03"
+  ],
+  "statement": "Um cilindro circular reto tem raio de 2 m e altura de 5 m. Seu volume exato é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "10π m³"
+    },
+    {
+      "id": "B",
+      "text": "12π m³"
+    },
+    {
+      "id": "C",
+      "text": "16π m³"
+    },
+    {
+      "id": "D",
+      "text": "25π m³"
+    },
+    {
+      "id": "E",
+      "text": "20π m³"
+    }
+  ],
+  "answer": "E",
+  "comment": "V=πr²h=π×2²×5=π×4×5=20π m³.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

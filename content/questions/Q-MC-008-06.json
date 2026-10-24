@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-06",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Um trajeto de 2,4 km somado a outro de 350 m resulta em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "590 m"
+    },
+    {
+      "id": "B",
+      "text": "2.403,5 m"
+    },
+    {
+      "id": "C",
+      "text": "2.450 m"
+    },
+    {
+      "id": "D",
+      "text": "2.750 m"
+    },
+    {
+      "id": "E",
+      "text": "3.500 m"
+    }
+  ],
+  "answer": "D",
+  "comment": "2,4 km=2.400 m. Somando 350 m, obtenha 2.750 m. A conversão vem antes da soma.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

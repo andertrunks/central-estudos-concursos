@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-010-07",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-02"
+  ],
+  "statement": "A área de um triângulo de base 10 cm e altura perpendicular de 6 cm é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "16 cm²"
+    },
+    {
+      "id": "B",
+      "text": "60 cm²"
+    },
+    {
+      "id": "C",
+      "text": "36 cm²"
+    },
+    {
+      "id": "D",
+      "text": "30 cm²"
+    },
+    {
+      "id": "E",
+      "text": "20 cm²"
+    }
+  ],
+  "answer": "D",
+  "comment": "A=(b×h)/2=(10×6)/2=30 cm².",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

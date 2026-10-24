@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-010-06",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-02"
+  ],
+  "statement": "A área de um retângulo de lados 8 cm e 5 cm é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "26 cm²"
+    },
+    {
+      "id": "B",
+      "text": "40 cm²"
+    },
+    {
+      "id": "C",
+      "text": "13 cm²"
+    },
+    {
+      "id": "D",
+      "text": "20 cm²"
+    },
+    {
+      "id": "E",
+      "text": "80 cm²"
+    }
+  ],
+  "answer": "B",
+  "comment": "Área=8×5=40 cm²; 26 corresponderia ao valor numérico do perímetro em cm, não à área.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

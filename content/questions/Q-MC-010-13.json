@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-010-13",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-03"
+  ],
+  "statement": "Um paralelepípedo retângulo mede 2 m×3 m×5 m. Qual seu volume?",
+  "options": [
+    {
+      "id": "A",
+      "text": "10 m³"
+    },
+    {
+      "id": "B",
+      "text": "20 m³"
+    },
+    {
+      "id": "C",
+      "text": "30 m³"
+    },
+    {
+      "id": "D",
+      "text": "35 m³"
+    },
+    {
+      "id": "E",
+      "text": "60 m³"
+    }
+  ],
+  "answer": "C",
+  "comment": "V=2×3×5=30 m³.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-14",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Uma caixa tem massa bruta de 8,40 kg e tara de 0,65 kg. A massa líquida é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "8,05 kg"
+    },
+    {
+      "id": "B",
+      "text": "7,85 kg"
+    },
+    {
+      "id": "C",
+      "text": "7,95 kg"
+    },
+    {
+      "id": "D",
+      "text": "9,05 kg"
+    },
+    {
+      "id": "E",
+      "text": "7,75 kg"
+    }
+  ],
+  "answer": "E",
+  "comment": "Massa líquida=massa bruta−tara=8,40−0,65=7,75 kg. A massa da embalagem não pertence ao conteúdo.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

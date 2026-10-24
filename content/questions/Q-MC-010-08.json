@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-010-08",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-02"
+  ],
+  "statement": "Um trapézio possui bases paralelas de 12 m e 8 m e altura de 5 m. Sua área é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "40 m²"
+    },
+    {
+      "id": "B",
+      "text": "45 m²"
+    },
+    {
+      "id": "C",
+      "text": "50 m²"
+    },
+    {
+      "id": "D",
+      "text": "60 m²"
+    },
+    {
+      "id": "E",
+      "text": "100 m²"
+    }
+  ],
+  "answer": "C",
+  "comment": "A=(B+b)h/2=(12+8)×5/2=20×5/2=50 m².",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

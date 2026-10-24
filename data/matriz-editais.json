@@ -518,20 +518,16 @@
     "category": "Matemática/RLM",
     "contests": [
       {
-        "contestId": "CRBIO01-2026-ATI",
-        "coverage": "parcial"
-      },
-      {
         "contestId": "SETEC-2026-ATI",
         "coverage": "integral"
       }
     ],
-    "coverage": "Parcial",
+    "coverage": "Só SETEC",
     "priority": 3,
-    "status": "planejado",
-    "editorialStatus": "ausente",
+    "status": "publicado",
+    "editorialStatus": "publicado",
     "phase": "Fase 2",
-    "notes": "Mais explícito na SETEC"
+    "notes": "Escopo formal exclusivo da SETEC conforme manifesto editorial MAT-012"
   },
   {
     "id": "ING-001",

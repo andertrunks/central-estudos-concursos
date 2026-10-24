@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-08",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Uma superfície de 1,2 m² equivale a quantos centímetros quadrados?",
+  "options": [
+    {
+      "id": "A",
+      "text": "120"
+    },
+    {
+      "id": "B",
+      "text": "1.200"
+    },
+    {
+      "id": "C",
+      "text": "10.000"
+    },
+    {
+      "id": "D",
+      "text": "120.000"
+    },
+    {
+      "id": "E",
+      "text": "12.000"
+    }
+  ],
+  "answer": "E",
+  "comment": "1 m²=10.000 cm². Portanto 1,2×10.000=12.000 cm². Em superfície, o fator entre m² e cm² é 10.000, não 100.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

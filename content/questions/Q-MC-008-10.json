@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-10",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Com 3,6 litros de líquido, sem perdas, quantos frascos de 150 mL podem ser enchidos completamente?",
+  "options": [
+    {
+      "id": "A",
+      "text": "18"
+    },
+    {
+      "id": "B",
+      "text": "20"
+    },
+    {
+      "id": "C",
+      "text": "24"
+    },
+    {
+      "id": "D",
+      "text": "30"
+    },
+    {
+      "id": "E",
+      "text": "36"
+    }
+  ],
+  "answer": "C",
+  "comment": "3,6 L=3.600 mL. Divisão por 150 mL/frasco: 3.600÷150=24 frascos cheios, sem perdas.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

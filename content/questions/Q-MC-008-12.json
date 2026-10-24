@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-12",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "A massa total de um pacote de 2,5 kg e outro de 750 g é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "1.750 g"
+    },
+    {
+      "id": "B",
+      "text": "2.575 g"
+    },
+    {
+      "id": "C",
+      "text": "3.000 g"
+    },
+    {
+      "id": "D",
+      "text": "3.250 g"
+    },
+    {
+      "id": "E",
+      "text": "7.500 g"
+    }
+  ],
+  "answer": "D",
+  "comment": "2,5 kg=2.500 g; 2.500+750=3.250 g, ou 3,25 kg. O fator entre kg e g é 1.000.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

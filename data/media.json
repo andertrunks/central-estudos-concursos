@@ -761,5 +761,16 @@
     "file": "media/MAT-010-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "MAT-012-IMG-001",
+    "contentId": "MAT-012",
+    "type": "imagem",
+    "title": "Comprimento, área e volume: como a unidade muda com a dimensão",
+    "caption": "Infográfico original que compara fatores de conversão em uma, duas e três dimensões.",
+    "alt": "Infográfico que compara comprimento em unidades lineares, área em unidades quadradas e volume em unidades cúbicas, destacando a mudança dos fatores de conversão conforme a dimensão.",
+    "file": "media/MAT-012-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]

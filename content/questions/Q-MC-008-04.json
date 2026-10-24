@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-04",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "No mesmo dia, qual o intervalo decorrido das 09h35 às 12h10?",
+  "options": [
+    {
+      "id": "A",
+      "text": "2 h 35 min"
+    },
+    {
+      "id": "B",
+      "text": "2 h 25 min"
+    },
+    {
+      "id": "C",
+      "text": "2 h 45 min"
+    },
+    {
+      "id": "D",
+      "text": "3 h 35 min"
+    },
+    {
+      "id": "E",
+      "text": "1 h 35 min"
+    }
+  ],
+  "answer": "A",
+  "comment": "Converta para minutos: 12h10=730 min; 09h35=575 min; diferença 155 min=2 h 35 min.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

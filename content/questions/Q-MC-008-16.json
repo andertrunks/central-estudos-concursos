@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-16",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Uma duração de 2 h 30 min corresponde, em horas decimais, a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "2,5 h"
+    },
+    {
+      "id": "B",
+      "text": "2,3 h"
+    },
+    {
+      "id": "C",
+      "text": "2,05 h"
+    },
+    {
+      "id": "D",
+      "text": "2,30 h"
+    },
+    {
+      "id": "E",
+      "text": "2,75 h"
+    }
+  ],
+  "answer": "A",
+  "comment": "30 min=30/60=0,5 h. Portanto 2 h 30 min=2,5 h em representação decimal.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

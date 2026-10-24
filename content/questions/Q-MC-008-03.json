@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-03",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Duas horas e setenta e cinco centésimos de hora (2,75 h) equivalem a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "150 minutos"
+    },
+    {
+      "id": "B",
+      "text": "165 minutos"
+    },
+    {
+      "id": "C",
+      "text": "175 minutos"
+    },
+    {
+      "id": "D",
+      "text": "195 minutos"
+    },
+    {
+      "id": "E",
+      "text": "275 minutos"
+    }
+  ],
+  "answer": "B",
+  "comment": "2,75 horas é 2×60+0,75×60=120+45=165 minutos. A parte decimal não representa 75 minutos de relógio.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

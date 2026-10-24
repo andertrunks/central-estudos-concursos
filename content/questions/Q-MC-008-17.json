@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-17",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "A medida de superfície 0,08 m² corresponde a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "8 cm²"
+    },
+    {
+      "id": "B",
+      "text": "80 cm²"
+    },
+    {
+      "id": "C",
+      "text": "8.000 cm²"
+    },
+    {
+      "id": "D",
+      "text": "800 cm²"
+    },
+    {
+      "id": "E",
+      "text": "80.000 cm²"
+    }
+  ],
+  "answer": "D",
+  "comment": "O fator entre metro quadrado e centímetro quadrado é 10.000. 0,08×10.000=800 cm².",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

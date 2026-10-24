@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-010-19",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-03"
+  ],
+  "statement": "Um reservatório contém volume de 1 m³. Quantos litros correspondem a esse volume?",
+  "options": [
+    {
+      "id": "A",
+      "text": "1.000 L"
+    },
+    {
+      "id": "B",
+      "text": "100 L"
+    },
+    {
+      "id": "C",
+      "text": "10 L"
+    },
+    {
+      "id": "D",
+      "text": "10.000 L"
+    },
+    {
+      "id": "E",
+      "text": "1 L"
+    }
+  ],
+  "answer": "A",
+  "comment": "1 m³=1.000 dm³, e cada dm³ equivale a 1 L. Logo 1.000 L.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

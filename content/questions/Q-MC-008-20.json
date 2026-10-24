@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-20",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Uma fita de 1,8 m é dividida integralmente em partes iguais de 30 cm, sem perdas. Quantas partes são obtidas?",
+  "options": [
+    {
+      "id": "A",
+      "text": "3"
+    },
+    {
+      "id": "B",
+      "text": "5"
+    },
+    {
+      "id": "C",
+      "text": "6"
+    },
+    {
+      "id": "D",
+      "text": "9"
+    },
+    {
+      "id": "E",
+      "text": "60"
+    }
+  ],
+  "answer": "C",
+  "comment": "Primeiro 1,8 m=180 cm. Cortes de 30 cm produzem 180÷30=6 partes iguais, sem perda de material.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

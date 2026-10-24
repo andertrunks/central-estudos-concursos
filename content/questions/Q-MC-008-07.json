@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-07",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "A medida 450 cm equivale a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "4,5 m"
+    },
+    {
+      "id": "B",
+      "text": "45 m"
+    },
+    {
+      "id": "C",
+      "text": "0,45 m"
+    },
+    {
+      "id": "D",
+      "text": "4.500 m"
+    },
+    {
+      "id": "E",
+      "text": "4,05 m"
+    }
+  ],
+  "answer": "A",
+  "comment": "Cada metro tem 100 centímetros, então 450÷100=4,5 m. Verificação: 4,5×100=450 cm.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

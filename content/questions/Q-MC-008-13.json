@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-13",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "A massa de 3,6 toneladas corresponde a:",
+  "options": [
+    {
+      "id": "A",
+      "text": "360 kg"
+    },
+    {
+      "id": "B",
+      "text": "3.600 kg"
+    },
+    {
+      "id": "C",
+      "text": "36.000 kg"
+    },
+    {
+      "id": "D",
+      "text": "0,36 kg"
+    },
+    {
+      "id": "E",
+      "text": "360.000 kg"
+    }
+  ],
+  "answer": "B",
+  "comment": "Uma tonelada=1.000 kg, logo 3,6 t=3.600 kg.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}

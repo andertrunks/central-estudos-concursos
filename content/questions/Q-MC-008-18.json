@@ -1,0 +1,41 @@
+{
+  "id": "Q-MC-008-18",
+  "contentId": "MAT-012",
+  "banca": "Autoral — treinamento",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "MAT-012-01"
+  ],
+  "statement": "Um produto tem massa de 0,8 kg por litro, conforme dado expresso no enunciado. Qual a massa de 5 litros do produto?",
+  "options": [
+    {
+      "id": "A",
+      "text": "0,16 kg"
+    },
+    {
+      "id": "B",
+      "text": "4 kg"
+    },
+    {
+      "id": "C",
+      "text": "5,8 kg"
+    },
+    {
+      "id": "D",
+      "text": "6,25 kg"
+    },
+    {
+      "id": "E",
+      "text": "8 kg"
+    }
+  ],
+  "answer": "B",
+  "comment": "O enunciado fornece relação específica de 0,8 kg/L. Multiplique 5 L×0,8 kg/L=4 kg. Sem esse fator não se poderia converter capacidade em massa.",
+  "source_ids": [
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "SETEC-2026-ATI"
+  ]
+}
