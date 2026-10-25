@@ -1,0 +1,31 @@
+{
+  "id": "Q-TI-SEG-003-04",
+  "contentId": "TI-SEG-003",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-003-06"
+  ],
+  "statement": "Phishing e vírus são termos sinônimos, pois ambos designam obrigatoriamente código executável malicioso.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Phishing é fraude de engenharia social; pode entregar malware, mas não é sinônimo de vírus.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

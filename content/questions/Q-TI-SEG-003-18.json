@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-SEG-003-18",
+  "contentId": "TI-SEG-003",
+  "banca": "Autoral · estilo INDEPAC",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-003-03"
+  ],
+  "statement": "Ataque de negação de serviço coordenado a partir de múltiplas origens é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "DDoS"
+    },
+    {
+      "id": "B",
+      "text": "assinatura digital"
+    },
+    {
+      "id": "C",
+      "text": "hashing"
+    },
+    {
+      "id": "D",
+      "text": "compactação"
+    }
+  ],
+  "answer": "A",
+  "comment": "DDoS é negação de serviço distribuída por múltiplas origens.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

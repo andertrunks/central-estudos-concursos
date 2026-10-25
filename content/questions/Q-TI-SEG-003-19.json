@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-SEG-003-19",
+  "contentId": "TI-SEG-003",
+  "banca": "Autoral · estilo INDEPAC",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-003-04"
+  ],
+  "statement": "Qual afirmação sobre firewall e antivírus está correta?",
+  "options": [
+    {
+      "id": "A",
+      "text": "são sinônimos"
+    },
+    {
+      "id": "B",
+      "text": "firewall substitui antimalware"
+    },
+    {
+      "id": "C",
+      "text": "antivírus roteia pacotes entre redes"
+    },
+    {
+      "id": "D",
+      "text": "são controles diferentes e complementares"
+    }
+  ],
+  "answer": "D",
+  "comment": "Firewall e antivírus têm objetos e decisões diferentes, portanto são complementares.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

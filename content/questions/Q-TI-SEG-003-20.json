@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-SEG-003-20",
+  "contentId": "TI-SEG-003",
+  "banca": "Autoral · estilo INDEPAC",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-003-06"
+  ],
+  "statement": "A estratégia de combinar atualização, MFA, firewall, antimalware e conscientização exemplifica:",
+  "options": [
+    {
+      "id": "A",
+      "text": "defesa em profundidade"
+    },
+    {
+      "id": "B",
+      "text": "vulnerabilidade zero"
+    },
+    {
+      "id": "C",
+      "text": "confiança irrestrita"
+    },
+    {
+      "id": "D",
+      "text": "desativação de controles"
+    }
+  ],
+  "answer": "A",
+  "comment": "Atualização, MFA, firewall, antimalware e conscientização formam defesa em profundidade.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

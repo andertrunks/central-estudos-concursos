@@ -772,5 +772,16 @@
     "file": "media/MAT-012-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "TI-SEG-003-IMG-001",
+    "contentId": "TI-SEG-003",
+    "type": "imagem",
+    "title": "Da ameaça à defesa",
+    "caption": "Fluxo entre ameaça, vulnerabilidade, exploração, impacto e controles complementares.",
+    "alt": "Infográfico relacionando ameaça, vulnerabilidade, exploração e impacto aos controles complementares de atualização, firewall, antimalware, MFA e conscientização.",
+    "file": "media/TI-SEG-003-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]

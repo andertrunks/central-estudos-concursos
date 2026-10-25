@@ -1,0 +1,39 @@
+{
+  "id": "Q-TI-SEG-003-13",
+  "contentId": "TI-SEG-003",
+  "banca": "Autoral · estilo INDEPAC",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-SEG-003-04"
+  ],
+  "statement": "Qual controle tem como função típica filtrar comunicações de rede segundo política?",
+  "options": [
+    {
+      "id": "A",
+      "text": "ransomware"
+    },
+    {
+      "id": "B",
+      "text": "phishing"
+    },
+    {
+      "id": "C",
+      "text": "firewall"
+    },
+    {
+      "id": "D",
+      "text": "keylogger"
+    }
+  ],
+  "answer": "C",
+  "comment": "Firewall filtra comunicações de rede segundo uma política.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
