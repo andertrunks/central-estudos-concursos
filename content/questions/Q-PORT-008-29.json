@@ -1,0 +1,31 @@
+{
+  "id": "Q-PORT-008-29",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo Cebraspe",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Em “Não me diga a verdade”, a palavra negativa favorece próclise mesmo com imperativo.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "“Não” atrai próclise.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

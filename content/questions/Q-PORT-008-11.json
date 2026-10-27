@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-11",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-03"
+  ],
+  "statement": "Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Dir-lhe-ei a verdade."
+    },
+    {
+      "id": "B",
+      "text": "Direi-lhe a verdade, no padrão tradicional do futuro sem atrator."
+    },
+    {
+      "id": "C",
+      "text": "Lhe direi a verdade, obrigatoriamente, sem qualquer atrator."
+    },
+    {
+      "id": "D",
+      "text": "Direi a lhe verdade."
+    },
+    {
+      "id": "E",
+      "text": "Dir-ei-lhe a verdade."
+    }
+  ],
+  "answer": "A",
+  "comment": "Futuro do presente sem atrator: mesóclise.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

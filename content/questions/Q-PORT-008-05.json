@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-05",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Hoje trabalha-se remotamente, sem pausa depois do advérbio."
+    },
+    {
+      "id": "B",
+      "text": "Hoje se trabalha remotamente."
+    },
+    {
+      "id": "C",
+      "text": "Hoje se-trabalha remotamente."
+    },
+    {
+      "id": "D",
+      "text": "Hoje trabalha se remotamente."
+    },
+    {
+      "id": "E",
+      "text": "Hoje lhe trabalha remotamente."
+    }
+  ],
+  "answer": "B",
+  "comment": "Advérbio sem pausa favorece próclise.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

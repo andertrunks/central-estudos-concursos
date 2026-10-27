@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-18",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-03"
+  ],
+  "statement": "Assinale a construção correta no padrão tradicional sem atrator.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Realizará-se a sessão."
+    },
+    {
+      "id": "B",
+      "text": "Se realizará a sessão, obrigatoriamente."
+    },
+    {
+      "id": "C",
+      "text": "Realizar-se-á a sessão."
+    },
+    {
+      "id": "D",
+      "text": "Realizar se á a sessão."
+    },
+    {
+      "id": "E",
+      "text": "Realizará se a sessão."
+    }
+  ],
+  "answer": "C",
+  "comment": "Futuro sem atrator: “realizar-se-á”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

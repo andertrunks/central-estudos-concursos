@@ -1,0 +1,31 @@
+{
+  "id": "Q-PORT-008-37",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo Cebraspe",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-05"
+  ],
+  "statement": "Em “viram-no sair”, a forma “no” relaciona-se à terminação nasal da forma verbal.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Após terminação nasal, “o” pode aparecer como “no”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

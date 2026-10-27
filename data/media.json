@@ -783,5 +783,16 @@
     "file": "media/TI-SEG-003-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "PORT-008-IMG-001",
+    "contentId": "PORT-008",
+    "type": "imagem",
+    "title": "Onde fica o pronome?",
+    "caption": "Fluxograma original para decidir entre próclise, mesóclise e ênclise.",
+    "alt": "Fluxograma de decisão para colocação de pronomes átonos entre próclise, mesóclise e ênclise conforme fator de atração, futuro e forma verbal.",
+    "file": "media/PORT-008-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]

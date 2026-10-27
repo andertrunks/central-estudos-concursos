@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-14",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-04"
+  ],
+  "statement": "Assinale a forma correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "vender-la."
+    },
+    {
+      "id": "B",
+      "text": "vendê-la."
+    },
+    {
+      "id": "C",
+      "text": "vende-la."
+    },
+    {
+      "id": "D",
+      "text": "vender-a."
+    },
+    {
+      "id": "E",
+      "text": "vendê-a."
+    }
+  ],
+  "answer": "B",
+  "comment": "“vender + a” → “vendê-la”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

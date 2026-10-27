@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-10",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-02"
+  ],
+  "statement": "A frase adequada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Diga me a verdade."
+    },
+    {
+      "id": "B",
+      "text": "Me diga a verdade, como única forma normativa."
+    },
+    {
+      "id": "C",
+      "text": "Diga-me a verdade."
+    },
+    {
+      "id": "D",
+      "text": "Diga a-me verdade."
+    },
+    {
+      "id": "E",
+      "text": "Diga-lhe me a verdade."
+    }
+  ],
+  "answer": "C",
+  "comment": "Imperativo afirmativo: “Diga-me”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-01",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Assinale a frase de acordo com a norma-padrão tradicional.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Não diga-me a resposta."
+    },
+    {
+      "id": "B",
+      "text": "Não me diga a resposta."
+    },
+    {
+      "id": "C",
+      "text": "Não diga a me resposta."
+    },
+    {
+      "id": "D",
+      "text": "Não-me diga a resposta."
+    },
+    {
+      "id": "E",
+      "text": "Não diga me a resposta."
+    }
+  ],
+  "answer": "B",
+  "comment": "A negação “não” atrai “me”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

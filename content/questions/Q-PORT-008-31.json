@@ -1,0 +1,31 @@
+{
+  "id": "Q-PORT-008-31",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo Cebraspe",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-03"
+  ],
+  "statement": "Em “Não dir-lhe-ei a verdade”, a mesóclise é obrigatória porque o verbo está no futuro do presente.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "“Não” exige próclise: “Não lhe direi”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

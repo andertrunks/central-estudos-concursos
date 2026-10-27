@@ -1,0 +1,31 @@
+{
+  "id": "Q-PORT-008-19",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo Cebraspe",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Em “Não me avisaram”, a palavra negativa justifica a próclise.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Negação é fator clássico de atração.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

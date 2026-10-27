@@ -1,0 +1,31 @@
+{
+  "id": "Q-PORT-008-24",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo Cebraspe",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Em “Hoje, trabalha-se remotamente”, a vírgula pode romper a atração que o advérbio exerceria sem pausa.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "A pausa pode romper a atração na descrição normativa escolar.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "Q-PORT-008-27",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo Cebraspe",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-02"
+  ],
+  "statement": "Em início de oração, “Me informaram o resultado” é a única forma aceita pela tradição normativa de concursos.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "A tradição normativa evita pronome átono iniciando oração; “Informaram-me” é a solução clássica.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

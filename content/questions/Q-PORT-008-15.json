@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-15",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-04"
+  ],
+  "statement": "A frase adequada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Tinha informado-lhe o resultado."
+    },
+    {
+      "id": "B",
+      "text": "Tinha-lhe informado o resultado."
+    },
+    {
+      "id": "C",
+      "text": "Tinha informado lhe o resultado."
+    },
+    {
+      "id": "D",
+      "text": "Tinha-lhe informado-lhe o resultado."
+    },
+    {
+      "id": "E",
+      "text": "Tinha o informado-lhe resultado."
+    }
+  ],
+  "answer": "B",
+  "comment": "O pronome não se liga depois do particípio.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

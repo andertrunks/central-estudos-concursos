@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-06",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-02"
+  ],
+  "statement": "Com pausa após o advérbio, a forma tradicional esperada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Hoje, se trabalha remotamente."
+    },
+    {
+      "id": "B",
+      "text": "Hoje, trabalha-se remotamente."
+    },
+    {
+      "id": "C",
+      "text": "Hoje, se-trabalha remotamente."
+    },
+    {
+      "id": "D",
+      "text": "Hoje, trabalha se remotamente."
+    },
+    {
+      "id": "E",
+      "text": "Hoje, se trabalhará-se remotamente."
+    }
+  ],
+  "answer": "B",
+  "comment": "A vírgula rompe a relação direta do advérbio com o verbo; a ênclise é a solução tradicional.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

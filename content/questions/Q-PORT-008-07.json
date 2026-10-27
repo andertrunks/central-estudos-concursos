@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-07",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Assinale a frase correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Em tratando-se de prazo, confira o edital."
+    },
+    {
+      "id": "B",
+      "text": "Em se tratando de prazo, confira o edital."
+    },
+    {
+      "id": "C",
+      "text": "Em tratando se de prazo, confira o edital."
+    },
+    {
+      "id": "D",
+      "text": "Em se tratando-se de prazo, confira o edital."
+    },
+    {
+      "id": "E",
+      "text": "Em-se tratando de prazo, confira o edital."
+    }
+  ],
+  "answer": "B",
+  "comment": "A construção clássica é “Em se tratando”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

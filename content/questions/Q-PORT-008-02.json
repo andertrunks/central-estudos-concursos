@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-02",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "A colocação está adequada em:",
+  "options": [
+    {
+      "id": "A",
+      "text": "A regra que aplica-se aos servidores é clara."
+    },
+    {
+      "id": "B",
+      "text": "A regra que se aplica aos servidores é clara."
+    },
+    {
+      "id": "C",
+      "text": "A regra que aplica se aos servidores é clara."
+    },
+    {
+      "id": "D",
+      "text": "A regra que se aplica-se aos servidores é clara."
+    },
+    {
+      "id": "E",
+      "text": "A regra que lhe aplica aos servidores é clara."
+    }
+  ],
+  "answer": "B",
+  "comment": "O relativo “que” exige próclise: “que se aplica”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

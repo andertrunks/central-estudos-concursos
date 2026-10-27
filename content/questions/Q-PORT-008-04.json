@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-04",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "A frase adequada é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "Quando chamarem-me, irei."
+    },
+    {
+      "id": "B",
+      "text": "Quando me chamarem, irei."
+    },
+    {
+      "id": "C",
+      "text": "Quando chamar-me-ão, irei."
+    },
+    {
+      "id": "D",
+      "text": "Quando me chamarão, irei."
+    },
+    {
+      "id": "E",
+      "text": "Quando chamarem me, irei."
+    }
+  ],
+  "answer": "B",
+  "comment": "A conjunção subordinativa “quando” atrai “me”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-03",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-01"
+  ],
+  "statement": "Assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Quem contou-lhe isso?"
+    },
+    {
+      "id": "B",
+      "text": "Quem lhe contou isso?"
+    },
+    {
+      "id": "C",
+      "text": "Quem contou lhe isso?"
+    },
+    {
+      "id": "D",
+      "text": "Quem-lhe contou isso?"
+    },
+    {
+      "id": "E",
+      "text": "Quem se contou isso?"
+    }
+  ],
+  "answer": "B",
+  "comment": "Pronome interrogativo favorece próclise: “Quem lhe contou?”.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

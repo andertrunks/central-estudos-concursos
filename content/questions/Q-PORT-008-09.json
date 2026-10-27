@@ -1,0 +1,43 @@
+{
+  "id": "Q-PORT-008-09",
+  "contentId": "PORT-008",
+  "banca": "Autoral — estilo VUNESP",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "PORT-008-02"
+  ],
+  "statement": "Assinale a alternativa correta. Considere o padrão tradicional de início de oração.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Me informaram o resultado."
+    },
+    {
+      "id": "B",
+      "text": "Informaram-me o resultado."
+    },
+    {
+      "id": "C",
+      "text": "Informaram me o resultado."
+    },
+    {
+      "id": "D",
+      "text": "Informaram a-me o resultado."
+    },
+    {
+      "id": "E",
+      "text": "Informaram-se me o resultado."
+    }
+  ],
+  "answer": "B",
+  "comment": "No padrão tradicional de início de oração, usa-se ênclise.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
