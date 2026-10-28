@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-20",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Um rogue AP ou evil twin pode ser relevante para segurança WLAN, mas esses exemplos são apoio pedagógico ao escopo genérico e não novos itens literais autônomos do edital. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "preserva a distinção entre decomposição pedagógica e exigência literal.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

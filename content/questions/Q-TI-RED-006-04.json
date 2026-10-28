@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-04",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "O IKE é empregado para negociação de parâmetros e estabelecimento de chaves em cenários IPsec. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "função conceitual do IKE em IPsec.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

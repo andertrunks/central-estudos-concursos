@@ -1,0 +1,101 @@
+{
+  "id": "TI-RED-006",
+  "title": "VPN e redes sem fio — VPN, wireless e segurança de rede",
+  "discipline": "TI",
+  "subject": "VPN e redes sem fio",
+  "subtopic": "VPN, wireless e segurança de rede",
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ],
+  "objectives": [
+    "explicar o que é VPN e para que serve;",
+    "diferenciar VPN site-to-site e VPN de acesso remoto;",
+    "reconhecer IPsec e IKE em nível conceitual;",
+    "diferenciar modo túnel e modo transporte;",
+    "diferenciar full tunnel e split tunnel;",
+    "explicar por que VPN não torna o endpoint automaticamente seguro;",
+    "explicar o que é WLAN e a função de um access point;",
+    "reconhecer IEEE 802.11 como família de padrões de WLAN;",
+    "distinguir as faixas de 2,4 GHz, 5 GHz e 6 GHz em nível conceitual;",
+    "reconhecer SSID e a arquitetura básica de uma WLAN em modo infraestrutura;",
+    "diferenciar WEP, WPA, WPA2 e WPA3 em perspectiva histórica/conceitual;",
+    "diferenciar modos Personal e Enterprise;",
+    "compreender 802.1X/RADIUS em nível conceitual como autenticação individual em ambientes corporativos;",
+    "distinguir proteção do enlace Wi-Fi de proteção por VPN;",
+    "resolver itens que misturam WLAN, VPN, access point e controles de segurança sem confundir suas funções."
+  ],
+  "theory": "1. O QUE OS EDITAIS COBREM\nA matriz canônica consolidada registra TI-RED-006 como item comum aos dois concursos, com escopo “VPN, wireless e segurança de rede”. Este documento não transforma a decomposição pedagógica abaixo em novos subitens literais de edital. Protocolos, padrões e exemplos são usados para ensinar o item genérico com profundidade adequada.\n\n3. PRÉ-REQUISITOS\n- RED-001 — Fundamentos de Redes de Computadores.\n- TI-RED-003 — Equipamentos de rede.\n- SI-004 — Segurança de redes.\n- TI-SEG-003 — Ameaças e proteção.",
+  "examples": "19. RESUMO\nVPN cria comunicação lógica protegida sobre rede existente. Site-to-site conecta redes; acesso remoto conecta usuário/dispositivo ao ambiente. IPsec protege tráfego IP e pode operar em modos túnel e transporte; IKE apoia negociação e chaves. WLAN é LAN sem fio baseada na família IEEE 802.11. Access point integra estações sem fio à infraestrutura. Segurança Wi-Fi evoluiu de WEP para WPA/WPA2/WPA3. Enterprise permite autenticação individual, frequentemente com 802.1X/RADIUS. Segurança Wi-Fi e VPN são complementares, não sinônimas.",
+  "pitfalls": "18. PEGADINHAS E ERROS FREQUENTES\n1. VPN = firewall. Errado.\n2. VPN torna os endpoints automaticamente seguros. Errado.\n3. Site-to-site conecta apenas um usuário a uma rede. Errado.\n4. Acesso remoto e RDP são a mesma coisa. Errado.\n5. IPsec é protocolo de aplicação. Errado; atua na camada de rede.\n6. Modo túnel e modo transporte são idênticos. Errado.\n7. Split tunnel envia obrigatoriamente todo o tráfego pela VPN. Errado.\n8. WLAN = qualquer rede sem fio de qualquer alcance. Não; WLAN é rede local sem fio.\n9. Access point é apenas repetidor físico. Errado; em infraestrutura exerce função de bridge de camada 2.\n10. Ocultar SSID torna a rede invisível e segura. Errado.\n11. 2,4 GHz sempre é mais rápido que 5 GHz. Errado.\n12. 5 GHz sempre tem maior alcance que 2,4 GHz. Errado em regra prática.\n13. WEP é recomendável por ser compatível com equipamentos antigos. Errado.\n14. WPA2/WPA3-Enterprise exige necessariamente uma única senha compartilhada. Errado.\n15. RADIUS é access point. Errado.\n16. WPA3 substitui VPN em todos os cenários. Errado.\n17. VPN substitui MFA. Errado.\n18. Wi-Fi seguro elimina necessidade de patching e proteção de endpoint. Errado.",
+  "summary": "21. FLASHCARDS — IDs PERMANENTES\nF-TI-RED-006-01 — Frente: VPN. Verso: comunicação lógica protegida sobre rede existente.\nF-TI-RED-006-02 — Frente: VPN site-to-site. Verso: conecta redes por meio de gateways/túnel.\nF-TI-RED-006-03 — Frente: VPN de acesso remoto. Verso: conecta usuário/dispositivo remoto ao ambiente.\nF-TI-RED-006-04 — Frente: IPsec. Verso: framework de padrões para proteger comunicações IP.\nF-TI-RED-006-05 — Frente: IKE. Verso: negociação de parâmetros, autenticação dos pares e estabelecimento de chaves em IPsec.\nF-TI-RED-006-06 — Frente: modo túnel. Verso: encapsula o pacote IP original em novo pacote protegido.\nF-TI-RED-006-07 — Frente: modo transporte. Verso: protege a carga útil mantendo o cabeçalho IP original externo.\nF-TI-RED-006-08 — Frente: full tunnel. Verso: todo o tráfego definido do cliente segue pela VPN.\nF-TI-RED-006-09 — Frente: split tunnel. Verso: apenas tráfego selecionado segue pela VPN.\nF-TI-RED-006-10 — Frente: WLAN. Verso: rede local sem fio.\nF-TI-RED-006-11 — Frente: IEEE 802.11. Verso: família de padrões MAC/PHY para WLAN.\nF-TI-RED-006-12 — Frente: access point. Verso: integra estações 802.11 à infraestrutura e atua como bridge de camada 2 em modo infraestrutura.\nF-TI-RED-006-13 — Frente: SSID. Verso: identificador/nome lógico da WLAN.\nF-TI-RED-006-14 — Frente: 2,4 GHz. Verso: faixa comum com maior alcance relativo e mais interferência/congestionamento em muitos ambientes.\nF-TI-RED-006-15 — Frente: 5 GHz. Verso: maior capacidade/espectro disponível em muitos cenários, com alcance relativo menor em várias condições.\nF-TI-RED-006-16 — Frente: 6 GHz. Verso: faixa adicional usada por gerações recentes de Wi-Fi onde regulamentada.\nF-TI-RED-006-17 — Frente: WEP. Verso: mecanismo legado e inseguro.\nF-TI-RED-006-18 — Frente: WPA2. Verso: geração consolidada de proteção Wi-Fi posterior a WPA.\nF-TI-RED-006-19 — Frente: WPA3. Verso: geração posterior com melhorias de autenticação/proteção.\nF-TI-RED-006-20 — Frente: Personal. Verso: modo baseado em segredo compartilhado, conforme geração/configuração.\nF-TI-RED-006-21 — Frente: Enterprise. Verso: autenticação individualizada, tipicamente com 802.1X/RADIUS.\nF-TI-RED-006-22 — Frente: 802.1X. Verso: arquitetura de controle de acesso/autenticação de rede.\nF-TI-RED-006-23 — Frente: RADIUS. Verso: protocolo/servidor AAA frequentemente usado na autenticação Enterprise.\nF-TI-RED-006-24 — Frente: VPN x WPA2/WPA3. Verso: VPN protege túnel entre extremidades; WPA2/WPA3 protege o enlace/ambiente Wi-Fi; podem coexistir.",
+  "review": "20. REVISÃO RÁPIDA\n1. VPN? Comunicação protegida/túnel sobre rede existente.\n2. Site-to-site? Rede com rede.\n3. Remote access? Usuário/dispositivo com ambiente.\n4. IPsec? Segurança de tráfego IP.\n5. IKE? Negociação/autenticação/chaves em IPsec.\n6. Tunnel mode? Pacote original encapsulado em novo pacote protegido.\n7. Transport mode? Proteção da carga útil com cabeçalho IP original externo.\n8. Full tunnel? Todo o tráfego definido passa pelo túnel.\n9. Split tunnel? Apenas parte do tráfego passa pelo túnel.\n10. WLAN? Rede local sem fio.\n11. IEEE de WLAN? 802.11.\n12. AP? Ponte entre estações 802.11 e infraestrutura LAN.\n13. SSID? Identificador/nome lógico da WLAN.\n14. WEP? Legado/inseguro.\n15. WPA2/WPA3 Enterprise? Autenticação individualizada em ambiente corporativo.\n16. 802.1X? Controle de acesso/autenticação de rede.\n17. RADIUS? Servidor AAA frequentemente usado em Enterprise.\n18. VPN = Wi-Fi encryption? Não.\n\n24. TREINOS COMPLEMENTARES — IDs PERMANENTES\nT-TI-RED-006-01 — Desenhe uma VPN site-to-site entre sede e filial e identifique os gateways.\nT-TI-RED-006-02 — Desenhe VPN de acesso remoto entre notebook doméstico e rede institucional.\nT-TI-RED-006-03 — Compare modo túnel e transporte em uma tabela de duas colunas.\nT-TI-RED-006-04 — Explique full tunnel x split tunnel usando dois fluxos: sistema corporativo e navegação pública.\nT-TI-RED-006-05 — Monte um diagrama cliente Wi-Fi → AP → switch/LAN e identifique as camadas envolvidas.\nT-TI-RED-006-06 — Crie uma tabela 2,4/5/6 GHz com vantagens e limitações sem usar números absolutos de alcance.\nT-TI-RED-006-07 — Ordene WEP, WPA, WPA2 e WPA3 e explique por que WEP não deve ser recomendado.\nT-TI-RED-006-08 — Compare Personal x Enterprise e inclua 802.1X/RADIUS no lado Enterprise.\nT-TI-RED-006-09 — Classifique dez afirmações como VPN, Wi-Fi, firewall, access point ou antivírus.\nT-TI-RED-006-10 — Resolva Q-TI-RED-006-01:20 e registre erros por categoria.\nT-TI-RED-006-11 — Revise as referências Quadrix reais e escreva a regra conceitual explorada em cada uma sem copiar o enunciado.\nT-TI-RED-006-12 — Produza um mapa final: WLAN segura → WPA2/3 + autenticação; comunicação remota → VPN; endpoint → controles próprios.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "media": [
+    "TI-RED-006-IMG-001"
+  ],
+  "questions": [
+    "Q-TI-RED-006-01",
+    "Q-TI-RED-006-02",
+    "Q-TI-RED-006-03",
+    "Q-TI-RED-006-04",
+    "Q-TI-RED-006-05",
+    "Q-TI-RED-006-06",
+    "Q-TI-RED-006-07",
+    "Q-TI-RED-006-08",
+    "Q-TI-RED-006-09",
+    "Q-TI-RED-006-10",
+    "Q-TI-RED-006-11",
+    "Q-TI-RED-006-12",
+    "Q-TI-RED-006-13",
+    "Q-TI-RED-006-14",
+    "Q-TI-RED-006-15",
+    "Q-TI-RED-006-16",
+    "Q-TI-RED-006-17",
+    "Q-TI-RED-006-18",
+    "Q-TI-RED-006-19",
+    "Q-TI-RED-006-20"
+  ],
+  "updatedAt": "2026-10-28",
+  "requirements": {
+    "image": true,
+    "videos": false,
+    "questions": true
+  },
+  "exception": "Referências reais permanecem somente como metadados/localizadores, fora da pontuação. Padrões e protocolos são decomposição pedagógica, não novos subitens literais do edital.",
+  "sections": [
+    {
+      "id": "TI-RED-006-01",
+      "title": "VPN: conceito e modalidades",
+      "text": "4. NÚCLEO 1 — VPN: CONCEITO E FINALIDADE\nVPN significa Virtual Private Network. Em termos conceituais, cria uma comunicação lógica protegida sobre uma infraestrutura que pode ser pública ou não confiável.\nA VPN não cria uma Internet “paralela”. Ela usa redes existentes e acrescenta mecanismos de tunelamento e, conforme a tecnologia, confidencialidade, integridade, autenticação e proteção contra replay.\nPegadinha: VPN não é sinônimo de firewall. Firewall controla tráfego conforme política; VPN protege/encapsula comunicações entre pontos.\nPegadinha: VPN não significa que os hosts das extremidades estejam livres de malware, vulnerabilidades ou credenciais comprometidas.\n\n5. VPN SITE-TO-SITE E ACESSO REMOTO\nSite-to-site: conecta redes. Exemplo conceitual: sede ↔ filial. Gateways estabelecem o túnel e os usuários podem acessar recursos sem iniciar manualmente uma sessão individual em cada máquina.\nAcesso remoto/client-to-site: conecta um usuário ou dispositivo remoto ao ambiente institucional. Exemplo: notebook do servidor público ↔ rede corporativa.\nNão confundir acesso remoto com ferramenta de controle de tela. RDP/VNC podem operar através de uma VPN, mas não são VPN por si mesmos."
+    },
+    {
+      "id": "TI-RED-006-02",
+      "title": "IPsec, IKE e políticas de túnel",
+      "text": "6. IPSEC E IKE — REUSO DE SI-004\nNIST SP 800-77 Rev. 1 trata IPsec como controle de segurança de camada de rede para proteger comunicações IP. O IPsec é um framework de padrões abertos e normalmente usa IKE para negociação de parâmetros, autenticação dos pares e estabelecimento de chaves.\nEm nível de prova:\n- IPsec atua sobre tráfego IP;\n- pode fornecer confidencialidade, integridade, autenticação e proteção contra replay, conforme configuração;\n- pode operar em modo túnel ou transporte;\n- modo túnel encapsula o pacote IP original em um novo pacote protegido;\n- modo transporte protege a carga útil mantendo o cabeçalho IP original na comunicação externa.\nNão promover AH/ESP, suites criptográficas ou detalhes de negociação a exigência literal se o edital não os listar; são extensão técnica do núcleo VPN.\n\n7. FULL TUNNEL E SPLIT TUNNEL\nFull tunnel: todo o tráfego definido do cliente é direcionado pelo túnel corporativo. Pode facilitar inspeção e aplicação central de políticas, com maior consumo de banda/infraestrutura.\nSplit tunnel: somente parte do tráfego, tipicamente o destinado ao ambiente corporativo, segue pela VPN; outros acessos usam a saída local. Pode reduzir carga, mas requer análise de risco.\nPegadinha: split tunnel não é “VPN pela metade”; é uma política de roteamento de tráfego."
+    },
+    {
+      "id": "TI-RED-006-03",
+      "title": "WLAN, access point e IEEE 802.11",
+      "text": "8. WLAN E IEEE 802.11\nWLAN é uma rede local sem fio. O IEEE 802.11 define especificações de MAC e PHY para Wireless LANs.\nEm modo infraestrutura, estações sem fio comunicam-se por meio de um access point. O AP possui rádio/camada física e exerce função de ponte de camada 2 entre o domínio 802.11 e a infraestrutura de distribuição/LAN.\nSSID é o identificador/nome lógico da rede sem fio anunciado ou configurado para associação. Ocultar SSID não deve ser tratado como controle de segurança suficiente; a rede pode continuar detectável por outros mecanismos.\n\n9. FAIXAS DE FREQUÊNCIA — VISÃO CONCEITUAL\n2,4 GHz: maior alcance relativo e maior suscetibilidade a congestionamento/interferência em muitos ambientes.\n5 GHz: em geral oferece mais canais e maior capacidade, com alcance relativo menor em várias situações físicas.\n6 GHz: usada por gerações mais recentes de Wi-Fi em países/regiões que disponibilizam a faixa; amplia espectro disponível.\nNão transformar alcance ou desempenho em números absolutos: paredes, potência, antenas, largura de canal, interferência e regulamentação alteram o resultado real.\nPegadinha: “largura de banda” não significa distância máxima do sinal.\n\n10. FAMÍLIA 802.11 — REFERÊNCIA DE ESTUDO\nA família IEEE 802.11 evolui ao longo do tempo. Para o nível desta unidade, o aluno deve reconhecer a sequência tecnológica e evitar equivalências simplistas:\n- 802.11b/g: associados historicamente a 2,4 GHz;\n- 802.11a: associado a 5 GHz;\n- 802.11n (Wi-Fi 4): pode operar em 2,4 e 5 GHz;\n- 802.11ac (Wi-Fi 5): operação em 5 GHz;\n- 802.11ax (Wi-Fi 6/6E): maior eficiência e suporte a ambientes densos; Wi-Fi 6E estende operação à faixa de 6 GHz onde disponível;\n- 802.11be (Wi-Fi 7): evolução de alto desempenho incorporada ao ecossistema atual.\nEssas associações são apoio pedagógico; a matriz não enumera versões."
+    },
+    {
+      "id": "TI-RED-006-04",
+      "title": "Segurança Wi-Fi, Personal e Enterprise",
+      "text": "11. SEGURANÇA WI-FI — WEP, WPA, WPA2 E WPA3\nWEP é tecnologia legada e insegura; não deve ser recomendada como proteção moderna.\nWPA foi etapa de transição posterior ao WEP.\nWPA2 consolidou uso de mecanismos mais robustos e permanece relevante em provas.\nWPA3 é geração posterior com melhorias de autenticação e proteção.\nO ponto central para concurso não é memorizar marketing, mas reconhecer evolução de segurança e distinguir mecanismos pessoais de empresariais.\n\n12. PERSONAL X ENTERPRISE\nModo Personal usa segredo/senha compartilhada entre os participantes da rede, em variações conforme a geração do protocolo.\nModo Enterprise permite autenticação individualizada, tipicamente com 802.1X e servidor de autenticação como RADIUS.\nA banca Quadrix já explorou diretamente a diferença entre WPA2/WPA3-Enterprise e o uso de uma única chave pré-compartilhada compartilhada.\nPegadinha: Enterprise não implica que todos os usuários compartilhem necessariamente a mesma credencial.\n\n13. 802.1X E RADIUS — NÍVEL CONCEITUAL\n802.1X é uma arquitetura de controle de acesso à rede baseada em porta/autenticação. Em WLAN corporativa, permite que cada usuário/dispositivo seja autenticado antes de obter acesso conforme a política.\nRADIUS é frequentemente empregado como servidor AAA no processo de autenticação empresarial.\nNão transformar EAP, PEAP, EAP-TLS ou detalhes de certificados em exigência literal deste item sem confirmação específica de edital."
+    },
+    {
+      "id": "TI-RED-006-05",
+      "title": "Proteções complementares e ameaças WLAN",
+      "text": "14. VPN X SEGURANÇA DO WI-FI\nCriptografia/autenticação Wi-Fi protege o enlace sem fio local entre cliente e infraestrutura, conforme configuração.\nVPN protege um caminho lógico/túnel entre extremidades.\nUma conexão pode usar WPA2/WPA3 e também VPN. Os mecanismos são complementares e atuam em escopos diferentes.\nVPN não corrige automaticamente Wi-Fi mal configurado. WPA3 não substitui controles de endpoint, patching, firewall ou autenticação adequada.\n\n15. AMEAÇAS TÍPICAS EM WLAN — SOMENTE COMO APOIO PEDAGÓGICO\nExemplos úteis para compreender segurança de rede sem fio:\n- access point não autorizado (rogue AP);\n- evil twin, quando um ponto malicioso imita uma rede legítima;\n- senha fraca/compartilhada indevidamente;\n- configuração legada insegura;\n- desautenticação/interferência e indisponibilidade;\n- captura de tráfego quando mecanismos adequados não protegem a comunicação.\nEsses exemplos não são promovidos a subitens literais autônomos do edital."
+    },
+    {
+      "id": "TI-RED-006-06",
+      "title": "Comparação integrada, referências e fontes",
+      "text": "16. QUADRO COMPARATIVO\nVPN — protege comunicação entre pontos sobre outra rede; exemplos: site-to-site e acesso remoto.\nAccess point — conecta estações 802.11 à WLAN/infraestrutura; função predominante de bridge de camada 2 no modo infraestrutura.\nWPA2/WPA3 — mecanismos de proteção/autenticação do ambiente Wi-Fi.\n802.1X/RADIUS — autenticação individual/AAA em ambiente Enterprise.\nFirewall — controla tráfego conforme política; já aprofundado em TI-SEG-003/SI-004.\nAntivírus — protege endpoint contra código malicioso; não é função da VPN nem do AP.\n\n17. COMO A QUADRIX COBRA — SOMENTE COM EVIDÊNCIA REAL\nQREF-TIRED006-QUAD-001 — Quadrix 2026, CREFITO 17ª Região, Analista de TI, Q4059488 — VPN protege tráfego em trânsito no túnel sem eliminar controles de segurança nos endpoints.\nQREF-TIRED006-QUAD-002 — Quadrix 2026, CREFITO 17ª Região, Analista de TI, Q4059489 — WLAN corporativa; diferença entre WPA2/WPA3-Enterprise e chave pré-compartilhada única.\nQREF-TIRED006-QUAD-003 — Quadrix 2026, CRF-PR, Analista de Sistemas, Q3932398 — IPsec; confidencialidade, integridade, autenticação e modos túnel/transporte.\nQREF-TIRED006-QUAD-004 — Quadrix 2026, CREF 11ª Região MS-MT, Analista de Suporte em TI, Q4146465 — VPN client-to-site/OpenVPN em cenário de home office; item explora camada/função da VPN e não deve ser reduzido a “mascarar MAC”.\nQREF-TIRED006-QUAD-005 — Quadrix 2026, CREFONO 9ª Região, Q4129959 — largura de banda de Wi-Fi não é sinônimo de alcance físico máximo.\nQREF-QUAD-064 — Quadrix 2026, CREF 11ª Região MS-MT, Q4146460 — access point como bridge/camada de enlace; referência já cadastrada e reutilizada, sem duplicação.\nBUSCA-INDEPAC-TIRED006-001 — busca pública delimitada por VPN, wireless, Wi-Fi, 802.11, WPA2 e WPA3; nesta rodada não foi localizada questão INDEPAC identificável com segurança e aderência suficiente para cadastro como questão real. Fallback permitido: itens autorais de quatro alternativas, sempre marcados como QUESTÃO INÉDITA — ESTILO DA BANCA.\nRegra: não reproduzir enunciados integrais de questões reais no site; usar metadados, tema observado e paráfrase didática.\n\n26. FONTES\nSRC-TIRED006-SI004 — SI-004 — Segurança de redes — núcleo interno canônico: https://docs.google.com/document/d/1NmFE3yMxVFloL3-MGQEWotH0-_gTlD95gPXE5qds6Lw/edit\nSRC-TIRED006-RED001 — RED-001 — Fundamentos de Redes — núcleo interno canônico: https://docs.google.com/document/d/1QbwltMKnr5snP4yj2K1JL2mlXkeH6vw4Y5qhDONyEEs/edit\nSRC-TIRED006-NIST-VPN — NIST SP 800-77 Rev. 1 — Guide to IPsec VPNs: https://csrc.nist.gov/pubs/sp/800/77/r1/final\nSRC-TIRED006-NIST-WLAN — NIST SP 800-153 — Guidelines for Securing Wireless Local Area Networks: https://csrc.nist.gov/pubs/sp/800/153/final\nSRC-TIRED006-IEEE80211 — IEEE 802.11-2024 — Wireless LAN MAC/PHY: https://standards.ieee.org/ieee/802.11/10548/\nSRC-TIRED006-MATRIZ — MATRIZ_EDITAIS, linha TI-RED-006, 00_CONTROLE — Central de Estudos."
+    }
+  ]
+}

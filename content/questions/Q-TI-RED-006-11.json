@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-11",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Em WPA2/WPA3-Enterprise, a autenticação pode ser individualizada, ao contrário do modelo baseado em uma única chave compartilhada. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Enterprise permite credenciais/autenticação individualizada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

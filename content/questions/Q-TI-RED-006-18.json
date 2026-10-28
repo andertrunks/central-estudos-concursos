@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-18",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "O termo largura de banda de Wi-Fi significa exclusivamente a distância física máxima entre o cliente e o access point. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "largura de banda não é sinônimo de alcance.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

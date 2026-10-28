@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-17",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "802.11ac é associado à operação em 5 GHz, enquanto 802.11n pode operar em 2,4 e 5 GHz. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "associação tecnológica de referência.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

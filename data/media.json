@@ -805,5 +805,16 @@
     "file": "media/TI-CLOUD-001-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "TI-RED-006-IMG-001",
+    "contentId": "TI-RED-006",
+    "type": "imagem",
+    "title": "Wi-Fi seguro não é VPN",
+    "caption": "Proteção Wi-Fi local e túnel VPN têm escopos complementares.",
+    "alt": "Diagrama comparando proteção Wi-Fi local e túnel VPN, mostrando cliente, access point, Internet e gateway corporativo, com autenticação Personal versus Enterprise.",
+    "file": "media/TI-RED-006-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]

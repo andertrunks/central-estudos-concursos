@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-19",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Uma rede pode empregar WPA2/WPA3 no enlace sem fio e, simultaneamente, uma VPN para proteger comunicação entre extremidades. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "proteção local Wi-Fi e túnel VPN são complementares.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

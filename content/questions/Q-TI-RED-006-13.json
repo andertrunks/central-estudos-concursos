@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-RED-006-13",
+  "contentId": "TI-RED-006",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A criptografia do Wi-Fi e a VPN são mecanismos idênticos e, por isso, nunca devem ser usados juntos. Certo ou Errado?",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "os mecanismos atuam em escopos distintos e podem coexistir.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
