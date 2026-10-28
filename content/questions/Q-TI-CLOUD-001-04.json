@@ -1,0 +1,43 @@
+{
+  "id": "Q-TI-CLOUD-001-04",
+  "contentId": "TI-CLOUD-001",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-CLOUD-001-03"
+  ],
+  "statement": "SaaS oferece:",
+  "options": [
+    {
+      "id": "A",
+      "text": "apenas hardware"
+    },
+    {
+      "id": "B",
+      "text": "aplicação como serviço"
+    },
+    {
+      "id": "C",
+      "text": "apenas rede"
+    },
+    {
+      "id": "D",
+      "text": "hipervisor ao cliente"
+    },
+    {
+      "id": "E",
+      "text": "servidor físico"
+    }
+  ],
+  "answer": "B",
+  "comment": "Questão autoral reutilizada seletivamente do núcleo SVC-004 e mantida dentro dos fundamentos introdutórios de computação em nuvem.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

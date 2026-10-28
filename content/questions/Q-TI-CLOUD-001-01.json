@@ -1,0 +1,43 @@
+{
+  "id": "Q-TI-CLOUD-001-01",
+  "contentId": "TI-CLOUD-001",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-CLOUD-001-02"
+  ],
+  "statement": "Segundo o NIST, cloud computing possui:",
+  "options": [
+    {
+      "id": "A",
+      "text": "3 características"
+    },
+    {
+      "id": "B",
+      "text": "4 características"
+    },
+    {
+      "id": "C",
+      "text": "5 características essenciais"
+    },
+    {
+      "id": "D",
+      "text": "6 características"
+    },
+    {
+      "id": "E",
+      "text": "nenhuma característica definida"
+    }
+  ],
+  "answer": "C",
+  "comment": "Questão autoral reutilizada seletivamente do núcleo SVC-004 e mantida dentro dos fundamentos introdutórios de computação em nuvem.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q-TI-CLOUD-001-15",
+  "contentId": "TI-CLOUD-001",
+  "banca": "Autoral · estilo Quadrix",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "unitIds": [
+    "TI-CLOUD-001-02"
+  ],
+  "statement": "Resource pooling:",
+  "options": [
+    {
+      "id": "A",
+      "text": "impede compartilhamento"
+    },
+    {
+      "id": "B",
+      "text": "permite recursos agrupados e alocados dinamicamente"
+    },
+    {
+      "id": "C",
+      "text": "exige um servidor por usuário"
+    },
+    {
+      "id": "D",
+      "text": "exclui multi-tenancy"
+    },
+    {
+      "id": "E",
+      "text": "proíbe virtualização"
+    }
+  ],
+  "answer": "B",
+  "comment": "Questão autoral reutilizada seletivamente do núcleo SVC-004 e mantida dentro dos fundamentos introdutórios de computação em nuvem.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

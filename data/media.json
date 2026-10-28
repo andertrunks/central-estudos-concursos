@@ -794,5 +794,16 @@
     "file": "media/PORT-008-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "TI-CLOUD-001-IMG-001",
+    "contentId": "TI-CLOUD-001",
+    "type": "imagem",
+    "title": "O que torna algo cloud?",
+    "caption": "Infográfico original com definição, cinco características, três modelos de serviço e quatro modelos de implantação.",
+    "alt": "Infográfico que organiza fundamentos de computação em nuvem em definição, cinco características essenciais, três modelos de serviço e quatro modelos de implantação, com alertas sobre virtualização e escalabilidade.",
+    "file": "media/TI-CLOUD-001-IMG-001.png",
+    "verifiedAt": "2026-10-15",
+    "original": true
   }
 ]
