@@ -1,0 +1,7 @@
+# PUB-0034 — conferência das fontes de reutilização
+
+05/11/2026, 09h25 (São Paulo). Central de Estudos, main; checkpoint anterior f9268e3. Sem mudança de conteúdo, testes de aplicação, build, push de conteúdo ou deploy neste registro. Único arquivo adicionado: este checkpoint.
+
+Comparação das linhas não vazias dos três documentos canônicos com texto concatenado dos runs dos JSON de Tribunais em src/content/aulas/bancos-dados-sql, na referência local origin/main: BD-010 PostgreSQL 334/334; BD-011 Oracle 333/333; BD-012 SQL Server 342/342. O teste de presença não verifica ordem, mídia ou versão pública. Não recriar nem duplicar essas aulas de produto no catálogo da Central; preservar as referências e a composição específica de TI-BD-004.
+
+Retomar no checkpoint anterior, dispensada a releitura dos três núcleos se inalterados. Próximo: conferir FILA_PUBLICACAO linha 34 e mídia TI-BD-004-IMG-001, mapear as seis seções e as 20 questões com seus comentários em work/PUB-0034.json e validar a prévia da fila. Nenhuma baixa editorial. Em Reconstrução o índice mestre lido contém registro final de 01/10, anterior ao lote MAT-PRO-001/002 presente na referência Git; não usar o índice antigo sozinho para inferir a próxima aula. Localizar recibo posterior ao lote 11. Nenhum site verificado nesta etapa.
