@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-BD-004-13",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Sobre índices, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "todo índice melhora INSERT e UPDATE"
+    },
+    {
+      "id": "B",
+      "text": "índices não ocupam espaço"
+    },
+    {
+      "id": "C",
+      "text": "índice pode acelerar certos acessos, com custo de manutenção"
+    },
+    {
+      "id": "D",
+      "text": "o otimizador é obrigado a usar qualquer índice existente"
+    }
+  ],
+  "answer": "C",
+  "comment": "Índice pode acelerar determinados acessos e aumenta custos de manutenção/armazenamento.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

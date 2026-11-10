@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-BD-004-14",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Antes de alterar parâmetros para corrigir uma consulta lenta, a ação mais consistente é:",
+  "options": [
+    {
+      "id": "A",
+      "text": "medir e observar plano, estatísticas, índices, volume e concorrência"
+    },
+    {
+      "id": "B",
+      "text": "reiniciar o servidor repetidamente"
+    },
+    {
+      "id": "C",
+      "text": "criar índices em todas as colunas"
+    },
+    {
+      "id": "D",
+      "text": "desabilitar logs"
+    }
+  ],
+  "answer": "A",
+  "comment": "Tuning começa por evidência e medição.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

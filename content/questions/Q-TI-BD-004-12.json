@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-BD-004-12",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual situação representa corretamente uma transação?",
+  "options": [
+    {
+      "id": "A",
+      "text": "qualquer arquivo salvo pelo sistema operacional"
+    },
+    {
+      "id": "B",
+      "text": "uma unidade lógica de trabalho sujeita a confirmação ou reversão"
+    },
+    {
+      "id": "C",
+      "text": "apenas uma consulta SELECT simples"
+    },
+    {
+      "id": "D",
+      "text": "exclusivamente um backup completo"
+    }
+  ],
+  "answer": "B",
+  "comment": "Transação é unidade lógica de trabalho sujeita às garantias transacionais do SGBD.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

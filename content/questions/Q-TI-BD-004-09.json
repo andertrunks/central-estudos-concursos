@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-BD-004-09",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "Logs de transação, WAL ou redo podem participar de mecanismos de recuperação, mas não devem ser tratados como substitutos universais de toda estratégia de backup.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "C",
+  "comment": "Logs participam de recovery conforme produto, sem dispensar automaticamente backup.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

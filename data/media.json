@@ -816,5 +816,16 @@
     "file": "media/TI-RED-006-IMG-001.png",
     "verifiedAt": "2026-10-15",
     "original": true
+  },
+  {
+    "id": "TI-BD-004-IMG-001",
+    "contentId": "TI-BD-004",
+    "type": "imagem",
+    "title": "Ciclo básico de administração de SGBD",
+    "caption": "Conceitos compartilhados — ferramentas variam conforme o produto.",
+    "alt": "Seis blocos convergem para o SGBD operacional: acesso, transações, desempenho, manutenção, backup/restore e monitoramento. PostgreSQL, Oracle e SQL Server são exemplos de implementação, não requisitos formais dos editais atuais.",
+    "file": "media/TI-BD-004-IMG-001.png",
+    "verifiedAt": "2026-11-10",
+    "original": true
   }
 ]

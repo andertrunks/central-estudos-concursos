@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-BD-004-01",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A autenticação bem-sucedida de um usuário implica que ele possui permissão para consultar qualquer objeto do banco.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Autenticação confirma identidade; autorização define o que ela pode fazer.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

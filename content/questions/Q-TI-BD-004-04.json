@@ -1,0 +1,28 @@
+{
+  "id": "Q-TI-BD-004-04",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "certo/errado",
+  "origin": "inédita",
+  "statement": "A existência de bloqueio entre transações concorrentes significa necessariamente falha do SGBD.",
+  "options": [
+    {
+      "id": "C",
+      "text": "Certo"
+    },
+    {
+      "id": "E",
+      "text": "Errado"
+    }
+  ],
+  "answer": "E",
+  "comment": "Bloqueios podem ser mecanismo normal de concorrência; problema é contenção/deadlock/espera inadequada.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

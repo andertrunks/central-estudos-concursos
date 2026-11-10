@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-BD-004-17",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "Qual atividade pertence diretamente ao monitoramento de SGBD?",
+  "options": [
+    {
+      "id": "A",
+      "text": "observar sessões, esperas, erros e crescimento de armazenamento"
+    },
+    {
+      "id": "B",
+      "text": "definir a identidade visual do site"
+    },
+    {
+      "id": "C",
+      "text": "substituir a política de segurança corporativa"
+    },
+    {
+      "id": "D",
+      "text": "criar topologia física de cabeamento"
+    }
+  ],
+  "answer": "A",
+  "comment": "Sessões, esperas, erros e capacidade são observáveis administrativos.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}

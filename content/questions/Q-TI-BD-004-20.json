@@ -1,0 +1,36 @@
+{
+  "id": "Q-TI-BD-004-20",
+  "contentId": "TI-BD-004",
+  "banca": "Autoral — estilo de banca",
+  "type": "múltipla escolha",
+  "origin": "inédita",
+  "statement": "A respeito de administração básica, assinale a alternativa correta.",
+  "options": [
+    {
+      "id": "A",
+      "text": "administração termina após a criação inicial do banco"
+    },
+    {
+      "id": "B",
+      "text": "DBA não deve acompanhar backup nem desempenho"
+    },
+    {
+      "id": "C",
+      "text": "administração é atividade contínua de operação, acesso, recuperação, monitoramento e manutenção"
+    },
+    {
+      "id": "D",
+      "text": "administração básica exige decorar todas as ferramentas proprietárias de todos os SGBDs"
+    }
+  ],
+  "answer": "C",
+  "comment": "Administração de SGBD é contínua.",
+  "source_ids": [
+    "SRC-CRBIO01-EDITAL-001",
+    "SRC-SETEC-EDITAL-001"
+  ],
+  "contests": [
+    "CRBIO01-2026-ATI",
+    "SETEC-2026-ATI"
+  ]
+}
