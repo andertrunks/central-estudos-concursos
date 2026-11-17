@@ -1,0 +1,793 @@
+{
+  "questions": [
+    {
+      "id": "Q-TI-ES-005-01",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "A manifestação observável de comportamento incorreto durante a execução é denominada:",
+      "options": [
+        {
+          "id": "A",
+          "text": "requisito"
+        },
+        {
+          "id": "B",
+          "text": "falha"
+        },
+        {
+          "id": "C",
+          "text": "revisão"
+        },
+        {
+          "id": "D",
+          "text": "cobertura"
+        },
+        {
+          "id": "E",
+          "text": "fixture"
+        }
+      ],
+      "answer": "B",
+      "comment": "Falha é a manifestação observável incorreta durante execução."
+    },
+    {
+      "id": "Q-TI-ES-005-02",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Constitui atividade estática:",
+      "options": [
+        {
+          "id": "A",
+          "text": "teste de carga"
+        },
+        {
+          "id": "B",
+          "text": "teste unitário"
+        },
+        {
+          "id": "C",
+          "text": "revisão de código"
+        },
+        {
+          "id": "D",
+          "text": "teste de integração"
+        },
+        {
+          "id": "E",
+          "text": "teste funcional executado"
+        }
+      ],
+      "answer": "C",
+      "comment": "Revisão ocorre sem executar o software testado, sendo atividade estática."
+    },
+    {
+      "id": "Q-TI-ES-005-03",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "O teste unitário tem como foco principal:",
+      "options": [
+        {
+          "id": "A",
+          "text": "todo o ambiente organizacional"
+        },
+        {
+          "id": "B",
+          "text": "pequena unidade de comportamento, preferencialmente isolada"
+        },
+        {
+          "id": "C",
+          "text": "somente infraestrutura de rede"
+        },
+        {
+          "id": "D",
+          "text": "aprovação contratual final"
+        },
+        {
+          "id": "E",
+          "text": "auditoria financeira"
+        }
+      ],
+      "answer": "B",
+      "comment": "Unitário concentra-se em unidade pequena e controlada."
+    },
+    {
+      "id": "Q-TI-ES-005-04",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "O teste de integração busca principalmente:",
+      "options": [
+        {
+          "id": "A",
+          "text": "medir apenas cobertura de instruções"
+        },
+        {
+          "id": "B",
+          "text": "verificar interação entre componentes"
+        },
+        {
+          "id": "C",
+          "text": "revisar requisitos sem executar software"
+        },
+        {
+          "id": "D",
+          "text": "substituir aceitação"
+        },
+        {
+          "id": "E",
+          "text": "eliminar a necessidade de teste unitário"
+        }
+      ],
+      "answer": "B",
+      "comment": "Integração verifica interfaces e colaboração entre componentes."
+    },
+    {
+      "id": "Q-TI-ES-005-05",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Assinale a associação correta:",
+      "options": [
+        {
+          "id": "A",
+          "text": "funcional — nível exclusivamente unitário"
+        },
+        {
+          "id": "B",
+          "text": "integração — tipo de requisito não funcional"
+        },
+        {
+          "id": "C",
+          "text": "sistema — avaliação da solução integrada"
+        },
+        {
+          "id": "D",
+          "text": "aceitação — análise estática"
+        },
+        {
+          "id": "E",
+          "text": "caixa-branca — ignora estrutura interna"
+        }
+      ],
+      "answer": "C",
+      "comment": "Teste de sistema avalia o sistema integrado. As demais associações confundem nível, tipo ou técnica."
+    },
+    {
+      "id": "Q-TI-ES-005-06",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Reteste e regressão diferem porque:",
+      "options": [
+        {
+          "id": "A",
+          "text": "reteste confirma correção específica; regressão busca efeitos colaterais"
+        },
+        {
+          "id": "B",
+          "text": "regressão confirma apenas o defeito corrigido"
+        },
+        {
+          "id": "C",
+          "text": "são sinônimos"
+        },
+        {
+          "id": "D",
+          "text": "reteste nunca executa software"
+        },
+        {
+          "id": "E",
+          "text": "regressão é exclusivamente revisão"
+        }
+      ],
+      "answer": "A",
+      "comment": "Reteste confirma correção; regressão procura impactos colaterais."
+    },
+    {
+      "id": "Q-TI-ES-005-07",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Uma técnica de caixa-preta adequada para dividir um intervalo de entradas em classes representativas é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "cobertura de ramos"
+        },
+        {
+          "id": "B",
+          "text": "particionamento de equivalência"
+        },
+        {
+          "id": "C",
+          "text": "análise estática"
+        },
+        {
+          "id": "D",
+          "text": "cobertura de instruções"
+        },
+        {
+          "id": "E",
+          "text": "instrumentação"
+        }
+      ],
+      "answer": "B",
+      "comment": "Particionamento divide o domínio em classes representativas."
+    },
+    {
+      "id": "Q-TI-ES-005-08",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Para uma regra que aceita valores de 18 a 65, qual conjunto enfatiza fronteiras?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30, 40, 50"
+        },
+        {
+          "id": "B",
+          "text": "17, 18, 19, 64, 65, 66"
+        },
+        {
+          "id": "C",
+          "text": "1, 2, 3"
+        },
+        {
+          "id": "D",
+          "text": "18 apenas"
+        },
+        {
+          "id": "E",
+          "text": "65 apenas"
+        }
+      ],
+      "answer": "B",
+      "comment": "Os valores imediatamente abaixo, nos limites, imediatamente acima e vizinhanças pressionam fronteiras."
+    },
+    {
+      "id": "Q-TI-ES-005-09",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "A cobertura de ramos busca verificar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "somente linhas comentadas"
+        },
+        {
+          "id": "B",
+          "text": "resultados possíveis de decisões"
+        },
+        {
+          "id": "C",
+          "text": "satisfação do usuário"
+        },
+        {
+          "id": "D",
+          "text": "documentação de requisitos"
+        },
+        {
+          "id": "E",
+          "text": "número de mocks"
+        }
+      ],
+      "answer": "B",
+      "comment": "Cobertura de ramos avalia alternativas de decisão exercitadas."
+    },
+    {
+      "id": "Q-TI-ES-005-10",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Uma suíte alcançou 100% de cobertura de instruções. É correto concluir que:",
+      "options": [
+        {
+          "id": "A",
+          "text": "o software não possui defeitos"
+        },
+        {
+          "id": "B",
+          "text": "todos os requisitos foram necessariamente testados"
+        },
+        {
+          "id": "C",
+          "text": "todas as instruções mensuradas foram exercitadas, mas isso não garante correção completa"
+        },
+        {
+          "id": "D",
+          "text": "todos os ramos foram exercitados"
+        },
+        {
+          "id": "E",
+          "text": "todo teste possui boas assertivas"
+        }
+      ],
+      "answer": "C",
+      "comment": "100% de instruções significa execução completa segundo esse critério, não correção total nem cobertura de todos os ramos/requisitos."
+    },
+    {
+      "id": "Q-TI-ES-005-11",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "O teste de carga busca principalmente:",
+      "options": [
+        {
+          "id": "A",
+          "text": "revisar código sem execução"
+        },
+        {
+          "id": "B",
+          "text": "avaliar comportamento sob volume esperado/modelado"
+        },
+        {
+          "id": "C",
+          "text": "verificar somente sintaxe"
+        },
+        {
+          "id": "D",
+          "text": "substituir teste funcional"
+        },
+        {
+          "id": "E",
+          "text": "eliminar gargalos automaticamente"
+        }
+      ],
+      "answer": "B",
+      "comment": "Carga mede comportamento sob volume esperado ou modelado."
+    },
+    {
+      "id": "Q-TI-ES-005-12",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "O teste de estresse diferencia-se do de carga por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "nunca executar o sistema"
+        },
+        {
+          "id": "B",
+          "text": "pressionar o sistema além de condições normais ou limites esperados"
+        },
+        {
+          "id": "C",
+          "text": "ser exclusivamente unitário"
+        },
+        {
+          "id": "D",
+          "text": "usar apenas mocks"
+        },
+        {
+          "id": "E",
+          "text": "não medir desempenho"
+        }
+      ],
+      "answer": "B",
+      "comment": "Estresse pressiona além do normal para observar degradação, limite e recuperação."
+    },
+    {
+      "id": "Q-TI-ES-005-13",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Um stub é utilizado tipicamente para:",
+      "options": [
+        {
+          "id": "A",
+          "text": "fornecer respostas controladas a chamadas"
+        },
+        {
+          "id": "B",
+          "text": "medir CPU"
+        },
+        {
+          "id": "C",
+          "text": "compilar código"
+        },
+        {
+          "id": "D",
+          "text": "desenhar UML"
+        },
+        {
+          "id": "E",
+          "text": "calcular cobertura"
+        }
+      ],
+      "answer": "A",
+      "comment": "Stub fornece respostas predeterminadas."
+    },
+    {
+      "id": "Q-TI-ES-005-14",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Um mock é particularmente útil para:",
+      "options": [
+        {
+          "id": "A",
+          "text": "substituir todo o ambiente de produção"
+        },
+        {
+          "id": "B",
+          "text": "verificar interações esperadas com colaboradores"
+        },
+        {
+          "id": "C",
+          "text": "converter requisito em diagrama"
+        },
+        {
+          "id": "D",
+          "text": "medir carga de rede"
+        },
+        {
+          "id": "E",
+          "text": "executar análise estática"
+        }
+      ],
+      "answer": "B",
+      "comment": "Mock é especialmente útil para configurar e verificar interações."
+    },
+    {
+      "id": "Q-TI-ES-005-15",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Sobre JUnit, assinale a correta:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é banco de dados"
+        },
+        {
+          "id": "B",
+          "text": "é framework/ecossistema de testes no ambiente Java/JVM"
+        },
+        {
+          "id": "C",
+          "text": "todo teste JUnit é obrigatoriamente unitário"
+        },
+        {
+          "id": "D",
+          "text": "define sozinho a qualidade do software"
+        },
+        {
+          "id": "E",
+          "text": "substitui Mockito em qualquer situação"
+        }
+      ],
+      "answer": "B",
+      "comment": "JUnit é ecossistema/framework de testes Java/JVM. A ferramenta não define sozinha o nível."
+    },
+    {
+      "id": "Q-TI-ES-005-16",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Sobre Mockito, assinale a correta:",
+      "options": [
+        {
+          "id": "A",
+          "text": "é linguagem de programação"
+        },
+        {
+          "id": "B",
+          "text": "é framework de mocking usado no ecossistema Java"
+        },
+        {
+          "id": "C",
+          "text": "é modelo de maturidade"
+        },
+        {
+          "id": "D",
+          "text": "é protocolo de rede"
+        },
+        {
+          "id": "E",
+          "text": "é ferramenta de banco de dados"
+        }
+      ],
+      "answer": "B",
+      "comment": "Mockito é framework de mocking."
+    },
+    {
+      "id": "Q-TI-ES-005-17",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "A ordem clássica do TDD é:",
+      "options": [
+        {
+          "id": "A",
+          "text": "green, red, deploy"
+        },
+        {
+          "id": "B",
+          "text": "refactor, deploy, red"
+        },
+        {
+          "id": "C",
+          "text": "red, green, refactor"
+        },
+        {
+          "id": "D",
+          "text": "unit, system, accept"
+        },
+        {
+          "id": "E",
+          "text": "code, document, ignore"
+        }
+      ],
+      "answer": "C",
+      "comment": "Red → Green → Refactor."
+    },
+    {
+      "id": "Q-TI-ES-005-18",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "No ciclo TDD, a etapa “red” representa:",
+      "options": [
+        {
+          "id": "A",
+          "text": "remover testes"
+        },
+        {
+          "id": "B",
+          "text": "escrever um teste que inicialmente falha para o comportamento ainda não implementado"
+        },
+        {
+          "id": "C",
+          "text": "refatorar com testes quebrados"
+        },
+        {
+          "id": "D",
+          "text": "publicar em produção"
+        },
+        {
+          "id": "E",
+          "text": "executar apenas teste de carga"
+        }
+      ],
+      "answer": "B",
+      "comment": "Em red, o teste que expressa o comportamento desejado falha antes da implementação."
+    },
+    {
+      "id": "Q-TI-ES-005-19",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "Assinale a correta sobre qualidade:",
+      "options": [
+        {
+          "id": "A",
+          "text": "qualidade é sinônimo de cobertura"
+        },
+        {
+          "id": "B",
+          "text": "testes são uma parte das atividades de qualidade"
+        },
+        {
+          "id": "C",
+          "text": "revisão é desnecessária se houver automação"
+        },
+        {
+          "id": "D",
+          "text": "análise estática torna teste dinâmico inútil"
+        },
+        {
+          "id": "E",
+          "text": "CMMI, MPS e ISO podem ser trocados livremente por versões mais recentes que as do edital"
+        }
+      ],
+      "answer": "B",
+      "comment": "Testes integram um sistema maior de prevenção, verificação, controle e melhoria de qualidade."
+    },
+    {
+      "id": "Q-TI-ES-005-20",
+      "contentId": "TI-ES-005",
+      "origin": "inédita",
+      "statement": "No projeto editorial desta aula, qual afirmação respeita a regra documental?",
+      "options": [
+        {
+          "id": "A",
+          "text": "a versão atual do JUnit vira automaticamente exigência do TRT-15"
+        },
+        {
+          "id": "B",
+          "text": "TDD é atribuído formalmente a todos os cargos de TI por ser prática comum"
+        },
+        {
+          "id": "C",
+          "text": "ferramentas e versões só são tratadas como formais quando o edital as sustenta"
+        },
+        {
+          "id": "D",
+          "text": "TRE-SP Técnico Programação recebe cargoId por analogia"
+        },
+        {
+          "id": "E",
+          "text": "TRF3 TI recebe cargoId mesmo sem revalidação granular nesta rodada"
+        }
+      ],
+      "answer": "C",
+      "comment": "Essa é a regra central do projeto: edital confirmado antes de atribuir requisito formal."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "F-TI-ES-005-01",
+      "front": "Diferença entre defeito e falha?",
+      "back": "Defeito é problema no artefato; falha é manifestação observada."
+    },
+    {
+      "id": "F-TI-ES-005-02",
+      "front": "O que caracteriza teste estático?",
+      "back": "Avaliação sem executar o software testado."
+    },
+    {
+      "id": "F-TI-ES-005-03",
+      "front": "O que caracteriza teste dinâmico?",
+      "back": "Execução do software/componente."
+    },
+    {
+      "id": "F-TI-ES-005-04",
+      "front": "Quatro níveis pedagógicos?",
+      "back": "Unitário, integração, sistema e aceitação."
+    },
+    {
+      "id": "F-TI-ES-005-05",
+      "front": "Teste unitário foca?",
+      "back": "Unidade pequena de comportamento."
+    },
+    {
+      "id": "F-TI-ES-005-06",
+      "front": "Teste de integração foca?",
+      "back": "Interfaces e interação entre componentes."
+    },
+    {
+      "id": "F-TI-ES-005-07",
+      "front": "Teste de sistema foca?",
+      "back": "Sistema integrado."
+    },
+    {
+      "id": "F-TI-ES-005-08",
+      "front": "Teste de aceitação foca?",
+      "back": "Critérios para aceite da solução."
+    },
+    {
+      "id": "F-TI-ES-005-09",
+      "front": "O que é reteste?",
+      "back": "Reexecução focada para confirmar correção."
+    },
+    {
+      "id": "F-TI-ES-005-10",
+      "front": "O que é regressão?",
+      "back": "Verificação de efeitos indesejados de mudanças."
+    },
+    {
+      "id": "F-TI-ES-005-11",
+      "front": "Caixa-preta usa quê?",
+      "back": "Comportamento externo/especificações."
+    },
+    {
+      "id": "F-TI-ES-005-12",
+      "front": "Caixa-branca usa quê?",
+      "back": "Estrutura interna do código."
+    },
+    {
+      "id": "F-TI-ES-005-13",
+      "front": "Equivalência serve para?",
+      "back": "Dividir domínio em classes representativas."
+    },
+    {
+      "id": "F-TI-ES-005-14",
+      "front": "Valor-limite serve para?",
+      "back": "Testar fronteiras."
+    },
+    {
+      "id": "F-TI-ES-005-15",
+      "front": "Cobertura de instruções mede?",
+      "back": "Proporção de instruções exercitadas."
+    },
+    {
+      "id": "F-TI-ES-005-16",
+      "front": "Cobertura de ramos mede?",
+      "back": "Resultados de decisões/branches exercitados."
+    },
+    {
+      "id": "F-TI-ES-005-17",
+      "front": "100% de cobertura garante ausência de defeitos?",
+      "back": "Não."
+    },
+    {
+      "id": "F-TI-ES-005-18",
+      "front": "Carga x estresse?",
+      "back": "Carga avalia volume esperado/modelado; estresse ultrapassa condições normais."
+    },
+    {
+      "id": "F-TI-ES-005-19",
+      "front": "Stub?",
+      "back": "Test double que fornece respostas controladas."
+    },
+    {
+      "id": "F-TI-ES-005-20",
+      "front": "Mock?",
+      "back": "Test double usado para controlar/verificar interações."
+    },
+    {
+      "id": "F-TI-ES-005-21",
+      "front": "JUnit?",
+      "back": "Framework/ecossistema de testes para Java/JVM."
+    },
+    {
+      "id": "F-TI-ES-005-22",
+      "front": "Mockito?",
+      "back": "Framework de mocking no ecossistema Java."
+    },
+    {
+      "id": "F-TI-ES-005-23",
+      "front": "Ciclo de TDD?",
+      "back": "Red, green, refactor."
+    },
+    {
+      "id": "F-TI-ES-005-24",
+      "front": "O que é análise estática?",
+      "back": "Análise de artefatos/código sem executar o software testado."
+    },
+    {
+      "id": "F-TI-ES-005-25",
+      "front": "Qualidade é sinônimo de teste?",
+      "back": "Não; testes são parte do sistema de qualidade."
+    }
+  ],
+  "training": [
+    {
+      "id": "T-TI-ES-005-01",
+      "text": "explique erro, defeito e falha com um exemplo próprio."
+    },
+    {
+      "id": "T-TI-ES-005-02",
+      "text": "classifique como estático ou dinâmico:\n- revisão;\n- análise estática;\n- teste unitário;\n- carga;\n- integração."
+    },
+    {
+      "id": "T-TI-ES-005-03",
+      "text": "crie um requisito com três partições de equivalência."
+    },
+    {
+      "id": "T-TI-ES-005-04",
+      "text": "gere seis valores-limite para esse requisito."
+    },
+    {
+      "id": "T-TI-ES-005-05",
+      "text": "crie tabela de decisão com duas condições booleanas."
+    },
+    {
+      "id": "T-TI-ES-005-06",
+      "text": "escreva um if simples e defina testes para cobrir os dois ramos."
+    },
+    {
+      "id": "T-TI-ES-005-07",
+      "text": "explique por que 100% de instruções não garante 100% de ramos."
+    },
+    {
+      "id": "T-TI-ES-005-08",
+      "text": "descreva um stub para dependência externa."
+    },
+    {
+      "id": "T-TI-ES-005-09",
+      "text": "descreva uma interação que seria verificada com mock."
+    },
+    {
+      "id": "T-TI-ES-005-10",
+      "text": "classifique três testes como unitário, integração ou sistema."
+    },
+    {
+      "id": "T-TI-ES-005-11",
+      "text": "dê exemplo de reteste e de regressão após mesma correção."
+    },
+    {
+      "id": "T-TI-ES-005-12",
+      "text": "crie cenário de carga e cenário de estresse."
+    },
+    {
+      "id": "T-TI-ES-005-13",
+      "text": "simule três ciclos red-green-refactor."
+    },
+    {
+      "id": "T-TI-ES-005-14",
+      "text": "explique quando usar JUnit e quando Mockito complementa JUnit."
+    },
+    {
+      "id": "T-TI-ES-005-15",
+      "text": "resolva as 20 questões sem consulta."
+    }
+  ]
+}
